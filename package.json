@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build && next export && next-sitemap --config next-sitemap.js",
     "start": "next start",
+    "sitemap": "next-sitemap --config next-sitemap.js",
     "lint": "next lint",
     "deploy": "next-sitemap --config next-sitemap.js && git add . && git commit -m 'release' && git push origin main"
   },
