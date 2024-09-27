@@ -36,6 +36,7 @@ export default function SponsorRequest({ support, sponsor, donation }) {
             </div>
           </div>
       </Section>
+      
       <Section py="py-8 md:py-12 lg:py-20" bg="bg-slate-100">
           <div className="container px-6 mx-auto">
             <div className="flex flex-col items-center mb-5 ">
