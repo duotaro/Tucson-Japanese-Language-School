@@ -35,13 +35,13 @@ export default function NewsDetail({ item }) {
     }
   }
   return (
-    <div key={entity.id} className="max-w-xd  lg:max-w-sm shadow-md rounded-xl bg-slate-100">
+    <div key={entity.id} className="max-w-xd lg:max-w-sm shadow-md rounded-xl bg-slate-100">
         
         <div className="mt-3p-5 bg-gray-100border-2 border-t-0 rounded-b-lg">
         <div className="relative h-48">
           <Image loading="lazy" src={entity.image} width={200} height={100} style={{ objectFit: 'cover' }} className="object-cover object-center rounded-t-lg w-full h-full absolute inset-0" />
         </div>
-        <h2 className="text-lg font-black sm:text-xl mt-2 pr-8 pl-8 text-center" style={{
+        <h2 className="text-lg font-black mt-2 px-3 " style={{
             minHeight: "3em",
             lineHeight: "1.5em",
             overflow: "hidden"
@@ -55,7 +55,7 @@ export default function NewsDetail({ item }) {
             })}
         </h2>
         {entity.text && (
-            <div className="line-clamp-3 pr-8 pl-8 min-h-20 max-w-md mt-4 mb-4 text-md font-light leading-relaxed text-gray-500 ">
+            <div className="line-clamp-2 px-3 min-h-10 max-w-md my-3 text-md font-light leading-relaxed text-gray-500 ">
             {entity.text.map((text) => {
                 return text.href ? (
                     <Link href={text.href} className="link-secondary" key={text.text.content}>{text.text.content}</Link>

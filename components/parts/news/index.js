@@ -13,7 +13,7 @@ export default function News({ list, isTop }) {
   const { json } = useLocale(locale)
 
   let sectionPy = "md:py-2"
-  let sectionPx = "px-16 xl:px-40"
+  let sectionPx = "px-4 sm:px-16 md:px-28 lg:px-32 xl:px-52"
   if(isTop){
     sectionPy = "py-4 md:py-6 lg:py-8"
     //sectionPx = "px-40"

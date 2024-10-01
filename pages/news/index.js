@@ -19,6 +19,8 @@ export default function NewsPage({ list }) {
     parents: [],
     current: lang.news
   }
+
+  
   
   return (
     <Layout breadcrumb={breadcrumb}>
