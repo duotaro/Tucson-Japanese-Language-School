@@ -17,8 +17,8 @@ export default class NewsEntity {
         if(!isJapanease && item.properties["en"].rich_text[0]){
             this.title = item.properties["en"].rich_text
         }
-        this.rawDate = item.properties["date"].start
-        this.date = new Date(item.properties["date"].start).toLocaleString(
+        this.rawDate = item.properties["date"].date.start
+        this.date = new Date(item.properties["date"].date.start).toLocaleString(
             isJapanease ? "ja" : "en",
             {
               month: "short",
@@ -52,8 +52,11 @@ export const getNewsList = async (database, limit = null) => {
     if(database){
 
         // 並び替え
-        const sortedDatabase = database.sort((a, b) => new Date(b.last_edited_time) - new Date(a.last_edited_time));
-
+        const sortedDatabase = database.sort((a, b) => new Date(b.properties["date"].date.start) - new Date(a.properties["date"].date.start));
+        
+        for(const d of sortedDatabase){
+            console.log(d.properties["date"])
+        }
         let limitedDatabase = sortedDatabase
         if(limit){
             limitedDatabase = sortedDatabase.slice(0, limit);    
