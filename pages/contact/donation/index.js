@@ -36,11 +36,7 @@ export default function Sponsors({ sponsors, donation, howto }) {
         <div className="w-full px-4 pb-5">
           <Title title={lang.donation} />
         </div>
-        <section className="py-4 md:py-6 lg:py-8 ">
-          <div className="container px-6 mx-auto text-center max-w-full md:max-w-3xl pb-5">
-            <Sponsor sponsor={sponsorList} bg="bg-white"/>
-          </div>
-        </section>
+        <Sponsor sponsor={sponsorList} bg="bg-white"/>
         <SponsorRequest request={donation} />
         <HowToDonate howto={howto} />
       </div>

@@ -1,7 +1,7 @@
 import { DOWNLOAD_IMAGE_EXTENSION, ACCESABLE_IMAGE_PATH } from "../const"
 
 export default class SponsorEntity {
-    constructor(item){
+    constructor(item, isJpn){
         
         //const name = item.properties["image"].files[0].name
 
@@ -10,8 +10,8 @@ export default class SponsorEntity {
         const name = tmpName.replace(/ /g, '_')
 
         this.ordering =  item.properties["ordering"].number
-        this.title = item.properties["title"].title[0].text.content
-        this.label_en = item.properties["en"].rich_text[0].text.content
+        this.title = isJpn ? item.properties["title"].title[0].text.content : item.properties["en"].rich_text[0].text.content
+        //this.label_en = item.properties["en"].rich_text[0].text.content
 
         this.image = `/${ACCESABLE_IMAGE_PATH}/sponsor/${name}${DOWNLOAD_IMAGE_EXTENSION}`
         this.tag = item.properties["タグ"].multi_select.name

@@ -30,7 +30,7 @@ export default function Home({ sliderList, sponsors, newsList, scheduleList, abo
   let sponsorList = []
 
   for(let item of sponsors){
-    let sponsor = new SponsorEntity(item)
+    let sponsor = new SponsorEntity(item, locale == "ja")
     sponsorList.push(sponsor)
   }
 
