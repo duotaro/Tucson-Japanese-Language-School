@@ -3,14 +3,12 @@ import { useState, useContext } from 'react';
 import SliderEntity from '../../../entity/sliderEntity.js'
 import { SplideSlide } from "@splidejs/react-splide";
 import LocaleContext from '../../context/localeContext.js';
-export default function SliderDetail({slider}) {
+export default function SliderDetail({post}) {
     const { locale } = useContext(LocaleContext);
     const [isHovered, setIsHovered] = useState(false);
 
     const handleMouseEnter = () => setIsHovered(true);
     const handleMouseLeave = () => setIsHovered(false);
-
-    let post = new SliderEntity(slider)
 
     const cardStyle = {
         backgroundImage: `url('${post.image}')`,

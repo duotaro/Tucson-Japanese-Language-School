@@ -55,10 +55,6 @@ export default function Greeting({ greeting }) {
   let text1content = text.slice(0,cutIndex).map(item => item === ' ' ? '\n' : item).join('\n');
   let text2content = text.slice(cutIndex+1).map(item => item === ' ' ? '\n' : item).join('\n');
 
-  console.log(text1content)
-  console.log("------")
-
-  console.log(text2content)
   text1.text.content = text1content
   text1.plain_text = text1content
   text2.text.content = text2content

@@ -34,7 +34,7 @@ export default function Directors({ directors }) {
                     {/* <span className="text-[1.15rem] font-medium text-muted">{lang.description}</span> */}
                     {/* <Paragraphs text={lang.description} /> */}
                   </div>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 w-full">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 w-full">
                     {directors.map((director) => {
                       let entity = new DirectorsEntity(director, locale == "ja")
                       return (

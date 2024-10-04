@@ -54,9 +54,9 @@ export const getNewsList = async (database, limit = null) => {
         // 並び替え
         const sortedDatabase = database.sort((a, b) => new Date(b.properties["date"].date.start) - new Date(a.properties["date"].date.start));
         
-        for(const d of sortedDatabase){
-            console.log(d.properties["date"])
-        }
+        // for(const d of sortedDatabase){
+        //     console.log(d.properties["date"])
+        // }
         let limitedDatabase = sortedDatabase
         if(limit){
             limitedDatabase = sortedDatabase.slice(0, limit);    
