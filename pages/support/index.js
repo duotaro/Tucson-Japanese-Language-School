@@ -1,15 +1,15 @@
 import Head from "next/head";
-import Layout from '../../../components/layout'
+import Layout from '../../components/layout'
 import React, { useContext } from 'react';
-import LocaleContext from "../../../components/context/localeContext";
-import { useLocale } from "../../../utils/locale";
-import Title from "../../../components/parts/text/title";
-import Paragraphs from "../../../components/parts/text/paragraphs";
-import Sponsor from "../../../components/parts/sponsor";
-import SponsorEntity from "../../../entity/sponsorEntity";
-import { getDatabase } from "../../../lib/notion";
-import SponsorRequest from "../../../components/parts/sponsor/request";
-import HowToDonate from "../../../components/parts/sponsor/howto";
+import LocaleContext from "../../components/context/localeContext";
+import { useLocale } from "../../utils/locale";
+import Title from "../../components/parts/text/title";
+import Paragraphs from "../../components/parts/text/paragraphs";
+import Sponsor from "../../components/parts/sponsor";
+import SponsorEntity from "../../entity/sponsorEntity";
+import { getDatabase } from "../../lib/notion";
+import SponsorRequest from "../../components/parts/sponsor/request";
+import HowToDonate from "../../components/parts/sponsor/howto";
 
 
 export default function Sponsors({ sponsors, donation, howto }) {

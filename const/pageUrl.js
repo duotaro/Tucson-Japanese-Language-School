@@ -146,11 +146,21 @@ export const NEWS_URL ={
     IS_ACTIVE:true
 }
 
+/** support */
+export const SUPPORT_URL ={
+    PAGE_KEY:"support",
+    GROUP:"support",
+    ORDERING: 6,
+    GROUP_ORDERING: null,
+    IS_PARENT:true,
+    IS_ACTIVE:true
+}
+
 /** contact */
 export const CONTACT_URL ={
     PAGE_KEY:"contact",
     GROUP:"contact",
-    ORDERING: 6,
+    ORDERING: 7,
     GROUP_ORDERING: null,
     IS_PARENT:true,
     IS_ACTIVE:true
@@ -179,20 +189,12 @@ export const OPPORTUNITY_URL ={
     IS_PARENT:false,
     IS_ACTIVE:true
 }
-export const DONATION_URL ={
-    PAGE_KEY:"donation",
-    GROUP:"contact",
-    ORDERING: null,
-    GROUP_ORDERING: 4,
-    IS_PARENT:false,
-    IS_ACTIVE:true
-}
 
 export const TUCSON_URL ={
     PAGE_KEY:"tucsonlife",
     GROUP:"contact",
     ORDERING: null,
-    GROUP_ORDERING: 5,
+    GROUP_ORDERING: 4,
     IS_PARENT:false,
     IS_ACTIVE:false
 }
@@ -201,7 +203,7 @@ export const TUCSON_URL ={
 export const PAYMENT_URL ={
     PAGE_KEY:"payment",
     GROUP:"payment",
-    ORDERING: 7,
+    ORDERING: 8,
     GROUP_ORDERING: null,
     IS_PARENT:true,
     IS_ACTIVE:true
@@ -226,11 +228,11 @@ export const URLS = {
     ADMISSION_URL,
     FORMS_URL,
     NEWS_URL,
+    SUPPORT_URL,
     CONTACT_URL,
     CONTACT2_URL,
     FAQ_URL,
     OPPORTUNITY_URL,
-    DONATION_URL,
     TUCSON_URL,
     PAYMENT_URL
 }
