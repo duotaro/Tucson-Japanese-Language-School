@@ -23,10 +23,10 @@ export default function Directors({ directors }) {
   return (
     <Section py="py-8 md:py-6 lg:py-10" bg="bg-gray-50">
       <div className="container px-6 mx-auto">
-        <div className="flex flex-wrap -mx-3 mb-5">
-          <div className="w-full max-w-full px-3  mx-auto">
-            <div className="relative flex-[1_auto] flex flex-col break-words min-w-0  m-5">
-              <div className="flex-auto block py-8 px-9">
+        <div className="flex flex-wrap mb-5">
+          <div className="w-full max-w-full  mx-auto">
+            <div className="relative flex-[1_auto] flex flex-col break-words min-w-0 m-5">
+              <div className="flex-auto block py-8 px-3">
                 <div>
                   <div className="flex flex-col items-center text-center mb-10">
                     {/* <h1 className="mb-2 text-[1.75rem] font-semibold text-dark">{lang.title}</h1> */}
@@ -34,16 +34,16 @@ export default function Directors({ directors }) {
                     {/* <span className="text-[1.15rem] font-medium text-muted">{lang.description}</span> */}
                     {/* <Paragraphs text={lang.description} /> */}
                   </div>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 w-full">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 w-full">
                     {directors.map((director) => {
                       let entity = new DirectorsEntity(director, locale == "ja")
                       return (
                         <div className="flex flex-col text-center">
-                          <div className="inline-block mb-4 relative shrink-0 rounded-[.95rem]">
-                            <Image className="inline-block shrink-0 rounded-[.95rem] w-[150px] h-[150px]" width={150} height={150} src={entity.image} alt={entity.name} />
+                          <div className="inline-block mb-4 relative shrink-0 rounded-[.90rem]">
+                            <Image className="inline-block shrink-0 rounded-[.95rem] w-[130px] h-[130px]" width={130} height={130} src={entity.image} alt={entity.name} />
                           </div>
                           <div className="text-center">
-                            <a href="javascript:void(0)" className="text-dark font-semibold hover:text-primary text-md transition-colors duration-200 ease-in-out">{entity.name}</a>
+                            <a href="javascript:void(0)" className="text-dark font-semibold hover:text-primary text-sm transition-colors duration-200 ease-in-out">{entity.name}</a>
                             {entity.positions.map((position, index) => {
                               return (
                                 <>
@@ -53,7 +53,7 @@ export default function Directors({ directors }) {
                                 {index != 0 && (
                                   <> / </>
                                 )}
-                                <span className={`text-muted`}>{position.name}</span>
+                                <span className={`text-muted text-sm text-gray-600`}>{position.name}</span>
                                 </>
                               )
                             })}

@@ -16,7 +16,7 @@ export default function SponsorDetail({ item }) {
   const hClass = " "
 
   return (
-    <div key={item.ordering} className={`mx-auto text-center w-full `}>
+    <div key={item.ordering} className={` text-center w-full `}>
         <a href={item.link} target="_blank" rel="noopener noreferrer">
           {/* <CustomImage src={item.image} alt={item.title} addClass="" hClass={hClass}/> */}
           <div className={`relative w-full ${hClass} rounded-lg shadow-md`}>
