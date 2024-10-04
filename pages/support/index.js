@@ -12,7 +12,7 @@ import SponsorRequest from "../../components/parts/sponsor/request";
 import HowToDonate from "../../components/parts/sponsor/howto";
 
 
-export default function Sponsors({ sponsors, donation, howto }) {
+export default function Sponsors({ sponsors, support, sponsor, donation, howto }) {
   const { locale } = useContext(LocaleContext);
   const { json, metaTitleExtension } = useLocale(locale)
   let lang = json.navigation
@@ -37,7 +37,7 @@ export default function Sponsors({ sponsors, donation, howto }) {
           <Title title={lang.donation} />
         </div>
         <Sponsor sponsor={sponsorList} bg="bg-white"/>
-        <SponsorRequest request={donation} />
+        <SponsorRequest support={support} sponsor={sponsor} donation={donation}/>
         <HowToDonate howto={howto} />
       </div>
     </Layout>
@@ -47,12 +47,16 @@ export default function Sponsors({ sponsors, donation, howto }) {
 
 export const getStaticProps = async (context) => {
   const database = await getDatabase("1e302ac5bce442b797e491aee309e7c4")
-  const donation = await getDatabase("10ca8c0ecf8c8039a51bdd38f640a34e")
+  const support = await getDatabase("10ca8c0ecf8c8039a51bdd38f640a34e")
+  const sponsor = await getDatabase("10ea8c0ecf8c80eeae62cc2050b7e7f7")
+  const donation = await getDatabase("10ea8c0ecf8c801b802bc2b43a3ecf91")
   const howto = await getDatabase("10ca8c0ecf8c8081a8a0e9a9a6166cc1")
   
   return {
     props: {
       sponsors: database,
+      support: support[0],
+      sponsor: sponsor[0],
       donation: donation[0],
       howto: howto
     },
