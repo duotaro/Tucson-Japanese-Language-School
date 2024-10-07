@@ -10,6 +10,7 @@ import Title from "../text/title";
 import Paragraphs from "../text/paragraphs";
 import { GlobeAsiaAustraliaIcon } from "@heroicons/react/24/outline";
 import ContributionAccordion from "../menu/accordion";
+import { ACCESABLE_IMAGE_PATH, DOWNLOAD_IMAGE_EXTENSION } from "../../../const";
 
 export default function HowToDonate({ howto }) {
   const { locale } = useContext(LocaleContext);
@@ -32,7 +33,12 @@ export default function HowToDonate({ howto }) {
     res.text = isJpn ? item.properties["text"].rich_text : item.properties["text_en"].rich_text
 
     res.tag =  item.properties["tag"].select.name
-    res.image = `/image/components/donation/${res.tag}.jpeg`
+    if(item.properties["image"]){
+      const tmpName = item.properties["image"].files[0].name
+      const name = tmpName.replace(/ /g, '_')
+
+      res.image = `/${ACCESABLE_IMAGE_PATH}/howto/${name}${DOWNLOAD_IMAGE_EXTENSION}`
+    }
     if(isJpn){
         if(item.properties["btn_label"].rich_text[0]){
             res.btnLabel = item.properties["btn_label"].rich_text[0].text.content

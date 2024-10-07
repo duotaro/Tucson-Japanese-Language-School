@@ -10,6 +10,7 @@ import SponsorEntity from "../../entity/sponsorEntity";
 import { getDatabase } from "../../lib/notion";
 import SponsorRequest from "../../components/parts/sponsor/request";
 import HowToDonate from "../../components/parts/sponsor/howto";
+import saveImageIfNeeded from "../../components/download";
 
 
 export default function Sponsors({ sponsors, support, sponsor, donation, howto }) {
@@ -52,6 +53,13 @@ export const getStaticProps = async (context) => {
   const donation = await getDatabase("10ea8c0ecf8c801b802bc2b43a3ecf91")
   const howto = await getDatabase("10ca8c0ecf8c8081a8a0e9a9a6166cc1")
   
+  let props = []
+  for(let item of howto){
+    props.push(item.properties)
+  }
+
+  await saveImageIfNeeded(props, "howto")
+
   return {
     props: {
       sponsors: database,

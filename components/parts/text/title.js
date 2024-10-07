@@ -5,10 +5,10 @@ export default function Title({ title, link = null, fontSize = "text-xl  sm:text
     return (
       <h2 className={`font-black text-center ${fontSize}`}>
           {link && (
-            <Link href={link}><h3>{title}</h3></Link>
+            <Link href={link}>{title}</Link>
           )}
           {!link && (
-            <h3>{title}</h3>
+            <>{title}</>
           )}
       </h2>
     );
