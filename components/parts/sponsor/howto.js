@@ -9,6 +9,7 @@ import Section from "../section";
 import Title from "../text/title";
 import Paragraphs from "../text/paragraphs";
 import { GlobeAsiaAustraliaIcon } from "@heroicons/react/24/outline";
+import ContributionAccordion from "../menu/accordion";
 
 export default function HowToDonate({ howto }) {
   const { locale } = useContext(LocaleContext);
@@ -51,14 +52,18 @@ export default function HowToDonate({ howto }) {
   return (
     
     <Section py="py-8 md:py-12 lg:py-20" bg="bg-gray-100">
-    <div className="mb-4 border-b border-gray-200 dark:border-gray-700">
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 w-full">
-        {resList.map((item) => {
+    <div className="container px-6 mx-auto text-center" >
+      <Title title={`${resList.length}つの方法で貢献する（翻訳）`} />
+    </div>
+    <div className="mb-4 ">
+      <div className="w-full">
+        <ContributionAccordion list={resList} />
+        {/* {resList.map((item) => {
           return (
             <div className="flex flex-col p-5 lg:flex-row">
-                {/* <div className="text-center hidden lg:block">
+                <div className="text-center hidden lg:block">
                     <img className="h-80 w-80 sm:w-[14rem] sm:h-[14rem] flex-shrink-0 object-cover rounded-full" src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80" alt="" />
-                </div> */}
+                </div>
 
                 <div className="flex flex-col mt-6 ">
                     <div className="flex flex-row p-5 items-center justify-center gap-4">
@@ -79,7 +84,7 @@ export default function HowToDonate({ howto }) {
                 </div>
             </div>
           )
-        })}
+        })} */}
       </div>
     </div>
 
