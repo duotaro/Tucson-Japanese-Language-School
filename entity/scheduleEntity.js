@@ -5,6 +5,8 @@ export class SchaduleEntity {
         this.id = item.id
         this.dateTime = item.properties["date"].date.start
         this.allDay = true
+        this.start = item.properties["date"].date.start
+        this.end = item.properties["date"].date.end
         this.startStr = item.properties["date"].date.start
         this.endStr = item.properties["date"].date.end
         if(this.startStr && this.endStr){
