@@ -1,35 +1,23 @@
-@charset "UTF-8";
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* ドロップダウンメニューがホバーしているときも表示されたままにする */
-/* .dropdown:hover .dropdown-menu,
-.dropdown-menu:hover {
-    display: block;
-} */
-
-.fc--button {
-    background-color: transparent !important;
-    border: none !important;
-}
 .fc .fc-toolbar.fc-header-toolbar {
-    margin-bottom: 5px;
+    margin-bottom: 0;
   }
   .fc .fc-toolbar-title {
     font-size: 1rem;
-    
-  }
-  .fc .fc-button-primary {
-    font-size: 0.85rem;
-    background-color: transparent !important;
-    border: none !important;
-    color: #37362f !important;
-  }
-  .fc .fc-today-button {
     color: #37362f;
   }
-  /* 
+  .fc .fc-button-primary {
+    font-size: 0.75rem;
+    background-color: #ffffff00;
+    color: #acaba9;
+    border: none;
+    outline: none;
+  }
+  .fc .fc-today-button {
+    background-color: #ffffff00;
+    color: #37362f;
+    border: none;
+    outline: none;
+  }
   .fc .fc-button-primary:not(:disabled):active,
   .fc .fc-button-primary:not(:disabled).fc-button-active {
     background-color: #ffffff00;
@@ -44,4 +32,4 @@
   }
   .fc .fc-today-button:disabled {
     opacity: 1;
-  } */
+  }

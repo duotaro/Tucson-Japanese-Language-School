@@ -2,30 +2,48 @@ import { formatDateForCalander, formatDateForHHmm } from "../utils/dateUtils"
 
 export class SchaduleEntity {
     constructor(item, isJpn){
-        this.dateTime = item.properties["日付"].date.start
-        this.start = formatDateForHHmm(item.properties["日付"].date.start, isJpn)
-        this.end = formatDateForHHmm(item.properties["日付"].date.end, isJpn)
+        this.id = item.id
+        this.dateTime = item.properties["date"].date.start
+        this.allDay = true
+        this.startStr = item.properties["date"].date.start
+        this.endStr = item.properties["date"].date.end
+        if(this.startStr && this.endStr){
+            this.allDay = false
+        }
         // 日付はstart基準
-        this.date = formatDateForCalander(item.properties["日付"].date.start, isJpn)
+        this.date = formatDateForCalander(item.properties["date"].date.start, isJpn)
         this.year = this.date.year
         this.month = this.date.month
         this.day = this.date.day
         this.dayName = this.date.dayName
 
-        
-        
         this.title = isJpn ? item.properties["title"].rich_text[0].text.content : item.properties["en"].rich_text[0].text.content
-        this.text = null
+        this.extendedProps = {
+            description : ''
+        }
+        this.extendedProps.description = null
         if(isJpn){
             if(item.properties["text"].rich_text[0]){
-                this.text = item.properties["text"].rich_text[0].text.content
+                this.extendedProps.description = item.properties["text"].rich_text[0].text.content
             }
         } else {
             if(item.properties["text_en"].rich_text[0]){
-                this.text = item.properties["text_en"].rich_text[0].text.content
+                this.extendedProps.description = item.properties["text_en"].rich_text[0].text.content
             }
         }
-        this.link = item.properties["link"].url
-        this.location = item.properties["location"].rich_text[0].text.content
+        if(item.properties["link"] && item.properties["link"].url){
+            this.url = item.properties["link"].url
+        }
+        
+        if(item.properties["location"].rich_text[0]){
+          this.location = item.properties["location"].rich_text[0].text.content
+        }
+        if(item.properties["backgroundColor"].rich_text[0]){
+            this.backgroundColor = item.properties["backgroundColor"].rich_text[0].text.content
+        }
+        if(item.properties["textColor"].rich_text[0]){
+            this.textColor = item.properties["textColor"].rich_text[0].text.content
+        }
+        this.editable = false
     }
 }

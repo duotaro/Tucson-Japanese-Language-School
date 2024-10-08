@@ -75,7 +75,7 @@ export const PROGRAM_URL = {
     ORDERING: 3,
     GROUP_ORDERING: null,
     IS_PARENT:true,
-    IS_ACTIVE:false
+    IS_ACTIVE:true
 }
 export const CALENDER_URL = {
     PAGE_KEY:"calendar",
@@ -83,7 +83,7 @@ export const CALENDER_URL = {
     ORDERING: null,
     GROUP_ORDERING: 1,
     IS_PARENT:false,
-    IS_ACTIVE:false
+    IS_ACTIVE:true
 }
 export const CLASS_URL = {
     PAGE_KEY:"class",

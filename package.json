@@ -11,6 +11,11 @@
     "deploy": "next-sitemap --config next-sitemap.js && git add . && git commit -m 'release' && git push origin main"
   },
   "dependencies": {
+    "@fullcalendar/core": "^6.1.15",
+    "@fullcalendar/daygrid": "^6.1.15",
+    "@fullcalendar/interaction": "^6.1.15",
+    "@fullcalendar/react": "^6.1.15",
+    "@fullcalendar/timegrid": "^6.1.15",
     "@headlessui/react": "^2.1.5",
     "@heroicons/react": "^2.1.5",
     "@notionhq/client": "^2.2.3",
