@@ -45,3 +45,14 @@
   .fc .fc-today-button:disabled {
     opacity: 1;
   } */
+
+  @media (max-width: 600px) { /* 600px以下の画面サイズに適用 */
+    .fc .fc-button {
+        padding: 0.1em 0.2em; /* paddingを狭める */
+        font-size: 0.7em; /* フォントサイズを小さくする */
+        font-weight: 200; /* フォントウェイトを小さくする */
+    }
+    .fc table {
+      font-size: 0.7em;
+    }
+}

@@ -62,6 +62,15 @@ export default function Calender({list}) {
     console.log(dateStr)
     let items = map[dateStr]
     console.log(items)
+    const date = new Date(dateStr).toLocaleString(
+      locale,
+        {
+          month: "short",
+          day: "2-digit",
+          year: "numeric",
+        }
+      );
+    setCurrent(date)
     if(items && items.length > 0){
       setDetailList(items)
     } else {
@@ -73,13 +82,17 @@ export default function Calender({list}) {
     console.log(info)
     setDetailList([info.event])
   }
+
+  useEffect(() => {
+   
+  }, [setCurrent, locale]);
   
   return (
     <>
       <div className="flex flex-col justify-center items-center mb-2 ">
         <Title title={json.navigation.calendar} />　※実装中
       </div>
-      <div className="w-full flex px-5 gap-8 justify-center mb-10">
+      <div className="w-full flex flex-col lg:flex-row px-5 gap-8 justify-center mb-10 md:px-10">
           <div className="flex-1">
             <FullCalendar 
               locale={locale}
@@ -101,12 +114,13 @@ export default function Calender({list}) {
               displayEventEnd={true}
             />
           </div>
-          <div className="text-center mt-10">
+          <div className="text-center mt-2 md:mt-10">
             <Title title={current} />
             {detailList && detailList.map((detail)=>{
               const startTime = extractTime(detail.start);
               const endTime = extractTime(detail.end);
-              return (            
+              return (
+                <div className='flex justify-center'>     
                 <div className="w-72 h-72 rounded-lg overflow-hidden shadow-lg bg-orange-50 mb-5">
                   <div className="px-6 py-4">
                     <Title title={detail.title} / >
@@ -122,13 +136,16 @@ export default function Calender({list}) {
                   </div>
                   )}
                 </div>
+                </div>
               )
             })}
             {(!detailList || detailList.length == 0 )&& (
+                <div className='flex justify-center'>     
               <div className="w-72 h-72 rounded-lg overflow-hidden shadow-lg bg-orange-50">
                 <div className="px-6 py-4">
                     <Paragraphs text='予定はありません' />
                   </div>
+              </div>
               </div>
             )}
           </div>
