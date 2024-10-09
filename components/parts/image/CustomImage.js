@@ -5,7 +5,7 @@ import Image from 'next/image';
 const CustomImage = ({src, alt, addClass = "md:col-start-1", hClass = "h-80 md:h-52 lg:h-72 xl:h-96" }) => {
 
   return (
-    <div className={`relative w-full ${hClass} ${addClass}`}>
+    <div className={`relative w-full ${hClass} ${addClass} `}>
       <Image
         src={src}
         alt={alt}

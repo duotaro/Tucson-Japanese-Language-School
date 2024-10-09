@@ -1,11 +1,11 @@
 import { Text } from "../../../pages/news/[id]";
 
-export default function Paragraphs({ text, maxWidth = "ml", addClass = "" }) {
+export default function Paragraphs({ text, maxWidth = "ml", addClass = "", mt = "mt-4" }) {
     if(!text){
         return <></>
     }
 
-    const classname = `max-w-${maxWidth} mt-4 text-md font-light leading-relaxed text-gray-500 ${addClass} `
+    const classname = `max-w-${maxWidth} ${mt} text-md font-light leading-relaxed text-gray-500 ${addClass} `
 
     const isArray = Array.isArray(text);
 

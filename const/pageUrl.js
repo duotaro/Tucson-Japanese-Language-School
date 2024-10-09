@@ -91,7 +91,7 @@ export const CLASS_URL = {
     ORDERING: null,
     GROUP_ORDERING: 2,
     IS_PARENT:false,
-    IS_ACTIVE:false
+    IS_ACTIVE:true
 }
 export const KANJI_URL = {
     PAGE_KEY:"kanjikentei",
