@@ -34,18 +34,20 @@ export class SchaduleEntity {
             }
         }
         if(item.properties["link"] && item.properties["link"].url){
-            this.url = item.properties["link"].url
+            this.link = item.properties["link"].url
         }
         
         if(item.properties["location"].rich_text[0]){
           this.location = item.properties["location"].rich_text[0].text.content
         }
-        if(item.properties["backgroundColor"].rich_text[0]){
+        if(item.properties["isEvent"].checkbox){
+            this.isEvent = item.properties["isEvent"].checkbox
+        }
+        if(item.properties["backgroundColor"] && item.properties["backgroundColor"].rich_text[0]){
             this.backgroundColor = item.properties["backgroundColor"].rich_text[0].text.content
+            this.borderColor = item.properties["backgroundColor"].rich_text[0].text.content
         }
-        if(item.properties["textColor"].rich_text[0]){
-            this.textColor = item.properties["textColor"].rich_text[0].text.content
-        }
+        
         this.editable = false
     }
 }

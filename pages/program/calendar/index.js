@@ -3,13 +3,12 @@ import Layout from '../../../components/layout'
 import React, { useContext } from 'react';
 import LocaleContext from "../../../components/context/localeContext";
 import { useLocale } from "../../../utils/locale";
-import Prepare from "../../../components/parts/prepare";
 import Calender from "../../../components/parts/program/calender";
-import Section from "../../../components/parts/section";
 import { getDatabase } from "../../../lib/notion";
+import saveImageIfNeeded from "../../../components/download/index"
+import savePdfIfNeeded from "../../../components/download/pdf"
 
-
-export default function CalendarPage({ list }) {
+export default function CalendarPage({ files, list }) {
   const { locale } = useContext(LocaleContext);
   const { json, metaTitleExtension } = useLocale(locale)
   let lang = json.navigation
@@ -21,29 +20,38 @@ export default function CalendarPage({ list }) {
         <meta name="description" content={`${lang.calendar} - ${lang.description}`} />
       </Head>
 
-      <div className="container mt-5 w-full mx-auto">
+      <div className="w-full mx-auto">
         {/* <Section py="py-2 md:py-4 lg:py-8"> */}
-          <Calender list={list}/>
+          <Calender files={files} list={list}/>
         {/* </Section> */}
       </div>
     </Layout>
   );
 }
 
-// https://www.notion.so/8d87080f73f14e8a9e7ba934c1d928c6?v=24a41206b21d4c62bc6e0c5e05bace7e&pvs=4
 export const getStaticProps = async (context) => {
-  const database = await getDatabase("8d87080f73f14e8a9e7ba934c1d928c6")
+  const files = await getDatabase("11aa8c0ecf8c803e8289cb5bd9a5f80a")
+  const list = await getDatabase("8d87080f73f14e8a9e7ba934c1d928c6")
   
-  // let props = []
-  // for(let item of howto){
-  //   props.push(item.properties)
-  // }
+  console.log(files)
+  let props = []
+  for(let item of files){
+    props.push(item.properties)
+  }
 
-  // await saveImageIfNeeded(props, "calendar")
+  await saveImageIfNeeded(props, "calendar")
+  await savePdfIfNeeded(props, "calendar")
+  // if(props && props.length){
+  //   //await saveImageIfNeeded(props, "calendar")
+  //   await savePdfIfNeeded(props, "calendar")
+  // }
+  console.log(props)
+  
 
   return {
     props: {
-      list: database
+      files: files[0],
+      list: list
     },
     revalidate: 1
   };

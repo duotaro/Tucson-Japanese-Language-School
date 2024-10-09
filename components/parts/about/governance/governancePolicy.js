@@ -30,7 +30,7 @@ export default function GovernancePolicy({ orgPolicys }) {
               <Title title={lang.title} />
             </div>
             {/* PDFリンクセクション */}
-            <div class="grid gap-4 sm:grid-cols-2 md:gap-6 md:grid-cols-3 xl:px-20">
+            <div className="grid gap-4 sm:grid-cols-2 md:gap-6 md:grid-cols-3 xl:px-20">
               {list.map((item) => {
                 return (
                   <PdfDownloads filePath={item.pdf} title={item.title} />  
