@@ -5,7 +5,6 @@ export default class SliderEntity {
     constructor(item){
 
         this.active = item.properties["active"].checkbox
-        console.log(item.properties["active"])
         if(this.active){
             //const name = item.properties["image"].files[0].name
 

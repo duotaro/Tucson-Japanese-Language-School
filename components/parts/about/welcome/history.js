@@ -20,7 +20,7 @@ export default function History({ history }) {
   return (
     <>
     <Section bg="bg-slate-200">
-      <div className="container px-6 mx-auto items-center">
+      <div className="container mx-auto items-center">
         <div className="flex flex-col items-center  ">
             <Title title={entity.title} />
             <Paragraphs text={entity.text} />

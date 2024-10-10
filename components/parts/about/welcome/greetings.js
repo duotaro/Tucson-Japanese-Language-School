@@ -73,7 +73,7 @@ export default function Greeting({ greeting }) {
             <div className="flex flex-col items-center py-5 px-10 sm:px-20 md:px-0 lg:px-5 xl:px-10 2xl:px-20">
               <Image
                 src={entity.image}
-                alt="Mission"
+                alt="Greetings"
                 width={500}
                 height={300}
                 layout="responsive"

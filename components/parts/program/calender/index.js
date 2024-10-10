@@ -46,7 +46,6 @@ const renderEventContent = (eventInfo, locale) => {
 };
 
 export default function Calender({files, list}) {
-  console.log(files)
   const calendarRef = useRef(null);
   const { locale } = useContext(LocaleContext);
   const { json } = useLocale(locale)

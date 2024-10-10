@@ -23,8 +23,6 @@ export function LocaleProvider({ children }) {
     // } 
 
     useEffect(() => {
-      // クエリパラメータが存在する場合はそれを使用
-      console.log("-----------------------------------------------------------------------------")
       if (queryLang) {
         setLocale(queryLang);
       } else {

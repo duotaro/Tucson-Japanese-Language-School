@@ -30,9 +30,6 @@ export default function ClassComponent({category, classes}) {
   for(const item of classes) {
     let c = {}
     const cName =  item.properties["category"].select.name
-    console.log("----------")
-    console.log(item.properties["category"].select)
-    console.log("-+++++++++")
     for(const cat of category){
       const cId =  cat.properties["id"].select.name
       if(cId == cName){
@@ -40,7 +37,6 @@ export default function ClassComponent({category, classes}) {
         break
       }
     }
-    console.log(c)
 
     const entity = new ClassEntity(item , c, locale == "ja")
     list.push(entity)
@@ -51,7 +47,7 @@ export default function ClassComponent({category, classes}) {
     <>
      {list.map((item, index) => {
       const pos = index%2 == 0 ? "lg:col-start-1" : "lg:col-start-2" 
-      const categoryColor = category == "Inherited" ? "bg-blue-400 hover:bg-blue-800" : "bg-orange-400 hover:bg-orange-800"
+      const categoryColor = item.category == "Inherited" ? "bg-blue-400 hover:bg-blue-600" : "bg-orange-400 hover:bg-orange-600"
       let bgMulti = "bg-gray-50"
       switch(index%4){
         case 0:
@@ -76,36 +72,38 @@ export default function ClassComponent({category, classes}) {
             <div className='mb-5'>
               <Title title={item.title} /> 
             </div>
-            <div className="container px-6 mx-auto">
-              <div className="grid gap-8 lg:grid-flow-col-dense lg:grid-cols-2 md:gap-12">
+            <div className="container px-6 mx-auto ">
+              <div className="grid gap-8 lg:grid-flow-col-dense lg:grid-cols-2 md:gap-12 relative">
                   <CustomImage src={item.image} alt={item.title} addClass={pos} />
-                  <div className="flex flex-col items-center t">
+                  <div className="flex flex-col items-center">
                       <div className='flex flex-row justify-center items-center text-gray-800 hover:text-blue-500 gap-5'>
                         {item.target && ( <Paragraphs text={item.target} />)}
                         {item.categoryTitle && (
-                        <div className="relative group ">
+                        <div className=" group ">
                           <span
                             className={[
                               "whitespace-nowrap",
                               "rounded-lg",
-                              "w-96",
+                              "w-80",
+                              "sm:w-96",
                               "lg:w-[500px]",
-                              "bg-orange-200",
+                              categoryColor,
                               "px-5",
                               "py-3",
                               "text-white",
                               "text-sm",
                               "absolute",
-                              "-top-20",
+                              "top-1/2",
                               "left-1/2",
                               "-translate-x-1/2",
+                              "-translate-y-1/2",
                               "opacity-0",
                               "group-hover:opacity-100",
                               "transition",
                               "pointer-events-none",
                             ].join(" ")}
                           >
-                            <Paragraphs text={item.categoryText} mt='mt-1'/>
+                            <Paragraphs text={item.categoryText} mt='mt-1 text-white'/>
                           </span>
                           <button className={`rounded text-sm text-white text-semiboldborder px-2 py-1 shadow transition mt-4 ${categoryColor}`}>
                             {item.categoryTitle}

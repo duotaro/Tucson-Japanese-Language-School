@@ -18,7 +18,7 @@ export default function OurStory({ story }) {
 
   return (
     <Section>
-      <div className="container px-6 mx-auto items-center ">
+      <div className="container mx-auto items-center ">
         <div className="flex flex-col ">
           <Title title={entity.title} />
           <Paragraphs text={entity.text} />
