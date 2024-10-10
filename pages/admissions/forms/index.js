@@ -32,7 +32,7 @@ export default function AdmissionFormsPage({ about }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const url = process.env.EMAIL_WORKER_URL ?? "http://localhost:8787/"
+    const url = process.env.NEXT_PUBLIC_EMAIL_WORKER_URL ?? "http://localhost:8787/"
     //const url = "http://localhost:8787/"
 
     // フォームデータをサーバーに送信する処理をここに追加
