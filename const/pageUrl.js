@@ -125,7 +125,7 @@ export const ADMISSION_URL ={
     ORDERING: 4,
     GROUP_ORDERING: null,
     IS_PARENT:true,
-    IS_ACTIVE:false
+    IS_ACTIVE:true
 }
 export const FORMS_URL ={
     PAGE_KEY:"forms",
@@ -133,7 +133,7 @@ export const FORMS_URL ={
     ORDERING: null,
     GROUP_ORDERING: 1,
     IS_PARENT:false,
-    IS_ACTIVE:false
+    IS_ACTIVE:true
 }
 
 /** news */
@@ -206,7 +206,7 @@ export const PAYMENT_URL ={
     ORDERING: 8,
     GROUP_ORDERING: null,
     IS_PARENT:true,
-    IS_ACTIVE:true
+    IS_ACTIVE:false
 }
 
 

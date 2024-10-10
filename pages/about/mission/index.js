@@ -18,13 +18,16 @@ export default function MissionPage({ about, philosophy, policy }) {
   let lang = json.navigation
 
   let {mission, vision} = convertAboutFromDatabase(about, locale == "ja")
-
+  let breadcrumb = {
+    parents: [{link: '/about/', title: "about"}],
+    current: lang.mission
+  }
 
   return (
-    <Layout>
+    <Layout breadcrumb={breadcrumb}>
       <Head>
-        <title>{lang.about} - {metaTitleExtension} </title>
-        <meta name="description" content={`${lang.about} - ${lang.description}`} />
+        <title>{lang.mission} - {metaTitleExtension} </title>
+        <meta name="description" content={`${lang.mission} - ${lang.description}`} />
       </Head>
 
       <div className="">

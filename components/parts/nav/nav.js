@@ -7,6 +7,7 @@ import {
   DialogPanel
 } from '@headlessui/react'
 import {
+  ArrowTopRightOnSquareIcon,
   Bars3Icon,
   XMarkIcon
 } from '@heroicons/react/24/outline'
@@ -15,6 +16,7 @@ import DisclosureDetail from './disclosureDetail';
 
 export default function Nav({ }) {
   const { locale } = useContext(LocaleContext);
+  const { json} = useLocale(locale)
 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
@@ -32,6 +34,14 @@ export default function Nav({ }) {
           <Bars3Icon aria-hidden="true" className="h-6 w-6" />
         </button>
       </div>
+      <div className="flex items-center justify-end top-2 right-4 block lg:hidden shadow">
+        <a target="_blank" href="https://tucsonhosyuko.square.site/" >
+          <div className="text-sm rounded-lg px-2 py-2 text-white border-blue-500 bg-blue-500 flex justify-center items-center ">
+            <ArrowTopRightOnSquareIcon aria-hidden="true" className="h-4 w-4 mr-1" />
+            <span>{json.navigation.payment}</span>
+          </div>
+        </a>
+      </div>
     </nav>
     <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-center p-6 lg:px-8 hidden lg:flex">
       <div className="flex md:gap-x-12">
@@ -44,6 +54,7 @@ export default function Nav({ }) {
         )}
       </div>
     </nav>
+
     <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
       <div className="fixed inset-0 z-10" />
       <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">

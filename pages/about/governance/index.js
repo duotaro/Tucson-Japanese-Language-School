@@ -15,9 +15,13 @@ export default function GovernancePage({ directors, orgChart, org_policys }) {
   const { json, metaTitleExtension } = useLocale(locale)
   let lang = json.navigation
 
+  let breadcrumb = {
+    parents: [{link: '/about/', title: "about"}],
+    current: lang.governance
+  }
 
   return (
-    <Layout>
+    <Layout breadcrumb={breadcrumb}>
       <Head>
         <title>{lang.governance} - {metaTitleExtension} </title>
         <meta name="description" content={`${lang.governance} - ${lang.description}`} />
