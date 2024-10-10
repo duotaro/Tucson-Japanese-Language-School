@@ -42,8 +42,8 @@ let breadcrumb = {
       </Head>
 
       <div className="">
-        <Section py="py-2 md:py-4 lg:py-6" px="px-0 md:px-20 lg:px-28 xl:px-40">
-          <div className="container px-6 mx-auto justify-center m-4">
+        <Section  px="px-0 md:px-20 lg:px-28 xl:px-40">
+          <div className="container px-2 mx-auto justify-center m-4">
             <div className="flex flex-col w-full px-4 justify-center items-center mb-5">
               <Title title={title} />
               <Paragraphs text={text} maxWidth="full"/>

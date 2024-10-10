@@ -40,6 +40,37 @@
   text-overflow: ellipsis; /* テキストが長い場合、省略記号を表示 */
 }
 
+.stack-section:nth-child(1) {
+  background-color: white; /* 1番目のアイテムの背景色 */
+}
+
+.stack-section:nth-child(2) {
+  background-color: #f9fafb; /* bg-gray-50に相当する色 */
+}
+
+.stack-section:nth-child(3) {
+  background-color: #e0f2ff; /* bg-gray-100に相当する色 */
+}
+
+.stack-section:nth-child(4) {
+  background-color: white; /* 4番目のアイテムの背景色（1番目と同じ） */
+}
+
+.stack-section:nth-child(5) {
+  background-color: #f9fafb; /* 5番目のアイテムの背景色（2番目と同じ） */
+}
+
+.stack-section:nth-child(6) {
+  background-color: #e0f2ff; /* 6番目のアイテムの背景色（3番目と同じ） */
+}
+
+/* 7番目以降も繰り返し */
+.stack-section:nth-child(n+7) {
+  background-color: white; /* 繰り返しのため、1番目と同じ色 */
+}
+
+.stack-section:nth-child(n+8) {
+  background-color: #f9fafb; /* 繰り返しのため、2番目
 
 
 

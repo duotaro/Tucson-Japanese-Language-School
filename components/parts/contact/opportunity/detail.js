@@ -34,7 +34,7 @@ export default function OpportunityDetail({ opportunities }) {
           return (
             <li className="me-2" role="presentation">
               <button
-                className={`min-w-18 md:min-w-32 lg:min-w-36 inline-block p-4 border-b-2 rounded-t-lg ${
+                className={`min-w-4 md:min-w-32 lg:min-w-36 inline-block p-4 border-b-2 rounded-t-lg ${
                   activeTab === item.tag
                     ? "border-blue-500 text-blue-500"
                     : "hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
