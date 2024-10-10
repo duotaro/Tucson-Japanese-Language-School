@@ -7,6 +7,7 @@ import { useLocale } from "../../../utils/locale";
 import { getDatabase } from "../../../lib/notion";
 import saveImageIfNeeded from "../../../components/download/index"
 import ClassComponent from "../../../components/parts/program/class";
+import Title from "../../../components/parts/text/title";
 
 
 export default function ClassPage({ category, classes }) {
@@ -14,8 +15,13 @@ export default function ClassPage({ category, classes }) {
   const { json, metaTitleExtension } = useLocale(locale)
   let lang = json.navigation
 
+  let breadcrumb = {
+    parents: [{link: '/program/', title: "program"}],
+    current: lang.class
+  }
+
   return (
-    <Layout>
+    <Layout breadcrumb={breadcrumb}>
       <Head>
         <title>{lang.class} - {metaTitleExtension} </title>
         <meta name="description" content={`${lang.class} - ${lang.description}`} />

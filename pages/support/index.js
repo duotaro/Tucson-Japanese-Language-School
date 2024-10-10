@@ -13,7 +13,7 @@ import HowToDonate from "../../components/parts/sponsor/howto";
 import saveImageIfNeeded from "../../components/download";
 
 
-export default function Sponsors({ sponsors, support, sponsor, donation, howto }) {
+export default function SupportPage({ sponsors, support, sponsor, donation, howto }) {
   const { locale } = useContext(LocaleContext);
   const { json, metaTitleExtension } = useLocale(locale)
   let lang = json.navigation
@@ -25,12 +25,18 @@ export default function Sponsors({ sponsors, support, sponsor, donation, howto }
     sponsorList.push(sponsor)
   }
 
+  let breadcrumb = {
+    parents: [],
+    current: lang.support
+  }
+
+
 
   return (
-    <Layout>
+    <Layout breadcrumb={breadcrumb}>
       <Head>
-        <title>{lang.sponsors} - {metaTitleExtension} </title>
-        <meta name="description" content={`${lang.sponsors} - ${lang.description}`} />
+        <title>{lang.support} - {metaTitleExtension} </title>
+        <meta name="description" content={`${lang.support} - ${lang.description}`} />
       </Head>
 
       <div className="py-5 justify-center items-center">

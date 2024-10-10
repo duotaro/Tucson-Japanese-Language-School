@@ -27,9 +27,14 @@ export default function GovernancePage({ reports }) {
   const latest = all[0]
   const past = all.slice(1)
 
+  let breadcrumb = {
+    parents: [{link: '/about/', title: "about"}],
+    current: lang.report
+  }
+
 
   return (
-    <Layout>
+    <Layout breadcrumb={breadcrumb}>
       <Head>
         <title>{lang.report} - {metaTitleExtension} </title>
         <meta name="description" content={`${lang.report} - ${lang.description}`} />
@@ -37,7 +42,7 @@ export default function GovernancePage({ reports }) {
 
       <div className="">
         <div className="row">
-          <Section py="py-8 md:py-6 lg:py-10" bg='bg-gray-50'>
+          <Section py="py-8 md:py-6 lg:py-10" >
             <div className="container px-6 mx-auto">
               <div className="flex flex-wrap -mx-3 mb-5">
                 <div className="w-full max-w-full px-3 mx-auto">

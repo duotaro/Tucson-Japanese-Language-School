@@ -10,8 +10,13 @@ export default function Sponsors({  }) {
   const { json, metaTitleExtension } = useLocale(locale)
   let lang = json.navigation
 
+  let breadcrumb = {
+    parents: [{link: '/about/', title: "about"}],
+    current: lang.staff
+  }
+
   return (
-    <Layout>
+    <Layout breadcrumb={breadcrumb}>
       <Head>
         <title>{lang.staff} - {metaTitleExtension} </title>
         <meta name="description" content={`${lang.staff} - ${lang.description}`} />

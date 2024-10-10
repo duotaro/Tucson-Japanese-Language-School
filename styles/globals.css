@@ -34,6 +34,12 @@
     border: 1px solid var(--fc-event-border-color);
     display: block;
 }
+.breadcrumb-item {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; /* テキストが長い場合、省略記号を表示 */
+}
+
 
 
 

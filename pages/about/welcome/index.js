@@ -16,8 +16,14 @@ export default function AboutPage({ welcome }) {
 
   let {greeting, story, history} = welcome
 
+
+  let breadcrumb = {
+    parents: [{link: '/about/', title: "about"}],
+    current: lang.welcome
+  }
+
   return (
-    <Layout>
+    <Layout breadcrumb={breadcrumb}>
       <Head>
         <title>{lang.welcome} - {metaTitleExtension} </title>
         <meta name="description" content={`${lang.welcome} - ${lang.description}`} />

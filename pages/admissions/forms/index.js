@@ -1,25 +1,29 @@
 import Head from "next/head";
-import Layout from '../../components/layout'
+import Layout from '../../../components/layout'
 import React, { useContext } from 'react';
-import LocaleContext from "../../components/context/localeContext";
-import { useLocale } from "../../utils/locale";
-import { getDatabase } from "../../lib/notion";
-import { convertAboutFromDatabase } from "../../entity/aboutEntity";
-import Prepare from "../../components/parts/prepare";
+import LocaleContext from "../../../components/context/localeContext";
+import { useLocale } from "../../../utils/locale";
+import { getDatabase } from "../../../lib/notion";
+import { convertAboutFromDatabase } from "../../../entity/aboutEntity";
+import Prepare from "../../../components/parts/prepare";
 
-export default function AboutPage({ about }) {
+export default function AdmissionFormsPage({ about }) {
   const { locale } = useContext(LocaleContext);
   const { json, metaTitleExtension } = useLocale(locale)
   let lang = json.navigation
 
   let {aboutSchool} = convertAboutFromDatabase(about, locale == "ja")
 
+  let breadcrumb = {
+    parents: [{link: '/admissions/', title: "admissions"}],
+    current: lang.forms
+  }
 
   return (
-    <Layout>
+    <Layout breadcrumb={breadcrumb}>
       <Head>
-        <title>{lang.about} - {metaTitleExtension} </title>
-        <meta name="description" content={`${lang.about} - ${lang.description}`} />
+        <title>{lang.forms} - {metaTitleExtension} </title>
+        <meta name="description" content={`${lang.forms} - ${lang.description}`} />
       </Head>
 
       <div className="">

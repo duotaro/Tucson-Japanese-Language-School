@@ -12,9 +12,13 @@ export default function CalendarPage({ files, list }) {
   const { locale } = useContext(LocaleContext);
   const { json, metaTitleExtension } = useLocale(locale)
   let lang = json.navigation
+  let breadcrumb = {
+    parents: [{link: '/program/', title: "program"}],
+    current: lang.calendar
+  }
 
   return (
-    <Layout>
+    <Layout breadcrumb={breadcrumb}>
       <Head>
         <title>{lang.calendar} - {metaTitleExtension} </title>
         <meta name="description" content={`${lang.calendar} - ${lang.description}`} />

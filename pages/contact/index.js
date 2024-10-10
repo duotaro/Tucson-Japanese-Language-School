@@ -12,8 +12,14 @@ export default function ContactPage({ isTop }) {
   const { json, metaTitleExtension } = useLocale(locale)
   let lang = json.navigation
 
+  let breadcrumb = {
+    parents: [],
+    current: lang.contact
+  }
+
+
   return (
-    <Layout>
+    <Layout breadcrumb={breadcrumb}>
       <Head>
         <title>{lang.contact} - {metaTitleExtension} </title>
         <meta name="description" content={`${lang.contact} - ${lang.description}`} />

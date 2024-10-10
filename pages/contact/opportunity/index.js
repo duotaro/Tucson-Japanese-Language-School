@@ -29,8 +29,13 @@ export default function ContactOpportunityPage({ opportunities, general }) {
 
 }
 
+let breadcrumb = {
+  parents: [{link: "/contact", title: "contact"}],
+  current: lang.opportunity
+}
+
   return (
-    <Layout>
+    <Layout breadcrumb={breadcrumb}>
       <Head>
         <title>{lang.opportunity} - {metaTitleExtension} </title>
         <meta name="description" content={`${lang.opportunity} - ${lang.description}`} />
