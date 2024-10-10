@@ -32,8 +32,11 @@ export default function AdmissionFormsPage({ about }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    const url = process.env.EMAIL_WORKER_URL ?? "http://localhost:8787/"
+    //const url = "http://localhost:8787/"
+
     // フォームデータをサーバーに送信する処理をここに追加
-    const response = await fetch('/api/send', {
+    const response = await fetch(url, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -55,6 +58,7 @@ export default function AdmissionFormsPage({ about }) {
     parents: [{link: '/admissions/', title: "admissions"}],
     current: lang.forms
   }
+
 
   return (
     <Layout breadcrumb={breadcrumb}>
