@@ -20,6 +20,8 @@
       "nihongocafe": "にほんごかふぇ",
       "event": "イベント",
       "admissions": "入学案内",
+      "qualification": "入学資格",
+      "tuition": "授業料",
       "forms": "入学手続き・見学",
       "news": "お知らせ",
       "support": "支援・寄付",
@@ -68,6 +70,10 @@
     },
     "bylaws": {
       "title": "組織規約"
+    },
+    "price":{
+      "fee":"入学費(新規入学生のみ)",
+      "caution":"※7月31日納入締切り"
     },
     "common": {
       "show_more": "もっと詳しく",

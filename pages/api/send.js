@@ -30,11 +30,6 @@ console.log(toEmail)
 console.log(fromEmail)
 console.log("-----------------")
 
-  // 一時ファイルの作成
-  const tempFilePath = path.join(os.tmpdir(), 'appointment-details.txt');
-  fs.writeFileSync(tempFilePath, emailText); // テキストファイルに書き込み
-  // テキストファイルを読み込む
-  const fileBuffer = fs.readFileSync(tempFilePath);
 
   const { data, error } = await resend.emails.send({
     from: fromEmail,

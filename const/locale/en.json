@@ -20,6 +20,8 @@
       "nihongocafe": "Nihongo Cafe",
       "event": "Events",
       "admissions": "Admission",
+      "qualification": "Qualification",
+      "tuition": "Tuition",
       "forms": "Enrollment",
       "news": "News",
       "support": "Support",
@@ -68,6 +70,10 @@
     },
     "bylaws": {
       "title": "Organizational Bylaws"
+    },
+    "price":{
+      "fee":"Enrollment Fee for new students",
+      "caution":"Note:fee by Monday. July 31st. "
     },
     "common": {
       "show_more": "See More",
