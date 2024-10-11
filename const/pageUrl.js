@@ -50,7 +50,7 @@ export const STAFF_URL = {
     ORDERING: null,
     GROUP_ORDERING: 4,
     IS_PARENT:false,
-    IS_ACTIVE:false
+    IS_ACTIVE:true
 }
 export const POLICY_URL = {
     PAGE_KEY:"policy",

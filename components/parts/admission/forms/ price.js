@@ -6,7 +6,7 @@ import LocaleContext from '../../../context/localeContext';
 import { useLocale } from '../../../../utils/locale';
 import Title from '../../text/title';
 
-const PricingSection = ({price}) => {
+const PricingSection = ({price, discountFamily, discountStaff}) => {
     console.log(price)
   const { locale } = useContext(LocaleContext);
   const { json, metaTitleExtension } = useLocale(locale)
@@ -20,7 +20,24 @@ const PricingSection = ({price}) => {
   }
   list.sort((a, b) => a.ordering - b.ordering);
 
+  const familyList = []
+  for(const family of discountFamily){
+    const entity = new DisCountFamily(family, list)
+    familyList.push(entity)
+  }
+  familyList.sort((a, b) => b.first - a.first);
+
+  const staffList = []
+  for(const staff of discountStaff){
+    const entity = new DisCountStaff(staff, list)
+    staffList.push(entity)
+  }
+  staffList.sort((a, b) => b.price - a.price);
+  //
+
+
   return (
+    <>
     <Section>
       <div className="mx-auto max-w-7xl ">
         <div className="mb-5 text-center">
@@ -84,13 +101,148 @@ const PricingSection = ({price}) => {
                         </div>
                     )
                 })}
-            </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </Section>
+    <Section bg='!bg-white'  py="py-1 md:py-2 lg:py-4">
+      <div className="mx-auto max-w-7xl mt-10">
+        <div className='flex items-center justify-center gap-10 flex-col lg:flex-row transition-all duration-500'>
+          <div className="mb-5 text-center flex-1 ">
+            <Title title={`家族割引後授業料（翻訳）`} fontSize="text-lg sm:text-xl lg:text-2xl"/>
+            <div className={`mt-10 flex items-center justify-center`}>
+              <DiscountFamilyComponent list={familyList} locale={locale}/>
+            </div>
+          </div>
+          <div className="mb-5 text-center flex-1">
+            <Title title={`スタッフ割引後授業料（翻訳）`} fontSize="text-lg sm:text-xl lg:text-2xl"/>
+            <div className={`mt-10 flex items-center justify-center`}>
+              <DiscountStaffComponent list={staffList} locale={locale}/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Section>
+    </>
   );
 };
 
 export default PricingSection;
+
+
+class DisCountFamily{
+  constructor(item, priceList){
+
+    this.payment = item.properties["payment"].select.name
+
+    this.priceDetail = null
+    for(const price of priceList) {
+      if(this.payment == price.payment){
+        this.priceDetail = price
+      }
+    }
+
+    this.first = item.properties["1st"].number
+    this.second = item.properties["2nd"].number
+    this.third = item.properties["3rd"].number
+    this.fourth = item.properties["4th"].number
+
+ }
+}
+
+class DisCountStaff{
+  constructor(item, priceList){
+
+    this.payment = item.properties["payment"].select.name
+
+    this.code = null
+    if(item.properties["code"].rich_text[0]){
+      this.code = item.properties["code"].rich_text[0].text.content
+    }
+
+    this.priceDetail = null
+    for(const price of priceList) {
+      if(this.payment == price.payment){
+        this.priceDetail = price
+      }
+    }
+
+    this.price = item.properties["price"].number
+
+ }
+}
+
+const DiscountFamilyComponent = ({list, locale}) => {
+  const unit = locale == "ja" ? "人目" : "st student’s Tuition"
+  return (
+    <table className="text-left table-fixed">
+      <thead>
+        <tr>
+          <th className="p-4 border-b border-slate-200 bg-slate-50">
+            <p className="text-sm font-normal leading-none text-slate-500"></p>
+          </th>
+          <th className="p-4 border-b border-slate-200 bg-slate-50">
+            <p className="text-sm font-normal leading-none text-slate-500 whitespace-normal">1{unit}</p>
+          </th>
+          <th className="p-4 border-b border-slate-200 bg-slate-50">
+            <p className="text-sm font-normal leading-none text-slate-500 whitespace-normal">2{unit}</p>
+          </th>
+          <th className="p-4 border-b border-slate-200 bg-slate-50">
+            <p className="text-sm font-normal leading-none text-slate-500 whitespace-normal">3{unit}</p>
+          </th>
+          <th className="p-4 border-b border-slate-200 bg-slate-50">
+            <p className="text-sm font-normal leading-none text-slate-500 whitespace-normal">4{unit}</p>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        {list.map((item, index) => {
+          return (
+            <tr key={index} className="hover:bg-slate-50 border-b border-slate-200">
+              <td className="p-4 py-5 whitespace-normal"><p className="block font-semibold text-sm text-slate-800">{item.priceDetail.title}</p></td>
+              <td className="p-4 py-5 whitespace-normal"><p className="block font-semibold text-sm text-slate-800">${item.first}</p></td>
+              <td className="p-4 py-5 whitespace-normal"><p className="block font-semibold text-sm text-slate-800">${item.second}</p></td>
+              <td className="p-4 py-5 whitespace-normal"><p className="block font-semibold text-sm text-slate-800">${item.third}</p></td>
+              <td className="p-4 py-5 whitespace-normal"><p className="block font-semibold text-sm text-slate-800">${item.fourth}</p></td>
+            </tr>
+          )
+        })}
+      </tbody>
+    </table>
+  );
+};
+
+const DiscountStaffComponent = ({list, locale}) => {
+  const unit = locale == "ja" ? "授業料" : "Tuition"
+  const code = locale == "ja" ? "クーポンコード" : "COUPON CODE"
+  return (
+    <table className="text-left table-fixed">
+      <thead>
+        <tr>
+          <th className="p-4 border-b border-slate-200 bg-slate-50">
+            <p className="text-sm font-normal leading-none text-slate-500"></p>
+          </th>
+          <th className="p-4 border-b border-slate-200 bg-slate-50">
+            <p className="text-sm font-normal leading-none text-slate-500">{unit}</p>
+          </th>
+          <th className="p-4 border-b border-slate-200 bg-slate-50">
+            <p className="text-sm font-normal leading-none text-slate-500">{code}</p>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        {list.map((item, index) => {
+          return (
+            <tr key={index} className="hover:bg-slate-50 border-b border-slate-200">
+              <td className="p-4 py-5 whitespace-normal"><p className="block font-semibold text-sm text-slate-800 whitespace-normal">{item.priceDetail.title}</p></td>
+              <td className="p-4 py-5"><p className="block font-semibold text-sm text-slate-800">${item.price}</p></td>
+              <td className="p-4 py-5"><p className="block font-semibold text-sm text-slate-800">{item.code}</p></td>
+            </tr>
+          )
+        })}
+      </tbody>
+    </table>
+  );
+};

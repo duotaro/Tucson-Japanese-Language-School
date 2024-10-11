@@ -3,9 +3,10 @@ import Layout from '../../../components/layout'
 import React, { useContext } from 'react';
 import LocaleContext from "../../../components/context/localeContext";
 import { useLocale } from "../../../utils/locale";
+import ProfileCardList from "../../../components/parts/about/staff";
 
 
-export default function Sponsors({  }) {
+export default function StaffPage({  }) {
   const { locale } = useContext(LocaleContext);
   const { json, metaTitleExtension } = useLocale(locale)
   let lang = json.navigation
@@ -22,11 +23,9 @@ export default function Sponsors({  }) {
         <meta name="description" content={`${lang.staff} - ${lang.description}`} />
       </Head>
 
-      <div className="container">
+      <div className="">
         <div className="row">
-          <section className="col">
-            職員紹介のページ
-          </section>
+          <ProfileCardList />
         </div>
       </div>
     </Layout>

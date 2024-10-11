@@ -31,5 +31,7 @@ export class PriceEntity {
         if(this.frequency && this.price){
             this.total = this.frequency*this.price
         }
+
+        this.payment = item.properties["payment"].select.name
     }
 }

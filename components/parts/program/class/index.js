@@ -18,6 +18,7 @@ import FullScreenModal from '../../modal/fullscreenModal'
 import { ArrowDownOnSquareStackIcon } from '@heroicons/react/24/outline'
 import { ACCESABLE_IMAGE_PATH, ACCESABLE_PDF_PATH, DOWNLOAD_IMAGE_EXTENSION } from '../../../../const'
 import ClassEntity from '../../../../entity/classEntity'
+import Caution from '../../caution'
 
 
 
@@ -68,13 +69,15 @@ export default function ClassComponent({category, classes}) {
       }
 
       return (
-         <Section bg={bgMulti} key={item.id}>
+         <Section key={item.id}>
             <div className='mb-5'>
               <Title title={item.title} /> 
             </div>
             <div className="container px-6 mx-auto ">
               <div className="grid gap-8 lg:grid-flow-col-dense lg:grid-cols-2 md:gap-12 relative">
-                  <CustomImage src={item.image} alt={item.title} addClass={pos} />
+                  <div className="flex items-center items-center mt-2">
+                    <CustomImage src={item.image} alt={item.title} addClass={pos} />
+                  </div>
                   <div className="flex flex-col items-center">
                       <div className='flex flex-row justify-center items-center text-gray-800 hover:text-blue-500 gap-5'>
                         {item.target && ( <Paragraphs text={item.target} />)}
@@ -118,6 +121,10 @@ export default function ClassComponent({category, classes}) {
           </Section>
       )
      })}
+
+     <Section>
+       <Caution text={`※対象年齢はあくまで目安として定めているものであり、クラスプレイスメントは生徒の日本語レベルに応じて、相談をしながら決定します。(翻訳　表示場所考える)`} />
+     </Section>
     </>
   );
 }
