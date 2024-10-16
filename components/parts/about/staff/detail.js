@@ -4,7 +4,7 @@ import React from 'react';
 const ProfileCard = ({item}) => {
    const { name, title, image, description } = item
   return (
-      <div className="flex relative my-16  max-w-sm mx-auto py-5 px-5">
+      <div className="flex relative my-10  lg:max-w-sm mx-auto py-5 px-5">
         <div className="rounded-lg overflow-hidden shadow-lg bg-white">
             <div className="absolute -mt-20 w-full flex justify-center">
                 <div className="h-32 w-32">

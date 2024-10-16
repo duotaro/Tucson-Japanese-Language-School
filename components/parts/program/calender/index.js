@@ -30,7 +30,14 @@ const renderEventContent = (eventInfo, locale) => {
   const startDate = new Date(start)
   const endDate = new Date(end)
 
+
   const isSingleDayEvent = !end || startDate.toISOString().split('T')[0] === endDate.toISOString().split('T')[0];
+
+  console.log("------------------------------------------")
+  console.log(eventInfo)
+  console.log(isSingleDayEvent)
+  console.log(allDay)
+  console.log("------------------------------------------")
 
   return (
     <div className="custom-event  text-white">
