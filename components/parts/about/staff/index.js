@@ -29,7 +29,7 @@ const ProfileCardList = ({staffList, roleList}) => {
     <Section>
       <div className="container mx-auto">
         <div className="mb-5"><Title title={json.navigation.staff} fontSize = "text-2xl sm:text-3xl lg:text-4xl"/></div>
-        <div className="grid grid-cols-1 gap-8 pt-10 justify-items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 pt-10 justify-items-center">
         {list.map((profile, index) => (
             <ProfileCard
             key={index}
