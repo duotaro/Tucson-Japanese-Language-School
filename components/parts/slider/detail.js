@@ -1,6 +1,6 @@
 import { useState, useContext } from 'react';
 
-import SliderEntity from '../../../entity/sliderEntity.js'
+import SliderEntity from '@/entity/sliderEntity.js'
 import { SplideSlide } from "@splidejs/react-splide";
 import LocaleContext from '../../context/localeContext.js';
 export default function SliderDetail({post}) {

@@ -239,19 +239,19 @@ export const URLS = {
 
 export const createNavUrl = (item) => {
     if(item.GROUP == HOME_URL.PAGE_KEY){
-        return `${DOMAIN}/`
+        return `/`
     }
 
     if(item.IS_PARENT){
-        return `${DOMAIN}/${item.PAGE_KEY}/`
+        return `/${item.PAGE_KEY}/`
     }
     if(item.PAGE_KEY == CONTACT2_URL.PAGE_KEY){
-        return `${DOMAIN}/${item.GROUP}/`
+        return `/${item.GROUP}/`
     }
     if(item.PAGE_KEY == PAYMENT_URL.PAGE_KEY){
         return `https://tucsonhosyuko.square.site/`
     }
 
-    return `${DOMAIN}/${item.GROUP}/${item.PAGE_KEY}/`
+    return `/${item.GROUP}/${item.PAGE_KEY}/`
 
 }

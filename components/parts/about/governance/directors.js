@@ -5,11 +5,11 @@ import React, { useContext } from "react";
 import Image from "next/image"
 import Link from "next/link"
 import LocaleContext from "../../../context/localeContext";
-import { useLocale } from "../../../../utils/locale";
+import { useLocale } from "@/utils/locale";
 import Title from "../../text/title";
 import Paragraphs from "../../text/paragraphs";
 import CustomImage from "../../image/CustomImage";
-import { DirectorsEntity } from "../../../../entity/directorsEntity";
+import { DirectorsEntity } from "@/entity/directorsEntity";
 import Section from "../../section";
 
 export default function Directors({ directors }) {

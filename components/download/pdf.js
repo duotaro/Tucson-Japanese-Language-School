@@ -1,5 +1,5 @@
 import fs from 'fs'
-import { DOWNLOAD_PDF_PATH } from '../../const'
+import { DOWNLOAD_PDF_PATH } from '@/const'
 
 export const downloadPath = DOWNLOAD_PDF_PATH
 const savePdfIfNeeded = async (blocksWithChildren, path) => {

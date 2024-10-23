@@ -1,5 +1,5 @@
 import fs from 'fs'
-import { DOWNLOAD_IMAGE_EXTENSION, DOWNLOAD_IMAGE_PATH } from '../../const'
+import { DOWNLOAD_IMAGE_EXTENSION, DOWNLOAD_IMAGE_PATH } from '@/const'
 
 export const downloadImagePath = DOWNLOAD_IMAGE_PATH
 export const downloadImageExtention = DOWNLOAD_IMAGE_EXTENSION

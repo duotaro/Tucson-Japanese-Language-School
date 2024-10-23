@@ -1,9 +1,9 @@
 // components/PricingSection.js
 import { useState, useContext } from 'react';
 import Section from '../../section';
-import { PriceEntity } from '../../../../entity/priceEntity';
+import { PriceEntity } from '@/entity/priceEntity';
 import LocaleContext from '../../../context/localeContext';
-import { useLocale } from '../../../../utils/locale';
+import { useLocale } from '@/utils/locale';
 import Title from '../../text/title';
 
 const PricingSection = ({price, discountFamily, discountStaff}) => {

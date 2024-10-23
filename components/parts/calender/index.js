@@ -3,9 +3,9 @@
 
 import React, { useContext } from "react";
 import LocaleContext from "../../context/localeContext";
-import { useLocale } from "../../../utils/locale";
+import { useLocale } from "@/utils/locale";
 import CalenderDetail from "./detail";
-import { SchaduleEntity } from "../../../entity/scheduleEntity";
+import { SchaduleEntity } from "@/entity/scheduleEntity";
 
 export default function Calender({ scheduleList }) {
   const { locale } = useContext(LocaleContext);

@@ -4,13 +4,13 @@
 import React, { useContext, useState } from "react";
 import LocaleContext from "../../context/localeContext";
 import Link from "next/link";
-import { useLocale } from "../../../utils/locale";
+import { useLocale } from "@/utils/locale";
 import Section from "../section";
 import Title from "../text/title";
 import Paragraphs from "../text/paragraphs";
 import { GlobeAsiaAustraliaIcon } from "@heroicons/react/24/outline";
 import ContributionAccordion from "../menu/accordion";
-import { ACCESABLE_IMAGE_PATH, DOWNLOAD_IMAGE_EXTENSION } from "../../../const";
+import { ACCESABLE_IMAGE_PATH, DOWNLOAD_IMAGE_EXTENSION } from "@/const";
 
 export default function HowToDonate({ howto }) {
   const { locale } = useContext(LocaleContext);

@@ -10,9 +10,22 @@ export default function SwitchLang({}) {
     const router = useRouter();
 
 
-    const selectedValue = locale == "ja" ? "日本語" : "English"
     const handleClick = (locale) => {
         setLocale(locale)
+        if (locale === 'ja' && router.asPath.includes('/en/')) {
+          console.log("-----------------")
+          console.log(router.pathname)
+          console.log("-----------------")
+          const newPath = router.asPath.replace('/en/', '/'); // /en/を除いたパス
+          router.push(newPath, undefined, { shallow: true }); // shallowオプションでクエリのみ更新
+        } 
+        if (locale === 'en' && !router.asPath.includes('/en/')) {
+          console.log("-----------------")
+          console.log(router.pathname)
+          console.log("-----------------")
+          const newPath = `/en${router.asPath}`; // /en/を追加したパス
+          router.push(newPath, undefined, { shallow: true });
+        } 
     };
 
     let buttonClass = "flex items-center justify-center p-2 uppercase text-black hover:text-gray-600 transition duration-300 ease-in-out"

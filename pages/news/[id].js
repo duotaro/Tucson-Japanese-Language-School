@@ -1,15 +1,16 @@
 import { Fragment } from "react";
 import React, { useContext } from 'react';
 import Head from "next/head";
-import { getDatabase, getPage, getBlocks } from "../../lib/notion";
+import { getDatabase, getPage, getBlocks } from "@/lib/notion";
 import Link from "next/link";
-import Layout from "../../components/layout"
-import LocaleContext from "../../components/context/localeContext";
-import { useLocale } from "../../utils/locale";
-import NewsEntity, { getNewsFromNotion, getNewsList } from "../../entity/newsEntity";
-import savBlogImageIfNeeded from "../../components/download/blogDetail";
-import { ACCESABLE_BLOG_IMAGE_PATH, DOWNLOAD_IMAGE_EXTENSION } from "../../const";
+import Layout from "@/components/layout"
+import LocaleContext from "@/components/context/localeContext";
+import { useLocale } from "@/utils/locale";
+import NewsEntity, { getNewsFromNotion, getNewsList } from "@/entity/newsEntity";
+import savBlogImageIfNeeded from "@/components/download/blogDetail";
+import { ACCESABLE_BLOG_IMAGE_PATH, DOWNLOAD_IMAGE_EXTENSION } from "@/const";
 import Image from "next/image";
+import LocaleLink from "@/components/parts/menu/LocaleLink";
 
 export const Text = ({ text }) => {
   if (!text) {
@@ -32,7 +33,7 @@ export const Text = ({ text }) => {
         style={color !== "default" ? { color } : {}}
         key={text.content}
       >
-        {text.link ? <Link className="text-black hover:text-blue-500 underline hover:no-underline transition duration-300" href={text.link.url}>{text.content}</Link> : text.content}
+        {text.link ? <a className="text-black hover:text-blue-500 underline hover:no-underline transition duration-300" href={text.link.url} target="_blank">{text.content}</a> : text.content}
       </span>
     );
   });
@@ -77,9 +78,9 @@ const renderBlock = (block) => {
         const mentinTitle = txtArray[0].plain_text
         return (
           <p>
-            <Link href={`/news/${pageId}`}>
+            <LocaleLink href={`/news/${pageId}`}>
               {mentinTitle}
-            </Link>
+            </LocaleLink>
           </p>
         );
       }
@@ -191,9 +192,9 @@ const renderBlock = (block) => {
         <figure>
           <div className="max-w-md mx-auto">
             📎{" "}
-            <Link href={src_file} passHref>
+            <a href={src_file} passHref target="_blank">
               {lastElementInArray.split("?")[0]}
-            </Link>
+            </a>
           </div>
           {caption_file && <figcaption>{caption_file}</figcaption>}
         </figure>

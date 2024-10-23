@@ -4,8 +4,8 @@ import ProfileCard from './detail';
 import Section from '../../section';
 import Title from '../../text/title';
 import LocaleContext from '../../../context/localeContext';
-import { useLocale } from '../../../../utils/locale';
-import { ACCESABLE_IMAGE_PATH, DOWNLOAD_IMAGE_EXTENSION } from '../../../../const';
+import { useLocale } from '@/utils/locale';
+import { ACCESABLE_IMAGE_PATH, DOWNLOAD_IMAGE_EXTENSION } from '@/const';
 
 const ProfileCardList = ({staffList, roleList}) => {
     const { locale } = useContext(LocaleContext);

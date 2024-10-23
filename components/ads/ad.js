@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router'
 import { useEffect } from 'react';
-import { AD_CLIENT_ID } from '../../const';
+import { AD_CLIENT_ID } from '@/const';
 
 let adsbygoogle;
 export default function AdSense({}){

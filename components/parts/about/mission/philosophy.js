@@ -5,7 +5,7 @@ import React, { useContext } from "react";
 import LocaleContext from "../../../context/localeContext";
 import Title from "../../text/title";
 import Paragraphs from "../../text/paragraphs";
-import { PhilosophyEntity } from "../../../../entity/philosophyEntity";
+import { PhilosophyEntity } from "@/entity/philosophyEntity";
 import Section from "../../section";
 
 export default function Philosophy({ philosophy }) {

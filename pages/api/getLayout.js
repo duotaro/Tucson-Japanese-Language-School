@@ -1,4 +1,4 @@
-import { getDatabase } from "../../lib/notion";
+import { getDatabase } from "@/lib/notion";
 
 // pages/api/posts.js
 export default async function handler(req, res) {

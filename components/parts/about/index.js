@@ -5,11 +5,12 @@ import React, { useContext } from "react";
 import Image from "next/image"
 import Link from "next/link"
 import LocaleContext from "../../context/localeContext";
-import { useLocale } from "../../../utils/locale";
+import { useLocale } from "@/utils/locale";
 import Title from "../text/title";
 import Paragraphs from "../text/paragraphs";
 import CustomImage from "../image/CustomImage";
 import Section from "../section";
+import LocaleLink from "../menu/LocaleLink";
 
 export default function About({ about, isTop }) {
   const { locale } = useContext(LocaleContext);
@@ -24,9 +25,9 @@ export default function About({ about, isTop }) {
                 <Title title={about.title} />
                 <Paragraphs text={about.text} />
                 { isTop && (
-                  <Link href={`/about/welcome/`} className="p-6 py-3 mt-3 rounded-md bg-blue-600 hover:bg-blue-700 mt-4 text-md transition-colors text-white max-w-sm">
+                  <LocaleLink href={`/about/welcome/`} className="p-6 py-3 mt-3 rounded-md bg-blue-600 hover:bg-blue-700 mt-4 text-md transition-colors text-white max-w-sm">
                       {json.common.show_more}
-                  </Link>
+                  </LocaleLink>
                 )}
             </div>
         </div>

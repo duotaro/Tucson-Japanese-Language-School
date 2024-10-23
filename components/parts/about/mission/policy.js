@@ -6,7 +6,7 @@ import Image from "next/image"
 import LocaleContext from "../../../context/localeContext";
 import Title from "../../text/title";
 import Paragraphs from "../../text/paragraphs";
-import PolicyEntity from "../../../../entity/policyEntity";
+import PolicyEntity from "@/entity/policyEntity";
 import FileDownloads from "../../files/downloads";
 import CustomImage from "../../image/CustomImage";
 import Section from "../../section";

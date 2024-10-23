@@ -3,8 +3,8 @@
 
 import React, { useContext } from "react";
 
-import { PhilosophyEntity } from "../../../entity/philosophyEntity";
-import { useLocale } from "../../../utils/locale";
+import { PhilosophyEntity } from "@/entity/philosophyEntity";
+import { useLocale } from "@/utils/locale";
 import LocaleContext from "../../context/localeContext";
 import { DocumentArrowDownIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";

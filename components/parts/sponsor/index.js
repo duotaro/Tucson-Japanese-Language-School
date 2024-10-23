@@ -2,10 +2,11 @@
 import React, { useContext } from "react";
 import Link from "next/link"
 import LocaleContext from "../../context/localeContext";
-import { useLocale } from "../../../utils/locale";
+import { useLocale } from "@/utils/locale";
 import SponsorDetail from "./detail";
 import Section from "../section";
 import Title from "../text/title";
+import LocaleLink from "../menu/LocaleLink";
 
 export default function Sponsor({ sponsor, bg = "bg-gray-50" }) {
 
@@ -14,9 +15,9 @@ export default function Sponsor({ sponsor, bg = "bg-gray-50" }) {
     return (
       <Section py="py-2 md:py-4 lg:py-8" bg={bg}>
         <div className="container px-6 mx-auto text-center" >
-          <Link href={`/contact/donation/`}>
+          <LocaleLink href={`/support/`}>
             <Title title={json.navigation.sponsors} fontSize="text-xl sm:text-2xl xl:text-3xl"/>
-          </Link>
+          </LocaleLink>
           {/* {links?.length ? <Links links={links} /> : null} */}
         </div>
         <div className="container mx-auto">

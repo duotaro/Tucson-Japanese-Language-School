@@ -4,7 +4,7 @@
 import React, { useContext } from "react";
 import LocaleContext from "../../context/localeContext";
 import Link from "next/link";
-import { useLocale } from "../../../utils/locale";
+import { useLocale } from "@/utils/locale";
 import CustomImage from "../image/CustomImage";
 import Image from "next/image";
 

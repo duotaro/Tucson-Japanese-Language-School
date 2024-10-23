@@ -5,12 +5,12 @@ import React, { useContext } from "react";
 import Image from "next/image"
 import Link from "next/link"
 import LocaleContext from "../../../context/localeContext";
-import { useLocale } from "../../../../utils/locale";
+import { useLocale } from "@/utils/locale";
 import Title from "../../text/title";
 import Paragraphs from "../../text/paragraphs";
 import CustomImage from "../../image/CustomImage";
 import Section from "../../section";
-import OrganisationFlowChartEntity from "../../../../entity/orgChartEntity";
+import OrganisationFlowChartEntity from "@/entity/orgChartEntity";
 
 export default function OrganisationFlowChart({ orgChart }) {
   const { locale } = useContext(LocaleContext);

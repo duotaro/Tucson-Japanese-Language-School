@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import Link from "next/link";
 import LocaleContext from "../../context/localeContext";
-import { useLocale } from "../../../utils/locale";
+import { useLocale } from "@/utils/locale";
 import {
   MapPinIcon,
   BuildingOfficeIcon,
@@ -10,6 +10,7 @@ import {
 } from '@heroicons/react/24/outline'
 import SocialMedia from '../sns';
 import Caution from '../caution';
+import LocaleLink from '../menu/LocaleLink';
 
 export default function Contact({ isFooter }) {
 
@@ -24,7 +25,7 @@ export default function Contact({ isFooter }) {
     return (
         <div>
             {isFooter && (
-              <Link href={`/contact/`}><h3 className="text-lg font-bold hover:text-zinc-200">{lang.title}</h3></Link>
+              <LocaleLink href={`/contact/`}><h3 className="text-lg font-bold hover:text-zinc-200">{lang.title}</h3></LocaleLink>
             )}
             <ul className="mt-4 space-y-4 ">
               <div className="col-md-6 mb-4 mb-md-0">

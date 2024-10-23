@@ -4,11 +4,12 @@
 import React, { useContext } from "react";
 import LocaleContext from "../../context/localeContext";
 import Link from "next/link";
-import { useLocale } from "../../../utils/locale";
-import NewsEntity from "../../../entity/newsEntity";
-import { getRandomInt } from "../../../utils/numberUtils";
-import { ACCESABLE_IMAGE_PATH } from "../../../const";
+import { useLocale } from "@/utils/locale";
+import NewsEntity from "@/entity/newsEntity";
+import { getRandomInt } from "@/utils/numberUtils";
+import { ACCESABLE_IMAGE_PATH } from "@/const";
 import Image from "next/image";
+import LocaleLink from "../menu/LocaleLink";
 
 export default function NewsDetail({ item }) {
   const { locale } = useContext(LocaleContext);
@@ -48,7 +49,7 @@ export default function NewsDetail({ item }) {
             }}>
             {entity.title.map((title) => {
                 return title.href ? (
-                    <Link href={title.href} className="link-secondary " key={title.text.content}>{title.text.content}</Link>
+                    <a href={title.href} target="_blank" className="link-secondary " key={title.text.content}>{title.text.content}</a>
                 ) : (
                     <p key={title.text.content} className="link-secondary ">{title.text.content}</p>
                 )
@@ -58,7 +59,7 @@ export default function NewsDetail({ item }) {
             <div className="line-clamp-2 px-3 min-h-10 max-w-md my-3 text-md font-light leading-relaxed text-gray-500 ">
             {entity.text.map((text) => {
                 return text.href ? (
-                    <Link href={text.href} className="link-secondary" key={text.text.content}>{text.text.content}</Link>
+                    <a href={text.href} target="_blank" className="link-secondary" key={text.text.content}>{text.text.content}</a>
                 ) : (
                     <span key={text.text.content}>{text.text.content}</span>
                 )
@@ -66,9 +67,9 @@ export default function NewsDetail({ item }) {
             </div>
         )}
         <div className="mb-5 text-center">
-          <Link href={`/news/${id}`} className="px-3 py-2 text-md transition-colors rounded-md bg-blue-600 text-white hover:bg-blue-700">
+          <LocaleLink href={`/news/${id}`} className="px-3 py-2 text-md transition-colors rounded-md bg-blue-600 text-white hover:bg-blue-700">
             {json.common.show_more}
-          </Link>
+          </LocaleLink>
         </div>
         </div>
     </div>

@@ -4,9 +4,10 @@
 import React, { useContext, useState } from "react";
 import LocaleContext from "../../context/localeContext";
 import { ChevronDownIcon, ArrowTopRightOnSquareIcon } from '@heroicons/react/20/solid'
-import { useLocale } from "../../../utils/locale";
-import { createNavUrl, PAYMENT_URL } from "../../../const/pageUrl";
+import { useLocale } from "@/utils/locale";
+import { createNavUrl, PAYMENT_URL } from "@/const/pageUrl";
 import Link from "next/link";
+import LocaleLink from "../menu/LocaleLink";
 
 export default function PopoverDetail({ item }) {
   const { locale } = useContext(LocaleContext);
@@ -33,7 +34,7 @@ export default function PopoverDetail({ item }) {
               <a className="text-sm font-semibold leading-6 " href="https://tucsonhosyuko.square.site/" target="_blank">{parentTitle}</a>
             </div>
           ) : (
-            <Link className="text-sm font-semibold leading-6 text-white no-underline hover:text-gray-200" href={parentLink}>{parentTitle}</Link>
+            <LocaleLink className="text-sm font-semibold leading-6 text-white no-underline hover:text-gray-200" href={parentLink}>{parentTitle}</LocaleLink>
           )
     )}
     {item.dropdowns.length > 0 && (
@@ -63,10 +64,10 @@ export default function PopoverDetail({ item }) {
                         <dropdown.icon aria-hidden="true" className="h-6 w-6 text-gray-600 group-hover:text-indigo-600" />
                     </div> */}
                     <div className="flex-auto">
-                        <Link href={createNavUrl(dropdown)} className="block font-semibold ">
+                        <LocaleLink href={createNavUrl(dropdown)} className="block font-semibold ">
                         {json.navigation[dropdown.PAGE_KEY]}
                         <span className="absolute inset-0" />
-                        </Link>
+                        </LocaleLink>
                         {/* <p className="mt-1 text-gray-600">{item.description}</p> */}
                     </div>
                     </div>

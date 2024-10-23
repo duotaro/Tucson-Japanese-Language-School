@@ -3,9 +3,9 @@ import SliderDetail from '../slider/detail'
 
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import '@splidejs/splide/css'; // デフォルトのテーマを読み込んでいます（コアスタイルのみ読み込む設定も可能）
-import SliderEntity from '../../../entity/sliderEntity';
+import SliderEntity from '@/entity/sliderEntity';
 import LocaleContext from '../../context/localeContext';
-import { useLocale } from '../../../utils/locale';
+import { useLocale } from '@/utils/locale';
 
 
 export default function SliderList({ sliderList }) {

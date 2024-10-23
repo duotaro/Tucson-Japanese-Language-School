@@ -1,4 +1,4 @@
-import { RECOMMEND_LIST } from "../../../const"
+import { RECOMMEND_LIST } from "@/const"
 import Link from "next/link"
 
 export default function RecommendList({ }) {

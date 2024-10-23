@@ -1,12 +1,12 @@
 
 import React, { useContext } from "react";
 import LocaleContext from "../../../context/localeContext";
-import { useLocale } from "../../../../utils/locale";
+import { useLocale } from "@/utils/locale";
 import FileDownloads from '../../files/downloads';
 import Section from '../../section';
 import Title from "../../text/title";
 import Paragraphs from "../../text/paragraphs";
-import OrgPolicyEntity from "../../../../entity/orgPolicyEntity";
+import OrgPolicyEntity from "@/entity/orgPolicyEntity";
 import PdfDownloads from "../../files/downloadsPdf";
 
 export default function GovernancePolicy({ orgPolicys }) {

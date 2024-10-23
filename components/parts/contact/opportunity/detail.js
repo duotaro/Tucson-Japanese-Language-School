@@ -2,11 +2,11 @@ import React, { useContext, useState } from "react";
 import Image from "next/image"
 import Link from "next/link"
 import LocaleContext from "../../../context/localeContext";
-import { useLocale } from "../../../../utils/locale";
-import OpportunityEntity from "../../../../entity/opportunityEntity";
+import { useLocale } from "@/utils/locale";
+import OpportunityEntity from "@/entity/opportunityEntity";
 import Title from "../../text/title";
 import Paragraphs from "../../text/paragraphs";
-import OpportunityDetailEntity from "../../../../entity/opportunityDetailEntity";
+import OpportunityDetailEntity from "@/entity/opportunityDetailEntity";
 
 export default function OpportunityDetail({ opportunities }) {
 

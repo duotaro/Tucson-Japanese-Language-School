@@ -4,8 +4,8 @@
 import React, { useContext } from "react";
 import { Text } from "../../../../pages/news/[id]"
 import LocaleContext from "../../../context/localeContext";
-import { useLocale } from "../../../../utils/locale";
-import { StoryEntity } from "../../../../entity/storyEntity";
+import { useLocale } from "@/utils/locale";
+import { StoryEntity } from "@/entity/storyEntity";
 import Title from "../../text/title";
 import Paragraphs from "../../text/paragraphs";
 import Section from "../../section";

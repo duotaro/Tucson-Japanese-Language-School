@@ -3,7 +3,7 @@
 import React, { useContext, useState, useEffect } from "react";
 import NewsDetail from "./detail";
 import LocaleContext from "../../context/localeContext";
-import { useLocale } from "../../../utils/locale";
+import { useLocale } from "@/utils/locale";
 import Link from "next/link";
 import Title from "../text/title";
 import Section from "../section";
@@ -114,7 +114,6 @@ export default function News({ list, isTop }) {
           )} 
           {pList && pList.map((item) => {
               return (
-                // <Link href={`/testnews/${id}`}>{id}</Link>
                 <NewsDetail item={item}/>
               )
           })}

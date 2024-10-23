@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
-import { HEADER_MENU } from "../../../const";
-import { useLocale } from "../../../utils/locale";
+import { HEADER_MENU } from "@/const";
+import { useLocale } from "@/utils/locale";
 import LocaleContext from "../../context/localeContext";
 import {
   Dialog,

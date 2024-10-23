@@ -5,8 +5,8 @@ import React, { useContext } from "react";
 import Image from "next/image"
 import { Text } from "../../../../pages/news/[id]"
 import LocaleContext from "../../../context/localeContext";
-import { useLocale } from "../../../../utils/locale";
-import { GreetingEntity } from "../../../../entity/greetingEntity";
+import { useLocale } from "@/utils/locale";
+import { GreetingEntity } from "@/entity/greetingEntity";
 import Title from "../../text/title";
 import Paragraphs from "../../text/paragraphs";
 import Section from "../../section";

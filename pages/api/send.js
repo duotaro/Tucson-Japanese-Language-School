@@ -1,5 +1,5 @@
 import { Resend } from 'resend';
-import { EmailTemplate } from '../../components/parts/email';
+import { EmailTemplate } from '@/components/parts/email';
 import fs from 'fs';
 import path from 'path';
 import os from 'os';

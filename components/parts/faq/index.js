@@ -1,7 +1,7 @@
 
 import React, { useContext } from "react";
 import LocaleContext from "../../context/localeContext";
-import { useLocale } from "../../../utils/locale";
+import { useLocale } from "@/utils/locale";
 import Title from "../text/title";
 
 export default function Faq({ }) {
