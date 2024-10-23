@@ -6,9 +6,10 @@ import {
     DisclosurePanel
   } from '@headlessui/react'
 import { ChevronDownIcon, ArrowTopRightOnSquareIcon } from '@heroicons/react/20/solid'
-import { useLocale } from "../../../utils/locale";
-import { createNavUrl, PAYMENT_URL } from "../../../const/pageUrl";
+import { useLocale } from "@/utils/locale";
+import { createNavUrl, PAYMENT_URL } from "@/const/pageUrl";
 import Link from "next/link";
+import LocaleLink from "../menu/LocaleLink";
 // モバイル用
 export default function DisclosureDetail({ item }) {
   const { locale } = useContext(LocaleContext);
@@ -28,7 +29,7 @@ export default function DisclosureDetail({ item }) {
           <a className="text-base font-semibold text-blue-800 hover:bg-gray-50" href="https://tucsonhosyuko.square.site/" target="_blank">{parentTitle}</a>
         </div>
       ) : (
-        <Link className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-blue-800 hover:bg-gray-50" href={parentLink}>{parentTitle}</Link>
+        <LocaleLink className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-blue-800 hover:bg-gray-50" href={createNavUrl(parent)}>{parentTitle}</LocaleLink>
       )
     )}
     {item.dropdowns.length > 0 && (
@@ -40,14 +41,13 @@ export default function DisclosureDetail({ item }) {
 
         <DisclosurePanel className="mt-2 space-y-2">
           {item.dropdowns.map((dropdown) => (
-            <DisclosureButton
+            <LocaleLink
               key={dropdown.PAGE_KEY}
-              as="a"
               href={createNavUrl(dropdown)}
               className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-blue-800 hover:bg-gray-50"
             >
               {json.navigation[dropdown.PAGE_KEY]}
-            </DisclosureButton>
+            </LocaleLink>
           ))}
         </DisclosurePanel>
       </>

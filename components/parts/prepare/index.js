@@ -1,11 +1,13 @@
-import { HEADER_MENU } from "../../../const"
-import { useLocale } from "../../../utils/locale";
+import { HEADER_MENU } from "@/const"
+import { useLocale } from "@/utils/locale";
 import React, { useContext } from 'react';
 import LocaleContext from "../../context/localeContext";
 import Link from "next/link";
 import { AcademicCapIcon, HomeIcon } from "@heroicons/react/24/outline";
-import { createNavUrl } from "../../../const/pageUrl";
+import { createNavUrl } from "@/const/pageUrl";
 import { BuildingLibraryIcon, EnvelopeIcon, NewspaperIcon } from "@heroicons/react/20/solid";
+import Title from "../text/title";
+import LocaleLink from "../menu/LocaleLink";
 
 export default function Prepare({ groupKey }) {
     const { locale } = useContext(LocaleContext);
@@ -25,17 +27,16 @@ export default function Prepare({ groupKey }) {
             }
         })
     }
+    const title = groupKey ? json.navigation[groupKey] : json.navigation.prepare
 
     return (
         <section className="py-8 md:py-12 lg:py-20 ">
           <div className="container px-6 mx-auto">
-            <h2 className="text-center text-2xl font-black sm:text-3xl lg:text-4xl mb-6">
-                {groupKey ? json.navigation[groupKey] : json.navigation.prepare}
-            </h2>
+            <Title title={title} />
             <div className="grid items-center justify-center md:grid-cols-2 lg:grid-cols-3 md:gap-4 lg:gap-5">
               {group.map((item) => {
                 return (
-                <Link href={createNavUrl(item)}  class="max-w-sm w-full bg-gray-100 hover:bg-gray-200 shadow-md rounded-lg overflow-hidden" key={item.PAGE_KEY}>
+                <LocaleLink href={createNavUrl(item)}  class="max-w-sm w-full bg-gray-100 hover:bg-gray-200 shadow-md rounded-lg overflow-hidden" key={item.PAGE_KEY}>
                     
                   <div class="p-4">
                     <div class="flex items-center justify-center mb-4">
@@ -45,7 +46,7 @@ export default function Prepare({ groupKey }) {
                     </div>
                     <h2 class="text-center text-2xl font-semibold text-gray-800 mb-2">{json.navigation[item.PAGE_KEY]}</h2>
                   </div>
-                </Link>
+                </LocaleLink>
                 )
               })}
             </div>

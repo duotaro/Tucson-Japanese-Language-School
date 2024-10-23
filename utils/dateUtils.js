@@ -95,3 +95,41 @@ function formatMinutes(date) {
     // 分を2桁の文字列にフォーマット
     return minutes.toString().padStart(2, '0');
 }
+
+export function getSchoolYear(locale) {
+    const startMonth = 7
+    const now = new Date();
+    const year = now.getFullYear();
+    const month = now.getMonth(); // 0 = January, 11 = December
+  
+    let schoolYearStart, schoolYearEnd;
+  
+    if (month >= startMonth) { // 開始月以降
+      schoolYearStart = year;
+      schoolYearEnd = year + 1;
+    } else { // 開始月より前
+      schoolYearStart = year - 1;
+      schoolYearEnd = year;
+    }
+
+    const label = locale == "ja" ? `${schoolYearStart}年度` : `${schoolYearStart}-${schoolYearEnd} School Event`
+  
+    return {
+        start: schoolYearStart,
+        term: `${schoolYearStart}-${schoolYearEnd}`,
+        label: label
+    }
+}
+
+export function isWithinSchoolYear(dateString, schoolYearStartMonth = 8) {
+    const date = new Date(dateString); // 'YYYY-MM-DD'形式の文字列をDateオブジェクトに変換
+    
+    const year = date.getFullYear();
+    const startYear = date.getMonth() >= schoolYearStartMonth - 1 ? year : year - 1; // 学年度の開始年を決定
+    const endYear = startYear + 1; // 学年度の終了年
+  
+    const schoolYearStart = new Date(startYear, schoolYearStartMonth - 1, 1); // 学年度開始日
+    const schoolYearEnd = new Date(endYear, 5, 31); // 学年度終了日（5月31日）
+  
+    return date >= schoolYearStart && date <= schoolYearEnd; // 判定
+}

@@ -13,13 +13,13 @@ import { fetchGss } from '../lib/appscript.js';
 import LocaleContext from '../components/context/localeContext.js';
 import saveImageIfNeeded from '../components/download/index.js';
 import Calender from '../components/parts/calender/index.js';
-import Mission from '../components/parts/mission/index.js';
-import Vision from '../components/parts/vision/index.js';
+import Mission from '../components/parts/about/mission/mission.js';
+import Vision from '../components/parts/about/mission/vision.js';
 import Faq from '../components/parts/faq/index.js';
 import { convertAboutFromDatabase } from '../entity/aboutEntity.js';
 import About from '../components/parts/about/index.js';
 import Sponsor from '../components/parts/sponsor/index.js';
-import Opportunity from '../components/parts/opportunity/index.js';
+import Opportunity from '../components/parts/contact/opportunity/index.js';
 import { getNewsList } from '../entity/newsEntity.js';
 
 
@@ -30,7 +30,7 @@ export default function Home({ sliderList, sponsors, newsList, scheduleList, abo
   let sponsorList = []
 
   for(let item of sponsors){
-    let sponsor = new SponsorEntity(item)
+    let sponsor = new SponsorEntity(item, locale == "ja")
     sponsorList.push(sponsor)
   }
 
@@ -40,7 +40,7 @@ export default function Home({ sliderList, sponsors, newsList, scheduleList, abo
     <Layout>
       <Head>
         <title>{metaTitleExtension}</title>
-        <meta name="description" content={`${lang.home} - ${lang.description}`} />
+        <meta name="description" content={`${lang.title} - ${lang.description}`} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="">
@@ -50,14 +50,9 @@ export default function Home({ sliderList, sponsors, newsList, scheduleList, abo
           <About about={aboutSchool} isTop={true}/>
           <Mission mission={mission} />
           <Vision vision={vision}/>
-          {/* <Opportunity opportunity={opportunity} /> */}
+          <Opportunity opportunity={opportunity} />
           {/* <Faq /> */}
           <Sponsor sponsor={sponsorList} />
-          {/* Side widgets*/}
-          {/* <section className="col-lg-4">
-            <Side sponsorList={sponsorList} />
-          </section> */}
-       
         </div>{/* .row */}
       </div>{/* .container */}
     </Layout>
@@ -163,32 +158,6 @@ const getOpportunity = async () => {
   await saveImageIfNeeded(props, "opportunity")
   return database
 }
-
-export async function generateMetadata({ params }) {
-  const metadata = {
-    title: "Home - Arizona Gakuen School",
-    description: "最新情報 What's New? - Updated On Oct 17th ★最新情報 ★ 保護者の皆様へ ★ 登録/募集のお知らせ ★最新情報 IACE Travel 様からの【補習校応援プログラム】を更新致しました。こちらからご覧ください。海外子女教育振興財団より、2021年10月20日（水）に発行される「帰国子女のための学校便覧」2022年度版のご紹介です。書籍詳細、お申込みはこちらからご確認頂けます。学校行事をアップデートしましたのでご覧下さい。海外子女教育 月刊 弊誌をアップしました。こちらの学園内限定サイトよりご覧下さい。 ★ 保護者の皆様へ 全ての生徒様の緊急連絡先の登録をお願いします！（パスワードは校長先生のメールを参照下さい）Please sign up Emergency contact information of every student. （Please confirm e-mail about password.）Amazon.comのお買物の際、Amazon smileからご購入頂くと、その一部がアリゾナ学園へ寄付されます。詳細は下記リンクから。 ★ 登録/募集のお知らせ 学校サポーター（保護者ボランティア）募集！教室での授業サポーター、校内パトロール・サポーター、式典行事サポータ。ー、アリゾナ学園コンシェルジェ等々、みんなのアリゾナ学園の活動に参加しませんか？詳しくは事務局まで。こちらのオンラインフォームからもご応募して頂けます。教員募集！教えることに興味のある方、是非一度、事務局までご連絡下さい。こちらのオンラインフォームからもご応募して頂けます。オフィシャルウェブサイト用の写真を募集しています！詳細はこちらから。Send us your child photos! Check more details here. Fry'sが主催するCommunity Rewards Program にアリゾナ学園（寄付先 : Arizona Kokusai Kyoiku",
-    alternates: {
-      canonical: `${pageUrl}`,
-    },
-    openGraph: {
-      title: "Home - Arizona Gakuen School",
-      description: "最新情報 What's New? - Updated On Oct 17th ★最新情報 ★ 保護者の皆様へ ★ 登録/募集のお知らせ ★最新情報 IACE Travel 様からの【補習校応援プログラム】を更新致しました。こちらからご覧ください。海外子女教育振興財団より、2021年10月20日（水）に発行される「帰国子女のための学校便覧」2022年度版のご紹介です。書籍詳細、お申込みはこちらからご確認頂けます。学校行事をアップデートしましたのでご覧下さい。海外子女教育 月刊 弊誌をアップしました。こちらの学園内限定サイトよりご覧下さい。 ★ 保護者の皆様へ 全ての生徒様の緊急連絡先の登録をお願いします！（パスワードは校長先生のメールを参照下さい）Please sign up Emergency contact information of every student. （Please confirm e-mail about password.）Amazon.comのお買物の際、Amazon smileからご購入頂くと、その一部がアリゾナ学園へ寄付されます。詳細は下記リンクから。 ★ 登録/募集のお知らせ 学校サポーター（保護者ボランティア）募集！教室での授業サポーター、校内パトロール・サポーター、式典行事サポータ。ー、アリゾナ学園コンシェルジェ等々、みんなのアリゾナ学園の活動に参加しませんか？詳しくは事務局まで。こちらのオンラインフォームからもご応募して頂けます。教員募集！教えることに興味のある方、是非一度、事務局までご連絡下さい。こちらのオンラインフォームからもご応募して頂けます。オフィシャルウェブサイト用の写真を募集しています！詳細はこちらから。Send us your child photos! Check more details here. Fry'sが主催するCommunity Rewards Program にアリゾナ学園（寄付先 : Arizona Kokusai Kyoiku",
-      url: `https://example-domain.com/${pageUrl}`,
-      siteName: "サイトタイトル",
-      locale: "ja_JP",
-      type: "website",
-      images: "/opengraph-image.png",
-    },
-    twitter: {
-      card: "summary_large_image",
-      images: "/twitter-image.png",
-    },
-  };
-
-  return metadata;
-}
-
 
 let getNewsFromGSS = async () => {
   let news = await fetchGss("news")

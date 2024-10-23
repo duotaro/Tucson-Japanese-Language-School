@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import Link from "next/link";
 import LocaleContext from "../../context/localeContext";
-import { useLocale } from "../../../utils/locale";
+import { useLocale } from "@/utils/locale";
 import {
   MapPinIcon,
   BuildingOfficeIcon,
@@ -10,6 +10,7 @@ import {
 } from '@heroicons/react/24/outline'
 import SocialMedia from '../sns';
 import Caution from '../caution';
+import LocaleLink from '../menu/LocaleLink';
 
 export default function Contact({ isFooter }) {
 
@@ -24,7 +25,7 @@ export default function Contact({ isFooter }) {
     return (
         <div>
             {isFooter && (
-              <Link href={`/contact/`}><h3 className="text-lg font-bold hover:text-zinc-200">{lang.title}</h3></Link>
+              <LocaleLink href={`/contact/`}><h3 className="text-lg font-bold hover:text-zinc-200">{lang.title}</h3></LocaleLink>
             )}
             <ul className="mt-4 space-y-4 ">
               <div className="col-md-6 mb-4 mb-md-0">
@@ -51,11 +52,11 @@ export default function Contact({ isFooter }) {
                     <BuildingOfficeIcon className="w-8 h-8 " />
                   </div>
                   <span className="text-md font-semibold p-1 mr-3">{lang.address}:</span>
-                  <span className={hClass}><a href="https://www.google.com/maps?q=1803+E+Seneca+St,+Tucson,+AZ+85719,+USA" target="_blank" className={textClass}>1803 E Seneca Street,<br />Tucson AZ 85719</a></span> 
+                  <span className={hClass}><a href="https://www.google.com/maps?q=1803+E+Seneca+St,+Tucson,+AZ+85719,+USA" target="_blank" className={textClass}>1803 E Seneca Street, Tucson AZ 85719</a></span> 
                 </div>
                 <ul className={vClass}>
                   <li>
-                    <a href="https://www.google.com/maps?q=1803+E+Seneca+St,+Tucson,+AZ+85719,+USA" target="_blank" className={textClass}>1803 E Seneca St,<br />Tucson AZ 85719</a>
+                    <a href="https://www.google.com/maps?q=1803+E+Seneca+St,+Tucson,+AZ+85719,+USA" target="_blank" className={textClass}>1803 E Seneca St, Tucson AZ 85719</a>
                   </li>
                 </ul>
               </div>

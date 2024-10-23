@@ -1,51 +1,35 @@
 // context/ThemeContext.js
 import { createContext, useState, useEffect } from 'react';
 
-
 const LocaleContext = createContext();
+import { useRouter } from 'next/router';
 
 export function LocaleProvider({ children }) {
-      // URLクエリパラメータから言語を取得する関数
-      const getQueryParamLang = () => {
-        if (typeof window !== 'undefined') {
-          const urlParams = new URLSearchParams(window.location.search);
-          return urlParams.get('lang');
-        }
-        return null;
-      };
-    
-      // クエリパラメータから言語を取得
-      const queryLang = getQueryParamLang();
-      const [locale, setLocale] = useState("ja");
-  
-      // const userLocale = navigator.language || navigator.userLanguage
-      // let defaultLocale = "en"
-      // if(userLocale.startsWith('ja')){
-      //   defaultLocale = "ja"
-      // } 
-  
-      useEffect(() => {
-        // クエリパラメータが存在する場合はそれを使用
-        console.log("-----------------------------------------------------------------------------")
-        if (queryLang) {
-          setLocale(queryLang);
-        } else {
-          // ブラウザの言語設定を使用
-          const userLocale = navigator.language || navigator.userLanguage || '';
-          if (userLocale.startsWith('ja')) {
-            setLocale('ja');
-          } else {
-            setLocale('en');
-          }
-        }
-      }, [queryLang]);
-  
+    const router = useRouter();
+    const { lang } = router.query;
+    const [locale, setLocale] = useState("ja");
 
-  return (
-    <LocaleContext.Provider value={{ locale, setLocale }}>
-      {children}
-    </LocaleContext.Provider>
-  );
+    useEffect(() => {
+      if (lang) {
+        setLocale(lang);
+      } else if (router.pathname.includes('/en')) {
+        setLocale('en');
+      } else {
+        // ブラウザの言語設定を使用
+        const userLocale = navigator.language || navigator.userLanguage || '';
+        if (userLocale.startsWith('ja')) {
+          setLocale('ja');
+        } else {
+          setLocale('en');
+        }
+      }
+    }, [lang, router.pathname]);
+
+    return (
+      <LocaleContext.Provider value={{ locale, setLocale }}>
+        {children}
+      </LocaleContext.Provider>
+    );
 }
 
 export default LocaleContext;

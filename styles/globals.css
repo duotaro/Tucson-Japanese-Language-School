@@ -8,3 +8,81 @@
 .dropdown-menu:hover {
     display: block;
 } */
+
+.fc--button {
+    background-color: transparent !important;
+    border: none !important;
+}
+.fc .fc-toolbar.fc-header-toolbar {
+    margin-bottom: 5px;
+  }
+  .fc .fc-toolbar-title {
+    font-size: 1rem;
+    
+  }
+  .fc .fc-button-primary {
+    font-size: 0.85rem;
+    background-color: transparent !important;
+    border: none !important;
+    color: #37362f !important;
+  }
+  .fc .fc-today-button {
+    color: #37362f;
+  }
+  .fc-event {
+    background-color: var(--fc-event-bg-color);
+    border: 1px solid var(--fc-event-border-color);
+    display: block;
+}
+.breadcrumb-item {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; /* テキストが長い場合、省略記号を表示 */
+}
+
+.stack-section:nth-child(1) {
+  background-color: white; /* 1番目のアイテムの背景色 */
+}
+
+.stack-section:nth-child(2) {
+  background-color: #f9fafb; /* bg-gray-50に相当する色 */
+}
+
+.stack-section:nth-child(3) {
+  background-color: #e0f2ff; /* bg-gray-100に相当する色 */
+}
+
+.stack-section:nth-child(4) {
+  background-color: white; /* 4番目のアイテムの背景色（1番目と同じ） */
+}
+
+.stack-section:nth-child(5) {
+  background-color: #f9fafb; /* 5番目のアイテムの背景色（2番目と同じ） */
+}
+
+.stack-section:nth-child(6) {
+  background-color: #e0f2ff; /* 6番目のアイテムの背景色（3番目と同じ） */
+}
+
+/* 7番目以降も繰り返し */
+.stack-section:nth-child(n+7) {
+  background-color: white; /* 繰り返しのため、1番目と同じ色 */
+}
+
+.stack-section:nth-child(n+8) {
+  background-color: #f9fafb; /* 繰り返しのため、2番目
+
+
+
+@media (max-width: 600px) { /* 600px以下の画面サイズに適用 */
+    .fc .fc-button {
+        padding: 0.1em 0.2em; /* paddingを狭める */
+        font-size: 0.7em; /* フォントサイズを小さくする */
+        font-weight: 200; /* フォントウェイトを小さくする */
+    }
+    .fc table {
+      font-size: 0.7em;
+    }
+}
+
+

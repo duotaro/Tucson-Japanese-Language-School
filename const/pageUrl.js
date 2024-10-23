@@ -34,7 +34,7 @@ export const MISSION_URL = {
     ORDERING: null,
     GROUP_ORDERING: 2,
     IS_PARENT:false,
-    IS_ACTIVE:false
+    IS_ACTIVE:true
 }
 export const GOVERNANCE_URL = {
     PAGE_KEY:"governance",
@@ -42,7 +42,7 @@ export const GOVERNANCE_URL = {
     ORDERING: null,
     GROUP_ORDERING: 3,
     IS_PARENT:false,
-    IS_ACTIVE:false
+    IS_ACTIVE:true
 }
 export const STAFF_URL = {
     PAGE_KEY:"staff",
@@ -50,7 +50,7 @@ export const STAFF_URL = {
     ORDERING: null,
     GROUP_ORDERING: 4,
     IS_PARENT:false,
-    IS_ACTIVE:false
+    IS_ACTIVE:true
 }
 export const POLICY_URL = {
     PAGE_KEY:"policy",
@@ -66,7 +66,7 @@ export const REPORT_URL = {
     ORDERING: null,
     GROUP_ORDERING: 6,
     IS_PARENT:false,
-    IS_ACTIVE:false
+    IS_ACTIVE:true
 }
 /** program */
 export const PROGRAM_URL = {
@@ -75,7 +75,7 @@ export const PROGRAM_URL = {
     ORDERING: 3,
     GROUP_ORDERING: null,
     IS_PARENT:true,
-    IS_ACTIVE:false
+    IS_ACTIVE:true
 }
 export const CALENDER_URL = {
     PAGE_KEY:"calendar",
@@ -83,7 +83,7 @@ export const CALENDER_URL = {
     ORDERING: null,
     GROUP_ORDERING: 1,
     IS_PARENT:false,
-    IS_ACTIVE:false
+    IS_ACTIVE:true
 }
 export const CLASS_URL = {
     PAGE_KEY:"class",
@@ -91,7 +91,7 @@ export const CLASS_URL = {
     ORDERING: null,
     GROUP_ORDERING: 2,
     IS_PARENT:false,
-    IS_ACTIVE:false
+    IS_ACTIVE:true
 }
 export const KANJI_URL = {
     PAGE_KEY:"kanjikentei",
@@ -146,11 +146,21 @@ export const NEWS_URL ={
     IS_ACTIVE:true
 }
 
+/** support */
+export const SUPPORT_URL ={
+    PAGE_KEY:"support",
+    GROUP:"support",
+    ORDERING: 6,
+    GROUP_ORDERING: null,
+    IS_PARENT:true,
+    IS_ACTIVE:true
+}
+
 /** contact */
 export const CONTACT_URL ={
     PAGE_KEY:"contact",
     GROUP:"contact",
-    ORDERING: 6,
+    ORDERING: 7,
     GROUP_ORDERING: null,
     IS_PARENT:true,
     IS_ACTIVE:true
@@ -177,22 +187,14 @@ export const OPPORTUNITY_URL ={
     ORDERING: null,
     GROUP_ORDERING: 3,
     IS_PARENT:false,
-    IS_ACTIVE:false
-}
-export const DONATION_URL ={
-    PAGE_KEY:"donation",
-    GROUP:"contact",
-    ORDERING: null,
-    GROUP_ORDERING: 4,
-    IS_PARENT:false,
-    IS_ACTIVE:false
+    IS_ACTIVE:true
 }
 
 export const TUCSON_URL ={
     PAGE_KEY:"tucsonlife",
     GROUP:"contact",
     ORDERING: null,
-    GROUP_ORDERING: 5,
+    GROUP_ORDERING: 4,
     IS_PARENT:false,
     IS_ACTIVE:false
 }
@@ -201,10 +203,10 @@ export const TUCSON_URL ={
 export const PAYMENT_URL ={
     PAGE_KEY:"payment",
     GROUP:"payment",
-    ORDERING: 7,
+    ORDERING: 8,
     GROUP_ORDERING: null,
     IS_PARENT:true,
-    IS_ACTIVE:true
+    IS_ACTIVE:false
 }
 
 
@@ -226,30 +228,30 @@ export const URLS = {
     ADMISSION_URL,
     FORMS_URL,
     NEWS_URL,
+    SUPPORT_URL,
     CONTACT_URL,
     CONTACT2_URL,
     FAQ_URL,
     OPPORTUNITY_URL,
-    DONATION_URL,
     TUCSON_URL,
     PAYMENT_URL
 }
 
 export const createNavUrl = (item) => {
     if(item.GROUP == HOME_URL.PAGE_KEY){
-        return `${DOMAIN}/`
+        return `/`
     }
 
     if(item.IS_PARENT){
-        return `${DOMAIN}/${item.PAGE_KEY}/`
+        return `/${item.PAGE_KEY}/`
     }
     if(item.PAGE_KEY == CONTACT2_URL.PAGE_KEY){
-        return `${DOMAIN}/${item.GROUP}/`
+        return `/${item.GROUP}/`
     }
     if(item.PAGE_KEY == PAYMENT_URL.PAGE_KEY){
         return `https://tucsonhosyuko.square.site/`
     }
 
-    return `${DOMAIN}/${item.GROUP}/${item.PAGE_KEY}/`
+    return `/${item.GROUP}/${item.PAGE_KEY}/`
 
 }

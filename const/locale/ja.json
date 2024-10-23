@@ -1,9 +1,9 @@
 {
     "navigation": {
-      "title": "ツーソン日本語補習校",
+      "title": "ツーソン日本語学校",
       "sub_title": "Tucson Japanese School",
-      "meta_title": "ツーソン日本語補習校 | アメリカ・アリゾナ州ツーソンの日本語教育",
-      "description": "アメリカ・アリゾナ州ツーソン日本語補習校で日本語を学びませんか？当校は、ツーソンで日本語を習得したい方々に最適な教育環境を提供します。入学に関する情報やコースの詳細はこちらからご確認ください。",
+      "meta_title": "ツーソン日本語学校 | アメリカ・アリゾナ州ツーソンの日本語教育",
+      "description": "アメリカ・アリゾナ州ツーソン日本語学校で日本語を学びませんか？当校は、ツーソンで日本語を習得したい方々に最適な教育環境を提供します。入学に関する情報やコースの詳細はこちらからご確認ください。",
       "keyword": "Japan, Japanese, School, Tucson, children, class, culture, kids, language, クラス, ツーソン, 子ども, 学校, 日本, 日本語",
       "home": "ホーム",
       "about": "学校案内",
@@ -14,14 +14,18 @@
       "policy": "規則・規約",
       "report": "年間報告書",
       "program": "プログラム",
-      "calendar": "年間カレンダー",
+      "calendar": "年間予定",
       "class": "クラス紹介",
       "kanjikentei": "漢字検定",
       "nihongocafe": "にほんごかふぇ",
       "event": "イベント",
       "admissions": "入学案内",
+      "qualification": "入学資格",
+      "enrollment": "入学手続き",
+      "tuition": "授業料",
       "forms": "入学手続き・見学",
       "news": "お知らせ",
+      "support": "支援・寄付",
       "contact": "お問い合わせ",
       "contact2": "お問い合わせ先",
       "faq": "よくある質問",
@@ -57,10 +61,26 @@
     "calender": {
       "title": "カレンダー"
     },
+    "director": {
+      "title": "理事役員会",
+      "description": "私たちの才能あふれるチームをご紹介します。情熱と革新に駆られたダイナミックな専門家集団です。"
+    },
+    "chart": {
+      "title": "組織図",
+      "description": "簡単な説明文簡単な説明文簡単な説明文簡単な説明文簡単な説明文簡単な説明文簡単な説明文簡単な説明文簡単な説明文簡単な説明文簡単な説明文"
+    },
+    "bylaws": {
+      "title": "組織規約"
+    },
+    "price":{
+      "fee":"入学費(新規入学生のみ)",
+      "caution":"※7月31日納入締切り"
+    },
     "common": {
       "show_more": "もっと詳しく",
       "not_found_article": "記事がありません",
       "not_found_page": "ページが見つかりません",
-      "back_home": "Homeに戻る"
+      "back_home": "Homeに戻る",
+      "download": "ダウンロード"
     }
 }

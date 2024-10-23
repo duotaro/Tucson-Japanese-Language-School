@@ -1,5 +1,5 @@
 import fs from 'fs'
-import { DOWNLOAD_IMAGE_EXTENSION, DOWNLOAD_IMAGE_PATH } from '../../const'
+import { DOWNLOAD_IMAGE_EXTENSION, DOWNLOAD_IMAGE_PATH } from '@/const'
 
 export const downloadImagePath = DOWNLOAD_IMAGE_PATH
 export const downloadImageExtention = DOWNLOAD_IMAGE_EXTENSION
@@ -24,6 +24,8 @@ const saveImageIfNeeded = async (blocksWithChildren, path) => {
     await save(tmpPath, image2)
     const image3 = block.image3
     await save(tmpPath, image3)
+    const imageEn = block.image_en
+    await save(tmpPath, imageEn)
   })
 }
 

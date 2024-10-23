@@ -2,30 +2,33 @@
 import React, { useContext } from "react";
 import Link from "next/link"
 import LocaleContext from "../../context/localeContext";
-import { useLocale } from "../../../utils/locale";
+import { useLocale } from "@/utils/locale";
 import SponsorDetail from "./detail";
+import Section from "../section";
+import Title from "../text/title";
+import LocaleLink from "../menu/LocaleLink";
 
-export default function Sponsor({ sponsor }) {
+export default function Sponsor({ sponsor, bg = "bg-gray-50" }) {
 
     const { locale } = useContext(LocaleContext);
     const { json } = useLocale(locale)
     return (
-      <section className="py-2 md:py-4 lg:py-8 bg-gray-50 px-10">
+      <Section py="py-2 md:py-4 lg:py-8" bg={bg}>
         <div className="container px-6 mx-auto text-center" >
-          <h2 className="text-xl font-black sm:text-2xl lg:text-3xl">
-            {json.navigation.sponsors}
-          </h2>
+          <LocaleLink href={`/support/`}>
+            <Title title={json.navigation.sponsors} fontSize="text-xl sm:text-2xl xl:text-3xl"/>
+          </LocaleLink>
           {/* {links?.length ? <Links links={links} /> : null} */}
         </div>
-        <div className="container px-6 mx-auto">
-          <div className="grid justify-center gap-10 pt-5 grid-cols-3">
+        <div className="container mx-auto">
+          <div className="grid items-center justify-center gap-8 py-2 grid-cols-3 px-5 lg:px-16 xl:px-20">
             {sponsor.map((item) => {
                 return (
-                  <SponsorDetail item={item}/>
+                  <SponsorDetail item={item} />
                 )
             })}
             </div>
         </div>
-      </section>
+      </Section>
     )
 };

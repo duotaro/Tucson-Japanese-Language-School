@@ -2,7 +2,7 @@ export const databaseId = process.env.NEXT_PUBLIC_NOTION_DATABASE_ID;
 import LocaleContext from '../../context/localeContext.js';
 import React, { useContext } from 'react';
 import SponsorList from '../sponsor/index.js';
-import { useLocale } from '../../../utils/locale.js';
+import { useLocale } from '@/utils/locale.js';
 import Side_Contact from '../contact/side.js';
 export default function Side({ sponsorList }) {
   const { locale } = useContext(LocaleContext);
