@@ -11,7 +11,7 @@ import Enrollment from "@/components/parts/admission/forms/enrollment";
 
 
 export default function AdmissionFormsPage({ qualification, price, discountFamily, discountStaff, enrollment }) {
-  const { locale } = useContext(LocaleContext);
+  const locale = "en"
   const { json, metaTitleExtension } = useLocale(locale)
   let lang = json.navigation
 

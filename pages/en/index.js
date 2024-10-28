@@ -20,7 +20,7 @@ import { getNewsList } from '@/entity/newsEntity.js';
 
 
 export default function Home({ sliderList, sponsors, newsList, scheduleList, about, opportunity }) {
-  const { locale,  } = useContext(LocaleContext);
+  const locale = "en"
   const { json, metaTitleExtension } = useLocale(locale)
   let lang = json.navigation
   let sponsorList = []

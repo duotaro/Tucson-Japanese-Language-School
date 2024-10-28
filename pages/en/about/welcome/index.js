@@ -10,7 +10,7 @@ import History from "@/components/parts/about/welcome/history";
 import saveImageIfNeeded from "@/components/download";
 
 export default function AboutPage({ welcome }) {
-  const { locale } = useContext(LocaleContext);
+  const locale = "en"
   const { json, metaTitleExtension } = useLocale(locale)
   let lang = json.navigation
 

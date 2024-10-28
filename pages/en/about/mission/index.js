@@ -13,7 +13,7 @@ import Vision from "@/components/parts/about/mission/vision.js";
 import savePdfIfNeeded from "@/components/download/pdf.js";
 
 export default function MissionPage({ about, philosophy, policy }) {
-  const { locale } = useContext(LocaleContext);
+  const locale = "en"
   const { json, metaTitleExtension } = useLocale(locale)
   let lang = json.navigation
 

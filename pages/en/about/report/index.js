@@ -11,7 +11,7 @@ import Title from "@/components/parts/text/title.js";
 import PdfDownloads from "@/components/parts/files/downloadsPdf.js";
 
 export default function GovernancePage({ reports }) {
-  const { locale } = useContext(LocaleContext);
+  const locale = "en"
   const { json, metaTitleExtension } = useLocale(locale)
   let lang = json.navigation
 

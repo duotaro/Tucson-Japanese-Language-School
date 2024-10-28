@@ -11,7 +11,7 @@ import { getNewsFromNotion, getNewsList } from "@/entity/newsEntity";
 export const databaseId = process.env.NEXT_PUBLIC_NOTION_DATABASE_ID;
 
 export default function NewsPage({ list }) {
-  const { locale } = useContext(LocaleContext);
+  const locale = "en"
   const { json, metaTitleExtension } = useLocale(locale)
   let lang = json.navigation
 
