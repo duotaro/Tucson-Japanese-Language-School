@@ -11,8 +11,7 @@ import Paragraphs from "../../text/paragraphs";
 import CustomImage from "../../image/CustomImage";
 import Section from "../../section";
 
-export default function Qualification({ qualification }) {
-  const { locale } = useContext(LocaleContext);
+export default function Qualification({ qualification, locale="ja" }) {
   const { json } = useLocale(locale)
 
   const list = []

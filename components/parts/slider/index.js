@@ -8,9 +8,7 @@ import LocaleContext from '../../context/localeContext';
 import { useLocale } from '@/utils/locale';
 
 
-export default function SliderList({ sliderList }) {
-  const { locale } = useContext(LocaleContext);
-  const { json, metaTitleExtension } = useLocale(locale)
+export default function SliderList({ sliderList, locale="ja" }) {
 
   let list = []
   for(const slider of sliderList) {
@@ -43,7 +41,7 @@ export default function SliderList({ sliderList }) {
               }}
             >
               {list.map((post) => {
-                return <SliderDetail post={post}></SliderDetail>
+                return <SliderDetail post={post} locale={locale}></SliderDetail>
               })}
             </Splide>
           </section>

@@ -28,7 +28,7 @@ export default function ClassPage({ category, classes }) {
       </Head>
       <div className="">
         <div className="row">
-          <ClassComponent category={category} classes={classes} />
+          <ClassComponent category={category} classes={classes} locale={locale} />
         </div>
       </div>
     </Layout>

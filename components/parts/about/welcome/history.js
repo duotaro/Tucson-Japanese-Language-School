@@ -11,10 +11,7 @@ import Title from "../../text/title";
 import Paragraphs from "../../text/paragraphs";
 import Section from "../../section";
 
-export default function History({ history }) {
-  const { locale } = useContext(LocaleContext);
-  const { json } = useLocale(locale)
-
+export default function History({ history, locale="ja"  }) {
   let entity = new HistoryEntity(history, locale == "ja")
   
   return (

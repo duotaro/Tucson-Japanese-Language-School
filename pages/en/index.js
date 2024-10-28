@@ -41,14 +41,13 @@ export default function Home({ sliderList, sponsors, newsList, scheduleList, abo
       </Head>
       <div className="">
         <div className="row">
-          <SliderList sliderList={sliderList} />  
-          <News list={newsList} isTop={true} />
-          <About about={aboutSchool} isTop={true}/>
-          <Mission mission={mission} />
-          <Vision vision={vision}/>
-          <Opportunity opportunity={opportunity} />
-          {/* <Faq /> */}
-          <Sponsor sponsor={sponsorList} />
+          <SliderList sliderList={sliderList} locale={locale}/>  
+          <News list={newsList} isTop={true} locale={locale}/>  
+          <About about={aboutSchool} isTop={true} locale={locale}/>  
+          <Mission mission={mission} locale={locale}/>  
+          <Vision vision={vision} locale={locale}/>  
+          <Opportunity opportunity={opportunity} locale={locale}/>  
+          <Sponsor sponsor={sponsorList} locale={locale}/>  
         </div>{/* .row */}
       </div>{/* .container */}
     </Layout>

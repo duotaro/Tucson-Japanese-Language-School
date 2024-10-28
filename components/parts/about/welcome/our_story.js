@@ -2,17 +2,12 @@
 
 
 import React, { useContext } from "react";
-import { Text } from "../../../../pages/news/[id]"
-import LocaleContext from "../../../context/localeContext";
-import { useLocale } from "@/utils/locale";
 import { StoryEntity } from "@/entity/storyEntity";
 import Title from "../../text/title";
 import Paragraphs from "../../text/paragraphs";
 import Section from "../../section";
 
-export default function OurStory({ story }) {
-  const { locale } = useContext(LocaleContext);
-  const { json } = useLocale(locale)
+export default function OurStory({ story, locale="ja"  }) {
 
   let entity = new StoryEntity(story, locale == "ja")
 

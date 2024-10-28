@@ -12,9 +12,8 @@ import { useRouter } from "next/router";
 
 const itemsPerPage = 12
 
-export default function News({ list, isTop }) {
+export default function News({ list, isTop, locale="ja" }) {
   const router = useRouter();
-
 
   const updateQuery = (p) => {
     const currentQuery = { ...router.query };
@@ -30,7 +29,6 @@ export default function News({ list, isTop }) {
     }, undefined, { shallow: true });
   };
 
-  const { locale } = useContext(LocaleContext);
   const { json } = useLocale(locale)
 
   const { p } = router.query;
@@ -114,7 +112,7 @@ export default function News({ list, isTop }) {
           )} 
           {pList && pList.map((item) => {
               return (
-                <NewsDetail item={item}/>
+                <NewsDetail item={item} locale={locale}/>
               )
           })}
           </div>

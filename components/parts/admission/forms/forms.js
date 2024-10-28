@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import Section from '../../section';
 
-const FormSection = ({}) => {
+const FormSection = ({locale="ja"}) => {
   
     const [formData, setFormData] = useState({
         name: '',
@@ -110,8 +110,7 @@ const FormSection = ({}) => {
             <button
             className="bg-gray-900 text-white py-2 px-4 rounded hover:bg-gray-800 focus:outline-none focus:shadow-outline"
             type="submit"
-            >
-            送信（翻訳）
+            >送信
             </button>
         </div>
         </form>

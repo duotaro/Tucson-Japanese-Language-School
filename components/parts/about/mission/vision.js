@@ -10,9 +10,7 @@ import Paragraphs from "../../text/paragraphs";
 import CustomImage from "../../image/CustomImage";
 import Section from "../../section";
 
-export default function Vision({ vision }) {
-  const { locale } = useContext(LocaleContext);
-  const { json } = useLocale(locale)
+export default function Vision({ vision, locale="ja" }) {
 
   return (
     <Section>

@@ -2,15 +2,12 @@
 
 
 import React, { useContext } from "react";
-import LocaleContext from "../../../context/localeContext";
 import Title from "../../text/title";
 import Paragraphs from "../../text/paragraphs";
 import { PhilosophyEntity } from "@/entity/philosophyEntity";
 import Section from "../../section";
 
-export default function Philosophy({ philosophy }) {
-  const { locale } = useContext(LocaleContext);
-
+export default function Philosophy({ philosophy, locale="ja" }) {
   let entity = new PhilosophyEntity(philosophy, locale == "ja")
 
   return (

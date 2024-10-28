@@ -8,11 +8,8 @@ import { useLocale } from "@/utils/locale";
 import CustomImage from "../image/CustomImage";
 import Image from "next/image";
 
-export default function SponsorDetail({ item }) {
-  const { locale } = useContext(LocaleContext);
-  const { json } = useLocale(locale)
+export default function SponsorDetail({ item}) {
 
-  //const hClass = "h-32 md:h-24 lg:h-28 xl:h-36 "
   const hClass = " "
 
   return (

@@ -13,7 +13,7 @@ import HowToDonate from "@/components/parts/sponsor/howto";
 import saveImageIfNeeded from "@/components/download";
 
 
-export default function SupportPage({ sponsors, support, sponsor, donation, howto }) {
+export default function SupportPageEn({ sponsors, support, sponsor, donation, howto }) {
   const locale = "en"
   const { json, metaTitleExtension } = useLocale(locale)
   let lang = json.navigation
@@ -43,9 +43,9 @@ export default function SupportPage({ sponsors, support, sponsor, donation, howt
         <div className="w-full px-4 pb-5">
           <Title title={lang.donation} />
         </div>
-        <Sponsor sponsor={sponsorList} bg="bg-white"/>
-        <SponsorRequest support={support} sponsor={sponsor} donation={donation}/>
-        <HowToDonate howto={howto} />
+        <Sponsor sponsor={sponsorList} bg="bg-white" locale={locale}/>
+        <SponsorRequest support={support} sponsor={sponsor} donation={donation} locale={locale}/>
+        <HowToDonate howto={howto} locale={locale}/>
       </div>
     </Layout>
   );

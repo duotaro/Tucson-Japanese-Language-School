@@ -6,10 +6,9 @@ import LocaleContext from '../../../context/localeContext';
 import { useLocale } from '@/utils/locale';
 import Title from '../../text/title';
 
-const PricingSection = ({price, discountFamily, discountStaff}) => {
+const PricingSection = ({price, discountFamily, discountStaff, locale="ja"}) => {
     console.log(price)
-  const { locale } = useContext(LocaleContext);
-  const { json, metaTitleExtension } = useLocale(locale)
+  const { json } = useLocale(locale)
   const [paymentPlan, setPaymentPlan] = useState('yearly'); // 'yearly', 'semiannual', 'monthly'
 
 

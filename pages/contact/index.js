@@ -28,7 +28,7 @@ export default function ContactPage({ isTop }) {
       <div className="container mt-5">
         <Section py="py-2 md:py-4 lg:py-6">
             <div className="container px-6 mx-auto">
-              <Contact />
+              <Contact locale={locale}/>
             </div>
         </Section>
       </div>

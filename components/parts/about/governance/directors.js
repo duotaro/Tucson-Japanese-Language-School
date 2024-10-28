@@ -12,8 +12,7 @@ import CustomImage from "../../image/CustomImage";
 import { DirectorsEntity } from "@/entity/directorsEntity";
 import Section from "../../section";
 
-export default function Directors({ directors }) {
-  const { locale } = useContext(LocaleContext);
+export default function Directors({ directors, locale="ja" }) {
   const { json } = useLocale(locale)
   const lang = json.director
 

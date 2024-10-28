@@ -37,13 +37,13 @@ const createEntity = (item, isJpn) => {
   return res
 }
 
-export default function SponsorRequest({ support, sponsor, donation }) {
-  const { locale } = useContext(LocaleContext);
-  const { json } = useLocale(locale)
+export default function SponsorRequest({ support, sponsor, donation, locale = "ja" }) {
 
   const supportEntity = createEntity(support, locale == "ja")
   const sponsorEntity = createEntity(sponsor, locale == "ja")
   const donationEntity = createEntity(donation, locale == "ja")
+  console.log("----------------------------------")
+  console.log(sponsorEntity.btnLink)
 
   return (
     <>
@@ -57,7 +57,7 @@ export default function SponsorRequest({ support, sponsor, donation }) {
                 <Paragraphs text={supportEntity.text} maxWidth="full"/>
                 {supportEntity.btnLabel && (
                   <div className="mt-6 sm:-mx-2">
-                      <a href="#" className="inline-flex items-center justify-center w-full px-4 text-sm py-2.5 overflow-hidden text-white transition-colors duration-300 bg-gray-900 rounded-lg shadow sm:w-auto sm:mx-2 hover:bg-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 focus:ring focus:ring-gray-300 focus:ring-opacity-80">
+                      <a href={supportEntity.btnLink} className="inline-flex items-center justify-center w-full px-4 text-sm py-2.5 overflow-hidden text-white transition-colors duration-300 bg-gray-900 rounded-lg shadow sm:w-auto sm:mx-2 hover:bg-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 focus:ring focus:ring-gray-300 focus:ring-opacity-80">
                           <GlobeAsiaAustraliaIcon  className="w-5 h-5 mx-2 fill-current" />
                           <span className="mx-2">
                               {supportEntity.btnLabel}
@@ -80,7 +80,7 @@ export default function SponsorRequest({ support, sponsor, donation }) {
 
               {sponsorEntity.btnLabel && (
                   <div className="mt-6 sm:-mx-2">
-                      <a href="#" className="inline-flex items-center justify-center w-full px-4 text-sm py-2.5 overflow-hidden text-white transition-colors duration-300 bg-gray-900 rounded-lg shadow sm:w-auto sm:mx-2 hover:bg-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 focus:ring focus:ring-gray-300 focus:ring-opacity-80">
+                      <a href={sponsorEntity.btnLink} className="inline-flex items-center justify-center w-full px-4 text-sm py-2.5 overflow-hidden text-white transition-colors duration-300 bg-gray-900 rounded-lg shadow sm:w-auto sm:mx-2 hover:bg-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 focus:ring focus:ring-gray-300 focus:ring-opacity-80">
                           <GlobeAsiaAustraliaIcon className="w-5 h-5 mx-2 fill-current" />
                           <span className="mx-2">
                               {sponsorEntity.btnLabel}
@@ -102,7 +102,7 @@ export default function SponsorRequest({ support, sponsor, donation }) {
                 <Paragraphs text={donationEntity.text} maxWidth="full"/>
                   {donationEntity.btnLabel && (
                   <div className="mt-6 sm:-mx-2">
-                      <a href="#" className="inline-flex items-center justify-center w-full px-4 text-sm py-2.5 overflow-hidden text-white transition-colors duration-300 bg-gray-900 rounded-lg shadow sm:w-auto sm:mx-2 hover:bg-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 focus:ring focus:ring-gray-300 focus:ring-opacity-80">
+                      <a href={donationEntity.btnLink} className="inline-flex items-center justify-center w-full px-4 text-sm py-2.5 overflow-hidden text-white transition-colors duration-300 bg-gray-900 rounded-lg shadow sm:w-auto sm:mx-2 hover:bg-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 focus:ring focus:ring-gray-300 focus:ring-opacity-80">
                           <GlobeAsiaAustraliaIcon  className="w-5 h-5 mx-2 fill-current" />
                           <span className="mx-2">
                               {donationEntity.btnLabel}

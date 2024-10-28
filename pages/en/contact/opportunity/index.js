@@ -15,7 +15,6 @@ export default function ContactOpportunityPage({ opportunities, general }) {
   const { json, metaTitleExtension } = useLocale(locale)
   let lang = json.navigation
 
-  console.log(general)
   const title = locale == "ja" ? general.properties["title"].title[0].text.content : general.properties["en"].rich_text[0].text.content
   let text = ""
   if(locale == "ja"){
@@ -48,7 +47,7 @@ let breadcrumb = {
               <Title title={title} />
               <Paragraphs text={text} maxWidth="full"/>
             </div>
-            <OpportunityDetail opportunities={opportunities}/>
+            <OpportunityDetail opportunities={opportunities} locale={locale}/>
           </div>
         </Section>
       </div>

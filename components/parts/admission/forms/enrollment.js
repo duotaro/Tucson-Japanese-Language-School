@@ -2,18 +2,13 @@
 
 
 import React, { useContext } from "react";
-import Image from "next/image"
-import Link from "next/link"
 import LocaleContext from "../../../context/localeContext";
 import { useLocale } from "@/utils/locale";
 import Title from "../../text/title";
 import Paragraphs from "../../text/paragraphs";
-import CustomImage from "../../image/CustomImage";
 import Section from "../../section";
-import Caution from "../../caution";
 
-export default function Enrollment({ enrollment }) {
-  const { locale } = useContext(LocaleContext);
+export default function Enrollment({ enrollment, locale="ja" }) {
   const { json } = useLocale(locale)
 
   const list = []
@@ -39,8 +34,7 @@ export default function Enrollment({ enrollment }) {
             })}
         </div>
         <div className="mt-10">
-        <Paragraphs text={`継続者: 既に在籍している学生 \r\n
-            住所、緊急連絡先、医療コンディションなどに変更があった場合のみ、上記の書類を再提出してください。(翻訳)`} />
+        <Paragraphs text={json.enrollment.attention} />
         </div>
       </div>
     </Section>

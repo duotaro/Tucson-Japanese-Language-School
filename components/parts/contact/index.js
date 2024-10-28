@@ -12,9 +12,8 @@ import SocialMedia from '../sns';
 import Caution from '../caution';
 import LocaleLink from '../menu/LocaleLink';
 
-export default function Contact({ isFooter }) {
+export default function Contact({ isFooter, locale="ja" }) {
 
-  const { locale } = useContext(LocaleContext);
   const { json } = useLocale(locale)
   const lang = json.footer
 

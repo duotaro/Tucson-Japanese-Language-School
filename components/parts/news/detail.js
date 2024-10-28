@@ -11,8 +11,7 @@ import { ACCESABLE_IMAGE_PATH } from "@/const";
 import Image from "next/image";
 import LocaleLink from "../menu/LocaleLink";
 
-export default function NewsDetail({ item }) {
-  const { locale } = useContext(LocaleContext);
+export default function NewsDetail({ item, locale="ja" }) {
   const { json } = useLocale(locale)
 
   let {id, page} = item

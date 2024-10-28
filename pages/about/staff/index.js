@@ -27,7 +27,7 @@ export default function StaffPage({ staffList, roleList }) {
 
       <div className="">
         <div className="row">
-          <ProfileCardList staffList={staffList} roleList={roleList}/>
+          <ProfileCardList staffList={staffList} roleList={roleList} locale={locale}/>
         </div>
       </div>
     </Layout>

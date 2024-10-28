@@ -30,10 +30,10 @@ export default function AdmissionFormsPage({ qualification, price, discountFamil
 
       <div className="">
         <div className="row">
-          <Qualification qualification={qualification} />
-          <PricingSection price={price} discountFamily={discountFamily} discountStaff={discountStaff}/>
-          <Enrollment enrollment={enrollment} />
-          <FormSection  />
+          <Qualification qualification={qualification} locale={locale}/>
+          <PricingSection price={price} discountFamily={discountFamily} discountStaff={discountStaff} locale={locale}/>
+          <Enrollment enrollment={enrollment} locale={locale}/>
+          <FormSection  locale={locale}/>
         </div>
       </div>
     </Layout>

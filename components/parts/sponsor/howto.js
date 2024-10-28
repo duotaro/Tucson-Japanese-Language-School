@@ -12,11 +12,9 @@ import { GlobeAsiaAustraliaIcon } from "@heroicons/react/24/outline";
 import ContributionAccordion from "../menu/accordion";
 import { ACCESABLE_IMAGE_PATH, DOWNLOAD_IMAGE_EXTENSION } from "@/const";
 
-export default function HowToDonate({ howto }) {
-  const { locale } = useContext(LocaleContext);
+export default function HowToDonate({ howto, locale = "ja" }) {
   const { json } = useLocale(locale)
   const isJpn = locale == "ja"
-
 
   let resList = []
   for(let item of howto){
@@ -55,11 +53,13 @@ export default function HowToDonate({ howto }) {
 
   resList.sort((a, b) => a.ordering - b.ordering);
 
+  const title = json.howto.title.replace('{*}', resList.length)
+
   return (
     
     <Section py="py-8 md:py-12 lg:py-20" bg="bg-gray-100">
     <div className="container px-6 mx-auto text-center" >
-      <Title title={`${resList.length}つの方法で貢献する（翻訳）`} />
+      <Title title={title} />
     </div>
     <div className="mb-4 ">
       <div className="w-full">

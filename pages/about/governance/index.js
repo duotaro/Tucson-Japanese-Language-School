@@ -29,9 +29,9 @@ export default function GovernancePage({ directors, orgChart, org_policys }) {
 
       <div className="">
         <div className="row">
-          <Directors directors={directors} />
-          <OrganisationFlowChart orgChart={orgChart}/>
-          <GovernancePolicy orgPolicys={org_policys} />
+          <Directors directors={directors} locale={locale}/>
+          <OrganisationFlowChart orgChart={orgChart} locale={locale}/>
+          <GovernancePolicy orgPolicys={org_policys} locale={locale}/>
         </div>
       </div>
     </Layout>

@@ -8,11 +8,9 @@ import Title from "../../text/title";
 import Paragraphs from "../../text/paragraphs";
 import OpportunityDetailEntity from "@/entity/opportunityDetailEntity";
 
-export default function OpportunityDetail({ opportunities }) {
+export default function OpportunityDetail({ opportunities, locale="ja" }) {
 
   const [activeTab, setActiveTab] = useState("instructor");
-  const { locale } = useContext(LocaleContext);
-  const { json } = useLocale(locale)
 
   let list = []
   for(let opportunity of opportunities){
@@ -20,8 +18,6 @@ export default function OpportunityDetail({ opportunities }) {
     list.push(entity)
   }
   list.sort((a, b) => a.ordering - b.ordering);
-
-
 
   return (
     <div>

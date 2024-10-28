@@ -3,12 +3,10 @@ import React, { useContext } from 'react';
 import ProfileCard from './detail';
 import Section from '../../section';
 import Title from '../../text/title';
-import LocaleContext from '../../../context/localeContext';
 import { useLocale } from '@/utils/locale';
 import { ACCESABLE_IMAGE_PATH, DOWNLOAD_IMAGE_EXTENSION } from '@/const';
 
-const ProfileCardList = ({staffList, roleList}) => {
-    const { locale } = useContext(LocaleContext);
+const ProfileCardList = ({staffList, roleList, locale="ja" }) => {
     const { json } = useLocale(locale)
 
     const rList = []

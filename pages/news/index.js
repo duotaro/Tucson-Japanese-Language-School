@@ -18,9 +18,7 @@ export default function NewsPage({ list }) {
   let breadcrumb = {
     parents: [],
     current: lang.news
-  }
-
-  
+  }  
   
   return (
     <Layout breadcrumb={breadcrumb}>
@@ -28,7 +26,7 @@ export default function NewsPage({ list }) {
         <title>{lang.news} - {metaTitleExtension} </title>
         <meta name="description" content={`${lang.about} - ${lang.description}`} />
       </Head>
-      <News list={list} isTop={false}/>
+      <News list={list} isTop={false} locale={locale}/>
     </Layout>
   );
 }

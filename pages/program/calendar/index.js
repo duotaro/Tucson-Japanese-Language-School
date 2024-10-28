@@ -26,7 +26,7 @@ export default function CalendarPage({ files, list }) {
 
       <div className="w-full mx-auto">
         {/* <Section py="py-2 md:py-4 lg:py-8"> */}
-          <Calender files={files} list={list}/>
+          <Calender files={files} list={list} locale={locale}/>
         {/* </Section> */}
       </div>
     </Layout>

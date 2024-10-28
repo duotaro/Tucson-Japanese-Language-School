@@ -11,10 +11,7 @@ import Paragraphs from "../../text/paragraphs";
 import CustomImage from "../../image/CustomImage";
 import Section from "../../section";
 
-export default function Mission({ mission }) {
-  const { locale } = useContext(LocaleContext);
-  const { json } = useLocale(locale)
-
+export default function Mission({ mission, locale="ja" }) {
   return (
     <Section bg="bg-gray-50">
       <div className="container px-6 mx-auto">

@@ -31,9 +31,9 @@ export default function AboutPage({ welcome }) {
 
       <div className="">
         <div className="row">
-          <Greeting greeting={greeting} />
-          <OurStory story={story} />
-          <History history={history} />
+          <Greeting greeting={greeting} locale={locale}/>
+          <OurStory story={story} locale={locale}/>
+          <History history={history} locale={locale}/>
         </div>
       </div>
     </Layout>

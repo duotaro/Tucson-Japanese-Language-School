@@ -11,16 +11,10 @@ import Title from "../../text/title";
 import Paragraphs from "../../text/paragraphs";
 import Section from "../../section";
 
-export default function Greeting({ greeting }) {
-  const { locale } = useContext(LocaleContext);
-  const { json } = useLocale(locale)
+export default function Greeting({ greeting, locale="ja" }) {
 
   let entity = new GreetingEntity(greeting, locale == "ja")
-
-
   let text = entity.text[0].text.content.split("\n")
-  
-  
   let text1 = {
     type: 'text',
     text: {content:"", link: null},

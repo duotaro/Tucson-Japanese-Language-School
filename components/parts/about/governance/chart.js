@@ -12,8 +12,7 @@ import CustomImage from "../../image/CustomImage";
 import Section from "../../section";
 import OrganisationFlowChartEntity from "@/entity/orgChartEntity";
 
-export default function OrganisationFlowChart({ orgChart }) {
-  const { locale } = useContext(LocaleContext);
+export default function OrganisationFlowChart({ orgChart, locale="ja" }) {
   const { json } = useLocale(locale)
   const lang = json.chart
 

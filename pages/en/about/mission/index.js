@@ -34,8 +34,8 @@ export default function MissionPage({ about, philosophy, policy }) {
         <div className="row">
           <Mission mission={mission} />
           <Vision vision={vision} />
-          <Philosophy philosophy={philosophy[0]}/>
-          <Policy policy={policy[0]} />
+          <Philosophy philosophy={philosophy[0]} locale={locale}/>
+          <Policy policy={policy[0]} locale={locale}/>
         </div>
       </div>
     </Layout>

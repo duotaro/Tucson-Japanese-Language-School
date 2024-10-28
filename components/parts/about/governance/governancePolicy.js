@@ -9,8 +9,7 @@ import Paragraphs from "../../text/paragraphs";
 import OrgPolicyEntity from "@/entity/orgPolicyEntity";
 import PdfDownloads from "../../files/downloadsPdf";
 
-export default function GovernancePolicy({ orgPolicys }) {
-  const { locale } = useContext(LocaleContext);
+export default function GovernancePolicy({ orgPolicys, locale="ja" }) {
   const { json } = useLocale(locale)
   const lang = json.bylaws
 

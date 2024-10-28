@@ -14,7 +14,7 @@ import saveImageIfNeeded from "@/components/download";
 
 
 export default function SupportPage({ sponsors, support, sponsor, donation, howto }) {
-  const { locale } = useContext(LocaleContext);
+  const locale = "ja"
   const { json, metaTitleExtension } = useLocale(locale)
   let lang = json.navigation
 
@@ -29,8 +29,6 @@ export default function SupportPage({ sponsors, support, sponsor, donation, howt
     parents: [],
     current: lang.support
   }
-
-
 
   return (
     <Layout breadcrumb={breadcrumb}>

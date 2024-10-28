@@ -59,7 +59,8 @@
       "updated" : "Updated"
     },
     "calender": {
-      "title": "Event"
+      "title": "School Year Calendar",
+      "download": "Download PDF"
     },
     "director": {
       "title": "Board of Director",
@@ -76,11 +77,21 @@
       "fee":"Enrollment Fee for new students",
       "caution":"Note:fee by Monday. July 31st. "
     },
+    "enrollment":{
+      "attention": "Continuing Students: Students Currently Enrolled \r\nPlease resubmit the above documents only if there are changes to your address, emergency contact information, or medical conditions."
+    },
+    "class":{
+      "caution":"The target age is set as a guideline only, and class placement will be determined in consultation based on the student's Japanese language level."
+    },
+    "howto":{
+      "title":"Contribute in {*} ways"
+    },
     "common": {
       "show_more": "See More",
       "not_found_article": "Not Found",
       "not_found_page": "Not Found Page",
       "back_home": "Home",
-      "download": "Download"
+      "download": "Download",
+      "submit": "Submit"
     }
 }

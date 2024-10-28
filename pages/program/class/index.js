@@ -11,7 +11,7 @@ import Title from "@/components/parts/text/title";
 
 
 export default function ClassPage({ category, classes }) {
-  const { locale } = useContext(LocaleContext);
+  const locale = "ja"
   const { json, metaTitleExtension } = useLocale(locale)
   let lang = json.navigation
 
@@ -28,7 +28,7 @@ export default function ClassPage({ category, classes }) {
       </Head>
       <div className="">
         <div className="row">
-          <ClassComponent category={category} classes={classes} />
+          <ClassComponent category={category} classes={classes} locale={locale}/>
         </div>
       </div>
     </Layout>
