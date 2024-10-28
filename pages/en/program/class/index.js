@@ -11,7 +11,7 @@ import Title from "@/components/parts/text/title";
 
 
 export default function ClassPage({ category, classes }) {
-  const { locale } = useContext(LocaleContext);
+  const locale = "en"
   const { json, metaTitleExtension } = useLocale(locale)
   let lang = json.navigation
 

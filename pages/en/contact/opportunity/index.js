@@ -11,7 +11,7 @@ import Title from "@/components/parts/text/title";
 import Section from "@/components/parts/section";
 
 export default function ContactOpportunityPage({ opportunities, general }) {
-  const { locale } = useContext(LocaleContext);
+  const locale = "en"
   const { json, metaTitleExtension } = useLocale(locale)
   let lang = json.navigation
 

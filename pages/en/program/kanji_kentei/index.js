@@ -6,7 +6,7 @@ import { useLocale } from "@/utils/locale";
 
 
 export default function Kanji_Kentei({  }) {
-  const { locale } = useContext(LocaleContext);
+  const locale = "en"
   const { json, metaTitleExtension } = useLocale(locale)
   let lang = json.navigation
 

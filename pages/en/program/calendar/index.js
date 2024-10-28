@@ -9,7 +9,7 @@ import saveImageIfNeeded from "@/components/download/index"
 import savePdfIfNeeded from "@/components/download/pdf"
 
 export default function CalendarPage({ files, list }) {
-  const { locale } = useContext(LocaleContext);
+  const locale = "en"
   const { json, metaTitleExtension } = useLocale(locale)
   let lang = json.navigation
   let breadcrumb = {

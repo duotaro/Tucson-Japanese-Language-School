@@ -11,7 +11,7 @@ import GovernancePolicy from "@/components/parts/about/governance/governancePoli
 import savePdfIfNeeded from "@/components/download/pdf.js";
 
 export default function GovernancePage({ directors, orgChart, org_policys }) {
-  const { locale } = useContext(LocaleContext);
+  const locale = "en"
   const { json, metaTitleExtension } = useLocale(locale)
   let lang = json.navigation
 

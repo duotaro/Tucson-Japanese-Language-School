@@ -264,7 +264,7 @@ const renderBlock = (block) => {
 };
 
 export default function Post({ pageMap, blockMap, detailPage}) {
-  const { locale } = useContext(LocaleContext);
+  const locale = "en"
   const { json, metaTitleExtension } = useLocale(locale)
   let lang = json.navigation
 

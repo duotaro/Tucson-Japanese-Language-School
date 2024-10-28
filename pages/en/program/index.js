@@ -8,7 +8,7 @@ import { convertAboutFromDatabase } from "@/entity/aboutEntity";
 import Prepare from "@/components/parts/prepare";
 
 export default function ProgramPage({ about }) {
-  const { locale } = useContext(LocaleContext);
+  const locale = "en"
   const { json, metaTitleExtension } = useLocale(locale)
   let lang = json.navigation
 

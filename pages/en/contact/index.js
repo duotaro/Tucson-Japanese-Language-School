@@ -8,7 +8,7 @@ import Section from "@/components/parts/section";
 
 
 export default function ContactPage({ isTop }) {
-  const { locale } = useContext(LocaleContext);
+  const locale = "en"
   const { json, metaTitleExtension } = useLocale(locale)
   let lang = json.navigation
 
