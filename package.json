@@ -28,7 +28,8 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-twitter-embed": "^4.0.4",
-    "resend": "^4.0.0"
+    "resend": "^4.0.0",
+    "sharp": "^0.34.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
