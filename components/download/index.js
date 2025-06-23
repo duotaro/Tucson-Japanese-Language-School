@@ -1,35 +1,32 @@
 import fs from 'fs'
-import path from 'path' // ❶ pathモジュールをインポート
-import sharp from 'sharp' // ❷ sharpライブラリをインポート
 import { DOWNLOAD_IMAGE_EXTENSION, DOWNLOAD_IMAGE_PATH } from '@/const'
 
 export const downloadImagePath = DOWNLOAD_IMAGE_PATH
 export const downloadImageExtention = DOWNLOAD_IMAGE_EXTENSION
 
-const saveImageIfNeeded = async (blocksWithChildren, pagePath) => {
-  const tmpPath = `${downloadImagePath}/${pagePath}`
+const saveImageIfNeeded = async (blocksWithChildren, path) => {
+  const tmpPath = `${downloadImagePath}/${path}`
   const tmpBlock = blocksWithChildren
   
   // try { fs.rmSync(tmpPath, { recursive: true, force: true }); }
   // catch(err) { console.error(err)}
   
   if (!fs.existsSync(tmpPath)) {
-    fs.mkdirSync(tmpPath, { recursive: true }) // ❻ recursive: true を追加してネストされたディレクトリも作成
+    fs.mkdirSync(tmpPath)
   }
 
-  // ❼ Promise.all で並列処理にすることで、すべての画像ダウンロード・保存を待機し、高速化する
-  await Promise.all(blocksWithChildren.map(async (block) => {
-    // 複数の画像プロパティをループ処理するための配列
-    const imageKeys = ['image', 'image1', 'image2', 'image3', 'image_en'];
-    await Promise.all(imageKeys.map(async (key) => {
-      const image = block[key];
-      if (image) {
-        await save(tmpPath, image);
-      } else {
-        console.log(`not found image for key: ${key}`);
-      }
-    }));
-  }));
+  tmpBlock.forEach(async (block) => {
+    const image = block.image
+    await save(tmpPath, image)
+    const image1 = block.image1
+    await save(tmpPath, image1)
+    const image2 = block.image2
+    await save(tmpPath, image2)
+    const image3 = block.image3
+    await save(tmpPath, image3)
+    const imageEn = block.image_en
+    await save(tmpPath, imageEn)
+  })
 }
 
 const save = async (tmpPath, image) => {
@@ -49,8 +46,7 @@ const checkBlock = async (path, image) => {
   if (image.type == 'files' && image.files[0]) {
 
     const tmpName = image.files[0].name
-    const parsedName = path.parse(tmpName.replace(/ /g, '_'))
-    const baseName = parsedName.name // 拡張子なしのファイル名
+    const name = tmpName.replace(/ /g, '_')
 
     const url = image.files[0].file.url
     const blob = await getTemporaryImage(url)
@@ -60,13 +56,12 @@ const checkBlock = async (path, image) => {
       return ''
     }
 
+    const extension = blob.type.replace('image/', '')
 
-    // ⓫ isImageExist 関数を修正 (WebPファイルで存在チェック)
-    if (!isImageExist(outputPath, baseName, 'webp')) {
+    if (!isImageExist(path, name)) {
       const binary = (await blob.arrayBuffer())
       const buffer = Buffer.from(binary)
-      // ⓬ 画像の処理と保存を行う新しい関数を呼び出す
-      await processAndSaveImage(buffer, outputPath, baseName)
+      await saveImage(buffer, path, name)
     } else {
       console.log("already exist image.")
     }
@@ -79,41 +74,43 @@ const getTemporaryImage = async (url) => {
     const blob = await fetch(url).then((r) => r.blob())
     return blob
   } catch (error) {
-    console.log(`Error fetching image from URL: ${url}`, error) // ⓭ エラーメッセージを修正
+    console.log(error)
     return null
   }
 }
 
-const isImageExist = (outputPath, keyName, extension) => {
-  return fs.existsSync(path.join(outputPath, `${keyName}.${extension}`))
+const isImageExist = (path, keyName) => {
+  return fs.existsSync(path + '/' + keyName + downloadImageExtention)
 }
 
+const saveImage = (imageBinary, path, keyName) => {
+//   fs.writeFile(path + '/' + keyName + downloadImageExtention, imageBinary, (error) => {
+//     if (error) {
+//       console.log(error)
+//       throw error
+//     }
+//   })
 
-// saveImage 関数のリトライロジックが必要な場合は、processAndSaveImage 内に組み込む
-const processAndSaveImage = async (imageBuffer, outputPath, baseName) => {
-  // 生成する画像のサイズと品質の定義
-  const qualities = [
-    { width: 480, quality: 80, suffix: 'sm' },  // スマートフォン向け
-    { width: 800, quality: 80, suffix: 'md' },  // タブレット・中型PC向け
-    { width: 1200, quality: 80, suffix: 'lg' }, // デスクトップ向け
-    { width: 1600, quality: 75, suffix: 'xl' }, // 高解像度ディスプレイ向け
-  ];
+  const maxRetries = 3
+  const saveWithRetry = (attempt) => {
+    
+    fs.writeFile(path + '/' + keyName + downloadImageExtention, imageBinary, (error) => {
+      if (error) {
+        if (attempt < maxRetries) {
+          console.log(`Error during saveImage, attempt ${attempt + 1} of ${maxRetries}. Retrying in ${retryDelay}ms...`);
+          setTimeout(() => save(attempt + 1), retryDelay);
+        } else {
+          console.log('Max retries reached. Error during saveImage:');
+          console.log(error);
+          throw error;
+        }
+      } else {
+        console.log('Image saved successfully.');
+      }
+    });
+  };
 
-  // 各サイズ・品質の画像を並列で生成・保存
-  await Promise.all(qualities.map(async ({ width, quality, suffix }) => {
-    const outputFileName = `${baseName}-${suffix}.webp`; // 出力ファイル名 (例: my_image-sm.webp)
-    const fullOutputPath = path.join(outputPath, outputFileName); // 完全な出力パス
-
-    try {
-      await sharp(imageBuffer)
-        .resize(width) // 指定された幅にリサイズ
-        .webp({ quality: quality }) // WebP形式に変換し、品質を設定
-        .toFile(fullOutputPath); // ファイルに保存
-      console.log(`Image saved: ${fullOutputPath}`);
-    } catch (error) {
-      console.error(`Error processing image ${baseName}-${suffix}:`, error);
-    }
-  }));
+  saveWithRetry(0)
 }
 
 export default saveImageIfNeeded
