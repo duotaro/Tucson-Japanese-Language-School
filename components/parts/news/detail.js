@@ -3,12 +3,10 @@
 
 import React, { useContext } from "react";
 import LocaleContext from "../../context/localeContext";
-import Link from "next/link";
 import { useLocale } from "@/utils/locale";
 import NewsEntity from "@/entity/newsEntity";
 import { getRandomInt } from "@/utils/numberUtils";
-import { ACCESABLE_IMAGE_PATH } from "@/const";
-import Image from "next/image";
+import ImageOptimizer from '@/components/download/ImageOptimizer'; // ImageOptimizerのパスを適切に修正
 import LocaleLink from "../menu/LocaleLink";
 
 export default function NewsDetail({ item }) {
@@ -17,8 +15,7 @@ export default function NewsDetail({ item }) {
 
   let {id, page} = item
   let entity = new NewsEntity(page, locale == "ja")
-
-  if(!entity.title.length){
+  if(!entity.title && !entity.title.length){
     return <></>
   }
 
@@ -35,12 +32,25 @@ export default function NewsDetail({ item }) {
       entity.image = `/image/blog/image${random}.jpeg`
     }
   }
+  console.log(entity.image)
   return (
     <div key={entity.id} className="max-w-xd lg:max-w-sm shadow-md rounded-xl bg-slate-100">
         
         <div className="mt-3p-5 bg-gray-100border-2 border-t-0 rounded-b-lg">
         <div className="relative h-48">
-          <Image loading="lazy" src={entity.image} width={200} height={100} style={{ objectFit: 'cover' }} className="object-cover object-center rounded-t-lg w-full h-full absolute inset-0" />
+          <ImageOptimizer
+            baseName={entity.image.baseName}
+            pagePath={entity.image.pagePath}
+            alt={entity.image.alt}
+            // widthとheightは `next/image` で必須です。
+            // Notionから取得できるなら `entity.image.optimizedImage.width` を使うのが理想です。
+            // なければ、この画像が実際に表示される最大幅と、そのアスペクト比に合う高さを設定します。
+            width={entity.image.width || 200}
+            height={entity.image.height || 100}
+            objectFit="cover" // ★ CSSの object-fit: cover; と同じ効果
+            className="object-cover object-center rounded-t-lg w-full h-full absolute inset-0"
+            // loading="lazy" は ImageOptimizer のデフォルトで有効なので、propsとして渡す必要はありません。
+          />
         </div>
         <h2 className="text-lg font-black mt-2 px-3 " style={{
             minHeight: "3em",

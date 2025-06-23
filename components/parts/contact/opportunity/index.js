@@ -6,7 +6,7 @@ import { useLocale } from "@/utils/locale";
 import OpportunityEntity from "@/entity/opportunityEntity";
 import Title from "../../text/title";
 import Paragraphs from "../../text/paragraphs";
-import CustomImage from "../../image/CustomImage";
+import ImageOptimizer from "@/components/download/ImageOptimizer"
 import Section from "../../section";
 import LocaleLink from "../../menu/LocaleLink";
 
@@ -20,16 +20,15 @@ export default function Opportunity({ opportunity }) {
     <Section bg="bg-slate-200">
       <div className="container px-6 mx-auto">
         <div className="grid items-center gap-8 md:grid-flow-col-dense md:grid-cols-2 md:gap-12">
-            {/* <div className="relative w-full md:col-start-1 h-80 md:h-52 lg:h-72 xl:h-96">
-              <Image
-                src={entity.image}
-                alt="Mission"
-                layout="fill"
-                objectFit="cover"
-                className="rounded-lg"
-              />
-            </div> */}
-            <CustomImage src={entity.image} alt="opportunity" addClass="md:col-start-1" />
+            <ImageOptimizer
+              baseName={entity.image.baseName}
+              pagePath={entity.image.pagePath}
+              alt={entity.image.alt}
+              width={entity.image.width || 200}
+              height={entity.image.height || 100}
+              objectFit="cover"
+              className="md:col-start-1"
+            />
             <div className="flex flex-col items-center ">
                 <Title title={entity.title} fontSize="text-xl  sm:text-2xl lg:text-3xl"/>
                 <Paragraphs text={entity.text}/>

@@ -2,8 +2,6 @@
 
 
 import React, { useContext } from "react";
-import Image from "next/image"
-import Link from "next/link"
 import LocaleContext from "../../context/localeContext";
 import { useLocale } from "@/utils/locale";
 import Title from "../text/title";
@@ -11,16 +9,29 @@ import Paragraphs from "../text/paragraphs";
 import CustomImage from "../image/CustomImage";
 import Section from "../section";
 import LocaleLink from "../menu/LocaleLink";
-
+import ImageOptimizer from '@/components/download/ImageOptimizer';
 export default function About({ about, isTop }) {
   const { locale } = useContext(LocaleContext);
   const { json } = useLocale(locale)
+
+  console.log(about)
 
   return (
     <Section bg="bg-slate-200" >
       <div className="container px-6 mx-auto">
         <div className="grid items-center gap-8 md:grid-flow-col-dense md:grid-cols-2 md:gap-12">
-            <CustomImage src={about.image} alt="About" addClass="md:col-start-2" />
+            <ImageOptimizer
+              baseName={about.image.baseName}
+              pagePath={about.image.pagePath}
+              alt={about.image.alt}
+              // widthとheightは `next/image` で必須です。
+              // Notionから取得できるなら `entity.image.optimizedImage.width` を使うのが理想です。
+              // なければ、この画像が実際に表示される最大幅と、そのアスペクト比に合う高さを設定します。
+              width={about.image.width || 200}
+              height={about.image.height || 100}
+              objectFit="cover" // ★ CSSの object-fit: cover; と同じ効果
+              className="md:col-start-2"
+            />
             <div className="flex flex-col items-center ">
                 <Title title={about.title} />
                 <Paragraphs text={about.text} />

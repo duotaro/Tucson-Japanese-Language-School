@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export && next-sitemap --config next-sitemap.js",
+    "build": "NODE_OPTIONS=--max_old_space_size=8192 next build && next export && next-sitemap --config next-sitemap.js",
     "start": "next start",
     "lint": "next lint",
     "sitemap": "next-sitemap --config next-sitemap.js",
@@ -28,7 +28,8 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-twitter-embed": "^4.0.4",
-    "resend": "^4.0.0"
+    "resend": "^4.0.0",
+    "sharp": "^0.34.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
