@@ -19,7 +19,7 @@ export default function History({ history }) {
   
   return (
     <>
-    <Section bg="bg-slate-200">
+    <Section >
       <div className="container mx-auto items-center">
         <div className="flex flex-col items-center  ">
             <Title title={entity.title} />
@@ -27,7 +27,7 @@ export default function History({ history }) {
         </div>
       </div>
     </Section>
-    <Section py="py-2 md:py-4 lg:py-6" bg="bg-slate-200">
+    <Section py="py-2 md:py-4 lg:py-6" >
       <div className="container px-6 mx-auto">
         <div className="grid items-center gap-8 md:grid-flow-col-dense md:grid-cols-3 md:gap-12">
             <div className="md:col-start-1">

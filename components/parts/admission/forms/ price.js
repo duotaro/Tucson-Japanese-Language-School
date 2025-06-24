@@ -178,19 +178,19 @@ const DiscountFamilyComponent = ({list, locale}) => {
     <table className="text-left table-fixed">
       <thead>
         <tr>
-          <th className="p-4 border-b border-slate-200 bg-slate-50">
+          <th className="p-4 border-b border-slate-200 bg-gray-50">
             <p className="text-sm font-normal leading-none text-slate-500"></p>
           </th>
-          <th className="p-4 border-b border-slate-200 bg-slate-50">
+          <th className="p-4 border-b border-slate-200 bg-gray-50">
             <p className="text-sm font-normal leading-none text-slate-500 whitespace-normal">1{unit}</p>
           </th>
-          <th className="p-4 border-b border-slate-200 bg-slate-50">
+          <th className="p-4 border-b border-slate-200 bg-gray-50">
             <p className="text-sm font-normal leading-none text-slate-500 whitespace-normal">2{unit}</p>
           </th>
-          <th className="p-4 border-b border-slate-200 bg-slate-50">
+          <th className="p-4 border-b border-slate-200 bg-gray-50">
             <p className="text-sm font-normal leading-none text-slate-500 whitespace-normal">3{unit}</p>
           </th>
-          <th className="p-4 border-b border-slate-200 bg-slate-50">
+          <th className="p-4 border-b border-slate-200 bg-gray-50">
             <p className="text-sm font-normal leading-none text-slate-500 whitespace-normal">4{unit}</p>
           </th>
         </tr>
@@ -198,7 +198,7 @@ const DiscountFamilyComponent = ({list, locale}) => {
       <tbody>
         {list.map((item, index) => {
           return (
-            <tr key={index} className="hover:bg-slate-50 border-b border-slate-200">
+            <tr key={index} className="hover:bg-gray-50 border-b border-slate-200">
               <td className="p-4 py-5 whitespace-normal"><p className="block font-semibold text-sm text-slate-800">{item.priceDetail.title}</p></td>
               <td className="p-4 py-5 whitespace-normal"><p className="block font-semibold text-sm text-slate-800">${item.first}</p></td>
               <td className="p-4 py-5 whitespace-normal"><p className="block font-semibold text-sm text-slate-800">${item.second}</p></td>
@@ -219,13 +219,13 @@ const DiscountStaffComponent = ({list, locale}) => {
     <table className="text-left table-fixed">
       <thead>
         <tr>
-          <th className="p-4 border-b border-slate-200 bg-slate-50">
+          <th className="p-4 border-b border-slate-200 bg-gray-50">
             <p className="text-sm font-normal leading-none text-slate-500"></p>
           </th>
-          <th className="p-4 border-b border-slate-200 bg-slate-50">
+          <th className="p-4 border-b border-slate-200 bg-gray-50">
             <p className="text-sm font-normal leading-none text-slate-500">{unit}</p>
           </th>
-          <th className="p-4 border-b border-slate-200 bg-slate-50">
+          <th className="p-4 border-b border-slate-200 bg-gray-50">
             <p className="text-sm font-normal leading-none text-slate-500">{code}</p>
           </th>
         </tr>
@@ -233,7 +233,7 @@ const DiscountStaffComponent = ({list, locale}) => {
       <tbody>
         {list.map((item, index) => {
           return (
-            <tr key={index} className="hover:bg-slate-50 border-b border-slate-200">
+            <tr key={index} className="hover:bg-gray-50 border-b border-slate-200">
               <td className="p-4 py-5 whitespace-normal"><p className="block font-semibold text-sm text-slate-800 whitespace-normal">{item.priceDetail.title}</p></td>
               <td className="p-4 py-5"><p className="block font-semibold text-sm text-slate-800">${item.price}</p></td>
               <td className="p-4 py-5"><p className="block font-semibold text-sm text-slate-800">{item.code}</p></td>

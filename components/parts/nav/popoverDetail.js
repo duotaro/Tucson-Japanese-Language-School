@@ -9,7 +9,7 @@ import { createNavUrl, PAYMENT_URL } from "@/const/pageUrl";
 import Link from "next/link";
 import LocaleLink from "../menu/LocaleLink";
 
-export default function PopoverDetail({ item }) {
+export default function PopoverDetail({ item, isMainNav = false }) {
   const { locale } = useContext(LocaleContext);
   const { json } = useLocale(locale)
   const [isHovered, setIsHovered] = useState(false);
@@ -20,7 +20,16 @@ export default function PopoverDetail({ item }) {
   let parentKey = parent.PAGE_KEY
   let parentTitle = json.navigation[parentKey]
 
-  let hoverdClass = isHovered ? "opacity-100 visible" : "opacity-0 invisible" 
+  let hoverdClass = isHovered ? "opacity-100 visible" : "opacity-0 invisible"
+  
+  // スタイルの分岐
+  const linkClass = isMainNav 
+    ? "text-sm font-semibold leading-6 text-white no-underline hover:text-gray-200 transition-colors"
+    : "text-sm font-semibold leading-6 text-gray-900 no-underline hover:text-blue-600 transition-colors"
+  
+  const dropdownClass = isMainNav
+    ? "flex items-center gap-x-1 text-sm text-white font-semibold leading-6 hover:text-gray-200 transition-colors"
+    : "flex items-center gap-x-1 text-sm text-gray-900 font-semibold leading-6 hover:text-blue-600 transition-colors" 
 
   return (
     <>
@@ -29,12 +38,12 @@ export default function PopoverDetail({ item }) {
         )} */}
     {item.dropdowns.length == 0 && (
           parentKey === PAYMENT_URL.PAGE_KEY ? (
-            <div className="flex items-center justify-center text-white no-underline hover:text-gray-200">
+            <div className="flex items-center justify-center text-white no-underline hover:text-gray-200 transition-colors">
               <ArrowTopRightOnSquareIcon aria-hidden="true" className="h-4 w-4 mr-1" />
-              <a className="text-sm font-semibold leading-6 " href="https://tucsonhosyuko.square.site/" target="_blank">{parentTitle}</a>
+              <a className="text-sm font-semibold leading-6" href="https://tucsonhosyuko.square.site/" target="_blank">{parentTitle}</a>
             </div>
           ) : (
-            <LocaleLink className="text-sm font-semibold leading-6 text-white no-underline hover:text-gray-200" href={parentLink}>{parentTitle}</LocaleLink>
+            <LocaleLink className={linkClass} href={parentLink}>{parentTitle}</LocaleLink>
           )
     )}
     {item.dropdowns.length > 0 && (
@@ -42,7 +51,7 @@ export default function PopoverDetail({ item }) {
         onMouseEnter={() => setIsHovered(true)}   // ホバー開始時に呼ばれる
         onMouseLeave={() => setIsHovered(false)} // ホバー終了時に呼ばれる
         >
-            <div className="flex items-center gap-x-1 text-sm text-white font-semibold leading-6 hover:text-gray-200">
+            <div className={dropdownClass}>
               <span href={parentLink}>{parentTitle}</span><ChevronDownIcon aria-hidden="true" className="h-5 w-5 flex-none " />
             </div>
 
@@ -58,7 +67,7 @@ export default function PopoverDetail({ item }) {
                 return (
                     <div
                     key={dropdown.key}
-                    className="relative flex items-center p-4 text-sm leading-6 hover:bg-cyan-500 hover:text-gray-50"
+                    className="relative flex items-center p-4 text-sm leading-6 hover:bg-blue-500 hover:text-gray-50"
                     >
                     {/* <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                         <dropdown.icon aria-hidden="true" className="h-6 w-6 text-gray-600 group-hover:text-indigo-600" />

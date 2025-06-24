@@ -34,9 +34,9 @@ export default function NewsDetail({ item }) {
   }
   // console.log(entity.image)
   return (
-    <div key={entity.id} className="max-w-xd lg:max-w-sm shadow-md rounded-xl bg-slate-100">
+    <div key={entity.id} className="max-w-xd lg:max-w-sm bg-white border border-gray-200 shadow-md rounded-lg">
         
-        <div className="mt-3p-5 bg-gray-100border-2 border-t-0 rounded-b-lg">
+        <div className="p-6">
         <div className="relative h-48">
           {entity.image && typeof entity.image === 'object' && entity.image.baseName ? (
             <ImageOptimizer
@@ -46,18 +46,18 @@ export default function NewsDetail({ item }) {
               width={entity.image.width || 200}
               height={entity.image.height || 100}
               objectFit="cover"
-              className="object-cover object-center rounded-t-lg w-full h-full absolute inset-0"
+              className="object-cover object-center rounded-lg w-full h-full absolute inset-0"
             />
           ) : (
             // フォールバック画像の場合
             <img
               src={entity.image}
               alt="News"
-              className="object-cover object-center rounded-t-lg w-full h-full absolute inset-0"
+              className="object-cover object-center rounded-lg w-full h-full absolute inset-0"
             />
           )}
         </div>
-        <h2 className="text-lg font-black mt-2 px-3 " style={{
+        <h2 className="text-lg font-black mt-4 " style={{
             minHeight: "3em",
             lineHeight: "1.5em",
             overflow: "hidden"
@@ -71,7 +71,7 @@ export default function NewsDetail({ item }) {
             })}
         </h2>
         {entity.text && (
-            <div className="line-clamp-2 px-3 min-h-10 max-w-md my-3 text-md font-light leading-relaxed text-gray-500 ">
+            <div className="line-clamp-2 min-h-10 max-w-md my-3 text-md font-light leading-relaxed text-gray-500 ">
             {entity.text.map((text) => {
                 return text.href ? (
                     <a href={text.href} target="_blank" className="link-secondary" key={text.text.content}>{text.text.content}</a>
@@ -81,7 +81,7 @@ export default function NewsDetail({ item }) {
             })}
             </div>
         )}
-        <div className="mb-5 text-center">
+        <div className="mt-4 text-center">
           <LocaleLink href={`/news/${id}`} className="px-3 py-2 text-md transition-colors rounded-md bg-blue-600 text-white hover:bg-blue-700">
             {json.common.show_more}
           </LocaleLink>

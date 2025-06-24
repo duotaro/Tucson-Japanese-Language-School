@@ -17,7 +17,7 @@ export default function About({ about, isTop }) {
   // console.log(about)
 
   return (
-    <Section bg="bg-slate-200" >
+    <Section  >
       <div className="container px-6 mx-auto">
         <div className="grid items-center gap-8 md:grid-flow-col-dense md:grid-cols-2 md:gap-12">
             {about.image && (

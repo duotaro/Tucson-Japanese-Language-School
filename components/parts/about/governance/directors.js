@@ -20,7 +20,7 @@ export default function Directors({ directors }) {
         
 
   return (
-    <Section py="py-8 md:py-6 lg:py-10" bg="bg-gray-50">
+    <Section py="py-8 md:py-6 lg:py-10" >
       <div className="container px-6 mx-auto">
         <div className="flex flex-wrap mb-5">
           <div className="w-full max-w-full  mx-auto">

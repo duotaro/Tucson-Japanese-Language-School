@@ -14,7 +14,7 @@ export default function Vision({ vision }) {
   const { json } = useLocale(locale)
 
   return (
-    <Section>
+    <Section >
       <div className="container px-6 mx-auto">
         <div className="grid items-center gap-8 md:grid-flow-col-dense md:grid-cols-2 md:gap-12">
             {vision.image && (

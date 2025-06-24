@@ -16,7 +16,7 @@ export default function Donation({ donation }) {
 
   return (
     <>
-      <section className="py-8 md:py-12 lg:py-20 bg-slate-50">
+      <section className="py-8 md:py-12 lg:py-20 bg-gray-50">
         <div className="container px-6 mx-auto">
           <div className="flex flex-col items-center mb-5 ">
             <Title title="募金活動・寄付のお願い" />

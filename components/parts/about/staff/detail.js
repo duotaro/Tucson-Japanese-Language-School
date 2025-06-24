@@ -7,7 +7,7 @@ const ProfileCard = ({item}) => {
    const { name, role, image, text } = item
   return (
       <div className="flex relative my-10 w-full mx-auto py-5 px-5 ustify-center">
-        <div className="rounded-xl overflow-hidden shadow-lg bg-white w-[95%] border border-blue-gray-50 bg-white flex justify-center">
+        <div className="rounded-lg overflow-hidden shadow-md bg-white w-[95%] border border-gray-200 bg-white flex justify-center">
             <div className="absolute -mt-20 w-full flex justify-center">
                 <div className="h-40 w-40">
                 <img
@@ -19,7 +19,7 @@ const ProfileCard = ({item}) => {
             </div>
             <div className="p-6 mt-16 ">
                 <h1 className="font-bold text-2xl text-center ">{name}</h1>
-                <p className="text-blue-800 text-sm text-center font-semibold">
+                <p className="text-blue-600 text-sm text-center font-semibold">
                 {role.map((r, index) => {
                     return (
                     <>

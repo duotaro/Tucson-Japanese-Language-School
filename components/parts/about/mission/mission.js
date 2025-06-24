@@ -14,7 +14,7 @@ export default function Mission({ mission }) {
   const { json } = useLocale(locale)
 
   return (
-    <Section bg="bg-gray-50">
+    <Section >
       <div className="container px-6 mx-auto">
         <div className="grid gap-8 md:grid-flow-col-dense md:grid-cols-2 md:gap-12">
             {mission.image && (

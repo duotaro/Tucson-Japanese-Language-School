@@ -14,7 +14,7 @@ export default function Philosophy({ philosophy }) {
   let entity = new PhilosophyEntity(philosophy, locale == "ja")
 
   return (
-    <Section bg="bg-gray-50">
+    <Section >
       <div className="container px-6 mx-auto ">
         <div className="grid items-center gap-8">
           <div className="flex flex-col items-center ">

@@ -24,7 +24,7 @@ export default function Enrollment({ enrollment }) {
 
 
   return (
-    <Section bg="bg-gray-50">
+    <Section >
       <div className="container px-6 mx-auto">
         <div className="mb-5"><Title title={json.navigation.enrollment} fontSize = "text-2xl sm:text-3xl lg:text-4xl"/></div>
         <div className="grid gap-8 lg:grid-flow-col-dense lg:grid-cols-2 xl:grid-cols-3 lg:gap-12">

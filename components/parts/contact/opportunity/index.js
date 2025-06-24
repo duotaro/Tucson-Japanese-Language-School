@@ -17,7 +17,7 @@ export default function Opportunity({ opportunity }) {
   const entity = new OpportunityEntity(opportunity[0], locale == "ja")
 
   return (
-    <Section bg="bg-slate-200">
+    <Section >
       <div className="container px-6 mx-auto">
         <div className="grid items-center gap-8 md:grid-flow-col-dense md:grid-cols-2 md:gap-12">
             {entity.image && (

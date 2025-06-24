@@ -11,6 +11,11 @@ module.exports = {
   poweredByHeader: false,
   output: 'export',
   
+  // 静的エクスポート用の画像設定
+  images: {
+    unoptimized: true
+  },
+  
   // エラー処理の改善
   onDemandEntries: {
     maxInactiveAge: 25 * 1000,

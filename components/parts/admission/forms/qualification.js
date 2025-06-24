@@ -23,7 +23,7 @@ export default function Qualification({ qualification }) {
 
 
   return (
-    <Section bg="bg-gray-50">
+    <Section >
       <div className="container px-6 mx-auto">
         <div className="flex flex-col items-center text-center mb-10">
           <Title title={json.navigation.qualification} fontSize="text-2xl sm:text-3xl lg:text-4xl"/>
@@ -31,7 +31,7 @@ export default function Qualification({ qualification }) {
         <div className="grid gap-8 lg:grid-cols-2 md:gap-12">
             {list.map((item, index) => {
                 return (
-                    <div key={index} className="bg-white border border-gray-200 shadow-sm rounded-lg p-8">
+                    <div key={index} className="bg-white border border-gray-200 shadow-md rounded-lg p-6">
                       <div className="flex flex-col items-center text-center">
                         <Title title={item.title} fontSize="text-xl font-semibold mb-4"/>
                         <Paragraphs text={item.text} maxWidth="full"/>

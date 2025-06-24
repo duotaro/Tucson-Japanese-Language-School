@@ -57,7 +57,7 @@ export default function HowToDonate({ howto }) {
 
   return (
     
-    <Section py="py-8 md:py-12 lg:py-20" bg="bg-gray-100">
+    <Section py="py-8 md:py-12 lg:py-20" >
     <div className="container px-6 mx-auto text-center" >
       <Title title={`${resList.length}つの方法で貢献する（翻訳）`} />
     </div>

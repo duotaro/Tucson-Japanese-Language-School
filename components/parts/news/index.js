@@ -101,7 +101,7 @@ export default function News({ list, isTop }) {
 
 
   return (
-    <Section py={sectionPy} bg="bg-white" px={sectionPx}>
+    <Section py={sectionPy} px={sectionPx} >
       {isTop && (
       <div className="container px-6 mx-auto text-center" >
         <Title title={json.navigation.news} link={`/news`}/>

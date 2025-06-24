@@ -60,7 +60,7 @@ export default function Greeting({ greeting }) {
   text2.plain_text = text2content
 
   return (
-    <Section bg="bg-gray-50">
+    <Section >
       <div className="container mx-auto">
         <div className="flex flex-col items-center  ">
           <Title title={entity.title} />

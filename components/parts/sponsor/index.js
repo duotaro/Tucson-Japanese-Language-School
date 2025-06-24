@@ -13,7 +13,7 @@ export default function Sponsor({ sponsor, bg = "bg-gray-50" }) {
     const { locale } = useContext(LocaleContext);
     const { json } = useLocale(locale)
     return (
-      <Section py="py-2 md:py-4 lg:py-8" bg={bg}>
+      <Section py="py-2 md:py-4 lg:py-8" >
         <div className="container px-6 mx-auto text-center" >
           <LocaleLink href={`/support/`}>
             <Title title={json.navigation.sponsors} fontSize="text-xl sm:text-2xl xl:text-3xl"/>

@@ -167,7 +167,7 @@ export default function Calender({files, list}) {
       {/* title */}
       
       {/* event */}
-      <Section py="py-10" bg="bg-gray-100">
+      <Section py="py-10" >
         <div className="flex flex-col justify-center items-center mb-2 ">
           <Title title={`${json.navigation.calendar}(${schoolYear.label})`} />
         </div>

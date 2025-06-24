@@ -4,7 +4,6 @@ import { useContext } from 'react';
 import LocaleContext from './context/localeContext';
 import Navbar from './navbar'
 import Footer from './footer'
-import Nav from './parts/nav/nav'
 import Breadcrumb from "./parts/nav/breadcrumb";
 import Sponsor from "./parts/sponsor";
 
@@ -51,7 +50,6 @@ export default function Layout({ children, breadcrumb }) {
         <meta name="twitter:image" content="https://tjschool.org/logo-ja.png" />
       </Head>
         <Navbar />
-        <Nav />
         {breadcrumb && ( <Breadcrumb parents={breadcrumb.parents} current={breadcrumb.current} /> )}
         <main className="">{children}</main>
 
