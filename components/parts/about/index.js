@@ -14,7 +14,7 @@ export default function About({ about, isTop }) {
   const { locale } = useContext(LocaleContext);
   const { json } = useLocale(locale)
 
-  console.log(about)
+  // console.log(about)
 
   return (
     <Section bg="bg-slate-200" >

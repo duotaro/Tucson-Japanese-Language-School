@@ -79,7 +79,7 @@ class StaffEntity{
       }
     }
 
-    console.log(this.role)
+    // console.log(this.role)
 
     this.image = null
     if(item.properties["image"] && item.properties["image"].files[0]){

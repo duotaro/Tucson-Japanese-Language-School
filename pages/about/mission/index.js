@@ -24,7 +24,7 @@ export default function MissionPage({ about, philosophy, policy }) {
     current: lang.mission
   }
 
-  console.log(mission)
+  // console.log(mission)
 
   return (
     <Layout breadcrumb={breadcrumb}>

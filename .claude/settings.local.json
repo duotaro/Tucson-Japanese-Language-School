@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "Bash(timeout:*)",
-      "Bash(node:*)"
+      "Bash(node:*)",
+      "Bash(grep:*)"
     ],
     "deny": []
   }

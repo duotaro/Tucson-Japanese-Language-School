@@ -51,8 +51,8 @@ export default class ClassEntity {
         this.categoryText = ""
         if(category?.properties){
             this.category = category.properties["id"]?.select?.name || null
-            console.log("------")
-            console.log(this.category)
+            // console.log("------")
+            // console.log(this.category)
             if(isJapanease && category.properties["title"]?.title?.[0]){
                 this.categoryTitle = category.properties["title"].title[0].text.content
             }

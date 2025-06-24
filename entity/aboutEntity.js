@@ -87,7 +87,7 @@ export const convertAboutFromDatabase = (database, isJpn) => {
                 vision = entity
                 break;
             default:
-              console.log(`Sorry, we are out of ${entity.tag}.`);
+              // console.log(`Sorry, we are out of ${entity.tag}.`);
         } 
     }
 

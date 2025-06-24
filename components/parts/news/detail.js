@@ -32,7 +32,7 @@ export default function NewsDetail({ item }) {
       entity.image = `/image/blog/image${random}.jpeg`
     }
   }
-  console.log(entity.image)
+  // console.log(entity.image)
   return (
     <div key={entity.id} className="max-w-xd lg:max-w-sm shadow-md rounded-xl bg-slate-100">
         

@@ -13,16 +13,16 @@ export default function SwitchLang({}) {
     const handleClick = (locale) => {
         setLocale(locale)
         if (locale === 'ja' && router.asPath.includes('/en/')) {
-          console.log("-----------------")
-          console.log(router.pathname)
-          console.log("-----------------")
+          // console.log("-----------------")
+          // console.log(router.pathname)
+          // console.log("-----------------")
           const newPath = router.asPath.replace('/en/', '/'); // /en/を除いたパス
           router.push(newPath, undefined, { shallow: true }); // shallowオプションでクエリのみ更新
         } 
         if (locale === 'en' && !router.asPath.includes('/en/')) {
-          console.log("-----------------")
-          console.log(router.pathname)
-          console.log("-----------------")
+          // console.log("-----------------")
+          // console.log(router.pathname)
+          // console.log("-----------------")
           const newPath = `/en${router.asPath}`; // /en/を追加したパス
           router.push(newPath, undefined, { shallow: true });
         } 
