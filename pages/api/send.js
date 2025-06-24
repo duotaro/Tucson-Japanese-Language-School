@@ -6,7 +6,7 @@ import os from 'os';
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 
-export default async (req, res) => {
+const handler = async (req, res) => {
   console.log(req)
   const { name, email, phone, date, time, service, message } = req.body;
   const emailContent = EmailTemplate({ formData: { name, email, phone, date, time, service, message } });
@@ -52,3 +52,5 @@ console.log("-----------------")
 
   res.status(200).json(data);
 };
+
+export default handler;

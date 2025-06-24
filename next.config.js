@@ -26,5 +26,18 @@ module.exports = {
   experimental: {
     workerThreads: false,
     cpus: 1
+  },
+  
+  // サーバーサイド専用モジュールの除外
+  webpack: (config, { isServer }) => {
+    if (!isServer) {
+      config.resolve.fallback = {
+        ...config.resolve.fallback,
+        fs: false,
+        child_process: false,
+        sharp: false,
+      };
+    }
+    return config;
   }
 };

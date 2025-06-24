@@ -1,6 +1,6 @@
 
 
-import React, { useContext, useState, useEffect } from "react";
+import React, { useContext, useState, useEffect, useCallback } from "react";
 import NewsDetail from "./detail";
 import LocaleContext from "../../context/localeContext";
 import { useLocale } from "@/utils/locale";
@@ -36,11 +36,11 @@ export default function News({ list, isTop, locale="ja" }) {
   const totalPages = Math.ceil(list.length / itemsPerPage);
   const [pList, setPList] = useState(list.slice(0, itemsPerPage))
 
-  const paginateArray = (page) => {
+  const paginateArray = useCallback((page) => {
     const startIndex = (page - 1) * itemsPerPage;
     const endIndex = startIndex + itemsPerPage;
     return list.slice(startIndex, endIndex);
-  };
+  }, [list]);
 
   const nextPage = () => {
     const cp = Number(currentPage) + 1
@@ -82,7 +82,7 @@ export default function News({ list, isTop, locale="ja" }) {
       const detail = paginateArray(p)
       setPList(detail)
     }
-  }, [router.query.p]); // pが変更されたときに実行
+  }, [router.query.p, paginateArray]); // pとpaginateArrayが変更されたときに実行
 
 
   let sectionPy = "md:py-2"
@@ -110,9 +110,9 @@ export default function News({ list, isTop, locale="ja" }) {
           {!pList || pList.length == 0 && (
             <p>not found</p>
           )} 
-          {pList && pList.map((item) => {
+          {pList && pList.map((item, index) => {
               return (
-                <NewsDetail item={item} locale={locale}/>
+                <NewsDetail key={item.id || index} item={item} locale={locale}/>
               )
           })}
           </div>

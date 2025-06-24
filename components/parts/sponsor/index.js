@@ -20,9 +20,9 @@ export default function Sponsor({ sponsor, bg = "bg-gray-50", locale = "ja" }) {
         </div>
         <div className="container mx-auto">
           <div className="grid items-center justify-center gap-8 py-2 grid-cols-3 px-5 lg:px-16 xl:px-20">
-            {sponsor.map((item) => {
+            {sponsor.map((item, index) => {
                 return (
-                  <SponsorDetail item={item} />
+                  <SponsorDetail key={item.id || index} item={item} />
                 )
             })}
             </div>

@@ -9,7 +9,7 @@ import SliderList from '@/components/parts/slider/index.js';
 import News from '@/components/parts/news/index.js';
 import SponsorEntity from '@/entity/sponsorEntity.js';
 import LocaleContext from '@/components/context/localeContext.js';
-import { fetchDataWithOptimizedImages } from '@/utils/imageUtils.js';
+// import { fetchDataWithOptimizedImages } from '@/lib/imageUtils.js'; // サーバーサイドで動的インポート
 import Mission from '@/components/parts/about/mission/mission.js';
 import Vision from '@/components/parts/about/mission/vision.js';
 import { convertAboutFromDatabase } from '@/entity/aboutEntity.js';
@@ -96,18 +96,21 @@ export const getStaticProps = async (context) => {
  * @returns list [SliderEntity]
  */
 const getSlider = async () => {
+  const { fetchDataWithOptimizedImages } = await import('@/lib/imageUtils.js');
   const topBannerId = "f2bd94d61f7c45958755562d366af5ea"
   return await fetchDataWithOptimizedImages(topBannerId, "slider");
 }
 
 
 const getNews = async (limit = null) => {
+  const { fetchDataWithOptimizedImages } = await import('@/lib/imageUtils.js');
   const database = await fetchDataWithOptimizedImages(newsId, "news");
   let params = await getNewsList(database, limit)
   return params
 }
 
 const getSponsors = async () => {
+  const { fetchDataWithOptimizedImages } = await import('@/lib/imageUtils.js');
   return await fetchDataWithOptimizedImages("1e302ac5bce442b797e491aee309e7c4", "sponsor");
 }
 
@@ -117,9 +120,11 @@ const getCalender = async () => {
 }
 
 const getAbout = async () => {
+  const { fetchDataWithOptimizedImages } = await import('@/lib/imageUtils.js');
   return await fetchDataWithOptimizedImages("d4eb3828e74c469b9179ca7be9edb5cf", "about");
 }
 
 const getOpportunity = async () => {
+  const { fetchDataWithOptimizedImages } = await import('@/lib/imageUtils.js');
   return await fetchDataWithOptimizedImages("d9037016a0524f08adecdbab0c7302b7", "opportunity");
 }

@@ -55,9 +55,9 @@ export default function GovernancePage({ reports }) {
                   <hr className="border my-10 "/>
                   {/* PDFリンクセクション */}
                   <div className="grid gap-4 sm:grid-cols-2 md:gap-6 lg:grid-cols-3 xl:grid-cols-4">
-                    {past.map((item) => {
+                    {past.map((item, index) => {
                       return (
-                        <PdfDownloads filePath={item.pdf} title={item.title} />  
+                        <PdfDownloads key={item.id || item.title || index} filePath={item.pdf} title={item.title} />  
                       )
                     })}
                   </div>

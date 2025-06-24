@@ -23,9 +23,9 @@ export default function Side({ sponsorList }) {
             <div className="card-header  bg-dark text-white">
               <i class="bi bi-emoji-smile text-warning m-1"></i>{title}
             </div>
-            {sponsorList.map((sponsor) => {
+            {sponsorList.map((sponsor, index) => {
               return (
-                <SponsorList sponsor={sponsor} />
+                <SponsorList key={sponsor.id || index} sponsor={sponsor} />
               )
             })}
             

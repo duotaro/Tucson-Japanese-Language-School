@@ -4,7 +4,8 @@ import React, { useContext } from 'react';
 import LocaleContext from "@/components/context/localeContext";
 import { useLocale } from "@/utils/locale";
 import { getDatabase } from "@/lib/notion";
-import { fetchDataWithOptimizedImages, generateAlternateLinks } from "@/utils/imageUtils";
+// import { fetchDataWithOptimizedImages } from "@/lib/imageUtils";
+import { generateAlternateLinks } from '@/utils/seoUtils.js';
 import Directors from "@/components/parts/about/governance/directors.js";
 import OrganisationFlowChart from "@/components/parts/about/governance/chart.js";
 import GovernancePolicy from "@/components/parts/about/governance/governancePolicy.js";
@@ -59,11 +60,13 @@ export const getStaticProps = async (context) => {
 };
 
 const getDirector = async () => {
+  const { fetchDataWithOptimizedImages } = await import('@/lib/imageUtils.js');
   const database = await fetchDataWithOptimizedImages("10ba8c0ecf8c807ba7c6c7c9128d9770", "director")
   return database
 }
 
 const getOrgChart = async () => {
+  const { fetchDataWithOptimizedImages } = await import('@/lib/imageUtils.js');
   const database = await fetchDataWithOptimizedImages("10ca8c0ecf8c80629eb3ee7c40cf9005", "org_chart")
   return database
 }

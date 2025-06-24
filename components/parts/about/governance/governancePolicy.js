@@ -30,9 +30,9 @@ export default function GovernancePolicy({ orgPolicys, locale="ja" }) {
             </div>
             {/* PDFリンクセクション */}
             <div className="grid gap-4 sm:grid-cols-2 md:gap-6 md:grid-cols-3 xl:px-20">
-              {list.map((item) => {
+              {list.map((item, index) => {
                 return (
-                  <PdfDownloads filePath={item.pdf} title={item.title} />  
+                  <PdfDownloads key={item.title || index} filePath={item.pdf} title={item.title} />  
                 )
               })}
             </div>

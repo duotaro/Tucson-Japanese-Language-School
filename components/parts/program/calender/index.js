@@ -3,7 +3,7 @@ import FullCalendar from '@fullcalendar/react'
 import dayGridPlugin from '@fullcalendar/daygrid'
 import interactionPlugin, { Draggable, DropArg } from '@fullcalendar/interaction'
 import timeGridPlugin from '@fullcalendar/timegrid'
-import { useEffect, useState, useRef } from 'react'
+import { useEffect, useState, useRef, useCallback, useMemo } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import { useLocale } from '@/utils/locale'
 import Title from '../../text/title'
@@ -63,7 +63,7 @@ export default function Calender({files, list, locale="ja"}) {
 
   const [detailList, setDetailList] = useState([])
 
-  const createDate = (date) => {
+  const createDate = useCallback((date) => {
     let targetDate = date ? new Date(date) : new Date()
     return targetDate.toLocaleString(
       locale,
@@ -73,7 +73,7 @@ export default function Calender({files, list, locale="ja"}) {
           year: "numeric",
         }
       );
-  }
+  }, [locale])
   const createEventDate = (date) => {
     let targetDate = date ? new Date(date) : new Date()
     return targetDate.toLocaleString(
@@ -88,23 +88,28 @@ export default function Calender({files, list, locale="ja"}) {
   const [current, setCurrent] = useState(createDate())
   const [rowDate, setRowDate] = useState(new Date())
 
-  let resList = []
+  const resList = useMemo(() => {
+    let res = []
+    for(const item of list){
+      const entity = new SchaduleEntity(item, locale == "ja")
+      const scheduleDict = Object.assign({}, entity);
+      res.push(scheduleDict)
+    }
+    return res
+  }, [list, locale])
+
   let eventList = []
   let dateMap = []
-  for(const item of list){
-    const entity = new SchaduleEntity(item, locale == "ja")
-    const scheduleDict = Object.assign({}, entity);
-    resList.push(scheduleDict)
-
-    const key = `${scheduleDict.year}-${String(scheduleDict.month).padStart(2, '0')}-${String(scheduleDict.day).padStart(2, '0')}`;
+  for(const item of resList){
+    const key = `${item.year}-${String(item.month).padStart(2, '0')}-${String(item.day).padStart(2, '0')}`;
 
     if (!dateMap[key]) {
       dateMap[key] = []; // キーが存在しない場合、空の配列を作成
     }
-    dateMap[key].push(scheduleDict); 
+    dateMap[key].push(item); 
 
-    if(scheduleDict.isEvent && isWithinSchoolYear(scheduleDict.dateTime)){
-      eventList.push(scheduleDict)
+    if(item.isEvent && isWithinSchoolYear(item.dateTime)){
+      eventList.push(item)
     }
   }
   eventList = eventList.sort((a, b) => new Date(a.start) - new Date(b.start));
@@ -158,7 +163,7 @@ export default function Calender({files, list, locale="ja"}) {
     selectDates(new Date(rowDate))
     setCurrent(createDate(rowDate))
     setAllEvents(resList)
-  }, [rowDate, locale]);
+  }, [rowDate, locale, createDate, resList]);
   
   return (
     <>

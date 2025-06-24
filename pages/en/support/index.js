@@ -10,7 +10,8 @@ import SponsorEntity from "@/entity/sponsorEntity";
 import { getDatabase } from "@/lib/notion";
 import SponsorRequest from "@/components/parts/sponsor/request";
 import HowToDonate from "@/components/parts/sponsor/howto";
-import { fetchDataWithOptimizedImages, generateAlternateLinks } from "@/utils/imageUtils";
+// import { fetchDataWithOptimizedImages } from "@/lib/imageUtils";
+import { generateAlternateLinks } from '@/utils/seoUtils.js';
 
 
 export default function SupportPageEn({ sponsors, support, sponsor, donation, howto }) {
@@ -58,6 +59,7 @@ export default function SupportPageEn({ sponsors, support, sponsor, donation, ho
 
 
 export const getStaticProps = async (context) => {
+  const { fetchDataWithOptimizedImages } = await import('@/lib/imageUtils.js');
   const database = await getDatabase("1e302ac5bce442b797e491aee309e7c4")
   const support = await getDatabase("10ca8c0ecf8c8039a51bdd38f640a34e")
   const sponsor = await getDatabase("10ea8c0ecf8c80eeae62cc2050b7e7f7")

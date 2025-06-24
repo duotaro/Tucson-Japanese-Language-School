@@ -8,6 +8,7 @@ import { useLocale } from "@/utils/locale";
 import LocaleContext from "../../context/localeContext";
 import { DocumentArrowDownIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function PdfDownloads({ filePath, title, isNew = false }) {
   const { locale } = useContext(LocaleContext);
@@ -20,7 +21,7 @@ export default function PdfDownloads({ filePath, title, isNew = false }) {
   return (
     <div className="">
       <Link href={filePath} target="_blank" className={`group relative flex h-96 items-end overflow-hidden rounded-lg ${bg} p-4 shadow-lg hover:border-2`}>
-        <img src="/image/components/pdf.png" loading="lazy" alt={title} className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+        <Image src="/image/components/pdf.png" alt={title} fill className="object-cover object-center transition duration-200 group-hover:scale-110" />
 
         <div className="relative flex w-full flex-col rounded-lg bg-white p-4 text-center">
           {/* <span className="text-gray-500">Men</span> */}

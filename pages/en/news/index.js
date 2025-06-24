@@ -5,7 +5,7 @@ import LocaleContext from "@/components/context/localeContext";
 import React, { useContext } from 'react';
 import News from "@/components/parts/news";
 import { getNewsFromNotion, getNewsList } from "@/entity/newsEntity";
-import { generateAlternateLinks } from "@/utils/imageUtils";
+import { generateAlternateLinks } from '@/utils/seoUtils.js';
 
 
 

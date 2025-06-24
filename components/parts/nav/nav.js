@@ -45,11 +45,11 @@ export default function Nav({ }) {
     </nav>
     <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-center p-6 lg:px-8 hidden lg:flex">
       <div className="flex md:gap-x-12">
-        {HEADER_MENU.map((item) => {
+        {HEADER_MENU.map((item, index) => {
             return (
-              <>
+              <React.Fragment key={item.name || index}>
                <PopoverDetail item={item}/>
-              </>
+              </React.Fragment>
             )}
         )}
       </div>
@@ -73,9 +73,9 @@ export default function Nav({ }) {
           <div className="-my-6 divide-y divide-gray-500/10">
             <div className="space-y-2 py-6">
               
-              {HEADER_MENU.map((item) => {
+              {HEADER_MENU.map((item, index) => {
                   return (
-                    <DisclosureDetail item={item} />
+                    <DisclosureDetail key={item.name || index} item={item} />
                   )}
               )}
             </div>

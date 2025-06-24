@@ -5,7 +5,8 @@ import LocaleContext from "@/components/context/localeContext";
 import { useLocale } from "@/utils/locale";
 
 import { getDatabase } from "@/lib/notion";
-import { fetchDataWithOptimizedImages, generateAlternateLinks } from "@/utils/imageUtils";
+// import { fetchDataWithOptimizedImages } from "@/lib/imageUtils";
+import { generateAlternateLinks } from '@/utils/seoUtils.js';
 import ClassComponent from "@/components/parts/program/class";
 import Title from "@/components/parts/text/title";
 
@@ -41,6 +42,7 @@ export default function ClassPage({ category, classes }) {
 }
 
 export const getStaticProps = async (context) => {
+  const { fetchDataWithOptimizedImages } = await import('@/lib/imageUtils.js');
   
   const category = await getDatabase("11aa8c0ecf8c80ed885ff949e5ee51bb")
   const classes = await fetchDataWithOptimizedImages("11aa8c0ecf8c80a7ab2cf31cd0b0a881", "class")

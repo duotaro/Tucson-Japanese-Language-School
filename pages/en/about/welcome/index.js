@@ -7,7 +7,8 @@ import { getDatabase } from "@/lib/notion";
 import Greeting from "@/components/parts/about/welcome/greetings";
 import OurStory from "@/components/parts/about/welcome/our_story";
 import History from "@/components/parts/about/welcome/history";
-import { fetchDataWithOptimizedImages, generateAlternateLinks } from "@/utils/imageUtils";
+// import { fetchDataWithOptimizedImages } from "@/lib/imageUtils";
+import { generateAlternateLinks } from '@/utils/seoUtils.js';
 
 export default function AboutPage({ welcome }) {
   const locale = "en"
@@ -56,6 +57,7 @@ export const getStaticProps = async (context) => {
 };
 
 const getWelcome = async () => {
+  const { fetchDataWithOptimizedImages } = await import('@/lib/imageUtils.js');
   const greeting = await fetchDataWithOptimizedImages("5ceb6b37e4584fa39fb78161869d885f", "greeting")
   const story = await getDatabase("02ed913f2ebe4151b0235d91a9306403")
   const history = await fetchDataWithOptimizedImages("15c93b4fe6154400902a623b20c6fe49", "history")

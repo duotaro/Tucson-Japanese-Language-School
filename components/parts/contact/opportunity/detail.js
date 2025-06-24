@@ -26,9 +26,9 @@ export default function OpportunityDetail({ opportunities, locale="ja" }) {
         className="flex flex-wrap -mb-px text-center justify-center items-center"
         role="tablist"
       >
-        {list.map((item) => {
+        {list.map((item, index) => {
           return (
-            <li className="me-2" role="presentation">
+            <li key={item.tag || index} className="me-2" role="presentation">
               <button
                 className={`min-w-4 md:min-w-32 lg:min-w-36 inline-block p-4 border-b-2 rounded-t-lg ${
                   activeTab === item.tag
@@ -50,12 +50,12 @@ export default function OpportunityDetail({ opportunities, locale="ja" }) {
     </div>
 
     <div>
-      {list.map((item) => {
+      {list.map((item, index) => {
         if(activeTab != item.tag){
           return
         }
           return (
-            <div className="p-4 rounded-lg" id={item.tag} role="tabpanel">
+            <div key={item.tag || index} className="p-4 rounded-lg" id={item.tag} role="tabpanel">
               <div className="text-md text-gray-500 dark:text-gray-400">
                 <Paragraphs text={item.text} />
               </div>

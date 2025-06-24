@@ -1,9 +1,11 @@
+import Image from "next/image";
+
 export default function Authordetail({}) {
     return (
       <span className="p-3 align-items-center text-center" style={{width:'90%', margin: 'o auto'}}>
             <div className="row p-2 ">
               <div className="col">
-                <img className="w-40" style={{width:'40%'}} src="https://cdn-ak.f.st-hatena.com/images/fotolife/d/duo-taro100/20160218/20160218004611.png" alt="..." />
+                <Image className="w-40" style={{width:'40%'}} src="https://cdn-ak.f.st-hatena.com/images/fotolife/d/duo-taro100/20160218/20160218004611.png" alt="..." width={200} height={200} />
               </div>
               <div className="col d-flex align-items-center">
                   <h5 className="fw-bolder ">山内太郎</h5>

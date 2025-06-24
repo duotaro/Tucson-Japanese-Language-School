@@ -11,6 +11,7 @@ import savBlogImageIfNeeded from "@/components/download/blogDetail";
 import { ACCESABLE_BLOG_IMAGE_PATH, DOWNLOAD_IMAGE_EXTENSION } from "@/const";
 import Image from "next/image";
 import LocaleLink from "@/components/parts/menu/LocaleLink";
+import { TwitterTweetEmbed } from 'react-twitter-embed';
 
 export const Text = ({ text }) => {
   if (!text) {

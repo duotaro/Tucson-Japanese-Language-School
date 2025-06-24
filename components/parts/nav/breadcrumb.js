@@ -19,9 +19,9 @@ export default function Breadcrumb({ parents, current }) {
                 {json.navigation.home}
             </LocaleLink>
             </li>
-            {parents.map((parent) => {
+            {parents.map((parent, index) => {
                 return (
-                    <li>
+                    <li key={parent.link || index}>
                     <div className="flex items-center">
                         <svg className="rtl:rotate-180 w-2 md:w-3 h-2 md:h-3 text-gray-400 md:mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                         <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 9 4-4-4-4"/>

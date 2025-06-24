@@ -4,7 +4,8 @@ import React, { useContext } from 'react';
 import LocaleContext from "@/components/context/localeContext";
 import { useLocale } from "@/utils/locale";
 import ProfileCardList from "@/components/parts/about/staff";
-import { fetchDataWithOptimizedImages, generateAlternateLinks } from '@/utils/imageUtils.js';
+// import { fetchDataWithOptimizedImages } from '@/lib/imageUtils.js';
+import { generateAlternateLinks } from '@/utils/seoUtils.js';
 
 
 export default function StaffPage({ staffList, roleList }) {
@@ -42,6 +43,7 @@ export default function StaffPage({ staffList, roleList }) {
 export const getStaticProps = async (context) => {
   try {
     const { getDatabase } = await import("@/lib/notion");
+    const { fetchDataWithOptimizedImages } = await import('@/lib/imageUtils.js');
     let roleList = await getDatabase("122a8c0ecf8c80059934c64693cc39ca")
     let staffList = await fetchDataWithOptimizedImages("9b85f554b3fc42dcb9d38f1ec87b168c", "staff");
 

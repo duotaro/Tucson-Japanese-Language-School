@@ -76,7 +76,7 @@ const PricingSection = ({price, discountFamily, discountStaff, locale="ja"}) => 
                     const bgColor = index == 0 ? "bg-gradient-to-r from-indigo-600 to-violet-600" : ""
                     const textColor = index == 0 ? "text-white" : "text-black"
                     return (
-                        <div className={`group relative flex flex-col mx-auto w-full max-w-sm text-gray-900 rounded-2xl border border-solid border-gray-300 text-center transition-all duration-500 p-5 ${bgColor}`}>
+                        <div key={item.id || item.title || index} className={`group relative flex flex-col mx-auto w-full max-w-sm text-gray-900 rounded-2xl border border-solid border-gray-300 text-center transition-all duration-500 p-5 ${bgColor}`}>
                             <h3 className={`relative flex items-center justify-center font-manrope text-lg font-bold mb-6 ${textColor}`}>
                                 {item.title}
                                 {/* <span className="h-6 px-3 relative rounded-full border border-solid border-gray-100 text-sm ml-4">Popular</span> */}

@@ -31,9 +31,9 @@ export default function Calender({ scheduleList }) {
         <div className="grid items-center gap-8 md:grid-flow-col-dense md:grid-cols-2 md:gap-12">
         <h1 className="text-center">{json.calender.title}</h1>
         <ul className="list-group list-group-flush">
-          {entityList.map((schedule) => {
+          {entityList.map((schedule, index) => {
               return (
-                <CalenderDetail schedule={schedule}/>
+                <CalenderDetail key={schedule.id || index} schedule={schedule}/>
               )
           })}
           </ul>

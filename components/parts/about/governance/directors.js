@@ -32,10 +32,10 @@ export default function Directors({ directors, locale="ja" }) {
                     {/* <Paragraphs text={lang.description} /> */}
                   </div>
                   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 w-full">
-                    {directors.map((director) => {
+                    {directors.map((director, index) => {
                       let entity = new DirectorsEntity(director, locale == "ja")
                       return (
-                        <div className="flex flex-col text-center">
+                        <div key={director.id || index} className="flex flex-col text-center">
                           <div className="inline-block mb-4 relative shrink-0 rounded-[.90rem]">
                             <ImageOptimizer
                               baseName={entity.image?.baseName || 'profile'}
@@ -51,7 +51,7 @@ export default function Directors({ directors, locale="ja" }) {
                             <a href="javascript:void(0)" className="text-dark font-semibold hover:text-primary text-sm transition-colors duration-200 ease-in-out">{entity.name}</a>
                             {entity.positions.map((position, index) => {
                               return (
-                                <>
+                                <React.Fragment key={index}>
                                 {index == 0 && (
                                   <br />
                                 )}
@@ -59,7 +59,7 @@ export default function Directors({ directors, locale="ja" }) {
                                   <> / </>
                                 )}
                                 <span className={`text-muted text-sm text-gray-600`}>{position.name}</span>
-                                </>
+                                </React.Fragment>
                               )
                             })}
                           </div>
