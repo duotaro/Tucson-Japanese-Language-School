@@ -1,5 +1,5 @@
 // components/PricingSection.js
-import { useState, useContext } from 'react';
+import { useContext } from 'react';
 import Section from '../../section';
 import { PriceEntity } from '@/entity/priceEntity';
 import LocaleContext from '../../../context/localeContext';
@@ -7,10 +7,8 @@ import { useLocale } from '@/utils/locale';
 import Title from '../../text/title';
 
 const PricingSection = ({price, discountFamily, discountStaff}) => {
-    console.log(price)
   const { locale } = useContext(LocaleContext);
   const { json, metaTitleExtension } = useLocale(locale)
-  const [paymentPlan, setPaymentPlan] = useState('yearly'); // 'yearly', 'semiannual', 'monthly'
 
 
   const list = []
@@ -144,10 +142,10 @@ class DisCountFamily{
       }
     }
 
-    this.first = item.properties["1st"].number
-    this.second = item.properties["2nd"].number
-    this.third = item.properties["3rd"].number
-    this.fourth = item.properties["4th"].number
+    this.first = item.properties["1st"]?.number || 0
+    this.second = item.properties["2nd"]?.number || 0
+    this.third = item.properties["3rd"]?.number || 0
+    this.fourth = item.properties["4th"]?.number || 0
 
  }
 }
@@ -169,7 +167,7 @@ class DisCountStaff{
       }
     }
 
-    this.price = item.properties["price"].number
+    this.price = item.properties["price"]?.number || 0
 
  }
 }

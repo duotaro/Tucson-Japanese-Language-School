@@ -20,16 +20,18 @@ export default function Opportunity({ opportunity }) {
     <Section bg="bg-slate-200">
       <div className="container px-6 mx-auto">
         <div className="grid items-center gap-8 md:grid-flow-col-dense md:grid-cols-2 md:gap-12">
-            <ImageOptimizer
-              baseName={entity.image.baseName}
-              pagePath={entity.image.pagePath}
-              alt={entity.image.alt}
-              width={entity.image.width || 200}
-              height={entity.image.height || 100}
-              objectFit="cover"
-              className="md:col-start-1"
-            />
-            <div className="flex flex-col items-center ">
+            {entity.image && (
+              <ImageOptimizer
+                baseName={entity.image?.baseName || 'opportunity'}
+                pagePath={entity.image?.pagePath || 'opportunity'}
+                alt={entity.image?.alt || 'Opportunity'}
+                width={entity.image?.width || 200}
+                height={entity.image?.height || 100}
+                objectFit="cover"
+                className="md:col-start-1"
+              />
+            )}
+            <div className="flex flex-col items-center">
                 <Title title={entity.title} fontSize="text-xl  sm:text-2xl lg:text-3xl"/>
                 <Paragraphs text={entity.text}/>
                 <LocaleLink href={`/contact/opportunity/`} className="px-6 py-3 mt-3 text-md transition-colors rounded-md bg-blue-600 text-white hover:bg-blue-700">

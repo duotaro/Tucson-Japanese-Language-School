@@ -38,19 +38,24 @@ export default function NewsDetail({ item }) {
         
         <div className="mt-3p-5 bg-gray-100border-2 border-t-0 rounded-b-lg">
         <div className="relative h-48">
-          <ImageOptimizer
-            baseName={entity.image.baseName}
-            pagePath={entity.image.pagePath}
-            alt={entity.image.alt}
-            // widthとheightは `next/image` で必須です。
-            // Notionから取得できるなら `entity.image.optimizedImage.width` を使うのが理想です。
-            // なければ、この画像が実際に表示される最大幅と、そのアスペクト比に合う高さを設定します。
-            width={entity.image.width || 200}
-            height={entity.image.height || 100}
-            objectFit="cover" // ★ CSSの object-fit: cover; と同じ効果
-            className="object-cover object-center rounded-t-lg w-full h-full absolute inset-0"
-            // loading="lazy" は ImageOptimizer のデフォルトで有効なので、propsとして渡す必要はありません。
-          />
+          {entity.image && typeof entity.image === 'object' && entity.image.baseName ? (
+            <ImageOptimizer
+              baseName={entity.image.baseName}
+              pagePath={entity.image.pagePath}
+              alt={entity.image.alt}
+              width={entity.image.width || 200}
+              height={entity.image.height || 100}
+              objectFit="cover"
+              className="object-cover object-center rounded-t-lg w-full h-full absolute inset-0"
+            />
+          ) : (
+            // フォールバック画像の場合
+            <img
+              src={entity.image}
+              alt="News"
+              className="object-cover object-center rounded-t-lg w-full h-full absolute inset-0"
+            />
+          )}
         </div>
         <h2 className="text-lg font-black mt-2 px-3 " style={{
             minHeight: "3em",

@@ -12,7 +12,7 @@ import { SchaduleEntity } from '@/entity/scheduleEntity'
 import Paragraphs from '../../text/paragraphs'
 import { getSchoolYear, isWithinSchoolYear } from '@/utils/dateUtils'
 import Section from '../../section'
-import CustomImage from '../../image/CustomImage'
+import ImageOptimizer from '@/components/download/ImageOptimizer'
 import Link from 'next/link'
 import FullScreenModal from '../../modal/fullscreenModal'
 import { ArrowDownOnSquareStackIcon } from '@heroicons/react/24/outline'
@@ -76,7 +76,18 @@ export default function ClassComponent({category, classes}) {
             <div className="container px-6 mx-auto ">
               <div className="grid gap-8 lg:grid-flow-col-dense lg:grid-cols-2 md:gap-12 relative">
                   <div className="flex items-center items-center mt-2">
-                    <CustomImage src={item.image} alt={item.title} addClass={pos} />
+                    {item.image && (
+                      <div className={`relative w-full h-80 md:h-52 lg:h-72 xl:h-96 ${pos}`}>
+                        <ImageOptimizer
+                          baseName={item.image?.baseName || 'class'}
+                          pagePath={item.image?.pagePath || 'class'}
+                          alt={item.image?.alt || item.title}
+                          responsive={true}
+                          objectFit="cover"
+                          className="rounded-lg"
+                        />
+                      </div>
+                    )}
                   </div>
                   <div className="flex flex-col items-center">
                       <div className='flex flex-row justify-center items-center text-gray-800 hover:text-blue-500 gap-5'>

@@ -17,16 +17,16 @@ export default function Vision({ vision }) {
     <Section>
       <div className="container px-6 mx-auto">
         <div className="grid items-center gap-8 md:grid-flow-col-dense md:grid-cols-2 md:gap-12">
-            <ImageOptimizer
-              baseName={vision.image.baseName}
-              pagePath={vision.image.pagePath}
-              alt={vision.image.alt}
-              width={vision.image.width || 200}
-              height={vision.image.height || 100}
-              objectFit="cover"
-              className="md:col-start-2"
-            />
-            <div className="flex flex-col items-center ">
+            {vision.image && (
+              <ImageOptimizer
+                baseName={vision.image?.baseName || 'vision'}
+                pagePath={vision.image?.pagePath || 'about'}
+                alt={vision.image?.alt || 'Vision'}
+                objectFit="cover"
+                className="md:col-start-2"
+              />
+            )}
+            <div className="flex flex-col items-center">
                 <Title title={vision.title} />
                 <Paragraphs text={vision.text} />
             </div>

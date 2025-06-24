@@ -2,15 +2,14 @@
 
 
 import React, { useContext } from "react";
-import Image from "next/image"
 import Link from "next/link"
 import LocaleContext from "../../../context/localeContext";
 import { useLocale } from "@/utils/locale";
 import Title from "../../text/title";
 import Paragraphs from "../../text/paragraphs";
-import CustomImage from "../../image/CustomImage";
 import { DirectorsEntity } from "@/entity/directorsEntity";
 import Section from "../../section";
+import ImageOptimizer from '@/components/download/ImageOptimizer';
 
 export default function Directors({ directors }) {
   const { locale } = useContext(LocaleContext);
@@ -40,7 +39,15 @@ export default function Directors({ directors }) {
                       return (
                         <div className="flex flex-col text-center">
                           <div className="inline-block mb-4 relative shrink-0 rounded-[.90rem]">
-                            <Image className="inline-block shrink-0 rounded-[.95rem] w-[130px] h-[130px]" width={130} height={130} src={entity.image} alt={entity.name} />
+                            <ImageOptimizer
+                              baseName={entity.image?.baseName || 'profile'}
+                              pagePath={entity.image?.pagePath || 'director'}
+                              alt={entity.image?.alt || entity.name}
+                              width={130}
+                              height={130}
+                              objectFit="cover"
+                              className="inline-block shrink-0 rounded-[.95rem] w-[130px] h-[130px]"
+                            />
                           </div>
                           <div className="text-center">
                             <a href="javascript:void(0)" className="text-dark font-semibold hover:text-primary text-sm transition-colors duration-200 ease-in-out">{entity.name}</a>

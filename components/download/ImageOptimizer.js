@@ -16,6 +16,8 @@ import React from 'react';
  * @param {boolean} [props.priority=false] - LCPなど、優先的に読み込む画像に設定 (trueの場合、遅延読み込みが無効になる)
  * @param {string} [props.objectFit='cover'] - CSSのobject-fitプロパティの値（例: 'cover', 'contain', 'fill'）
  * @param {boolean} [props.fill=false] - 親要素いっぱいに画像を広げるかどうか (trueの場合、width/heightは不要になる)
+ * @param {boolean} [props.responsive=false] - レスポンシブ画像として表示するかどうか（親要素の幅に合わせて拡縮）
+ * @param {string} [props.sizes] - responsive=trueの場合のsizes属性
  */
 const ImageOptimizer = ({
   baseName,
@@ -27,6 +29,8 @@ const ImageOptimizer = ({
   priority = false,
   objectFit = 'cover', // デフォルト値を'cover'に設定
   fill = false,
+  responsive = false,
+  sizes,
   ...rest // その他の任意のpropsを受け取る
 }) => {
   // src プロパティには、Publicディレクトリからの相対パスを渡します。
@@ -34,16 +38,35 @@ const ImageOptimizer = ({
   // Next.jsのImageコンポーネントが、最適なサイズの画像を自動で選択してくれます。
   const imageSrc = `/image/download/${pagePath}/${baseName}-md.webp`;
 
-  // fillがtrueの場合、widthとheightは自動で無視されるため、propsから除外するか、
-  // 条件分岐で渡すか、fillとwidth/heightの同時使用に関する警告を理解して進める必要があります。
-  const imageProps = fill
-    ? { fill: true, style: { objectFit: objectFit } } // fillモードの場合
-    : { width: width || 800, height: height || 600, style: { objectFit: objectFit } }; // width/heightモードの場合
+  // responsive、fill、width/heightモードの条件分岐
+  let imageProps;
+  
+  if (responsive) {
+    // responsiveモード: 親要素の幅に合わせて拡縮
+    imageProps = {
+      fill: true,
+      sizes: sizes || '(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw',
+      style: { objectFit: objectFit }
+    };
+  } else if (fill) {
+    // fillモード: 親要素いっぱいに画像を広げる
+    imageProps = {
+      fill: true,
+      style: { objectFit: objectFit }
+    };
+  } else {
+    // width/heightモード: 固定サイズ
+    imageProps = {
+      width: width || 800,
+      height: height || 600,
+      style: { objectFit: objectFit }
+    };
+  }
 
   // widthとheightが与えられていない場合、警告を出すか、デフォルト値を設定
-  if (!fill && (!width || !height)) {
+  if (!responsive && !fill && (!width || !height)) {
     console.warn(`Warning: ImageOptimizer for "${baseName}" is missing width or height props.
-    Consider adding them for better performance and CLS prevention, or use the 'fill' prop.`);
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.`);
     // ここで適切なデフォルト値を設定
     imageProps.width = imageProps.width || 800;
     imageProps.height = imageProps.height || 600;

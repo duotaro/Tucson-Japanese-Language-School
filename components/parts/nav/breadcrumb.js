@@ -26,7 +26,7 @@ export default function Breadcrumb({ parents, current }) {
                         <svg className="rtl:rotate-180 w-2 md:w-3 h-2 md:h-3 text-gray-400 md:mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                         <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 9 4-4-4-4"/>
                         </svg>
-                        <LocaleLink href={`/${parent.link}`} className="ms-1 text-xs md:text-sm font-medium text-gray-700 hover:text-blue-600 md:ms-2 dark:text-gray-400 dark:hover:text-white breadcrumb-item">{json.navigation[parent.title]}</LocaleLink>
+                        <LocaleLink href={`${parent.link}`} className="ms-1 text-xs md:text-sm font-medium text-gray-700 hover:text-blue-600 md:ms-2 dark:text-gray-400 dark:hover:text-white breadcrumb-item">{json.navigation[parent.title]}</LocaleLink>
                     </div>
                     </li>
                 )

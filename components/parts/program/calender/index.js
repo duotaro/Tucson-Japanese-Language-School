@@ -12,7 +12,7 @@ import { SchaduleEntity } from '@/entity/scheduleEntity'
 import Paragraphs from '../../text/paragraphs'
 import { getSchoolYear, isWithinSchoolYear } from '@/utils/dateUtils'
 import Section from '../../section'
-import CustomImage from '../../image/CustomImage'
+import ImageOptimizer from '@/components/download/ImageOptimizer'
 import Link from 'next/link'
 import FullScreenModal from '../../modal/fullscreenModal'
 import { ArrowDownOnSquareStackIcon } from '@heroicons/react/24/outline'
@@ -172,9 +172,19 @@ export default function Calender({files, list}) {
           <Title title={`${json.navigation.calendar}(${schoolYear.label})`} />
         </div>
         <div className="container mx-auto">
-          <div className="grid gap-8 md:grid-flow-col-dense md:grid-cols-2 md:gap-12">
-              <CustomImage src={res.image} alt="Calendar" addClass="md:col-start-2" />
-              <div className="flex flex-col items-center">
+          <div className="grid gap-8 md:grid-flow-col-dense md:grid-cols-2 md:gap-12 md:items-center">
+              <div className="md:col-start-2 flex justify-center items-center">
+                <ImageOptimizer
+                  baseName={res.image?.baseName || 'event'}
+                  pagePath={res.image?.pagePath || 'calendar'}
+                  alt={res.image?.alt || 'Calendar'}
+                  width={600}
+                  height={400}
+                  objectFit="cover"
+                  className="rounded-lg w-full h-auto"
+                />
+              </div>
+              <div className="flex flex-col items-center justify-center">
                   {/* PDFリンクセクション */}
                   <ul role="list" className="divide-y divide-gray-100">
                     {eventList.map((item) => {

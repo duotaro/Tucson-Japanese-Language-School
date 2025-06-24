@@ -2,8 +2,7 @@
 
 
 import React, { useContext } from "react";
-import Image from "next/image"
-import { Text } from "../../../../pages/news/[id]"
+import ImageOptimizer from '@/components/download/ImageOptimizer';;
 import LocaleContext from "../../../context/localeContext";
 import { useLocale } from "@/utils/locale";
 import { GreetingEntity } from "@/entity/greetingEntity";
@@ -71,15 +70,17 @@ export default function Greeting({ greeting }) {
                 <Paragraphs text={[text1]} />
             </div>
             <div className="flex flex-col items-center py-5 px-10 sm:px-20 md:px-0 lg:px-5 xl:px-10 2xl:px-20">
-              <Image
-                src={entity.image}
-                alt="Greetings"
-                width={500}
-                height={300}
-                layout="responsive"
-                objectFit="cover"
-                className="rounded-lg"
-              />
+              {entity.image && (
+                <ImageOptimizer
+                  baseName={entity.image?.baseName || 'greetings'}
+                  pagePath={entity.image?.pagePath || 'greeting'}
+                  alt={entity.image?.alt || 'Greetings'}
+                  width={entity.image?.width || 200}
+                  height={entity.image?.height || 100}
+                  objectFit="cover"
+                  className="rounded-lg"
+                />
+              )}
             </div>
         </div>
         <div className="grid items-center ">
