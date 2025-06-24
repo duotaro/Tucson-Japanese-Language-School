@@ -16,7 +16,7 @@ const staticPages = [
   '/program/calendar/',
   '/news/',
   '/support/',
-  '/opportunities/',
+  '/contact/opportunity/',
   '/about/report/'
 ];
 
@@ -32,7 +32,7 @@ const pageConfig = {
   '/program/calendar/': { priority: '0.9', changefreq: 'daily' },
   '/news/': { priority: '0.8', changefreq: 'daily' },
   '/support/': { priority: '0.7', changefreq: 'monthly' },
-  '/opportunities/': { priority: '0.6', changefreq: 'monthly' },
+  '/contact/opportunity/': { priority: '0.6', changefreq: 'monthly' },
   '/about/report/': { priority: '0.6', changefreq: 'yearly' }
 };
 
