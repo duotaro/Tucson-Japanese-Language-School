@@ -75,21 +75,22 @@ export default function ClassComponent({category, classes}) {
             </div>
             <div className="container px-6 mx-auto ">
               <div className="grid gap-8 lg:grid-flow-col-dense lg:grid-cols-2 md:gap-12 relative">
-                  <div className="flex items-center items-center mt-2">
+                  <div className={`flex items-center justify-center min-h-full ${pos}`}>
                     {item.image && (
-                      <div className={`relative w-full h-80 md:h-52 lg:h-72 xl:h-96 ${pos}`}>
+                      <div className="relative w-full h-80 md:h-52 lg:h-72 xl:h-96">
                         <ImageOptimizer
                           baseName={item.image?.baseName || 'class'}
                           pagePath={item.image?.pagePath || 'class'}
                           alt={item.image?.alt || item.title}
                           responsive={true}
+                          responsiveType="card"
                           objectFit="cover"
-                          className="rounded-lg"
+                          className="rounded-lg shadow-md image-hover"
                         />
                       </div>
                     )}
                   </div>
-                  <div className="flex flex-col items-center">
+                  <div className="flex flex-col justify-center items-center min-h-full">
                       <div className='flex flex-row justify-center items-center text-gray-800 hover:text-blue-500 gap-5'>
                         {item.target && ( <Paragraphs text={item.target} />)}
                         {item.categoryTitle && (

@@ -1,7 +1,7 @@
 // components/download/ImageOptimizer.js
 
 import Image from 'next/image'; // Next.jsのImageコンポーネントをインポート
-import React from 'react';
+import React, { useState } from 'react';
 
 /**
  * 最適化された画像をレンダリングするコンポーネント
@@ -48,15 +48,41 @@ const ImageOptimizer = ({
   // レスポンシブ用のコンテナクラス
   const responsiveClasses = {
     hero: 'w-full h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh] relative',
-    card: 'w-full aspect-video relative',
-    thumbnail: 'w-full aspect-square relative', 
+    card: 'w-full h-full flex items-center justify-center relative',
+    thumbnail: 'w-full h-full relative', 
     standard: 'w-full relative',
     fullwidth: 'w-full relative'
   };
   // src プロパティには、Publicディレクトリからの相対パスを渡します。
   // バックエンドで生成した複数サイズのうち、デフォルトとしてミディアムサイズ（md）の画像を使用します。
   // Next.jsのImageコンポーネントが、最適なサイズの画像を自動で選択してくれます。
-  const imageSrc = `/image/download/${pagePath}/${baseName}-md.webp`;
+  
+  // 複数の画像パスを試行する順序を定義
+  const imagePaths = [
+    `/image/download/${pagePath}/${baseName}-md.webp`,
+    `/image/download/${pagePath}/${baseName}.webp`,
+    `/image/download/${pagePath}/${baseName}-md.jpg`,
+    `/image/download/${pagePath}/${baseName}.jpg`,
+    `/image/download/${pagePath}/${baseName}-md.jpeg`,
+    `/image/download/${pagePath}/${baseName}.jpeg`,
+    `/image/download/${pagePath}/${baseName}-md.png`,
+    `/image/download/${pagePath}/${baseName}.png`,
+    `/image/${pagePath}/${baseName}.jpg`,
+    `/image/${pagePath}/${baseName}.jpeg`,
+    `/image/${pagePath}/${baseName}.png`,
+    `/image/${pagePath}/${baseName}.webp`
+  ];
+  
+  // 画像のフォールバック処理のためのstate
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const imageSrc = imagePaths[currentImageIndex] || imagePaths[0];
+
+  // 画像読み込みエラー時のフォールバック処理
+  const handleImageError = () => {
+    if (currentImageIndex < imagePaths.length - 1) {
+      setCurrentImageIndex(currentImageIndex + 1);
+    }
+  };
 
   // responsive、fill、width/heightモードの条件分岐
   let imageProps;
@@ -69,7 +95,8 @@ const ImageOptimizer = ({
     imageProps = {
       fill: true,
       sizes: finalSizes,
-      style: { objectFit: objectFit }
+      style: { objectFit: objectFit },
+      onError: handleImageError
     };
 
     // レスポンシブコンテナで包む
@@ -88,7 +115,8 @@ const ImageOptimizer = ({
     // fillモード: 親要素いっぱいに画像を広げる
     imageProps = {
       fill: true,
-      style: { objectFit: objectFit }
+      style: { objectFit: objectFit },
+      onError: handleImageError
     };
   } else {
     // width/heightモード: 固定サイズ（モバイルで自動調整）
@@ -103,7 +131,8 @@ const ImageOptimizer = ({
         width: '100%',
         height: 'auto',
         maxWidth: `${responsiveWidth}px`
-      }
+      },
+      onError: handleImageError
     };
   }
 

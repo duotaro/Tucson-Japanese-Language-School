@@ -1,20 +1,36 @@
 // components/ProfileCard.js
 import React from 'react';
 import Paragraphs from '../../text/paragraphs';
-import Image from 'next/image';
+import ImageOptimizer from '@/components/download/ImageOptimizer';
 
 const ProfileCard = ({item}) => {
    const { name, role, image, text } = item
   return (
-      <div className="flex relative my-10 w-full mx-auto py-5 px-5 ustify-center">
-        <div className="rounded-lg overflow-hidden shadow-md bg-white w-[95%] border border-gray-200 bg-white flex justify-center card-hover">
-            <div className="absolute -mt-20 w-full flex justify-center">
-                <div className="h-40 w-40">
-                <img
-                    src={image}
-                    className="rounded-full object-cover h-full w-full shadow-md"
-                    alt="Profile"
-                />
+      <div className="flex relative my-10 w-full mx-auto py-5 px-5 justify-center">
+        <div className="rounded-lg shadow-md bg-white w-[95%] border border-gray-200 flex justify-center transition-transform duration-300 hover:transform hover:scale-105">
+            <div className="absolute -mt-20 w-full flex justify-center z-10">
+                <div className="h-40 w-40 relative rounded-full overflow-hidden">
+                  {image && typeof image === 'object' && image.baseName ? (
+                    <ImageOptimizer
+                      baseName={image.baseName}
+                      pagePath={image.pagePath || 'staff'}
+                      alt={image.alt || name}
+                      responsive={true}
+                      responsiveType="thumbnail"
+                      objectFit="cover"
+                      className="shadow-md"
+                    />
+                  ) : (
+                    <ImageOptimizer
+                      baseName="default-staff"
+                      pagePath="staff"
+                      alt={name}
+                      responsive={true}
+                      responsiveType="thumbnail"
+                      objectFit="cover"
+                      className="shadow-md"
+                    />
+                  )}
                 </div>
             </div>
             <div className="p-6 mt-16 ">

@@ -80,10 +80,18 @@ class StaffEntity{
     // console.log(this.role)
 
     this.image = null
-    if(item.properties["image"] && item.properties["image"].files[0]){
-      const tmpName = item.properties["image"].files[0].name
-      const name = tmpName.replace(/ /g, '_')
-      this.image = `/${ACCESABLE_IMAGE_PATH}/staff/${name}${DOWNLOAD_IMAGE_EXTENSION}`
+    if (item.properties?.image?.optimizedImage) {
+      this.image = item.properties.image.optimizedImage;
+    } else if (item.properties?.image?.files?.[0]) {
+      const tmpName = item.properties.image.files[0].name;
+      const fileName = tmpName.replace(/ /g, '_');
+      this.image = {
+        baseName: fileName.replace(/\.[^/.]+$/, ""), // 拡張子を削除
+        pagePath: 'staff',
+        alt: item.properties.image.files[0].caption?.[0]?.plain_text || fileName,
+        width: null,
+        height: null,
+      };
     }
     
     this.ordering =  item.properties["ordering"].number
