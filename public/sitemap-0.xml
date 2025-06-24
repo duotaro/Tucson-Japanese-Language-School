@@ -1,220 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url>
-    <loc>https://tjschool.org/</loc>
-    <lastmod>2025-06-24T04:12:01.356Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://tjschool.org/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://tjschool.org/en/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tjschool.org/" />
-  </url>
-  <url>
-    <loc>https://tjschool.org/en/</loc>
-    <lastmod>2025-06-24T04:12:01.356Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://tjschool.org/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://tjschool.org/en/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tjschool.org/" />
-  </url>
-  <url>
-    <loc>https://tjschool.org/about/welcome/</loc>
-    <lastmod>2025-06-24T04:12:01.356Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://tjschool.org/about/welcome/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://tjschool.org/en/about/welcome/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tjschool.org/about/welcome/" />
-  </url>
-  <url>
-    <loc>https://tjschool.org/en/about/welcome/</loc>
-    <lastmod>2025-06-24T04:12:01.356Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://tjschool.org/about/welcome/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://tjschool.org/en/about/welcome/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tjschool.org/about/welcome/" />
-  </url>
-  <url>
-    <loc>https://tjschool.org/about/mission/</loc>
-    <lastmod>2025-06-24T04:12:01.356Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://tjschool.org/about/mission/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://tjschool.org/en/about/mission/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tjschool.org/about/mission/" />
-  </url>
-  <url>
-    <loc>https://tjschool.org/en/about/mission/</loc>
-    <lastmod>2025-06-24T04:12:01.356Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://tjschool.org/about/mission/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://tjschool.org/en/about/mission/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tjschool.org/about/mission/" />
-  </url>
-  <url>
-    <loc>https://tjschool.org/about/governance/</loc>
-    <lastmod>2025-06-24T04:12:01.356Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://tjschool.org/about/governance/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://tjschool.org/en/about/governance/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tjschool.org/about/governance/" />
-  </url>
-  <url>
-    <loc>https://tjschool.org/en/about/governance/</loc>
-    <lastmod>2025-06-24T04:12:01.356Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://tjschool.org/about/governance/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://tjschool.org/en/about/governance/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tjschool.org/about/governance/" />
-  </url>
-  <url>
-    <loc>https://tjschool.org/about/staff/</loc>
-    <lastmod>2025-06-24T04:12:01.356Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://tjschool.org/about/staff/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://tjschool.org/en/about/staff/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tjschool.org/about/staff/" />
-  </url>
-  <url>
-    <loc>https://tjschool.org/en/about/staff/</loc>
-    <lastmod>2025-06-24T04:12:01.356Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://tjschool.org/about/staff/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://tjschool.org/en/about/staff/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tjschool.org/about/staff/" />
-  </url>
-  <url>
-    <loc>https://tjschool.org/admissions/forms/</loc>
-    <lastmod>2025-06-24T04:12:01.356Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://tjschool.org/admissions/forms/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://tjschool.org/en/admissions/forms/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tjschool.org/admissions/forms/" />
-  </url>
-  <url>
-    <loc>https://tjschool.org/en/admissions/forms/</loc>
-    <lastmod>2025-06-24T04:12:01.356Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://tjschool.org/admissions/forms/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://tjschool.org/en/admissions/forms/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tjschool.org/admissions/forms/" />
-  </url>
-  <url>
-    <loc>https://tjschool.org/program/class/</loc>
-    <lastmod>2025-06-24T04:12:01.356Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://tjschool.org/program/class/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://tjschool.org/en/program/class/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tjschool.org/program/class/" />
-  </url>
-  <url>
-    <loc>https://tjschool.org/en/program/class/</loc>
-    <lastmod>2025-06-24T04:12:01.356Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://tjschool.org/program/class/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://tjschool.org/en/program/class/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tjschool.org/program/class/" />
-  </url>
-  <url>
-    <loc>https://tjschool.org/program/calendar/</loc>
-    <lastmod>2025-06-24T04:12:01.356Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://tjschool.org/program/calendar/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://tjschool.org/en/program/calendar/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tjschool.org/program/calendar/" />
-  </url>
-  <url>
-    <loc>https://tjschool.org/en/program/calendar/</loc>
-    <lastmod>2025-06-24T04:12:01.356Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://tjschool.org/program/calendar/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://tjschool.org/en/program/calendar/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tjschool.org/program/calendar/" />
-  </url>
-  <url>
-    <loc>https://tjschool.org/news/</loc>
-    <lastmod>2025-06-24T04:12:01.356Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://tjschool.org/news/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://tjschool.org/en/news/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tjschool.org/news/" />
-  </url>
-  <url>
-    <loc>https://tjschool.org/en/news/</loc>
-    <lastmod>2025-06-24T04:12:01.356Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://tjschool.org/news/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://tjschool.org/en/news/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tjschool.org/news/" />
-  </url>
-  <url>
-    <loc>https://tjschool.org/support/</loc>
-    <lastmod>2025-06-24T04:12:01.356Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://tjschool.org/support/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://tjschool.org/en/support/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tjschool.org/support/" />
-  </url>
-  <url>
-    <loc>https://tjschool.org/en/support/</loc>
-    <lastmod>2025-06-24T04:12:01.356Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://tjschool.org/support/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://tjschool.org/en/support/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tjschool.org/support/" />
-  </url>
-  <url>
-    <loc>https://tjschool.org/opportunities/</loc>
-    <lastmod>2025-06-24T04:12:01.356Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://tjschool.org/opportunities/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://tjschool.org/en/opportunities/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tjschool.org/opportunities/" />
-  </url>
-  <url>
-    <loc>https://tjschool.org/en/opportunities/</loc>
-    <lastmod>2025-06-24T04:12:01.356Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://tjschool.org/opportunities/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://tjschool.org/en/opportunities/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tjschool.org/opportunities/" />
-  </url>
-  <url>
-    <loc>https://tjschool.org/annual-report/</loc>
-    <lastmod>2025-06-24T04:12:01.356Z</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://tjschool.org/annual-report/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://tjschool.org/en/annual-report/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tjschool.org/annual-report/" />
-  </url>
-  <url>
-    <loc>https://tjschool.org/en/annual-report/</loc>
-    <lastmod>2025-06-24T04:12:01.356Z</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://tjschool.org/annual-report/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://tjschool.org/en/annual-report/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tjschool.org/annual-report/" />
-  </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url><loc>https://tjschool.org</loc><lastmod>2025-06-24T04:39:58.600Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://tjschool.org/about</loc><lastmod>2025-06-24T04:39:58.601Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://tjschool.org/about/governance</loc><lastmod>2025-06-24T04:39:58.601Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://tjschool.org/about/mission</loc><lastmod>2025-06-24T04:39:58.601Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://tjschool.org/about/report</loc><lastmod>2025-06-24T04:39:58.601Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://tjschool.org/about/staff</loc><lastmod>2025-06-24T04:39:58.601Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://tjschool.org/about/welcome</loc><lastmod>2025-06-24T04:39:58.601Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://tjschool.org/admissions/forms</loc><lastmod>2025-06-24T04:39:58.601Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://tjschool.org/contact</loc><lastmod>2025-06-24T04:39:58.601Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://tjschool.org/contact/opportunity</loc><lastmod>2025-06-24T04:39:58.601Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://tjschool.org/en</loc><lastmod>2025-06-24T04:39:58.601Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://tjschool.org/en/about</loc><lastmod>2025-06-24T04:39:58.601Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://tjschool.org/en/about/governance</loc><lastmod>2025-06-24T04:39:58.601Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://tjschool.org/en/about/mission</loc><lastmod>2025-06-24T04:39:58.601Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://tjschool.org/en/about/report</loc><lastmod>2025-06-24T04:39:58.601Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://tjschool.org/en/about/staff</loc><lastmod>2025-06-24T04:39:58.601Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://tjschool.org/en/about/welcome</loc><lastmod>2025-06-24T04:39:58.601Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://tjschool.org/en/admissions/forms</loc><lastmod>2025-06-24T04:39:58.601Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://tjschool.org/en/contact</loc><lastmod>2025-06-24T04:39:58.601Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://tjschool.org/en/contact/opportunity</loc><lastmod>2025-06-24T04:39:58.601Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://tjschool.org/en/news</loc><lastmod>2025-06-24T04:39:58.601Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://tjschool.org/en/program</loc><lastmod>2025-06-24T04:39:58.601Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://tjschool.org/en/program/calendar</loc><lastmod>2025-06-24T04:39:58.601Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://tjschool.org/en/program/class</loc><lastmod>2025-06-24T04:39:58.601Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://tjschool.org/en/program/events</loc><lastmod>2025-06-24T04:39:58.601Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://tjschool.org/en/program/kanji_kentei</loc><lastmod>2025-06-24T04:39:58.601Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://tjschool.org/en/support</loc><lastmod>2025-06-24T04:39:58.601Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://tjschool.org/news</loc><lastmod>2025-06-24T04:39:58.601Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://tjschool.org/program</loc><lastmod>2025-06-24T04:39:58.601Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://tjschool.org/program/calendar</loc><lastmod>2025-06-24T04:39:58.601Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://tjschool.org/program/class</loc><lastmod>2025-06-24T04:39:58.601Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://tjschool.org/program/events</loc><lastmod>2025-06-24T04:39:58.601Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://tjschool.org/program/kanji_kentei</loc><lastmod>2025-06-24T04:39:58.601Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://tjschool.org/support</loc><lastmod>2025-06-24T04:39:58.601Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 </urlset>

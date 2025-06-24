@@ -17,7 +17,7 @@ const staticPages = [
   '/news/',
   '/support/',
   '/opportunities/',
-  '/annual-report/'
+  '/about/report/'
 ];
 
 // 優先度とchangefreqを設定
@@ -33,7 +33,7 @@ const pageConfig = {
   '/news/': { priority: '0.8', changefreq: 'daily' },
   '/support/': { priority: '0.7', changefreq: 'monthly' },
   '/opportunities/': { priority: '0.6', changefreq: 'monthly' },
-  '/annual-report/': { priority: '0.6', changefreq: 'yearly' }
+  '/about/report/': { priority: '0.6', changefreq: 'yearly' }
 };
 
 // 現在の日時を取得

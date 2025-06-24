@@ -36,11 +36,10 @@ export default function History({ history }) {
                   baseName={entity.image1?.baseName || 'historty1'}
                   pagePath={entity.image1?.pagePath || 'history'}
                   alt={entity.image1?.alt || 'history1'}
-                  width={500}
-                  height={300}
-                  responsive={true}
+                  width={400}
+                  height={250}
                   objectFit="cover"
-                  className="rounded-lg"
+                  className="rounded-lg w-full h-auto"
                 />
               )}
             </div>
@@ -50,11 +49,10 @@ export default function History({ history }) {
                   baseName={entity.image2?.baseName || 'historty2'}
                   pagePath={entity.image2?.pagePath || 'history'}
                   alt={entity.image2?.alt || 'history2'}
-                  width={500}
-                  height={300}
-                  responsive={true}
+                  width={400}
+                  height={250}
                   objectFit="cover"
-                  className="rounded-lg"
+                  className="rounded-lg w-full h-auto"
                 />
               )}
             </div>
@@ -64,11 +62,10 @@ export default function History({ history }) {
                   baseName={entity.image3?.baseName || 'historty3'}
                   pagePath={entity.image3?.pagePath || 'history'}
                   alt={entity.image3?.alt || 'history3'}
-                  width={500}
-                  height={300}
-                  responsive={true}
+                  width={400}
+                  height={250}
                   objectFit="cover"
-                  className="rounded-lg"
+                  className="rounded-lg w-full h-auto"
                 />
               )}
             </div>
