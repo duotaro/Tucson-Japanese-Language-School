@@ -36,26 +36,23 @@ export default function NewsDetail({ item, locale="ja" }) {
     <div key={entity.id} className="max-w-xd lg:max-w-sm bg-white border border-gray-200 shadow-md rounded-lg card-hover">
         
         <div className="p-6">
-        <div className="mb-4 image-hover">
+        <div className="mb-4 image-hover w-full aspect-video relative">
           {entity.image && typeof entity.image === 'object' && entity.image.baseName ? (
             <ImageOptimizer
               baseName={entity.image.baseName}
               pagePath={entity.image.pagePath}
               alt={entity.image.alt}
-              responsive={true}
-              responsiveType="card"
+              fill={true}
               objectFit="cover"
               className="rounded-lg"
             />
           ) : (
             // フォールバック画像の場合
-            <div className="w-full aspect-video relative">
-              <img
-                src={entity.image}
-                alt="News"
-                className="object-cover object-center rounded-lg w-full h-full absolute inset-0"
-              />
-            </div>
+            <img
+              src={entity.image}
+              alt="News"
+              className="object-cover object-center rounded-lg w-full h-full absolute inset-0"
+            />
           )}
         </div>
         <h2 className="text-h4 xs:text-base sm:text-lg lg:text-xl font-semibold mt-4 " style={{

@@ -1,8 +1,7 @@
 
 
 
-import React, { useContext } from "react";
-import LocaleContext from "../../../context/localeContext";
+import React from "react";
 import { useLocale } from "@/utils/locale";
 import Title from "../../text/title";
 import Paragraphs from "../../text/paragraphs";

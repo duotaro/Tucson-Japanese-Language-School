@@ -1,13 +1,10 @@
 // components/PricingSection.js
-import { useContext } from 'react';
 import Section from '../../section';
 import { PriceEntity } from '@/entity/priceEntity';
-import LocaleContext from '../../../context/localeContext';
 import { useLocale } from '@/utils/locale';
 import Title from '../../text/title';
 
-const PricingSection = ({price, discountFamily, discountStaff}) => {
-  const { locale } = useContext(LocaleContext);
+const PricingSection = ({price, discountFamily, discountStaff, locale="ja"}) => {
   const { json, metaTitleExtension } = useLocale(locale)
 
 

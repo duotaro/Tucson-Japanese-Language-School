@@ -4,7 +4,7 @@ import React, { useContext } from 'react';
 import LocaleContext from "@/components/context/localeContext";
 import { useLocale } from "@/utils/locale";
 import { getDatabase } from "@/lib/notion";
-import saveImageIfNeeded from "@/components/download/index.js";
+import { fetchDataWithOptimizedImages, generateAlternateLinks } from "@/utils/imageUtils";
 import Directors from "@/components/parts/about/governance/directors.js";
 import OrganisationFlowChart from "@/components/parts/about/governance/chart.js";
 import GovernancePolicy from "@/components/parts/about/governance/governancePolicy.js";
@@ -14,6 +14,8 @@ export default function GovernancePage({ directors, orgChart, org_policys }) {
   const locale = "en"
   const { json, metaTitleExtension } = useLocale(locale)
   let lang = json.navigation
+
+  const alternateLinks = generateAlternateLinks("/about/governance");
 
   let breadcrumb = {
     parents: [{link: '/about/', title: "about"}],
@@ -25,6 +27,9 @@ export default function GovernancePage({ directors, orgChart, org_policys }) {
       <Head>
         <title>{lang.governance} - {metaTitleExtension} </title>
         <meta name="description" content={`${lang.governance} - ${lang.description}`} />
+        <link rel="alternate" hrefLang="ja" href={alternateLinks.ja} />
+        <link rel="alternate" hrefLang="en" href={alternateLinks.en} />
+        <link rel="alternate" hrefLang="x-default" href={alternateLinks.default} />
       </Head>
 
       <div className="">
@@ -54,24 +59,12 @@ export const getStaticProps = async (context) => {
 };
 
 const getDirector = async () => {
-  const database = await getDatabase("10ba8c0ecf8c807ba7c6c7c9128d9770")
-  let props = []
-  for(let item of database){
-    props.push(item.properties)
-  }
-
-  await saveImageIfNeeded(props, "director")
+  const database = await fetchDataWithOptimizedImages("10ba8c0ecf8c807ba7c6c7c9128d9770", "director")
   return database
 }
 
 const getOrgChart = async () => {
-  const database = await getDatabase("10ca8c0ecf8c80629eb3ee7c40cf9005")
-  let props = []
-  for(let item of database){
-    props.push(item.properties)
-  }
-
-  await saveImageIfNeeded(props, "org_chart")
+  const database = await fetchDataWithOptimizedImages("10ca8c0ecf8c80629eb3ee7c40cf9005", "org_chart")
   return database
 }
 

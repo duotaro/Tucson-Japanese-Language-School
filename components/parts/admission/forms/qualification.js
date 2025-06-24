@@ -1,10 +1,9 @@
 
 
 
-import React, { useContext } from "react";
+import React from "react";
 import Image from "next/image"
 import Link from "next/link"
-import LocaleContext from "../../../context/localeContext";
 import { useLocale } from "@/utils/locale";
 import Title from "../../text/title";
 import Paragraphs from "../../text/paragraphs";

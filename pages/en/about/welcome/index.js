@@ -7,7 +7,7 @@ import { getDatabase } from "@/lib/notion";
 import Greeting from "@/components/parts/about/welcome/greetings";
 import OurStory from "@/components/parts/about/welcome/our_story";
 import History from "@/components/parts/about/welcome/history";
-import saveImageIfNeeded from "@/components/download";
+import { fetchDataWithOptimizedImages, generateAlternateLinks } from "@/utils/imageUtils";
 
 export default function AboutPage({ welcome }) {
   const locale = "en"
@@ -16,6 +16,7 @@ export default function AboutPage({ welcome }) {
 
   let {greeting, story, history} = welcome
 
+  const alternateLinks = generateAlternateLinks("/about/welcome");
 
   let breadcrumb = {
     parents: [{link: '/about/', title: "about"}],
@@ -27,6 +28,9 @@ export default function AboutPage({ welcome }) {
       <Head>
         <title>{lang.welcome} - {metaTitleExtension} </title>
         <meta name="description" content={`${lang.welcome} - ${lang.description}`} />
+        <link rel="alternate" hrefLang="ja" href={alternateLinks.ja} />
+        <link rel="alternate" hrefLang="en" href={alternateLinks.en} />
+        <link rel="alternate" hrefLang="x-default" href={alternateLinks.default} />
       </Head>
 
       <div className="">
@@ -52,22 +56,9 @@ export const getStaticProps = async (context) => {
 };
 
 const getWelcome = async () => {
-  const greeting = await getDatabase("5ceb6b37e4584fa39fb78161869d885f")
+  const greeting = await fetchDataWithOptimizedImages("5ceb6b37e4584fa39fb78161869d885f", "greeting")
   const story = await getDatabase("02ed913f2ebe4151b0235d91a9306403")
-  const history = await getDatabase("15c93b4fe6154400902a623b20c6fe49")
-
-  let props = []
-  for(let item of greeting){
-    props.push(item.properties)
-  }
-
-  await saveImageIfNeeded(props, "greeting")
-
-  let props2 = []
-  for(let item of history){
-    props2.push(item.properties)
-  }
-  await saveImageIfNeeded(props2, "history")
+  const history = await fetchDataWithOptimizedImages("15c93b4fe6154400902a623b20c6fe49", "history")
 
   return {
     "greeting": greeting[0],

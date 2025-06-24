@@ -61,6 +61,9 @@ const ImageOptimizer = ({
   const imagePaths = [
     `/image/download/${pagePath}/${baseName}-md.webp`,
     `/image/download/${pagePath}/${baseName}.webp`,
+    `/image/download/${pagePath}/${baseName}-sm.webp`,
+    `/image/download/${pagePath}/${baseName}-lg.webp`,
+    `/image/download/${pagePath}/${baseName}-xl.webp`,
     `/image/download/${pagePath}/${baseName}-md.jpg`,
     `/image/download/${pagePath}/${baseName}.jpg`,
     `/image/download/${pagePath}/${baseName}-md.jpeg`,
@@ -70,7 +73,9 @@ const ImageOptimizer = ({
     `/image/${pagePath}/${baseName}.jpg`,
     `/image/${pagePath}/${baseName}.jpeg`,
     `/image/${pagePath}/${baseName}.png`,
-    `/image/${pagePath}/${baseName}.webp`
+    `/image/${pagePath}/${baseName}.webp`,
+    `/image/blog/image1.jpeg`, // 最終フォールバック
+    `/image/logo.png` // 最終フォールバック
   ];
   
   // 画像のフォールバック処理のためのstate

@@ -1,8 +1,7 @@
 
 
 
-import React, { useContext, useState } from "react";
-import LocaleContext from "../../context/localeContext";
+import React, { useState } from "react";
 import Link from "next/link";
 import { useLocale } from "@/utils/locale";
 import Section from "../section";

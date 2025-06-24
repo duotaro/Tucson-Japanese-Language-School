@@ -10,8 +10,7 @@ import LocaleContext from '../../context/localeContext';
 import { useLocale } from '@/utils/locale';
 
 
-export default function SliderList({ sliderList }) { // sliderList は `pages/index.js` からの加工済みNotionデータ
-  const { locale } = useContext(LocaleContext);
+export default function SliderList({ sliderList, locale }) { // sliderList は `pages/index.js` からの加工済みNotionデータ
   const { json, metaTitleExtension } = useLocale(locale)
 
   let list = []

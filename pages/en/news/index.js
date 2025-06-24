@@ -5,6 +5,7 @@ import LocaleContext from "@/components/context/localeContext";
 import React, { useContext } from 'react';
 import News from "@/components/parts/news";
 import { getNewsFromNotion, getNewsList } from "@/entity/newsEntity";
+import { generateAlternateLinks } from "@/utils/imageUtils";
 
 
 
@@ -20,13 +21,16 @@ export default function NewsPage({ list }) {
     current: lang.news
   }
 
-  
+  const alternateLinks = generateAlternateLinks("/news");
   
   return (
     <Layout breadcrumb={breadcrumb}>
       <Head>
         <title>{lang.news} - {metaTitleExtension} </title>
         <meta name="description" content={`${lang.about} - ${lang.description}`} />
+        <link rel="alternate" hrefLang="ja" href={alternateLinks.ja} />
+        <link rel="alternate" hrefLang="en" href={alternateLinks.en} />
+        <link rel="alternate" hrefLang="x-default" href={alternateLinks.default} />
       </Head>
       <News list={list} isTop={false} locale={locale}/>
     </Layout>

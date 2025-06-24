@@ -10,7 +10,7 @@ import SponsorEntity from "@/entity/sponsorEntity";
 import { getDatabase } from "@/lib/notion";
 import SponsorRequest from "@/components/parts/sponsor/request";
 import HowToDonate from "@/components/parts/sponsor/howto";
-import saveImageIfNeeded from "@/components/download";
+import { fetchDataWithOptimizedImages, generateAlternateLinks } from "@/utils/imageUtils";
 
 
 export default function SupportPageEn({ sponsors, support, sponsor, donation, howto }) {
@@ -25,6 +25,8 @@ export default function SupportPageEn({ sponsors, support, sponsor, donation, ho
     sponsorList.push(sponsor)
   }
 
+  const alternateLinks = generateAlternateLinks("/support");
+
   let breadcrumb = {
     parents: [],
     current: lang.support
@@ -37,6 +39,9 @@ export default function SupportPageEn({ sponsors, support, sponsor, donation, ho
       <Head>
         <title>{lang.support} - {metaTitleExtension} </title>
         <meta name="description" content={`${lang.support} - ${lang.description}`} />
+        <link rel="alternate" hrefLang="ja" href={alternateLinks.ja} />
+        <link rel="alternate" hrefLang="en" href={alternateLinks.en} />
+        <link rel="alternate" hrefLang="x-default" href={alternateLinks.default} />
       </Head>
 
       <div className="py-5 justify-center items-center">
@@ -57,14 +62,7 @@ export const getStaticProps = async (context) => {
   const support = await getDatabase("10ca8c0ecf8c8039a51bdd38f640a34e")
   const sponsor = await getDatabase("10ea8c0ecf8c80eeae62cc2050b7e7f7")
   const donation = await getDatabase("10ea8c0ecf8c801b802bc2b43a3ecf91")
-  const howto = await getDatabase("10ca8c0ecf8c8081a8a0e9a9a6166cc1")
-  
-  let props = []
-  for(let item of howto){
-    props.push(item.properties)
-  }
-
-  await saveImageIfNeeded(props, "howto")
+  const howto = await fetchDataWithOptimizedImages("10ca8c0ecf8c8081a8a0e9a9a6166cc1", "howto")
 
   return {
     props: {

@@ -10,8 +10,7 @@ import CustomImage from "../image/CustomImage";
 import Section from "../section";
 import LocaleLink from "../menu/LocaleLink";
 import ImageOptimizer from '@/components/download/ImageOptimizer';
-export default function About({ about, isTop }) {
-  const { locale } = useContext(LocaleContext);
+export default function About({ about, isTop, locale="ja" }) {
   const { json } = useLocale(locale)
 
   // console.log(about)

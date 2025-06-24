@@ -3,9 +3,8 @@ import FullCalendar from '@fullcalendar/react'
 import dayGridPlugin from '@fullcalendar/daygrid'
 import interactionPlugin, { Draggable, DropArg } from '@fullcalendar/interaction'
 import timeGridPlugin from '@fullcalendar/timegrid'
-import { useContext, useEffect, useState, useRef } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
-import LocaleContext from '../../../context/localeContext'
 import { useLocale } from '@/utils/locale'
 import Title from '../../text/title'
 import { SchaduleEntity } from '@/entity/scheduleEntity'
@@ -23,8 +22,7 @@ import Caution from '../../caution'
 
 
 
-export default function ClassComponent({category, classes}) {
-  const { locale } = useContext(LocaleContext);
+export default function ClassComponent({category, classes, locale="ja"}) {
   const { json } = useLocale(locale)
 
   let list = []

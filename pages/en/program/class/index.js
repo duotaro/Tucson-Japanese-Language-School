@@ -5,7 +5,7 @@ import LocaleContext from "@/components/context/localeContext";
 import { useLocale } from "@/utils/locale";
 
 import { getDatabase } from "@/lib/notion";
-import saveImageIfNeeded from "@/components/download/index"
+import { fetchDataWithOptimizedImages, generateAlternateLinks } from "@/utils/imageUtils";
 import ClassComponent from "@/components/parts/program/class";
 import Title from "@/components/parts/text/title";
 
@@ -20,11 +20,16 @@ export default function ClassPage({ category, classes }) {
     current: lang.class
   }
 
+  const alternateLinks = generateAlternateLinks("/program/class");
+
   return (
     <Layout breadcrumb={breadcrumb}>
       <Head>
         <title>{lang.class} - {metaTitleExtension} </title>
         <meta name="description" content={`${lang.class} - ${lang.description}`} />
+        <link rel="alternate" hrefLang="ja" href={alternateLinks.ja} />
+        <link rel="alternate" hrefLang="en" href={alternateLinks.en} />
+        <link rel="alternate" hrefLang="x-default" href={alternateLinks.default} />
       </Head>
       <div className="">
         <div className="row">
@@ -38,13 +43,7 @@ export default function ClassPage({ category, classes }) {
 export const getStaticProps = async (context) => {
   
   const category = await getDatabase("11aa8c0ecf8c80ed885ff949e5ee51bb")
-  const classes = await getDatabase("11aa8c0ecf8c80a7ab2cf31cd0b0a881")
-  
-  let props = []
-  for(let item of classes){
-    props.push(item.properties)
-  }
-  await saveImageIfNeeded(props, "class")
+  const classes = await fetchDataWithOptimizedImages("11aa8c0ecf8c80a7ab2cf31cd0b0a881", "class")
   
 
   return {

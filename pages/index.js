@@ -42,6 +42,12 @@ export default function Home({ sliderList, sponsors, newsList, scheduleList, abo
       <Head>
         <title>{metaTitleExtension}</title>
         <meta name="description" content={locale === 'ja' ? 'ツーソン日本語学校は、アリゾナ州ツーソンで日本語教育を提供する学校です。子どもから大人まで、日本語と日本文化を学ぶ機会を提供しています。' : 'Tucson Japanese Language School provides Japanese language education and cultural programs for children and adults in Tucson, Arizona.'} />
+        <link rel="icon" href="/favicon.ico" />
+        
+        {/* Language alternatives for SEO */}
+        <link rel="alternate" hrefLang="ja" href="https://tjschool.org/" />
+        <link rel="alternate" hrefLang="en" href="https://tjschool.org/en/" />
+        <link rel="alternate" hrefLang="x-default" href="https://tjschool.org/" />
         
         {/* Open Graph */}
         <meta property="og:title" content={metaTitleExtension} />

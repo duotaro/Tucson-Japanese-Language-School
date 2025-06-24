@@ -1,5 +1,5 @@
 // components/ProfileCardList.js
-import React, { useContext } from 'react';
+import React from 'react';
 import ProfileCard from './detail';
 import Section from '../../section';
 import Title from '../../text/title';

@@ -4,8 +4,7 @@ import React, { useContext } from 'react';
 import LocaleContext from "@/components/context/localeContext";
 import { useLocale } from "@/utils/locale";
 import ProfileCardList from "@/components/parts/about/staff";
-import { getDatabase } from "@/lib/notion";
-import saveImageIfNeeded from "@/components/download";
+import { fetchDataWithOptimizedImages, generateAlternateLinks } from '@/utils/imageUtils.js';
 
 
 export default function StaffPage({ staffList, roleList }) {
@@ -23,6 +22,11 @@ export default function StaffPage({ staffList, roleList }) {
       <Head>
         <title>{lang.staff} - {metaTitleExtension} </title>
         <meta name="description" content={`${lang.staff} - ${lang.description}`} />
+        
+        {/* Language alternatives for SEO */}
+        <link rel="alternate" hrefLang="ja" href="https://tjschool.org/about/staff/" />
+        <link rel="alternate" hrefLang="en" href="https://tjschool.org/en/about/staff/" />
+        <link rel="alternate" hrefLang="x-default" href="https://tjschool.org/about/staff/" />
       </Head>
 
       <div className="">
@@ -37,15 +41,9 @@ export default function StaffPage({ staffList, roleList }) {
 
 export const getStaticProps = async (context) => {
   try {
+    const { getDatabase } = await import("@/lib/notion");
     let roleList = await getDatabase("122a8c0ecf8c80059934c64693cc39ca")
-    // get about
-    let staffList = await getDatabase("9b85f554b3fc42dcb9d38f1ec87b168c")
-    let props = []
-    for(let staff of staffList){
-      props.push(staff.properties)
-    }
-
-    await saveImageIfNeeded(props, "staff")
+    let staffList = await fetchDataWithOptimizedImages("9b85f554b3fc42dcb9d38f1ec87b168c", "staff");
 
     return {
       props: {

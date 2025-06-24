@@ -9,7 +9,7 @@ import SliderList from '@/components/parts/slider/index.js';
 import News from '@/components/parts/news/index.js';
 import SponsorEntity from '@/entity/sponsorEntity.js';
 import LocaleContext from '@/components/context/localeContext.js';
-import saveImageIfNeeded from '@/components/download/index.js';
+import { fetchDataWithOptimizedImages } from '@/utils/imageUtils.js';
 import Mission from '@/components/parts/about/mission/mission.js';
 import Vision from '@/components/parts/about/mission/vision.js';
 import { convertAboutFromDatabase } from '@/entity/aboutEntity.js';
@@ -38,6 +38,11 @@ export default function Home({ sliderList, sponsors, newsList, scheduleList, abo
         <title>{metaTitleExtension}</title>
         <meta name="description" content={`${lang.title} - ${lang.description}`} />
         <link rel="icon" href="/favicon.ico" />
+        
+        {/* Language alternatives for SEO */}
+        <link rel="alternate" hrefLang="ja" href="https://tjschool.org/" />
+        <link rel="alternate" hrefLang="en" href="https://tjschool.org/en/" />
+        <link rel="alternate" hrefLang="x-default" href="https://tjschool.org/" />
       </Head>
       <div className="">
         <div className="row">
@@ -92,38 +97,18 @@ export const getStaticProps = async (context) => {
  */
 const getSlider = async () => {
   const topBannerId = "f2bd94d61f7c45958755562d366af5ea"
-  const database = await getDatabase(topBannerId)
-  let props = []
-  for(let item of database){
-    props.push(item.properties)
-  }
-  await saveImageIfNeeded(props, "slider")
-  return database;
- 
+  return await fetchDataWithOptimizedImages(topBannerId, "slider");
 }
 
 
 const getNews = async (limit = null) => {
-  const database = await getDatabase(newsId)
-  let props = []
-  for(let item of database){
-      props.push(item.properties)
-  }
-  await saveImageIfNeeded(props, "news")
-  
+  const database = await fetchDataWithOptimizedImages(newsId, "news");
   let params = await getNewsList(database, limit)
   return params
 }
 
 const getSponsors = async () => {
-  const database = await getDatabase("1e302ac5bce442b797e491aee309e7c4")
-  let props = []
-  for(let item of database){
-    props.push(item.properties)
-  }
-
-  await saveImageIfNeeded(props, "sponsor")
-  return database
+  return await fetchDataWithOptimizedImages("1e302ac5bce442b797e491aee309e7c4", "sponsor");
 }
 
 const getCalender = async () => {
@@ -132,23 +117,9 @@ const getCalender = async () => {
 }
 
 const getAbout = async () => {
-  const database = await getDatabase("d4eb3828e74c469b9179ca7be9edb5cf")
-  let props = []
-  for(let item of database){
-    props.push(item.properties)
-  }
-
-  await saveImageIfNeeded(props, "about")
-  return database
+  return await fetchDataWithOptimizedImages("d4eb3828e74c469b9179ca7be9edb5cf", "about");
 }
 
 const getOpportunity = async () => {
-  const database = await getDatabase("d9037016a0524f08adecdbab0c7302b7")
-  let props = []
-  for(let item of database){
-    props.push(item.properties)
-  }
-
-  await saveImageIfNeeded(props, "opportunity")
-  return database
+  return await fetchDataWithOptimizedImages("d9037016a0524f08adecdbab0c7302b7", "opportunity");
 }
