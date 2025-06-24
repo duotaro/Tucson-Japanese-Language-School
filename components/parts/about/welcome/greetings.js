@@ -2,13 +2,14 @@
 
 
 import React, { useContext } from "react";
-import ImageOptimizer from '@/components/download/ImageOptimizer';;
+import { Text } from "../../../../pages/news/[id]"
 import LocaleContext from "../../../context/localeContext";
 import { useLocale } from "@/utils/locale";
 import { GreetingEntity } from "@/entity/greetingEntity";
 import Title from "../../text/title";
 import Paragraphs from "../../text/paragraphs";
 import Section from "../../section";
+import ImageOptimizer from '@/components/download/ImageOptimizer';
 
 export default function Greeting({ greeting }) {
   const { locale } = useContext(LocaleContext);
@@ -60,7 +61,7 @@ export default function Greeting({ greeting }) {
   text2.plain_text = text2content
 
   return (
-    <Section >
+    <Section bg="bg-gray-50">
       <div className="container mx-auto">
         <div className="flex flex-col items-center  ">
           <Title title={entity.title} />
@@ -69,16 +70,26 @@ export default function Greeting({ greeting }) {
             <div className="flex flex-col items-center  ">
                 <Paragraphs text={[text1]} />
             </div>
-            <div className="flex flex-col items-center py-5 px-10 sm:px-20 md:px-0 lg:px-5 xl:px-10 2xl:px-20">
-              {entity.image && (
+            <div className="flex flex-col items-center py-5 px-10 sm:px-20 md:px-0 lg:px-5  image-hover">
+              {entity.image && typeof entity.image === 'object' && entity.image.baseName ? (
                 <ImageOptimizer
-                  baseName={entity.image?.baseName || 'greetings'}
-                  pagePath={entity.image?.pagePath || 'greeting'}
-                  alt={entity.image?.alt || 'Greetings'}
-                  width={entity.image?.width || 200}
-                  height={entity.image?.height || 100}
+                  baseName={entity.image.baseName}
+                  pagePath={entity.image.pagePath}
+                  alt={entity.image.alt || "Greetings"}
+                  responsive={true}
+                  responsiveType="card"
                   objectFit="cover"
-                  className="rounded-lg"
+                  className="rounded-lg shadow-md"
+                />
+              ) : (
+                <ImageOptimizer
+                  baseName="greeting"
+                  pagePath="about"
+                  alt="Greetings"
+                  responsive={true}
+                  responsiveType="card"
+                  objectFit="cover"
+                  className="rounded-lg shadow-md"
                 />
               )}
             </div>

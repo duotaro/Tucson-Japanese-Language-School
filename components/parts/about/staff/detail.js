@@ -7,7 +7,7 @@ const ProfileCard = ({item}) => {
    const { name, role, image, text } = item
   return (
       <div className="flex relative my-10 w-full mx-auto py-5 px-5 ustify-center">
-        <div className="rounded-lg overflow-hidden shadow-md bg-white w-[95%] border border-gray-200 bg-white flex justify-center">
+        <div className="rounded-lg overflow-hidden shadow-md bg-white w-[95%] border border-gray-200 bg-white flex justify-center card-hover">
             <div className="absolute -mt-20 w-full flex justify-center">
                 <div className="h-40 w-40">
                 <img

@@ -31,7 +31,7 @@ export default function Qualification({ qualification }) {
         <div className="grid gap-8 lg:grid-cols-2 md:gap-12">
             {list.map((item, index) => {
                 return (
-                    <div key={index} className="bg-white border border-gray-200 shadow-md rounded-lg p-6">
+                    <div key={index} className="bg-white border border-gray-200 shadow-md rounded-lg p-6 card-hover">
                       <div className="flex flex-col items-center text-center">
                         <Title title={item.title} fontSize="text-xl font-semibold mb-4"/>
                         <Paragraphs text={item.text} maxWidth="full"/>

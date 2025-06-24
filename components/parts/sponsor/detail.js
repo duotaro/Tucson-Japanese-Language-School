@@ -17,7 +17,7 @@ export default function SponsorDetail({ item }) {
   return (
     <div key={item.ordering} className={` text-center w-full `}>
         <a href={item.link} target="_blank" rel="noopener noreferrer">
-          <div className={`relative w-full ${hClass} bg-white border border-gray-200 rounded-lg shadow-md p-4`}>
+          <div className={`relative w-full ${hClass} bg-white border border-gray-200 rounded-lg shadow-md p-4 card-hover image-hover`}>
             <ImageOptimizer
               baseName={item.image?.baseName || 'sponsor'}
               pagePath={item.image?.pagePath || 'sponsor'}

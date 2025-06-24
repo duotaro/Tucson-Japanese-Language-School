@@ -3,6 +3,135 @@
 @tailwind components;
 @tailwind utilities;
 
+/* インタラクション・アニメーション強化 */
+
+/* スムーズスクロール */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 共通トランジション */
+* {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}
+
+/* カードホバーエフェクト */
+.card-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* ボタンアニメーション */
+.btn-animate {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.btn-animate:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.5s;
+}
+
+.btn-animate:hover:before {
+  left: 100%;
+}
+
+.btn-animate:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* 画像ホバーエフェクト */
+.image-hover {
+  transition: all 0.4s ease;
+  overflow: hidden;
+}
+
+.image-hover img {
+  transition: transform 0.4s ease;
+}
+
+.image-hover:hover img {
+  transform: scale(1.05);
+}
+
+/* リンクアニメーション */
+.link-underline {
+  position: relative;
+  text-decoration: none;
+}
+
+.link-underline:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: currentColor;
+  transition: width 0.3s ease;
+}
+
+.link-underline:hover:after {
+  width: 100%;
+}
+
+/* フェードインアニメーション */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+/* 段階的フェードイン */
+.fade-in-up:nth-child(1) { animation-delay: 0.1s; }
+.fade-in-up:nth-child(2) { animation-delay: 0.2s; }
+.fade-in-up:nth-child(3) { animation-delay: 0.3s; }
+.fade-in-up:nth-child(4) { animation-delay: 0.4s; }
+.fade-in-up:nth-child(5) { animation-delay: 0.5s; }
+
+/* フォーカス改善 */
+.focus-ring:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* プルスアニメーション */
+@keyframes pulse-subtle {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+.pulse-subtle {
+  animation: pulse-subtle 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
 /* ドロップダウンメニューがホバーしているときも表示されたままにする */
 /* .dropdown:hover .dropdown-menu,
 .dropdown-menu:hover {
@@ -39,40 +168,20 @@
   white-space: nowrap;
   text-overflow: ellipsis; /* テキストが長い場合、省略記号を表示 */
 }
-
-.stack-section:nth-child(1) {
-  background-color: white; /* 1番目のアイテムの背景色 */
+/* 1番目, 4番目, 7番目... */
+.stack-section:nth-child(3n + 1) {
+  background-color: white;
 }
 
-.stack-section:nth-child(2) {
-  background-color: #f9fafb; /* bg-gray-50に相当する色 */
+/* 2番目, 5番目, 8番目... */
+.stack-section:nth-child(3n + 2) {
+  background-color: #f9fafb; /* bg-gray-50 */
 }
 
-.stack-section:nth-child(3) {
-  background-color: #e0f2ff; /* bg-gray-100に相当する色 */
+/* 3番目, 6番目, 9番目... */
+.stack-section:nth-child(3n) {
+  background-color: #f3f4f6; /* bg-gray-100 */
 }
-
-.stack-section:nth-child(4) {
-  background-color: white; /* 4番目のアイテムの背景色（1番目と同じ） */
-}
-
-.stack-section:nth-child(5) {
-  background-color: #f9fafb; /* 5番目のアイテムの背景色（2番目と同じ） */
-}
-
-.stack-section:nth-child(6) {
-  background-color: #e0f2ff; /* 6番目のアイテムの背景色（3番目と同じ） */
-}
-
-/* 7番目以降も繰り返し */
-.stack-section:nth-child(n+7) {
-  background-color: white; /* 繰り返しのため、1番目と同じ色 */
-}
-
-.stack-section:nth-child(n+8) {
-  background-color: #f9fafb; /* 繰り返しのため、2番目
-
-
 
 @media (max-width: 600px) { /* 600px以下の画面サイズに適用 */
     .fc .fc-button {

@@ -18,21 +18,41 @@ import React from 'react';
  * @param {boolean} [props.fill=false] - 親要素いっぱいに画像を広げるかどうか (trueの場合、width/heightは不要になる)
  * @param {boolean} [props.responsive=false] - レスポンシブ画像として表示するかどうか（親要素の幅に合わせて拡縮）
  * @param {string} [props.sizes] - responsive=trueの場合のsizes属性
+ * @param {string} [props.responsiveType='standard'] - レスポンシブタイプ: 'hero', 'card', 'thumbnail', 'standard'
  */
 const ImageOptimizer = ({
   baseName,
   pagePath,
   alt,
-  className,
+  className = '',
   width,
   height,
   priority = false,
-  objectFit = 'cover', // デフォルト値を'cover'に設定
+  objectFit = 'cover',
   fill = false,
   responsive = false,
   sizes,
-  ...rest // その他の任意のpropsを受け取る
+  responsiveType = 'standard',
+  ...rest
 }) => {
+  
+  // レスポンシブタイプごとの最適化されたsizes設定
+  const responsiveSizes = {
+    hero: '100vw',
+    card: '(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw',
+    thumbnail: '(max-width: 640px) 50vw, (max-width: 768px) 33vw, 20vw',
+    standard: '(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw',
+    fullwidth: '100vw'
+  };
+
+  // レスポンシブ用のコンテナクラス
+  const responsiveClasses = {
+    hero: 'w-full h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh] relative',
+    card: 'w-full aspect-video relative',
+    thumbnail: 'w-full aspect-square relative', 
+    standard: 'w-full relative',
+    fullwidth: 'w-full relative'
+  };
   // src プロパティには、Publicディレクトリからの相対パスを渡します。
   // バックエンドで生成した複数サイズのうち、デフォルトとしてミディアムサイズ（md）の画像を使用します。
   // Next.jsのImageコンポーネントが、最適なサイズの画像を自動で選択してくれます。
@@ -43,11 +63,27 @@ const ImageOptimizer = ({
   
   if (responsive) {
     // responsiveモード: 親要素の幅に合わせて拡縮
+    const finalSizes = sizes || responsiveSizes[responsiveType] || responsiveSizes.standard;
+    const containerClass = responsiveClasses[responsiveType] || responsiveClasses.standard;
+    
     imageProps = {
       fill: true,
-      sizes: sizes || '(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw',
+      sizes: finalSizes,
       style: { objectFit: objectFit }
     };
+
+    // レスポンシブコンテナで包む
+    return (
+      <div className={`${containerClass} ${className}`}>
+        <Image
+          src={imageSrc}
+          alt={alt}
+          priority={priority}
+          {...imageProps}
+          {...rest}
+        />
+      </div>
+    );
   } else if (fill) {
     // fillモード: 親要素いっぱいに画像を広げる
     imageProps = {
@@ -55,11 +91,19 @@ const ImageOptimizer = ({
       style: { objectFit: objectFit }
     };
   } else {
-    // width/heightモード: 固定サイズ
+    // width/heightモード: 固定サイズ（モバイルで自動調整）
+    const responsiveWidth = width || 800;
+    const responsiveHeight = height || 600;
+    
     imageProps = {
-      width: width || 800,
-      height: height || 600,
-      style: { objectFit: objectFit }
+      width: responsiveWidth,
+      height: responsiveHeight,
+      style: { 
+        objectFit: objectFit,
+        width: '100%',
+        height: 'auto',
+        maxWidth: `${responsiveWidth}px`
+      }
     };
   }
 
@@ -67,7 +111,6 @@ const ImageOptimizer = ({
   if (!responsive && !fill && (!width || !height)) {
     console.warn(`Warning: ImageOptimizer for "${baseName}" is missing width or height props.
     Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.`);
-    // ここで適切なデフォルト値を設定
     imageProps.width = imageProps.width || 800;
     imageProps.height = imageProps.height || 600;
   }
@@ -76,10 +119,10 @@ const ImageOptimizer = ({
     <Image
       src={imageSrc}
       alt={alt}
-      priority={priority} // LCP要素などで優先的に読み込む場合
+      priority={priority}
       className={className}
-      {...imageProps} // width, height, style, fillなどを展開
-      {...rest} // その他のprops（例: sizesなど）
+      {...imageProps}
+      {...rest}
     />
   );
 };

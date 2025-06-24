@@ -34,30 +34,32 @@ export default function NewsDetail({ item }) {
   }
   // console.log(entity.image)
   return (
-    <div key={entity.id} className="max-w-xd lg:max-w-sm bg-white border border-gray-200 shadow-md rounded-lg">
+    <div key={entity.id} className="max-w-xd lg:max-w-sm bg-white border border-gray-200 shadow-md rounded-lg card-hover">
         
         <div className="p-6">
-        <div className="relative h-48">
+        <div className="mb-4 image-hover">
           {entity.image && typeof entity.image === 'object' && entity.image.baseName ? (
             <ImageOptimizer
               baseName={entity.image.baseName}
               pagePath={entity.image.pagePath}
               alt={entity.image.alt}
-              width={entity.image.width || 200}
-              height={entity.image.height || 100}
+              responsive={true}
+              responsiveType="card"
               objectFit="cover"
-              className="object-cover object-center rounded-lg w-full h-full absolute inset-0"
+              className="rounded-lg"
             />
           ) : (
             // フォールバック画像の場合
-            <img
-              src={entity.image}
-              alt="News"
-              className="object-cover object-center rounded-lg w-full h-full absolute inset-0"
-            />
+            <div className="w-full aspect-video relative">
+              <img
+                src={entity.image}
+                alt="News"
+                className="object-cover object-center rounded-lg w-full h-full absolute inset-0"
+              />
+            </div>
           )}
         </div>
-        <h2 className="text-lg font-black mt-4 " style={{
+        <h2 className="text-h4 xs:text-base sm:text-lg lg:text-xl font-semibold mt-4 " style={{
             minHeight: "3em",
             lineHeight: "1.5em",
             overflow: "hidden"
@@ -71,7 +73,7 @@ export default function NewsDetail({ item }) {
             })}
         </h2>
         {entity.text && (
-            <div className="line-clamp-2 min-h-10 max-w-md my-3 text-md font-light leading-relaxed text-gray-500 ">
+            <div className="line-clamp-2 min-h-10 max-w-md my-3 text-body-sm leading-relaxed text-gray-500 ">
             {entity.text.map((text) => {
                 return text.href ? (
                     <a href={text.href} target="_blank" className="link-secondary" key={text.text.content}>{text.text.content}</a>
@@ -82,7 +84,7 @@ export default function NewsDetail({ item }) {
             </div>
         )}
         <div className="mt-4 text-center">
-          <LocaleLink href={`/news/${id}`} className="px-3 py-2 text-md transition-colors rounded-md bg-blue-600 text-white hover:bg-blue-700">
+          <LocaleLink href={`/news/${id}`} className="px-3 py-2 text-body-sm rounded-md bg-blue-600 text-white hover:bg-blue-700 btn-animate focus-ring">
             {json.common.show_more}
           </LocaleLink>
         </div>
