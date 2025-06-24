@@ -1,4 +1,7 @@
 import Head from "next/head";
+import { useRouter } from 'next/router';
+import { useContext } from 'react';
+import LocaleContext from './context/localeContext';
 import Navbar from './navbar'
 import Footer from './footer'
 import Nav from './parts/nav/nav'
@@ -6,6 +9,17 @@ import Breadcrumb from "./parts/nav/breadcrumb";
 import Sponsor from "./parts/sponsor";
 
 export default function Layout({ children, breadcrumb }) {
+  const router = useRouter();
+  const { locale } = useContext(LocaleContext);
+  
+  // 現在のページのURLを生成
+  const baseUrl = 'https://tjschool.org';
+  const currentPath = router.asPath;
+  const canonicalUrl = `${baseUrl}${currentPath}`;
+  
+  // hreflang用のURL生成
+  const jaUrl = locale === 'ja' ? canonicalUrl : `${baseUrl}${currentPath}`;
+  const enUrl = locale === 'en' ? canonicalUrl : `${baseUrl}/en${currentPath}`;
   let sponsorList = []
 
   // for(let item of sponsors){
@@ -16,10 +30,25 @@ export default function Layout({ children, breadcrumb }) {
   return (
     <>
       <Head>
-        <meta name="description" content="Japan, Japanese, School, Tucson, children, class, culture, kids, language, クラス, ツーソン, 子ども, 学校, 日本, 日本語" />
+        {/* Canonical URL */}
+        <link rel="canonical" href={canonicalUrl} />
+        
+        {/* hreflang tags */}
+        <link rel="alternate" hrefLang="ja" href={jaUrl} />
+        <link rel="alternate" hrefLang="en" href={enUrl} />
+        <link rel="alternate" hrefLang="x-default" href={jaUrl} />
+        
+        {/* 基本メタタグ */}
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="keywords" content="Japan, Japanese, School, Tucson, children, class, culture, kids, language, クラス, ツーソン, 子ども, 学校, 日本, 日本語" />
-        <meta property="og:image"  contents="https://cdn-ak.f.st-hatena.com/images/fotolife/d/duo-taro100/20230501/20230501153944.jpg"></meta>
-        <link rel="icon" href="/favicon.ico" />
+        
+        {/* Open Graph */}
+        <meta property="og:url" content={canonicalUrl} />
+        <meta property="og:image" content="https://tjschool.org/logo-ja.png" />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:url" content={canonicalUrl} />
+        <meta name="twitter:image" content="https://tjschool.org/logo-ja.png" />
       </Head>
         <Navbar />
         <Nav />

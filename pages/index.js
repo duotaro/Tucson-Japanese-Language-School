@@ -41,8 +41,20 @@ export default function Home({ sliderList, sponsors, newsList, scheduleList, abo
     <Layout>
       <Head>
         <title>{metaTitleExtension}</title>
-        <meta name="description" content={`${lang.title} - ${lang.description}`} />
-        <link rel="icon" href="/favicon.ico" />
+        <meta name="description" content={locale === 'ja' ? 'ツーソン日本語学校は、アリゾナ州ツーソンで日本語教育を提供する学校です。子どもから大人まで、日本語と日本文化を学ぶ機会を提供しています。' : 'Tucson Japanese Language School provides Japanese language education and cultural programs for children and adults in Tucson, Arizona.'} />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content={metaTitleExtension} />
+        <meta property="og:description" content={locale === 'ja' ? 'ツーソン日本語学校は、アリゾナ州ツーソンで日本語教育を提供する学校です。子どもから大人まで、日本語と日本文化を学ぶ機会を提供しています。' : 'Tucson Japanese Language School provides Japanese language education and cultural programs for children and adults in Tucson, Arizona.'} />
+        <meta property="og:type" content="website" />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:title" content={metaTitleExtension} />
+        <meta name="twitter:description" content={locale === 'ja' ? 'ツーソン日本語学校は、アリゾナ州ツーソンで日本語教育を提供する学校です。子どもから大人まで、日本語と日本文化を学ぶ機会を提供しています。' : 'Tucson Japanese Language School provides Japanese language education and cultural programs for children and adults in Tucson, Arizona.'} />
+        
+        {/* 追加のメタタグ */}
+        <meta name="keywords" content={locale === 'ja' ? '日本語学校,ツーソン,アリゾナ,日本語教育,日本文化,子ども,大人,クラス' : 'Japanese school,Tucson,Arizona,Japanese education,Japanese culture,children,adults,classes'} />
+        <meta name="author" content="Tucson Japanese Language School" />
       </Head>
       <div className="">
         <div className="row">
