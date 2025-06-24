@@ -424,7 +424,6 @@ export const getStaticProps = async (context) => {
       pageMap,
       blockMap,
       detailPage
-    },
-    revalidate: 1,
+    }
   };
 };

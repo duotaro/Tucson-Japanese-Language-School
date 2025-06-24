@@ -36,24 +36,30 @@ export default function StaffPage({ staffList, roleList }) {
 
 
 export const getStaticProps = async (context) => {
+  try {
+    let roleList = await getDatabase("122a8c0ecf8c80059934c64693cc39ca")
+    // get about
+    let staffList = await getDatabase("9b85f554b3fc42dcb9d38f1ec87b168c")
+    let props = []
+    for(let staff of staffList){
+      props.push(staff.properties)
+    }
 
-  let roleList = await getDatabase("122a8c0ecf8c80059934c64693cc39ca")
-  // get about
-  let staffList = await getDatabase("9b85f554b3fc42dcb9d38f1ec87b168c")
-  let props = []
-  for(let staff of staffList){
-    props.push(staff.properties)
+    await saveImageIfNeeded(props, "staff")
+
+    return {
+      props: {
+        staffList: staffList || [],
+        roleList: roleList || []
+      }
+    };
+  } catch (error) {
+    return {
+      props: {
+        staffList: [],
+        roleList: []
+      }
+    };
   }
-
-  await saveImageIfNeeded(props, "staff")
-
-
-  return {
-    props: {
-      staffList: staffList,
-      roleList: roleList
-    },
-    revalidate: 1
-  };
 };
 

@@ -73,7 +73,6 @@ export const getStaticProps = async (context) => {
       sponsor: sponsor[0],
       donation: donation[0],
       howto: howto
-    },
-    revalidate: 1
+    }
   };
 };

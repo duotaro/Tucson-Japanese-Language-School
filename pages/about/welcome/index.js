@@ -48,8 +48,7 @@ export const getStaticProps = async (context) => {
   return {
     props: {
       welcome: welcome
-    },
-    revalidate: 1
+    }
   };
 };
 

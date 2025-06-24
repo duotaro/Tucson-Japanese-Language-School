@@ -15,7 +15,6 @@ export default function ContactOpportunityPage({ opportunities, general }) {
   const { json, metaTitleExtension } = useLocale(locale)
   let lang = json.navigation
 
-  // console.log(general)
   const title = locale == "ja" ? general.properties["title"].title[0].text.content : general.properties["en"].rich_text[0].text.content
   let text = ""
   if(locale == "ja"){
@@ -66,8 +65,7 @@ export const getStaticProps = async (context) => {
     props: {
       opportunities: database,
       general: general[0]
-    },
-    revalidate: 1
+    }
   };
 };
 

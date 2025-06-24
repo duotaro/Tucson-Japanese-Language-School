@@ -54,8 +54,7 @@ export const getStaticProps = async (context) => {
       discountFamily: discountFamily,
       discountStaff: discountStaff,
       enrollment: enrollment
-    },
-    revalidate: 1
+    }
   };
 };
 

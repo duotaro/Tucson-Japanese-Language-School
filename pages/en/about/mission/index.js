@@ -53,8 +53,7 @@ export const getStaticProps = async (context) => {
       about: about,
       philosophy: philosophy,
       policy: policy
-    },
-    revalidate: 1
+    }
   };
 };
 

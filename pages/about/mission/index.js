@@ -24,8 +24,6 @@ export default function MissionPage({ about, philosophy, policy }) {
     current: lang.mission
   }
 
-  // console.log(mission)
-
   return (
     <Layout breadcrumb={breadcrumb}>
       <Head>
@@ -97,8 +95,7 @@ export const getStaticProps = async (context) => {
       about: about,
       philosophy: philosophy,
       policy: policy
-    },
-    revalidate: 1
+    }
   };
 };
 
