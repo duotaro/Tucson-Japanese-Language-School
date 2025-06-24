@@ -65,8 +65,7 @@ export const getStaticProps = async (context) => {
     props: {
       opportunities: database,
       general: general[0]
-    },
-    revalidate: 1
+    }
   };
 };
 

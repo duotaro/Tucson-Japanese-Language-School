@@ -2,22 +2,29 @@
 
 
 import React, { useContext } from "react";
-import Image from "next/image"
+import ImageOptimizer from "@/components/download/ImageOptimizer"
 import LocaleContext from "../../../context/localeContext";
 import { useLocale } from "@/utils/locale";
 import Title from "../../text/title";
 import Paragraphs from "../../text/paragraphs";
-import CustomImage from "../../image/CustomImage";
 import Section from "../../section";
 
 export default function Vision({ vision, locale="ja" }) {
 
   return (
-    <Section>
+    <Section >
       <div className="container px-6 mx-auto">
         <div className="grid items-center gap-8 md:grid-flow-col-dense md:grid-cols-2 md:gap-12">
-            <CustomImage src={vision.image} alt="Vision" addClass="md:col-start-2" />
-            <div className="flex flex-col items-center ">
+            {vision.image && (
+              <ImageOptimizer
+                baseName={vision.image?.baseName || 'vision'}
+                pagePath={vision.image?.pagePath || 'about'}
+                alt={vision.image?.alt || 'Vision'}
+                objectFit="cover"
+                className="md:col-start-2"
+              />
+            )}
+            <div className="flex flex-col items-center">
                 <Title title={vision.title} />
                 <Paragraphs text={vision.text} />
             </div>

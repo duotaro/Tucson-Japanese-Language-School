@@ -54,7 +54,7 @@ export default function GovernancePage({ reports }) {
                   </div>
                   <hr className="border my-10 "/>
                   {/* PDFリンクセクション */}
-                  <div class="grid gap-4 sm:grid-cols-2 md:gap-6 lg:grid-cols-3 xl:grid-cols-4">
+                  <div className="grid gap-4 sm:grid-cols-2 md:gap-6 lg:grid-cols-3 xl:grid-cols-4">
                     {past.map((item) => {
                       return (
                         <PdfDownloads filePath={item.pdf} title={item.title} />  
@@ -79,8 +79,7 @@ export const getStaticProps = async (context) => {
   return {
     props: {
       reports: reports,
-    },
-    revalidate: 1
+    }
   };
 };
 

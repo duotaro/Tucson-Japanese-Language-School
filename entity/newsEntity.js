@@ -1,15 +1,14 @@
 import { ACCESABLE_IMAGE_PATH, DOWNLOAD_IMAGE_EXTENSION } from "../const"
 import { getDatabase } from "../lib/notion"
 import { formatDate } from "../utils/dateUtils"
+import path from 'path'
 
 export default class NewsEntity {
     constructor(item, isJapanease){
         if(!item){
             return
         }
-        // title
         this.title = []
-
         this.id = item.id
         if(isJapanease && item.properties["title"].title[0]){
             this.title = item.properties["title"].title
@@ -33,25 +32,40 @@ export default class NewsEntity {
         if(!isJapanease && item.properties["text_en"].rich_text[0]){
             this.text = item.properties["text_en"].rich_text
         }
-        // 今はなし　やるならダウンロード処理入れないと
-        if(item.properties["image"].files[0]){
-            //const name = item.properties["image"].files[0].name
 
-            const tmpName = item.properties["image"].files[0].name
-            const name = tmpName.replace(/ /g, '_')
-            this.image = `/${ACCESABLE_IMAGE_PATH}/news/${name}${DOWNLOAD_IMAGE_EXTENSION}`
+        if(item.properties["image"] && item.properties["image"].optimizedImage){
+            const optimizedImageData = item.properties["image"].optimizedImage;
+            this.image = {
+                baseName: optimizedImageData.baseName,
+                pagePath: optimizedImageData.pagePath,
+                alt: optimizedImageData.alt,
+                width: optimizedImageData.width,
+                height: optimizedImageData.height,
+            };
+        } else if (item.properties["image"] && item.properties["image"].files && item.properties["image"].files[0]) {
+             const tmpName = item.properties["image"].files[0].name;
+             const name = tmpName.replace(/ /g, '_');
+             this.image = {
+                 baseName: path.parse(name).name,
+                 pagePath: 'news',
+                 alt: item.properties["image"].files[0].caption ? item.properties["image"].files[0].caption[0]?.plain_text : name,
+                 width: null,
+                 height: null,
+             };
+        } else {
+            this.image = null;
         }
+
         this.tags = item.properties["tags"].multi_select
         this.tag = item.properties["tags"].multi_select[0]
         
     }
+
 }
 
 export const getNewsList = async (database, limit = null) => {
     let params = []
     if(database){
-
-        // 並び替え
         const sortedDatabase = database.sort((a, b) => new Date(b.properties["date"].date.start) - new Date(a.properties["date"].date.start));
         
         let limitedDatabase = sortedDatabase

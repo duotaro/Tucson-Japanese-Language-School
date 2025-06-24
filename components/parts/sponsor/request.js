@@ -47,7 +47,7 @@ export default function SponsorRequest({ support, sponsor, donation, locale = "j
 
   return (
     <>
-      <Section py="py-8 md:py-12 lg:py-20" bg="bg-slate-50">
+      <Section py="py-8 md:py-12 lg:py-20" >
           <div className="container px-6 mx-auto">
             <div className="flex flex-col items-center mb-5 ">
               <Title title={supportEntity.title} />
@@ -92,7 +92,7 @@ export default function SponsorRequest({ support, sponsor, donation, locale = "j
           </div>
         </div>
       </Section>
-      <Section py="py-8 md:py-12 lg:py-20" bg="bg-slate-50">
+      <Section py="py-8 md:py-12 lg:py-20" >
           <div className="container px-6 mx-auto">
             <div className="flex flex-col items-center mb-5 ">
               <Title title={donationEntity.title} />

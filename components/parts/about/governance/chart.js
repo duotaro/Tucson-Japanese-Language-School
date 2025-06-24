@@ -2,15 +2,14 @@
 
 
 import React, { useContext } from "react";
-import Image from "next/image"
 import Link from "next/link"
 import LocaleContext from "../../../context/localeContext";
 import { useLocale } from "@/utils/locale";
 import Title from "../../text/title";
 import Paragraphs from "../../text/paragraphs";
-import CustomImage from "../../image/CustomImage";
 import Section from "../../section";
 import OrganisationFlowChartEntity from "@/entity/orgChartEntity";
+import ImageOptimizer from '@/components/download/ImageOptimizer';
 
 export default function OrganisationFlowChart({ orgChart, locale="ja" }) {
   const { json } = useLocale(locale)
@@ -30,17 +29,18 @@ export default function OrganisationFlowChart({ orgChart, locale="ja" }) {
               {/* <span className="text-[1.15rem] font-medium text-muted">{lang.description}</span> */}
               <Paragraphs text={entity.text} />
             </div>
-            <div className="px-6 mx-auto md:w-3/4 h-auto">
-              {/* <CustomImage src="/image/blog/image1.jpeg" alt="Chart" /> */}
-              <Image
-                src={entity.image}
-                alt="Chart"
-                width={800} // 元画像の幅
-                height={600} // 元画像の高さ
-                layout="responsive" // 親要素に合わせてリサイズ
-                objectFit="contain" // または 'contain' など
-                className="rounded-lg"
-              />
+            <div className="px-6 mx-auto md:w-3/4">
+              {entity.image && (
+                <ImageOptimizer
+                  baseName={entity.image?.baseName || 'governance_chart_ja'}
+                  pagePath={entity.image?.pagePath || 'org_chart'}
+                  alt={entity.image?.alt || 'Chart'}
+                  width={800}
+                  height={600}
+                  objectFit="contain"
+                  className="rounded-lg w-full h-auto"
+                />
+              )}
             </div>
           </div>  
         </div>

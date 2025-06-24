@@ -3,12 +3,10 @@
 
 import React, { useContext } from "react";
 import LocaleContext from "../../context/localeContext";
-import Link from "next/link";
 import { useLocale } from "@/utils/locale";
 import NewsEntity from "@/entity/newsEntity";
 import { getRandomInt } from "@/utils/numberUtils";
-import { ACCESABLE_IMAGE_PATH } from "@/const";
-import Image from "next/image";
+import ImageOptimizer from '@/components/download/ImageOptimizer'; // ImageOptimizerのパスを適切に修正
 import LocaleLink from "../menu/LocaleLink";
 
 export default function NewsDetail({ item, locale="ja" }) {
@@ -16,8 +14,7 @@ export default function NewsDetail({ item, locale="ja" }) {
 
   let {id, page} = item
   let entity = new NewsEntity(page, locale == "ja")
-
-  if(!entity.title.length){
+  if(!entity.title && !entity.title.length){
     return <></>
   }
 
@@ -34,14 +31,34 @@ export default function NewsDetail({ item, locale="ja" }) {
       entity.image = `/image/blog/image${random}.jpeg`
     }
   }
+  // console.log(entity.image)
   return (
-    <div key={entity.id} className="max-w-xd lg:max-w-sm shadow-md rounded-xl bg-slate-100">
+    <div key={entity.id} className="max-w-xd lg:max-w-sm bg-white border border-gray-200 shadow-md rounded-lg card-hover">
         
-        <div className="mt-3p-5 bg-gray-100border-2 border-t-0 rounded-b-lg">
-        <div className="relative h-48">
-          <Image loading="lazy" src={entity.image} width={200} height={100} style={{ objectFit: 'cover' }} className="object-cover object-center rounded-t-lg w-full h-full absolute inset-0" />
+        <div className="p-6">
+        <div className="mb-4 image-hover">
+          {entity.image && typeof entity.image === 'object' && entity.image.baseName ? (
+            <ImageOptimizer
+              baseName={entity.image.baseName}
+              pagePath={entity.image.pagePath}
+              alt={entity.image.alt}
+              responsive={true}
+              responsiveType="card"
+              objectFit="cover"
+              className="rounded-lg"
+            />
+          ) : (
+            // フォールバック画像の場合
+            <div className="w-full aspect-video relative">
+              <img
+                src={entity.image}
+                alt="News"
+                className="object-cover object-center rounded-lg w-full h-full absolute inset-0"
+              />
+            </div>
+          )}
         </div>
-        <h2 className="text-lg font-black mt-2 px-3 " style={{
+        <h2 className="text-h4 xs:text-base sm:text-lg lg:text-xl font-semibold mt-4 " style={{
             minHeight: "3em",
             lineHeight: "1.5em",
             overflow: "hidden"
@@ -55,7 +72,7 @@ export default function NewsDetail({ item, locale="ja" }) {
             })}
         </h2>
         {entity.text && (
-            <div className="line-clamp-2 px-3 min-h-10 max-w-md my-3 text-md font-light leading-relaxed text-gray-500 ">
+            <div className="line-clamp-2 min-h-10 max-w-md my-3 text-body-sm leading-relaxed text-gray-500 ">
             {entity.text.map((text) => {
                 return text.href ? (
                     <a href={text.href} target="_blank" className="link-secondary" key={text.text.content}>{text.text.content}</a>
@@ -65,8 +82,8 @@ export default function NewsDetail({ item, locale="ja" }) {
             })}
             </div>
         )}
-        <div className="mb-5 text-center">
-          <LocaleLink href={`/news/${id}`} className="px-3 py-2 text-md transition-colors rounded-md bg-blue-600 text-white hover:bg-blue-700">
+        <div className="mt-4 text-center">
+          <LocaleLink href={`/news/${id}`} className="px-3 py-2 text-body-sm rounded-md bg-blue-600 text-white hover:bg-blue-700 btn-animate focus-ring">
             {json.common.show_more}
           </LocaleLink>
         </div>

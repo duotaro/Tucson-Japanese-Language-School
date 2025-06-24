@@ -82,8 +82,7 @@ export const getStaticProps = async (context) => {
       scheduleList: scheduleList,
       about: about,
       opportunity: opportunity
-    },
-    revalidate: 1
+    }
   };
 };
 

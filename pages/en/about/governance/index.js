@@ -49,8 +49,7 @@ export const getStaticProps = async (context) => {
       directors: directors,
       orgChart: orgChart[0],
       org_policys: org_policys
-    },
-    revalidate: 1
+    }
   };
 };
 

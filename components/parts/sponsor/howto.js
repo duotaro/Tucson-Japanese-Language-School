@@ -57,7 +57,7 @@ export default function HowToDonate({ howto, locale = "ja" }) {
 
   return (
     
-    <Section py="py-8 md:py-12 lg:py-20" bg="bg-gray-100">
+    <Section py="py-8 md:py-12 lg:py-20" >
     <div className="container px-6 mx-auto text-center" >
       <Title title={title} />
     </div>

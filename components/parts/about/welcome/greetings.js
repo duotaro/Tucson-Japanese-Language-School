@@ -2,7 +2,6 @@
 
 
 import React, { useContext } from "react";
-import Image from "next/image"
 import { Text } from "../../../../pages/news/[id]"
 import LocaleContext from "../../../context/localeContext";
 import { useLocale } from "@/utils/locale";
@@ -10,6 +9,7 @@ import { GreetingEntity } from "@/entity/greetingEntity";
 import Title from "../../text/title";
 import Paragraphs from "../../text/paragraphs";
 import Section from "../../section";
+import ImageOptimizer from '@/components/download/ImageOptimizer';
 
 export default function Greeting({ greeting, locale="ja" }) {
 
@@ -64,16 +64,28 @@ export default function Greeting({ greeting, locale="ja" }) {
             <div className="flex flex-col items-center  ">
                 <Paragraphs text={[text1]} />
             </div>
-            <div className="flex flex-col items-center py-5 px-10 sm:px-20 md:px-0 lg:px-5 xl:px-10 2xl:px-20">
-              <Image
-                src={entity.image}
-                alt="Greetings"
-                width={500}
-                height={300}
-                layout="responsive"
-                objectFit="cover"
-                className="rounded-lg"
-              />
+            <div className="flex flex-col items-center py-5 px-10 sm:px-20 md:px-0 lg:px-5  image-hover">
+              {entity.image && typeof entity.image === 'object' && entity.image.baseName ? (
+                <ImageOptimizer
+                  baseName={entity.image.baseName}
+                  pagePath={entity.image.pagePath}
+                  alt={entity.image.alt || "Greetings"}
+                  responsive={true}
+                  responsiveType="card"
+                  objectFit="cover"
+                  className="rounded-lg shadow-md"
+                />
+              ) : (
+                <ImageOptimizer
+                  baseName="greeting"
+                  pagePath="about"
+                  alt="Greetings"
+                  responsive={true}
+                  responsiveType="card"
+                  objectFit="cover"
+                  className="rounded-lg shadow-md"
+                />
+              )}
             </div>
         </div>
         <div className="grid items-center ">

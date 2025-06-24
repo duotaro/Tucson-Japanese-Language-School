@@ -56,7 +56,6 @@ export const getStaticProps = async (context) => {
     props: {
       files: files[0],
       list: list
-    },
-    revalidate: 1
+    }
   };
 };

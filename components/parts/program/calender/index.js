@@ -12,7 +12,7 @@ import { SchaduleEntity } from '@/entity/scheduleEntity'
 import Paragraphs from '../../text/paragraphs'
 import { getSchoolYear, isWithinSchoolYear } from '@/utils/dateUtils'
 import Section from '../../section'
-import CustomImage from '../../image/CustomImage'
+import ImageOptimizer from '@/components/download/ImageOptimizer'
 import Link from 'next/link'
 import FullScreenModal from '../../modal/fullscreenModal'
 import { ArrowDownOnSquareStackIcon } from '@heroicons/react/24/outline'
@@ -33,6 +33,12 @@ const renderEventContent = (eventInfo, locale) => {
 
   const isSingleDayEvent = !end || startDate.toISOString().split('T')[0] === endDate.toISOString().split('T')[0];
 
+  // console.log("------------------------------------------")
+  // console.log(eventInfo)
+  // console.log(isSingleDayEvent)
+  // console.log(allDay)
+  // console.log("------------------------------------------")
+
   return (
     <div className="custom-event  text-white">
       <strong className='mr-1'>{title}</strong>
@@ -46,8 +52,9 @@ const renderEventContent = (eventInfo, locale) => {
   );
 };
 
-export default function Calender({files, list, locale="ja"}) {
+export default function Calender({files, list}) {
   const calendarRef = useRef(null);
+  const { locale } = useContext(LocaleContext);
   const { json } = useLocale(locale)
   const schoolYear = getSchoolYear(locale)
 
@@ -160,14 +167,24 @@ export default function Calender({files, list, locale="ja"}) {
       {/* title */}
       
       {/* event */}
-      <Section py="py-10" bg="bg-gray-100">
-        <div className="flex flex-col justify-center items-center mb-5 pb-3">
+      <Section py="py-10" >
+        <div className="flex flex-col justify-center items-center mb-2 ">
           <Title title={`${json.navigation.calendar}(${schoolYear.label})`} />
         </div>
         <div className="container mx-auto">
-          <div className="grid gap-8 md:grid-flow-col-dense md:grid-cols-2 md:gap-12 items-center justify-center">
-              <CustomImage src={res.image} alt="Calendar" addClass="md:col-start-2 " />
-              <div className="flex flex-col items-center">
+          <div className="grid gap-8 md:grid-flow-col-dense md:grid-cols-2 md:gap-12 md:items-center">
+              <div className="md:col-start-2 flex justify-center items-center">
+                <ImageOptimizer
+                  baseName={res.image?.baseName || 'event'}
+                  pagePath={res.image?.pagePath || 'calendar'}
+                  alt={res.image?.alt || 'Calendar'}
+                  width={600}
+                  height={400}
+                  objectFit="cover"
+                  className="rounded-lg w-full h-auto"
+                />
+              </div>
+              <div className="flex flex-col items-center justify-center">
                   {/* PDFリンクセクション */}
                   <ul role="list" className="divide-y divide-gray-100">
                     {eventList.map((item) => {
@@ -197,10 +214,15 @@ export default function Calender({files, list, locale="ja"}) {
       
       <Section>
           <div className="flex flex-col justify-center items-center mb-2 ">
-            <Title title={json.calender.title} />
+            <Title title="年間カレンダー（翻訳）" />
           </div>
+          {/* <div className="text-center max-w-sm">
+            <a href='' className="text-center max-w-sm">
+              <div><ArrowDownOnSquareIcon className='w-5 h-5' /> <span>年間カレンダー</span></div>
+            </a>
+          </div> */}
           <div className="bottom-10 left-0 right-0 mx-auto bg-gray-200 opacity-70 rounded-lg p-4 text-center mb-3">
-            <a href={res.pdf} target="_blank" className="flex justify-center items-center text-gray-800 hover:text-blue-500 "><ArrowDownOnSquareStackIcon className='w-5 h-5 mr-2' />{json.calender.download}</a>
+            <a href={res.pdf} target="_blank" className="flex justify-center items-center text-gray-800 hover:text-blue-500 "><ArrowDownOnSquareStackIcon className='w-5 h-5 mr-2' />こちらからダウンロードできます（翻訳）</a>
           </div>
           <div className="flex-1">
             <FullCalendar 

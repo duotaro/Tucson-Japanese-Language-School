@@ -91,19 +91,19 @@ const renderBlock = (block) => {
       );
     case "heading_1":
       return (
-        <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-700 mb-2 mt-10">
+        <h1 className="text-h1 xs:text-2xl sm:text-3xl lg:text-4xl text-gray-700 mb-4 mt-10">
           <Text text={value.rich_text} />
         </h1>
       );
     case "heading_2":
       return (
-        <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-gray-700 mb-2 mt-10">
+        <h2 className="text-h2 xs:text-xl sm:text-2xl lg:text-3xl text-gray-700 mb-3 mt-8">
           <Text text={value.rich_text} />
         </h2>
       );
     case "heading_3":
       return (
-        <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-gray-700 mb-2 mt-2">
+        <h3 className="text-h3 xs:text-lg sm:text-xl lg:text-2xl text-gray-700 mb-2 mt-6">
           <Text text={value.rich_text} />
         </h3>
       );
@@ -424,7 +424,6 @@ export const getStaticProps = async (context) => {
       pageMap,
       blockMap,
       detailPage
-    },
-    revalidate: 1,
+    }
   };
 };

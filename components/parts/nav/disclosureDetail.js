@@ -24,17 +24,17 @@ export default function DisclosureDetail({ item }) {
     <Disclosure as="div" className="-mx-3">
     {item.dropdowns.length == 0 && (
       parentKey === PAYMENT_URL.PAGE_KEY ? (
-        <div className="flex px-3 py-2 items-center no-underline text-blue-800 hover:bg-gray-50 leading-7 -mx-3 rounded-lg">
+        <div className="flex px-3 py-2 items-center no-underline text-blue-600 hover:bg-gray-50 leading-7 -mx-3 rounded-lg">
           <ArrowTopRightOnSquareIcon  aria-hidden="true" className="h-4 w-4 mr-1" />
-          <a className="text-base font-semibold text-blue-800 hover:bg-gray-50" href="https://tucsonhosyuko.square.site/" target="_blank">{parentTitle}</a>
+          <a className="text-base font-semibold text-blue-600 hover:bg-gray-50" href="https://tucsonhosyuko.square.site/" target="_blank">{parentTitle}</a>
         </div>
       ) : (
-        <LocaleLink className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-blue-800 hover:bg-gray-50" href={createNavUrl(parent)}>{parentTitle}</LocaleLink>
+        <LocaleLink className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-blue-600 hover:bg-gray-50" href={createNavUrl(parent)}>{parentTitle}</LocaleLink>
       )
     )}
     {item.dropdowns.length > 0 && (
       <>
-        <DisclosureButton className="group w-full font-semibold flex px-3 py-2 items-center no-underline text-blue-800 hover:bg-gray-50 leading-7 -mx-3 rounded-lg">
+        <DisclosureButton className="group w-full font-semibold flex px-3 py-2 items-center no-underline text-blue-600 hover:bg-gray-50 leading-7 -mx-3 rounded-lg">
           {parentTitle}
           <ChevronDownIcon aria-hidden="true" className="h-5 w-5 flex-none group-data-[open]:rotate-180" />
         </DisclosureButton>
@@ -44,7 +44,7 @@ export default function DisclosureDetail({ item }) {
             <LocaleLink
               key={dropdown.PAGE_KEY}
               href={createNavUrl(dropdown)}
-              className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-blue-800 hover:bg-gray-50"
+              className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-blue-600 hover:bg-gray-50"
             >
               {json.navigation[dropdown.PAGE_KEY]}
             </LocaleLink>

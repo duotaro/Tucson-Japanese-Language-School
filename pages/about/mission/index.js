@@ -11,6 +11,7 @@ import Philosophy from "@/components/parts/about/mission/philosophy.js";
 import Policy from "@/components/parts/about/mission/policy.js";
 import Vision from "@/components/parts/about/mission/vision.js";
 import savePdfIfNeeded from "@/components/download/pdf.js";
+import path from 'path';
 
 export default function MissionPage({ about, philosophy, policy }) {
   const { locale } = useContext(LocaleContext);
@@ -44,8 +45,49 @@ export default function MissionPage({ about, philosophy, policy }) {
 
 export const getStaticProps = async (context) => {
 
+  // Notionのデータ取得関数（pages/index.jsと同じfetchData関数）
+  const fetchData = async (databaseId, pagePath) => {
+    const database = await getDatabase(databaseId);
+    let props = [];
+    for(let item of database){
+      props.push(item.properties);
+    }
+    // 画像のダウンロードと最適化を実行
+    await saveImageIfNeeded(props, pagePath);
+
+    // Notionから取得したデータベースアイテムをループし、画像情報を加工する
+    const processedDatabase = await Promise.all(database.map(async (item) => {
+      const newItem = { ...item }; // 元のアイテムをコピー
+      const imageKeys = ['image', 'image1', 'image2', 'image3', 'image_en'];
+
+      await Promise.all(imageKeys.map(async (key) => {
+        // 画像プロパティが存在し、かつファイルタイプである場合
+        if (newItem.properties[key] && newItem.properties[key].type === 'files' && newItem.properties[key].files[0]) {
+          const originalFileName = newItem.properties[key].files[0].name;
+          const baseName = path.parse(originalFileName.replace(/ /g, '_')).name;
+          const altText = newItem.properties[key].files[0].caption ? newItem.properties[key].files[0].caption[0]?.plain_text : originalFileName;
+
+          // 最適化された画像情報をoptimizedImageプロパティとして追加
+          newItem.properties[key] = {
+            ...newItem.properties[key], // 元のNotionの画像プロパティ情報を保持
+            optimizedImage: {
+              baseName: baseName,
+              pagePath: pagePath,
+              alt: altText,
+              width: 1920,
+              height: 1080,
+            }
+          };
+        }
+      }));
+  
+      return newItem;
+    }));
+    return processedDatabase;
+  };
+
   // get about
-  let about = await getAbout()
+  let about = await fetchData("d4eb3828e74c469b9179ca7be9edb5cf", "about")
   let philosophy = await getPhilosophy()
   let policy = await getPolicy()
   return {
@@ -53,21 +95,9 @@ export const getStaticProps = async (context) => {
       about: about,
       philosophy: philosophy,
       policy: policy
-    },
-    revalidate: 1
+    }
   };
 };
-
-const getAbout = async () => {
-  const database = await getDatabase("d4eb3828e74c469b9179ca7be9edb5cf")
-  let props = []
-  for(let item of database){
-    props.push(item.properties)
-  }
-
-  await saveImageIfNeeded(props, "about")
-  return database
-}
 
 const getPhilosophy = async () => {
   const database = await getDatabase("f40ad3a82b894969a6a1b0ee0bfcb0cf")

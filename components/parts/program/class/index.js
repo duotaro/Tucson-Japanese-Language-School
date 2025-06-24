@@ -1,14 +1,30 @@
 "use client"
+import FullCalendar from '@fullcalendar/react'
+import dayGridPlugin from '@fullcalendar/daygrid'
+import interactionPlugin, { Draggable, DropArg } from '@fullcalendar/interaction'
+import timeGridPlugin from '@fullcalendar/timegrid'
+import { useContext, useEffect, useState, useRef } from 'react'
+import { Dialog, Transition } from '@headlessui/react'
+import LocaleContext from '../../../context/localeContext'
 import { useLocale } from '@/utils/locale'
 import Title from '../../text/title'
+import { SchaduleEntity } from '@/entity/scheduleEntity'
 import Paragraphs from '../../text/paragraphs'
+import { getSchoolYear, isWithinSchoolYear } from '@/utils/dateUtils'
 import Section from '../../section'
-import CustomImage from '../../image/CustomImage'
+import ImageOptimizer from '@/components/download/ImageOptimizer'
+import Link from 'next/link'
+import FullScreenModal from '../../modal/fullscreenModal'
+import { ArrowDownOnSquareStackIcon } from '@heroicons/react/24/outline'
+import { ACCESABLE_IMAGE_PATH, ACCESABLE_PDF_PATH, DOWNLOAD_IMAGE_EXTENSION } from '@/const'
 import ClassEntity from '@/entity/classEntity'
 import Caution from '../../caution'
 
 
-export default function ClassComponent({category, classes, locale="ja" }) {
+
+
+export default function ClassComponent({category, classes}) {
+  const { locale } = useContext(LocaleContext);
   const { json } = useLocale(locale)
 
   let list = []
@@ -60,7 +76,18 @@ export default function ClassComponent({category, classes, locale="ja" }) {
             <div className="container px-6 mx-auto ">
               <div className="grid gap-8 lg:grid-flow-col-dense lg:grid-cols-2 md:gap-12 relative">
                   <div className="flex items-center items-center mt-2">
-                    <CustomImage src={item.image} alt={item.title} addClass={pos} />
+                    {item.image && (
+                      <div className={`relative w-full h-80 md:h-52 lg:h-72 xl:h-96 ${pos}`}>
+                        <ImageOptimizer
+                          baseName={item.image?.baseName || 'class'}
+                          pagePath={item.image?.pagePath || 'class'}
+                          alt={item.image?.alt || item.title}
+                          responsive={true}
+                          objectFit="cover"
+                          className="rounded-lg"
+                        />
+                      </div>
+                    )}
                   </div>
                   <div className="flex flex-col items-center">
                       <div className='flex flex-row justify-center items-center text-gray-800 hover:text-blue-500 gap-5'>
@@ -107,7 +134,7 @@ export default function ClassComponent({category, classes, locale="ja" }) {
      })}
 
      <Section>
-       <Caution text={json.class.caution} />
+       <Caution text={`※対象年齢はあくまで目安として定めているものであり、クラスプレイスメントは生徒の日本語レベルに応じて、相談をしながら決定します。(翻訳　表示場所考える)`} />
      </Section>
     </>
   );

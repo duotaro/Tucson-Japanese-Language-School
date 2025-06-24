@@ -36,7 +36,6 @@ export default function ProgramPage({ about }) {
 //     props: {
 //       about: about
 //     },
-//     revalidate: 1
 //   };
 // };
 
