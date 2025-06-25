@@ -4,7 +4,7 @@ import React, { useContext, useState } from 'react';
 import LocaleContext from "@/components/context/localeContext";
 import { useLocale } from "@/utils/locale";
 import { getDatabase } from "@/lib/notion";
-import PricingSection from "@/components/parts/admission/forms/ price";
+import PricingSection from "@/components/parts/admission/forms/price";
 import FormSection from "@/components/parts/admission/forms/forms";
 import Qualification from "@/components/parts/admission/forms/qualification";
 import Enrollment from "@/components/parts/admission/forms/enrollment";
