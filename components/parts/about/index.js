@@ -24,10 +24,10 @@ export default function About({ about, isTop, locale="ja" }) {
                 baseName={about.image?.baseName || 'about'}
                 pagePath={about.image?.pagePath || 'about'}
                 alt={about.image?.alt || 'About'}
-                width={about.image?.width || 200}
-                height={about.image?.height || 100}
+                width={about.image?.width || 400}
+                height={about.image?.height || 200}
                 objectFit="cover"
-                className="md:col-start-2"
+                className="md:col-start-2 rounded-lg shadow-md"
               />
             )}
             <div className="flex flex-col items-center">

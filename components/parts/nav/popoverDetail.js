@@ -56,7 +56,6 @@ export default function PopoverDetail({ item, isMainNav = false }) {
             </div>
 
             <div
-            transition
             className={`dropdown-menu absolute -left-8 top-full z-10 shadow w-screen max-w-60 overflow-hidden ${hoverdClass} rounded-lg bg-white shadow-lg transition-opacity duration-500`}
             style={{
                 opacity: isHovered ? '100' : '0',

@@ -9,7 +9,10 @@
       "Bash(npm run build:*)",
       "Bash(rm:*)",
       "Bash(yarn build)",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "Bash(yarn dev)",
+      "Bash(yarn lint)",
+      "mcp__ide__getDiagnostics"
     ],
     "deny": []
   }

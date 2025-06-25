@@ -80,48 +80,55 @@ export default function Home({ sliderList, sponsors, newsList, scheduleList, abo
 
 export const getStaticProps = async (context) => {
 
-  // Notionのデータ取得関数
+  // Notionのデータ取得関数（メモリ最適化版）
   const fetchData = async (databaseId, pagePath) => {
     const database = await getDatabase(databaseId);
     let props = [];
     for(let item of database){
       props.push(item.properties);
     }
-    // ★ 画像のダウンロードと最適化を実行（saveImageIfNeededは何も返さない）
+    // 画像のダウンロードと最適化を実行
     await saveImageIfNeeded(props, pagePath);
 
-    // ★ Notionから取得したデータベースアイテムをループし、画像情報を加工する
+    // 必要最小限のデータのみを抽出して返す
     const processedDatabase = await Promise.all(database.map(async (item) => {
-      const newItem = { ...item }; // 元のアイテムをコピー
-      // Notionデータベースの各アイテムの`properties`オブジェクトに含まれる画像プロパティのキー
-      // これらはあなたのNotionデータベースの実際のプロパティ名と一致している必要があります
-      const imageKeys = ['image', 'image1', 'image2', 'image3', 'image_en']; // 例: スライダーやニュースの画像プロパティ名
+      // 必要なプロパティのみを抽出
+      const essentialProps = {};
+      const imageKeys = ['image', 'image1', 'image2', 'image3', 'image_en'];
+
+      // 必要なプロパティをコピー
+      Object.keys(item.properties).forEach(key => {
+        const prop = item.properties[key];
+        if (imageKeys.includes(key) || prop.type === 'title' || prop.type === 'rich_text' || 
+            prop.type === 'date' || prop.type === 'select' || prop.type === 'multi_select' ||
+            prop.type === 'checkbox' || prop.type === 'url') {
+          essentialProps[key] = prop;
+        }
+      });
 
       await Promise.all(imageKeys.map(async (key) => {
-        // 画像プロパティが存在し、かつファイルタイプである場合
-        if (newItem.properties[key] && newItem.properties[key].type === 'files' && newItem.properties[key].files[0]) {
-          const originalFileName = newItem.properties[key].files[0].name;
+        if (essentialProps[key] && essentialProps[key].type === 'files' && essentialProps[key].files[0]) {
+          const originalFileName = essentialProps[key].files[0].name;
           const baseName = path.parse(originalFileName.replace(/ /g, '_')).name;
-          const altText = newItem.properties[key].files[0].caption ? newItem.properties[key].files[0].caption[0]?.plain_text : originalFileName;
+          const altText = essentialProps[key].files[0].caption ? essentialProps[key].files[0].caption[0]?.plain_text : originalFileName;
 
-          // 最適化された画像情報を`optimizedImage`プロパティとして追加
-          newItem.properties[key] = {
-            ...newItem.properties[key], // 元のNotionの画像プロパティ情報を保持
+          essentialProps[key] = {
+            ...essentialProps[key],
             optimizedImage: {
               baseName: baseName,
-              pagePath: pagePath, // 画像が保存されるサブディレクトリのパス
+              pagePath: pagePath,
               alt: altText,
-              width: 1920, // ★ ここに適切な画像の幅を設定（例: 実際の画像のアスペクト比を保てる値）
-              height: 1080, // ★ ここに適切な画像の高さを設定（例: 実際の画像のアスペクト比を保てる値）
-              // Notionの画像プロパティから直接幅や高さが取得できる場合は、それを使うのが理想です。
-              // 例: width: newItem.properties[key].files[0].file.width,
-              // 例: height: newItem.properties[key].files[0].file.height,
+              width: 1920,
+              height: 1080,
             }
           };
         }
       }));
   
-      return newItem;
+      return {
+        id: item.id,
+        properties: essentialProps
+      };
     }));
     return processedDatabase;
   };

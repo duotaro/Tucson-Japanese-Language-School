@@ -18,7 +18,7 @@ const ProfileCard = ({item}) => {
                       responsive={true}
                       responsiveType="thumbnail"
                       objectFit="cover"
-                      className="shadow-md"
+                      className="rounded-lg shadow-md"
                     />
                   ) : (
                     <ImageOptimizer
@@ -28,7 +28,7 @@ const ProfileCard = ({item}) => {
                       responsive={true}
                       responsiveType="thumbnail"
                       objectFit="cover"
-                      className="shadow-md"
+                      className="rounded-lg shadow-md"
                     />
                   )}
                 </div>

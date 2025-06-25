@@ -106,11 +106,12 @@ const ImageOptimizer = ({
 
     // レスポンシブコンテナで包む
     return (
-      <div className={`${containerClass} ${className}`}>
+      <div className={`${containerClass} overflow-hidden ${className}`}>
         <Image
           src={imageSrc}
           alt={alt}
           priority={priority}
+          className="w-full h-full"
           {...imageProps}
           {...rest}
         />

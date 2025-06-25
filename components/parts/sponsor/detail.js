@@ -21,7 +21,7 @@ export default function SponsorDetail({ item}) {
               alt={item.image?.alt || item.title}
               width={200}
               height={150}
-              objectFit="contain"
+              objectFit="cover"
               className="rounded-lg w-full h-auto"
             />
           </div>

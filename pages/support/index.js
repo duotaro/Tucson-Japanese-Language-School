@@ -14,14 +14,14 @@ import saveImageIfNeeded from "@/components/download";
 
 
 export default function SupportPage({ sponsors, support, sponsor, donation, howto }) {
-  const locale = "ja"
+  const { locale } = useContext(LocaleContext);
   const { json, metaTitleExtension } = useLocale(locale)
   let lang = json.navigation
 
   let sponsorList = []
 
   for(let item of sponsors){
-    let sponsor = new SponsorEntity(item)
+    let sponsor = new SponsorEntity(item, locale === "ja")
     sponsorList.push(sponsor)
   }
 

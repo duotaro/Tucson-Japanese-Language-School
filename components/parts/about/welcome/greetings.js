@@ -1,10 +1,7 @@
 
 
 
-import React, { useContext } from "react";
-import { Text } from "../../../../pages/news/[id]"
-import LocaleContext from "../../../context/localeContext";
-import { useLocale } from "@/utils/locale";
+import React from "react";
 import { GreetingEntity } from "@/entity/greetingEntity";
 import Title from "../../text/title";
 import Paragraphs from "../../text/paragraphs";
@@ -64,7 +61,7 @@ export default function Greeting({ greeting, locale="ja" }) {
             <div className="flex flex-col items-center  ">
                 <Paragraphs text={[text1]} />
             </div>
-            <div className="flex flex-col items-center py-5 px-10 sm:px-20 md:px-0 lg:px-5  image-hover">
+            <div className="flex flex-col items-center py-5 px-10 sm:px-20 md:px-0 lg:px-5 image-hover h-80 sm:h-96 md:h-80 ">
               {entity.image && typeof entity.image === 'object' && entity.image.baseName ? (
                 <ImageOptimizer
                   baseName={entity.image.baseName}

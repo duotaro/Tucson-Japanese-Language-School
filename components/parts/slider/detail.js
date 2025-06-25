@@ -41,7 +41,7 @@ export default function SliderDetail({post}) {
     return (
         <SplideSlide key={post.id || post.title}> {/* keyプロパティは一意なID推奨 */}
             <div
-                className="card relative" // ★ 親要素に `position: relative;` を設定する必要がある（ImageOptimizerのfillが機能するため）
+                className="card relative rounded-lg overflow-hidden" // ★ 親要素に `position: relative;` を設定する必要がある（ImageOptimizerのfillが機能するため）
                 style={cardStyle}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
@@ -54,7 +54,7 @@ export default function SliderDetail({post}) {
                     fill={true}       // ★ 親要素いっぱいに画像を広げる
                     objectFit="cover" // ★ CSSの `object-fit: cover;` と同じ効果
                     // ホバーエフェクトのopacityとtransitionはclassNameで直接ImageOptimizerに適用
-                    className={`absolute inset-0 ${isHovered ? 'opacity-90' : 'opacity-100'} transition-opacity duration-300`}
+                    className={`absolute inset-0 rounded-lg ${isHovered ? 'opacity-90' : 'opacity-100'} transition-opacity duration-300`}
                     priority={true}   // ★ スライダーの画像はLCPに影響するため、優先読み込みを検討
                     // fill={true} の場合、widthとheightは不要です
                 />

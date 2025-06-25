@@ -44,7 +44,7 @@ export default function Directors({ directors, locale="ja" }) {
                               width={130}
                               height={130}
                               objectFit="cover"
-                              className="inline-block shrink-0 rounded-[.95rem] w-[130px] h-[130px]"
+                              className="inline-block shrink-0 rounded-lg w-[130px] h-[130px] shadow-md"
                             />
                           </div>
                           <div className="text-center">

@@ -67,3 +67,6 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - Entity files contain structured data for various content types
 - Menu system dynamically generated from URL configurations
 - Google Analytics integration for tracking
+
+### Development Guidelines
+- 必ず修正後にテストをしてくださいね。

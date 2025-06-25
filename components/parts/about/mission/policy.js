@@ -24,8 +24,10 @@ export default function Policy({ policy }) {
                 baseName={entity.image?.baseName || 'policy'}
                 pagePath={entity.image?.pagePath || 'policy'}
                 alt={entity.image?.alt || 'Policy'}
+                width={entity.image?.width || 400}
+                height={entity.image?.height || 200}
                 objectFit="cover"
-                className="md:col-start-1"
+                className="md:col-start-1 rounded-lg shadow-md"
               />
             )}
             <div className="flex flex-col items-center">

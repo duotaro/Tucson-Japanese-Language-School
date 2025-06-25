@@ -25,10 +25,10 @@ export default function Opportunity({ opportunity }) {
                 baseName={entity.image?.baseName || 'opportunity'}
                 pagePath={entity.image?.pagePath || 'opportunity'}
                 alt={entity.image?.alt || 'Opportunity'}
-                width={entity.image?.width || 200}
-                height={entity.image?.height || 100}
+                width={entity.image?.width || 400}
+                height={entity.image?.height || 200}
                 objectFit="cover"
-                className="md:col-start-1"
+                className="md:col-start-1 rounded-lg shadow-md"
               />
             )}
             <div className="flex flex-col items-center">

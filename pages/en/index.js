@@ -9,7 +9,7 @@ import SliderList from '@/components/parts/slider/index.js';
 import News from '@/components/parts/news/index.js';
 import SponsorEntity from '@/entity/sponsorEntity.js';
 import LocaleContext from '@/components/context/localeContext.js';
-// import { fetchDataWithOptimizedImages } from '@/lib/imageUtils.js'; // サーバーサイドで動的インポート
+import saveImageIfNeeded from '@/components/download/index.js';
 import Mission from '@/components/parts/about/mission/mission.js';
 import Vision from '@/components/parts/about/mission/vision.js';
 import { convertAboutFromDatabase } from '@/entity/aboutEntity.js';
@@ -17,6 +17,7 @@ import About from '@/components/parts/about/index.js';
 import Sponsor from '@/components/parts/sponsor/index.js';
 import Opportunity from '@/components/parts/contact/opportunity/index.js';
 import { getNewsList } from '@/entity/newsEntity.js';
+import path from 'path';
 
 
 export default function Home({ sliderList, sponsors, newsList, scheduleList, about, opportunity }) {
@@ -61,24 +62,69 @@ export default function Home({ sliderList, sponsors, newsList, scheduleList, abo
 
 export const getStaticProps = async (context) => {
 
-  // get slider
-  let sliderList = await getSlider()
+  // Notionのデータ取得関数（メモリ最適化版）
+  const fetchData = async (databaseId, pagePath) => {
+    const database = await getDatabase(databaseId);
+    let props = [];
+    for(let item of database){
+      props.push(item.properties);
+    }
+    // 画像のダウンロードと最適化を実行
+    await saveImageIfNeeded(props, pagePath);
 
-  // get sponsor
-  let sponsors = await getSponsors()
+    // 必要最小限のデータのみを抽出して返す
+    const processedDatabase = await Promise.all(database.map(async (item) => {
+      // 必要なプロパティのみを抽出
+      const essentialProps = {};
+      const imageKeys = ['image', 'image1', 'image2', 'image3', 'image_en'];
 
-  // get news
-  let newsList = await getNews(3)
-  // 件数フィルター
+      // 必要なプロパティをコピー
+      Object.keys(item.properties).forEach(key => {
+        const prop = item.properties[key];
+        if (imageKeys.includes(key) || prop.type === 'title' || prop.type === 'rich_text' || 
+            prop.type === 'date' || prop.type === 'select' || prop.type === 'multi_select' ||
+            prop.type === 'checkbox' || prop.type === 'url') {
+          essentialProps[key] = prop;
+        }
+      });
 
-  // get calender
-  let scheduleList = await getCalender()
+      await Promise.all(imageKeys.map(async (key) => {
+        if (essentialProps[key] && essentialProps[key].type === 'files' && essentialProps[key].files[0]) {
+          const originalFileName = essentialProps[key].files[0].name;
+          const baseName = path.parse(originalFileName.replace(/ /g, '_')).name;
+          const altText = essentialProps[key].files[0].caption ? essentialProps[key].files[0].caption[0]?.plain_text : originalFileName;
 
-  // get about
-  let about = await getAbout()
+          essentialProps[key] = {
+            ...essentialProps[key],
+            optimizedImage: {
+              baseName: baseName,
+              pagePath: pagePath,
+              alt: altText,
+              width: 1920,
+              height: 1080,
+            }
+          };
+        }
+      }));
+  
+      return {
+        id: item.id,
+        properties: essentialProps
+      };
+    }));
+    return processedDatabase;
+  };
 
+  // 各データの取得と加工
+  const sliderList = await fetchData("f2bd94d61f7c45958755562d366af5ea", "slider");
+  const sponsors = await fetchData("1e302ac5bce442b797e491aee309e7c4", "sponsor");
+  const newsDatabase = await fetchData(newsId, "news");
+  const newsList = await getNewsList(newsDatabase, 3);
 
-  let opportunity = await getOpportunity()
+  const scheduleList = await getDatabase("8d87080f73f14e8a9e7ba934c1d928c6");
+  const about = await fetchData("d4eb3828e74c469b9179ca7be9edb5cf", "about");
+  const opportunity = await fetchData("d9037016a0524f08adecdbab0c7302b7", "opportunity");
+
   return {
     props: {
       sliderList: sliderList,
@@ -91,40 +137,3 @@ export const getStaticProps = async (context) => {
   };
 };
 
-/**
- * get slider info
- * @returns list [SliderEntity]
- */
-const getSlider = async () => {
-  const { fetchDataWithOptimizedImages } = await import('@/lib/imageUtils.js');
-  const topBannerId = "f2bd94d61f7c45958755562d366af5ea"
-  return await fetchDataWithOptimizedImages(topBannerId, "slider");
-}
-
-
-const getNews = async (limit = null) => {
-  const { fetchDataWithOptimizedImages } = await import('@/lib/imageUtils.js');
-  const database = await fetchDataWithOptimizedImages(newsId, "news");
-  let params = await getNewsList(database, limit)
-  return params
-}
-
-const getSponsors = async () => {
-  const { fetchDataWithOptimizedImages } = await import('@/lib/imageUtils.js');
-  return await fetchDataWithOptimizedImages("1e302ac5bce442b797e491aee309e7c4", "sponsor");
-}
-
-const getCalender = async () => {
-  const database = await getDatabase("8d87080f73f14e8a9e7ba934c1d928c6")
-  return database
-}
-
-const getAbout = async () => {
-  const { fetchDataWithOptimizedImages } = await import('@/lib/imageUtils.js');
-  return await fetchDataWithOptimizedImages("d4eb3828e74c469b9179ca7be9edb5cf", "about");
-}
-
-const getOpportunity = async () => {
-  const { fetchDataWithOptimizedImages } = await import('@/lib/imageUtils.js');
-  return await fetchDataWithOptimizedImages("d9037016a0524f08adecdbab0c7302b7", "opportunity");
-}
