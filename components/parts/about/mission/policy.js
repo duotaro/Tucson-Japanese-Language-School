@@ -6,7 +6,7 @@ import LocaleContext from "../../../context/localeContext";
 import Title from "../../text/title";
 import Paragraphs from "../../text/paragraphs";
 import PolicyEntity from "@/entity/policyEntity";
-import FileDownloads from "../../files/downloads";
+import PdfDownloads from "../../files/downloadsPdf";
 import Section from "../../section";
 import ImageOptimizer from '@/components/download/ImageOptimizer';
 
@@ -32,7 +32,9 @@ export default function Policy({ policy }) {
             )}
             <div className="flex flex-col items-center">
                 <Title title={entity.title} />
-                <FileDownloads filePath={entity.pdf} title={""} />
+                <div className="mt-6 max-w-xs">
+                  <PdfDownloads filePath={entity.pdf} title={entity.title} />
+                </div>
             </div>
         </div>
       </div>

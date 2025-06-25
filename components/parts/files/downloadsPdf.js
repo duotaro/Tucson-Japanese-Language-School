@@ -2,13 +2,10 @@
 
 
 import React, { useContext } from "react";
-
-import { PhilosophyEntity } from "@/entity/philosophyEntity";
 import { useLocale } from "@/utils/locale";
 import LocaleContext from "../../context/localeContext";
-import { DocumentArrowDownIcon } from "@heroicons/react/24/outline";
+import { DocumentTextIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
-import Image from "next/image";
 
 export default function PdfDownloads({ filePath, title, isNew = false }) {
   const { locale } = useContext(LocaleContext);
@@ -16,21 +13,34 @@ export default function PdfDownloads({ filePath, title, isNew = false }) {
   if(!title){
     title = json.common.download
   }
-  let bg = isNew ? "bg-amber-100" : "bg-gray-100"
 
   return (
-    <div className="">
-      <Link href={filePath} target="_blank" className={`group relative flex h-96 items-end overflow-hidden rounded-lg ${bg} p-4 shadow-lg hover:border-2`}>
-        <Image src="/image/components/pdf.png" alt={title} fill className="object-cover object-center transition duration-200 group-hover:scale-110" />
-
-        <div className="relative flex w-full flex-col rounded-lg bg-white p-4 text-center">
-          {/* <span className="text-gray-500">Men</span> */}
-          <span className="text-sm font-bold text-gray-800 lg:text-md group-hover:text-blue-500">
-            {title}
+    <div className="group">
+      <Link 
+        href={filePath} 
+        target="_blank" 
+        className="block h-full p-6 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:border-blue-300 hover:-translate-y-1 group"
+        aria-label={`Download PDF: ${title}`}
+      >
+        <div className="flex flex-col items-center text-center space-y-4">
+          {/* PDF Icon */}
+          <div className={`p-4 rounded-full ${isNew ? 'bg-amber-100' : 'bg-gray-100'} group-hover:scale-110 transition-transform duration-300`}>
+            <DocumentTextIcon className="w-8 h-8 text-red-600" />
+          </div>
+          
+          {/* Title */}
+          <div className="flex-1">
+            <h3 className="text-sm font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300 min-h-[3rem] flex items-center justify-center">
+              {title}
+            </h3>
             {isNew && (
-              <span class="inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-600/10 ml-2">NEW!!</span>
+              <span className="inline-flex items-center rounded-full bg-red-50 px-3 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-600/20 mt-2">
+                <span className="w-1.5 h-1.5 bg-red-600 rounded-full mr-1.5"></span>
+                NEW!!
+              </span>
             )}
-          </span>
+          </div>
+
         </div>
       </Link>
     </div>
