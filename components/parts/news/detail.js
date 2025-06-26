@@ -31,7 +31,7 @@ export default function NewsDetail({ item, locale="ja" }) {
       entity.image = `/image/blog/image${random}.jpeg`
     }
   }
-  // console.log(entity.image)
+  console.log(entity)
   return (
     <div key={entity.id} className="max-w-xd lg:max-w-sm bg-white border border-gray-200 shadow-md rounded-lg card-hover">
         

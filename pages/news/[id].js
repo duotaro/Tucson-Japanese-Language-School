@@ -10,6 +10,7 @@ import NewsEntity, { getNewsFromNotion, getNewsList } from "@/entity/newsEntity"
 import savBlogImageIfNeeded from "@/components/download/blogDetail";
 import { ACCESABLE_BLOG_IMAGE_PATH, DOWNLOAD_IMAGE_EXTENSION } from "@/const";
 import Image from "next/image";
+import ImageOptimizer from "@/components/download/ImageOptimizer";
 import LocaleLink from "@/components/parts/menu/LocaleLink";
 import { TwitterTweetEmbed } from 'react-twitter-embed';
 
@@ -158,15 +159,37 @@ const renderBlock = (block) => {
         </div>
       );
     case "image":
-      const src =
-        value.type === "external" ? value.external.url : `/${ACCESABLE_BLOG_IMAGE_PATH}/${block.parent.page_id}/${block.id}${DOWNLOAD_IMAGE_EXTENSION}`;
       const caption = value.caption ? value.caption[0]?.plain_text : "";
-      return (
-        <figure>
-          <img src={src} alt={caption} className="h-auto max-w-full rounded-lg" style={{width : '100%'}}/>
-          {caption && <figcaption className="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">{caption}</figcaption>}
-        </figure>
-      );
+      if (value.type === "external") {
+        return (
+          <figure>
+            <Image 
+              src={value.external.url} 
+              alt={caption || "記事画像"} 
+              width={800}
+              height={450}
+              className="h-auto max-w-full rounded-lg"
+              style={{width : '100%'}}
+            />
+            {caption && <figcaption className="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">{caption}</figcaption>}
+          </figure>
+        );
+      } else {
+        return (
+          <figure>
+            <ImageOptimizer
+              baseName={block.id}
+              pagePath={`blog/${block.parent.page_id}`}
+              alt={caption || "記事画像"}
+              width={800}
+              height={450}
+              className="h-auto max-w-full rounded-lg"
+              objectFit="cover"
+            />
+            {caption && <figcaption className="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">{caption}</figcaption>}
+          </figure>
+        );
+      }
     case "divider":
       return <hr key={id} />;
     case "quote":
@@ -325,18 +348,27 @@ export default function Post({ pageMap, blockMap, detailPage}) {
                             <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-700 mb-2 mt-10">{pageTitle}</h1>
                             {pageImage && (
                               <div className="relative w-full overflow-hidden rounded-lg">
-                                <Image
-                                  src={pageImage}
-                                  alt="Mission"
-                                  width={800}  // サイズを大きめに設定
-                                  height={400}
-                                  layout="responsive"
-                                  objectFit="cover"
-                                  className="transition-transform duration-500 ease-in-out transform hover:scale-105"
-                                />
-                                {/* <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent rounded-lg" /> */}
+                                {typeof pageImage === 'object' && pageImage.baseName ? (
+                                  <ImageOptimizer
+                                    baseName={pageImage.baseName}
+                                    pagePath={pageImage.pagePath}
+                                    alt={pageImage.alt || pageTitle}
+                                    responsive={true}
+                                    responsiveType="hero"
+                                    objectFit="cover"
+                                    className="transition-transform duration-500 ease-in-out transform hover:scale-105"
+                                  />
+                                ) : (
+                                  <Image
+                                    src={pageImage}
+                                    alt={pageTitle}
+                                    width={800}
+                                    height={400}
+                                    className="transition-transform duration-500 ease-in-out transform hover:scale-105"
+                                    style={{width: '100%', height: 'auto'}}
+                                  />
+                                )}
                               </div>
-                              
                             )}
                             <div className="mt-4 uppercase text-gray-600 italic font-semibold text-xs agility-field">
                               <strong>作成日</strong> {createtDate} / 更新日 {lastEditDate}

@@ -70,3 +70,4 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ### Development Guidelines
 - 必ず修正後にテストをしてくださいね。
+- 修正後に原因となっていた部分と、解消方法を簡単に明記してください。

@@ -15,12 +15,16 @@ export function LocaleProvider({ children }) {
       } else if (router.pathname.includes('/en')) {
         setLocale('en');
       } else {
-        // ブラウザの言語設定を使用
-        const userLocale = navigator.language || navigator.userLanguage || '';
-        if (userLocale.startsWith('ja')) {
-          setLocale('ja');
+        // ユーザーが選択したロケールをlocalStorageから取得
+        const savedLocale = typeof window !== 'undefined' ? localStorage.getItem('userLocale') : null;
+        if (savedLocale) {
+          setLocale(savedLocale);
         } else {
-          setLocale('en');
+          // 初回訪問時のみブラウザの言語設定を使用
+          const userLocale = navigator.language || navigator.userLanguage || '';
+          const initialLocale = userLocale.startsWith('ja') ? 'ja' : 'en';
+          setLocale(initialLocale);
+          localStorage.setItem('userLocale', initialLocale);
         }
       }
     }, [lang, router.pathname]);
