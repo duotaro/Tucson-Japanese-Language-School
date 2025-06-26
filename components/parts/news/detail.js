@@ -31,60 +31,61 @@ export default function NewsDetail({ item, locale="ja" }) {
       entity.image = `/image/blog/image${random}.jpeg`
     }
   }
-  console.log(entity)
   return (
-    <div key={entity.id} className="max-w-xd lg:max-w-sm bg-white border border-gray-200 shadow-md rounded-lg card-hover">
-        
-        <div className="p-6">
-        <div className="mb-4 image-hover w-full aspect-video relative">
-          {entity.image && typeof entity.image === 'object' && entity.image.baseName ? (
-            <ImageOptimizer
-              baseName={entity.image.baseName}
-              pagePath={entity.image.pagePath}
-              alt={entity.image.alt}
-              fill={true}
-              objectFit="cover"
-              className="rounded-lg"
-            />
-          ) : (
-            // フォールバック画像の場合
-            <img
-              src={entity.image}
-              alt="News"
-              className="object-cover object-center rounded-lg w-full h-full absolute inset-0"
-            />
+    <LocaleLink href={`/news/${id}`} className="block group">
+      <div key={entity.id} className="max-w-xd lg:max-w-sm bg-white border border-gray-200 shadow-md rounded-lg card-hover cursor-pointer transition-all duration-200 hover:scale-105 hover:shadow-lg focus-within:ring-2 focus-within:ring-blue-500 focus-within:ring-offset-2">
+          
+          <div className="p-6">
+          <div className="mb-4 image-hover w-full aspect-video relative">
+            {entity.image && typeof entity.image === 'object' && entity.image.baseName ? (
+              <ImageOptimizer
+                baseName={entity.image.baseName}
+                pagePath={entity.image.pagePath}
+                alt={entity.image.alt}
+                fill={true}
+                objectFit="cover"
+                className="rounded-lg"
+              />
+            ) : (
+              // フォールバック画像の場合
+              <img
+                src={entity.image}
+                alt="News"
+                className="object-cover object-center rounded-lg w-full h-full absolute inset-0"
+              />
+            )}
+          </div>
+          <h2 className="text-h4 xs:text-base sm:text-lg lg:text-xl font-semibold mt-4 " style={{
+              minHeight: "3em",
+              lineHeight: "1.5em",
+              overflow: "hidden"
+              }}>
+              {entity.title.map((title) => {
+                  return title.href ? (
+                      <span className="link-secondary " key={title.text.content}>{title.text.content}</span>
+                  ) : (
+                      <span key={title.text.content} className="link-secondary ">{title.text.content}</span>
+                  )
+              })}
+          </h2>
+          {entity.text && (
+              <div className="line-clamp-2 min-h-10 max-w-md my-3 text-body-sm leading-relaxed text-gray-500 ">
+              {entity.text.map((text) => {
+                  return text.href ? (
+                      <span className="link-secondary" key={text.text.content}>{text.text.content}</span>
+                  ) : (
+                      <span key={text.text.content}>{text.text.content}</span>
+                  )
+              })}
+              </div>
           )}
-        </div>
-        <h2 className="text-h4 xs:text-base sm:text-lg lg:text-xl font-semibold mt-4 " style={{
-            minHeight: "3em",
-            lineHeight: "1.5em",
-            overflow: "hidden"
-            }}>
-            {entity.title.map((title) => {
-                return title.href ? (
-                    <a href={title.href} target="_blank" className="link-secondary " key={title.text.content}>{title.text.content}</a>
-                ) : (
-                    <p key={title.text.content} className="link-secondary ">{title.text.content}</p>
-                )
-            })}
-        </h2>
-        {entity.text && (
-            <div className="line-clamp-2 min-h-10 max-w-md my-3 text-body-sm leading-relaxed text-gray-500 ">
-            {entity.text.map((text) => {
-                return text.href ? (
-                    <a href={text.href} target="_blank" className="link-secondary" key={text.text.content}>{text.text.content}</a>
-                ) : (
-                    <span key={text.text.content}>{text.text.content}</span>
-                )
-            })}
-            </div>
-        )}
-        <div className="mt-4 text-center">
-          <LocaleLink href={`/news/${id}`} className="px-3 py-2 text-body-sm rounded-md bg-blue-600 text-white hover:bg-blue-700 btn-animate focus-ring">
-            {json.common.show_more}
-          </LocaleLink>
-        </div>
-        </div>
-    </div>
+          <div className="mt-4 text-center">
+            <span className="px-3 py-2 text-body-sm rounded-md bg-blue-600 text-white btn-animate focus-ring inline-block group-hover:bg-blue-700 transition-colors duration-200">
+              {json.common.show_more}
+            </span>
+          </div>
+          </div>
+      </div>
+    </LocaleLink>
   );
 }

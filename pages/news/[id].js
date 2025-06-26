@@ -18,24 +18,51 @@ export const Text = ({ text }) => {
   if (!text) {
     return null;
   }
-  return text.map((value) => {
+  return text.map((value, valueIndex) => {
     const {
       annotations: { bold, code, color, italic, strikethrough, underline },
       text,
     } = value;
+    
+    const className = [
+      bold ? "font-bold" : "",
+      code ? "font-mono bg-gray-200 p-1 rounded" : "",
+      italic ? "italic" : "",
+      strikethrough ? "line-through" : "",
+      underline ? "underline" : "",
+    ].join(" ");
+    
+    const style = color !== "default" ? { color } : {};
+    
+    // 改行文字を処理
+    const processText = (content) => {
+      if (!content) return content;
+      return content.split('\n').map((line, index, array) => (
+        <Fragment key={index}>
+          {line}
+          {index < array.length - 1 && <br />}
+        </Fragment>
+      ));
+    };
+    
     return (
       <span
-        className={[
-          bold ? "font-bold" : "",
-          code ? "font-mono bg-gray-200 p-1 rounded" : "",
-          italic ? "italic" : "",
-          strikethrough ? "line-through" : "",
-          underline ? "underline" : "",
-        ].join(" ")}
-        style={color !== "default" ? { color } : {}}
-        key={text.content}
+        className={className}
+        style={style}
+        key={`${text.content}-${valueIndex}`}
       >
-        {text.link ? <a className="text-black hover:text-blue-500 underline hover:no-underline transition duration-300" href={text.link.url} target="_blank">{text.content}</a> : text.content}
+        {text.link ? (
+          <a 
+            className="text-black hover:text-blue-500 underline hover:no-underline transition duration-300" 
+            href={text.link.url} 
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {processText(text.content)}
+          </a>
+        ) : (
+          processText(text.content)
+        )}
       </span>
     );
   });
@@ -347,25 +374,30 @@ export default function Post({ pageMap, blockMap, detailPage}) {
                         <header className="mb-4 ">
                             <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-700 mb-2 mt-10">{pageTitle}</h1>
                             {pageImage && (
-                              <div className="relative w-full overflow-hidden rounded-lg">
+                              <div className="relative w-full overflow-hidden rounded-lg bg-gray-50 flex items-center justify-center" style={{minHeight: '200px'}}>
                                 {typeof pageImage === 'object' && pageImage.baseName ? (
                                   <ImageOptimizer
                                     baseName={pageImage.baseName}
                                     pagePath={pageImage.pagePath}
                                     alt={pageImage.alt || pageTitle}
-                                    responsive={true}
-                                    responsiveType="hero"
-                                    objectFit="cover"
+                                    width={800}
+                                    height={400}
                                     className="transition-transform duration-500 ease-in-out transform hover:scale-105"
+                                    style={{ 
+                                      width: '100%', 
+                                      height: 'auto', 
+                                      maxHeight: '320px',
+                                      objectFit: 'contain'
+                                    }}
                                   />
                                 ) : (
                                   <Image
                                     src={pageImage}
                                     alt={pageTitle}
                                     width={800}
-                                    height={400}
+                                    height={320}
                                     className="transition-transform duration-500 ease-in-out transform hover:scale-105"
-                                    style={{width: '100%', height: 'auto'}}
+                                    style={{width: '100%', height: 'auto', maxHeight: '320px', objectFit: 'contain'}}
                                   />
                                 )}
                               </div>
