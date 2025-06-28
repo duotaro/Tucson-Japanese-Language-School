@@ -22,7 +22,10 @@
       "Bash(npx next build:*)",
       "Bash(kill:*)",
       "Bash(yarn add dotenv --dev)",
-      "Bash(yarn build:*)"
+      "Bash(yarn build:*)",
+      "Bash(true)",
+      "Bash(ls:*)",
+      "Bash(/dev/null)"
     ],
     "deny": []
   }

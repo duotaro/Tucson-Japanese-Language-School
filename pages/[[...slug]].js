@@ -10,6 +10,7 @@ import News from '../components/parts/news/index.js';
 import SponsorEntity from '../entity/sponsorEntity.js';
 import LocaleContext from '../components/context/localeContext.js';
 import saveImageIfNeeded from '../components/download/index.js';
+import savePdfIfNeeded from '../components/download/pdf.js';
 import Mission from '../components/parts/about/mission/mission.js';
 import Vision from '../components/parts/about/mission/vision.js';
 import { convertAboutFromDatabase } from '../entity/aboutEntity.js';
@@ -237,11 +238,12 @@ export async function getStaticProps({ params }) {
         const essentialProps = {};
         // Reduce image processing for better performance
         const imageKeys = ['image', 'image1'];
+        const fileKeys = ['pdf']; // PDFファイルプロパティを追加
 
         Object.keys(item.properties).forEach(key => {
           const prop = item.properties[key];
           // Include essential property types
-          if (imageKeys.includes(key) || prop.type === 'title' || prop.type === 'rich_text' || 
+          if (imageKeys.includes(key) || fileKeys.includes(key) || prop.type === 'title' || prop.type === 'rich_text' || 
               prop.type === 'date' || prop.type === 'select' || prop.type === 'multi_select' ||
               prop.type === 'checkbox' || prop.type === 'url') {
             essentialProps[key] = prop;
@@ -354,7 +356,17 @@ export async function getStaticProps({ params }) {
       // Policy DBの正しいIDを使用
       let policy = [];
       try {
-        policy = await fetchData("105a8c0ecf8c8082a456dd95fd87d0c2", "policy", isDev ? 1 : null);
+        // 開発環境でもPolicyは制限なしで取得（PDFプロパティを確実に取得するため）
+        policy = await fetchData("105a8c0ecf8c8082a456dd95fd87d0c2", "policy", null);
+        
+        // PolicyデータにPDFファイルがある場合、savePdfIfNeededを実行
+        if (policy && policy.length > 0) {
+          let policyProps = [];
+          for(let item of policy){
+            policyProps.push(item.properties);
+          }
+          await savePdfIfNeeded(policyProps, "policy");
+        }
       } catch (policyError) {
         console.warn('Policy database error:', policyError);
         policy = [];

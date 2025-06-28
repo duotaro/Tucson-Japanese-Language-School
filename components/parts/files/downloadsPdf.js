@@ -14,6 +14,10 @@ export default function PdfDownloads({ filePath, title, isNew = false }) {
     title = json.common.download
   }
 
+  if(!filePath){
+    return (<></>)
+  }
+
   return (
     <div className="group">
       <Link 

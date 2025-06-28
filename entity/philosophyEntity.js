@@ -3,36 +3,39 @@ import path from 'path'
 
 export class PhilosophyEntity {
     constructor(item, isJpn){
-        if(!item || !item.properties){
-            console.warn("[PhilosophyEntity] Invalid item or item.properties provided.");
+        // itemがpropertiesオブジェクト自体か、item.propertiesを持つオブジェクトかを判定
+        const properties = item?.properties ? item.properties : item;
+        
+        if(!properties){
+            console.warn("[PhilosophyEntity] Invalid properties provided.");
             this.title = '';
             this.text = null;
             this.image = null;
             return;
         }
         
-        this.title = isJpn ? item.properties["title"]?.title?.[0]?.text?.content || '' : item.properties["en"]?.rich_text?.[0]?.text?.content || ''
+        this.title = isJpn ? properties["title"]?.title?.[0]?.text?.content || '' : properties["en"]?.rich_text?.[0]?.text?.content || ''
         this.text = null
         if(isJpn){
-            if(item.properties["text"]?.rich_text?.[0]){
-                this.text = item.properties["text"].rich_text
+            if(properties["text"]?.rich_text?.[0]){
+                this.text = properties["text"].rich_text
             }
         } else {
-            if(item.properties["text_en"]?.rich_text?.[0]){
-                this.text = item.properties["text_en"].rich_text
+            if(properties["text_en"]?.rich_text?.[0]){
+                this.text = properties["text_en"].rich_text
             }
         }
 
         // ImageOptimizer対応の画像データ処理
-        if (item.properties?.image?.optimizedImage) {
-            this.image = item.properties.image.optimizedImage;
-        } else if (item.properties?.image?.files?.[0]) {
-            const tmpName = item.properties.image.files[0].name;
+        if (properties?.image?.optimizedImage) {
+            this.image = properties.image.optimizedImage;
+        } else if (properties?.image?.files?.[0]) {
+            const tmpName = properties.image.files[0].name;
             const fileName = tmpName.replace(/ /g, '_');
             this.image = {
                 baseName: path.parse(fileName).name,
                 pagePath: 'policy',
-                alt: item.properties.image.files[0].caption?.[0]?.plain_text || fileName,
+                alt: properties.image.files[0].caption?.[0]?.plain_text || fileName,
                 width: null,
                 height: null,
             };

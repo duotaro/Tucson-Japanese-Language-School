@@ -3,26 +3,29 @@ import path from 'path'
 
 export default class PolicyEntity {
     constructor(item, isJpn){
-        if(!item || !item.properties){
-            console.warn("[PolicyEntity] Invalid item or item.properties provided.");
+        // itemがpropertiesオブジェクト自体か、item.propertiesを持つオブジェクトかを判定
+        const properties = item?.properties ? item.properties : item;
+        
+        if(!properties){
+            console.warn("[PolicyEntity] Invalid properties provided.");
             this.title = '';
             this.image = null;
             this.pdf = null;
             return;
         }
 
-        this.title = isJpn ? item.properties["title"]?.title?.[0]?.text?.content || '' : item.properties["en"]?.rich_text?.[0]?.text?.content || ''
+        this.title = isJpn ? properties["title"]?.title?.[0]?.text?.content || '' : properties["en"]?.rich_text?.[0]?.text?.content || ''
         
         // ImageOptimizer対応の画像データ処理
-        if (item.properties?.image?.optimizedImage) {
-            this.image = item.properties.image.optimizedImage;
-        } else if (item.properties?.image?.files?.[0]) {
-            const tmpName = item.properties.image.files[0].name;
+        if (properties?.image?.optimizedImage) {
+            this.image = properties.image.optimizedImage;
+        } else if (properties?.image?.files?.[0]) {
+            const tmpName = properties.image.files[0].name;
             const name = tmpName.replace(/ /g, '_');
             this.image = {
                 baseName: path.parse(name).name,
                 pagePath: 'policy',
-                alt: item.properties.image.files[0].caption?.[0]?.plain_text || name,
+                alt: properties.image.files[0].caption?.[0]?.plain_text || name,
                 width: null,
                 height: null,
             };
@@ -30,9 +33,13 @@ export default class PolicyEntity {
             this.image = null;
         }
 
+        console.log("============")
+        console.log(properties)
+        console.log("============")
+
         // PDFファイルの処理
-        if (item.properties?.pdf?.files?.[0]) {
-            const tmpPdfName = item.properties.pdf.files[0].name;
+        if (properties?.pdf?.files?.[0]) {
+            const tmpPdfName = properties.pdf.files[0].name;
             const pdfName = tmpPdfName.replace(/ /g, '_');
             this.pdf = `/${ACCESABLE_PDF_PATH}/policy/${pdfName}`;
         } else {

@@ -18,6 +18,10 @@ export default function MissionPage({ about, philosophy, policy }) {
   const { json, metaTitleExtension } = useLocale(locale)
   let lang = json.navigation
 
+  console.log("=============")
+  console.log(policy)
+  console.log("=======END======")
+
   let {mission, vision} = convertAboutFromDatabase(about, locale == "ja")
   let breadcrumb = {
     parents: [{link: '/about/', title: "about"}],
