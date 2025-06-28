@@ -10,11 +10,16 @@ import { DirectorsEntity } from "@/entity/directorsEntity";
 import Section from "../../section";
 import ImageOptimizer from '@/components/download/ImageOptimizer';
 
-export default function Directors({ directors, locale="ja" }) {
+export default function Directors({ directors = [], locale="ja" }) {
   const { json } = useLocale(locale)
   const lang = json.director
 
-  const list = directors.sort((a, b) => a.properties["ordering"].number - b.properties["ordering"].number);
+  // 安全なソート処理：orderingプロパティが存在しない場合はそのまま返す
+  const list = directors.length > 0 ? directors.sort((a, b) => {
+    const orderingA = a.properties?.ordering?.number || 0;
+    const orderingB = b.properties?.ordering?.number || 0;
+    return orderingA - orderingB;
+  }) : [];
         
 
   return (
@@ -31,20 +36,23 @@ export default function Directors({ directors, locale="ja" }) {
                     {/* <span className="text-[1.15rem] font-medium text-muted">{lang.description}</span> */}
                     {/* <Paragraphs text={lang.description} /> */}
                   </div>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 w-full">
-                    {directors.map((director, index) => {
+                  {list.length > 0 ? (
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 w-full">
+                      {list.map((director, index) => {
                       let entity = new DirectorsEntity(director, locale == "ja")
                       return (
                         <div key={director.id || index} className="flex flex-col text-center">
-                          <div className="inline-block mb-4 relative shrink-0 rounded-[.90rem]">
+                          <div className="inline-block mb-4 relative shrink-0 rounded-[.90rem] w-[130px] h-[130px]">
                             <ImageOptimizer
                               baseName={entity.image?.baseName || 'profile'}
                               pagePath={entity.image?.pagePath || 'director'}
                               alt={entity.image?.alt || entity.name}
                               width={130}
                               height={130}
+                              loading="lazy"
+                              placeholder="blur"
                               objectFit="cover"
-                              className="inline-block shrink-0 rounded-lg w-[130px] h-[130px] shadow-md"
+                              className="rounded-lg shadow-md w-full h-full"
                             />
                           </div>
                           <div className="text-center">
@@ -66,7 +74,12 @@ export default function Directors({ directors, locale="ja" }) {
                         </div>
                       )
                     })}
-                  </div>
+                    </div>
+                  ) : (
+                    <div className="text-center text-gray-500">
+                      <p>理事情報を読み込み中...</p>
+                    </div>
+                  )}
                 </div>
               </div>
             </div>

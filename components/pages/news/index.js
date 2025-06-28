@@ -1,6 +1,7 @@
 import Head from "next/head";
 import React from 'react';
 import { useLocale } from "../../../utils/locale";
+import News from "../../parts/news/index.js";
 
 export default function NewsIndexPage({ newsList, locale }) {
   const { json, metaTitleExtension } = useLocale(locale)
@@ -20,10 +21,7 @@ export default function NewsIndexPage({ newsList, locale }) {
 
       <div className="">
         <div className="row">
-          <div className="col-md-12">
-            <h1>{lang.news}</h1>
-            <p>News content...</p>
-          </div>
+          <News list={newsList || []} isTop={false} locale={locale} />
         </div>
       </div>
     </>

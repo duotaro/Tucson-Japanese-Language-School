@@ -23,10 +23,12 @@ export default function Mission({ mission, locale="ja" }) {
                 baseName={mission.image?.baseName || 'mission'}
                 pagePath={mission.image?.pagePath || 'about'}
                 alt={mission.image?.alt || 'Mission'}
-                width={mission.image?.width || 400}
-                height={mission.image?.height || 200}
+                responsive={true}
+                responsiveType="standard"
                 objectFit="cover"
                 className="md:col-start-1 rounded-lg shadow-md"
+                loading="lazy"
+                placeholder="blur"
               />
             )}
             <div className="flex flex-col items-center">

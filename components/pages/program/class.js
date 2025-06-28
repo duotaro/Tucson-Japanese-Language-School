@@ -1,8 +1,9 @@
 import Head from "next/head";
 import React from 'react';
 import { useLocale } from "../../../utils/locale";
+import ClassComponent from "../../parts/program/class/index.js";
 
-export default function ClassPage({ classes, locale }) {
+export default function ClassPage({ category, classes, locale }) {
   const { json, metaTitleExtension } = useLocale(locale)
   let lang = json.navigation
 
@@ -20,10 +21,7 @@ export default function ClassPage({ classes, locale }) {
 
       <div className="">
         <div className="row">
-          <div className="col-md-12">
-            <h1>{lang.class}</h1>
-            <p>Class content...</p>
-          </div>
+          <ClassComponent category={category || []} classes={classes || []} locale={locale} />
         </div>
       </div>
     </>

@@ -143,13 +143,21 @@ export default function Calender({files, list, locale="ja"}) {
   }
 
   let res = {}
-  if(files.properties["image"]){
+  console.log("Calendar files object:", files);
+  console.log("Calendar files.properties:", files.properties);
+  
+  if(files.properties && files.properties["image"]){
+    console.log("Image files array:", files.properties["image"].files);
     const tmpName = files.properties["image"].files[0].name
     const name = tmpName.replace(/ /g, '_')
-
-    res.image = `/${ACCESABLE_IMAGE_PATH}/calendar/${name}${DOWNLOAD_IMAGE_EXTENSION}`
+    const imagePath = `/${ACCESABLE_IMAGE_PATH}/calendar/${name}${DOWNLOAD_IMAGE_EXTENSION}`
+    
+    console.log("Generated image path:", imagePath);
+    res.image = imagePath
+  } else {
+    console.log("No image property found in files.properties");
   }
-  if(files.properties["pdf"]){
+  if(files.properties && files.properties["pdf"]){
     let pdfTmpName = files.properties["pdf"].files[0].name
     
     if(locale != "ja" && files.properties["pdf_en"] && files.properties["pdf_en"].files){
@@ -178,15 +186,23 @@ export default function Calender({files, list, locale="ja"}) {
         <div className="container mx-auto">
           <div className="grid gap-8 md:grid-flow-col-dense md:grid-cols-2 md:gap-12 md:items-center">
               <div className="md:col-start-2 flex justify-center items-center">
-                <ImageOptimizer
-                  baseName={res.image?.baseName || 'event'}
-                  pagePath={res.image?.pagePath || 'calendar'}
-                  alt={res.image?.alt || 'Calendar'}
-                  width={600}
-                  height={400}
-                  objectFit="cover"
-                  className="rounded-lg w-full h-auto"
-                />
+                {res.image ? (
+                  <img
+                    src={res.image}
+                    alt="年間カレンダー"
+                    className="rounded-lg w-full h-auto object-cover"
+                    onError={(e) => {
+                      console.log("Image failed to load:", e.target.src);
+                      e.target.src = "/image/download/calendar/event.png.png"; // フォールバック
+                    }}
+                  />
+                ) : (
+                  <img
+                    src="/image/download/calendar/event.png.png"
+                    alt="年間カレンダー"
+                    className="rounded-lg w-full h-auto object-cover"
+                  />
+                )}
               </div>
               <div className="flex flex-col items-center justify-center">
                   {/* PDFリンクセクション */}

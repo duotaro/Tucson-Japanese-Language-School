@@ -1,6 +1,7 @@
 import Head from "next/head";
 import React from 'react';
 import { useLocale } from "../../utils/locale";
+import Donation from "../parts/contact/donation/index.js";
 
 export default function SupportPage({ support, locale }) {
   const { json, metaTitleExtension } = useLocale(locale)
@@ -20,10 +21,7 @@ export default function SupportPage({ support, locale }) {
 
       <div className="">
         <div className="row">
-          <div className="col-md-12">
-            <h1>{lang.support}</h1>
-            <p>Support content...</p>
-          </div>
+          <Donation locale={locale} />
         </div>
       </div>
     </>

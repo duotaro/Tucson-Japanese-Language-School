@@ -1,6 +1,7 @@
 import Head from "next/head";
 import React from 'react';
 import { useLocale } from "../../../utils/locale";
+import ContactComponent from "../../parts/contact/index.js";
 
 export default function ContactPage({ contact, locale }) {
   const { json, metaTitleExtension } = useLocale(locale)
@@ -20,10 +21,7 @@ export default function ContactPage({ contact, locale }) {
 
       <div className="">
         <div className="row">
-          <div className="col-md-12">
-            <h1>{lang.contact}</h1>
-            <p>Contact content...</p>
-          </div>
+          <ContactComponent locale={locale} />
         </div>
       </div>
     </>

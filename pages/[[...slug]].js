@@ -381,6 +381,146 @@ export async function getStaticProps({ params }) {
       props.philosophy = [];
       props.policy = [];
     }
+  } else if (pageType === 'about/governance') {
+    try {
+      // Directors
+      const directorsDatabase = await getDatabase("10ba8c0ecf8c807ba7c6c7c9128d9770");
+      let directorProps = [];
+      for(let item of directorsDatabase || []){
+        directorProps.push(item.properties);
+      }
+      await saveImageIfNeeded(directorProps, "director");
+      
+      // Organization Chart
+      const orgChartDatabase = await getDatabase("10ca8c0ecf8c80629eb3ee7c40cf9005");
+      let chartProps = [];
+      for(let item of orgChartDatabase || []){
+        chartProps.push(item.properties);
+      }
+      await saveImageIfNeeded(chartProps, "org_chart");
+      
+      // Organization Policies
+      const org_policysDatabase = await getDatabase("10ca8c0ecf8c80998e3bfb0372ccc293");
+      let policyProps = [];
+      for(let item of org_policysDatabase || []){
+        policyProps.push(item.properties);
+      }
+      await savePdfIfNeeded(policyProps, "org_policy");
+      
+      props.directors = directorsDatabase || [];
+      props.orgChart = orgChartDatabase && orgChartDatabase.length > 0 ? orgChartDatabase[0] : null;
+      props.org_policys = org_policysDatabase || [];
+    } catch (error) {
+      console.log('Error fetching governance data:', error);
+      props.directors = [];
+      props.orgChart = null;
+      props.org_policys = [];
+    }
+  } else if (pageType === 'about/staff') {
+    try {
+      const roleList = await getDatabase("122a8c0ecf8c80059934c64693cc39ca");
+      const staffDatabase = await getDatabase("9b85f554b3fc42dcb9d38f1ec87b168c");
+      
+      // スタッフ画像の保存処理
+      let staffProps = [];
+      for(let staff of staffDatabase || []){
+        staffProps.push(staff.properties);
+      }
+      await saveImageIfNeeded(staffProps, "staff");
+      
+      props.staffList = staffDatabase || [];
+      props.roleList = roleList || [];
+    } catch (error) {
+      console.log('Error fetching staff data:', error);
+      props.staffList = [];
+      props.roleList = [];
+    }
+  } else if (pageType === 'about/report') {
+    try {
+      const reportList = await fetchData("11aa8c0ecf8c803e8289cb5bd9a5f80a", "report", null);
+      
+      // レポートにPDFファイルがある場合、savePdfIfNeededを実行
+      if (reportList && reportList.length > 0) {
+        let reportProps = [];
+        for(let item of reportList){
+          reportProps.push(item.properties);
+        }
+        await savePdfIfNeeded(reportProps, "report");
+      }
+      
+      props.reportList = reportList || [];
+    } catch (error) {
+      console.log('Error fetching report data:', error);
+      props.reportList = [];
+    }
+  } else if (pageType === 'program' || pageType === 'program/class') {
+    try {
+      const category = await getDatabase("11aa8c0ecf8c80ed885ff949e5ee51bb");
+      const classes = await getDatabase("11aa8c0ecf8c80a7ab2cf31cd0b0a881");
+      
+      // クラス画像の保存処理
+      let classProps = [];
+      for(let item of classes || []){
+        classProps.push(item.properties);
+      }
+      await saveImageIfNeeded(classProps, "class");
+      
+      props.category = category || [];
+      props.classes = classes || [];
+    } catch (error) {
+      console.log('Error fetching class data:', error);
+      props.category = [];
+      props.classes = [];
+    }
+  } else if (pageType === 'news') {
+    try {
+      const newsDatabase = await fetchData(newsId, "news", null);
+      const newsList = await getNewsList(newsDatabase, null);
+      
+      props.newsList = newsList || [];
+    } catch (error) {
+      console.log('Error fetching news data:', error);
+      props.newsList = [];
+    }
+  } else if (pageType === 'admissions' || pageType === 'admissions/forms') {
+    try {
+      const qualification = await getDatabase("11ba8c0ecf8c80e4a3d6cb2cae30ac08");
+      const price = await getDatabase("11ba8c0ecf8c8068afc9c4ba38330221");
+      const discountFamily = await getDatabase("11ba8c0ecf8c80daa4a0e58b368b1dc3");
+      const discountStaff = await getDatabase("11ca8c0ecf8c80658187d57a17357400");
+      const enrollment = await getDatabase("11ba8c0ecf8c8059bbddf42453136463");
+      
+      props.qualification = qualification || [];
+      props.price = price || [];
+      props.discountFamily = discountFamily || [];
+      props.discountStaff = discountStaff || [];
+      props.enrollment = enrollment || [];
+    } catch (error) {
+      console.log('Error fetching admissions data:', error);
+      props.qualification = [];
+      props.price = [];
+      props.discountFamily = [];
+      props.discountStaff = [];
+      props.enrollment = [];
+    }
+  } else if (pageType === 'program/calendar') {
+    try {
+      const database = await getDatabase("8d87080f73f14e8a9e7ba934c1d928c6");
+      
+      // カレンダーファイル用の画像保存処理
+      let calendarProps = [];
+      for(let item of database){
+        calendarProps.push(item.properties);
+      }
+      await saveImageIfNeeded(calendarProps, "calendar");
+      
+      props.files = database && database.length > 0 ? database[0] : {};
+      props.scheduleList = database || [];
+    } catch (error) {
+      console.log('Error fetching calendar data:', error);
+      props.files = {};
+      props.scheduleList = [];
+    }
   }
   // Add more specific page data fetching as needed
 

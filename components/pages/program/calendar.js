@@ -1,8 +1,9 @@
 import Head from "next/head";
 import React from 'react';
 import { useLocale } from "../../../utils/locale";
+import Calender from "../../parts/program/calender/index.js";
 
-export default function CalendarPage({ calendar, locale }) {
+export default function CalendarPage({ files, scheduleList, locale }) {
   const { json, metaTitleExtension } = useLocale(locale)
   let lang = json.navigation
 
@@ -20,10 +21,7 @@ export default function CalendarPage({ calendar, locale }) {
 
       <div className="">
         <div className="row">
-          <div className="col-md-12">
-            <h1>{lang.calendar}</h1>
-            <p>Calendar content...</p>
-          </div>
+          <Calender files={files || {}} list={scheduleList || []} locale={locale} />
         </div>
       </div>
     </>

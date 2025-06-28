@@ -1,8 +1,9 @@
 import Head from "next/head";
 import React from 'react';
 import { useLocale } from "../../../utils/locale";
+import ProfileCardList from "../../parts/about/staff/index.js";
 
-export default function StaffPage({ staff, locale }) {
+export default function StaffPage({ staffList, roleList, locale }) {
   const { json, metaTitleExtension } = useLocale(locale)
   let lang = json.navigation
 
@@ -20,10 +21,7 @@ export default function StaffPage({ staff, locale }) {
 
       <div className="">
         <div className="row">
-          <div className="col-md-12">
-            <h1>{lang.staff}</h1>
-            <p>Staff content...</p>
-          </div>
+          <ProfileCardList staffList={staffList || []} roleList={roleList || []} locale={locale} />
         </div>
       </div>
     </>

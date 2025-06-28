@@ -1,6 +1,7 @@
 import Head from "next/head";
 import React from 'react';
 import { useLocale } from "../../../utils/locale";
+import OpportunityComponent from "../../parts/contact/opportunity/index.js";
 
 export default function OpportunityPage({ opportunity, locale }) {
   const { json, metaTitleExtension } = useLocale(locale)
@@ -20,10 +21,7 @@ export default function OpportunityPage({ opportunity, locale }) {
 
       <div className="">
         <div className="row">
-          <div className="col-md-12">
-            <h1>{lang.opportunity}</h1>
-            <p>Opportunity content...</p>
-          </div>
+          <OpportunityComponent opportunity={opportunity || []} locale={locale} />
         </div>
       </div>
     </>

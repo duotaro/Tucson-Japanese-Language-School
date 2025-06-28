@@ -15,7 +15,9 @@ export default function OrganisationFlowChart({ orgChart, locale="ja" }) {
   const { json } = useLocale(locale)
   const lang = json.chart
 
+  console.log("OrgChart data received:", orgChart);
   let entity = new OrganisationFlowChartEntity(orgChart, locale == "ja")
+  console.log("OrgChart entity created:", entity);
 
   return (
     <Section py="py-8 md:py-6 lg:py-10">
@@ -30,16 +32,22 @@ export default function OrganisationFlowChart({ orgChart, locale="ja" }) {
               <Paragraphs text={entity.text} />
             </div>
             <div className="px-6 mx-auto md:w-3/4">
-              {entity.image && (
+              {entity.image ? (
                 <ImageOptimizer
-                  baseName={entity.image?.baseName || 'governance_chart_ja'}
-                  pagePath={entity.image?.pagePath || 'org_chart'}
-                  alt={entity.image?.alt || 'Chart'}
+                  baseName={entity.image.baseName}
+                  pagePath={entity.image.pagePath}
+                  alt={entity.image.alt}
                   width={800}
                   height={600}
+                  loading="lazy"
+                  placeholder="blur"
                   objectFit="contain"
                   className="rounded-lg w-full h-auto"
                 />
+              ) : (
+                <div className="text-center text-gray-500 py-10">
+                  <p>組織図を読み込み中...</p>
+                </div>
               )}
             </div>
           </div>  

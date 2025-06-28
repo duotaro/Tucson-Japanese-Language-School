@@ -1,15 +1,13 @@
 import Head from "next/head";
 import React from 'react';
 import { useLocale } from "../../../utils/locale";
+import Directors from "../../parts/about/governance/directors.js";
+import OrganisationFlowChart from "../../parts/about/governance/chart.js";
+import GovernancePolicy from "../../parts/about/governance/governancePolicy.js";
 
-export default function GovernancePage({ governance, locale }) {
+export default function GovernancePage({ directors, orgChart, org_policys, locale }) {
   const { json, metaTitleExtension } = useLocale(locale)
   let lang = json.navigation
-
-  let breadcrumb = {
-    parents: [{link: '/about/', title: "about"}],
-    current: lang.governance
-  }
 
   return (
     <>
@@ -25,11 +23,9 @@ export default function GovernancePage({ governance, locale }) {
 
       <div className="">
         <div className="row">
-          {/* Governance content would go here */}
-          <div className="col-md-12">
-            <h1>{lang.governance}</h1>
-            <p>Governance content...</p>
-          </div>
+          <Directors directors={directors || []} locale={locale}/>
+          <OrganisationFlowChart orgChart={orgChart} locale={locale}/>
+          <GovernancePolicy orgPolicys={org_policys || []} locale={locale}/>
         </div>
       </div>
     </>

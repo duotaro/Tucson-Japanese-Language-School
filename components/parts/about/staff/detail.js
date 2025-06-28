@@ -17,6 +17,8 @@ const ProfileCard = ({item}) => {
                       alt={image.alt || name}
                       responsive={true}
                       responsiveType="thumbnail"
+                      loading="lazy"
+                      placeholder="blur"
                       objectFit="cover"
                       className="rounded-lg shadow-md"
                     />
@@ -27,6 +29,8 @@ const ProfileCard = ({item}) => {
                       alt={name}
                       responsive={true}
                       responsiveType="thumbnail"
+                      loading="lazy"
+                      placeholder="blur"
                       objectFit="cover"
                       className="rounded-lg shadow-md"
                     />

@@ -75,6 +75,8 @@ export default function Greeting({ greeting, locale="ja" }) {
                   alt={entity.image.alt || "Greetings"}
                   responsive={true}
                   responsiveType="card"
+                  loading="lazy"
+                  placeholder="blur"
                   objectFit="cover"
                   className="rounded-lg shadow-md"
                 />
@@ -85,6 +87,8 @@ export default function Greeting({ greeting, locale="ja" }) {
                   alt="Greetings"
                   responsive={true}
                   responsiveType="card"
+                  loading="lazy"
+                  placeholder="blur"
                   objectFit="cover"
                   className="rounded-lg shadow-md"
                 />

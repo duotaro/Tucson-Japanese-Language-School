@@ -1,8 +1,12 @@
 import Head from "next/head";
 import React from 'react';
 import { useLocale } from "../../../utils/locale";
+import Enrollment from "../../parts/admission/forms/enrollment.js";
+import Forms from "../../parts/admission/forms/forms.js";
+import Price from "../../parts/admission/forms/price.js";
+import Qualification from "../../parts/admission/forms/qualification.js";
 
-export default function FormsPage({ forms, locale }) {
+export default function FormsPage({ qualification, price, discountFamily, discountStaff, enrollment, locale }) {
   const { json, metaTitleExtension } = useLocale(locale)
   let lang = json.navigation
 
@@ -20,10 +24,10 @@ export default function FormsPage({ forms, locale }) {
 
       <div className="">
         <div className="row">
-          <div className="col-md-12">
-            <h1>{lang.forms}</h1>
-            <p>Forms content...</p>
-          </div>
+          <Qualification qualification={qualification || []} locale={locale} />
+          <Price price={price || []} discountFamily={discountFamily || []} discountStaff={discountStaff || []} locale={locale} />
+          <Enrollment enrollment={enrollment || []} locale={locale} />
+          <Forms locale={locale} />
         </div>
       </div>
     </>

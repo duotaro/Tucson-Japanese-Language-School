@@ -10,13 +10,17 @@ import Paragraphs from "../../text/paragraphs";
 import CustomImage from "../../image/CustomImage";
 import Section from "../../section";
 
-export default function Qualification({ qualification, locale="ja" }) {
+export default function Qualification({ qualification = [], locale="ja" }) {
   const { json } = useLocale(locale)
 
   const list = []
-  for(const q of qualification){
-    const entity = new QualificationEntity(q, locale == "ja")
-    list.push(entity)
+  for(const q of qualification || []){
+    try {
+      const entity = new QualificationEntity(q, locale == "ja")
+      list.push(entity)
+    } catch (error) {
+      console.log('Error processing qualification item:', error);
+    }
   }
 
 
@@ -47,14 +51,17 @@ export default function Qualification({ qualification, locale="ja" }) {
 class QualificationEntity {
     constructor(item, isJpn){
 
-        this.title = isJpn ? item.properties["title"].title[0].text.content : item.properties["en"].rich_text[0].text.content
+        this.title = isJpn 
+            ? (item.properties?.["title"]?.title?.[0]?.text?.content || "")
+            : (item.properties?.["en"]?.rich_text?.[0]?.text?.content || "")
+        
         this.text = null
         if(isJpn){
-            if(item.properties["text"].rich_text[0]){
+            if(item.properties?.["text"]?.rich_text?.[0]){
                 this.text = item.properties["text"].rich_text
             }
         } else {
-            if(item.properties["text_en"].rich_text[0]){
+            if(item.properties?.["text_en"]?.rich_text?.[0]){
                 this.text = item.properties["text_en"].rich_text
             }
         }

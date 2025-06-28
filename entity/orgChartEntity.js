@@ -24,13 +24,11 @@ export default class OrganisationFlowChartEntity {
             }
         }
 
-        // ImageOptimizer対応の画像データ処理（言語別画像対応）
+        // 従来の画像データ処理（言語別画像対応）
         const imageProperty = isJpn ? 'image' : 'image_en'
         const fallbackProperty = 'image' // 英語画像がない場合のフォールバック
         
-        if (item.properties?.[imageProperty]?.optimizedImage) {
-            this.image = item.properties[imageProperty].optimizedImage;
-        } else if (item.properties?.[imageProperty]?.files?.[0]) {
+        if (item.properties?.[imageProperty]?.files?.[0]) {
             const tmpName = item.properties[imageProperty].files[0].name;
             const fileName = tmpName.replace(/ /g, '_');
             this.image = {
@@ -40,10 +38,8 @@ export default class OrganisationFlowChartEntity {
                 width: null,
                 height: null,
             };
-        } else if (!isJpn && item.properties?.[fallbackProperty]?.optimizedImage) {
-            // 英語画像がない場合、日本語画像をフォールバックとして使用
-            this.image = item.properties[fallbackProperty].optimizedImage;
         } else if (!isJpn && item.properties?.[fallbackProperty]?.files?.[0]) {
+            // 英語画像がない場合、日本語画像をフォールバックとして使用
             const tmpName = item.properties[fallbackProperty].files[0].name;
             const fileName = tmpName.replace(/ /g, '_');
             this.image = {

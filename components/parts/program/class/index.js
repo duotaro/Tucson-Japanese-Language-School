@@ -25,8 +25,10 @@ import Caution from '../../caution'
 export default function ClassComponent({category, classes, locale="ja"}) {
   const { json } = useLocale(locale)
 
+  console.log("Class data received:", { category, classes });
+
   let list = []
-  for(const item of classes) {
+  for(const item of classes || []) {
     let c = {}
     const cName =  item.properties["category"].select.name
     for(const cat of category){
@@ -82,6 +84,8 @@ export default function ClassComponent({category, classes, locale="ja"}) {
                           alt={item.image?.alt || item.title}
                           responsive={true}
                           responsiveType="card"
+                          loading="lazy"
+                          placeholder="blur"
                           objectFit="cover"
                           className="rounded-lg shadow-md image-hover"
                         />

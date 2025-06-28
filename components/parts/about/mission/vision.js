@@ -23,8 +23,10 @@ export default function Vision({ vision, locale="ja" }) {
                 baseName={vision.image?.baseName || 'vision'}
                 pagePath={vision.image?.pagePath || 'about'}
                 alt={vision.image?.alt || 'Vision'}
-                width={vision.image?.width || 400}
-                height={vision.image?.height || 200}
+                responsive={true}
+                responsiveType="standard"
+                loading="lazy"
+                placeholder="blur"
                 objectFit="cover"
                 className="md:col-start-2 rounded-lg shadow-md"
               />
