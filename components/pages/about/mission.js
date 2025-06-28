@@ -3,9 +3,9 @@ import React from 'react';
 import { useLocale } from "../../../utils/locale";
 import { convertAboutFromDatabase } from "../../../entity/aboutEntity";
 import Mission from "../../parts/about/mission/mission.js";
+import Vision from "../../parts/about/mission/vision.js";
 import Philosophy from "../../parts/about/mission/philosophy.js";
 import Policy from "../../parts/about/mission/policy.js";
-import Vision from "../../parts/about/mission/vision.js";
 
 export default function MissionPage({ about, philosophy, policy, locale }) {
   const { json, metaTitleExtension } = useLocale(locale)

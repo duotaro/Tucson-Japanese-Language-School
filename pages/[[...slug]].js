@@ -218,57 +218,67 @@ export async function getStaticProps({ params }) {
 
   // Lightweight fetch data for better performance
   const fetchData = async (databaseId, pagePath, limit = null) => {
-    const database = await getDatabase(databaseId);
-    const limitedDatabase = limit ? database.slice(0, limit) : database;
-    
-    let props = [];
-    for(let item of limitedDatabase){
-      props.push(item.properties);
-    }
-    await saveImageIfNeeded(props, pagePath);
-
-    const processedDatabase = await Promise.all(limitedDatabase.map(async (item) => {
-      const essentialProps = {};
-      // Reduce image processing for better performance
-      const imageKeys = ['image', 'image1'];
-
-      Object.keys(item.properties).forEach(key => {
-        const prop = item.properties[key];
-        // Include essential property types
-        if (imageKeys.includes(key) || prop.type === 'title' || prop.type === 'rich_text' || 
-            prop.type === 'date' || prop.type === 'select' || prop.type === 'multi_select' ||
-            prop.type === 'checkbox' || prop.type === 'url') {
-          essentialProps[key] = prop;
-        }
-        // Include specific essential properties by name
-        if (['tags', 'en', 'text', 'text_en', 'title', 'date'].includes(key)) {
-          essentialProps[key] = prop;
-        }
-      });
-
-      // Simplified image processing
-      if (essentialProps.image && essentialProps.image.type === 'files' && essentialProps.image.files[0]) {
-        const originalFileName = essentialProps.image.files[0].name;
-        const baseName = path.parse(originalFileName.replace(/ /g, '_')).name;
-        
-        essentialProps.image = {
-          ...essentialProps.image,
-          optimizedImage: {
-            baseName: baseName,
-            pagePath: pagePath,
-            alt: originalFileName,
-            width: 800,
-            height: 600,
-          }
-        };
+    try {
+      const database = await getDatabase(databaseId);
+      if (!database || !Array.isArray(database)) {
+        console.warn(`No data found for database ID: ${databaseId}`);
+        return [];
       }
-  
-      return {
-        id: item.id,
-        properties: essentialProps
-      };
-    }));
-    return processedDatabase;
+      
+      const limitedDatabase = limit ? database.slice(0, limit) : database;
+      
+      let props = [];
+      for(let item of limitedDatabase){
+        props.push(item.properties);
+      }
+      await saveImageIfNeeded(props, pagePath);
+
+      const processedDatabase = await Promise.all(limitedDatabase.map(async (item) => {
+        const essentialProps = {};
+        // Reduce image processing for better performance
+        const imageKeys = ['image', 'image1'];
+
+        Object.keys(item.properties).forEach(key => {
+          const prop = item.properties[key];
+          // Include essential property types
+          if (imageKeys.includes(key) || prop.type === 'title' || prop.type === 'rich_text' || 
+              prop.type === 'date' || prop.type === 'select' || prop.type === 'multi_select' ||
+              prop.type === 'checkbox' || prop.type === 'url') {
+            essentialProps[key] = prop;
+          }
+          // Include specific essential properties by name
+          if (['tags', 'en', 'text', 'text_en', 'title', 'date'].includes(key)) {
+            essentialProps[key] = prop;
+          }
+        });
+
+        // Simplified image processing
+        if (essentialProps.image && essentialProps.image.type === 'files' && essentialProps.image.files[0]) {
+          const originalFileName = essentialProps.image.files[0].name;
+          const baseName = path.parse(originalFileName.replace(/ /g, '_')).name;
+          
+          essentialProps.image = {
+            ...essentialProps.image,
+            optimizedImage: {
+              baseName: baseName,
+              pagePath: pagePath,
+              alt: originalFileName,
+              width: 800,
+              height: 600,
+            }
+          };
+        }
+    
+        return {
+          id: item.id,
+          properties: essentialProps
+        };
+      }));
+      return processedDatabase;
+    } catch (error) {
+      console.error(`Error fetching data for database ${databaseId}:`, error);
+      return [];
+    }
   };
 
   let props = { pageType, slug: actualSlug, locale };
@@ -331,8 +341,24 @@ export async function getStaticProps({ params }) {
   } else if (pageType === 'about/mission') {
     try {
       const about = await fetchData("d4eb3828e74c469b9179ca7be9edb5cf", "about", isDev ? 3 : null);
-      const philosophy = await fetchData("4138b4ce0ba6471a8cfe91bec34068ad", "philosophy", isDev ? 1 : null);
-      const policy = await fetchData("ba18afdf-a39a-49bd-a90e-459f9f12cf40", "policy", isDev ? 1 : null);
+      
+      // Philosophy DBの正しいIDを使用
+      let philosophy = [];
+      try {
+        philosophy = await fetchData("f40ad3a82b894969a6a1b0ee0bfcb0cf", "philosophy", isDev ? 1 : null);
+      } catch (philosophyError) {
+        console.warn('Philosophy database error:', philosophyError);
+        philosophy = [];
+      }
+      
+      // Policy DBの正しいIDを使用
+      let policy = [];
+      try {
+        policy = await fetchData("105a8c0ecf8c8082a456dd95fd87d0c2", "policy", isDev ? 1 : null);
+      } catch (policyError) {
+        console.warn('Policy database error:', policyError);
+        policy = [];
+      }
       
       props.about = about || [];
       props.philosophy = philosophy || [];
