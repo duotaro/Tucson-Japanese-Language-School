@@ -12,8 +12,10 @@ export function LocaleProvider({ children }) {
     useEffect(() => {
       if (lang) {
         setLocale(lang);
-      } else if (router.pathname.includes('/en')) {
+      } else if (router.asPath.startsWith('/en') || router.pathname.includes('/en')) {
         setLocale('en');
+      } else if (router.asPath === '/' || !router.asPath.startsWith('/en')) {
+        setLocale('ja');
       } else {
         // ユーザーが選択したロケールをlocalStorageから取得
         const savedLocale = typeof window !== 'undefined' ? localStorage.getItem('userLocale') : null;
@@ -27,7 +29,7 @@ export function LocaleProvider({ children }) {
           localStorage.setItem('userLocale', initialLocale);
         }
       }
-    }, [lang, router.pathname]);
+    }, [lang, router.pathname, router.asPath]);
 
     return (
       <LocaleContext.Provider value={{ locale, setLocale }}>

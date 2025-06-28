@@ -9,8 +9,9 @@ import PopoverDetail from './parts/nav/popoverDetail';
 import { Dialog, DialogPanel } from '@headlessui/react';
 import DisclosureDetail from './parts/nav/disclosureDetail';
 
-export default function Navigation() {
-  const { locale } = useContext(LocaleContext);
+export default function Navigation({ locale: propLocale }) {
+  const { locale: contextLocale } = useContext(LocaleContext);
+  const locale = propLocale || contextLocale;
   const { json } = useLocale(locale);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 

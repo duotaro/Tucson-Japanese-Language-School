@@ -11,6 +11,12 @@ import ImageOptimizer from '@/components/download/ImageOptimizer';
 export default function Greeting({ greeting, locale="ja" }) {
 
   let entity = new GreetingEntity(greeting, locale == "ja")
+  
+  // textが存在しない場合の処理
+  if (!entity.text || !entity.text[0]) {
+    return null; // コンポーネントを表示しない
+  }
+  
   let text = entity.text[0].text.content.split("\n")
   let text1 = {
     type: 'text',

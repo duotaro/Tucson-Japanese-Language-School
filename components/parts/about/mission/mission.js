@@ -10,11 +10,15 @@ import Paragraphs from "../../text/paragraphs";
 import Section from "../../section";
 
 export default function Mission({ mission, locale="ja" }) {
+  if (!mission) {
+    return null;
+  }
+  
   return (
     <Section >
       <div className="container px-6 mx-auto">
         <div className="grid gap-8 md:grid-flow-col-dense md:grid-cols-2 md:gap-12">
-            {mission.image && (
+            {mission?.image && (
               <ImageOptimizer
                 baseName={mission.image?.baseName || 'mission'}
                 pagePath={mission.image?.pagePath || 'about'}
@@ -26,8 +30,8 @@ export default function Mission({ mission, locale="ja" }) {
               />
             )}
             <div className="flex flex-col items-center">
-                <Title title={mission.title} />
-                <Paragraphs text={mission.text} />
+                <Title title={mission?.title} />
+                <Paragraphs text={mission?.text} />
             </div>
         </div>
       </div>

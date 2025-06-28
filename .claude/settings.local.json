@@ -15,7 +15,12 @@
       "mcp__ide__getDiagnostics",
       "Bash(mv:*)",
       "Bash(npm run dev:*)",
-      "Bash(npm run lint)"
+      "Bash(npm run lint)",
+      "Bash(git checkout:*)",
+      "Bash(mkdir:*)",
+      "Bash(pkill:*)",
+      "Bash(npx next build:*)",
+      "Bash(kill:*)"
     ],
     "deny": []
   }

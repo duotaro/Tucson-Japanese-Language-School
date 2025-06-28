@@ -7,9 +7,10 @@ import Footer from './footer'
 import Breadcrumb from "./parts/nav/breadcrumb";
 import Sponsor from "./parts/sponsor";
 
-export default function Layout({ children, breadcrumb }) {
+export default function Layout({ children, breadcrumb, locale: propLocale }) {
   const router = useRouter();
-  const { locale } = useContext(LocaleContext);
+  const { locale: contextLocale } = useContext(LocaleContext);
+  const locale = propLocale || contextLocale;
   
   // 現在のページのURLを生成
   const baseUrl = 'https://tjschool.org';
@@ -49,12 +50,12 @@ export default function Layout({ children, breadcrumb }) {
         <meta name="twitter:url" content={canonicalUrl} />
         <meta name="twitter:image" content="https://tjschool.org/logo-ja.png" />
       </Head>
-        <Navbar />
-        {breadcrumb && ( <Breadcrumb parents={breadcrumb.parents} current={breadcrumb.current} /> )}
+        <Navbar locale={locale} />
+        {breadcrumb && ( <Breadcrumb parents={breadcrumb.parents} current={breadcrumb.current} locale={locale} /> )}
         <main className="">{children}</main>
 
         {/* <Sponsor sponsor={commonData} /> */}
-        <Footer />
+        <Footer locale={locale} />
     </>
   )
 }

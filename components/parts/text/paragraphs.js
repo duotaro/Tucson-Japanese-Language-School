@@ -1,4 +1,4 @@
-import { Text } from "../../../pages/news/[id]";
+import { Text } from "./Text";
 
 export default function Paragraphs({ text, maxWidth = "ml", addClass = "", mt = "mt-4" }) {
     if(!text){

@@ -73,6 +73,12 @@ export const convertAboutFromDatabase = (database, isJpn) => {
     let mission = null
     let vision = null
 
+    // databaseが存在しない場合の処理
+    if (!database || !Array.isArray(database)) {
+        console.warn("[convertAboutFromDatabase] Invalid database provided.");
+        return { aboutSchool, mission, vision };
+    }
+
     for(let item of database){
         let entity = new AboutEntity(item, isJpn)
     

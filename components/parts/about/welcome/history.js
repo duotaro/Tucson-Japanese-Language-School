@@ -5,7 +5,7 @@ import React, { useContext } from "react";
 import LocaleContext from "../../../context/localeContext";
 import { useLocale } from "@/utils/locale";
 import { HistoryEntity } from "@/entity/historyEntity";
-import { Text } from "../../../../pages/news/[id]"
+import { Text } from "../../text/Text"
 import Title from "../../text/title";
 import Paragraphs from "../../text/paragraphs";
 import Section from "../../section";

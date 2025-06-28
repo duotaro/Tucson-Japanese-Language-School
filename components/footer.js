@@ -4,8 +4,9 @@ import LocaleContext from "./context/localeContext";
 import Contact from './parts/contact';
 
 
-export default function Footer({  }) {
-  const { locale } = useContext(LocaleContext);
+export default function Footer({ locale: propLocale }) {
+  const { locale: contextLocale } = useContext(LocaleContext);
+  const locale = propLocale || contextLocale;
   const { json } = useLocale(locale)
   const lang = json.footer
 

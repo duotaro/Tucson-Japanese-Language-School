@@ -69,5 +69,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - Google Analytics integration for tracking
 
 ### Development Guidelines
-- 必ず修正後にテストをしてくださいね。
+- 必ず修正後に、以下の確認をしてくださいね。
+- 1. yarn dev を実行してエラーがないこと。
+- 2. yarn build　を実行してエラーがないこと。
 - 修正後に原因となっていた部分と、解消方法を簡単に明記してください。

@@ -29,7 +29,7 @@ export default function DisclosureDetail({ item }) {
           <a className="text-base font-semibold text-blue-600 hover:bg-gray-50" href="https://tucsonhosyuko.square.site/" target="_blank">{parentTitle}</a>
         </div>
       ) : (
-        <LocaleLink className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-blue-600 hover:bg-gray-50" href={createNavUrl(parent)}>{parentTitle}</LocaleLink>
+        <LocaleLink className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-blue-600 hover:bg-gray-50" href={createNavUrl(parent) || "/"}>{parentTitle}</LocaleLink>
       )
     )}
     {item.dropdowns.length > 0 && (
@@ -43,7 +43,7 @@ export default function DisclosureDetail({ item }) {
           {item.dropdowns.map((dropdown) => (
             <LocaleLink
               key={dropdown.PAGE_KEY}
-              href={createNavUrl(dropdown)}
+              href={createNavUrl(dropdown) || "/"}
               className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-blue-600 hover:bg-gray-50"
             >
               {json.navigation[dropdown.PAGE_KEY]}

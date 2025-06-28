@@ -1,0 +1,31 @@
+import Head from "next/head";
+import React from 'react';
+import { useLocale } from "../../../utils/locale";
+
+export default function NewsIndexPage({ newsList, locale }) {
+  const { json, metaTitleExtension } = useLocale(locale)
+  let lang = json.navigation
+
+  return (
+    <>
+      <Head>
+        <title>{lang.news} - {metaTitleExtension} </title>
+        <meta name="description" content={`${lang.news} - ${lang.description}`} />
+        
+        {/* Language alternatives for SEO */}
+        <link rel="alternate" hrefLang="ja" href="https://tjschool.org/news/" />
+        <link rel="alternate" hrefLang="en" href="https://tjschool.org/en/news/" />
+        <link rel="alternate" hrefLang="x-default" href="https://tjschool.org/news/" />
+      </Head>
+
+      <div className="">
+        <div className="row">
+          <div className="col-md-12">
+            <h1>{lang.news}</h1>
+            <p>News content...</p>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}

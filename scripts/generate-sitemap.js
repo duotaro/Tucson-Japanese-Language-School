@@ -7,33 +7,45 @@ const baseUrl = 'https://tjschool.org';
 // 静的ページ一覧
 const staticPages = [
   '/',
+  '/about/',
   '/about/welcome/',
   '/about/mission/',
   '/about/governance/',
   '/about/staff/',
-  '/admissions/forms/',
+  '/about/report/',
+  '/program/',
   '/program/class/',
   '/program/calendar/',
+  '/program/events/',
+  '/program/kanji_kentei/',
+  '/admissions/',
+  '/admissions/forms/',
   '/news/',
   '/support/',
-  '/contact/opportunity/',
-  '/about/report/'
+  '/contact/',
+  '/contact/opportunity/'
 ];
 
 // 優先度とchangefreqを設定
 const pageConfig = {
   '/': { priority: '1.0', changefreq: 'daily' },
+  '/about/': { priority: '0.8', changefreq: 'monthly' },
   '/about/welcome/': { priority: '0.8', changefreq: 'monthly' },
   '/about/mission/': { priority: '0.8', changefreq: 'monthly' },
   '/about/governance/': { priority: '0.7', changefreq: 'monthly' },
   '/about/staff/': { priority: '0.7', changefreq: 'monthly' },
-  '/admissions/forms/': { priority: '0.9', changefreq: 'monthly' },
+  '/about/report/': { priority: '0.6', changefreq: 'yearly' },
+  '/program/': { priority: '0.9', changefreq: 'weekly' },
   '/program/class/': { priority: '0.9', changefreq: 'weekly' },
   '/program/calendar/': { priority: '0.9', changefreq: 'daily' },
+  '/program/events/': { priority: '0.8', changefreq: 'weekly' },
+  '/program/kanji_kentei/': { priority: '0.7', changefreq: 'monthly' },
+  '/admissions/': { priority: '0.9', changefreq: 'monthly' },
+  '/admissions/forms/': { priority: '0.9', changefreq: 'monthly' },
   '/news/': { priority: '0.8', changefreq: 'daily' },
   '/support/': { priority: '0.7', changefreq: 'monthly' },
-  '/contact/opportunity/': { priority: '0.6', changefreq: 'monthly' },
-  '/about/report/': { priority: '0.6', changefreq: 'yearly' }
+  '/contact/': { priority: '0.7', changefreq: 'monthly' },
+  '/contact/opportunity/': { priority: '0.6', changefreq: 'monthly' }
 };
 
 // 現在の日時を取得

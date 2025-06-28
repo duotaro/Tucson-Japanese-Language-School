@@ -62,17 +62,17 @@ export default function PopoverDetail({ item, isMainNav = false }) {
             }}
             >
             <div className="">
-                {item.dropdowns.map((dropdown) => {
+                {item.dropdowns.map((dropdown, index) => {
                 return (
                     <div
-                    key={dropdown.key}
+                    key={dropdown.PAGE_KEY || dropdown.key || index}
                     className="relative flex items-center p-4 text-sm leading-6 hover:bg-blue-500 hover:text-gray-50"
                     >
                     {/* <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                         <dropdown.icon aria-hidden="true" className="h-6 w-6 text-gray-600 group-hover:text-indigo-600" />
                     </div> */}
                     <div className="flex-auto">
-                        <LocaleLink href={createNavUrl(dropdown)} className="block font-semibold ">
+                        <LocaleLink href={createNavUrl(dropdown) || "/"} className="block font-semibold ">
                         {json.navigation[dropdown.PAGE_KEY]}
                         <span className="absolute inset-0" />
                         </LocaleLink>

@@ -238,6 +238,11 @@ export const URLS = {
 }
 
 export const createNavUrl = (item) => {
+    // itemがnullまたはundefinedの場合の処理
+    if (!item) {
+        return "/";
+    }
+
     if(item.GROUP == HOME_URL.PAGE_KEY){
         return `/`
     }
