@@ -1,6 +1,3 @@
-
-
-
 import React, { useState } from "react";
 import Link from "next/link";
 import { useLocale } from "@/utils/locale";
@@ -13,49 +10,102 @@ import { ACCESABLE_IMAGE_PATH, DOWNLOAD_IMAGE_EXTENSION } from "@/const";
 
 export default function HowToDonate({ howto, locale = "ja" }) {
   const { json } = useLocale(locale)
-  const isJpn = locale == "ja"
+  const isJpn = locale === "ja"
 
   let resList = []
-  for(let item of howto){
-    let res = {
-        ordering: null,
-        title: "",
-        text: "",
-        btnLabel: null,
-        btnLink: null,
-        tag: null
+  
+  // Default contribution methods if no data is provided
+  const defaultMethods = [
+    {
+      id: 1,
+      ordering: 1,
+      title: "Jim Click ラッフル",
+      text: [{
+        type: 'text',
+        text: { content: "Jim Clickで車を購入する際に、本校の名前をお伝えください。本校に寄付金が入ります。" },
+        annotations: {},
+        plain_text: "Jim Clickで車を購入する際に、本校の名前をお伝えください。本校に寄付金が入ります。",
+        href: null
+      }],
+      btnLabel: "詳細を見る",
+      btnLink: "#",
+      tag: "other"
+    },
+    {
+      id: 2,
+      ordering: 2,
+      title: "Fry's Community Rewards",
+      text: [{
+        type: 'text',
+        text: { content: "Fry's Community Rewardsプログラムに登録し、Organization #KO463を選択してください。お買い物の度に本校に寄付されます。" },
+        annotations: {},
+        plain_text: "Fry's Community Rewardsプログラムに登録し、Organization #KO463を選択してください。お買い物の度に本校に寄付されます。",
+        href: null
+      }],
+      btnLabel: "登録する",
+      btnLink: "https://www.frysfood.com/topic/community-rewards-2",
+      tag: "other"
+    },
+    {
+      id: 3,
+      ordering: 3,
+      title: "航空券の購入",
+      text: [{
+        type: 'text',
+        text: { content: "旅行会社アムネットを通して日本への航空券を購入すると、学校に寄付が入ります。もちろん格安航空券でも！ご購入の際に、ツーソン日本語補習校の関係者ですと言ってください。" },
+        annotations: {},
+        plain_text: "旅行会社アムネットを通して日本への航空券を購入すると、学校に寄付が入ります。もちろん格安航空券でも！ご購入の際に、ツーソン日本語補習校の関係者ですと言ってください。",
+        href: null
+      }],
+      btnLabel: "アムネットで予約",
+      btnLink: "https://www.amnet-usa.com",
+      tag: "other"
     }
-    res.ordering = item.properties["ordering"].number
-    res.title = isJpn ? item.properties["title"].title[0].text.content : item.properties["en"].rich_text[0].text.content
-    res.text = isJpn ? item.properties["text"].rich_text : item.properties["text_en"].rich_text
+  ];
 
-    res.tag =  item.properties["tag"].select.name
-    if(item.properties["image"]){
-      const tmpName = item.properties["image"].files[0].name
-      const name = tmpName.replace(/ /g, '_')
+  if (howto && howto.length > 0) {
+    for(let item of howto){
+      let res = {
+          id: item.id,
+          ordering: null,
+          title: "",
+          text: "",
+          btnLabel: null,
+          btnLink: null,
+          tag: null
+      }
+      res.ordering = item.properties?.["ordering"]?.number || 0
+      res.title = isJpn ? (item.properties?.["title"]?.title?.[0]?.text?.content || "") : (item.properties?.["en"]?.rich_text?.[0]?.text?.content || "")
+      res.text = isJpn ? (item.properties?.["text"]?.rich_text || []) : (item.properties?.["text_en"]?.rich_text || [])
 
-      res.image = `/${ACCESABLE_IMAGE_PATH}/howto/${name}${DOWNLOAD_IMAGE_EXTENSION}`
-    }
-    if(isJpn){
-        if(item.properties["btn_label"].rich_text[0]){
-            res.btnLabel = item.properties["btn_label"].rich_text[0].text.content
-            res.btnLink = item.properties["btn_link"].url
-        }
-    } else {
-        if(item.properties["btn_label_en"].rich_text[0]){
-            res.btnLabel = item.properties["btn_label_en"].rich_text[0].text.content
-            res.btnLink = item.properties["btn_link"].url
-        } 
-    }
-    resList.push(res)
-  }    
+      res.tag = item.properties?.["tag"]?.select?.name || "other"
+      if(item.properties?.["image"]?.files?.[0]){
+        const tmpName = item.properties["image"].files[0].name
+        const name = tmpName.replace(/ /g, '_')
 
-  resList.sort((a, b) => a.ordering - b.ordering);
+        res.image = `/${ACCESABLE_IMAGE_PATH}/howto/${name}${DOWNLOAD_IMAGE_EXTENSION}`
+      }
+      if(isJpn){
+          if(item.properties?.["btn_label"]?.rich_text?.[0]){
+              res.btnLabel = item.properties["btn_label"].rich_text[0].text.content
+              res.btnLink = item.properties?.["btn_link"]?.url
+          }
+      } else {
+          if(item.properties?.["btn_label_en"]?.rich_text?.[0]){
+              res.btnLabel = item.properties["btn_label_en"].rich_text[0].text.content
+              res.btnLink = item.properties?.["btn_link"]?.url
+          } 
+      }
+      resList.push(res)
+    }    
+    resList.sort((a, b) => a.ordering - b.ordering);
+  } else {
+    resList = defaultMethods;
+  }
 
-  const title = json.howto.title.replace('{*}', resList.length)
+  const title = json.howto?.title?.replace('{*}', resList.length) || `${resList.length}つの方法で貢献する`;
 
   return (
-    
     <Section py="py-8 md:py-12 lg:py-20" >
     <div className="container px-6 mx-auto text-center" >
       <Title title={title} />
@@ -63,36 +113,8 @@ export default function HowToDonate({ howto, locale = "ja" }) {
     <div className="mb-4 ">
       <div className="w-full">
         <ContributionAccordion list={resList} />
-        {/* {resList.map((item) => {
-          return (
-            <div className="flex flex-col p-5 lg:flex-row">
-                <div className="text-center hidden lg:block">
-                    <img className="h-80 w-80 sm:w-[14rem] sm:h-[14rem] flex-shrink-0 object-cover rounded-full" src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80" alt="" />
-                </div>
-
-                <div className="flex flex-col mt-6 ">
-                    <div className="flex flex-row p-5 items-center justify-center gap-4">
-                      <img className="h-80 w-80 sm:w-[5rem] sm:h-[5rem] flex-shrink-0 object-cover rounded-full" src={item.image} alt="" />
-                      <Title title={item.title} fontSize="text-lg  sm:text-xl "/>
-                    </div>
-                    <Paragraphs text={item.text} />
-                    {item.btnLabel && (
-                    <div className="mt-6 sm:-mx-2">
-                        <a href="#" className="inline-flex items-center justify-center w-full px-4 text-sm py-2.5 overflow-hidden text-white transition-colors duration-300 bg-gray-900 rounded-lg shadow sm:w-auto sm:mx-2 hover:bg-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 focus:ring focus:ring-gray-300 focus:ring-opacity-80">
-                            <GlobeAsiaAustraliaIcon  className="w-5 h-5 mx-2 fill-current" />
-                            <span className="mx-2">
-                                {item.btnLabel}
-                            </span>
-                        </a>
-                    </div>
-                    )}
-                </div>
-            </div>
-          )
-        })} */}
       </div>
     </div>
-
   </Section>
   );
 }

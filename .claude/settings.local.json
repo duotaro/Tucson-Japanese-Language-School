@@ -32,7 +32,8 @@
       "Bash(npx serve:*)",
       "Bash(npm install:*)",
       "Bash(npx:*)",
-      "Bash(yarn add:*)"
+      "Bash(yarn add:*)",
+      "Bash(git stash:*)"
     ],
     "deny": []
   }

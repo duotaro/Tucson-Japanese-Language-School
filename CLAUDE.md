@@ -73,3 +73,4 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - 1. yarn dev を実行してエラーがないこと。
 - 2. yarn build　を実行してエラーがないこと。
 - 修正後に原因となっていた部分と、解消方法を簡単に明記してください。
+- 作業が終わったらWORK_LOG.mdにやったこと、なぜやったかを追記してください。

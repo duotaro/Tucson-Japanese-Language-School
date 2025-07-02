@@ -520,6 +520,37 @@ export async function getStaticProps({ params }) {
       props.files = {};
       props.scheduleList = [];
     }
+  } else if (pageType === 'support') {
+    try {
+      // developブランチのパターンに従って追加のデータを取得
+      const sponsors = await fetchData("1e302ac5bce442b797e491aee309e7c4", "sponsor", null);
+      const support = await getDatabase("10ca8c0ecf8c8039a51bdd38f640a34e");
+      const sponsor = await getDatabase("10ea8c0ecf8c80eeae62cc2050b7e7f7");
+      const donation = await getDatabase("10ea8c0ecf8c801b802bc2b43a3ecf91");
+      const howto = await getDatabase("10ca8c0ecf8c8081a8a0e9a9a6166cc1");
+      
+      // Howto用の画像保存処理
+      if (howto && howto.length > 0) {
+        let howtoProps = [];
+        for(let item of howto){
+          howtoProps.push(item.properties);
+        }
+        await saveImageIfNeeded(howtoProps, "howto");
+      }
+      
+      props.sponsors = sponsors || [];
+      props.support = support && support.length > 0 ? support[0] : null;
+      props.sponsor = sponsor && sponsor.length > 0 ? sponsor[0] : null;
+      props.donation = donation && donation.length > 0 ? donation[0] : null;
+      props.howto = howto || [];
+    } catch (error) {
+      console.log('Error fetching support data:', error);
+      props.sponsors = [];
+      props.support = null;
+      props.sponsor = null;
+      props.donation = null;
+      props.howto = [];
+    }
   }
   // Add more specific page data fetching as needed
 
