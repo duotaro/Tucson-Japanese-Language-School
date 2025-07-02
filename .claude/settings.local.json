@@ -29,7 +29,10 @@
       "Bash(yarn dev:*)",
       "Bash(yarn install)",
       "Bash(yarn start)",
-      "Bash(npx serve:*)"
+      "Bash(npx serve:*)",
+      "Bash(npm install:*)",
+      "Bash(npx:*)",
+      "Bash(yarn add:*)"
     ],
     "deny": []
   }
