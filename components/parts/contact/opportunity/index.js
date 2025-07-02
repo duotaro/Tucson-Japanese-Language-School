@@ -25,10 +25,10 @@ export default function Opportunity({ opportunity }) {
                 baseName={entity.image?.baseName || 'opportunity'}
                 pagePath={entity.image?.pagePath || 'opportunity'}
                 alt={entity.image?.alt || 'Opportunity'}
-                responsive={true}
-                responsiveType="standard"
-                loading="lazy"
-                placeholder="blur"
+                
+                
+                
+                
                 objectFit="cover"
                 className="md:col-start-1 rounded-lg shadow-md"
               />

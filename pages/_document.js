@@ -4,6 +4,9 @@ export default function Document() {
   return (
     <Html>
       <Head>
+        {/* Next.js head count */}
+        <meta name="next-head-count" content="10" />
+        
         {/* 基本的なメタタグ */}
         <meta charSet="utf-8" />
         <meta name="robots" content="index, follow" />

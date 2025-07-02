@@ -37,7 +37,7 @@ export default function ReportPage({ reportList, locale }) {
     <>
       <Head>
         <title>{lang.report} - {metaTitleExtension} </title>
-        <meta name="description" content={`${lang.report} - ${json.navigation.description || lang.report}`} />
+        <meta name="description" content={`${lang.report} - ${json?.navigation?.description || lang.report}`} />
         
         {/* Language alternatives for SEO */}
         <link rel="alternate" hrefLang="ja" href="https://tjschool.org/about/report/" />

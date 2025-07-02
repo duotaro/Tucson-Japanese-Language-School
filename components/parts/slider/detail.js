@@ -51,13 +51,12 @@ export default function SliderDetail({post}) {
                     baseName={imageData.baseName}
                     pagePath={imageData.pagePath}
                     alt={imageData.alt}
-                    responsive={true}      // レスポンシブ対応を有効化
-                    responsiveType="hero"  // ヒーローセクション用最適化
-                    objectFit="cover"     // カバー表示
+                    fill={true}       // ★ 親要素いっぱいに画像を広げる
+                    objectFit="cover" // ★ CSSの `object-fit: cover;` と同じ効果
+                    // ホバーエフェクトのopacityとtransitionはclassNameで直接ImageOptimizerに適用
                     className={`absolute inset-0 rounded-lg ${isHovered ? 'opacity-90' : 'opacity-100'} transition-opacity duration-300`}
-                    priority={true}       // LCP最適化のため優先読み込み
-                    placeholder="blur"    // ブラープレースホルダー
-                    loading="eager"       // 即座に読み込み
+                    priority={true}   // ★ スライダーの画像はLCPに影響するため、優先読み込みを検討
+                    // fill={true} の場合、widthとheightは不要です
                 />
                 <div className="p-3 absolute bottom-0 left-0 w-full z-10" style={labelStyle} > {/* ★ z-indexでラベルを手前に表示 */}
                     <h5 className="text-[#333333]">{label}</h5>

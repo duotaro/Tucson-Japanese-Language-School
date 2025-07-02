@@ -11,7 +11,7 @@ export default function CalendarPage({ files, scheduleList, locale }) {
     <>
       <Head>
         <title>{lang.calendar} - {metaTitleExtension} </title>
-        <meta name="description" content={`${lang.calendar} - ${json.navigation.description || lang.calendar}`} />
+        <meta name="description" content={`${lang.calendar} - ${json?.navigation?.description || lang.calendar}`} />
         
         {/* Language alternatives for SEO */}
         <link rel="alternate" hrefLang="ja" href="https://tjschool.org/program/calendar/" />

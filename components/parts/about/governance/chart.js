@@ -40,7 +40,7 @@ export default function OrganisationFlowChart({ orgChart, locale="ja" }) {
                   width={800}
                   height={600}
                   loading="lazy"
-                  placeholder="blur"
+                  
                   objectFit="contain"
                   className="rounded-lg w-full h-auto"
                 />

@@ -73,10 +73,10 @@ export default function Greeting({ greeting, locale="ja" }) {
                   baseName={entity.image.baseName}
                   pagePath={entity.image.pagePath}
                   alt={entity.image.alt || "Greetings"}
-                  responsive={true}
-                  responsiveType="card"
-                  loading="lazy"
-                  placeholder="blur"
+                  
+                  
+                  
+                  
                   objectFit="cover"
                   className="rounded-lg shadow-md"
                 />
@@ -85,10 +85,10 @@ export default function Greeting({ greeting, locale="ja" }) {
                   baseName="greeting"
                   pagePath="about"
                   alt="Greetings"
-                  responsive={true}
-                  responsiveType="card"
-                  loading="lazy"
-                  placeholder="blur"
+                  
+                  
+                  
+                  
                   objectFit="cover"
                   className="rounded-lg shadow-md"
                 />

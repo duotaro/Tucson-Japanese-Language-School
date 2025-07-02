@@ -81,21 +81,29 @@ export const convertAboutFromDatabase = (database, isJpn) => {
 
     for(let item of database){
         let entity = new AboutEntity(item, isJpn)
+        
+        // デバッグ用ログ
+        console.log(`[convertAboutFromDatabase] Processing item with tag: ${entity.tag}, title: ${entity.title}`);
     
         switch (entity.tag) {
             case AboutEnum.ABOUT:
                 aboutSchool = entity
+                console.log('[convertAboutFromDatabase] Set aboutSchool');
                 break;
             case AboutEnum.MISSION:
                 mission = entity
+                console.log('[convertAboutFromDatabase] Set mission');
                 break;
             case AboutEnum.VISION:
                 vision = entity
+                console.log('[convertAboutFromDatabase] Set vision');
                 break;
             default:
-              // console.log(`Sorry, we are out of ${entity.tag}.`);
+                console.log(`[convertAboutFromDatabase] Unknown tag: ${entity.tag}`);
         } 
     }
+    
+    console.log(`[convertAboutFromDatabase] Final result - aboutSchool: ${aboutSchool ? 'found' : 'null'}, mission: ${mission ? 'found' : 'null'}, vision: ${vision ? 'found' : 'null'}`);
 
     return {
         aboutSchool, mission, vision

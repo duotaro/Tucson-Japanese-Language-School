@@ -40,8 +40,6 @@ const getSponsors = async () => {
   for(let item of database){
     props.push(item.properties)
   }
-
-  await saveImageIfNeeded(props, "sponsor")
   return database
 }
 

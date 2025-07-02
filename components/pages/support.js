@@ -11,7 +11,7 @@ export default function SupportPage({ support, locale }) {
     <>
       <Head>
         <title>{lang.support} - {metaTitleExtension} </title>
-        <meta name="description" content={`${lang.support} - ${json.navigation.description || lang.support}`} />
+        <meta name="description" content={`${lang.support} - ${json?.navigation?.description || lang.support}`} />
         
         {/* Language alternatives for SEO */}
         <link rel="alternate" hrefLang="ja" href="https://tjschool.org/support/" />

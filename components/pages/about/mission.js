@@ -21,7 +21,7 @@ export default function MissionPage({ about, philosophy, policy, locale }) {
     <>
       <Head>
         <title>{lang.mission} - {metaTitleExtension} </title>
-        <meta name="description" content={`${lang.mission} - ${json.navigation.description || lang.mission}`} />
+        <meta name="description" content={`${lang.mission} - ${json?.navigation?.description || lang.mission}`} />
         
         {/* Language alternatives for SEO */}
         <link rel="alternate" hrefLang="ja" href="https://tjschool.org/about/mission/" />

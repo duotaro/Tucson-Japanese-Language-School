@@ -10,7 +10,7 @@ export default function KanjiKenteiPage({ kanjiKentei, locale }) {
     <>
       <Head>
         <title>{lang.kanjikentei} - {metaTitleExtension} </title>
-        <meta name="description" content={`${lang.kanjikentei} - ${json.navigation.description || lang.kanjikentei}`} />
+        <meta name="description" content={`${lang.kanjikentei} - ${json?.navigation?.description || lang.kanjikentei}`} />
         
         {/* Language alternatives for SEO */}
         <link rel="alternate" hrefLang="ja" href="https://tjschool.org/program/kanji_kentei/" />

@@ -24,10 +24,8 @@ export default function About({ about, isTop, locale="ja" }) {
                 baseName={about.image?.baseName || 'about'}
                 pagePath={about.image?.pagePath || 'about'}
                 alt={about.image?.alt || 'About'}
-                responsive={true}
-                responsiveType="standard"
-                loading="lazy"
-                placeholder="blur"
+                width={about.image?.width || 400}
+                height={about.image?.height || 200}
                 objectFit="cover"
                 className="md:col-start-2 rounded-lg shadow-md"
               />

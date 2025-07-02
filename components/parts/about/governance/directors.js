@@ -50,7 +50,7 @@ export default function Directors({ directors = [], locale="ja" }) {
                               width={130}
                               height={130}
                               loading="lazy"
-                              placeholder="blur"
+                              
                               objectFit="cover"
                               className="rounded-lg shadow-md w-full h-full"
                             />

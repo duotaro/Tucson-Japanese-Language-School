@@ -82,10 +82,10 @@ export default function ClassComponent({category, classes, locale="ja"}) {
                           baseName={item.image?.baseName || 'class'}
                           pagePath={item.image?.pagePath || 'class'}
                           alt={item.image?.alt || item.title}
-                          responsive={true}
-                          responsiveType="card"
-                          loading="lazy"
-                          placeholder="blur"
+                          
+                          
+                          
+                          
                           objectFit="cover"
                           className="rounded-lg shadow-md image-hover"
                         />

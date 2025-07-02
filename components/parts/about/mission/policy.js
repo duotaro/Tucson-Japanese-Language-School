@@ -24,10 +24,10 @@ export default function Policy({ policy }) {
                 baseName={entity.image?.baseName || 'policy'}
                 pagePath={entity.image?.pagePath || 'policy'}
                 alt={entity.image?.alt || 'Policy'}
-                responsive={true}
-                responsiveType="standard"
-                loading="lazy"
-                placeholder="blur"
+                
+                
+                
+                
                 objectFit="cover"
                 className="md:col-start-1 rounded-lg shadow-md"
               />

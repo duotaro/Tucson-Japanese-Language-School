@@ -33,9 +33,6 @@ const ImageOptimizer = ({
   responsive = false,
   sizes,
   responsiveType = 'standard',
-  placeholder = 'blur',
-  blurDataURL = 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k=',
-  loading = 'lazy',
   ...rest
 }) => {
   
@@ -104,10 +101,7 @@ const ImageOptimizer = ({
       fill: true,
       sizes: finalSizes,
       style: { objectFit: objectFit },
-      onError: handleImageError,
-      placeholder: placeholder,
-      blurDataURL: blurDataURL,
-      loading: priority ? 'eager' : loading
+      onError: handleImageError
     };
 
     // レスポンシブコンテナで包む
@@ -128,10 +122,7 @@ const ImageOptimizer = ({
     imageProps = {
       fill: true,
       style: { objectFit: objectFit },
-      onError: handleImageError,
-      placeholder: placeholder,
-      blurDataURL: blurDataURL,
-      loading: priority ? 'eager' : loading
+      onError: handleImageError
     };
   } else {
     // width/heightモード: 固定サイズ（モバイルで自動調整）
@@ -147,10 +138,7 @@ const ImageOptimizer = ({
         height: 'auto',
         maxWidth: `${responsiveWidth}px`
       },
-      onError: handleImageError,
-      placeholder: placeholder,
-      blurDataURL: blurDataURL,
-      loading: priority ? 'eager' : loading
+      onError: handleImageError
     };
   }
 

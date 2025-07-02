@@ -10,7 +10,7 @@ export default function NewsDetailPage({ newsItem, locale, newsId }) {
     <>
       <Head>
         <title>{newsItem?.title || 'News'} - {metaTitleExtension} </title>
-        <meta name="description" content={`${newsItem?.title || 'News'} - ${json.navigation.description || (newsItem?.title || 'News')}`} />
+        <meta name="description" content={`${newsItem?.title || 'News'} - ${json?.navigation?.description || (newsItem?.title || 'News')}`} />
         
         {/* Language alternatives for SEO */}
         <link rel="alternate" hrefLang="ja" href={`https://tjschool.org/news/${newsId}/`} />

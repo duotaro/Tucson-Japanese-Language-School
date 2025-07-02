@@ -9,20 +9,11 @@ module.exports = {
   // SEO設定
   generateEtags: false,
   poweredByHeader: false,
-  output: 'export',
+  //output: 'export',
   
-  // 画像最適化設定の改善
+  // 静的エクスポート用の画像設定
   images: {
-    unoptimized: true, // 静的エクスポートでは必須
-    formats: ['image/webp', 'image/avif'], // 最新フォーマット対応
-    deviceSizes: [640, 768, 1024, 1280, 1920], // レスポンシブ対応
-    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384, 512],
-    minimumCacheTTL: 31536000, // 1年キャッシュ
-    domains: [
-      'files.notion.so',
-      'prod-files-secure.s3.us-west-2.amazonaws.com',
-      's3.us-west-2.amazonaws.com'
-    ], // Notion画像ドメイン追加
+    unoptimized: true
   },
   
   // エラー処理の改善

@@ -295,7 +295,7 @@ export async function getStaticProps({ params }) {
     // Minimal scheduleList data
     const scheduleDatabase = await getDatabase("8d87080f73f14e8a9e7ba934c1d928c6");
     const scheduleList = isDev ? scheduleDatabase.slice(0, 5) : scheduleDatabase;
-    const about = await fetchData("d4eb3828e74c469b9179ca7be9edb5cf", "about", isDev ? 2 : null);
+    const about = await fetchData("d4eb3828e74c469b9179ca7be9edb5cf", "about", isDev ? 3 : null);
     const opportunity = await fetchData("d9037016a0524f08adecdbab0c7302b7", "opportunity", isDev ? 1 : null);
 
     props = {

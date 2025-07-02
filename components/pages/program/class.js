@@ -11,7 +11,7 @@ export default function ClassPage({ category, classes, locale }) {
     <>
       <Head>
         <title>{lang.class} - {metaTitleExtension} </title>
-        <meta name="description" content={`${lang.class} - ${json.navigation.description || lang.class}`} />
+        <meta name="description" content={`${lang.class} - ${json?.navigation?.description || lang.class}`} />
         
         {/* Language alternatives for SEO */}
         <link rel="alternate" hrefLang="ja" href="https://tjschool.org/program/class/" />

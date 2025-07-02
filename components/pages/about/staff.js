@@ -11,7 +11,7 @@ export default function StaffPage({ staffList, roleList, locale }) {
     <>
       <Head>
         <title>{lang.staff} - {metaTitleExtension} </title>
-        <meta name="description" content={`${lang.staff} - ${json.navigation.description || lang.staff}`} />
+        <meta name="description" content={`${lang.staff} - ${json?.navigation?.description || lang.staff}`} />
         
         {/* Language alternatives for SEO */}
         <link rel="alternate" hrefLang="ja" href="https://tjschool.org/about/staff/" />

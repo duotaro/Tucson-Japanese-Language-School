@@ -20,7 +20,7 @@ export default function WelcomePage({ welcome, locale }) {
     <>
       <Head>
         <title>{lang.welcome} - {metaTitleExtension} </title>
-        <meta name="description" content={`${lang.welcome} - ${json.navigation.description || lang.welcome}`} />
+        <meta name="description" content={`${lang.welcome} - ${json?.navigation?.description || lang.welcome}`} />
         
         {/* Language alternatives for SEO */}
         <link rel="alternate" hrefLang="ja" href="https://tjschool.org/about/welcome/" />

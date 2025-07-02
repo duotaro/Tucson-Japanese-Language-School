@@ -15,10 +15,10 @@ const ProfileCard = ({item}) => {
                       baseName={image.baseName}
                       pagePath={image.pagePath || 'staff'}
                       alt={image.alt || name}
-                      responsive={true}
-                      responsiveType="thumbnail"
-                      loading="lazy"
-                      placeholder="blur"
+                      
+                      
+                      
+                      
                       objectFit="cover"
                       className="rounded-lg shadow-md"
                     />
@@ -27,10 +27,10 @@ const ProfileCard = ({item}) => {
                       baseName="default-staff"
                       pagePath="staff"
                       alt={name}
-                      responsive={true}
-                      responsiveType="thumbnail"
-                      loading="lazy"
-                      placeholder="blur"
+                      
+                      
+                      
+                      
                       objectFit="cover"
                       className="rounded-lg shadow-md"
                     />

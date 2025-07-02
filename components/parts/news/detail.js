@@ -42,12 +42,12 @@ export default function NewsDetail({ item, locale="ja" }) {
                 baseName={entity.image.baseName}
                 pagePath={entity.image.pagePath}
                 alt={entity.image.alt}
-                responsive={true}
-                responsiveType="card"
+                
+                
                 objectFit="cover"
                 className="rounded-lg"
                 loading="lazy"
-                placeholder="blur"
+                
               />
             ) : (
               // フォールバック画像の場合

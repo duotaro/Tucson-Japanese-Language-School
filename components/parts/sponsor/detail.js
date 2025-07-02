@@ -19,10 +19,10 @@ export default function SponsorDetail({ item}) {
               baseName={item.image?.baseName || 'sponsor'}
               pagePath={item.image?.pagePath || 'sponsor'}
               alt={item.image?.alt || item.title}
-              responsive={true}
-              responsiveType="card"
-              loading="lazy"
-              placeholder="blur"
+              
+              
+              
+              
               objectFit="cover"
               className="rounded-lg w-full h-auto"
             />
