@@ -58,7 +58,6 @@ export default function DynamicPage({ pageType, slug, locale: pageLocale, ...pag
     return (
       <Layout locale={currentLocale}>
         <Head>
-          <html lang={currentLocale} />
           <title>{metaTitleExtension}</title>
           <meta name="description" content={currentLocale === 'ja' ? 'ツーソン日本語学校は、アリゾナ州ツーソンで日本語教育を提供する学校です。子どもから大人まで、日本語と日本文化を学ぶ機会を提供しています。' : 'Tucson Japanese Language School provides Japanese language education and cultural programs for children and adults in Tucson, Arizona.'} />
           <meta name="language" content={currentLocale} />
