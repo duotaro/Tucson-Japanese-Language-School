@@ -33,4 +33,7 @@ yarn-error.log*
 # vercel
 .vercel
 
+# yarn cache
+.yarn/cache/
+
 /public/image/download
