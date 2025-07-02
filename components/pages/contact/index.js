@@ -11,7 +11,7 @@ export default function ContactPage({ contact, locale }) {
     <>
       <Head>
         <title>{lang.contact} - {metaTitleExtension} </title>
-        <meta name="description" content={`${lang.contact} - ${lang.description}`} />
+        <meta name="description" content={`${lang.contact} - ${json.navigation.description || lang.contact}`} />
         
         {/* Language alternatives for SEO */}
         <link rel="alternate" hrefLang="ja" href="https://tjschool.org/contact/" />

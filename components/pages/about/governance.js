@@ -13,7 +13,7 @@ export default function GovernancePage({ directors, orgChart, org_policys, local
     <>
       <Head>
         <title>{lang.governance} - {metaTitleExtension} </title>
-        <meta name="description" content={`${lang.governance} - ${lang.description}`} />
+        <meta name="description" content={`${lang.governance} - ${json.navigation.description || lang.governance}`} />
         
         {/* Language alternatives for SEO */}
         <link rel="alternate" hrefLang="ja" href="https://tjschool.org/about/governance/" />

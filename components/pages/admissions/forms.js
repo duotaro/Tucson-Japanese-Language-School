@@ -14,7 +14,7 @@ export default function FormsPage({ qualification, price, discountFamily, discou
     <>
       <Head>
         <title>{lang.forms} - {metaTitleExtension} </title>
-        <meta name="description" content={`${lang.forms} - ${lang.description}`} />
+        <meta name="description" content={`${lang.forms} - ${json.navigation.description || lang.forms}`} />
         
         {/* Language alternatives for SEO */}
         <link rel="alternate" hrefLang="ja" href="https://tjschool.org/admissions/forms/" />

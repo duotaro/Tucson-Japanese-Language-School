@@ -11,7 +11,7 @@ export default function OpportunityPage({ opportunity, locale }) {
     <>
       <Head>
         <title>{lang.opportunity} - {metaTitleExtension} </title>
-        <meta name="description" content={`${lang.opportunity} - ${lang.description}`} />
+        <meta name="description" content={`${lang.opportunity} - ${json.navigation.description || lang.opportunity}`} />
         
         {/* Language alternatives for SEO */}
         <link rel="alternate" hrefLang="ja" href="https://tjschool.org/contact/opportunity/" />

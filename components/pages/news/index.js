@@ -11,7 +11,7 @@ export default function NewsIndexPage({ newsList, locale }) {
     <>
       <Head>
         <title>{lang.news} - {metaTitleExtension} </title>
-        <meta name="description" content={`${lang.news} - ${lang.description}`} />
+        <meta name="description" content={`${lang.news} - ${json.navigation.description || lang.news}`} />
         
         {/* Language alternatives for SEO */}
         <link rel="alternate" hrefLang="ja" href="https://tjschool.org/news/" />

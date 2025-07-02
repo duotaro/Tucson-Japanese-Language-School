@@ -25,7 +25,11 @@
       "Bash(yarn build:*)",
       "Bash(true)",
       "Bash(ls:*)",
-      "Bash(/dev/null)"
+      "Bash(/dev/null)",
+      "Bash(yarn dev:*)",
+      "Bash(yarn install)",
+      "Bash(yarn start)",
+      "Bash(npx serve:*)"
     ],
     "deny": []
   }

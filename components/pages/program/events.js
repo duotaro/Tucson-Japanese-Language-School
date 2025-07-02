@@ -10,7 +10,7 @@ export default function EventsPage({ events, locale }) {
     <>
       <Head>
         <title>{lang.event} - {metaTitleExtension} </title>
-        <meta name="description" content={`${lang.event} - ${lang.description}`} />
+        <meta name="description" content={`${lang.event} - ${json.navigation.description || lang.event}`} />
         
         {/* Language alternatives for SEO */}
         <link rel="alternate" hrefLang="ja" href="https://tjschool.org/program/events/" />
