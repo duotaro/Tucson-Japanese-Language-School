@@ -7,7 +7,6 @@ import { formatDate } from "../../../utils/dateUtils";
 
 export default function NewsDetailPage({ newsItem, locale, newsId }) {
   const { json, metaTitleExtension } = useLocale(locale)
-  let lang = json.navigation
 
   if (!newsItem) {
     return (
@@ -27,7 +26,7 @@ export default function NewsDetailPage({ newsItem, locale, newsId }) {
 
   const entity = new NewsEntity(newsItem, locale === "ja");
   const title = entity.title?.map(t => t.text.content).join('') || 'News Detail';
-  const date = entity.date ? formatDate(entity.date, locale) : '';
+  const date = entity.rawDate ? formatDate(entity.rawDate, locale) : '';
 
   return (
     <>
@@ -58,19 +57,25 @@ export default function NewsDetailPage({ newsItem, locale, newsId }) {
           {entity.image && (
             <div className="mb-8">
               {typeof entity.image === 'object' && entity.image.baseName ? (
-                <ImageOptimizer
-                  baseName={entity.image.baseName}
-                  pagePath={entity.image.pagePath}
-                  alt={entity.image.alt || title}
-                  className="w-full rounded-lg shadow-lg"
-                  loading="eager"
-                />
+                <div className="relative w-full h-48 md:h-64 rounded-lg overflow-hidden flex items-center justify-center">
+                  <ImageOptimizer
+                    baseName={entity.image.baseName}
+                    pagePath={entity.image.pagePath}
+                    alt={entity.image.alt || title}
+                    fill={true}
+                    objectFit="contain"
+                    className="rounded-lg shadow-lg "
+                    loading="eager"
+                  />
+                </div>
               ) : (
-                <img
-                  src={entity.image}
-                  alt={title}
-                  className="w-full rounded-lg shadow-lg"
-                />
+                <div className="relative w-full h-48 md:h-64 rounded-lg  overflow-hidden flex items-center justify-center">
+                  <img
+                    src={entity.image}
+                    alt={title}
+                    className="max-w-full max-h-full object-contain rounded-lg shadow-lg"
+                  />
+                </div>
               )}
             </div>
           )}

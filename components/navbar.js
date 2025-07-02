@@ -39,13 +39,13 @@ export default function Navigation({ locale: propLocale }) {
             
             {/* 右側のアクション */}
             <div className="flex items-center space-x-4">
-              {/* 支払いボタン */}
+              {/* 支払いラベル */}
               <a 
                 target="_blank" 
                 href="https://tucsonhosyuko.square.site/" 
-                className="hidden sm:flex items-center px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors shadow-sm"
+                className="hidden sm:flex items-center px-3 py-1 text-sm font-medium text-white hover:text-gray-200 transition-colors"
               >
-                <ArrowTopRightOnSquareIcon className="h-4 w-4 mr-2" />
+                <ArrowTopRightOnSquareIcon className="h-4 w-4 mr-1" />
                 {json.navigation.payment}
               </a>
               
@@ -82,11 +82,11 @@ export default function Navigation({ locale: propLocale }) {
             </button>
           </div>
           <div className="mt-6">
-            {/* モバイル支払いボタン */}
+            {/* モバイル支払いリンク */}
             <a 
               target="_blank" 
               href="https://tucsonhosyuko.square.site/" 
-              className="flex items-center justify-center w-full px-4 py-3 mb-6 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors"
+              className="flex items-center justify-center w-full px-4 py-3 mb-6 text-sm font-medium text-blue-600 border border-blue-600 rounded-lg hover:bg-blue-50 transition-colors"
             >
               <ArrowTopRightOnSquareIcon className="h-4 w-4 mr-2" />
               {json.navigation.payment}
