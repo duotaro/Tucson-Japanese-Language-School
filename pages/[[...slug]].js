@@ -290,7 +290,7 @@ export async function getStaticProps({ params }) {
     const sliderList = await fetchData("f2bd94d61f7c45958755562d366af5ea", "slider", isDev ? 3 : null);
     const sponsors = await fetchData("1e302ac5bce442b797e491aee309e7c4", "sponsor", isDev ? 6 : null);
     const newsDatabase = await fetchData(newsId, "news", isDev ? 10 : null);
-    const newsList = await getNewsList(newsDatabase, isDev ? 3 : null);
+    const newsList = await getNewsList(newsDatabase, 3);
     // Minimal scheduleList data
     const scheduleDatabase = await getDatabase("8d87080f73f14e8a9e7ba934c1d928c6");
     const scheduleList = isDev ? scheduleDatabase.slice(0, 5) : scheduleDatabase;
