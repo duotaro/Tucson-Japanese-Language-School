@@ -159,4 +159,43 @@
 
 ---
 
-**最終更新**: 2025年7月2日 23:30
+### No.11 `/contact/opportunity/` ページ修正
+**対応**: `pages/[[...slug]].js` の `getStaticProps` 内にcontact/opportunityページ用のデータフェッチロジック追加
+**背景**: feature/unified-multilingual-pagesブランチで `/contact/opportunity/` が正しく動作していない問題が報告された
+**原因**: ルーティングは定義されていたが、Notionデータベースからのデータフェッチが実装されていなかった
+**影響ファイル**:
+- `pages/[[...slug]].js` (contact/opportunityデータフェッチ追加)
+
+**追加したデータフェッチ**:
+- `contact` ページ: opportunity データベース (d9037016a0524f08adecdbab0c7302b7)
+- `contact/opportunity` ページ: opportunities データベース (102a8c0ecf8c80089b21d14aec9edd22) + general データベース
+
+**確認結果**: 
+- yarn dev でエラーなし（警告はあるが正常起動）
+- yarn build でビルド進行確認（警告あるが致命的エラーなし）
+
+---
+
+### No.12 footerの「お問い合わせ」英語翻訳問題修正
+**対応**: `components/footer.js` でContactコンポーネントにlocaleプロパティを渡すよう修正
+**背景**: 英語ページでfooterの「お問い合わせ」が「CONTACT INFO」に翻訳されない問題が報告された
+**原因**: footerからContactコンポーネントを呼び出す際にlocaleプロパティが渡されておらず、Contactコンポーネントのデフォルト値`locale="ja"`が使用されていた
+**影響ファイル**:
+- `components/footer.js` (Contactコンポーネント呼び出し時にlocale追加)
+
+**修正内容**:
+```javascript
+// 修正前
+<Contact isFooter={true}/>
+
+// 修正後  
+<Contact isFooter={true} locale={locale}/>
+```
+
+**確認結果**: 
+- yarn dev で正常起動確認
+- 翻訳ファイル確認: ja.json「お問い合わせ」→ en.json「CONTACT INFO」
+
+---
+
+**最終更新**: 2025年7月3日 10:45

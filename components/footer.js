@@ -19,7 +19,7 @@ export default function Footer({ locale: propLocale }) {
 			<div className="container mx-auto px-6 py-12">
         <div className="flex flex-col md:flex-row justify-between gap-8">
 				<div className="md:w-1/2">
-          <Contact isFooter={true}/>
+          <Contact isFooter={true} locale={locale}/>
 				</div>
 
 				<div className="md:w-1/2 flex items-center">

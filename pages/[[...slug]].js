@@ -551,6 +551,28 @@ export async function getStaticProps({ params }) {
       props.donation = null;
       props.howto = [];
     }
+  } else if (pageType === 'contact') {
+    // Contact page用のデータフェッチを追加
+    try {
+      const opportunity = await fetchData("d9037016a0524f08adecdbab0c7302b7", "opportunity", null);
+      props.opportunity = opportunity || [];
+    } catch (error) {
+      console.log('Error fetching contact data:', error);
+      props.opportunity = [];
+    }
+  } else if (pageType === 'contact/opportunity') {
+    // Contact Opportunity page用のデータフェッチを追加  
+    try {
+      const opportunities = await fetchData("102a8c0ecf8c80089b21d14aec9edd22", "opportunity", null);
+      const general = await fetchData("d9037016a0524f08adecdbab0c7302b7", "opportunity", null);
+      
+      props.opportunities = opportunities || [];
+      props.general = general && general.length > 0 ? general[0] : null;
+    } catch (error) {
+      console.log('Error fetching opportunity data:', error);
+      props.opportunities = [];
+      props.general = null;
+    }
   }
   // Add more specific page data fetching as needed
 
