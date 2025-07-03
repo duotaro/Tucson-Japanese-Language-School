@@ -198,4 +198,28 @@
 
 ---
 
-**最終更新**: 2025年7月3日 10:45
+### No.13 `/contact/opportunity/` ページ表示修正
+**対応**: `components/pages/contact/opportunity.js` のOpportunityPageコンポーネントを正しいpropsと詳細コンポーネントを使用するよう修正
+**背景**: `/contact/opportunity/`で「もっと詳しく」ボタンしか表示されない問題が報告された
+**原因**: 
+1. OpportunityPageコンポーネントが間違ったprops（`opportunity`）を期待していたが、`[[...slug]].js`からは`opportunities`と`general`が渡される
+2. ホームページ用の`OpportunityComponent`（簡易版）を使用していたが、詳細ページでは`OpportunityDetail`コンポーネント（タブ付き詳細版）を使用すべきだった
+
+**影響ファイル**:
+- `components/pages/contact/opportunity.js` (完全リライト)
+
+**修正内容**:
+- propsを`{ opportunity, locale }`から`{ opportunities, general, locale }`に変更
+- `OpportunityComponent`を`OpportunityDetail`に変更
+- generalデータからタイトルとテキストを抽出する処理を追加
+- 適切なレイアウト構造（Section、Title、Paragraphs）を追加
+
+**確認結果**: 
+- yarn dev で正常起動確認
+- contact/opportunity:143-144でOpportunityPageが呼び出される
+- opportunities (102a8c0ecf8c80089b21d14aec9edd22) データでタブ付き詳細表示
+- general (d9037016a0524f08adecdbab0c7302b7) データでページタイトル・説明表示
+
+---
+
+**最終更新**: 2025年7月3日 11:15
