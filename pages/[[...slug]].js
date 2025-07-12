@@ -5,7 +5,6 @@ import { getDatabase } from "../lib/notion.js";
 import Layout from '../components/layout.js'
 export const databaseId = process.env.NEXT_PUBLIC_NOTION_DATABASE_ID;
 export const newsId = process.env.NEXT_PUBLIC_NOTION_NEWS_DATABASE_ID;
-import SliderList from '../components/parts/slider/index.js';
 import News from '../components/parts/news/index.js';
 import SponsorEntity from '../entity/sponsorEntity.js';
 import LocaleContext from '../components/context/localeContext.js';
@@ -20,22 +19,86 @@ import Opportunity from '../components/parts/contact/opportunity/index.js';
 import { getNewsList } from '../entity/newsEntity.js';
 import path from 'path';
 
-// Other page components
-import WelcomePage from '../components/pages/about/welcome.js';
-import MissionPage from '../components/pages/about/mission.js';
-import GovernancePage from '../components/pages/about/governance.js';
-import StaffPage from '../components/pages/about/staff.js';
-import ReportPage from '../components/pages/about/report.js';
-import ClassPage from '../components/pages/program/class.js';
-import CalendarPage from '../components/pages/program/calendar.js';
-import EventsPage from '../components/pages/program/events.js';
-import KanjiKenteiPage from '../components/pages/program/kanji_kentei.js';
-import FormsPage from '../components/pages/admissions/forms.js';
-import NewsIndexPage from '../components/pages/news/index.js';
-import NewsDetailPage from '../components/pages/news/detail.js';
-import SupportPage from '../components/pages/support.js';
-import ContactPage from '../components/pages/contact/index.js';
-import OpportunityPage from '../components/pages/contact/opportunity.js';
+// Dynamic imports for page components
+import dynamic from 'next/dynamic';
+
+// Dynamic import for heavy components
+const SliderList = dynamic(() => import('../components/parts/slider/index.js'), {
+  loading: () => (
+    <div className="h-96 bg-gray-200 animate-pulse"></div>
+  ),
+  ssr: true
+});
+
+// Loading component
+const PageLoading = () => (
+  <div className="flex items-center justify-center min-h-screen">
+    <div className="animate-pulse text-xl text-gray-600">Loading...</div>
+  </div>
+);
+
+// Dynamic page components with loading state
+const WelcomePage = dynamic(() => import('../components/pages/about/welcome.js'), {
+  loading: () => <PageLoading />,
+  ssr: true
+});
+const MissionPage = dynamic(() => import('../components/pages/about/mission.js'), {
+  loading: () => <PageLoading />,
+  ssr: true
+});
+const GovernancePage = dynamic(() => import('../components/pages/about/governance.js'), {
+  loading: () => <PageLoading />,
+  ssr: true
+});
+const StaffPage = dynamic(() => import('../components/pages/about/staff.js'), {
+  loading: () => <PageLoading />,
+  ssr: true
+});
+const ReportPage = dynamic(() => import('../components/pages/about/report.js'), {
+  loading: () => <PageLoading />,
+  ssr: true
+});
+const ClassPage = dynamic(() => import('../components/pages/program/class.js'), {
+  loading: () => <PageLoading />,
+  ssr: true
+});
+// CalendarPage - Heavy component with FullCalendar
+const CalendarPage = dynamic(() => import('../components/pages/program/calendar.js'), {
+  loading: () => <PageLoading />,
+  ssr: true
+});
+const EventsPage = dynamic(() => import('../components/pages/program/events.js'), {
+  loading: () => <PageLoading />,
+  ssr: true
+});
+const KanjiKenteiPage = dynamic(() => import('../components/pages/program/kanji_kentei.js'), {
+  loading: () => <PageLoading />,
+  ssr: true
+});
+const FormsPage = dynamic(() => import('../components/pages/admissions/forms.js'), {
+  loading: () => <PageLoading />,
+  ssr: true
+});
+const NewsIndexPage = dynamic(() => import('../components/pages/news/index.js'), {
+  loading: () => <PageLoading />,
+  ssr: true
+});
+const NewsDetailPage = dynamic(() => import('../components/pages/news/detail.js'), {
+  loading: () => <PageLoading />,
+  ssr: true
+});
+const SupportPage = dynamic(() => import('../components/pages/support.js'), {
+  loading: () => <PageLoading />,
+  ssr: true
+});
+const ContactPage = dynamic(() => import('../components/pages/contact/index.js'), {
+  loading: () => <PageLoading />,
+  ssr: true
+});
+const OpportunityPage = dynamic(() => import('../components/pages/contact/opportunity.js'), {
+  loading: () => <PageLoading />,
+  ssr: true
+});
 
 export default function DynamicPage({ pageType, slug, locale: pageLocale, ...pageProps }) {
   // 静的生成時に確定した言語を使用（クライアントサイドの判定に依存しない）

@@ -36,7 +36,18 @@
       "Bash(git stash:*)",
       "Bash(claude --version)",
       "Bash(claude update)",
-      "WebFetch(domain:docs.anthropic.com)"
+      "WebFetch(domain:docs.anthropic.com)",
+      "Bash(/opt/homebrew/bin/convert image3.jpeg -quality 80 -resize 1200x800 image3_optimized.jpeg)",
+      "Bash(/opt/homebrew/bin/convert image1.jpeg -quality 80 -resize 1200x800 image1_optimized.jpeg)",
+      "Bash(/opt/homebrew/bin/convert news2.jpeg -quality 80 -resize 1200x800 news2_optimized.jpeg)",
+      "Bash(/opt/homebrew/bin/convert announcement1.jpeg -quality 80 -resize 1200x800 announcement1_optimized.jpeg)",
+      "Bash(/opt/homebrew/bin/convert news1.jpeg -quality 80 -resize 1200x800 news1_optimized.jpeg)",
+      "Bash(/opt/homebrew/bin/convert image5.jpeg -quality 80 -resize 1200x800 image5_optimized.jpeg)",
+      "Bash(cp:*)",
+      "Bash(/opt/homebrew/bin/convert image2.jpeg -quality 80 -resize 1200x800 image2_opt.jpeg)",
+      "Bash(/opt/homebrew/bin/convert image4.jpeg -quality 80 -resize 1200x800 image4_opt.jpeg)",
+      "Bash(NODE_OPTIONS=--max_old_space_size=8192 yarn build)",
+      "Bash(convert:*)"
     ],
     "deny": []
   }

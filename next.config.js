@@ -1,6 +1,9 @@
 const urlPrefix = process.env.URL_PREFIX ? '/' + process.env.URL_PREFIX : ''
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true',
+});
 
-module.exports = {
+module.exports = withBundleAnalyzer({
   assetPrefix: urlPrefix,
   basePath: urlPrefix,
   trailingSlash: true,
@@ -9,7 +12,7 @@ module.exports = {
   // SEO設定
   generateEtags: false,
   poweredByHeader: false,
-  //output: 'export',
+  output: 'export',
   
   // 静的エクスポート用の画像設定
   images: {
@@ -28,8 +31,8 @@ module.exports = {
     cpus: 1
   },
   
-  // サーバーサイド専用モジュールの除外
-  webpack: (config, { isServer }) => {
+  // サーバーサイド専用モジュールの除外とバンドル最適化
+  webpack: (config, { isServer, dev }) => {
     if (!isServer) {
       config.resolve.fallback = {
         ...config.resolve.fallback,
@@ -38,6 +41,39 @@ module.exports = {
         sharp: false,
       };
     }
+
+    // プロダクションビルドの最適化
+    if (!dev && !isServer) {
+      config.optimization.splitChunks = {
+        chunks: 'all',
+        cacheGroups: {
+          default: false,
+          vendors: false,
+          // React関連を別chunk化
+          react: {
+            name: 'react',
+            chunks: 'all',
+            test: /[\\/]node_modules[\\/](react|react-dom)[\\/]/,
+            priority: 40,
+          },
+          // Notion API関連を別chunk化
+          notion: {
+            name: 'notion',
+            chunks: 'all',
+            test: /[\\/]lib[\\/]notion/,
+            priority: 30,
+          },
+          // 共通コンポーネント
+          common: {
+            name: 'common',
+            chunks: 'all',
+            minChunks: 2,
+            priority: 20,
+          },
+        },
+      };
+    }
+
     return config;
   }
-};
+});

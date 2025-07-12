@@ -9,7 +9,10 @@
     "sitemap": "next-sitemap --config next-sitemap.js",
     "lint": "next lint",
     "deploy": "next-sitemap --config next-sitemap.js && git add . && git commit -m 'release' && git push origin develop",
-    "release": "next-sitemap --config next-sitemap.js && git add . && git commit -m 'release' && git push origin main"
+    "release": "next-sitemap --config next-sitemap.js && git add . && git commit -m 'release' && git push origin main",
+    "analyze": "cross-env ANALYZE=true next build",
+    "analyze:server": "cross-env BUNDLE_ANALYZE=server next build",
+    "analyze:browser": "cross-env BUNDLE_ANALYZE=browser next build"
   },
   "dependencies": {
     "@fullcalendar/core": "^6.1.15",
@@ -34,7 +37,9 @@
   },
   "devDependencies": {
     "@cloudflare/next-on-pages": "^1.13.12",
+    "@next/bundle-analyzer": "^15.3.5",
     "autoprefixer": "^10.4.20",
+    "cross-env": "^7.0.3",
     "dotenv": "^17.0.0",
     "eslint": "8",
     "eslint-config-next": "13",
