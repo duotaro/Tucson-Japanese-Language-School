@@ -33,7 +33,10 @@
       "Bash(npm install:*)",
       "Bash(npx:*)",
       "Bash(yarn add:*)",
-      "Bash(git stash:*)"
+      "Bash(git stash:*)",
+      "Bash(claude --version)",
+      "Bash(claude update)",
+      "WebFetch(domain:docs.anthropic.com)"
     ],
     "deny": []
   }
