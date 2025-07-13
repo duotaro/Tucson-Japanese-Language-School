@@ -395,14 +395,42 @@ export async function getStaticProps({ params }) {
         let newsProps = [foundItem.properties];
         await saveImageIfNeeded(newsProps, "news");
         
-        // NewsEntityを作成してフルコンテンツをロード
-        const { default: NewsEntity } = await import('../entity/newsEntity.js');
-        const newsEntity = new NewsEntity(foundItem, params.slug[0] !== 'en');
-        await newsEntity.loadFullContent();
+        // Master版の実装と同じように子データベースから詳細コンテンツを取得
+        const { getPage, getBlocks, getDatabase } = await import('../lib/notion.js');
+        
+        let pageMap = {"ja": null, "en": null};
+        let blockMap = {"ja": null, "en": null};
+        
+        // 詳細ページとブロックを取得
+        const detailPage = await getPage(newsItemId);
+        const detailBlock = await getBlocks(newsItemId);
+        
+        // 子データベースが存在する場合
+        if (detailBlock && detailBlock.length > 0 && detailBlock[0].type === 'child_database') {
+          const localeList = await getDatabase(detailBlock[0].id);
+          
+          // 各言語の詳細コンテンツを取得
+          const paramsPromises = localeList.map(async (localeItem) => {
+            const locale = localeItem.properties["locale"].title[0].plain_text;
+            const page = await getPage(localeItem.id);
+            const blocks = await getBlocks(localeItem.id);
+            
+            if (locale === "ja") {
+              pageMap[locale] = page;
+              blockMap[locale] = blocks;
+            } else {
+              pageMap[locale] = page;
+              blockMap[locale] = blocks;
+            }
+          });
+          
+          await Promise.all(paramsPromises);
+        }
         
         props.newsItem = foundItem;
-        props.fullTextLoaded = newsEntity.fullContentLoaded;
-        props.fullText = newsEntity.text;
+        props.detailPage = detailPage;
+        props.pageMap = pageMap;
+        props.blockMap = blockMap;
       } else {
         props.newsItem = null;
       }

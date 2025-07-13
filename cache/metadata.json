@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-07-13T11:15:18.502Z",
+  "lastUpdate": "2025-07-13T13:40:17.816Z",
   "totalDatabases": 31,
   "successCount": 31,
   "failedCount": 0,
@@ -154,7 +154,8 @@
     "news": {
       "recordCount": 36,
       "databaseId": "cc0b1eb3570842ba926cc71ecaf5df4d",
-      "lastFetch": "2025-07-13T11:15:18.503Z"
+      "lastFetch": "2025-07-13T13:40:17.817Z",
+      "lastIncremental": "frequent"
     },
     "layout": {
       "recordCount": 25,
@@ -162,5 +163,13 @@
       "lastFetch": "2025-07-13T11:15:18.503Z"
     }
   },
-  "failures": []
+  "failures": [],
+  "lastIncrementalUpdate": {
+    "frequency": "frequent",
+    "timestamp": "2025-07-13T13:40:17.817Z",
+    "executionTime": 7339,
+    "updatedCount": 1,
+    "unchangedCount": 2,
+    "failedCount": 0
+  }
 }
