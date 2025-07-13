@@ -1,5 +1,5 @@
 import { ACCESABLE_IMAGE_PATH, DOWNLOAD_IMAGE_EXTENSION } from "../const"
-import { getDatabase } from "../lib/notion"
+import { getDatabase, getBlocks } from "../lib/notion"
 import { formatDate } from "../utils/dateUtils"
 import path from 'path'
 
@@ -59,6 +59,51 @@ export default class NewsEntity {
         this.tags = item.properties["tags"].multi_select
         this.tag = item.properties["tags"].multi_select[0]
         
+        // フルコンテンツロード用のフラグ
+        this.fullContentLoaded = false;
+    }
+
+    // ページブロックから完全なテキストコンテンツを取得
+    async loadFullContent() {
+        if (this.fullContentLoaded) return;
+        
+        try {
+            const blocks = await getBlocks(this.id);
+            const fullText = this.extractTextFromBlocks(blocks);
+            
+            if (fullText && fullText.length > 0) {
+                // プロパティのテキストが短く、ブロックテキストがある場合は置換
+                if (this.text.length === 1 && fullText.length > this.text.length) {
+                    this.text = fullText;
+                    this.fullContentLoaded = true;
+                }
+            }
+        } catch (error) {
+            console.warn(`[NewsEntity] Failed to load full content for ${this.id}:`, error);
+        }
+    }
+
+    // ブロックからテキストを抽出
+    extractTextFromBlocks(blocks) {
+        const textContent = [];
+        
+        for (const block of blocks) {
+            if (block.type === 'paragraph' && block.paragraph?.rich_text) {
+                textContent.push(...block.paragraph.rich_text);
+            } else if (block.type === 'heading_1' && block.heading_1?.rich_text) {
+                textContent.push(...block.heading_1.rich_text);
+            } else if (block.type === 'heading_2' && block.heading_2?.rich_text) {
+                textContent.push(...block.heading_2.rich_text);
+            } else if (block.type === 'heading_3' && block.heading_3?.rich_text) {
+                textContent.push(...block.heading_3.rich_text);
+            } else if (block.type === 'bulleted_list_item' && block.bulleted_list_item?.rich_text) {
+                textContent.push(...block.bulleted_list_item.rich_text);
+            } else if (block.type === 'numbered_list_item' && block.numbered_list_item?.rich_text) {
+                textContent.push(...block.numbered_list_item.rich_text);
+            }
+        }
+        
+        return textContent;
     }
 
 }

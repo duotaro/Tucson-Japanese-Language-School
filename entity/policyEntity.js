@@ -41,7 +41,8 @@ export default class PolicyEntity {
         if (properties?.pdf?.files?.[0]) {
             const tmpPdfName = properties.pdf.files[0].name;
             const pdfName = tmpPdfName.replace(/ /g, '_');
-            this.pdf = `/${ACCESABLE_PDF_PATH}/policy/${pdfName}`;
+            // 実際のディレクトリ名はorg_policyなので修正
+            this.pdf = `/${ACCESABLE_PDF_PATH}/org_policy/${pdfName}`;
         } else {
             this.pdf = null;
         }

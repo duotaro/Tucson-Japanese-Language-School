@@ -197,10 +197,14 @@ export default function Calender({files, list, locale="ja"}) {
                     }}
                   />
                 ) : (
-                  <img
-                    src="/image/download/calendar/event.png.png"
+                  <ImageOptimizer
+                    baseName="event"
+                    pagePath="calendar"
                     alt="年間カレンダー"
-                    className="rounded-lg w-full h-auto object-cover"
+                    width={800}
+                    height={600}
+                    objectFit="cover"
+                    className="rounded-lg"
                   />
                 )}
               </div>

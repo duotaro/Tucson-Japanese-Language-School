@@ -73,25 +73,18 @@ export default function Greeting({ greeting, locale="ja" }) {
                   baseName={entity.image.baseName}
                   pagePath={entity.image.pagePath}
                   alt={entity.image.alt || "Greetings"}
-                  
-                  
-                  
-                  
+                  width={800}
+                  height={600}
                   objectFit="cover"
                   className="rounded-lg shadow-md"
                 />
               ) : (
-                <ImageOptimizer
-                  baseName="greeting"
-                  pagePath="about"
-                  alt="Greetings"
-                  
-                  
-                  
-                  
-                  objectFit="cover"
-                  className="rounded-lg shadow-md"
-                />
+                <div className="w-full h-full bg-gray-100 rounded-lg shadow-md flex items-center justify-center">
+                  <div className="text-center text-gray-500">
+                    <div className="text-4xl mb-2">👥</div>
+                    <p className="text-sm">Greeting Image</p>
+                  </div>
+                </div>
               )}
             </div>
         </div>

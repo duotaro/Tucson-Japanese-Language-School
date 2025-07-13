@@ -5,8 +5,25 @@ import NewsEntity from "../../../entity/newsEntity";
 import ImageOptimizer from "../../download/ImageOptimizer";
 import { formatDate } from "../../../utils/dateUtils";
 
-export default function NewsDetailPage({ newsItem, locale, newsId }) {
+export default function NewsDetailPage({ newsItem, locale, newsId, fullTextLoaded, fullText }) {
   const { json, metaTitleExtension } = useLocale(locale)
+  const [entity, setEntity] = React.useState(null);
+  const [loading, setLoading] = React.useState(true);
+
+  React.useEffect(() => {
+    if (!newsItem) return;
+    
+    const newsEntity = new NewsEntity(newsItem, locale === "ja");
+    
+    // SSGで提供されたフルテキストがある場合は使用
+    if (fullTextLoaded && fullText) {
+      newsEntity.text = fullText;
+      newsEntity.fullContentLoaded = true;
+    }
+    
+    setEntity(newsEntity);
+    setLoading(false);
+  }, [newsItem, locale, fullTextLoaded, fullText]);
 
   if (!newsItem) {
     return (
@@ -24,7 +41,26 @@ export default function NewsDetailPage({ newsItem, locale, newsId }) {
     );
   }
 
-  const entity = new NewsEntity(newsItem, locale === "ja");
+  if (loading || !entity) {
+    return (
+      <>
+        <Head>
+          <title>Loading... - {metaTitleExtension}</title>
+        </Head>
+        <div className="container px-6 mx-auto py-12">
+          <div className="text-center">
+            <div className="animate-pulse">
+              <div className="h-8 bg-gray-200 rounded mb-4"></div>
+              <div className="h-4 bg-gray-200 rounded mb-2"></div>
+              <div className="h-4 bg-gray-200 rounded mb-2"></div>
+            </div>
+            <p>ニュースを読み込み中...</p>
+          </div>
+        </div>
+      </>
+    );
+  }
+
   const title = entity.title?.map(t => t.text.content).join('') || 'News Detail';
   const date = entity.rawDate ? formatDate(entity.rawDate, locale) : '';
 

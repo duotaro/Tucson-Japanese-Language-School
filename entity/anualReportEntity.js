@@ -7,12 +7,31 @@ export default class AnualReportEntity {
             this.year = localYear            
             this.pdf = isJpn ? `/pdf/anual_report/${localYear}.pdf` : `/pdf/anual_report/${localYear}_en.pdf`
         } else {
-            const tmpPdfName = item.properties["pdf"].files[0].name
-            const pdfName = tmpPdfName.replace(/ /g, '_')
-            const tmpPdfEnName = item.properties["pdf_en"].files[0].name
-            const pdfEnName = tmpPdfEnName.replace(/ /g, '_')
-            this.year = item.properties["year"].title[0].text.content            
-            this.pdf = isJpn ? `/${ACCESABLE_PDF_PATH}/anual_report/${pdfName}` : `/${ACCESABLE_PDF_PATH}/anual_report/${pdfEnName}`
+            // null安全性チェック
+            if (!item?.properties) {
+                console.warn("[AnualReportEntity] Invalid item or properties:", item);
+                this.year = "Unknown";
+                this.pdf = null;
+                return;
+            }
+
+            // 年度の取得
+            this.year = item.properties["year"]?.title?.[0]?.text?.content || "Unknown";
+            
+            // PDFファイルの取得（null安全性付き）
+            const pdfFiles = item.properties["pdf"]?.files;
+            const pdfEnFiles = item.properties["pdf_en"]?.files;
+            
+            if (pdfFiles?.[0]?.name && pdfEnFiles?.[0]?.name) {
+                const tmpPdfName = pdfFiles[0].name;
+                const pdfName = tmpPdfName.replace(/ /g, '_');
+                const tmpPdfEnName = pdfEnFiles[0].name;
+                const pdfEnName = tmpPdfEnName.replace(/ /g, '_');
+                this.pdf = isJpn ? `/${ACCESABLE_PDF_PATH}/reports/${pdfName}` : `/${ACCESABLE_PDF_PATH}/reports/${pdfEnName}`;
+            } else {
+                console.warn("[AnualReportEntity] Missing PDF files for year:", this.year);
+                this.pdf = null;
+            }
         }
         this.title = isJpn ? `${this.year}年度年間報告` : `${this.year} Anual Report`
     }

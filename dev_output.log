@@ -1,0 +1,15 @@
+ ⚠ Found lockfile missing swc dependencies, patching...
+ ⨯ Failed to patch lockfile, please try uninstalling and reinstalling next in this workspace
+TypeError: Cannot read properties of undefined (reading 'os')
+    at fetchPkgInfo (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/node_modules/next/dist/lib/patch-incorrect-lockfile.js:72:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Promise.all (index 0)
+    at async patchIncorrectLockfile (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/node_modules/next/dist/lib/patch-incorrect-lockfile.js:161:26)
+  ▲ Next.js 13.5.11
+  - Local:        http://localhost:3000
+  - Environments: .env.local, .env
+  - Experiments (use at your own risk):
+     · cpus
+
+ ✓ Ready in 1648ms
+[?25h

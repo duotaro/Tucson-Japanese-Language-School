@@ -268,8 +268,15 @@ export async function getStaticPaths() {
 
   paths.push(...japanesePages, ...englishPages);
 
+  // Filter out PDF paths - these should be served as static files
+  const filteredPaths = paths.filter(path => {
+    const slug = path.params.slug || [];
+    // Exclude any path that starts with 'pdf' - these are static files
+    return slug.length === 0 || slug[0] !== 'pdf';
+  });
+
   return {
-    paths,
+    paths: filteredPaths,
     fallback: false
   };
 }
@@ -279,10 +286,24 @@ export async function getStaticProps({ params }) {
   let locale = 'ja';
   let actualSlug = slug;
 
+  // Handle PDF paths - these should be 404 as they are static files
+  if (slug.length > 0 && slug[0] === 'pdf') {
+    return {
+      notFound: true
+    };
+  }
+
   // Check if this is an English route
   if (slug[0] === 'en') {
     locale = 'en';
     actualSlug = slug.slice(1);
+    
+    // Also check for PDF paths in English routes
+    if (actualSlug.length > 0 && actualSlug[0] === 'pdf') {
+      return {
+        notFound: true
+      };
+    }
   }
 
   const pageType = actualSlug.length === 0 ? 'home' : actualSlug.join('/');
@@ -368,11 +389,26 @@ export async function getStaticProps({ params }) {
     try {
       const newsDatabase = await fetchCachedData('news', null);
       const foundItem = newsDatabase.find(item => item.id === newsItemId);
+      
       if (foundItem) {
+        // ニュース画像の保存処理
+        let newsProps = [foundItem.properties];
+        await saveImageIfNeeded(newsProps, "news");
+        
+        // NewsEntityを作成してフルコンテンツをロード
+        const { default: NewsEntity } = await import('../entity/newsEntity.js');
+        const newsEntity = new NewsEntity(foundItem, params.slug[0] !== 'en');
+        await newsEntity.loadFullContent();
+        
         props.newsItem = foundItem;
+        props.fullTextLoaded = newsEntity.fullContentLoaded;
+        props.fullText = newsEntity.text;
+      } else {
+        props.newsItem = null;
       }
     } catch (error) {
       console.log('Error fetching news item:', error);
+      props.newsItem = null;
     }
   }
   
@@ -473,7 +509,7 @@ export async function getStaticProps({ params }) {
     }
   } else if (pageType === 'about/report') {
     try {
-      const reportList = await loadCachedData('files');
+      const reportList = await loadCachedData('reports');
       
       // レポートにPDFファイルがある場合、savePdfIfNeededを実行
       if (reportList && reportList.length > 0) {

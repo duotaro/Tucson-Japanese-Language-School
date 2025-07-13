@@ -10,31 +10,15 @@ const ProfileCard = ({item}) => {
         <div className="rounded-lg shadow-md bg-white w-[95%] border border-gray-200 flex justify-center transition-transform duration-300 hover:transform hover:scale-105">
             <div className="absolute -mt-20 w-full flex justify-center z-10">
                 <div className="h-40 w-40 relative rounded-full overflow-hidden">
-                  {image && typeof image === 'object' && image.baseName ? (
-                    <ImageOptimizer
-                      baseName={image.baseName}
-                      pagePath={image.pagePath || 'staff'}
-                      alt={image.alt || name}
-                      
-                      
-                      
-                      
-                      objectFit="cover"
-                      className="rounded-lg shadow-md"
-                    />
-                  ) : (
-                    <ImageOptimizer
-                      baseName="default-staff"
-                      pagePath="staff"
-                      alt={name}
-                      
-                      
-                      
-                      
-                      objectFit="cover"
-                      className="rounded-lg shadow-md"
-                    />
-                  )}
+                  <ImageOptimizer
+                    baseName={image?.baseName || 'profile'}
+                    pagePath={image?.pagePath || 'staff'}
+                    alt={image?.alt || name}
+                    width={160}
+                    height={160}
+                    objectFit="cover"
+                    className="rounded-lg shadow-md"
+                  />
                 </div>
             </div>
             <div className="p-6 mt-16 ">

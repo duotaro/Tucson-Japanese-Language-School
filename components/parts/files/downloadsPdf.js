@@ -5,8 +5,6 @@ import React, { useContext } from "react";
 import { useLocale } from "@/utils/locale";
 import LocaleContext from "../../context/localeContext";
 import { DocumentTextIcon } from "@heroicons/react/24/outline";
-import Link from "next/link";
-
 export default function PdfDownloads({ filePath, title, isNew = false }) {
   const { locale } = useContext(LocaleContext);
   const { json } = useLocale(locale)
@@ -20,9 +18,10 @@ export default function PdfDownloads({ filePath, title, isNew = false }) {
 
   return (
     <div className="group">
-      <Link 
+      <a 
         href={filePath} 
         target="_blank" 
+        rel="noopener noreferrer"
         className="block h-full p-6 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:border-blue-300 hover:-translate-y-1 group"
         aria-label={`Download PDF: ${title}`}
       >
@@ -46,7 +45,7 @@ export default function PdfDownloads({ filePath, title, isNew = false }) {
           </div>
 
         </div>
-      </Link>
+      </a>
     </div>
   );
 }

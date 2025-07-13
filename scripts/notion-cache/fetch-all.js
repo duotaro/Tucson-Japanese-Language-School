@@ -16,10 +16,11 @@ const __dirname = path.dirname(__filename);
 dotenv.config({ path: path.resolve(__dirname, '../../.env.local') });
 dotenv.config({ path: path.resolve(__dirname, '../../.env') });
 
-import { getDatabase } from '../../lib/notion.js';
+import { getDatabase, getBlocks } from '../../lib/notion.js';
 import { DATABASES, validateDatabaseConfig, getAllDatabases } from './database-config.js';
 import fs from 'fs/promises';
 import fetch from 'node-fetch';
+import sharp from 'sharp';
 import crypto from 'crypto';
 
 // キャッシュディレクトリ
@@ -62,15 +63,32 @@ async function downloadImage(url, dataType, pageId, originalFileName) {
     // ファイル名を生成（ページIDとオリジナル名を組み合わせ）
     const sanitizedFileName = originalFileName.replace(/[^a-zA-Z0-9._-]/g, '_');
     const fileExtension = path.extname(sanitizedFileName) || '.webp';
-    const baseName = path.basename(sanitizedFileName, fileExtension);
-    const localFileName = `${pageId}-${baseName}${fileExtension}`;
+    const originalBaseName = path.basename(sanitizedFileName, fileExtension);
+    const localFileName = `${pageId}-${originalBaseName}${fileExtension}`;
+    
+    // cache-loader.jsと同じbaseNameロジックを使用
+    // 同じファイル名の場合は短いページIDプレフィックスを追加して一意性を確保
+    const shortPageId = pageId.split('-')[0]; // 最初の8文字
+    const baseName = originalBaseName === 'profile' ? `${originalBaseName}-${shortPageId}` : originalBaseName;
     const localPath = path.join(saveDir, localFileName);
     
-    // 既にファイルが存在する場合はスキップ
+    // 既にファイルが存在する場合でも最適化版をチェック
+    let fileExists = false;
     try {
       await fs.access(localPath);
-      console.log(`  📷 画像スキップ（既存）: ${localFileName}`);
-      return `/image/download/${dataType}/${localFileName}`;
+      fileExists = true;
+      console.log(`  📷 画像確認（既存）: ${localFileName}`);
+      
+      // 最適化版が存在するかチェック
+      const optimizedExists = await checkOptimizedImagesExist(dataType, baseName);
+      if (optimizedExists) {
+        console.log(`  ✅ 最適化版も存在: ${baseName}`);
+        return `/image/download/${dataType}/${localFileName}`;
+      } else {
+        console.log(`  🔄 最適化版を生成: ${baseName}`);
+        await generateOptimizedImages(localPath, dataType, baseName);
+        return `/image/download/${dataType}/${localFileName}`;
+      }
     } catch {
       // ファイルが存在しない場合は続行
     }
@@ -85,12 +103,162 @@ async function downloadImage(url, dataType, pageId, originalFileName) {
     await fs.writeFile(localPath, buffer);
     
     console.log(`  ✅ 画像保存: ${localFileName}`);
+    
+    // 自動最適化: WebP形式での複数サイズ生成
+    await generateOptimizedImages(localPath, dataType, baseName);
+    
     return `/image/download/${dataType}/${localFileName}`;
     
   } catch (error) {
     console.error(`  ❌ 画像ダウンロード失敗: ${error.message}`);
     return null;
   }
+}
+
+/**
+ * 最適化版画像が既に存在するかチェック
+ * @param {string} dataType - データタイプ
+ * @param {string} baseName - ベースファイル名
+ * @returns {Promise<boolean>} - 全ての最適化版が存在するかどうか
+ */
+async function checkOptimizedImagesExist(dataType, baseName) {
+  const saveDir = path.join(IMAGE_DOWNLOAD_DIR, dataType);
+  const sizes = ['sm', 'md', 'lg', 'xl'];
+  
+  try {
+    for (const suffix of sizes) {
+      const optimizedFileName = `${baseName}-${suffix}.webp`;
+      const optimizedPath = path.join(saveDir, optimizedFileName);
+      await fs.access(optimizedPath);
+    }
+    return true; // 全ての最適化版が存在
+  } catch {
+    return false; // 少なくとも一つは存在しない
+  }
+}
+
+/**
+ * 画像の自動最適化（複数サイズのWebP生成）
+ * @param {string} originalPath - 元画像のパス
+ * @param {string} dataType - データタイプ
+ * @param {string} baseName - ベースファイル名
+ */
+async function generateOptimizedImages(originalPath, dataType, baseName) {
+  try {
+    const saveDir = path.join(IMAGE_DOWNLOAD_DIR, dataType);
+    
+    // 最適化画像の設定
+    const sizes = [
+      { suffix: 'sm', width: 400, height: 300 },
+      { suffix: 'md', width: 800, height: 600 },
+      { suffix: 'lg', width: 1200, height: 900 },
+      { suffix: 'xl', width: 1600, height: 1200 }
+    ];
+    
+    console.log(`  🔄 画像最適化開始: ${baseName}`);
+    
+    for (const size of sizes) {
+      const optimizedFileName = `${baseName}-${size.suffix}.webp`;
+      const optimizedPath = path.join(saveDir, optimizedFileName);
+      
+      // 既に最適化画像が存在する場合はスキップ
+      try {
+        await fs.access(optimizedPath);
+        console.log(`    📷 最適化画像スキップ（既存）: ${optimizedFileName}`);
+        continue;
+      } catch {
+        // ファイルが存在しない場合は生成
+      }
+      
+      // Sharp を使用して最適化画像を生成
+      await sharp(originalPath)
+        .resize(size.width, size.height, {
+          fit: 'inside',
+          withoutEnlargement: true
+        })
+        .webp({
+          quality: 80,
+          effort: 4
+        })
+        .toFile(optimizedPath);
+      
+      console.log(`    ✅ 最適化画像生成: ${optimizedFileName}`);
+    }
+    
+    console.log(`  🎯 画像最適化完了: ${baseName}`);
+    
+  } catch (error) {
+    console.error(`  ❌ 画像最適化失敗: ${error.message}`);
+    // 最適化失敗しても元画像は使用可能なので続行
+  }
+}
+
+/**
+ * ブロックからテキストを抽出（NewsEntityの同じロジック）
+ */
+function extractTextFromBlocks(blocks) {
+  const textContent = [];
+  
+  for (const block of blocks) {
+    if (block.type === 'paragraph' && block.paragraph?.rich_text) {
+      textContent.push(...block.paragraph.rich_text);
+    } else if (block.type === 'heading_1' && block.heading_1?.rich_text) {
+      textContent.push(...block.heading_1.rich_text);
+    } else if (block.type === 'heading_2' && block.heading_2?.rich_text) {
+      textContent.push(...block.heading_2.rich_text);
+    } else if (block.type === 'heading_3' && block.heading_3?.rich_text) {
+      textContent.push(...block.heading_3.rich_text);
+    } else if (block.type === 'bulleted_list_item' && block.bulleted_list_item?.rich_text) {
+      textContent.push(...block.bulleted_list_item.rich_text);
+    } else if (block.type === 'numbered_list_item' && block.numbered_list_item?.rich_text) {
+      textContent.push(...block.numbered_list_item.rich_text);
+    }
+  }
+  
+  return textContent;
+}
+
+/**
+ * ニュースデータのフルコンテンツを取得
+ */
+async function loadFullContentForNews(item) {
+  try {
+    const blocks = await getBlocks(item.id);
+    const fullText = extractTextFromBlocks(blocks);
+    
+    console.log(`  📄 ${item.id}: ブロック数=${blocks.length}, 抽出テキスト数=${fullText.length}`);
+    
+    if (fullText && fullText.length > 0) {
+      const originalJaTextLength = item.properties.text?.rich_text?.length || 0;
+      const originalEnTextLength = item.properties.text_en?.rich_text?.length || 0;
+      
+      // 日本語のテキストプロパティをフルコンテンツで置換
+      if (fullText.length > originalJaTextLength) {
+        console.log(`  📄 ${item.id}: フルコンテンツ取得(JA) (${originalJaTextLength} → ${fullText.length}文)`);
+        item.properties.text.rich_text = fullText;
+      } else {
+        console.log(`  📄 ${item.id}: フルコンテンツなし(JA) - ブロック数 ${fullText.length} <= プロパティ数 ${originalJaTextLength}`);
+      }
+      
+      // 英語のテキストプロパティも同様に処理
+      if (fullText.length > originalEnTextLength) {
+        console.log(`  📄 ${item.id}: フルコンテンツ取得(EN) (${originalEnTextLength} → ${fullText.length}文)`);
+        item.properties.text_en.rich_text = fullText;
+      } else {
+        console.log(`  📄 ${item.id}: フルコンテンツなし(EN) - ブロック数 ${fullText.length} <= プロパティ数 ${originalEnTextLength}`);
+      }
+    } else {
+      console.log(`  📄 ${item.id}: ページブロックから有効なテキストが抽出されませんでした`);
+    }
+    
+    // レートリミット対策のため待機
+    await new Promise(resolve => setTimeout(resolve, dynamicDelay));
+    
+  } catch (error) {
+    console.warn(`⚠️ ${item.id}: フルコンテンツ取得失敗 - ${error.message}`);
+  }
+  
+  return item;
 }
 
 /**
@@ -103,7 +271,13 @@ async function processImagesInData(data, dataType) {
   const processedData = [];
   
   for (const item of data) {
-    const processedItem = { ...item };
+    let processedItem = { ...item };
+    
+    // ニュースデータの場合はフルコンテンツを取得
+    if (dataType === 'news') {
+      console.log(`📄 ニュースのフルコンテンツを取得中... (${data.indexOf(item) + 1}/${data.length})`);
+      processedItem = await loadFullContentForNews(processedItem);
+    }
     
     // プロパティを走査して画像を処理
     if (processedItem.properties) {

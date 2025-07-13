@@ -82,10 +82,7 @@ export default function ClassComponent({category, classes, locale="ja"}) {
                           baseName={item.image?.baseName || 'class'}
                           pagePath={item.image?.pagePath || 'class'}
                           alt={item.image?.alt || item.title}
-                          
-                          
-                          
-                          
+                          fill={true}
                           objectFit="cover"
                           className="rounded-lg shadow-md image-hover"
                         />

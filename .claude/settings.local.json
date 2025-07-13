@@ -53,7 +53,9 @@
       "Bash(time yarn build:*)",
       "Bash(yarn health:cache:*)",
       "Bash(yarn ci:test:*)",
-      "Bash(cat:*)"
+      "Bash(cat:*)",
+      "WebFetch(domain:tjschool.org)",
+      "Bash(gtimeout:*)"
     ],
     "deny": []
   }

@@ -57,28 +57,38 @@ const ImageOptimizer = ({
   // バックエンドで生成した複数サイズのうち、デフォルトとしてミディアムサイズ（md）の画像を使用します。
   // Next.jsのImageコンポーネントが、最適なサイズの画像を自動で選択してくれます。
   
-  // 複数の画像パスを試行する順序を定義
+  // 複数の画像パスを試行する順序を定義（最適化画像を優先、404回避）
   const imagePaths = [
-    `/image/download/${pagePath}/${baseName}-md.webp`,
-    `/image/download/${pagePath}/${baseName}.webp`,
-    `/image/download/${pagePath}/${baseName}-sm.webp`,
-    `/image/download/${pagePath}/${baseName}-lg.webp`,
-    `/image/download/${pagePath}/${baseName}-xl.webp`,
-    `/image/download/${pagePath}/${baseName}-md.jpg`,
-    `/image/download/${pagePath}/${baseName}.jpg`,
-    `/image/download/${pagePath}/${baseName}-md.jpeg`,
-    `/image/download/${pagePath}/${baseName}.jpeg`,
-    `/image/download/${pagePath}/${baseName}-md.png`,
+    // 1. 手動最適化済み画像を最優先（軽量・高品質）
+    `/image/download/${pagePath}/${baseName.replace(/^[a-f0-9-]+-/, '')}-md.webp`,
+    `/image/download/${pagePath}/${baseName.replace(/^[a-f0-9-]+-/, '')}-sm.webp`,
+    `/image/download/${pagePath}/${baseName.replace(/^[a-f0-9-]+-/, '')}-lg.webp`,
+    
+    // 2. Notionダウンロード画像（確実に存在）
     `/image/download/${pagePath}/${baseName}.png`,
-    `/image/${pagePath}/${baseName}.jpg`,
-    `/image/${pagePath}/${baseName}.jpeg`,
-    `/image/${pagePath}/${baseName}.png`,
-    `/image/${pagePath}/${baseName}.webp`,
-    `/image/blog/image1.jpeg`, // 最終フォールバック
-    `/image/logo.png` // 最終フォールバック
+    `/image/download/${pagePath}/${baseName}.jpg`, 
+    `/image/download/${pagePath}/${baseName}.JPG`,
+    `/image/download/${pagePath}/${baseName}.jpeg`,
+    `/image/download/${pagePath}/${baseName}.webp`,
+    
+    // 3. 従来パス（後方互換）
+    `/image/${pagePath}/${baseName.replace(/^[a-f0-9-]+-/, '')}.jpg`,
+    `/image/${pagePath}/${baseName.replace(/^[a-f0-9-]+-/, '')}.jpeg`,
+    `/image/${pagePath}/${baseName.replace(/^[a-f0-9-]+-/, '')}.png`,
+    `/image/${pagePath}/${baseName.replace(/^[a-f0-9-]+-/, '')}.webp`,
+    
+    // 4. 最終フォールバック（pagePath別）
+    ...(pagePath === 'staff' ? [
+      `/image/download/staff/profile-md.webp`,
+      `/image/download/staff/profile-sm.webp`,
+      `/image/download/staff/profile-lg.webp`,
+    ] : []),
+    `/image/blog/image1.jpeg`,
+    `/image/logo.png`
   ];
   
-  // 画像のフォールバック処理のためのstate
+  // 画像のフォールバック処理のためのstate（ユニークキーでキャッシュ改善）
+  const imageKey = `${pagePath}-${baseName}`;
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const imageSrc = imagePaths[currentImageIndex] || imagePaths[0];
 
@@ -108,6 +118,7 @@ const ImageOptimizer = ({
     return (
       <div className={`${containerClass} overflow-hidden ${className}`}>
         <Image
+          key={imageKey}
           src={imageSrc}
           alt={alt}
           priority={priority}
@@ -152,6 +163,7 @@ const ImageOptimizer = ({
 
   return (
     <Image
+      key={imageKey}
       src={imageSrc}
       alt={alt}
       priority={priority}
