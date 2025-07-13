@@ -1,0 +1,577 @@
+[
+  {
+    "object": "page",
+    "id": "10ea8c0e-cf8c-80bc-a73d-d20e096f2c0c",
+    "created_time": "2024-09-27T07:15:00.000Z",
+    "last_edited_time": "2024-10-01T15:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "10ba8c0e-cf8c-807b-a7c6-c7c9128d9770"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "en": {
+        "id": "%3Dxxv",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Minami Espinosa",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Minami Espinosa",
+            "href": null
+          }
+        ]
+      },
+      "position": {
+        "id": "dYWE",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "0edc6f0b-23bf-48bf-8dc0-ebb1ab476f92",
+            "name": "代表",
+            "color": "pink"
+          }
+        ]
+      },
+      "position_en": {
+        "id": "ttm%3D",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "f1d5383e-06d9-4a2f-a8f9-6801ec433076",
+            "name": "Co-Exective Director",
+            "color": "pink"
+          }
+        ]
+      },
+      "image": {
+        "id": "uiCC",
+        "type": "files",
+        "files": [
+          {
+            "name": "profile.jpg",
+            "type": "file",
+            "file": {
+              "url": "/image/download/directors/10ea8c0e-cf8c-80bc-a73d-d20e096f2c0c-profile.jpg",
+              "expiry_time": "2025-07-13T04:28:57.896Z"
+            }
+          }
+        ]
+      },
+      "ordering": {
+        "id": "%7DRAG",
+        "type": "number",
+        "number": 5
+      },
+      "name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "エスピノサ みなみ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "エスピノサ みなみ",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/10ea8c0ecf8c80bca73dd20e096f2c0c",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "10ba8c0e-cf8c-80e6-8546-c4d0fbbcdbf0",
+    "created_time": "2024-09-24T14:14:00.000Z",
+    "last_edited_time": "2024-10-01T15:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "10ba8c0e-cf8c-807b-a7c6-c7c9128d9770"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "en": {
+        "id": "%3Dxxv",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Hitomi McKnight",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Hitomi McKnight",
+            "href": null
+          }
+        ]
+      },
+      "position": {
+        "id": "dYWE",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "0edc6f0b-23bf-48bf-8dc0-ebb1ab476f92",
+            "name": "代表",
+            "color": "pink"
+          }
+        ]
+      },
+      "position_en": {
+        "id": "ttm%3D",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "f1d5383e-06d9-4a2f-a8f9-6801ec433076",
+            "name": "Co-Exective Director",
+            "color": "pink"
+          }
+        ]
+      },
+      "image": {
+        "id": "uiCC",
+        "type": "files",
+        "files": [
+          {
+            "name": "profile.jpg",
+            "type": "file",
+            "file": {
+              "url": "/image/download/directors/10ba8c0e-cf8c-80e6-8546-c4d0fbbcdbf0-profile.jpg",
+              "expiry_time": "2025-07-13T04:28:57.896Z"
+            }
+          }
+        ]
+      },
+      "ordering": {
+        "id": "%7DRAG",
+        "type": "number",
+        "number": 4
+      },
+      "name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "マックナイト ひとみ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "マックナイト ひとみ",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/10ba8c0ecf8c80e68546c4d0fbbcdbf0",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "12a4999b-cd97-4488-a688-6c398358c991",
+    "created_time": "2024-09-24T14:06:00.000Z",
+    "last_edited_time": "2024-10-01T15:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "10ba8c0e-cf8c-807b-a7c6-c7c9128d9770"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "en": {
+        "id": "%3Dxxv",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Yukari Katayama",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Yukari Katayama",
+            "href": null
+          }
+        ]
+      },
+      "position": {
+        "id": "dYWE",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "53d6f7f6-1995-4eb7-b0ad-aaa19feb50ed",
+            "name": "副理事",
+            "color": "blue"
+          }
+        ]
+      },
+      "position_en": {
+        "id": "ttm%3D",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "9e8d37f0-d9d3-41a2-8deb-6361dce9753e",
+            "name": "Vise-President",
+            "color": "brown"
+          }
+        ]
+      },
+      "image": {
+        "id": "uiCC",
+        "type": "files",
+        "files": [
+          {
+            "name": "profile.jpg",
+            "type": "file",
+            "file": {
+              "url": "/image/download/directors/12a4999b-cd97-4488-a688-6c398358c991-profile.jpg",
+              "expiry_time": "2025-07-13T04:28:57.896Z"
+            }
+          }
+        ]
+      },
+      "ordering": {
+        "id": "%7DRAG",
+        "type": "number",
+        "number": 3
+      },
+      "name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "片山 ゆかり",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "片山 ゆかり",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/12a4999bcd974488a6886c398358c991",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "2c933574-5423-431b-9564-9ac63cf02078",
+    "created_time": "2024-09-24T14:06:00.000Z",
+    "last_edited_time": "2024-10-01T15:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "10ba8c0e-cf8c-807b-a7c6-c7c9128d9770"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "en": {
+        "id": "%3Dxxv",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Magumi Rubin",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Magumi Rubin",
+            "href": null
+          }
+        ]
+      },
+      "position": {
+        "id": "dYWE",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "b0a6c056-2190-4edb-9d20-b22603550b47",
+            "name": "理事長",
+            "color": "red"
+          }
+        ]
+      },
+      "position_en": {
+        "id": "ttm%3D",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "c50cbdb2-ba76-4edc-8177-ce1cb9997b1d",
+            "name": "Chair of the Board",
+            "color": "red"
+          }
+        ]
+      },
+      "image": {
+        "id": "uiCC",
+        "type": "files",
+        "files": [
+          {
+            "name": "profile.jpg",
+            "type": "file",
+            "file": {
+              "url": "/image/download/directors/2c933574-5423-431b-9564-9ac63cf02078-profile.jpg",
+              "expiry_time": "2025-07-13T04:28:57.896Z"
+            }
+          }
+        ]
+      },
+      "ordering": {
+        "id": "%7DRAG",
+        "type": "number",
+        "number": 1
+      },
+      "name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ルービン めぐみ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "ルービン めぐみ",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/2c9335745423431b95649ac63cf02078",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "5d3b687e-5b75-4ffd-9791-fce782914f10",
+    "created_time": "2024-09-24T14:06:00.000Z",
+    "last_edited_time": "2024-10-01T15:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "10ba8c0e-cf8c-807b-a7c6-c7c9128d9770"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "en": {
+        "id": "%3Dxxv",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "David Kawabata",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "David Kawabata",
+            "href": null
+          }
+        ]
+      },
+      "position": {
+        "id": "dYWE",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "cae548b1-6105-4c5b-adad-cd6d0aa5e0dd",
+            "name": "書記",
+            "color": "yellow"
+          },
+          {
+            "id": "851f32fa-bb3b-41b2-aaa7-46b025fc3ff9",
+            "name": "会計",
+            "color": "purple"
+          }
+        ]
+      },
+      "position_en": {
+        "id": "ttm%3D",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "ac503d89-3abc-4ef4-9873-232141fd2cc5",
+            "name": "Secretary",
+            "color": "yellow"
+          },
+          {
+            "id": "4732f5c7-4679-49af-bb9b-8668f966eeb0",
+            "name": "Treasurer",
+            "color": "orange"
+          }
+        ]
+      },
+      "image": {
+        "id": "uiCC",
+        "type": "files",
+        "files": [
+          {
+            "name": "profile.jpg",
+            "type": "file",
+            "file": {
+              "url": "/image/download/directors/5d3b687e-5b75-4ffd-9791-fce782914f10-profile.jpg",
+              "expiry_time": "2025-07-13T04:28:57.896Z"
+            }
+          }
+        ]
+      },
+      "ordering": {
+        "id": "%7DRAG",
+        "type": "number",
+        "number": 2
+      },
+      "name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "川端 デイビット",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "川端 デイビット",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/5d3b687e5b754ffd9791fce782914f10",
+    "public_url": null
+  }
+]

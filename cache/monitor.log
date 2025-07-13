@@ -1,0 +1,3 @@
+{"timestamp":"2025-07-12T14:41:51.904Z","level":"info","message":"テスト用INFO アラート","details":{"test":true},"hostname":"unknown","branch":"local"}
+{"timestamp":"2025-07-12T14:41:51.906Z","level":"warning","message":"テスト用WARNING アラート","details":{"test":true},"hostname":"unknown","branch":"local"}
+{"timestamp":"2025-07-12T14:41:51.906Z","level":"error","message":"テスト用ERROR アラート","details":{"test":true},"hostname":"unknown","branch":"local"}

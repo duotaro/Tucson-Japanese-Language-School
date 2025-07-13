@@ -1,0 +1,253 @@
+name: 🚀 Deploy with Cache System
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main]
+  # 手動実行を許可
+  workflow_dispatch:
+    inputs:
+      cache_strategy:
+        description: 'キャッシュ更新戦略'
+        required: true
+        default: 'full'
+        type: choice
+        options:
+          - full
+          - frequent
+          - moderate
+          - rare
+
+env:
+  NODE_VERSION: '18'
+  YARN_VERSION: '4.2.2'
+
+jobs:
+  # キャッシュ更新ジョブ
+  cache-update:
+    name: 📦 Update Notion Cache
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    
+    outputs:
+      cache-updated: ${{ steps.cache-check.outputs.updated }}
+      cache-stats: ${{ steps.cache-stats.outputs.stats }}
+    
+    steps:
+      - name: 📥 Checkout code
+        uses: actions/checkout@v4
+        
+      - name: 📦 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          
+      - name: 📦 Setup Yarn
+        run: |
+          npm install -g yarn@${{ env.YARN_VERSION }}
+          yarn --version
+          
+      - name: 🔄 Cache node_modules
+        uses: actions/cache@v3
+        with:
+          path: |
+            node_modules
+            .yarn/cache
+          key: ${{ runner.os }}-yarn-${{ hashFiles('package.json', 'yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+            
+      - name: 📦 Install dependencies
+        run: yarn install --frozen-lockfile
+        
+      - name: 🔧 キャッシュディレクトリ準備
+        run: |
+          mkdir -p cache/notion-data
+          echo "キャッシュディレクトリを準備しました"
+          
+      - name: 📊 既存キャッシュ確認
+        id: cache-check
+        run: |
+          if [ -f "cache/metadata.json" ]; then
+            echo "existing-cache=true" >> $GITHUB_OUTPUT
+            echo "📋 既存キャッシュが見つかりました"
+            cat cache/metadata.json | jq '.lastUpdate // "未設定"' || echo "メタデータ読み込みエラー"
+          else
+            echo "existing-cache=false" >> $GITHUB_OUTPUT
+            echo "📋 既存キャッシュが見つかりません（初回実行）"
+          fi
+          
+      - name: 🔄 Notion キャッシュ更新
+        env:
+          NEXT_PUBLIC_NOTION_DATABASE_ID: ${{ secrets.NEXT_PUBLIC_NOTION_DATABASE_ID }}
+          NEXT_PUBLIC_NOTION_NEWS_DATABASE_ID: ${{ secrets.NEXT_PUBLIC_NOTION_NEWS_DATABASE_ID }}
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+        run: |
+          # 戦略を決定
+          if [ "${{ github.event.inputs.cache_strategy }}" != "" ]; then
+            STRATEGY="${{ github.event.inputs.cache_strategy }}"
+          elif [ "${{ github.ref }}" = "refs/heads/main" ]; then
+            STRATEGY="full"
+          elif [ "${{ github.ref }}" = "refs/heads/develop" ]; then
+            STRATEGY="moderate"
+          else
+            STRATEGY="frequent"
+          fi
+          
+          echo "🎯 キャッシュ更新戦略: $STRATEGY"
+          
+          # 環境変数が設定されているかチェック
+          if [ -z "$NOTION_TOKEN" ]; then
+            echo "⚠️ NOTION_TOKEN が設定されていません。モックデータを使用します。"
+            yarn cache:mock
+          else
+            case $STRATEGY in
+              "full")
+                echo "🔄 全データベース更新を実行..."
+                yarn cache:fetch-all
+                ;;
+              "frequent"|"moderate"|"rare")
+                echo "🔄 $STRATEGY 頻度での更新を実行..."
+                yarn cache:update:$STRATEGY
+                ;;
+              *)
+                echo "❌ 不明な戦略: $STRATEGY"
+                exit 1
+                ;;
+            esac
+          fi
+          
+      - name: 📊 キャッシュ統計表示
+        id: cache-stats
+        run: |
+          echo "📊 キャッシュ統計:"
+          yarn cache:stats || echo "統計取得でエラーが発生しました"
+          
+          # 統計をGitHub Outputに保存
+          if [ -f "cache/metadata.json" ]; then
+            STATS=$(cat cache/metadata.json | jq -c '.')
+            echo "stats=$STATS" >> $GITHUB_OUTPUT
+          fi
+          
+      - name: 💾 キャッシュファイルをアップロード
+        uses: actions/upload-artifact@v3
+        with:
+          name: notion-cache-${{ github.sha }}
+          path: |
+            cache/
+          retention-days: 7
+          
+  # ビルド＆デプロイジョブ
+  build-deploy:
+    name: 🏗️ Build & Deploy
+    runs-on: ubuntu-latest
+    needs: cache-update
+    timeout-minutes: 15
+    
+    steps:
+      - name: 📥 Checkout code
+        uses: actions/checkout@v4
+        
+      - name: 📦 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          
+      - name: 📦 Setup Yarn
+        run: |
+          npm install -g yarn@${{ env.YARN_VERSION }}
+          yarn --version
+          
+      - name: 🔄 Cache node_modules
+        uses: actions/cache@v3
+        with:
+          path: |
+            node_modules
+            .yarn/cache
+          key: ${{ runner.os }}-yarn-${{ hashFiles('package.json', 'yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+            
+      - name: 📦 Install dependencies
+        run: yarn install --frozen-lockfile
+        
+      - name: 📥 キャッシュファイルをダウンロード
+        uses: actions/download-artifact@v3
+        with:
+          name: notion-cache-${{ github.sha }}
+          path: ./
+          
+      - name: 🔍 ダウンロードしたキャッシュ確認
+        run: |
+          echo "📂 ダウンロードしたファイル:"
+          find cache/ -name "*.json" | head -5 || echo "キャッシュファイルが見つかりません"
+          
+          if [ -f "cache/metadata.json" ]; then
+            echo "📋 メタデータ確認:"
+            cat cache/metadata.json | jq '.lastUpdate, .databases | keys | length' || echo "メタデータ解析エラー"
+          fi
+          
+      - name: 🔧 Environment設定
+        run: |
+          echo "NODE_ENV=production" >> $GITHUB_ENV
+          echo "🔧 本番環境用設定を適用しました"
+          
+      - name: 🏗️ Next.js ビルド
+        run: |
+          echo "🏗️ Next.js ビルドを開始..."
+          echo "📊 ビルド前のキャッシュ状況:"
+          ls -la cache/notion-data/ | wc -l && echo "キャッシュファイル数"
+          
+          # メモリ使用量を制限してビルド実行
+          yarn build
+          
+          echo "✅ ビルドが完了しました"
+          
+      - name: 📊 ビルド結果確認
+        run: |
+          echo "📊 ビルド結果:"
+          if [ -d "out" ]; then
+            echo "✅ Static export 成功"
+            du -sh out/ || echo "サイズ測定エラー"
+            find out/ -name "*.html" | wc -l && echo "HTML ページ数"
+          else
+            echo "❌ Static export 失敗"
+            exit 1
+          fi
+          
+      - name: 🚀 Firebase Deploy (main branch)
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        run: |
+          echo "🚀 本番環境へのデプロイを開始..."
+          # Firebase CLI をインストールして実行
+          npm install -g firebase-tools
+          # firebase deploy --only hosting
+          echo "本番デプロイは実際のFirebase設定後に有効化してください"
+          
+      - name: 🚀 Development Deploy (develop branch)
+        if: github.ref == 'refs/heads/develop' && github.event_name == 'push'
+        run: |
+          echo "🧪 開発環境へのデプロイを開始..."
+          # 開発環境へのデプロイロジック
+          echo "開発デプロイは実際の環境設定後に有効化してください"
+          
+      - name: 📊 デプロイ結果レポート
+        if: always()
+        run: |
+          echo "## 🎯 デプロイ結果レポート" >> $GITHUB_STEP_SUMMARY
+          echo "| 項目 | 状況 |" >> $GITHUB_STEP_SUMMARY
+          echo "|------|------|" >> $GITHUB_STEP_SUMMARY
+          echo "| ブランチ | ${{ github.ref_name }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| コミット | ${{ github.sha }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| キャッシュ更新 | ${{ needs.cache-update.outputs.cache-updated || '未実行' }} |" >> $GITHUB_STEP_SUMMARY
+          
+          if [ -f "cache/metadata.json" ]; then
+            CACHE_COUNT=$(cat cache/metadata.json | jq '.databases | keys | length' 2>/dev/null || echo "N/A")
+            echo "| キャッシュファイル数 | $CACHE_COUNT |" >> $GITHUB_STEP_SUMMARY
+          fi
+          
+          if [ -d "out" ]; then
+            PAGE_COUNT=$(find out/ -name "*.html" | wc -l)
+            echo "| 生成ページ数 | $PAGE_COUNT |" >> $GITHUB_STEP_SUMMARY
+          fi

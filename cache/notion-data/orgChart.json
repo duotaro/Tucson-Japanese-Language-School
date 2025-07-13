@@ -1,0 +1,148 @@
+[
+  {
+    "object": "page",
+    "id": "7a5843cb-66c0-4555-b972-1ee1c3063962",
+    "created_time": "2024-09-25T09:16:00.000Z",
+    "last_edited_time": "2024-10-10T01:32:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "10ca8c0e-cf8c-8062-9eb3-ee7c40cf9005"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "image_en": {
+        "id": "AnK%3A",
+        "type": "files",
+        "files": [
+          {
+            "name": "governance_chart_en.jpg",
+            "type": "file",
+            "file": {
+              "url": "/image/download/orgChart/7a5843cb-66c0-4555-b972-1ee1c3063962-governance_chart_en.jpg",
+              "expiry_time": "2025-07-13T04:28:59.553Z"
+            }
+          }
+        ]
+      },
+      "en": {
+        "id": "BggW",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Governance Chart",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Governance Chart",
+            "href": null
+          }
+        ]
+      },
+      "text_en": {
+        "id": "OQjU",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Tucson Japanese Language School's Board of Directors oversees the school’s operation, provides guidance and advice, implements short and long-term plans, and carries out these plans in cooperation with faculty, staff, and volunteer parents for the school to pursue its mission and sustain as a healthy organization. The board of directors supports the operation team that runs the school daily.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Tucson Japanese Language School's Board of Directors oversees the school’s operation, provides guidance and advice, implements short and long-term plans, and carries out these plans in cooperation with faculty, staff, and volunteer parents for the school to pursue its mission and sustain as a healthy organization. The board of directors supports the operation team that runs the school daily.",
+            "href": null
+          }
+        ]
+      },
+      "image": {
+        "id": "zJ%3Cu",
+        "type": "files",
+        "files": [
+          {
+            "name": "governance_chart_ja.jpg",
+            "type": "file",
+            "file": {
+              "url": "/image/download/orgChart/7a5843cb-66c0-4555-b972-1ee1c3063962-governance_chart_ja.jpg",
+              "expiry_time": "2025-07-13T04:28:59.556Z"
+            }
+          }
+        ]
+      },
+      "text": {
+        "id": "%7Dp_r",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ツーソン日本語学校理事会は、創立理念の保持、学校運営の管理、指導、助言、また、短期、長期的計画を立案し、教職員、ボランティア父母と協力して実行し、本校が健全な運営を行えるように監視する役割を担い、日々の学校運営を行っているスタッフを支えます。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "ツーソン日本語学校理事会は、創立理念の保持、学校運営の管理、指導、助言、また、短期、長期的計画を立案し、教職員、ボランティア父母と協力して実行し、本校が健全な運営を行えるように監視する役割を担い、日々の学校運営を行っているスタッフを支えます。",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "運営組織図",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "運営組織図",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/7a5843cb66c04555b9721ee1c3063962",
+    "public_url": null
+  }
+]

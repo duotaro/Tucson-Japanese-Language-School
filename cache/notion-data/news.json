@@ -1,0 +1,5634 @@
+[
+  {
+    "object": "page",
+    "id": "112a8c0e-cf8c-80ca-af61-e30b24fd97a7",
+    "created_time": "2024-10-01T12:03:00.000Z",
+    "last_edited_time": "2024-10-01T12:16:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "cc0b1eb3-5708-42ba-926c-c71ecaf5df4d"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "date": {
+        "id": "ELB%5B",
+        "type": "date",
+        "date": {
+          "start": "2020-01-10",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "text": {
+        "id": "SSPK",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "補習校がツーソン祭りへ参加します！新年を祝うお祭りへみなさんぜひご参加ください。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "補習校がツーソン祭りへ参加します！新年を祝うお祭りへみなさんぜひご参加ください。",
+            "href": null
+          }
+        ]
+      },
+      "tags": {
+        "id": "%5DR%5BO",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "600b1fd2-9b5f-4c13-abec-8c7679cdfd6d",
+            "name": "announcement",
+            "color": "purple"
+          }
+        ]
+      },
+      "image": {
+        "id": "%5E%60%7DR",
+        "type": "files",
+        "files": [
+          {
+            "name": "mochipounding.jpeg",
+            "type": "file",
+            "file": {
+              "url": "/image/download/news/112a8c0e-cf8c-80ca-af61-e30b24fd97a7-mochipounding.jpeg",
+              "expiry_time": "2025-07-13T04:30:37.189Z"
+            }
+          }
+        ]
+      },
+      "text_en": {
+        "id": "aM%60q",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "We are hosting game room at Tucson Japanese Festival! Come enjoy Japanese new year celebrations! ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "We are hosting game room at Tucson Japanese Festival! Come enjoy Japanese new year celebrations! ",
+            "href": null
+          }
+        ]
+      },
+      "en": {
+        "id": "vck%3A",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "4th Annual Tucson Japanese Festival @TCCC",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "4th Annual Tucson Japanese Festival @TCCC",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "第4回ツーソン日本祭り",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "第4回ツーソン日本祭り",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/4-112a8c0ecf8c80caaf61e30b24fd97a7",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "112a8c0e-cf8c-8032-ab02-db04c52a7455",
+    "created_time": "2024-10-01T12:02:00.000Z",
+    "last_edited_time": "2024-10-01T12:06:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "cc0b1eb3-5708-42ba-926c-c71ecaf5df4d"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "date": {
+        "id": "ELB%5B",
+        "type": "date",
+        "date": {
+          "start": "2020-01-03",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "text": {
+        "id": "SSPK",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "あけましておめでとうございます。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "あけましておめでとうございます。",
+            "href": null
+          }
+        ]
+      },
+      "tags": {
+        "id": "%5DR%5BO",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "600b1fd2-9b5f-4c13-abec-8c7679cdfd6d",
+            "name": "announcement",
+            "color": "purple"
+          }
+        ]
+      },
+      "image": {
+        "id": "%5E%60%7DR",
+        "type": "files",
+        "files": [
+          {
+            "name": "2020newyear.webp",
+            "type": "file",
+            "file": {
+              "url": "/image/download/news/112a8c0e-cf8c-8032-ab02-db04c52a7455-2020newyear.webp",
+              "expiry_time": "2025-07-13T04:30:37.189Z"
+            }
+          }
+        ]
+      },
+      "text_en": {
+        "id": "aM%60q",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "We wish you a happy new year 2020!",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "We wish you a happy new year 2020!",
+            "href": null
+          }
+        ]
+      },
+      "en": {
+        "id": "vck%3A",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Happy New Year 2020！",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Happy New Year 2020！",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "謹賀新年",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "謹賀新年",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/112a8c0ecf8c8032ab02db04c52a7455",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "112a8c0e-cf8c-80ef-bc49-fe1172c9ce8f",
+    "created_time": "2024-10-01T11:58:00.000Z",
+    "last_edited_time": "2024-10-01T12:02:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "cc0b1eb3-5708-42ba-926c-c71ecaf5df4d"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "date": {
+        "id": "ELB%5B",
+        "type": "date",
+        "date": {
+          "start": "2020-05-08",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "text": {
+        "id": "SSPK",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "借用校の閉校が決定したため4月10日まで授業はキャンセルします。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "借用校の閉校が決定したため4月10日まで授業はキャンセルします。",
+            "href": null
+          }
+        ]
+      },
+      "tags": {
+        "id": "%5DR%5BO",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "600b1fd2-9b5f-4c13-abec-8c7679cdfd6d",
+            "name": "announcement",
+            "color": "purple"
+          }
+        ]
+      },
+      "image": {
+        "id": "%5E%60%7DR",
+        "type": "files",
+        "files": [
+          {
+            "name": "emptyschool.webp",
+            "type": "file",
+            "file": {
+              "url": "/image/download/news/112a8c0e-cf8c-80ef-bc49-fe1172c9ce8f-emptyschool.webp",
+              "expiry_time": "2025-07-13T04:30:37.189Z"
+            }
+          }
+        ]
+      },
+      "text_en": {
+        "id": "aM%60q",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "We are cancelling all classes until April 10th due to the closer of the rental facility. ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "We are cancelling all classes until April 10th due to the closer of the rental facility. ",
+            "href": null
+          }
+        ]
+      },
+      "en": {
+        "id": "vck%3A",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Response to COVID-19",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Response to COVID-19",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "コロナウイルス感染拡大の影響による今後の活動について",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "コロナウイルス感染拡大の影響による今後の活動について",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/112a8c0ecf8c80efbc49fe1172c9ce8f",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "112a8c0e-cf8c-80b7-b324-ea602066a777",
+    "created_time": "2024-10-01T11:54:00.000Z",
+    "last_edited_time": "2024-10-01T11:57:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "cc0b1eb3-5708-42ba-926c-c71ecaf5df4d"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "date": {
+        "id": "ELB%5B",
+        "type": "date",
+        "date": {
+          "start": "2020-07-01",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "text": {
+        "id": "SSPK",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "新学期に関するアップデートをお知らせします。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "新学期に関するアップデートをお知らせします。",
+            "href": null
+          }
+        ]
+      },
+      "tags": {
+        "id": "%5DR%5BO",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "600b1fd2-9b5f-4c13-abec-8c7679cdfd6d",
+            "name": "announcement",
+            "color": "purple"
+          }
+        ]
+      },
+      "image": {
+        "id": "%5E%60%7DR",
+        "type": "files",
+        "files": [
+          {
+            "name": "pandemicprevention.jpg",
+            "type": "file",
+            "file": {
+              "url": "/image/download/news/112a8c0e-cf8c-80b7-b324-ea602066a777-pandemicprevention.jpg",
+              "expiry_time": "2025-07-13T04:30:37.189Z"
+            }
+          }
+        ]
+      },
+      "text_en": {
+        "id": "aM%60q",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Here is update from our school about the new school year. ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Here is update from our school about the new school year. ",
+            "href": null
+          }
+        ]
+      },
+      "en": {
+        "id": "vck%3A",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "School Update 7/1/2020",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "School Update 7/1/2020",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "新学期授業再開について",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "新学期授業再開について",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/112a8c0ecf8c80b7b324ea602066a777",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "112a8c0e-cf8c-8093-b82c-cf686345f657",
+    "created_time": "2024-10-01T11:51:00.000Z",
+    "last_edited_time": "2024-10-01T11:54:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "cc0b1eb3-5708-42ba-926c-c71ecaf5df4d"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "date": {
+        "id": "ELB%5B",
+        "type": "date",
+        "date": {
+          "start": "2020-07-22",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "text": {
+        "id": "SSPK",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "補習校では予定していた始業式を8月8日にオンラインにて実施し、8月22日から校舎に対面授業を再開します。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "補習校では予定していた始業式を8月8日にオンラインにて実施し、8月22日から校舎に対面授業を再開します。",
+            "href": null
+          }
+        ]
+      },
+      "tags": {
+        "id": "%5DR%5BO",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "600b1fd2-9b5f-4c13-abec-8c7679cdfd6d",
+            "name": "announcement",
+            "color": "purple"
+          }
+        ]
+      },
+      "image": {
+        "id": "%5E%60%7DR",
+        "type": "files",
+        "files": [
+          {
+            "name": "emptyschool.webp",
+            "type": "file",
+            "file": {
+              "url": "/image/download/news/112a8c0e-cf8c-8093-b82c-cf686345f657-emptyschool.webp",
+              "expiry_time": "2025-07-13T04:30:37.189Z"
+            }
+          }
+        ]
+      },
+      "text_en": {
+        "id": "aM%60q",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Here is our opening plan as of July 22nd, 2020.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Here is our opening plan as of July 22nd, 2020.",
+            "href": null
+          }
+        ]
+      },
+      "en": {
+        "id": "vck%3A",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "School Update 7/22/2020",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "School Update 7/22/2020",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "補習校オープニングプラン",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "補習校オープニングプラン",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/112a8c0ecf8c8093b82ccf686345f657",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "112a8c0e-cf8c-8075-bdbf-cc1dfe962559",
+    "created_time": "2024-10-01T11:45:00.000Z",
+    "last_edited_time": "2024-10-01T11:49:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "cc0b1eb3-5708-42ba-926c-c71ecaf5df4d"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "date": {
+        "id": "ELB%5B",
+        "type": "date",
+        "date": {
+          "start": "2020-08-10",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "text": {
+        "id": "SSPK",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "補習校は8月22日からオンライン授業のみで再開することになりました。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "補習校は8月22日からオンライン授業のみで再開することになりました。",
+            "href": null
+          }
+        ]
+      },
+      "tags": {
+        "id": "%5DR%5BO",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "600b1fd2-9b5f-4c13-abec-8c7679cdfd6d",
+            "name": "announcement",
+            "color": "purple"
+          }
+        ]
+      },
+      "image": {
+        "id": "%5E%60%7DR",
+        "type": "files",
+        "files": [
+          {
+            "name": "remotelearningkid.webp",
+            "type": "file",
+            "file": {
+              "url": "/image/download/news/112a8c0e-cf8c-8075-bdbf-cc1dfe962559-remotelearningkid.webp",
+              "expiry_time": "2025-07-13T04:30:37.189Z"
+            }
+          }
+        ]
+      },
+      "text_en": {
+        "id": "aM%60q",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Japanese School has decided to start all the classes online from August 22nd.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Japanese School has decided to start all the classes online from August 22nd.",
+            "href": null
+          }
+        ]
+      },
+      "en": {
+        "id": "vck%3A",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "School Update 8/10/2020",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "School Update 8/10/2020",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "補習校オンライン授業で再開",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "補習校オンライン授業で再開",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/112a8c0ecf8c8075bdbfcc1dfe962559",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "112a8c0e-cf8c-80f1-b6b9-c101f6b58f00",
+    "created_time": "2024-10-01T11:44:00.000Z",
+    "last_edited_time": "2024-10-01T11:47:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "cc0b1eb3-5708-42ba-926c-c71ecaf5df4d"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "date": {
+        "id": "ELB%5B",
+        "type": "date",
+        "date": {
+          "start": "2020-08-31",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "text": {
+        "id": "SSPK",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "今月南アリゾナ日本文化振興会（以下SAJCC)から援助金を授与いただきました。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "今月南アリゾナ日本文化振興会（以下SAJCC)から援助金を授与いただきました。",
+            "href": null
+          }
+        ]
+      },
+      "tags": {
+        "id": "%5DR%5BO",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "5c3f5569-4d25-4886-973e-c2abf80c8f7e",
+            "name": "news",
+            "color": "blue"
+          }
+        ]
+      },
+      "image": {
+        "id": "%5E%60%7DR",
+        "type": "files",
+        "files": [
+          {
+            "name": "SAJCClogo.png",
+            "type": "file",
+            "file": {
+              "url": "/image/download/news/112a8c0e-cf8c-80f1-b6b9-c101f6b58f00-SAJCClogo.png",
+              "expiry_time": "2025-07-13T04:30:37.189Z"
+            }
+          }
+        ]
+      },
+      "text_en": {
+        "id": "aM%60q",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "We received a COVID-19 relief grant from Southern Arizona Japanese Cultural Coalition. We are touched by the act of kindness ❤️",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "We received a COVID-19 relief grant from Southern Arizona Japanese Cultural Coalition. We are touched by the act of kindness ❤️",
+            "href": null
+          }
+        ]
+      },
+      "en": {
+        "id": "vck%3A",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Covid-19 Relief Grant Award",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Covid-19 Relief Grant Award",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "SAJCCよりコロナウイルス援助金授与",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "SAJCCよりコロナウイルス援助金授与",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/SAJCC-112a8c0ecf8c80f1b6b9c101f6b58f00",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "112a8c0e-cf8c-80be-b5e6-e46c2c06d14c",
+    "created_time": "2024-10-01T11:37:00.000Z",
+    "last_edited_time": "2024-10-01T11:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "cc0b1eb3-5708-42ba-926c-c71ecaf5df4d"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "date": {
+        "id": "ELB%5B",
+        "type": "date",
+        "date": {
+          "start": "2020-09-01",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "text": {
+        "id": "SSPK",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "国際交流の盛んな愛知県安城市の市民ボランティアとコラボし、2020年9月より日本語/英語のランゲージエクスチェンジプログラムを発足します。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "国際交流の盛んな愛知県安城市の市民ボランティアとコラボし、2020年9月より日本語/英語のランゲージエクスチェンジプログラムを発足します。",
+            "href": null
+          }
+        ]
+      },
+      "tags": {
+        "id": "%5DR%5BO",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "600b1fd2-9b5f-4c13-abec-8c7679cdfd6d",
+            "name": "announcement",
+            "color": "purple"
+          }
+        ]
+      },
+      "image": {
+        "id": "%5E%60%7DR",
+        "type": "files",
+        "files": []
+      },
+      "text_en": {
+        "id": "aM%60q",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "We collaborate with volunteers from Anjo city, Aichi, Japan to start a new language learning program.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "We collaborate with volunteers from Anjo city, Aichi, Japan to start a new language learning program.",
+            "href": null
+          }
+        ]
+      },
+      "en": {
+        "id": "vck%3A",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Tucson Nihongo Cafe x Anjyo city volunteers",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Tucson Nihongo Cafe x Anjyo city volunteers",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "にほんごかふぇｘ安城市ボランティア",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "にほんごかふぇｘ安城市ボランティア",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/112a8c0ecf8c80beb5e6e46c2c06d14c",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "112a8c0e-cf8c-8034-8ce5-dced417d9e42",
+    "created_time": "2024-10-01T11:27:00.000Z",
+    "last_edited_time": "2024-10-01T11:38:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "cc0b1eb3-5708-42ba-926c-c71ecaf5df4d"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "date": {
+        "id": "ELB%5B",
+        "type": "date",
+        "date": {
+          "start": "2021-01-04",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "text": {
+        "id": "SSPK",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "明けましておめでとうございます。2020年は皆様の学校活動へのご協力ありがとうございました。本年もどうかよろしくお願いします。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "明けましておめでとうございます。2020年は皆様の学校活動へのご協力ありがとうございました。本年もどうかよろしくお願いします。",
+            "href": null
+          }
+        ]
+      },
+      "tags": {
+        "id": "%5DR%5BO",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "600b1fd2-9b5f-4c13-abec-8c7679cdfd6d",
+            "name": "announcement",
+            "color": "purple"
+          }
+        ]
+      },
+      "image": {
+        "id": "%5E%60%7DR",
+        "type": "files",
+        "files": [
+          {
+            "name": "newyear2021.jpg",
+            "type": "file",
+            "file": {
+              "url": "/image/download/news/112a8c0e-cf8c-8034-8ce5-dced417d9e42-newyear2021.jpg",
+              "expiry_time": "2025-07-13T04:30:37.189Z"
+            }
+          }
+        ]
+      },
+      "text_en": {
+        "id": "aM%60q",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Happy New Year! Thank you for all of your support in 2020.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Happy New Year! Thank you for all of your support in 2020.",
+            "href": null
+          }
+        ]
+      },
+      "en": {
+        "id": "vck%3A",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "New Year Greetings & School Update",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "New Year Greetings & School Update",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "新年のご挨拶と新学期動向",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "新年のご挨拶と新学期動向",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/112a8c0ecf8c80348ce5dced417d9e42",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "112a8c0e-cf8c-802e-9036-c481d58ca391",
+    "created_time": "2024-10-01T11:25:00.000Z",
+    "last_edited_time": "2024-10-01T11:28:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "cc0b1eb3-5708-42ba-926c-c71ecaf5df4d"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "date": {
+        "id": "ELB%5B",
+        "type": "date",
+        "date": {
+          "start": "2021-02-13",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "text": {
+        "id": "SSPK",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "先日土曜日に無事2020年度漢字検定を会場実施することができました。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "先日土曜日に無事2020年度漢字検定を会場実施することができました。",
+            "href": null
+          }
+        ]
+      },
+      "tags": {
+        "id": "%5DR%5BO",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "83a44d44-c539-4f88-82e0-4b36bfb5e6c7",
+            "name": "kanji_kentei",
+            "color": "orange"
+          },
+          {
+            "id": "600b1fd2-9b5f-4c13-abec-8c7679cdfd6d",
+            "name": "announcement",
+            "color": "purple"
+          }
+        ]
+      },
+      "image": {
+        "id": "%5E%60%7DR",
+        "type": "files",
+        "files": [
+          {
+            "name": "kanjikentei2020.webp",
+            "type": "file",
+            "file": {
+              "url": "/image/download/news/112a8c0e-cf8c-802e-9036-c481d58ca391-kanjikentei2020.webp",
+              "expiry_time": "2025-07-13T04:30:37.189Z"
+            }
+          }
+        ]
+      },
+      "text_en": {
+        "id": "aM%60q",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "In view of the Covid pandemic, the Kanji Kentei was held amid strict precautions for 10 examinees in person on Saturday! ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "In view of the Covid pandemic, the Kanji Kentei was held amid strict precautions for 10 examinees in person on Saturday! ",
+            "href": null
+          }
+        ]
+      },
+      "en": {
+        "id": "vck%3A",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Japanese School holds Kanji Kentei amid coronavirus",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Japanese School holds Kanji Kentei amid coronavirus",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "2020年度漢検無事終了",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "2020年度漢検無事終了",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/2020-112a8c0ecf8c802e9036c481d58ca391",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "112a8c0e-cf8c-8063-bbb4-da44890294de",
+    "created_time": "2024-10-01T11:12:00.000Z",
+    "last_edited_time": "2024-10-01T11:22:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "cc0b1eb3-5708-42ba-926c-c71ecaf5df4d"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "date": {
+        "id": "ELB%5B",
+        "type": "date",
+        "date": {
+          "start": "2021-03-08",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "text": {
+        "id": "SSPK",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ツーソン補習校は今学期の残りの授業をすべてオンラインで行う決定をいたしました。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "ツーソン補習校は今学期の残りの授業をすべてオンラインで行う決定をいたしました。",
+            "href": null
+          }
+        ]
+      },
+      "tags": {
+        "id": "%5DR%5BO",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "600b1fd2-9b5f-4c13-abec-8c7679cdfd6d",
+            "name": "announcement",
+            "color": "purple"
+          }
+        ]
+      },
+      "image": {
+        "id": "%5E%60%7DR",
+        "type": "files",
+        "files": [
+          {
+            "name": "boystudyonline.jpg",
+            "type": "file",
+            "file": {
+              "url": "/image/download/news/112a8c0e-cf8c-8063-bbb4-da44890294de-boystudyonline.jpg",
+              "expiry_time": "2025-07-13T04:30:37.189Z"
+            }
+          }
+        ]
+      },
+      "text_en": {
+        "id": "aM%60q",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "We have decided to continue online learning for the rest of the semester.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "We have decided to continue online learning for the rest of the semester.",
+            "href": null
+          }
+        ]
+      },
+      "en": {
+        "id": "vck%3A",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Remote Learning to be continued....",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Remote Learning to be continued....",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "オンライン授業継続決定",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "オンライン授業継続決定",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/112a8c0ecf8c8063bbb4da44890294de",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "112a8c0e-cf8c-8069-8e70-c39caa81b7b6",
+    "created_time": "2024-10-01T11:05:00.000Z",
+    "last_edited_time": "2024-10-01T11:24:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "cc0b1eb3-5708-42ba-926c-c71ecaf5df4d"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "date": {
+        "id": "ELB%5B",
+        "type": "date",
+        "date": {
+          "start": "2021-07-01",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "text": {
+        "id": "SSPK",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "補習校では、新年度から一緒に日本語と日本文化を学ぶ仲間を募集しています。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "補習校では、新年度から一緒に日本語と日本文化を学ぶ仲間を募集しています。",
+            "href": null
+          }
+        ]
+      },
+      "tags": {
+        "id": "%5DR%5BO",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "600b1fd2-9b5f-4c13-abec-8c7679cdfd6d",
+            "name": "announcement",
+            "color": "purple"
+          },
+          {
+            "id": "9062e3c7-6d08-46f9-9191-fbbe0074155a",
+            "name": "Enrollment",
+            "color": "green"
+          }
+        ]
+      },
+      "image": {
+        "id": "%5E%60%7DR",
+        "type": "files",
+        "files": [
+          {
+            "name": "schoolchairtable.webp",
+            "type": "file",
+            "file": {
+              "url": "/image/download/news/112a8c0e-cf8c-8069-8e70-c39caa81b7b6-schoolchairtable.webp",
+              "expiry_time": "2025-07-13T04:30:37.189Z"
+            }
+          }
+        ]
+      },
+      "text_en": {
+        "id": "aM%60q",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Do you want to learn Japanese? Sign up for our Japanese programs now!",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Do you want to learn Japanese? Sign up for our Japanese programs now!",
+            "href": null
+          }
+        ]
+      },
+      "en": {
+        "id": "vck%3A",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "2021 ENROLLMENT HAS BEGAN!!!",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "2021 ENROLLMENT HAS BEGAN!!!",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "2021年度新規入学者募集開始！",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "2021年度新規入学者募集開始！",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/2021-112a8c0ecf8c80698e70c39caa81b7b6",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "112a8c0e-cf8c-8047-9797-e58ca59ecd54",
+    "created_time": "2024-10-01T11:01:00.000Z",
+    "last_edited_time": "2024-10-01T11:05:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "cc0b1eb3-5708-42ba-926c-c71ecaf5df4d"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "date": {
+        "id": "ELB%5B",
+        "type": "date",
+        "date": {
+          "start": "2021-10-09",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "text": {
+        "id": "SSPK",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "みんなが楽しみにしている運動会が戻ってきます！！",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "みんなが楽しみにしている運動会が戻ってきます！！",
+            "href": null
+          }
+        ]
+      },
+      "tags": {
+        "id": "%5DR%5BO",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "600b1fd2-9b5f-4c13-abec-8c7679cdfd6d",
+            "name": "announcement",
+            "color": "purple"
+          }
+        ]
+      },
+      "image": {
+        "id": "%5E%60%7DR",
+        "type": "files",
+        "files": [
+          {
+            "name": "tucsonundokai2020.webp",
+            "type": "file",
+            "file": {
+              "url": "/image/download/news/112a8c0e-cf8c-8047-9797-e58ca59ecd54-tucsonundokai2020.webp",
+              "expiry_time": "2025-07-13T04:30:37.189Z"
+            }
+          }
+        ]
+      },
+      "text_en": {
+        "id": "aM%60q",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "We are inviting you to our 7th Annual Sports Day. ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "We are inviting you to our 7th Annual Sports Day. ",
+            "href": null
+          }
+        ]
+      },
+      "en": {
+        "id": "vck%3A",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "The Annual Sports Day is Back!!",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "The Annual Sports Day is Back!!",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "第７回運動会開催のお知らせ",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "第７回運動会開催のお知らせ",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/112a8c0ecf8c80479797e58ca59ecd54",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "112a8c0e-cf8c-8027-968c-e601184cc884",
+    "created_time": "2024-10-01T10:57:00.000Z",
+    "last_edited_time": "2024-10-01T11:24:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "cc0b1eb3-5708-42ba-926c-c71ecaf5df4d"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "date": {
+        "id": "ELB%5B",
+        "type": "date",
+        "date": {
+          "start": "2022-02-04",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "text": {
+        "id": "SSPK",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "コロナウイルス感染拡大の心配が続く中、徹底した感染予防対策ととり、1月下旬に無事2021年度漢字検定を会場実施することができました。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "コロナウイルス感染拡大の心配が続く中、徹底した感染予防対策ととり、1月下旬に無事2021年度漢字検定を会場実施することができました。",
+            "href": null
+          }
+        ]
+      },
+      "tags": {
+        "id": "%5DR%5BO",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "83a44d44-c539-4f88-82e0-4b36bfb5e6c7",
+            "name": "kanji_kentei",
+            "color": "orange"
+          },
+          {
+            "id": "600b1fd2-9b5f-4c13-abec-8c7679cdfd6d",
+            "name": "announcement",
+            "color": "purple"
+          }
+        ]
+      },
+      "image": {
+        "id": "%5E%60%7DR",
+        "type": "files",
+        "files": [
+          {
+            "name": "kanken2022.webp",
+            "type": "file",
+            "file": {
+              "url": "/image/download/news/112a8c0e-cf8c-8027-968c-e601184cc884-kanken2022.webp",
+              "expiry_time": "2025-07-13T04:30:37.189Z"
+            }
+          }
+        ]
+      },
+      "text_en": {
+        "id": "aM%60q",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "In view of the pandemic, the Kanji Kentei was held amid strict precautions for 15 examinees in person in January.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "In view of the pandemic, the Kanji Kentei was held amid strict precautions for 15 examinees in person in January.",
+            "href": null
+          }
+        ]
+      },
+      "en": {
+        "id": "vck%3A",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "2021 Kanken",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "2021 Kanken",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "2021年度漢字検定無事終了",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "2021年度漢字検定無事終了",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/2021-112a8c0ecf8c8027968ce601184cc884",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "112a8c0e-cf8c-80f5-8b6d-ce0e28639bcd",
+    "created_time": "2024-10-01T10:47:00.000Z",
+    "last_edited_time": "2024-10-01T10:57:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "cc0b1eb3-5708-42ba-926c-c71ecaf5df4d"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "date": {
+        "id": "ELB%5B",
+        "type": "date",
+        "date": {
+          "start": "2022-05-21",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "text": {
+        "id": "SSPK",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "今学期は学芸会の代わりに”お楽しみ会”で最終日を締めくくり無事終業式を迎えました。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "今学期は学芸会の代わりに”お楽しみ会”で最終日を締めくくり無事終業式を迎えました。",
+            "href": null
+          }
+        ]
+      },
+      "tags": {
+        "id": "%5DR%5BO",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "5c3f5569-4d25-4886-973e-c2abf80c8f7e",
+            "name": "news",
+            "color": "blue"
+          }
+        ]
+      },
+      "image": {
+        "id": "%5E%60%7DR",
+        "type": "files",
+        "files": [
+          {
+            "name": "lastdayofschool2021.jpg",
+            "type": "file",
+            "file": {
+              "url": "/image/download/news/112a8c0e-cf8c-80f5-8b6d-ce0e28639bcd-lastdayofschool2021.jpg",
+              "expiry_time": "2025-07-13T04:30:37.189Z"
+            }
+          }
+        ]
+      },
+      "text_en": {
+        "id": "aM%60q",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "We held \"Japanese Culture Day\" to wrap up our school year last Saturday. ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "We held \"Japanese Culture Day\" to wrap up our school year last Saturday. ",
+            "href": null
+          }
+        ]
+      },
+      "en": {
+        "id": "vck%3A",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Last Day of School 2021-2022",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Last Day of School 2021-2022",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "最終日は「お楽しみ会」で終了！",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "最終日は「お楽しみ会」で終了！",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/112a8c0ecf8c80f58b6dce0e28639bcd",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "112a8c0e-cf8c-8033-ac6e-fc3d0614a4d0",
+    "created_time": "2024-10-01T10:44:00.000Z",
+    "last_edited_time": "2024-10-01T10:49:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "cc0b1eb3-5708-42ba-926c-c71ecaf5df4d"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "date": {
+        "id": "ELB%5B",
+        "type": "date",
+        "date": {
+          "start": "2022-11-04",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "text": {
+        "id": "SSPK",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "2023 年1月 28日(土) に実施される漢字検定の申し込みを開始しました。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "2023 年1月 28日(土) に実施される漢字検定の申し込みを開始しました。",
+            "href": null
+          }
+        ]
+      },
+      "tags": {
+        "id": "%5DR%5BO",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "600b1fd2-9b5f-4c13-abec-8c7679cdfd6d",
+            "name": "announcement",
+            "color": "purple"
+          }
+        ]
+      },
+      "image": {
+        "id": "%5E%60%7DR",
+        "type": "files",
+        "files": [
+          {
+            "name": "kanjikenteilogo.jpg",
+            "type": "file",
+            "file": {
+              "url": "/image/download/news/112a8c0e-cf8c-8033-ac6e-fc3d0614a4d0-kanjikenteilogo.jpg",
+              "expiry_time": "2025-07-13T04:30:37.189Z"
+            }
+          }
+        ]
+      },
+      "text_en": {
+        "id": "aM%60q",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "2023 Kanji Kentei Registration Begin",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "2023 Kanji Kentei Registration Begin",
+            "href": null
+          }
+        ]
+      },
+      "en": {
+        "id": "vck%3A",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "2023 Kanji Kentei Registration Begin",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "2023 Kanji Kentei Registration Begin",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "漢字検定申し込み開始！",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "漢字検定申し込み開始！",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/112a8c0ecf8c8033ac6efc3d0614a4d0",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "112a8c0e-cf8c-800f-abed-e7a03eae0e70",
+    "created_time": "2024-10-01T10:37:00.000Z",
+    "last_edited_time": "2024-10-01T10:49:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "cc0b1eb3-5708-42ba-926c-c71ecaf5df4d"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "date": {
+        "id": "ELB%5B",
+        "type": "date",
+        "date": {
+          "start": "2022-06-27",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "text": {
+        "id": "SSPK",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "マックナイト先生がピマ郡図書館のインタビューを受け、ブログに記事として掲載されました！",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "マックナイト先生がピマ郡図書館のインタビューを受け、ブログに記事として掲載されました！",
+            "href": null
+          }
+        ]
+      },
+      "tags": {
+        "id": "%5DR%5BO",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "5c3f5569-4d25-4886-973e-c2abf80c8f7e",
+            "name": "news",
+            "color": "blue"
+          }
+        ]
+      },
+      "image": {
+        "id": "%5E%60%7DR",
+        "type": "files",
+        "files": [
+          {
+            "name": "hitomimcknight.webp",
+            "type": "file",
+            "file": {
+              "url": "/image/download/news/112a8c0e-cf8c-800f-abed-e7a03eae0e70-hitomimcknight.webp",
+              "expiry_time": "2025-07-13T04:30:37.189Z"
+            }
+          }
+        ]
+      },
+      "text_en": {
+        "id": "aM%60q",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "A librarian from Pima county library visited our school and interviewed our director Hitomi McKnight.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "A librarian from Pima county library visited our school and interviewed our director Hitomi McKnight.",
+            "href": null
+          }
+        ]
+      },
+      "en": {
+        "id": "vck%3A",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "TJLS is featured in Pima County Library Blog!",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "TJLS is featured in Pima County Library Blog!",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "補習校にスポットライト！",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "補習校にスポットライト！",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/112a8c0ecf8c800fabede7a03eae0e70",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "112a8c0e-cf8c-8033-8993-dd0d3afd1728",
+    "created_time": "2024-10-01T10:23:00.000Z",
+    "last_edited_time": "2024-10-01T11:24:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "cc0b1eb3-5708-42ba-926c-c71ecaf5df4d"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "date": {
+        "id": "ELB%5B",
+        "type": "date",
+        "date": {
+          "start": "2022-07-01",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "text": {
+        "id": "SSPK",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "８月６日土曜日より補習校の授業が今年も対面式で始まります。入学を検討している方はお早めにご連絡下さい。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "８月６日土曜日より補習校の授業が今年も対面式で始まります。入学を検討している方はお早めにご連絡下さい。",
+            "href": null
+          }
+        ]
+      },
+      "tags": {
+        "id": "%5DR%5BO",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "600b1fd2-9b5f-4c13-abec-8c7679cdfd6d",
+            "name": "announcement",
+            "color": "purple"
+          },
+          {
+            "id": "9062e3c7-6d08-46f9-9191-fbbe0074155a",
+            "name": "Enrollment",
+            "color": "green"
+          }
+        ]
+      },
+      "image": {
+        "id": "%5E%60%7DR",
+        "type": "files",
+        "files": [
+          {
+            "name": "schoolchildrensmiles.webp",
+            "type": "file",
+            "file": {
+              "url": "/image/download/news/112a8c0e-cf8c-8033-8993-dd0d3afd1728-schoolchildrensmiles.webp",
+              "expiry_time": "2025-07-13T04:30:37.189Z"
+            }
+          }
+        ]
+      },
+      "text_en": {
+        "id": "aM%60q",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "We are kicking off our new school year in person again with precautions to protect everyone from COVID-19. Enroll now!",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "We are kicking off our new school year in person again with precautions to protect everyone from COVID-19. Enroll now!",
+            "href": null
+          }
+        ]
+      },
+      "en": {
+        "id": "vck%3A",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "School year 2022-2023 is starting!",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "School year 2022-2023 is starting!",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "新学期がはじまります！",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "新学期がはじまります！",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/112a8c0ecf8c80338993dd0d3afd1728",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "112a8c0e-cf8c-800a-83bb-f34240a26317",
+    "created_time": "2024-10-01T10:18:00.000Z",
+    "last_edited_time": "2024-10-01T10:26:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "cc0b1eb3-5708-42ba-926c-c71ecaf5df4d"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "date": {
+        "id": "ELB%5B",
+        "type": "date",
+        "date": {
+          "start": "2022-08-06",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "text": {
+        "id": "SSPK",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "今年で開校８年目を迎えるツーソン日本語補習校は、新年度も昨年度に引き続き感染症対策に注意を払いながら、8月6日に対面式で始業式を迎えることができました。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "今年で開校８年目を迎えるツーソン日本語補習校は、新年度も昨年度に引き続き感染症対策に注意を払いながら、8月6日に対面式で始業式を迎えることができました。",
+            "href": null
+          }
+        ]
+      },
+      "tags": {
+        "id": "%5DR%5BO",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "600b1fd2-9b5f-4c13-abec-8c7679cdfd6d",
+            "name": "announcement",
+            "color": "purple"
+          }
+        ]
+      },
+      "image": {
+        "id": "%5E%60%7DR",
+        "type": "files",
+        "files": [
+          {
+            "name": "childreninclassroom.webp",
+            "type": "file",
+            "file": {
+              "url": "/image/download/news/112a8c0e-cf8c-800a-83bb-f34240a26317-childreninclassroom.webp",
+              "expiry_time": "2025-07-13T04:30:37.190Z"
+            }
+          }
+        ]
+      },
+      "text_en": {
+        "id": "aM%60q",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "We invite you to become one of our 2022 sponsors, and our annual report is here!",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "We invite you to become one of our 2022 sponsors, and our annual report is here!",
+            "href": null
+          }
+        ]
+      },
+      "en": {
+        "id": "vck%3A",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "2022-2023 Sponsorship opportunity!",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "2022-2023 Sponsorship opportunity!",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "2021年度年間報告＆2022年度協賛のお誘い",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "2021年度年間報告＆2022年度協賛のお誘い",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/2021-2022-112a8c0ecf8c800a83bbf34240a26317",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "112a8c0e-cf8c-80f9-9a0d-cb47c5c91e9c",
+    "created_time": "2024-10-01T10:11:00.000Z",
+    "last_edited_time": "2024-10-01T11:24:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "cc0b1eb3-5708-42ba-926c-c71ecaf5df4d"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "date": {
+        "id": "ELB%5B",
+        "type": "date",
+        "date": {
+          "start": "2022-10-07",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "text": {
+        "id": "SSPK",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "第8回運動会開催のお知らせです。ぜひご参加ください。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "第8回運動会開催のお知らせです。ぜひご参加ください。",
+            "href": null
+          }
+        ]
+      },
+      "tags": {
+        "id": "%5DR%5BO",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "600b1fd2-9b5f-4c13-abec-8c7679cdfd6d",
+            "name": "announcement",
+            "color": "purple"
+          },
+          {
+            "id": "d828ae0b-61ac-4a9f-9196-d7469b1352f8",
+            "name": "event",
+            "color": "pink"
+          }
+        ]
+      },
+      "image": {
+        "id": "%5E%60%7DR",
+        "type": "files",
+        "files": [
+          {
+            "name": "tucsonundokai2021.webp",
+            "type": "file",
+            "file": {
+              "url": "/image/download/news/112a8c0e-cf8c-80f9-9a0d-cb47c5c91e9c-tucsonundokai2021.webp",
+              "expiry_time": "2025-07-13T04:30:37.190Z"
+            }
+          }
+        ]
+      },
+      "text_en": {
+        "id": "aM%60q",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Tucson Japanese Language School would like to invite you to the 8th Annual Sports Day.  ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Tucson Japanese Language School would like to invite you to the 8th Annual Sports Day.  ",
+            "href": null
+          }
+        ]
+      },
+      "en": {
+        "id": "vck%3A",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Annoucement for 8th Annual Sports Day",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Annoucement for 8th Annual Sports Day",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "第８回運動会のお知らせ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "第８回運動会のお知らせ",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/112a8c0ecf8c80f99a0dcb47c5c91e9c",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "112a8c0e-cf8c-8081-9293-cf90f6aefa52",
+    "created_time": "2024-10-01T10:07:00.000Z",
+    "last_edited_time": "2024-10-01T10:13:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "cc0b1eb3-5708-42ba-926c-c71ecaf5df4d"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "date": {
+        "id": "ELB%5B",
+        "type": "date",
+        "date": {
+          "start": "2022-10-22",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "text": {
+        "id": "SSPK",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "2022年度前期の授業も半ばを過ぎようとしています。この場も持ちまして、本年度協賛いただいています協賛者様に深く御礼を申し上げます。\n\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "2022年度前期の授業も半ばを過ぎようとしています。この場も持ちまして、本年度協賛いただいています協賛者様に深く御礼を申し上げます。\n\n",
+            "href": null
+          }
+        ]
+      },
+      "tags": {
+        "id": "%5DR%5BO",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "600b1fd2-9b5f-4c13-abec-8c7679cdfd6d",
+            "name": "announcement",
+            "color": "purple"
+          }
+        ]
+      },
+      "image": {
+        "id": "%5E%60%7DR",
+        "type": "files",
+        "files": [
+          {
+            "name": "sponsorthanks.webp",
+            "type": "file",
+            "file": {
+              "url": "/image/download/news/112a8c0e-cf8c-8081-9293-cf90f6aefa52-sponsorthanks.webp",
+              "expiry_time": "2025-07-13T04:30:37.190Z"
+            }
+          }
+        ]
+      },
+      "text_en": {
+        "id": "aM%60q",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "We would like to give huge thanks to our sponsors this year!!",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "We would like to give huge thanks to our sponsors this year!!",
+            "href": null
+          }
+        ]
+      },
+      "en": {
+        "id": "vck%3A",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "HUGE thanks to 2022 Sponsors",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "HUGE thanks to 2022 Sponsors",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "2022年度協賛者様に感謝！！！",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "2022年度協賛者様に感謝！！！",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/2022-112a8c0ecf8c80819293cf90f6aefa52",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "112a8c0e-cf8c-8081-ba97-ef38f356233d",
+    "created_time": "2024-10-01T10:04:00.000Z",
+    "last_edited_time": "2024-10-01T11:24:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "cc0b1eb3-5708-42ba-926c-c71ecaf5df4d"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "date": {
+        "id": "ELB%5B",
+        "type": "date",
+        "date": {
+          "start": "2023-02-04",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "text": {
+        "id": "SSPK",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "今年も無事漢字検定が終了しました！",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "今年も無事漢字検定が終了しました！",
+            "href": null
+          }
+        ]
+      },
+      "tags": {
+        "id": "%5DR%5BO",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "5c3f5569-4d25-4886-973e-c2abf80c8f7e",
+            "name": "news",
+            "color": "blue"
+          },
+          {
+            "id": "83a44d44-c539-4f88-82e0-4b36bfb5e6c7",
+            "name": "kanji_kentei",
+            "color": "orange"
+          }
+        ]
+      },
+      "image": {
+        "id": "%5E%60%7DR",
+        "type": "files",
+        "files": [
+          {
+            "name": "kanjikentei2023.webp",
+            "type": "file",
+            "file": {
+              "url": "/image/download/news/112a8c0e-cf8c-8081-ba97-ef38f356233d-kanjikentei2023.webp",
+              "expiry_time": "2025-07-13T04:30:37.190Z"
+            }
+          }
+        ]
+      },
+      "text_en": {
+        "id": "aM%60q",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "This year's Kanji Kentei was conducted on January 28th! ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "This year's Kanji Kentei was conducted on January 28th! ",
+            "href": null
+          }
+        ]
+      },
+      "en": {
+        "id": "vck%3A",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Kanji Kentei 2023",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Kanji Kentei 2023",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "漢字検定無事終了",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "漢字検定無事終了",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/112a8c0ecf8c8081ba97ef38f356233d",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "110a8c0e-cf8c-80cc-9cd5-f9546949b571",
+    "created_time": "2024-09-29T06:49:00.000Z",
+    "last_edited_time": "2024-09-29T06:57:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "cc0b1eb3-5708-42ba-926c-c71ecaf5df4d"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "date": {
+        "id": "ELB%5B",
+        "type": "date",
+        "date": {
+          "start": "2023-03-01",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "text": {
+        "id": "SSPK",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "今学期上級クラスが俳句に取り組み、各作品がアリゾナ祭りへ出品されました",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "今学期上級クラスが俳句に取り組み、各作品がアリゾナ祭りへ出品されました",
+            "href": null
+          }
+        ]
+      },
+      "tags": {
+        "id": "%5DR%5BO",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "5c3f5569-4d25-4886-973e-c2abf80c8f7e",
+            "name": "news",
+            "color": "blue"
+          }
+        ]
+      },
+      "image": {
+        "id": "%5E%60%7DR",
+        "type": "files",
+        "files": [
+          {
+            "name": "arizonamatsurilogo.png",
+            "type": "file",
+            "file": {
+              "url": "/image/download/news/110a8c0e-cf8c-80cc-9cd5-f9546949b571-arizonamatsurilogo.png",
+              "expiry_time": "2025-07-13T04:30:37.190Z"
+            }
+          }
+        ]
+      },
+      "text_en": {
+        "id": "aM%60q",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Upper-class students worked on Haiku in the class",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Upper-class students worked on Haiku in the class",
+            "href": null
+          }
+        ]
+      },
+      "en": {
+        "id": "vck%3A",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "2023 Haiku Expo Winner",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "2023 Haiku Expo Winner",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "アリゾナ祭り俳句EXPO",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "アリゾナ祭り俳句EXPO",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/EXPO-110a8c0ecf8c80cc9cd5f9546949b571",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "110a8c0e-cf8c-80dd-afcb-f422b241bd32",
+    "created_time": "2024-09-29T06:44:00.000Z",
+    "last_edited_time": "2024-09-29T06:53:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "cc0b1eb3-5708-42ba-926c-c71ecaf5df4d"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "date": {
+        "id": "ELB%5B",
+        "type": "date",
+        "date": {
+          "start": "2023-09-01",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "text": {
+        "id": "SSPK",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "2023年度協賛金募集の募集を開始しました。ご協力お願いします。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "2023年度協賛金募集の募集を開始しました。ご協力お願いします。",
+            "href": null
+          }
+        ]
+      },
+      "tags": {
+        "id": "%5DR%5BO",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "600b1fd2-9b5f-4c13-abec-8c7679cdfd6d",
+            "name": "announcement",
+            "color": "purple"
+          }
+        ]
+      },
+      "image": {
+        "id": "%5E%60%7DR",
+        "type": "files",
+        "files": [
+          {
+            "name": "supportinghands.webp",
+            "type": "file",
+            "file": {
+              "url": "/image/download/news/110a8c0e-cf8c-80dd-afcb-f422b241bd32-supportinghands.webp",
+              "expiry_time": "2025-07-13T04:30:37.190Z"
+            }
+          }
+        ]
+      },
+      "text_en": {
+        "id": "aM%60q",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Please help us continue to provide valuable opportunities for the Tucson community.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Please help us continue to provide valuable opportunities for the Tucson community.",
+            "href": null
+          }
+        ]
+      },
+      "en": {
+        "id": "vck%3A",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "2023 Sponsorship Opportunity",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "2023 Sponsorship Opportunity",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "2023年度協賛金募集のご案内",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "2023年度協賛金募集のご案内",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/2023-110a8c0ecf8c80ddafcbf422b241bd32",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "110a8c0e-cf8c-8035-98f6-d438d58ac188",
+    "created_time": "2024-09-29T06:40:00.000Z",
+    "last_edited_time": "2024-09-29T06:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "cc0b1eb3-5708-42ba-926c-c71ecaf5df4d"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "date": {
+        "id": "ELB%5B",
+        "type": "date",
+        "date": {
+          "start": "2023-09-25",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "text": {
+        "id": "SSPK",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ツーソン在住の日本人家庭、日本語学習者（１7歳以下）をご招待しての運動会を開催致します",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "ツーソン在住の日本人家庭、日本語学習者（１7歳以下）をご招待しての運動会を開催致します",
+            "href": null
+          }
+        ]
+      },
+      "tags": {
+        "id": "%5DR%5BO",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "d828ae0b-61ac-4a9f-9196-d7469b1352f8",
+            "name": "event",
+            "color": "pink"
+          },
+          {
+            "id": "600b1fd2-9b5f-4c13-abec-8c7679cdfd6d",
+            "name": "announcement",
+            "color": "purple"
+          }
+        ]
+      },
+      "image": {
+        "id": "%5E%60%7DR",
+        "type": "files",
+        "files": [
+          {
+            "name": "tucsonundokai2023.webp",
+            "type": "file",
+            "file": {
+              "url": "/image/download/news/110a8c0e-cf8c-8035-98f6-d438d58ac188-tucsonundokai2023.webp",
+              "expiry_time": "2025-07-13T04:30:37.190Z"
+            }
+          }
+        ]
+      },
+      "text_en": {
+        "id": "aM%60q",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Tucson Japanese Language School would like to invite you to the 9th Annual Sports Day.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Tucson Japanese Language School would like to invite you to the 9th Annual Sports Day.",
+            "href": null
+          }
+        ]
+      },
+      "en": {
+        "id": "vck%3A",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Announcement for 9th Annual Sports Day",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Announcement for 9th Annual Sports Day",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "第９回運動会開催のお知らせ",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "第９回運動会開催のお知らせ",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/110a8c0ecf8c803598f6d438d58ac188",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "110a8c0e-cf8c-805b-a3bf-cba51426fdfb",
+    "created_time": "2024-09-29T06:32:00.000Z",
+    "last_edited_time": "2024-09-29T06:39:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "cc0b1eb3-5708-42ba-926c-c71ecaf5df4d"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "date": {
+        "id": "ELB%5B",
+        "type": "date",
+        "date": {
+          "start": "2023-11-10",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "text": {
+        "id": "SSPK",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "検定日は、2024 年1月 20日(土) です。検定をご希望される方は12月10日(日)までにお申し込みください。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "検定日は、2024 年1月 20日(土) です。検定をご希望される方は12月10日(日)までにお申し込みください。",
+            "href": null
+          }
+        ]
+      },
+      "tags": {
+        "id": "%5DR%5BO",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "600b1fd2-9b5f-4c13-abec-8c7679cdfd6d",
+            "name": "announcement",
+            "color": "purple"
+          },
+          {
+            "id": "83a44d44-c539-4f88-82e0-4b36bfb5e6c7",
+            "name": "kanji_kentei",
+            "color": "orange"
+          }
+        ]
+      },
+      "image": {
+        "id": "%5E%60%7DR",
+        "type": "files",
+        "files": [
+          {
+            "name": "kanjikentei2024.png",
+            "type": "file",
+            "file": {
+              "url": "/image/download/news/110a8c0e-cf8c-805b-a3bf-cba51426fdfb-kanjikentei2024.png",
+              "expiry_time": "2025-07-13T04:30:37.276Z"
+            }
+          }
+        ]
+      },
+      "text_en": {
+        "id": "aM%60q",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "We will have our next exam on Saturday, January 20th, 2024.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "We will have our next exam on Saturday, January 20th, 2024.",
+            "href": null
+          }
+        ]
+      },
+      "en": {
+        "id": "vck%3A",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Kanken 2024 Application Begins",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Kanken 2024 Application Begins",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "2024年漢字検定申し込み受付開始！",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "2024年漢字検定申し込み受付開始！",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/2024-110a8c0ecf8c805ba3bfcba51426fdfb",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "110a8c0e-cf8c-804e-b7d6-dfe14f5651ea",
+    "created_time": "2024-09-29T06:25:00.000Z",
+    "last_edited_time": "2024-09-29T06:39:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "cc0b1eb3-5708-42ba-926c-c71ecaf5df4d"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "date": {
+        "id": "ELB%5B",
+        "type": "date",
+        "date": {
+          "start": "2024-01-12",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "text": {
+        "id": "SSPK",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "１月15日月曜日にレストラン一休にて能登半島地震の被災地に送る募金活動を有志が集まってすることになりました。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "１月15日月曜日にレストラン一休にて能登半島地震の被災地に送る募金活動を有志が集まってすることになりました。",
+            "href": null
+          }
+        ]
+      },
+      "tags": {
+        "id": "%5DR%5BO",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "600b1fd2-9b5f-4c13-abec-8c7679cdfd6d",
+            "name": "announcement",
+            "color": "purple"
+          },
+          {
+            "id": "d828ae0b-61ac-4a9f-9196-d7469b1352f8",
+            "name": "event",
+            "color": "pink"
+          }
+        ]
+      },
+      "image": {
+        "id": "%5E%60%7DR",
+        "type": "files",
+        "files": [
+          {
+            "name": "notoearthquake1.jpg",
+            "type": "file",
+            "file": {
+              "url": "/image/download/news/110a8c0e-cf8c-804e-b7d6-dfe14f5651ea-notoearthquake1.jpg",
+              "expiry_time": "2025-07-13T04:30:37.277Z"
+            }
+          },
+          {
+            "name": "notoearthquake2.jpg",
+            "type": "file",
+            "file": {
+              "url": "/image/download/news/110a8c0e-cf8c-804e-b7d6-dfe14f5651ea-notoearthquake2.jpg",
+              "expiry_time": "2025-07-13T04:30:37.304Z"
+            }
+          },
+          {
+            "name": "notoearthquake3.jpg",
+            "type": "file",
+            "file": {
+              "url": "/image/download/news/110a8c0e-cf8c-804e-b7d6-dfe14f5651ea-notoearthquake3.jpg",
+              "expiry_time": "2025-07-13T04:30:37.308Z"
+            }
+          }
+        ]
+      },
+      "text_en": {
+        "id": "aM%60q",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "On Monday, January 15th from 11 am to 3 pm, various Japanese organizations here will gather at Ikkyu Japanese restaurant to raise money for those affected by the earthquake.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "On Monday, January 15th from 11 am to 3 pm, various Japanese organizations here will gather at Ikkyu Japanese restaurant to raise money for those affected by the earthquake.",
+            "href": null
+          }
+        ]
+      },
+      "en": {
+        "id": "vck%3A",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Fundraising for Noto Peninsula Earthquake",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Fundraising for Noto Peninsula Earthquake",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "能登半島地震募金へご協力のお願い",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "能登半島地震募金へご協力のお願い",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/110a8c0ecf8c804eb7d6dfe14f5651ea",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "110a8c0e-cf8c-805b-8379-fb368fd40346",
+    "created_time": "2024-09-29T06:20:00.000Z",
+    "last_edited_time": "2024-09-29T06:25:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "cc0b1eb3-5708-42ba-926c-c71ecaf5df4d"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "date": {
+        "id": "ELB%5B",
+        "type": "date",
+        "date": {
+          "start": "2024-01-10",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "text": {
+        "id": "SSPK",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "後期授業が始まります。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "後期授業が始まります。",
+            "href": null
+          }
+        ]
+      },
+      "tags": {
+        "id": "%5DR%5BO",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "600b1fd2-9b5f-4c13-abec-8c7679cdfd6d",
+            "name": "announcement",
+            "color": "purple"
+          }
+        ]
+      },
+      "image": {
+        "id": "%5E%60%7DR",
+        "type": "files",
+        "files": [
+          {
+            "name": "newyearprayer.webp",
+            "type": "file",
+            "file": {
+              "url": "/image/download/news/110a8c0e-cf8c-805b-8379-fb368fd40346-newyearprayer.webp",
+              "expiry_time": "2025-07-13T04:30:37.277Z"
+            }
+          }
+        ]
+      },
+      "text_en": {
+        "id": "aM%60q",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Second semester will start this weekend. ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Second semester will start this weekend. ",
+            "href": null
+          }
+        ]
+      },
+      "en": {
+        "id": "vck%3A",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "2023 Second Semester Begins!",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "2023 Second Semester Begins!",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "2023年度後期授業開始！",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "2023年度後期授業開始！",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/2023-110a8c0ecf8c805b8379fb368fd40346",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "110a8c0e-cf8c-8021-8942-c4bc95ab4782",
+    "created_time": "2024-09-29T06:12:00.000Z",
+    "last_edited_time": "2024-10-01T11:23:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "cc0b1eb3-5708-42ba-926c-c71ecaf5df4d"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "date": {
+        "id": "ELB%5B",
+        "type": "date",
+        "date": {
+          "start": "2024-03-20",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "text": {
+        "id": "SSPK",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": " アリゾナ祭り俳句EXPO結果発表！",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " アリゾナ祭り俳句EXPO結果発表！",
+            "href": null
+          }
+        ]
+      },
+      "tags": {
+        "id": "%5DR%5BO",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "5c3f5569-4d25-4886-973e-c2abf80c8f7e",
+            "name": "news",
+            "color": "blue"
+          },
+          {
+            "id": "d828ae0b-61ac-4a9f-9196-d7469b1352f8",
+            "name": "event",
+            "color": "pink"
+          }
+        ]
+      },
+      "image": {
+        "id": "%5E%60%7DR",
+        "type": "files",
+        "files": [
+          {
+            "name": "japanesegarden.webp",
+            "type": "file",
+            "file": {
+              "url": "/image/download/news/110a8c0e-cf8c-8021-8942-c4bc95ab4782-japanesegarden.webp",
+              "expiry_time": "2025-07-13T04:30:37.277Z"
+            }
+          }
+        ]
+      },
+      "text_en": {
+        "id": "aM%60q",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Two studentss haiku were selected…",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Two studentss haiku were selected…",
+            "href": null
+          }
+        ]
+      },
+      "en": {
+        "id": "vck%3A",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "2024 Arizona Matsuri Haiku Expo",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "2024 Arizona Matsuri Haiku Expo",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "2024年アリゾナ祭り俳句EXPO",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "2024年アリゾナ祭り俳句EXPO",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/2024-EXPO-110a8c0ecf8c80218942c4bc95ab4782",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "110a8c0e-cf8c-80bd-80fd-fd838e9f76e3",
+    "created_time": "2024-09-29T05:55:00.000Z",
+    "last_edited_time": "2024-10-01T14:29:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "cc0b1eb3-5708-42ba-926c-c71ecaf5df4d"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "date": {
+        "id": "ELB%5B",
+        "type": "date",
+        "date": {
+          "start": "2024-04-06",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "text": {
+        "id": "SSPK",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "補習校の生徒が日本祭りに参加しました。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "補習校の生徒が日本祭りに参加しました。",
+            "href": null
+          }
+        ]
+      },
+      "tags": {
+        "id": "%5DR%5BO",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "5c3f5569-4d25-4886-973e-c2abf80c8f7e",
+            "name": "news",
+            "color": "blue"
+          },
+          {
+            "id": "d828ae0b-61ac-4a9f-9196-d7469b1352f8",
+            "name": "event",
+            "color": "pink"
+          }
+        ]
+      },
+      "image": {
+        "id": "%5E%60%7DR",
+        "type": "files",
+        "files": []
+      },
+      "text_en": {
+        "id": "aM%60q",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Tucson Japanese Langauge School participated last weekend in the Tucson Japanse Festival",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Tucson Japanese Langauge School participated last weekend in the Tucson Japanse Festival",
+            "href": null
+          }
+        ]
+      },
+      "en": {
+        "id": "vck%3A",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "2024 Tucson Japanese Festival",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "2024 Tucson Japanese Festival",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "2024年ツーソン日本祭り",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "2024年ツーソン日本祭り",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/2024-110a8c0ecf8c80bd80fdfd838e9f76e3",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "110a8c0e-cf8c-80a0-a8aa-e0523eae6b07",
+    "created_time": "2024-09-29T05:50:00.000Z",
+    "last_edited_time": "2024-10-01T11:23:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "cc0b1eb3-5708-42ba-926c-c71ecaf5df4d"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "date": {
+        "id": "ELB%5B",
+        "type": "date",
+        "date": {
+          "start": "2024-07-01",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "text": {
+        "id": "SSPK",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "来年度の入学手続きを開始しました！",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "来年度の入学手続きを開始しました！",
+            "href": null
+          }
+        ]
+      },
+      "tags": {
+        "id": "%5DR%5BO",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "600b1fd2-9b5f-4c13-abec-8c7679cdfd6d",
+            "name": "announcement",
+            "color": "purple"
+          },
+          {
+            "id": "9062e3c7-6d08-46f9-9191-fbbe0074155a",
+            "name": "Enrollment",
+            "color": "green"
+          }
+        ]
+      },
+      "image": {
+        "id": "%5E%60%7DR",
+        "type": "files",
+        "files": [
+          {
+            "name": "schooltablechair.webp",
+            "type": "file",
+            "file": {
+              "url": "/image/download/news/110a8c0e-cf8c-80a0-a8aa-e0523eae6b07-schooltablechair.webp",
+              "expiry_time": "2025-07-13T04:30:37.277Z"
+            }
+          }
+        ]
+      },
+      "text_en": {
+        "id": "aM%60q",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Enrollment for the new school year started.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Enrollment for the new school year started.",
+            "href": null
+          }
+        ]
+      },
+      "en": {
+        "id": "vck%3A",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Enrollment for 2024-2025 school year Begins!",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Enrollment for 2024-2025 school year Begins!",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "新学期入学手続き開始！",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "新学期入学手続き開始！",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/110a8c0ecf8c80a0a8aae0523eae6b07",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "10ba8c0e-cf8c-8074-b86d-e8f38a2bd302",
+    "created_time": "2024-09-24T04:36:00.000Z",
+    "last_edited_time": "2024-10-01T11:22:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "cc0b1eb3-5708-42ba-926c-c71ecaf5df4d"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "date": {
+        "id": "ELB%5B",
+        "type": "date",
+        "date": {
+          "start": "2018-01-28",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "text": {
+        "id": "SSPK",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "１月２０日に行われた第２回ツーソン日本祭りは、悪天候の中多くの人が訪れ、日本の伝承文化、食文化、歌、踊りなどを楽しみました。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "１月２０日に行われた第２回ツーソン日本祭りは、悪天候の中多くの人が訪れ、日本の伝承文化、食文化、歌、踊りなどを楽しみました。",
+            "href": null
+          }
+        ]
+      },
+      "tags": {
+        "id": "%5DR%5BO",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "d828ae0b-61ac-4a9f-9196-d7469b1352f8",
+            "name": "event",
+            "color": "pink"
+          },
+          {
+            "id": "5c3f5569-4d25-4886-973e-c2abf80c8f7e",
+            "name": "news",
+            "color": "blue"
+          }
+        ]
+      },
+      "image": {
+        "id": "%5E%60%7DR",
+        "type": "files",
+        "files": []
+      },
+      "text_en": {
+        "id": "aM%60q",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "We did it! Another successful fundraising at Japanese Festival on January 20th. \r\n\r\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "We did it! Another successful fundraising at Japanese Festival on January 20th. \r\n\r\n",
+            "href": null
+          }
+        ]
+      },
+      "en": {
+        "id": "vck%3A",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "2nd Annual Japanese Festival",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "2nd Annual Japanese Festival",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "日本祭り無事終了",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "日本祭り無事終了",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/10ba8c0ecf8c8074b86de8f38a2bd302",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "10ba8c0e-cf8c-803e-aaa0-c598d2fa0976",
+    "created_time": "2024-09-24T04:29:00.000Z",
+    "last_edited_time": "2024-10-01T11:35:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "cc0b1eb3-5708-42ba-926c-c71ecaf5df4d"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "date": {
+        "id": "ELB%5B",
+        "type": "date",
+        "date": {
+          "start": "2017-09-09",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "text": {
+        "id": "SSPK",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "アリゾナで唯一の無料日本語冊子オアシスの２017年９月号にツーソン日本語補習校が特集されました。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "アリゾナで唯一の無料日本語冊子オアシスの２017年９月号にツーソン日本語補習校が特集されました。",
+            "href": null
+          }
+        ]
+      },
+      "tags": {
+        "id": "%5DR%5BO",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "5c3f5569-4d25-4886-973e-c2abf80c8f7e",
+            "name": "news",
+            "color": "blue"
+          }
+        ]
+      },
+      "image": {
+        "id": "%5E%60%7DR",
+        "type": "files",
+        "files": [
+          {
+            "name": "Oasissep2017.jpg",
+            "type": "file",
+            "file": {
+              "url": "/image/download/news/10ba8c0e-cf8c-803e-aaa0-c598d2fa0976-Oasissep2017.jpg",
+              "expiry_time": "2025-07-13T04:30:37.277Z"
+            }
+          }
+        ]
+      },
+      "text_en": {
+        "id": "aM%60q",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "We are futured in Japanese magazine Oasis! ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "We are futured in Japanese magazine Oasis! ",
+            "href": null
+          }
+        ]
+      },
+      "en": {
+        "id": "vck%3A",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Tucson Japanese Langauge School is featured in Oasis",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Tucson Japanese Langauge School is featured in Oasis",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "日本語雑誌オアシスに特集記事",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "日本語雑誌オアシスに特集記事",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/10ba8c0ecf8c803eaaa0c598d2fa0976",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "102a8c0e-cf8c-8096-b2f7-e91ec767e38e",
+    "created_time": "2024-09-15T16:23:00.000Z",
+    "last_edited_time": "2024-10-01T11:23:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "cc0b1eb3-5708-42ba-926c-c71ecaf5df4d"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "date": {
+        "id": "ELB%5B",
+        "type": "date",
+        "date": {
+          "start": "2024-09-07",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "text": {
+        "id": "SSPK",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "今日の放課後にペンさんが学校を訪れ、生徒たちと壁画のパーツを制作しました。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "今日の放課後にペンさんが学校を訪れ、生徒たちと壁画のパーツを制作しました。",
+            "href": null
+          }
+        ]
+      },
+      "tags": {
+        "id": "%5DR%5BO",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "d828ae0b-61ac-4a9f-9196-d7469b1352f8",
+            "name": "event",
+            "color": "pink"
+          },
+          {
+            "id": "5c3f5569-4d25-4886-973e-c2abf80c8f7e",
+            "name": "news",
+            "color": "blue"
+          }
+        ]
+      },
+      "image": {
+        "id": "%5E%60%7DR",
+        "type": "files",
+        "files": [
+          {
+            "name": "unitymural02.jpg",
+            "type": "file",
+            "file": {
+              "url": "/image/download/news/102a8c0e-cf8c-8096-b2f7-e91ec767e38e-unitymural02.jpg",
+              "expiry_time": "2025-07-13T04:30:37.277Z"
+            }
+          }
+        ]
+      },
+      "text_en": {
+        "id": "aM%60q",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Ms. Pen visited our school today and she worked on the parts will be part of community mural with our students.  ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Ms. Pen visited our school today and she worked on the parts will be part of community mural with our students.  ",
+            "href": null
+          }
+        ]
+      },
+      "en": {
+        "id": "vck%3A",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Community Mural Project with Desert Pen !",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Community Mural Project with Desert Pen !",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "壁画制作 with Desert Pen!",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "壁画制作 with Desert Pen!",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/with-Desert-Pen-102a8c0ecf8c8096b2f7e91ec767e38e",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "57b1ff72-dbca-43d3-b6eb-8e3fd7d8c18f",
+    "created_time": "2024-09-10T04:29:00.000Z",
+    "last_edited_time": "2025-07-03T00:18:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "cc0b1eb3-5708-42ba-926c-c71ecaf5df4d"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "date": {
+        "id": "ELB%5B",
+        "type": "date",
+        "date": {
+          "start": "2024-08-16",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "text": {
+        "id": "SSPK",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "みんなの学校〜田中太山の全米行脚\nアリゾナ州 ツーソン日本語補習校・利恵先生と低学年の生徒のみなさん（後半編）がオンラインにて視聴可能になりました！ぜひお聞きください。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "みんなの学校〜田中太山の全米行脚\nアリゾナ州 ツーソン日本語補習校・利恵先生と低学年の生徒のみなさん（後半編）がオンラインにて視聴可能になりました！ぜひお聞きください。",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Sakura Radio USAさん、ありがとうございました！",
+              "link": {
+                "url": "https://www.facebook.com/profile.php?id=100063792810854&__cft__%5B0%5D=AZXnmqAROSvl3L60BJhna-ODuwPop6J6lSCBsOPVXzywEv35pWEtDqtPDXz15Nz9MG48wmYQkZRe9mTgiYg-AAnK8yBVGXHP5ggp937FdlSVAxUHJvDebbvHNYltzPv7tNhKZN98z6KaxO--UQSIF70K4FCux5luyrhaUcKWsw7kJf0xZ1ikTtVdSTukhgzKrQuz51-NyFS74vTz7oZWRtEh&__tn__=-%5DK-R"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Sakura Radio USAさん、ありがとうございました！",
+            "href": "https://www.facebook.com/profile.php?id=100063792810854&__cft__%5B0%5D=AZXnmqAROSvl3L60BJhna-ODuwPop6J6lSCBsOPVXzywEv35pWEtDqtPDXz15Nz9MG48wmYQkZRe9mTgiYg-AAnK8yBVGXHP5ggp937FdlSVAxUHJvDebbvHNYltzPv7tNhKZN98z6KaxO--UQSIF70K4FCux5luyrhaUcKWsw7kJf0xZ1ikTtVdSTukhgzKrQuz51-NyFS74vTz7oZWRtEh&__tn__=-%5DK-R"
+          }
+        ]
+      },
+      "tags": {
+        "id": "%5DR%5BO",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "d828ae0b-61ac-4a9f-9196-d7469b1352f8",
+            "name": "event",
+            "color": "pink"
+          },
+          {
+            "id": "5c3f5569-4d25-4886-973e-c2abf80c8f7e",
+            "name": "news",
+            "color": "blue"
+          }
+        ]
+      },
+      "image": {
+        "id": "%5E%60%7DR",
+        "type": "files",
+        "files": [
+          {
+            "name": "sakura radio minnano gakko.jpg",
+            "type": "file",
+            "file": {
+              "url": "/image/download/news/57b1ff72-dbca-43d3-b6eb-8e3fd7d8c18f-sakura_radio_minnano_gakko.jpg",
+              "expiry_time": "2025-07-13T04:30:37.277Z"
+            }
+          }
+        ]
+      },
+      "text_en": {
+        "id": "aM%60q",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Class 1 students and teacher participated in the interview by Sakura Radio USA the other day. This time they are in みんなの学校〜田中太山の全米行脚! They talked about Kanji quizzes, Summer Haiku, favorite food, Rie sensei, Japanese class, and more. Enjoy fun and heartwarming interviews with our students! Thank you Taisan Tanaka for the fun show!!\nEpisode55 Tucson Japanese Language School - Minna no Gakko ( 1st half)\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Class 1 students and teacher participated in the interview by Sakura Radio USA the other day. This time they are in みんなの学校〜田中太山の全米行脚! They talked about Kanji quizzes, Summer Haiku, favorite food, Rie sensei, Japanese class, and more. Enjoy fun and heartwarming interviews with our students! Thank you Taisan Tanaka for the fun show!!\nEpisode55 Tucson Japanese Language School - Minna no Gakko ( 1st half)\n",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "https://sakura-radio-e42b7d0b.simplecast.com/episodes/ep55-ad4ulzhy",
+              "link": {
+                "url": "https://sakura-radio-e42b7d0b.simplecast.com/episodes/ep55-ad4ulzhy%E2%80%8B"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": true,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "https://sakura-radio-e42b7d0b.simplecast.com/episodes/ep55-ad4ulzhy",
+            "href": "https://sakura-radio-e42b7d0b.simplecast.com/episodes/ep55-ad4ulzhy%E2%80%8B"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "\nThe second half will be on the air very soon！",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "\nThe second half will be on the air very soon！",
+            "href": null
+          }
+        ]
+      },
+      "en": {
+        "id": "vck%3A",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Sakura Radio Intervew Part 1 !",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Sakura Radio Intervew Part 1 !",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "クラス１さくらラジオインタビュー前半編！",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "クラス１さくらラジオインタビュー前半編！",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/57b1ff72dbca43d3b6eb8e3fd7d8c18f",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "2c5574c7-67e7-4213-9c29-4bbee673f2a7",
+    "created_time": "2024-09-05T07:32:00.000Z",
+    "last_edited_time": "2024-10-01T11:23:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "cc0b1eb3-5708-42ba-926c-c71ecaf5df4d"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "date": {
+        "id": "ELB%5B",
+        "type": "date",
+        "date": {
+          "start": "2024-08-24",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "text": {
+        "id": "SSPK",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "みんなの学校〜田中太山の全米行脚\nアリゾナ州 ツーソン日本語補習校・利恵先生と低学年の生徒のみなさん（後半編）がオンラインにて視聴可能になりました！",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "みんなの学校〜田中太山の全米行脚\nアリゾナ州 ツーソン日本語補習校・利恵先生と低学年の生徒のみなさん（後半編）がオンラインにて視聴可能になりました！",
+            "href": null
+          }
+        ]
+      },
+      "tags": {
+        "id": "%5DR%5BO",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "d828ae0b-61ac-4a9f-9196-d7469b1352f8",
+            "name": "event",
+            "color": "pink"
+          },
+          {
+            "id": "5c3f5569-4d25-4886-973e-c2abf80c8f7e",
+            "name": "news",
+            "color": "blue"
+          }
+        ]
+      },
+      "image": {
+        "id": "%5E%60%7DR",
+        "type": "files",
+        "files": [
+          {
+            "name": "sakura radio minnano gakko.jpg",
+            "type": "file",
+            "file": {
+              "url": "/image/download/news/2c5574c7-67e7-4213-9c29-4bbee673f2a7-sakura_radio_minnano_gakko.jpg",
+              "expiry_time": "2025-07-13T04:30:37.277Z"
+            }
+          }
+        ]
+      },
+      "text_en": {
+        "id": "aM%60q",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "The second half of the Class 1 interview with Mr. Taisan Tanaka! Tune in to listen to the heartwarming stories of our students and Rie sensei! \n\nThank you ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "The second half of the Class 1 interview with Mr. Taisan Tanaka! Tune in to listen to the heartwarming stories of our students and Rie sensei! \n\nThank you ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Sakura Radio USA",
+              "link": {
+                "url": "https://www.facebook.com/profile.php?id=100063792810854&__cft__%5B0%5D=AZWz9wajYYHzuXwZJdrApzK8Fk_nGgZVjGyxmt51sX9J1XuaSe1HhQz0C1iQlwCGDfPru5dj3XRSWAHyfVZmDpJXrLhg0AQ4TjAFJqPnRyCzX5IAyFksKBVfaIu7HHyB-JK7jJjYx-V3g3mPUZ4L8558wHsb6tzFhno2Mmdan3B41g&__tn__=-%5DK-R"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Sakura Radio USA",
+            "href": "https://www.facebook.com/profile.php?id=100063792810854&__cft__%5B0%5D=AZWz9wajYYHzuXwZJdrApzK8Fk_nGgZVjGyxmt51sX9J1XuaSe1HhQz0C1iQlwCGDfPru5dj3XRSWAHyfVZmDpJXrLhg0AQ4TjAFJqPnRyCzX5IAyFksKBVfaIu7HHyB-JK7jJjYx-V3g3mPUZ4L8558wHsb6tzFhno2Mmdan3B41g&__tn__=-%5DK-R"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "!!!!",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "!!!!",
+            "href": null
+          }
+        ]
+      },
+      "en": {
+        "id": "vck%3A",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Sakura Radio interview Part 2 !",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Sakura Radio interview Part 2 !",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "クラス１さくらラジオインタビュー 後半編！",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "クラス１さくらラジオインタビュー 後半編！",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/2c5574c767e742139c294bbee673f2a7",
+    "public_url": null
+  }
+]

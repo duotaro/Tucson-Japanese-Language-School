@@ -1,0 +1,425 @@
+[
+  {
+    "object": "page",
+    "id": "caedb020-e7de-46db-ad8f-6221961d3dab",
+    "created_time": "2024-09-10T00:51:00.000Z",
+    "last_edited_time": "2024-09-24T04:15:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "d4eb3828-e74c-469b-9179-ca7be9edb5cf"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "text": {
+        "id": "LBgW",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "「2030年までに、ツーソン日本語学校をアリゾナ州の主要都市において質の高い言語と文化プログラムを提供する組織として認識されること、献身的な講師とボランティアの力を借りて、あらゆる日本語レベル、背景を持つ人々にプログラムをを提供するし、コミュニティーイベントやプログラム通して、日本とツーソン市、アリゾナ州、さらに米国との友好関係を促進し、ツーソン地域において強い存在感を築いていきます。」",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "「2030年までに、ツーソン日本語学校をアリゾナ州の主要都市において質の高い言語と文化プログラムを提供する組織として認識されること、献身的な講師とボランティアの力を借りて、あらゆる日本語レベル、背景を持つ人々にプログラムをを提供するし、コミュニティーイベントやプログラム通して、日本とツーソン市、アリゾナ州、さらに米国との友好関係を促進し、ツーソン地域において強い存在感を築いていきます。」",
+            "href": null
+          }
+        ]
+      },
+      "image": {
+        "id": "L_%3Dy",
+        "type": "files",
+        "files": [
+          {
+            "name": "vision.png",
+            "type": "file",
+            "file": {
+              "url": "/image/download/about/caedb020-e7de-46db-ad8f-6221961d3dab-vision.png",
+              "expiry_time": "2025-07-13T04:28:35.266Z"
+            }
+          }
+        ]
+      },
+      "text_en": {
+        "id": "Yipi",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "“By 2030, Tucson Japanese School will be well known in Arizona as an organization that provides quality language and culture programs. Our program offerings will serve people at all levels of Japanese language and background which will be attainable by dedicated instructors and volunteers. By offering community outreach programs and collaborating with other Japanese community groups, our organization will foster friendship between Japan and Tucson, Arizona, and the U.S. and build a strong presence in the Tucson Community.“",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "“By 2030, Tucson Japanese School will be well known in Arizona as an organization that provides quality language and culture programs. Our program offerings will serve people at all levels of Japanese language and background which will be attainable by dedicated instructors and volunteers. By offering community outreach programs and collaborating with other Japanese community groups, our organization will foster friendship between Japan and Tucson, Arizona, and the U.S. and build a strong presence in the Tucson Community.“",
+            "href": null
+          }
+        ]
+      },
+      "tag": {
+        "id": "boX%5B",
+        "type": "select",
+        "select": {
+          "id": "787d23c6-fcbb-4eb0-b281-83a3e591afa1",
+          "name": "vision",
+          "color": "blue"
+        }
+      },
+      "en": {
+        "id": "p%40VO",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Our Vision",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Our Vision",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Vision",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Vision",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Vision-caedb020e7de46dbad8f6221961d3dab",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "3b6fb768-3ff3-425b-8758-1c31f6fa231e",
+    "created_time": "2024-09-10T00:51:00.000Z",
+    "last_edited_time": "2024-09-13T14:44:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "d4eb3828-e74c-469b-9179-ca7be9edb5cf"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "text": {
+        "id": "LBgW",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ツーソン日本語補習校ＬＬＣは、2015年8月に、子供を持つ二人の親、また同じ境遇にある保護者の　”ツーソンで育つ日本人の子供たちに日本語、文化、伝統のを身近に感じ、お友達と一緒に楽しく勉強できる場所を提供したい”という願いによって設立された、小さな学校です。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "ツーソン日本語補習校ＬＬＣは、2015年8月に、子供を持つ二人の親、また同じ境遇にある保護者の　”ツーソンで育つ日本人の子供たちに日本語、文化、伝統のを身近に感じ、お友達と一緒に楽しく勉強できる場所を提供したい”という願いによって設立された、小さな学校です。",
+            "href": null
+          }
+        ]
+      },
+      "image": {
+        "id": "L_%3Dy",
+        "type": "files",
+        "files": [
+          {
+            "name": "about.png",
+            "type": "file",
+            "file": {
+              "url": "/image/download/about/3b6fb768-3ff3-425b-8758-1c31f6fa231e-about.png",
+              "expiry_time": "2025-07-13T04:28:35.267Z"
+            }
+          }
+        ]
+      },
+      "text_en": {
+        "id": "Yipi",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "The Tucson Japanese Language School, LLC was founded in August 2015 by two parents, Hitomi and Minami with help with other volunteer parents in hopes to provide immersive learning experience of Japanese language, culture and tradition\nfor their children and their peers.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "The Tucson Japanese Language School, LLC was founded in August 2015 by two parents, Hitomi and Minami with help with other volunteer parents in hopes to provide immersive learning experience of Japanese language, culture and tradition\nfor their children and their peers.",
+            "href": null
+          }
+        ]
+      },
+      "tag": {
+        "id": "boX%5B",
+        "type": "select",
+        "select": {
+          "id": "213ea4ad-7214-4bc9-a44a-85c6e12292d1",
+          "name": "about",
+          "color": "red"
+        }
+      },
+      "en": {
+        "id": "p%40VO",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "About",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "About",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "本校について",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "本校について",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/3b6fb7683ff3425b87581c31f6fa231e",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "b3091c78-9b7c-4e8b-80de-dc5f98fd9d5b",
+    "created_time": "2024-09-10T00:51:00.000Z",
+    "last_edited_time": "2024-09-24T04:14:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "d4eb3828-e74c-469b-9179-ca7be9edb5cf"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "text": {
+        "id": "LBgW",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "「ツーソン日本語學校は、日本語言語と日本文化プログラムやイベント等を通して、ツーソン近域の日本人およびその他の適齢学生とその家族、また成人学習者の日本語学習サポートと、日本文化・伝統への理解を深めることで、国際理解・多文化共存の大切さを促進します。」",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "「ツーソン日本語學校は、日本語言語と日本文化プログラムやイベント等を通して、ツーソン近域の日本人およびその他の適齢学生とその家族、また成人学習者の日本語学習サポートと、日本文化・伝統への理解を深めることで、国際理解・多文化共存の大切さを促進します。」",
+            "href": null
+          }
+        ]
+      },
+      "image": {
+        "id": "L_%3Dy",
+        "type": "files",
+        "files": [
+          {
+            "name": "mission.png",
+            "type": "file",
+            "file": {
+              "url": "/image/download/about/b3091c78-9b7c-4e8b-80de-dc5f98fd9d5b-mission.png",
+              "expiry_time": "2025-07-13T04:28:35.267Z"
+            }
+          }
+        ]
+      },
+      "text_en": {
+        "id": "Yipi",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "“Our mission is to help Japanese and other students and families in Southen Arizona maintain and develop Japanese language skills, increase and deepen their understanding of the country of Japan, promote the importance of inclusion and multicultural understanding, and create a trusted school community through Japanese language and culture programs and events. ”",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "“Our mission is to help Japanese and other students and families in Southen Arizona maintain and develop Japanese language skills, increase and deepen their understanding of the country of Japan, promote the importance of inclusion and multicultural understanding, and create a trusted school community through Japanese language and culture programs and events. ”",
+            "href": null
+          }
+        ]
+      },
+      "tag": {
+        "id": "boX%5B",
+        "type": "select",
+        "select": {
+          "id": "b387a84b-d978-4ab1-8961-3d9dfb0aa584",
+          "name": "mission",
+          "color": "yellow"
+        }
+      },
+      "en": {
+        "id": "p%40VO",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Our Mission",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Our Mission",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Mission",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Mission",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Mission-b3091c789b7c4e8b80dedc5f98fd9d5b",
+    "public_url": null
+  }
+]

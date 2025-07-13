@@ -14,7 +14,7 @@ export default function NewsDetail({ item, locale="ja" }) {
 
   let {id, page} = item
   let entity = new NewsEntity(page, locale == "ja")
-  if(!entity.title && !entity.title.length){
+  if(!entity.title || !entity.title.length){
     return <></>
   }
 

@@ -48,6 +48,35 @@
 **背景**: 日本語・英語の言語切り替えが不完全で、SEO上も言語の関連性がGoogleに正しく認識されていなかった
 **影響ファイル**:
 - `components/context/localeContext.js`
+
+### No.6 画像表示問題の修正とNotionキャッシュシステムの完全実装
+**対応日**: 2025年7月13日  
+**対応**: Notionキャッシュシステムの画像表示問題修正、Notion画像ダウンロード機能の実装、APIルート削除によるビルドエラー解消  
+**背景**: 前回セッションでNotionキャッシュシステムを実装したが、一部画像が表示されない問題と、APIルートが静的エクスポートで使用できない警告が発生していた  
+**技術的詳細**:
+- cache-loader.jsのaddOptimizedImage関数のpagePathを修正（`/${dataType}` → `dataType`）
+- fetch-all.jsに画像ダウンロード機能を実装（node-fetch使用）
+- Notion一時URLを永続的なローカルパス（`/image/download/{dataType}/{pageId}-{filename}`）に変換
+- APIルートディレクトリ（pages/api）を削除してビルド警告解消
+- node-fetchパッケージ追加とdeprecation警告対応
+
+**解決した問題**:
+1. ニュースページ等での画像が表示されない問題 → optimizedImageのpagePath修正で解決
+2. Notion画像URLの有効期限切れ問題 → ローカル保存により永続化
+3. ビルド時のAPIルート警告 → 不要なAPIルート削除で解消
+4. キャッシュデータ内の一時URLリンク切れ → fetch-all.js実行でローカルパスに変換
+
+**影響ファイル**:
+- `lib/cache-loader.js` (pagePath修正、ローカルパス対応)
+- `scripts/notion-cache/fetch-all.js` (画像ダウンロード機能追加、98行追加)
+- `package.json` (node-fetch^3.3.2追加)  
+- `pages/api/` ディレクトリ削除
+- `public/image/download/news/` 配下に34個の画像ファイル保存
+
+**検証結果**:
+- newsデータベーステスト: 36件のデータ、34個の画像を正常にダウンロード・保存
+- ビルド成功: 8分でエラーなく完了
+- 画像表示確認: `/image/download/news/112a8c0e-cf8c-80ca-af61-e30b24fd97a7-mochipounding.jpeg`等が正常に参照される
 - `components/parts/menu/LocaleLink.jsx`
 - `components/navbar.js`
 - `components/footer.js`

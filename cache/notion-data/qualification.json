@@ -1,0 +1,371 @@
+[
+  {
+    "object": "page",
+    "id": "21aa8c0e-cf8c-80d3-9735-e40b108a0f04",
+    "created_time": "2025-06-22T15:10:00.000Z",
+    "last_edited_time": "2025-06-22T15:13:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "11ba8c0e-cf8c-80e4-a3d6-cb2cae30ac08"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "text": {
+        "id": "%3Bv%3Fc",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "未就児０歳～４歳まで。クラス内・連絡等は日本語のみ使用。両親どちらかが日本語でコミュニケーションできること。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "未就児０歳～４歳まで。クラス内・連絡等は日本語のみ使用。両親どちらかが日本語でコミュニケーションできること。",
+            "href": null
+          }
+        ]
+      },
+      "en": {
+        "id": "GX%7B%7D",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Oyako Class",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Oyako Class",
+            "href": null
+          }
+        ]
+      },
+      "ordering": {
+        "id": "J_LQ",
+        "type": "number",
+        "number": 1
+      },
+      "text_en": {
+        "id": "fiOA",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Children age from 0 to 4 at the time of registration. Communitaion between school and familes are conducted only in Japanese. One of gurdians must be able to communicate in Japanese. ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Children age from 0 to 4 at the time of registration. Communitaion between school and familes are conducted only in Japanese. One of gurdians must be able to communicate in Japanese. ",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "親子クラス",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "親子クラス",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/21aa8c0ecf8c80d39735e40b108a0f04",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "11ba8c0e-cf8c-8046-968c-c1cf03a409b4",
+    "created_time": "2024-10-10T06:54:00.000Z",
+    "last_edited_time": "2025-06-22T15:13:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "11ba8c0e-cf8c-80e4-a3d6-cb2cae30ac08"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "text": {
+        "id": "%3Bv%3Fc",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "12歳以上の子供ならびに大人で日本語や日本文化に興味があり、家庭でも自主的に宿題や課題をこなすことができる者",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "12歳以上の子供ならびに大人で日本語や日本文化に興味があり、家庭でも自主的に宿題や課題をこなすことができる者",
+            "href": null
+          }
+        ]
+      },
+      "en": {
+        "id": "GX%7B%7D",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Japanese Division",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Japanese Division",
+            "href": null
+          }
+        ]
+      },
+      "ordering": {
+        "id": "J_LQ",
+        "type": "number",
+        "number": 3
+      },
+      "text_en": {
+        "id": "fiOA",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Age 12 and older including adults who are self-studying the Japanese language and seek support reaching the next level and are willing to do homework.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Age 12 and older including adults who are self-studying the Japanese language and seek support reaching the next level and are willing to do homework.",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "日本語科",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "日本語科",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/11ba8c0ecf8c8046968cc1cf03a409b4",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "dd35b3c6-4cbd-4294-a0df-9f9f197afa62",
+    "created_time": "2024-10-10T06:53:00.000Z",
+    "last_edited_time": "2025-06-22T15:13:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "11ba8c0e-cf8c-80e4-a3d6-cb2cae30ac08"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "text": {
+        "id": "%3Bv%3Fc",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "おおよそ幼稚園から高校生までの年齢で、授業中教師の指示に従い座っていることが出来る児童・生徒。学校からの課題に対して親が支援し、家庭でも日本語の定着に努力することが出来るご家庭の子ども",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "おおよそ幼稚園から高校生までの年齢で、授業中教師の指示に従い座っていることが出来る児童・生徒。学校からの課題に対して親が支援し、家庭でも日本語の定着に努力することが出来るご家庭の子ども",
+            "href": null
+          }
+        ]
+      },
+      "en": {
+        "id": "GX%7B%7D",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "K-12 Division",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "K-12 Division",
+            "href": null
+          }
+        ]
+      },
+      "ordering": {
+        "id": "J_LQ",
+        "type": "number",
+        "number": 2
+      },
+      "text_en": {
+        "id": "fiOA",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Japanese Students, 5 - 18 years old, who are able to follow instructions in classroom, and their parent(s) use Japanese to communicate with children in the household to maximize the benefit of class activities.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Japanese Students, 5 - 18 years old, who are able to follow instructions in classroom, and their parent(s) use Japanese to communicate with children in the household to maximize the benefit of class activities.",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "継承日本語科",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "継承日本語科",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/dd35b3c64cbd4294a0df9f9f197afa62",
+    "public_url": null
+  }
+]

@@ -1,0 +1,428 @@
+[
+  {
+    "object": "page",
+    "id": "2edc2c3c-e62f-4072-9a71-0634dc777f33",
+    "created_time": "2024-10-10T07:17:00.000Z",
+    "last_edited_time": "2025-06-23T21:55:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "11ba8c0e-cf8c-8068-afc9-c4ba38330221"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "price": {
+        "id": "%40aTu",
+        "type": "number",
+        "number": 30
+      },
+      "ordering": {
+        "id": "K%7C%7C%7B",
+        "type": "number",
+        "number": 3
+      },
+      "frequency": {
+        "id": "N%60%3Eo",
+        "type": "number",
+        "number": 10
+      },
+      "en": {
+        "id": "R%3Bi%3B",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "10 Installments",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "10 Installments",
+            "href": null
+          }
+        ]
+      },
+      "payment": {
+        "id": "X%7BeH",
+        "type": "select",
+        "select": {
+          "id": "d9cb2fe2-89c8-438f-9c2a-9531d811d3e1",
+          "name": "monthly",
+          "color": "green"
+        }
+      },
+      "per": {
+        "id": "ZTEJ",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "月々",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "月々",
+            "href": null
+          }
+        ]
+      },
+      "per_en": {
+        "id": "clrE",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "per month",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "per month",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "月々10回払い",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "月々10回払い",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/10-2edc2c3ce62f40729a710634dc777f33",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "35fb2235-c522-434b-afff-7731fae5653f",
+    "created_time": "2024-10-10T07:17:00.000Z",
+    "last_edited_time": "2025-06-23T21:54:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "11ba8c0e-cf8c-8068-afc9-c4ba38330221"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "price": {
+        "id": "%40aTu",
+        "type": "number",
+        "number": 140
+      },
+      "ordering": {
+        "id": "K%7C%7C%7B",
+        "type": "number",
+        "number": 2
+      },
+      "frequency": {
+        "id": "N%60%3Eo",
+        "type": "number",
+        "number": 2
+      },
+      "en": {
+        "id": "R%3Bi%3B",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Two payment ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Two payment ",
+            "href": null
+          }
+        ]
+      },
+      "payment": {
+        "id": "X%7BeH",
+        "type": "select",
+        "select": {
+          "id": "7f91611b-69e2-4f1b-9b81-c1b8288ae2f9",
+          "name": "two",
+          "color": "blue"
+        }
+      },
+      "per": {
+        "id": "ZTEJ",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "半期ごと",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "半期ごと",
+            "href": null
+          }
+        ]
+      },
+      "per_en": {
+        "id": "clrE",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Per 6 months",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Per 6 months",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "半期2回払い",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "半期2回払い",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/2-35fb2235c522434bafff7731fae5653f",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "607784ea-9cd3-4b79-a180-a219230a9585",
+    "created_time": "2024-10-10T07:17:00.000Z",
+    "last_edited_time": "2025-06-23T21:53:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "11ba8c0e-cf8c-8068-afc9-c4ba38330221"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "price": {
+        "id": "%40aTu",
+        "type": "number",
+        "number": 260
+      },
+      "ordering": {
+        "id": "K%7C%7C%7B",
+        "type": "number",
+        "number": 1
+      },
+      "frequency": {
+        "id": "N%60%3Eo",
+        "type": "number",
+        "number": 1
+      },
+      "en": {
+        "id": "R%3Bi%3B",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "One payment",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "One payment",
+            "href": null
+          }
+        ]
+      },
+      "payment": {
+        "id": "X%7BeH",
+        "type": "select",
+        "select": {
+          "id": "ozqh",
+          "name": "one",
+          "color": "orange"
+        }
+      },
+      "per": {
+        "id": "ZTEJ",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "年ごと",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "年ごと",
+            "href": null
+          }
+        ]
+      },
+      "per_en": {
+        "id": "clrE",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Per year",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Per year",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "年間一括払い",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "年間一括払い",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/607784ea9cd34b79a180a219230a9585",
+    "public_url": null
+  }
+]

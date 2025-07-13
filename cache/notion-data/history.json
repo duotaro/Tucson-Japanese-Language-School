@@ -1,0 +1,842 @@
+[
+  {
+    "object": "page",
+    "id": "1ac2adce-5bd8-453b-ab37-84e96ec667bc",
+    "created_time": "2024-09-12T15:57:00.000Z",
+    "last_edited_time": "2024-10-04T17:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "15c93b4f-e615-4400-902a-623b20c6fe49"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "en": {
+        "id": "%3Bz%7Di",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "History",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "History",
+            "href": null
+          }
+        ]
+      },
+      "image3": {
+        "id": "%3Ez~%3D",
+        "type": "files",
+        "files": [
+          {
+            "name": "historty3.jpg",
+            "type": "file",
+            "file": {
+              "url": "/image/download/history/1ac2adce-5bd8-453b-ab37-84e96ec667bc-historty3.jpg",
+              "expiry_time": "2025-07-13T04:28:50.240Z"
+            }
+          }
+        ]
+      },
+      "image2": {
+        "id": "Dyfg",
+        "type": "files",
+        "files": [
+          {
+            "name": "historty2.jpg",
+            "type": "file",
+            "file": {
+              "url": "/image/download/history/1ac2adce-5bd8-453b-ab37-84e96ec667bc-historty2.jpg",
+              "expiry_time": "2025-07-13T04:28:50.245Z"
+            }
+          }
+        ]
+      },
+      "text": {
+        "id": "PnUG",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "2015年8月\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "2015年8月\n",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "ツーソン日本語補習校が、25人の生徒と開校\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "ツーソン日本語補習校が、25人の生徒と開校\n",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "2017年1月\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "2017年1月\n",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "海外受験会場として第一回漢字検定実施（米国で認定されているのは2017年時点で４会場のみ）\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "海外受験会場として第一回漢字検定実施（米国で認定されているのは2017年時点で４会場のみ）\n",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "2018年8月\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "2018年8月\n",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "子ども向けの国際科クラスを開設\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "子ども向けの国際科クラスを開設\n",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "2020年1月\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "2020年1月\n",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "にほんごかふぇ開設、安城市のグループの協力の下、オンラインへ移行\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "にほんごかふぇ開設、安城市のグループの協力の下、オンラインへ移行\n",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "2022年8月\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "2022年8月\n",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "ツーソン日本文化教室パイロットプログラム開始\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "ツーソン日本文化教室パイロットプログラム開始\n",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "2023年8月\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "2023年8月\n",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "国際科クラスの対象を大人学習者へと拡大\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "国際科クラスの対象を大人学習者へと拡大\n",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "2024年8月\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "2024年8月\n",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "ツーソン日本語補習校開校10周年\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "ツーソン日本語補習校開校10周年\n",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "2024年4月\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "2024年4月\n",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "非営利法人「Manabi of Tucson, Inc」を発足\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "非営利法人「Manabi of Tucson, Inc」を発足\n",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "2024年8月\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "2024年8月\n",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "IRS 501(c)(3)承認\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "IRS 501(c)(3)承認\n",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "2025年8月\n「",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "2025年8月\n「",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "ツーソン日本語学校」として活動開始予定",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "ツーソン日本語学校」として活動開始予定",
+            "href": null
+          }
+        ]
+      },
+      "image1": {
+        "id": "T%40sl",
+        "type": "files",
+        "files": [
+          {
+            "name": "historty1.jpg",
+            "type": "file",
+            "file": {
+              "url": "/image/download/history/1ac2adce-5bd8-453b-ab37-84e96ec667bc-historty1.jpg",
+              "expiry_time": "2025-07-13T04:28:50.249Z"
+            }
+          }
+        ]
+      },
+      "text_en": {
+        "id": "lMre",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "2015 ",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "2015 ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "\nTucson Japanese Langauge School LLC was founded and opened with 25 students\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "\nTucson Japanese Langauge School LLC was founded and opened with 25 students\n",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "2017 \n",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "2017 \n",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "The First Kanji Kentei Oversea ( we are 1 of 4 exam locations in the U.S)  is held\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "The First Kanji Kentei Oversea ( we are 1 of 4 exam locations in the U.S)  is held\n",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "2018 \n",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "2018 \n",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "An International Division Class for children is established\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "An International Division Class for children is established\n",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "2020\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "2020\n",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Nihongo Cafe Initiative starts\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Nihongo Cafe Initiative starts\n",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "2022\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "2022\n",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Japanese Culture Classes Initiative starts",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Japanese Culture Classes Initiative starts",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "\n",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Japanese as a second language for adult class added \n",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Japanese as a second language for adult class added \n",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "2024\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "2024\n",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Arizona Nonprofit corporation “Manabi of Tucson, Inc.” incorporated",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Arizona Nonprofit corporation “Manabi of Tucson, Inc.” incorporated",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "\n",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Tucson Japanese Langauge School’s 10th Anniversary",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Tucson Japanese Langauge School’s 10th Anniversary",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "\n",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "501(c)(3) status approved\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "501(c)(3) status approved\n",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "2025\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "2025\n",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "The school",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "The school",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " ",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "starts a new chapter as “Tucosn Japanese School”, a nonprofit organization under section 501(c)(3) of the Internal Revenue Code.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "starts a new chapter as “Tucosn Japanese School”, a nonprofit organization under section 501(c)(3) of the Internal Revenue Code.",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "沿革",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "沿革",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/1ac2adce5bd8453bab3784e96ec667bc",
+    "public_url": null
+  }
+]

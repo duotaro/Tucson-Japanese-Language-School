@@ -1,0 +1,14 @@
+# Cloudflare Pages用の設定
+name = "tucson-japanese-language-school"
+compatibility_date = "2024-12-12"
+
+# Pages configuration
+pages_build_output_dir = "out"
+
+[env.production]
+# 本番環境用の設定
+name = "tucson-japanese-language-school"
+
+[env.preview]
+# プレビュー環境用の設定  
+name = "tucson-japanese-language-school-preview"

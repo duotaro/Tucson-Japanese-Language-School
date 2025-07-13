@@ -1,0 +1,134 @@
+[
+  {
+    "object": "page",
+    "id": "54fad9f8-3ede-4a4d-a531-6a4c5b6d5ef2",
+    "created_time": "2024-09-12T15:49:00.000Z",
+    "last_edited_time": "2024-10-01T12:20:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "5ceb6b37-e458-4fa3-9fb7-8161869d885f"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "en": {
+        "id": "MCP%7C",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Welcome to TJS!",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Welcome to TJS!",
+            "href": null
+          }
+        ]
+      },
+      "text_en": {
+        "id": "Op_F",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Tucson Japanese School is located in Tucson, Arizona in the Sonoran Desert surrounded by beautiful mountains rich in nature. We rent the building of a local private school, and teach the Japanese language to PreK-12 students, including adult learners, around 40 students, on Saturday mornings. We emphasize the joy of learning and give students opportunities to experience Japanese language, culture, arts, and traditions in the classroom, and through events such as sports days, calligraphy day, and festivals. We also make Japanese reading materials available to students by offering a Mini-Japanese library, which can help students' learning experience outside the classroom. \nBy creating an environment where students enjoy learning with friends and deepen their understanding of culture, art traditions, and languages, we hope that learning at our school will help students build self-confidence and respect for others, and earn skills and strength to thrive in a diverse society today. \nThe school was founded 10 years ago, and even now 10 years later, we still have lots of support and help of staff and volunteers with running the school. We are so proud of our warm and beloved school and we hope that you will be part of it too.\nWe promise that Tucson Japanese School will serve and respond to the needs of our community, and it will remain a trusted school community not only for our students, their families, instructors, and staff but also for all the people in Tucson. We welcome you all! ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Tucson Japanese School is located in Tucson, Arizona in the Sonoran Desert surrounded by beautiful mountains rich in nature. We rent the building of a local private school, and teach the Japanese language to PreK-12 students, including adult learners, around 40 students, on Saturday mornings. We emphasize the joy of learning and give students opportunities to experience Japanese language, culture, arts, and traditions in the classroom, and through events such as sports days, calligraphy day, and festivals. We also make Japanese reading materials available to students by offering a Mini-Japanese library, which can help students' learning experience outside the classroom. \nBy creating an environment where students enjoy learning with friends and deepen their understanding of culture, art traditions, and languages, we hope that learning at our school will help students build self-confidence and respect for others, and earn skills and strength to thrive in a diverse society today. \nThe school was founded 10 years ago, and even now 10 years later, we still have lots of support and help of staff and volunteers with running the school. We are so proud of our warm and beloved school and we hope that you will be part of it too.\nWe promise that Tucson Japanese School will serve and respond to the needs of our community, and it will remain a trusted school community not only for our students, their families, instructors, and staff but also for all the people in Tucson. We welcome you all! ",
+            "href": null
+          }
+        ]
+      },
+      "image": {
+        "id": "%5CxVy",
+        "type": "files",
+        "files": [
+          {
+            "name": "Tjsfounders.jpg",
+            "type": "file",
+            "file": {
+              "url": "/image/download/greeting/54fad9f8-3ede-4a4d-a531-6a4c5b6d5ef2-Tjsfounders.jpg",
+              "expiry_time": "2025-07-13T04:28:49.431Z"
+            }
+          }
+        ]
+      },
+      "text": {
+        "id": "vO~z",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "本校はアリゾナ州南部のソノラ砂漠に位置する自然豊かな土地で、土曜日の朝に現地校の校舎を借り、未就児を含む幼・小・中・高校の学生と外国語としての日本語を学ぶ学習者を対象に授業を行っています。\n\n言語だけでなく日本の文化や伝統、芸術に触れ合う時間も多く取り入れ、季節の行事や日本ならではのイベント、運動会、習字、お祭りなどを行い、日本の慣習を体験しながら楽しく学ぶ機会を設けるよう務めています。\n\n寄付などによってコツコツとためた本はミニスーツケース図書館として生徒に貸出をし、少しでも多く日本語に触れる機会を作れるように、ボランティアさんの力を借りながら運営をしています。\n\n同じ環境にある友達と楽しく学べる授業作り、日本語を通してさまざまな分野への理解を深めていく本校での学びが、それぞれが自信を持って自分らしく、他を尊重し、多様性社会を生き抜いていく力の糧となってくれれば本望です。\n\n手作りの小さな学校として始まり、10年経った今も多くの方々に支えられて運営している暖かい自慢の学校です。これからも皆のツーソン日本語学校が学生、その家族、講師、スタッフのみならず、ツーソン地域の多くの方によって良い学校であり、コミュニティーであれるように約束します。本校のプログラム、様子をぜひご覧ににいらして下さい。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "本校はアリゾナ州南部のソノラ砂漠に位置する自然豊かな土地で、土曜日の朝に現地校の校舎を借り、未就児を含む幼・小・中・高校の学生と外国語としての日本語を学ぶ学習者を対象に授業を行っています。\n\n言語だけでなく日本の文化や伝統、芸術に触れ合う時間も多く取り入れ、季節の行事や日本ならではのイベント、運動会、習字、お祭りなどを行い、日本の慣習を体験しながら楽しく学ぶ機会を設けるよう務めています。\n\n寄付などによってコツコツとためた本はミニスーツケース図書館として生徒に貸出をし、少しでも多く日本語に触れる機会を作れるように、ボランティアさんの力を借りながら運営をしています。\n\n同じ環境にある友達と楽しく学べる授業作り、日本語を通してさまざまな分野への理解を深めていく本校での学びが、それぞれが自信を持って自分らしく、他を尊重し、多様性社会を生き抜いていく力の糧となってくれれば本望です。\n\n手作りの小さな学校として始まり、10年経った今も多くの方々に支えられて運営している暖かい自慢の学校です。これからも皆のツーソン日本語学校が学生、その家族、講師、スタッフのみならず、ツーソン地域の多くの方によって良い学校であり、コミュニティーであれるように約束します。本校のプログラム、様子をぜひご覧ににいらして下さい。",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ツーソン日本語学校へようこそ！",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "ツーソン日本語学校へようこそ！",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/54fad9f83ede4a4da5316a4c5b6d5ef2",
+    "public_url": null
+  }
+]

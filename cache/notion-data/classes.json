@@ -1,0 +1,1346 @@
+[
+  {
+    "object": "page",
+    "id": "11ca8c0e-cf8c-80d3-8615-f7d4f4007cf0",
+    "created_time": "2024-10-11T09:43:00.000Z",
+    "last_edited_time": "2024-10-11T09:51:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "11aa8c0e-cf8c-80a7-ab2c-f31cd0b0a881"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "target": {
+        "id": "%3FkLj",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "日本語の基礎を習得済の方向け",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "日本語の基礎を習得済の方向け",
+            "href": null
+          }
+        ]
+      },
+      "text": {
+        "id": "ADOb",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "中級・上級クラスは日常的な言葉や会話に加え、幅広い話題や分野への理解を深め、より高度なスキルを身につけることができます。また、コミュニケーションに重点を置くことで、より実践的な学びを得ることができます。日本語の構成や文章作成、新しい単語、漢字学習なども取り入れ、より複雑な文を読み書きできるようになることを目標とします。日本の伝統的な文化や習慣を学んでいくと同時に、近代文学やポップカルチャーも取り入れながら、第二言語としてよりレベルの高く、実社会で実用できる日本語の習得を目指します。また日本ならではの行事、運動会や学芸会、文化祭などを通して、文化の違いに気づき、文化の多様性に理解を深めます。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "中級・上級クラスは日常的な言葉や会話に加え、幅広い話題や分野への理解を深め、より高度なスキルを身につけることができます。また、コミュニケーションに重点を置くことで、より実践的な学びを得ることができます。日本語の構成や文章作成、新しい単語、漢字学習なども取り入れ、より複雑な文を読み書きできるようになることを目標とします。日本の伝統的な文化や習慣を学んでいくと同時に、近代文学やポップカルチャーも取り入れながら、第二言語としてよりレベルの高く、実社会で実用できる日本語の習得を目指します。また日本ならではの行事、運動会や学芸会、文化祭などを通して、文化の違いに気づき、文化の多様性に理解を深めます。",
+            "href": null
+          }
+        ]
+      },
+      "target_en": {
+        "id": "Jz%3F%3B",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "For basic learners",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "For basic learners",
+            "href": null
+          }
+        ]
+      },
+      "text_en": {
+        "id": "Rr%3BB",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "The intermediate and advanced classes allow students to deepen their understanding of everyday language and conversation while exploring a wide range of topics and fields, developing more advanced skills. By emphasizing communication, students gain practical learning experiences. The curriculum also incorporates Japanese structure, composition, new vocabulary, and kanji study, aiming for students to read and write more complex sentences. Alongside learning about traditional Japanese culture and customs, the classes will include modern literature and pop culture, aiming for higher-level proficiency in Japanese as a second language that can be applied in real-world contexts. Additionally, through participation in uniquely Japanese events such as sports days, art festivals, and cultural festivals, students will become aware of cultural differences and deepen their understanding of cultural diversity.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "The intermediate and advanced classes allow students to deepen their understanding of everyday language and conversation while exploring a wide range of topics and fields, developing more advanced skills. By emphasizing communication, students gain practical learning experiences. The curriculum also incorporates Japanese structure, composition, new vocabulary, and kanji study, aiming for students to read and write more complex sentences. Alongside learning about traditional Japanese culture and customs, the classes will include modern literature and pop culture, aiming for higher-level proficiency in Japanese as a second language that can be applied in real-world contexts. Additionally, through participation in uniquely Japanese events such as sports days, art festivals, and cultural festivals, students will become aware of cultural differences and deepen their understanding of cultural diversity.",
+            "href": null
+          }
+        ]
+      },
+      "image": {
+        "id": "SW%3Fe",
+        "type": "files",
+        "files": [
+          {
+            "name": "historty2.jpg",
+            "type": "file",
+            "file": {
+              "url": "/image/download/classes/11ca8c0e-cf8c-80d3-8615-f7d4f4007cf0-historty2.jpg",
+              "expiry_time": "2025-07-13T04:29:32.551Z"
+            }
+          }
+        ]
+      },
+      "ordering": {
+        "id": "%60%3BQ%60",
+        "type": "number",
+        "number": 7
+      },
+      "category": {
+        "id": "e%3DA%5E",
+        "type": "select",
+        "select": {
+          "id": "888c0c89-eb95-456c-a29a-2b842baf991f",
+          "name": "Japanese",
+          "color": "gray"
+        }
+      },
+      "en": {
+        "id": "oram",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Advanced Classes",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Advanced Classes",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "中級・上級クラス",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "中級・上級クラス",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/11ca8c0ecf8c80d38615f7d4f4007cf0",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "11ca8c0e-cf8c-80d8-8fda-ee7d75a0e718",
+    "created_time": "2024-10-11T09:38:00.000Z",
+    "last_edited_time": "2024-10-23T03:11:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "11aa8c0e-cf8c-80a7-ab2c-f31cd0b0a881"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "target": {
+        "id": "%3FkLj",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "対象年齢１２歳～１８歳",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "対象年齢１２歳～１８歳",
+            "href": null
+          }
+        ]
+      },
+      "text": {
+        "id": "ADOb",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "クラス４は小学校高学年以上のレベルとし、より高度な言語能力が求められます。漢字の学習では読み書にに加え、漢字辞書を導入し、部首のつくりや構成を理解し、自力で辞書を引き活用できるようにします。また新聞記事などを取り入れ、事柄の順序立てや要点を的確にとらえ、事柄の相互関係を念頭に置きながら、創意工夫を凝らして表現できる力を養います。取材を通して、新聞記事を書いたり、小さい子のために絵本を創作して読み聞かせをするなど、楽しみながら自己表現力と独創性の豊かさを育む活動をします。同時に日本文化をより深く理解するために、時事問題や短歌や俳句、ことわざ、慣用句なども取り入れていきます。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "クラス４は小学校高学年以上のレベルとし、より高度な言語能力が求められます。漢字の学習では読み書にに加え、漢字辞書を導入し、部首のつくりや構成を理解し、自力で辞書を引き活用できるようにします。また新聞記事などを取り入れ、事柄の順序立てや要点を的確にとらえ、事柄の相互関係を念頭に置きながら、創意工夫を凝らして表現できる力を養います。取材を通して、新聞記事を書いたり、小さい子のために絵本を創作して読み聞かせをするなど、楽しみながら自己表現力と独創性の豊かさを育む活動をします。同時に日本文化をより深く理解するために、時事問題や短歌や俳句、ことわざ、慣用句なども取り入れていきます。",
+            "href": null
+          }
+        ]
+      },
+      "target_en": {
+        "id": "Jz%3F%3B",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Age: 12 to 18",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Age: 12 to 18",
+            "href": null
+          }
+        ]
+      },
+      "text_en": {
+        "id": "Rr%3BB",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "In Class 4, designed for students at a higher elementary school level, more advanced language skills are required. Alongside reading and writing kanji, students will be introduced to kanji dictionaries to understand radicals and structures, enabling them to use dictionaries independently. Incorporating materials such as newspaper articles will help students learn to organize information, accurately identify key points, and express their thoughts creatively while considering the relationships between various topics. Through activities like writing newspaper articles and creating picture books for younger children, students will enjoy developing their self-expression and originality. Additionally, to deepen their understanding of Japanese culture, the curriculum will include current events, tanka and haiku poetry, proverbs, and idioms.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "In Class 4, designed for students at a higher elementary school level, more advanced language skills are required. Alongside reading and writing kanji, students will be introduced to kanji dictionaries to understand radicals and structures, enabling them to use dictionaries independently. Incorporating materials such as newspaper articles will help students learn to organize information, accurately identify key points, and express their thoughts creatively while considering the relationships between various topics. Through activities like writing newspaper articles and creating picture books for younger children, students will enjoy developing their self-expression and originality. Additionally, to deepen their understanding of Japanese culture, the curriculum will include current events, tanka and haiku poetry, proverbs, and idioms.",
+            "href": null
+          }
+        ]
+      },
+      "image": {
+        "id": "SW%3Fe",
+        "type": "files",
+        "files": [
+          {
+            "name": "winter.webp",
+            "type": "file",
+            "file": {
+              "url": "/image/download/classes/11ca8c0e-cf8c-80d8-8fda-ee7d75a0e718-winter.webp",
+              "expiry_time": "2025-07-13T04:29:32.551Z"
+            }
+          }
+        ]
+      },
+      "ordering": {
+        "id": "%60%3BQ%60",
+        "type": "number",
+        "number": 5
+      },
+      "category": {
+        "id": "e%3DA%5E",
+        "type": "select",
+        "select": {
+          "id": "5ff7fab8-9e25-434d-99ec-81dee345aa3a",
+          "name": "Inherited",
+          "color": "yellow"
+        }
+      },
+      "en": {
+        "id": "oram",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Class 4",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Class 4",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "クラス４",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "クラス４",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/11ca8c0ecf8c80d88fdaee7d75a0e718",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "11aa8c0e-cf8c-8000-b850-fef91292ae8c",
+    "created_time": "2024-10-09T07:19:00.000Z",
+    "last_edited_time": "2024-10-11T09:48:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "11aa8c0e-cf8c-80a7-ab2c-f31cd0b0a881"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "target": {
+        "id": "%3FkLj",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "対象年齢～４歳",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "対象年齢～４歳",
+            "href": null
+          }
+        ]
+      },
+      "text": {
+        "id": "ADOb",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "親子クラスは、保護者と子どもが一緒に参加するクラスです。日本語の絵本を読んだり、歌や音楽、工作などを通して楽しみながら日本の伝統的な文化や習慣を学び、文化的視野を広げていきます。また親と子供が一緒にクラスに参加することで、子供の日本語への興味を引き立て、家庭での日本語学習を促進、サポートします。先生や友達と日本語で心を通わせる手段として日本語を使い、身近なものを表したひらがなやカタカナに親しみ、日本語を使う楽しさを引き立てる環境を提供することを目標としています。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "親子クラスは、保護者と子どもが一緒に参加するクラスです。日本語の絵本を読んだり、歌や音楽、工作などを通して楽しみながら日本の伝統的な文化や習慣を学び、文化的視野を広げていきます。また親と子供が一緒にクラスに参加することで、子供の日本語への興味を引き立て、家庭での日本語学習を促進、サポートします。先生や友達と日本語で心を通わせる手段として日本語を使い、身近なものを表したひらがなやカタカナに親しみ、日本語を使う楽しさを引き立てる環境を提供することを目標としています。",
+            "href": null
+          }
+        ]
+      },
+      "target_en": {
+        "id": "Jz%3F%3B",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Age: Up to 4",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Age: Up to 4",
+            "href": null
+          }
+        ]
+      },
+      "text_en": {
+        "id": "Rr%3BB",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "The parent-child class is designed for parents and children to participate together. Through reading Japanese picture books, singing, music, and crafts, participants enjoy learning about traditional Japanese culture and customs, broadening their cultural perspectives. Additionally, by attending the class together, parents can spark their children's interest in Japanese and promote language learning at home. The goal is to provide an environment where children can communicate in Japanese with teachers and friends, become familiar with hiragana and katakana that represent everyday objects, and experience the joy of using the language.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "The parent-child class is designed for parents and children to participate together. Through reading Japanese picture books, singing, music, and crafts, participants enjoy learning about traditional Japanese culture and customs, broadening their cultural perspectives. Additionally, by attending the class together, parents can spark their children's interest in Japanese and promote language learning at home. The goal is to provide an environment where children can communicate in Japanese with teachers and friends, become familiar with hiragana and katakana that represent everyday objects, and experience the joy of using the language.",
+            "href": null
+          }
+        ]
+      },
+      "image": {
+        "id": "SW%3Fe",
+        "type": "files",
+        "files": [
+          {
+            "name": "AdobeStock_268595424.jpeg",
+            "type": "file",
+            "file": {
+              "url": "/image/download/classes/11aa8c0e-cf8c-8000-b850-fef91292ae8c-AdobeStock_268595424.jpeg",
+              "expiry_time": "2025-07-13T04:29:32.551Z"
+            }
+          }
+        ]
+      },
+      "ordering": {
+        "id": "%60%3BQ%60",
+        "type": "number",
+        "number": 1
+      },
+      "category": {
+        "id": "e%3DA%5E",
+        "type": "select",
+        "select": {
+          "id": "5ff7fab8-9e25-434d-99ec-81dee345aa3a",
+          "name": "Inherited",
+          "color": "yellow"
+        }
+      },
+      "en": {
+        "id": "oram",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": " Parent-Child Class",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " Parent-Child Class",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "親子クラス",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "親子クラス",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/11aa8c0ecf8c8000b850fef91292ae8c",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "11aa8c0e-cf8c-806d-bb6c-f2177df033cb",
+    "created_time": "2024-10-09T07:14:00.000Z",
+    "last_edited_time": "2024-10-23T03:10:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "11aa8c0e-cf8c-80a7-ab2c-f31cd0b0a881"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "target": {
+        "id": "%3FkLj",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "日本語を０から学びたい方向け",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "日本語を０から学びたい方向け",
+            "href": null
+          }
+        ]
+      },
+      "text": {
+        "id": "ADOb",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "日本語の基礎と日本文化について理解を深めるクラスです。あいさつや旅行などに使える言葉やフレーズを毎回の授業で学び、身近なものの名前を日本語で覚えていきます。日本語の文字の構成や役割について学び、名前や簡単なもののなまえを読んで書けるようになることを目標とします。様々なコンテンツを通し、日本の伝統的な文化や習慣を学んでいくと同時に、近代文学やポップカルチャーも取り入れながら第二言語として日本語の習得を目指します。また日本ならではの行事、運動会や学芸会、文化祭などを通して、文化の違いに気づき、文化の多様性に理解を深めます。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "日本語の基礎と日本文化について理解を深めるクラスです。あいさつや旅行などに使える言葉やフレーズを毎回の授業で学び、身近なものの名前を日本語で覚えていきます。日本語の文字の構成や役割について学び、名前や簡単なもののなまえを読んで書けるようになることを目標とします。様々なコンテンツを通し、日本の伝統的な文化や習慣を学んでいくと同時に、近代文学やポップカルチャーも取り入れながら第二言語として日本語の習得を目指します。また日本ならではの行事、運動会や学芸会、文化祭などを通して、文化の違いに気づき、文化の多様性に理解を深めます。",
+            "href": null
+          }
+        ]
+      },
+      "target_en": {
+        "id": "Jz%3F%3B",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "For beginners",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "For beginners",
+            "href": null
+          }
+        ]
+      },
+      "text_en": {
+        "id": "Rr%3BB",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "This class aims to deepen understanding of basic Japanese and Japanese culture. Students will learn useful words and phrases for greetings and travel in each lesson, while also memorizing the names of everyday objects in Japanese. The goal is to understand the structure and role of Japanese characters, enabling students to read and write their names and simple words. Through various content, students will learn about traditional Japanese culture and customs, while also incorporating modern literature and pop culture as they strive to acquire Japanese as a second language. Additionally, by participating in uniquely Japanese events such as sports days, art festivals, and cultural festivals, students will become aware of cultural differences and deepen their understanding of cultural diversity.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "This class aims to deepen understanding of basic Japanese and Japanese culture. Students will learn useful words and phrases for greetings and travel in each lesson, while also memorizing the names of everyday objects in Japanese. The goal is to understand the structure and role of Japanese characters, enabling students to read and write their names and simple words. Through various content, students will learn about traditional Japanese culture and customs, while also incorporating modern literature and pop culture as they strive to acquire Japanese as a second language. Additionally, by participating in uniquely Japanese events such as sports days, art festivals, and cultural festivals, students will become aware of cultural differences and deepen their understanding of cultural diversity.",
+            "href": null
+          }
+        ]
+      },
+      "image": {
+        "id": "SW%3Fe",
+        "type": "files",
+        "files": [
+          {
+            "name": "katakana.webp",
+            "type": "file",
+            "file": {
+              "url": "/image/download/classes/11aa8c0e-cf8c-806d-bb6c-f2177df033cb-katakana.webp",
+              "expiry_time": "2025-07-13T04:29:32.551Z"
+            }
+          }
+        ]
+      },
+      "ordering": {
+        "id": "%60%3BQ%60",
+        "type": "number",
+        "number": 6
+      },
+      "category": {
+        "id": "e%3DA%5E",
+        "type": "select",
+        "select": {
+          "id": "888c0c89-eb95-456c-a29a-2b842baf991f",
+          "name": "Japanese",
+          "color": "gray"
+        }
+      },
+      "en": {
+        "id": "oram",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Beginner Class",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Beginner Class",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "初級クラス",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "初級クラス",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/11aa8c0ecf8c806dbb6cf2177df033cb",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "11a3d234-161c-4116-bb01-34eeed87f99a",
+    "created_time": "2024-10-09T07:09:00.000Z",
+    "last_edited_time": "2024-10-11T09:49:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "11aa8c0e-cf8c-80a7-ab2c-f31cd0b0a881"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "target": {
+        "id": "%3FkLj",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "対象年齢７歳～１２歳",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "対象年齢７歳～１２歳",
+            "href": null
+          }
+        ]
+      },
+      "text": {
+        "id": "ADOb",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "クラス２では、ひらがな/カタカナの読み書きの定着とともに、漢字の学習も始めます。漢字も使いながら、簡単な構成を考えて文章を書く練習もします。また、人との会話を念頭に置き、自分の気持ちや考えを順序よくまとめ、表現力豊かに話ができ、相手に応じて丁寧な言葉も使えるような能力を養います。曜日や日にち、時間など日常生活に欠かせない言葉や概念を定着させると共に、神話や伝承なども取り入れ、より幅広い分野に学習内容を広げ、好奇心や探求心を高めながら様々な知識を得る楽しみを教えます。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "クラス２では、ひらがな/カタカナの読み書きの定着とともに、漢字の学習も始めます。漢字も使いながら、簡単な構成を考えて文章を書く練習もします。また、人との会話を念頭に置き、自分の気持ちや考えを順序よくまとめ、表現力豊かに話ができ、相手に応じて丁寧な言葉も使えるような能力を養います。曜日や日にち、時間など日常生活に欠かせない言葉や概念を定着させると共に、神話や伝承なども取り入れ、より幅広い分野に学習内容を広げ、好奇心や探求心を高めながら様々な知識を得る楽しみを教えます。",
+            "href": null
+          }
+        ]
+      },
+      "target_en": {
+        "id": "Jz%3F%3B",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Age: 7 to 12",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Age: 7 to 12",
+            "href": null
+          }
+        ]
+      },
+      "text_en": {
+        "id": "Rr%3BB",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "In Class 2, students will solidify their skills in reading and writing hiragana and katakana while also beginning to learn kanji. They will practice writing simple sentences using kanji, focusing on organizing their thoughts and feelings in conversations. The goal is to develop the ability to express themselves clearly and use polite language appropriate to the situation. Students will learn essential words and concepts related to days of the week, dates, and time, while also exploring myths and folklore to expand their learning into a broader range of topics. This approach aims to foster curiosity and a spirit of inquiry, making the process of gaining knowledge enjoyable.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "In Class 2, students will solidify their skills in reading and writing hiragana and katakana while also beginning to learn kanji. They will practice writing simple sentences using kanji, focusing on organizing their thoughts and feelings in conversations. The goal is to develop the ability to express themselves clearly and use polite language appropriate to the situation. Students will learn essential words and concepts related to days of the week, dates, and time, while also exploring myths and folklore to expand their learning into a broader range of topics. This approach aims to foster curiosity and a spirit of inquiry, making the process of gaining knowledge enjoyable.",
+            "href": null
+          }
+        ]
+      },
+      "image": {
+        "id": "SW%3Fe",
+        "type": "files",
+        "files": [
+          {
+            "name": "class2.png",
+            "type": "file",
+            "file": {
+              "url": "/image/download/classes/11a3d234-161c-4116-bb01-34eeed87f99a-class2.png",
+              "expiry_time": "2025-07-13T04:29:32.551Z"
+            }
+          }
+        ]
+      },
+      "ordering": {
+        "id": "%60%3BQ%60",
+        "type": "number",
+        "number": 3
+      },
+      "category": {
+        "id": "e%3DA%5E",
+        "type": "select",
+        "select": {
+          "id": "5ff7fab8-9e25-434d-99ec-81dee345aa3a",
+          "name": "Inherited",
+          "color": "yellow"
+        }
+      },
+      "en": {
+        "id": "oram",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Class 2",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Class 2",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "クラス２",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "クラス２",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/11a3d234161c4116bb0134eeed87f99a",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "53b5c5ad-de13-4cf2-a4c1-407d8d117dce",
+    "created_time": "2024-10-09T07:09:00.000Z",
+    "last_edited_time": "2024-10-23T03:10:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "11aa8c0e-cf8c-80a7-ab2c-f31cd0b0a881"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "target": {
+        "id": "%3FkLj",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "対象年齢５歳～８歳",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "対象年齢５歳～８歳",
+            "href": null
+          }
+        ]
+      },
+      "text": {
+        "id": "ADOb",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "クラス１は日本語の基礎から学ぶ会話を中心としたクラスです。日常生活に必要な言葉やフレーズを毎回の授業で学び、自分のしたいことや人に伝えたいことなどを自分なりの言葉で表現できるようにし、また表現できる楽しさを味わうことを目標とします。先生や友達と日本語で心を通わせる手段として日本語を使い、身近なものを表したひらがなやカタカナに親しみ、文字を書いて人に伝える楽しみも味わいます。絵本を読んだり、歌や音楽、工作などを通して楽しみながら日本の伝統的な文化や習慣を学び、文化的視野を広げていきます。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "クラス１は日本語の基礎から学ぶ会話を中心としたクラスです。日常生活に必要な言葉やフレーズを毎回の授業で学び、自分のしたいことや人に伝えたいことなどを自分なりの言葉で表現できるようにし、また表現できる楽しさを味わうことを目標とします。先生や友達と日本語で心を通わせる手段として日本語を使い、身近なものを表したひらがなやカタカナに親しみ、文字を書いて人に伝える楽しみも味わいます。絵本を読んだり、歌や音楽、工作などを通して楽しみながら日本の伝統的な文化や習慣を学び、文化的視野を広げていきます。",
+            "href": null
+          }
+        ]
+      },
+      "target_en": {
+        "id": "Jz%3F%3B",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Age: 5 to 8",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Age: 5 to 8",
+            "href": null
+          }
+        ]
+      },
+      "text_en": {
+        "id": "Rr%3BB",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Class 1 focuses on learning conversational Japanese from the basics. In each lesson, students will learn essential words and phrases for daily life, aiming to express their thoughts and desires in their own words, while also experiencing the joy of self-expression. Japanese is used as a means to communicate with teachers and friends, allowing students to become familiar with hiragana and katakana that represent everyday objects, as well as the pleasure of writing and conveying messages. Through reading picture books, singing, music, and crafts, students enjoy learning about traditional Japanese culture and customs, broadening their cultural perspectives.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Class 1 focuses on learning conversational Japanese from the basics. In each lesson, students will learn essential words and phrases for daily life, aiming to express their thoughts and desires in their own words, while also experiencing the joy of self-expression. Japanese is used as a means to communicate with teachers and friends, allowing students to become familiar with hiragana and katakana that represent everyday objects, as well as the pleasure of writing and conveying messages. Through reading picture books, singing, music, and crafts, students enjoy learning about traditional Japanese culture and customs, broadening their cultural perspectives.",
+            "href": null
+          }
+        ]
+      },
+      "image": {
+        "id": "SW%3Fe",
+        "type": "files",
+        "files": [
+          {
+            "name": "class20241023_01.png",
+            "type": "file",
+            "file": {
+              "url": "/image/download/classes/53b5c5ad-de13-4cf2-a4c1-407d8d117dce-class20241023_01.png",
+              "expiry_time": "2025-07-13T04:29:32.551Z"
+            }
+          }
+        ]
+      },
+      "ordering": {
+        "id": "%60%3BQ%60",
+        "type": "number",
+        "number": 2
+      },
+      "category": {
+        "id": "e%3DA%5E",
+        "type": "select",
+        "select": {
+          "id": "5ff7fab8-9e25-434d-99ec-81dee345aa3a",
+          "name": "Inherited",
+          "color": "yellow"
+        }
+      },
+      "en": {
+        "id": "oram",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Class 1",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Class 1",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "クラス１",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "クラス１",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/53b5c5adde134cf2a4c1407d8d117dce",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "63f53dc4-0f61-4505-abea-ff1ad51668e3",
+    "created_time": "2024-10-09T07:09:00.000Z",
+    "last_edited_time": "2024-10-23T03:10:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "11aa8c0e-cf8c-80a7-ab2c-f31cd0b0a881"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "target": {
+        "id": "%3FkLj",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "対象年齢１０歳～１５歳",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "対象年齢１０歳～１５歳",
+            "href": null
+          }
+        ]
+      },
+      "text": {
+        "id": "ADOb",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "クラス３は、調べた事などについて工夫をしながら、筋道を立てて話す能力、話の中心に気をつけて聞く能力、進行に沿って話し合う能力を身につけることを目標とします。自分の経験と事柄を結びつけて考える力、話の要点を抜き出して自分の言葉でまとめる読解力や段落の構成を考えて作文を書く文章力を養うために、聞く、話す、読む、書くの４技術を総合的に磨いていきます。様々な分野の教材を取り込むことによって、楽しみながら読み書きの能力を養うとともに、自ら日本語で学習をしようとする態度の育成を目指します。また日本特有の季節の行事などを積極的に取り込み、日本文化の理解を深めます。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "クラス３は、調べた事などについて工夫をしながら、筋道を立てて話す能力、話の中心に気をつけて聞く能力、進行に沿って話し合う能力を身につけることを目標とします。自分の経験と事柄を結びつけて考える力、話の要点を抜き出して自分の言葉でまとめる読解力や段落の構成を考えて作文を書く文章力を養うために、聞く、話す、読む、書くの４技術を総合的に磨いていきます。様々な分野の教材を取り込むことによって、楽しみながら読み書きの能力を養うとともに、自ら日本語で学習をしようとする態度の育成を目指します。また日本特有の季節の行事などを積極的に取り込み、日本文化の理解を深めます。",
+            "href": null
+          }
+        ]
+      },
+      "target_en": {
+        "id": "Jz%3F%3B",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Age: 10 to 15",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Age: 10 to 15",
+            "href": null
+          }
+        ]
+      },
+      "text_en": {
+        "id": "Rr%3BB",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "In Class 3, the goal is to develop the ability to speak logically about researched topics, listen attentively to the main points of discussions, and participate effectively in conversations. Students will enhance their analytical skills by connecting their experiences with the subjects, extracting key points from discussions, and summarizing them in their own words. They will also work on their writing skills by considering paragraph structure and composition. By integrating the four skills of listening, speaking, reading, and writing, students will improve their literacy in an enjoyable way while fostering a proactive attitude toward learning Japanese. Additionally, they will actively engage with Japan's unique seasonal events to deepen their understanding of Japanese culture.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "In Class 3, the goal is to develop the ability to speak logically about researched topics, listen attentively to the main points of discussions, and participate effectively in conversations. Students will enhance their analytical skills by connecting their experiences with the subjects, extracting key points from discussions, and summarizing them in their own words. They will also work on their writing skills by considering paragraph structure and composition. By integrating the four skills of listening, speaking, reading, and writing, students will improve their literacy in an enjoyable way while fostering a proactive attitude toward learning Japanese. Additionally, they will actively engage with Japan's unique seasonal events to deepen their understanding of Japanese culture.",
+            "href": null
+          }
+        ]
+      },
+      "image": {
+        "id": "SW%3Fe",
+        "type": "files",
+        "files": [
+          {
+            "name": "class20241023_02.png",
+            "type": "file",
+            "file": {
+              "url": "/image/download/classes/63f53dc4-0f61-4505-abea-ff1ad51668e3-class20241023_02.png",
+              "expiry_time": "2025-07-13T04:29:32.551Z"
+            }
+          }
+        ]
+      },
+      "ordering": {
+        "id": "%60%3BQ%60",
+        "type": "number",
+        "number": 4
+      },
+      "category": {
+        "id": "e%3DA%5E",
+        "type": "select",
+        "select": {
+          "id": "5ff7fab8-9e25-434d-99ec-81dee345aa3a",
+          "name": "Inherited",
+          "color": "yellow"
+        }
+      },
+      "en": {
+        "id": "oram",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Class 3",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Class 3",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "クラス３",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "クラス３",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/63f53dc40f614505abeaff1ad51668e3",
+    "public_url": null
+  }
+]

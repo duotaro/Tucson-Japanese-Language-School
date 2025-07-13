@@ -1,0 +1,209 @@
+name: 📅 Scheduled Cache Updates
+
+on:
+  # 定期実行スケジュール（UTC時間）
+  schedule:
+    # 毎日 9:00 JST (00:00 UTC) - frequent更新
+    - cron: '0 0 * * *'
+    # 毎週月曜日 10:00 JST (01:00 UTC) - moderate更新  
+    - cron: '0 1 * * 1'
+    # 毎月1日 11:00 JST (02:00 UTC) - rare更新
+    - cron: '0 2 1 * *'
+    
+  # 手動実行を許可
+  workflow_dispatch:
+    inputs:
+      frequency:
+        description: '更新頻度'
+        required: true
+        default: 'frequent'
+        type: choice
+        options:
+          - frequent
+          - moderate  
+          - rare
+          - full
+
+env:
+  NODE_VERSION: '18'
+  YARN_VERSION: '4.2.2'
+
+jobs:
+  scheduled-cache-update:
+    name: 🔄 Scheduled Cache Update
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    
+    steps:
+      - name: 📥 Checkout code
+        uses: actions/checkout@v4
+        with:
+          # キャッシュファイルをコミットするため、token使用
+          token: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: 📦 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          
+      - name: 📦 Setup Yarn
+        run: |
+          npm install -g yarn@${{ env.YARN_VERSION }}
+          yarn --version
+          
+      - name: 🔄 Cache node_modules
+        uses: actions/cache@v3
+        with:
+          path: |
+            node_modules
+            .yarn/cache
+          key: ${{ runner.os }}-yarn-${{ hashFiles('package.json', 'yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+            
+      - name: 📦 Install dependencies
+        run: yarn install --frozen-lockfile
+        
+      - name: 🎯 更新頻度を決定
+        id: determine-frequency
+        run: |
+          if [ "${{ github.event.inputs.frequency }}" != "" ]; then
+            # 手動実行の場合
+            FREQUENCY="${{ github.event.inputs.frequency }}"
+          else
+            # スケジュール実行の場合、cron時刻から判定
+            HOUR=$(date -u +%H)
+            case $HOUR in
+              "0")
+                FREQUENCY="frequent"
+                ;;
+              "1")
+                FREQUENCY="moderate"
+                ;;
+              "2")
+                FREQUENCY="rare"
+                ;;
+              *)
+                FREQUENCY="frequent"
+                ;;
+            esac
+          fi
+          
+          echo "frequency=$FREQUENCY" >> $GITHUB_OUTPUT
+          echo "🎯 更新頻度: $FREQUENCY"
+          
+      - name: 🔧 既存キャッシュを確認
+        run: |
+          if [ -f "cache/metadata.json" ]; then
+            echo "📋 既存キャッシュメタデータ:"
+            cat cache/metadata.json | jq '.lastUpdate, .lastIncrementalUpdate // "未実行"' || echo "メタデータ読み込みエラー"
+          else
+            echo "📋 キャッシュメタデータが見つかりません"
+            mkdir -p cache/notion-data
+          fi
+          
+      - name: 🔄 Notion キャッシュ更新実行
+        env:
+          NEXT_PUBLIC_NOTION_DATABASE_ID: ${{ secrets.NEXT_PUBLIC_NOTION_DATABASE_ID }}
+          NEXT_PUBLIC_NOTION_NEWS_DATABASE_ID: ${{ secrets.NEXT_PUBLIC_NOTION_NEWS_DATABASE_ID }}
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+        run: |
+          FREQUENCY="${{ steps.determine-frequency.outputs.frequency }}"
+          
+          echo "🔄 $FREQUENCY 頻度での自動更新を開始..."
+          
+          # 環境変数チェック
+          if [ -z "$NOTION_TOKEN" ]; then
+            echo "⚠️ NOTION_TOKEN が設定されていません。"
+            echo "📝 この実行はモックモードで継続します。"
+            yarn cache:mock
+            echo "updated=false" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+          
+          # 更新実行
+          case $FREQUENCY in
+            "full")
+              echo "📦 全データベース更新"
+              yarn cache:fetch-all
+              ;;
+            "frequent"|"moderate"|"rare")
+              echo "📊 $FREQUENCY 頻度更新"
+              yarn cache:update:$FREQUENCY
+              ;;
+            *)
+              echo "❌ 不明な更新頻度: $FREQUENCY"
+              exit 1
+              ;;
+          esac
+          
+          echo "updated=true" >> $GITHUB_OUTPUT
+          
+      - name: 📊 更新結果確認
+        id: check-changes
+        run: |
+          echo "📊 更新後のキャッシュ統計:"
+          yarn cache:stats
+          
+          # Gitの変更をチェック
+          git add cache/
+          if git diff --cached --quiet; then
+            echo "📝 キャッシュに変更はありませんでした"
+            echo "has-changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "📝 キャッシュが更新されました"
+            echo "has-changes=true" >> $GITHUB_OUTPUT
+            
+            echo "📋 変更されたファイル:"
+            git diff --cached --name-only
+          fi
+          
+      - name: 💾 キャッシュ変更をコミット
+        if: steps.check-changes.outputs.has-changes == 'true'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          
+          FREQUENCY="${{ steps.determine-frequency.outputs.frequency }}"
+          TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S UTC')
+          
+          git add cache/
+          git commit -m "🔄 自動キャッシュ更新 ($FREQUENCY) - $TIMESTAMP
+          
+          📊 更新サマリー:
+          - 更新頻度: $FREQUENCY
+          - 実行時刻: $TIMESTAMP
+          - ブランチ: ${{ github.ref_name }}
+          
+          🤖 Generated with GitHub Actions"
+          
+      - name: 🚀 変更をプッシュ
+        if: steps.check-changes.outputs.has-changes == 'true'
+        run: |
+          git push origin ${{ github.ref_name }}
+          echo "✅ キャッシュ更新をリポジトリにプッシュしました"
+          
+      - name: 📊 実行結果サマリー
+        if: always()
+        run: |
+          FREQUENCY="${{ steps.determine-frequency.outputs.frequency }}"
+          HAS_CHANGES="${{ steps.check-changes.outputs.has-changes }}"
+          
+          echo "## 📅 定期キャッシュ更新結果" >> $GITHUB_STEP_SUMMARY
+          echo "| 項目 | 値 |" >> $GITHUB_STEP_SUMMARY
+          echo "|------|-----|" >> $GITHUB_STEP_SUMMARY
+          echo "| 🎯 更新頻度 | $FREQUENCY |" >> $GITHUB_STEP_SUMMARY
+          echo "| 📝 変更有無 | $HAS_CHANGES |" >> $GITHUB_STEP_SUMMARY
+          echo "| ⏰ 実行時刻 | $(date '+%Y-%m-%d %H:%M:%S UTC') |" >> $GITHUB_STEP_SUMMARY
+          echo "| 🌿 ブランチ | ${{ github.ref_name }} |" >> $GITHUB_STEP_SUMMARY
+          
+          if [ -f "cache/metadata.json" ]; then
+            CACHE_COUNT=$(cat cache/metadata.json | jq '.databases | keys | length' 2>/dev/null || echo "N/A")
+            echo "| 💾 キャッシュDB数 | $CACHE_COUNT |" >> $GITHUB_STEP_SUMMARY
+          fi
+          
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### 🔄 次回更新予定" >> $GITHUB_STEP_SUMMARY
+          echo "- **Frequent**: 毎日 9:00 JST" >> $GITHUB_STEP_SUMMARY
+          echo "- **Moderate**: 毎週月曜 10:00 JST" >> $GITHUB_STEP_SUMMARY
+          echo "- **Rare**: 毎月1日 11:00 JST" >> $GITHUB_STEP_SUMMARY

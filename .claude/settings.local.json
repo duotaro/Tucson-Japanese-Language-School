@@ -47,7 +47,13 @@
       "Bash(/opt/homebrew/bin/convert image2.jpeg -quality 80 -resize 1200x800 image2_opt.jpeg)",
       "Bash(/opt/homebrew/bin/convert image4.jpeg -quality 80 -resize 1200x800 image4_opt.jpeg)",
       "Bash(NODE_OPTIONS=--max_old_space_size=8192 yarn build)",
-      "Bash(convert:*)"
+      "Bash(convert:*)",
+      "Bash(yarn cache:*)",
+      "Bash(echo:*)",
+      "Bash(time yarn build:*)",
+      "Bash(yarn health:cache:*)",
+      "Bash(yarn ci:test:*)",
+      "Bash(cat:*)"
     ],
     "deny": []
   }

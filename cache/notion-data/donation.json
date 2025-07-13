@@ -1,0 +1,171 @@
+[
+  {
+    "object": "page",
+    "id": "10ea8c0e-cf8c-8168-9eed-e9afa020c6ec",
+    "created_time": "2024-09-27T08:42:00.000Z",
+    "last_edited_time": "2024-10-04T17:13:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "10ea8c0e-cf8c-801b-802b-c2b43a3ecf91"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "text": {
+        "id": "G%7BcM",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "本校は手作りの小さな学校ですので、地域の皆様の助けが大きな力となります。個人様よりギフト、寄付金、または特に現地では入手しにくい日本語の本や辞書、日本文化伝承に役立つもの（折り紙、カルタ、鯉のぼり等）、また学校用品等の寄付も随時受け付けています。Non-profit organization 501(c)(3)としてご協力していただいた寄付金はCharitable contributionとして税金控除の対象になります。\n\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "本校は手作りの小さな学校ですので、地域の皆様の助けが大きな力となります。個人様よりギフト、寄付金、または特に現地では入手しにくい日本語の本や辞書、日本文化伝承に役立つもの（折り紙、カルタ、鯉のぼり等）、また学校用品等の寄付も随時受け付けています。Non-profit organization 501(c)(3)としてご協力していただいた寄付金はCharitable contributionとして税金控除の対象になります。\n\n",
+            "href": null
+          }
+        ]
+      },
+      "en": {
+        "id": "SFvK",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Donations",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Donations",
+            "href": null
+          }
+        ]
+      },
+      "text_en": {
+        "id": "UO%3D%60",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "You may show your support for our school through financial gifts, donations,  as well as through in-kind contributions. We accept such contribution with a gratitude. We are  not-for-profit 501(c)(3) organization, so all your contributions are tax-deductible. \n\nWe gladly accept any type of in kind donation, including office products, stationery products and books. The most wanted items are Japanese books, dictionaries, or educational material such as Origami, Karuta, etc... If you would like to donate anything else, please contact us. \n\nWe appreciate your generous contributions.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "You may show your support for our school through financial gifts, donations,  as well as through in-kind contributions. We accept such contribution with a gratitude. We are  not-for-profit 501(c)(3) organization, so all your contributions are tax-deductible. \n\nWe gladly accept any type of in kind donation, including office products, stationery products and books. The most wanted items are Japanese books, dictionaries, or educational material such as Origami, Karuta, etc... If you would like to donate anything else, please contact us. \n\nWe appreciate your generous contributions.",
+            "href": null
+          }
+        ]
+      },
+      "btn_link": {
+        "id": "lWOA",
+        "type": "url",
+        "url": "https://tucsonhosyuko.square.site/"
+      },
+      "btn_label": {
+        "id": "s%7BZw",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "寄付する",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "寄付する",
+            "href": null
+          }
+        ]
+      },
+      "btn_label_en": {
+        "id": "uGXK",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Donate",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Donate",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "寄付のお願い",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "寄付のお願い",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/10ea8c0ecf8c81689eede9afa020c6ec",
+    "public_url": null
+  }
+]

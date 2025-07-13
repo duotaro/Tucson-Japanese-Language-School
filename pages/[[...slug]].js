@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import Head from "next/head.js";
 import { useLocale } from "../utils/locale";
 import { getDatabase } from "../lib/notion.js";
+import { loadCachedData, loadMultipleCachedData } from "../lib/cache-loader.js";
 import Layout from '../components/layout.js'
 export const databaseId = process.env.NEXT_PUBLIC_NOTION_DATABASE_ID;
 export const newsId = process.env.NEXT_PUBLIC_NOTION_NEWS_DATABASE_ID;
@@ -108,7 +109,7 @@ export default function DynamicPage({ pageType, slug, locale: pageLocale, ...pag
 
   // Home page
   if (pageType === 'home') {
-    const { sliderList, sponsors, newsList, scheduleList, about, opportunity } = pageProps;
+    const { sliderList, sponsors, newsList, scheduleList, about, general } = pageProps;
     let sponsorList = [];
 
     for(let item of sponsors){
@@ -154,7 +155,7 @@ export default function DynamicPage({ pageType, slug, locale: pageLocale, ...pag
             <About about={aboutSchool} isTop={true} locale={currentLocale} />
             <Mission mission={mission} locale={currentLocale} />
             <Vision vision={vision} locale={currentLocale} />
-            <Opportunity opportunity={opportunity} locale={currentLocale} />
+            <Opportunity opportunity={general} locale={currentLocale} />
             <Sponsor sponsor={sponsorList} locale={currentLocale} />
           </div>
         </div>
@@ -347,18 +348,34 @@ export async function getStaticProps({ params }) {
 
   let props = { pageType, slug: actualSlug, locale };
 
-  // Home page data - optimized for performance
+  // Home page data - using cache loader for performance
   const isDev = process.env.NODE_ENV === 'development';
   if (pageType === 'home') {
-    const sliderList = await fetchData("f2bd94d61f7c45958755562d366af5ea", "slider", isDev ? 3 : null);
-    const sponsors = await fetchData("1e302ac5bce442b797e491aee309e7c4", "sponsor", isDev ? 6 : null);
-    const newsDatabase = await fetchData(newsId, "news", isDev ? 10 : null);
-    const newsList = await getNewsList(newsDatabase, 3);
-    // Minimal scheduleList data
-    const scheduleDatabase = await getDatabase("8d87080f73f14e8a9e7ba934c1d928c6");
-    const scheduleList = isDev ? scheduleDatabase.slice(0, 5) : scheduleDatabase;
-    const about = await fetchData("d4eb3828e74c469b9179ca7be9edb5cf", "about", isDev ? 3 : null);
-    const opportunity = await fetchData("d9037016a0524f08adecdbab0c7302b7", "opportunity", isDev ? 1 : null);
+    // キャッシュから一括でデータを読み込み
+    const cacheData = await loadMultipleCachedData([
+      'slider', 'sponsors', 'schedule', 'about', 'general'
+    ]);
+    
+    const sliderList = isDev ? cacheData.slider.slice(0, 3) : cacheData.slider;
+    const sponsors = isDev ? cacheData.sponsors.slice(0, 6) : cacheData.sponsors;
+    const scheduleList = isDev ? cacheData.schedule.slice(0, 5) : cacheData.schedule;
+    const about = isDev ? cacheData.about.slice(0, 3) : cacheData.about;
+    const general = isDev ? cacheData.general.slice(0, 1) : cacheData.general;
+    
+    // ニュースは環境変数未設定のため一時的にモックデータを使用
+    let newsList = [];
+    try {
+      const newsDatabase = await loadCachedData('news');
+      newsList = await getNewsList(newsDatabase, 3);
+    } catch (error) {
+      console.warn('ニュースデータが利用できません:', error.message);
+      // フォールバック用のダミーニュース
+      newsList = [
+        { id: 'news-1', properties: { Name: { title: [{ text: { content: 'Sample News 1' } }] } } },
+        { id: 'news-2', properties: { Name: { title: [{ text: { content: 'Sample News 2' } }] } } },
+        { id: 'news-3', properties: { Name: { title: [{ text: { content: 'Sample News 3' } }] } } }
+      ];
+    }
 
     props = {
       ...props,
@@ -367,7 +384,7 @@ export async function getStaticProps({ params }) {
       newsList,
       scheduleList,
       about,
-      opportunity
+      general
     };
   }
 
@@ -390,48 +407,33 @@ export async function getStaticProps({ params }) {
   // Add specific page data for different page types
   if (pageType === 'about' || pageType === 'about/welcome') {
     try {
-      const greeting = await fetchData("5ceb6b37e4584fa39fb78161869d885f", "greeting", isDev ? 1 : null);
-      const story = await getDatabase("02ed913f2ebe4151b0235d91a9306403");
-      const history = await fetchData("15c93b4fe6154400902a623b20c6fe49", "history", isDev ? 1 : null);
+      // キャッシュからデータを読み込み
+      const cacheData = await loadMultipleCachedData(['greeting', 'story', 'history']);
       
       props.welcome = {
-        "greeting": greeting[0],
-        "story": story[0],
-        "history": history[0],
+        "greeting": cacheData.greeting && cacheData.greeting[0],
+        "story": cacheData.story && cacheData.story[0],
+        "history": cacheData.history && cacheData.history[0],
       };
     } catch (error) {
       console.log('Error fetching welcome data:', error);
     }
   } else if (pageType === 'about/mission') {
     try {
-      const about = await fetchData("d4eb3828e74c469b9179ca7be9edb5cf", "about", isDev ? 3 : null);
+      // キャッシュからデータを読み込み
+      const cacheData = await loadMultipleCachedData(['about', 'mission', 'vision']);
       
-      // Philosophy DBの正しいIDを使用
-      let philosophy = [];
-      try {
-        philosophy = await fetchData("f40ad3a82b894969a6a1b0ee0bfcb0cf", "philosophy", isDev ? 1 : null);
-      } catch (philosophyError) {
-        console.warn('Philosophy database error:', philosophyError);
-        philosophy = [];
-      }
+      const about = isDev ? cacheData.about.slice(0, 3) : cacheData.about;
+      const philosophy = isDev ? cacheData.mission.slice(0, 1) : cacheData.mission;
+      const policy = cacheData.vision;
       
-      // Policy DBの正しいIDを使用
-      let policy = [];
-      try {
-        // 開発環境でもPolicyは制限なしで取得（PDFプロパティを確実に取得するため）
-        policy = await fetchData("105a8c0ecf8c8082a456dd95fd87d0c2", "policy", null);
-        
-        // PolicyデータにPDFファイルがある場合、savePdfIfNeededを実行
-        if (policy && policy.length > 0) {
-          let policyProps = [];
-          for(let item of policy){
-            policyProps.push(item.properties);
-          }
-          await savePdfIfNeeded(policyProps, "policy");
+      // PolicyデータにPDFファイルがある場合、savePdfIfNeededを実行
+      if (policy && policy.length > 0) {
+        let policyProps = [];
+        for(let item of policy){
+          policyProps.push(item.properties);
         }
-      } catch (policyError) {
-        console.warn('Policy database error:', policyError);
-        policy = [];
+        await savePdfIfNeeded(policyProps, "policy");
       }
       
       props.about = about || [];
@@ -445,33 +447,33 @@ export async function getStaticProps({ params }) {
     }
   } else if (pageType === 'about/governance') {
     try {
+      // キャッシュからデータを読み込み
+      const cacheData = await loadMultipleCachedData(['directors', 'orgChart', 'policies']);
+      
       // Directors
-      const directorsDatabase = await getDatabase("10ba8c0ecf8c807ba7c6c7c9128d9770");
       let directorProps = [];
-      for(let item of directorsDatabase || []){
+      for(let item of cacheData.directors || []){
         directorProps.push(item.properties);
       }
       await saveImageIfNeeded(directorProps, "director");
       
       // Organization Chart
-      const orgChartDatabase = await getDatabase("10ca8c0ecf8c80629eb3ee7c40cf9005");
       let chartProps = [];
-      for(let item of orgChartDatabase || []){
+      for(let item of cacheData.orgChart || []){
         chartProps.push(item.properties);
       }
       await saveImageIfNeeded(chartProps, "org_chart");
       
       // Organization Policies
-      const org_policysDatabase = await getDatabase("10ca8c0ecf8c80998e3bfb0372ccc293");
       let policyProps = [];
-      for(let item of org_policysDatabase || []){
+      for(let item of cacheData.policies || []){
         policyProps.push(item.properties);
       }
       await savePdfIfNeeded(policyProps, "org_policy");
       
-      props.directors = directorsDatabase || [];
-      props.orgChart = orgChartDatabase && orgChartDatabase.length > 0 ? orgChartDatabase[0] : null;
-      props.org_policys = org_policysDatabase || [];
+      props.directors = cacheData.directors || [];
+      props.orgChart = cacheData.orgChart && cacheData.orgChart.length > 0 ? cacheData.orgChart[0] : null;
+      props.org_policys = cacheData.policies || [];
     } catch (error) {
       console.log('Error fetching governance data:', error);
       props.directors = [];
@@ -480,18 +482,18 @@ export async function getStaticProps({ params }) {
     }
   } else if (pageType === 'about/staff') {
     try {
-      const roleList = await getDatabase("122a8c0ecf8c80059934c64693cc39ca");
-      const staffDatabase = await getDatabase("9b85f554b3fc42dcb9d38f1ec87b168c");
+      // キャッシュからデータを読み込み
+      const cacheData = await loadMultipleCachedData(['roleList', 'staff']);
       
       // スタッフ画像の保存処理
       let staffProps = [];
-      for(let staff of staffDatabase || []){
+      for(let staff of cacheData.staff || []){
         staffProps.push(staff.properties);
       }
       await saveImageIfNeeded(staffProps, "staff");
       
-      props.staffList = staffDatabase || [];
-      props.roleList = roleList || [];
+      props.staffList = cacheData.staff || [];
+      props.roleList = cacheData.roleList || [];
     } catch (error) {
       console.log('Error fetching staff data:', error);
       props.staffList = [];
@@ -499,7 +501,7 @@ export async function getStaticProps({ params }) {
     }
   } else if (pageType === 'about/report') {
     try {
-      const reportList = await fetchData("11aa8c0ecf8c803e8289cb5bd9a5f80a", "report", null);
+      const reportList = await loadCachedData('files');
       
       // レポートにPDFファイルがある場合、savePdfIfNeededを実行
       if (reportList && reportList.length > 0) {
@@ -517,18 +519,18 @@ export async function getStaticProps({ params }) {
     }
   } else if (pageType === 'program' || pageType === 'program/class') {
     try {
-      const category = await getDatabase("11aa8c0ecf8c80ed885ff949e5ee51bb");
-      const classes = await getDatabase("11aa8c0ecf8c80a7ab2cf31cd0b0a881");
+      // キャッシュからデータを読み込み
+      const cacheData = await loadMultipleCachedData(['category', 'classes']);
       
       // クラス画像の保存処理
       let classProps = [];
-      for(let item of classes || []){
+      for(let item of cacheData.classes || []){
         classProps.push(item.properties);
       }
       await saveImageIfNeeded(classProps, "class");
       
-      props.category = category || [];
-      props.classes = classes || [];
+      props.category = cacheData.category || [];
+      props.classes = cacheData.classes || [];
     } catch (error) {
       console.log('Error fetching class data:', error);
       props.category = [];
@@ -546,17 +548,16 @@ export async function getStaticProps({ params }) {
     }
   } else if (pageType === 'admissions' || pageType === 'admissions/forms') {
     try {
-      const qualification = await getDatabase("11ba8c0ecf8c80e4a3d6cb2cae30ac08");
-      const price = await getDatabase("11ba8c0ecf8c8068afc9c4ba38330221");
-      const discountFamily = await getDatabase("11ba8c0ecf8c80daa4a0e58b368b1dc3");
-      const discountStaff = await getDatabase("11ca8c0ecf8c80658187d57a17357400");
-      const enrollment = await getDatabase("11ba8c0ecf8c8059bbddf42453136463");
+      // キャッシュからデータを読み込み
+      const cacheData = await loadMultipleCachedData([
+        'qualification', 'price', 'discountFamily', 'discountStaff', 'enrollment'
+      ]);
       
-      props.qualification = qualification || [];
-      props.price = price || [];
-      props.discountFamily = discountFamily || [];
-      props.discountStaff = discountStaff || [];
-      props.enrollment = enrollment || [];
+      props.qualification = cacheData.qualification || [];
+      props.price = cacheData.price || [];
+      props.discountFamily = cacheData.discountFamily || [];
+      props.discountStaff = cacheData.discountStaff || [];
+      props.enrollment = cacheData.enrollment || [];
     } catch (error) {
       console.log('Error fetching admissions data:', error);
       props.qualification = [];
@@ -567,7 +568,8 @@ export async function getStaticProps({ params }) {
     }
   } else if (pageType === 'program/calendar') {
     try {
-      const database = await getDatabase("8d87080f73f14e8a9e7ba934c1d928c6");
+      // キャッシュからデータを読み込み
+      const database = await loadCachedData('schedule');
       
       // カレンダーファイル用の画像保存処理
       let calendarProps = [];
@@ -585,27 +587,25 @@ export async function getStaticProps({ params }) {
     }
   } else if (pageType === 'support') {
     try {
-      // developブランチのパターンに従って追加のデータを取得
-      const sponsors = await fetchData("1e302ac5bce442b797e491aee309e7c4", "sponsor", null);
-      const support = await getDatabase("10ca8c0ecf8c8039a51bdd38f640a34e");
-      const sponsor = await getDatabase("10ea8c0ecf8c80eeae62cc2050b7e7f7");
-      const donation = await getDatabase("10ea8c0ecf8c801b802bc2b43a3ecf91");
-      const howto = await getDatabase("10ca8c0ecf8c8081a8a0e9a9a6166cc1");
+      // キャッシュからデータを読み込み
+      const cacheData = await loadMultipleCachedData([
+        'sponsors', 'support', 'sponsor', 'donation', 'howto'
+      ]);
       
       // Howto用の画像保存処理
-      if (howto && howto.length > 0) {
+      if (cacheData.howto && cacheData.howto.length > 0) {
         let howtoProps = [];
-        for(let item of howto){
+        for(let item of cacheData.howto){
           howtoProps.push(item.properties);
         }
         await saveImageIfNeeded(howtoProps, "howto");
       }
       
-      props.sponsors = sponsors || [];
-      props.support = support && support.length > 0 ? support[0] : null;
-      props.sponsor = sponsor && sponsor.length > 0 ? sponsor[0] : null;
-      props.donation = donation && donation.length > 0 ? donation[0] : null;
-      props.howto = howto || [];
+      props.sponsors = cacheData.sponsors || [];
+      props.support = cacheData.support && cacheData.support.length > 0 ? cacheData.support[0] : null;
+      props.sponsor = cacheData.sponsor && cacheData.sponsor.length > 0 ? cacheData.sponsor[0] : null;
+      props.donation = cacheData.donation && cacheData.donation.length > 0 ? cacheData.donation[0] : null;
+      props.howto = cacheData.howto || [];
     } catch (error) {
       console.log('Error fetching support data:', error);
       props.sponsors = [];
@@ -615,22 +615,21 @@ export async function getStaticProps({ params }) {
       props.howto = [];
     }
   } else if (pageType === 'contact') {
-    // Contact page用のデータフェッチを追加
+    // Contact page用のデータフェッチ
     try {
-      const opportunity = await fetchData("d9037016a0524f08adecdbab0c7302b7", "opportunity", null);
+      const opportunity = await loadCachedData('general');
       props.opportunity = opportunity || [];
     } catch (error) {
       console.log('Error fetching contact data:', error);
       props.opportunity = [];
     }
   } else if (pageType === 'contact/opportunity') {
-    // Contact Opportunity page用のデータフェッチを追加  
+    // Contact Opportunity page用のデータフェッチ
     try {
-      const opportunities = await fetchData("102a8c0ecf8c80089b21d14aec9edd22", "opportunity", null);
-      const general = await fetchData("d9037016a0524f08adecdbab0c7302b7", "opportunity", null);
+      const cacheData = await loadMultipleCachedData(['opportunity', 'general']);
       
-      props.opportunities = opportunities || [];
-      props.general = general && general.length > 0 ? general[0] : null;
+      props.opportunities = cacheData.opportunity || [];
+      props.general = cacheData.general && cacheData.general.length > 0 ? cacheData.general[0] : null;
     } catch (error) {
       console.log('Error fetching opportunity data:', error);
       props.opportunities = [];

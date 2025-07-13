@@ -1,0 +1,243 @@
+[
+  {
+    "object": "page",
+    "id": "53663916-6fe4-427f-ae54-f8301e38687b",
+    "created_time": "2024-09-27T08:30:00.000Z",
+    "last_edited_time": "2024-10-08T07:38:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "10ea8c0e-cf8c-80ee-ae62-cc2050b7e7f7"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "text": {
+        "id": "G%7BcM",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ツーソン補習校で一生懸命日本語を学ぶ子供たちのためのよりよい環境作りのために、本校のもたらす教育的、文化的価値を理解いただいた上で、ご協賛いただけるツーソン地域の企業、団体を募集しています。協賛していただいた方々には御礼広告をさせていただきます。一口20ドルと、お手軽にご協賛していただけます。協賛方法等、詳しくは",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "ツーソン補習校で一生懸命日本語を学ぶ子供たちのためのよりよい環境作りのために、本校のもたらす教育的、文化的価値を理解いただいた上で、ご協賛いただけるツーソン地域の企業、団体を募集しています。協賛していただいた方々には御礼広告をさせていただきます。一口20ドルと、お手軽にご協賛していただけます。協賛方法等、詳しくは",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "こちらから",
+              "link": {
+                "url": "https://91f19e40-70e5-4284-a7f6-b0ca72bb99ec.filesusr.com/ugd/f474ab_d24077f11abe470b91ba71a7f70d7a35.pdf"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "こちらから",
+            "href": "https://91f19e40-70e5-4284-a7f6-b0ca72bb99ec.filesusr.com/ugd/f474ab_d24077f11abe470b91ba71a7f70d7a35.pdf"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "ご覧ください。ご協力よろしくお願い致します。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "ご覧ください。ご協力よろしくお願い致します。",
+            "href": null
+          }
+        ]
+      },
+      "en": {
+        "id": "SFvK",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Be a Sponsor",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Be a Sponsor",
+            "href": null
+          }
+        ]
+      },
+      "text_en": {
+        "id": "UO%3D%60",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Your generosity will help us continue to provide valuable opportunities for the Tucson community to experience not only the Japanese language but also Japanese culture as a way to expand the language ability. You can help us from as little as $20. Your contribution will ensure our students to learn in the excellent learning environment and help us to provide this opportunity to Japanese language program for our community.  Please see",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Your generosity will help us continue to provide valuable opportunities for the Tucson community to experience not only the Japanese language but also Japanese culture as a way to expand the language ability. You can help us from as little as $20. Your contribution will ensure our students to learn in the excellent learning environment and help us to provide this opportunity to Japanese language program for our community.  Please see",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " here",
+              "link": {
+                "url": "https://ac10eb95-5b91-4984-acc0-91a04a612712.filesusr.com/ugd/f474ab_53c1366478b24c5689ba104f82145934.pdf"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " here",
+            "href": "https://ac10eb95-5b91-4984-acc0-91a04a612712.filesusr.com/ugd/f474ab_53c1366478b24c5689ba104f82145934.pdf"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " for more information and do not hesitate to contact us with any questions or concerns.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " for more information and do not hesitate to contact us with any questions or concerns.",
+            "href": null
+          }
+        ]
+      },
+      "btn_link": {
+        "id": "lWOA",
+        "type": "url",
+        "url": "https://tucsonhosyuko.square.site/"
+      },
+      "btn_label": {
+        "id": "s%7BZw",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "今すぐ協賛金を送る",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "今すぐ協賛金を送る",
+            "href": null
+          }
+        ]
+      },
+      "btn_label_en": {
+        "id": "uGXK",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Be a sponsor NOW",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Be a sponsor NOW",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "企業・団体協賛",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "企業・団体協賛",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/536639166fe4427fae54f8301e38687b",
+    "public_url": null
+  }
+]

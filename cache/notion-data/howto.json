@@ -1,0 +1,928 @@
+[
+  {
+    "object": "page",
+    "id": "1b9f6742-6ca7-438d-a4a6-c7a6ebb29013",
+    "created_time": "2024-09-25T13:28:00.000Z",
+    "last_edited_time": "2024-10-07T14:49:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "10ca8c0e-cf8c-8081-a8a0-e9a9a6166cc1"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "image": {
+        "id": "%3ASrp",
+        "type": "files",
+        "files": [
+          {
+            "name": "tickets.jpeg",
+            "type": "file",
+            "file": {
+              "url": "/image/download/howto/1b9f6742-6ca7-438d-a4a6-c7a6ebb29013-tickets.jpeg",
+              "expiry_time": "2025-07-13T04:30:14.992Z"
+            }
+          }
+        ]
+      },
+      "tag": {
+        "id": "Bni~",
+        "type": "select",
+        "select": {
+          "id": "9937a622-0d3a-4d33-b61d-4b1bfba041cc",
+          "name": "raffle",
+          "color": "blue"
+        }
+      },
+      "en": {
+        "id": "HQxY",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Jim Click Millions for Tucson Raffle",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Jim Click Millions for Tucson Raffle",
+            "href": null
+          }
+        ]
+      },
+      "text_en": {
+        "id": "NEqF",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "You can now purchase Jim Click's Millions for Tucson Raffle tickets through Tucosn Japanese School. $25 for 1 ticket or $100 for 5 tickets. ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "You can now purchase Jim Click's Millions for Tucson Raffle tickets through Tucosn Japanese School. $25 for 1 ticket or $100 for 5 tickets. ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "The Grand Prize vehicle is a brand-new Jeep Wrangler Rubicon 4xe Plug-in Hybrid! Check out all the cool features and specs on this vehicle at the link below: ",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "The Grand Prize vehicle is a brand-new Jeep Wrangler Rubicon 4xe Plug-in Hybrid! Check out all the cool features and specs on this vehicle at the link below: ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Jeep Wrangler Rubicon 4xe Plug-in Hybrid",
+              "link": {
+                "url": "https://www.jeep.com/wrangler/4xe.html"
+              }
+            },
+            "annotations": {
+              "bold": true,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Jeep Wrangler Rubicon 4xe Plug-in Hybrid",
+            "href": "https://www.jeep.com/wrangler/4xe.html"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "\nThe second prize is two round-trip, first-class plane tickets to anywhere in the world (some restrictions apply) and the third prize is $5,000 in cash!\nTucson Japanese School gets to keep 100% of the proceeds.\nContact us to purchase the raffle tickets! ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "\nThe second prize is two round-trip, first-class plane tickets to anywhere in the world (some restrictions apply) and the third prize is $5,000 in cash!\nTucson Japanese School gets to keep 100% of the proceeds.\nContact us to purchase the raffle tickets! ",
+            "href": null
+          }
+        ]
+      },
+      "btn_link": {
+        "id": "XOE%3D",
+        "type": "url",
+        "url": null
+      },
+      "ordering": {
+        "id": "Y~Am",
+        "type": "number",
+        "number": 1
+      },
+      "btn_label": {
+        "id": "kzRI",
+        "type": "rich_text",
+        "rich_text": []
+      },
+      "btn_label_en": {
+        "id": "x%3Fri",
+        "type": "rich_text",
+        "rich_text": []
+      },
+      "text": {
+        "id": "~%5DU_",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "12月4日（水）までJim Click Millions for Tucson のラッフルチケットが100枚限定1枚＄25または5枚＄100で購入可能です。1等は2024製ジープ ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "12月4日（水）までJim Click Millions for Tucson のラッフルチケットが100枚限定1枚＄25または5枚＄100で購入可能です。1等は2024製ジープ ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Jeep Wrangler Rubicon 4xe Plug-in Hybrid",
+              "link": {
+                "url": "https://www.jeep.com/wrangler/4xe.html"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Jeep Wrangler Rubicon 4xe Plug-in Hybrid",
+            "href": "https://www.jeep.com/wrangler/4xe.html"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "、２等はファーストクラス旅行往復券、3等は5000ドル現金が当たります。売上の100％が学校に寄付されます。チケットご購入希望の方はメールにてご連絡ください。\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "、２等はファーストクラス旅行往復券、3等は5000ドル現金が当たります。売上の100％が学校に寄付されます。チケットご購入希望の方はメールにてご連絡ください。\n",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Jim Click ラッフル",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Jim Click ラッフル",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Jim-Click-1b9f67426ca7438da4a6c7a6ebb29013",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "3041c786-8d8f-4d69-b0e8-bdb7db422ec4",
+    "created_time": "2024-09-25T13:28:00.000Z",
+    "last_edited_time": "2024-10-07T14:42:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "10ca8c0e-cf8c-8081-a8a0-e9a9a6166cc1"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "image": {
+        "id": "%3ASrp",
+        "type": "files",
+        "files": [
+          {
+            "name": "sponsor.jpeg",
+            "type": "file",
+            "file": {
+              "url": "/image/download/howto/3041c786-8d8f-4d69-b0e8-bdb7db422ec4-sponsor.jpeg",
+              "expiry_time": "2025-07-13T04:30:14.992Z"
+            }
+          }
+        ]
+      },
+      "tag": {
+        "id": "Bni~",
+        "type": "select",
+        "select": {
+          "id": "ba614ab7-98f0-436d-88b5-eb791c07e2d1",
+          "name": "sponsor",
+          "color": "yellow"
+        }
+      },
+      "en": {
+        "id": "HQxY",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Fry’s Community Rewards",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Fry’s Community Rewards",
+            "href": null
+          }
+        ]
+      },
+      "text_en": {
+        "id": "NEqF",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "We participate in Fry's Community Rewards Program!\n\nHow To :\n1. Visit ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "We participate in Fry's Community Rewards Program!\n\nHow To :\n1. Visit ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "https://www.frysfood.com",
+              "link": {
+                "url": "https://www.frysfood.com/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "https://www.frysfood.com",
+            "href": "https://www.frysfood.com/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": ". and logged into your Fry's account\n2. Search for Manabi of Tucson, Inc. or our ID # QH721 from Community Reward menu on the left, then click Enroll.\n3. That’s it! Now you are ready to shop and we start earning donations from Fry’s.  \n* New users will need to create an account which requires some basic information, a valid email address and a ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": ". and logged into your Fry's account\n2. Search for Manabi of Tucson, Inc. or our ID # QH721 from Community Reward menu on the left, then click Enroll.\n3. That’s it! Now you are ready to shop and we start earning donations from Fry’s.  \n* New users will need to create an account which requires some basic information, a valid email address and a ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "rewards",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": true,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "rewards",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " card.\n\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " card.\n\n",
+            "href": null
+          }
+        ]
+      },
+      "btn_link": {
+        "id": "XOE%3D",
+        "type": "url",
+        "url": "https://www.frysfood.com/"
+      },
+      "ordering": {
+        "id": "Y~Am",
+        "type": "number",
+        "number": 2
+      },
+      "btn_label": {
+        "id": "kzRI",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "今すぐ登録する",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "今すぐ登録する",
+            "href": null
+          }
+        ]
+      },
+      "btn_label_en": {
+        "id": "x%3Fri",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Enroll NOW",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Enroll NOW",
+            "href": null
+          }
+        ]
+      },
+      "text": {
+        "id": "~%5DU_",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Fry's Community Rewards Program に参加しています。\n\n手順：\n１． ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Fry's Community Rewards Program に参加しています。\n\n手順：\n１． ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "https://www.frysfood.com",
+              "link": {
+                "url": "https://www.frysfood.com/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "https://www.frysfood.com",
+            "href": "https://www.frysfood.com/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": ".よりアカウントを登録\n２．Community Rewardメニューから ”Manabi of Tucson Inc.”を寄付先に指定\n３．あとはお買い物をするときに、Fry's Reward Cardをスキャンするだけ！\n\nお買物をする度に、Fry’sが学校へ寄付送ってくれる仕組みとなっています。みなさまのご協力をお願い致します。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": ".よりアカウントを登録\n２．Community Rewardメニューから ”Manabi of Tucson Inc.”を寄付先に指定\n３．あとはお買い物をするときに、Fry's Reward Cardをスキャンするだけ！\n\nお買物をする度に、Fry’sが学校へ寄付送ってくれる仕組みとなっています。みなさまのご協力をお願い致します。",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Fry’s Community Rewards",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Fry’s Community Rewards",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Fry-s-Community-Rewards-3041c7868d8f4d69b0e8bdb7db422ec4",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "ecc09bd3-a2ae-46b2-8ca9-cddaf620c749",
+    "created_time": "2024-09-25T13:28:00.000Z",
+    "last_edited_time": "2024-10-07T14:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "10ca8c0e-cf8c-8081-a8a0-e9a9a6166cc1"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "image": {
+        "id": "%3ASrp",
+        "type": "files",
+        "files": [
+          {
+            "name": "tickets.jpeg",
+            "type": "file",
+            "file": {
+              "url": "/image/download/howto/ecc09bd3-a2ae-46b2-8ca9-cddaf620c749-tickets.jpeg",
+              "expiry_time": "2025-07-13T04:30:14.992Z"
+            }
+          }
+        ]
+      },
+      "tag": {
+        "id": "Bni~",
+        "type": "select",
+        "select": {
+          "id": "9d0237b3-426f-4a2c-9ceb-07af5fdc1cd9",
+          "name": "tickets",
+          "color": "orange"
+        }
+      },
+      "en": {
+        "id": "HQxY",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Purchase air tickets",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Purchase air tickets",
+            "href": null
+          }
+        ]
+      },
+      "text_en": {
+        "id": "NEqF",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Choose Amnet when you purchase your airline tickets to or from Japan. At the time of your reservation, just inform an Amnet agent that you are an affiliate of Tucson Japanese Language School and that you would like to use the Amnet Assist Program. Your reservation must be made over the phone.\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Choose Amnet when you purchase your airline tickets to or from Japan. At the time of your reservation, just inform an Amnet agent that you are an affiliate of Tucson Japanese Language School and that you would like to use the Amnet Assist Program. Your reservation must be made over the phone.\n",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "https://www.amnet-usa.com",
+              "link": {
+                "url": "https://www.amnet-usa.com/news/078.php"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "https://www.amnet-usa.com",
+            "href": "https://www.amnet-usa.com/news/078.php"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "\n \n",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "\n \n",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "NEW!!!",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "red"
+            },
+            "plain_text": "NEW!!!",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "\nWe are partnering with HIS Las vegas branch. If you purchase airline tickets, persentage will be donated to our school. Let them know you are affiliated with Tucson Japanese School. You get cheap tickets, we get money and they get money and everyone will be happy!!!\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "\nWe are partnering with HIS Las vegas branch. If you purchase airline tickets, persentage will be donated to our school. Let them know you are affiliated with Tucson Japanese School. You get cheap tickets, we get money and they get money and everyone will be happy!!!\n",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "https://flights.hisgo.com/us/index.php?PageMode=PC&lang=ja",
+              "link": {
+                "url": "https://flights.hisgo.com/us/index.php?PageMode=PC&lang=ja"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "https://flights.hisgo.com/us/index.php?PageMode=PC&lang=ja",
+            "href": "https://flights.hisgo.com/us/index.php?PageMode=PC&lang=ja"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "\n ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "\n ",
+            "href": null
+          }
+        ]
+      },
+      "btn_link": {
+        "id": "XOE%3D",
+        "type": "url",
+        "url": null
+      },
+      "ordering": {
+        "id": "Y~Am",
+        "type": "number",
+        "number": 3
+      },
+      "btn_label": {
+        "id": "kzRI",
+        "type": "rich_text",
+        "rich_text": []
+      },
+      "btn_label_en": {
+        "id": "x%3Fri",
+        "type": "rich_text",
+        "rich_text": []
+      },
+      "text": {
+        "id": "~%5DU_",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "旅行会社アムネットを通して日本への航空券を購入すると、学校に寄付が入ります。もちろん格安航空券でも！ご購入の際に、ツーソン日本語補習校の関係者ですと言っくていただくだけです。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "旅行会社アムネットを通して日本への航空券を購入すると、学校に寄付が入ります。もちろん格安航空券でも！ご購入の際に、ツーソン日本語補習校の関係者ですと言っくていただくだけです。",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "https://www.amnet-usa.com",
+              "link": {
+                "url": "https://www.amnet-usa.com/news/078.php"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "https://www.amnet-usa.com",
+            "href": "https://www.amnet-usa.com/news/078.php"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "\n",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "\n",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "NEW!",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "red"
+            },
+            "plain_text": "NEW!",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "\n旅行会社HISラスベガス支店を通して日本への航空券を購入すると、学校に寄付が入ります。ご購入の際に、ツーソン日本語補習校の関係者ですと言っくていただくだけです。予約は電話でしていただくのがオススメです。\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "\n旅行会社HISラスベガス支店を通して日本への航空券を購入すると、学校に寄付が入ります。ご購入の際に、ツーソン日本語補習校の関係者ですと言っくていただくだけです。予約は電話でしていただくのがオススメです。\n",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "https://www.his-j.com/ovsbranch/48.html",
+              "link": {
+                "url": "https://www.his-j.com/ovsbranch/48.html"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "https://www.his-j.com/ovsbranch/48.html",
+            "href": "https://www.his-j.com/ovsbranch/48.html"
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "航空券の購入",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "航空券の購入",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/ecc09bd3a2ae46b28ca9cddaf620c749",
+    "public_url": null
+  }
+]

@@ -19,11 +19,9 @@ export default function SponsorDetail({ item}) {
               baseName={item.image?.baseName || 'sponsor'}
               pagePath={item.image?.pagePath || 'sponsor'}
               alt={item.image?.alt || item.title}
-              
-              
-              
-              
-              objectFit="cover"
+              width={300}
+              height={200}
+              objectFit="contain"
               className="rounded-lg w-full h-auto"
             />
           </div>

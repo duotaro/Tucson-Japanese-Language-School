@@ -1,0 +1,273 @@
+[
+  {
+    "object": "page",
+    "id": "99ec02fb-20f3-4fa5-8231-83c45df3f144",
+    "created_time": "2024-10-09T07:36:00.000Z",
+    "last_edited_time": "2024-10-09T07:42:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "11aa8c0e-cf8c-80ed-885f-f949e5ee51bb"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "en": {
+        "id": "%3AIO~",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Inherited Japanese classes",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Inherited Japanese classes",
+            "href": null
+          }
+        ]
+      },
+      "text_en": {
+        "id": "C%3Ee%3E",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "\"Inherited Japanese\" refers to the Japanese language that children with Japanese roots, who grow up in non-Japanese-speaking environments, inherit and acquire from their parents. It is different from the Japanese language studied in Japan as a national language or as a foreign language. In our classes, students not only learn vocabulary such as grammar, characters, and kanji, but also engage with culture, history, society, science, environment, and arts \"in Japanese.\" This helps them establish their identity through the Japanese language and acquire language skills while using Japanese in various fields of study. We support them in discovering their \"connection to Japan\" as they explore new interests, refine their communication skills, and gain proficiency in the language. The Inherited Japanese department offers four classes based on Japanese proficiency levels. Please see below for the goals of each class.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "\"Inherited Japanese\" refers to the Japanese language that children with Japanese roots, who grow up in non-Japanese-speaking environments, inherit and acquire from their parents. It is different from the Japanese language studied in Japan as a national language or as a foreign language. In our classes, students not only learn vocabulary such as grammar, characters, and kanji, but also engage with culture, history, society, science, environment, and arts \"in Japanese.\" This helps them establish their identity through the Japanese language and acquire language skills while using Japanese in various fields of study. We support them in discovering their \"connection to Japan\" as they explore new interests, refine their communication skills, and gain proficiency in the language. The Inherited Japanese department offers four classes based on Japanese proficiency levels. Please see below for the goals of each class.",
+            "href": null
+          }
+        ]
+      },
+      "id": {
+        "id": "RwdY",
+        "type": "select",
+        "select": {
+          "id": "1e29b387-7288-4199-a72a-f1077443ae75",
+          "name": "Inherited",
+          "color": "gray"
+        }
+      },
+      "text": {
+        "id": "V%3D%3Bj",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "\n継承日本語クラス　",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "\n継承日本語クラス　",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "\n「継承日本語」とは、日本語以外の生活言語圏で育つ日本にルーツを持つ子供たちが、親から受け継ぎ、習得する日本語のことです。日本で勉強する国語や、外国語としての日本語とも異なります。本校のクラスの中では文法や文字、漢字といった言葉だけでなく、「日本語で」文化、歴史、社会、理科、環境、芸術などに触れ、アイデンティティとしての日本語を確立し、様々な分野学習を日本語を使って行う過程で、言語を習得し、コミュニケーションスキルを磨き、新たな興味を探求しながら、「私と日本のつながり」を発見できるよう支援します。継承日本語部は日本語レベル別に４つのクラスを設置しています。それぞれのクラスの目標は以下をご覧ください。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "\n「継承日本語」とは、日本語以外の生活言語圏で育つ日本にルーツを持つ子供たちが、親から受け継ぎ、習得する日本語のことです。日本で勉強する国語や、外国語としての日本語とも異なります。本校のクラスの中では文法や文字、漢字といった言葉だけでなく、「日本語で」文化、歴史、社会、理科、環境、芸術などに触れ、アイデンティティとしての日本語を確立し、様々な分野学習を日本語を使って行う過程で、言語を習得し、コミュニケーションスキルを磨き、新たな興味を探求しながら、「私と日本のつながり」を発見できるよう支援します。継承日本語部は日本語レベル別に４つのクラスを設置しています。それぞれのクラスの目標は以下をご覧ください。",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "継承日本語部",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "継承日本語部",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/99ec02fb20f34fa5823183c45df3f144",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "a995f74b-7721-49eb-b767-2f2c963ad338",
+    "created_time": "2024-10-09T07:36:00.000Z",
+    "last_edited_time": "2024-10-09T09:25:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "11aa8c0e-cf8c-80ed-885f-f949e5ee51bb"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "en": {
+        "id": "%3AIO~",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "The Japanese department offers classes",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "The Japanese department offers classes",
+            "href": null
+          }
+        ]
+      },
+      "text_en": {
+        "id": "C%3Ee%3E",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "this classes that deepen understanding of the basics of the Japanese language and Japanese culture. Students learn practical Japanese words and phrases, as well as the structure and roles of characters, developing the four skills of reading, writing, conversation, and listening. Through books, songs, and music, students enjoy learning about traditional Japanese culture and customs while also incorporating modern literature and pop culture, aiming to acquire Japanese as a second language. The Japanese department has two classes: beginner and intermediate/advanced.\n\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "this classes that deepen understanding of the basics of the Japanese language and Japanese culture. Students learn practical Japanese words and phrases, as well as the structure and roles of characters, developing the four skills of reading, writing, conversation, and listening. Through books, songs, and music, students enjoy learning about traditional Japanese culture and customs while also incorporating modern literature and pop culture, aiming to acquire Japanese as a second language. The Japanese department has two classes: beginner and intermediate/advanced.\n\n",
+            "href": null
+          }
+        ]
+      },
+      "id": {
+        "id": "RwdY",
+        "type": "select",
+        "select": {
+          "id": "152c92f1-a043-4f0e-9eb4-02f77c9db898",
+          "name": "Japanese",
+          "color": "brown"
+        }
+      },
+      "text": {
+        "id": "V%3D%3Bj",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "日本語部は日本語の基礎と日本文化について理解を深めるクラスです。実用的な日本語の言葉やフレーズ、文字の構成や役割について学び、読み書き、会話、聞き取り4技能を身に着けていきます。本、歌や音楽などを通して楽しみながら日本の伝統的な文化や習慣を学んでいくと同時に、近代文学やポップカルチャーも取り入れながら第二言語として日本語の習得を目指します。日本語部は初級クラスと中級・上級クラスの２クラスを設置しています。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "日本語部は日本語の基礎と日本文化について理解を深めるクラスです。実用的な日本語の言葉やフレーズ、文字の構成や役割について学び、読み書き、会話、聞き取り4技能を身に着けていきます。本、歌や音楽などを通して楽しみながら日本の伝統的な文化や習慣を学んでいくと同時に、近代文学やポップカルチャーも取り入れながら第二言語として日本語の習得を目指します。日本語部は初級クラスと中級・上級クラスの２クラスを設置しています。",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "日本語部",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "日本語部",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/a995f74b772149ebb7672f2c963ad338",
+    "public_url": null
+  }
+]

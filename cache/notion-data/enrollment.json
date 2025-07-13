@@ -1,0 +1,656 @@
+[
+  {
+    "object": "page",
+    "id": "11ba8c0e-cf8c-814a-80f1-c3d5dc64f406",
+    "created_time": "2024-10-10T06:57:00.000Z",
+    "last_edited_time": "2025-06-23T21:52:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "11ba8c0e-cf8c-8059-bbdd-f42453136463"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "text": {
+        "id": "%3Bv%3Fc",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "新規入学者",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "新規入学者",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": ": 新しく入学する学生向けの書類\n• ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": ": 新しく入学する学生向けの書類\n• ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "入学願書",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "入学願書",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "（締切: 7月19日土曜日）\n• 緊急連絡先\n• 免責とリリースに関する書類\n•メディアに関する同意書（写真やビデオの使用に関するもの）",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "（締切: 7月19日土曜日）\n• 緊急連絡先\n• 免責とリリースに関する書類\n•メディアに関する同意書（写真やビデオの使用に関するもの）",
+            "href": null
+          }
+        ]
+      },
+      "en": {
+        "id": "GX%7B%7D",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Japanese Division",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Japanese Division",
+            "href": null
+          }
+        ]
+      },
+      "ordering": {
+        "id": "J_LQ",
+        "type": "number",
+        "number": 2
+      },
+      "text_en": {
+        "id": "fiOA",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "New Students",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "New Students",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": ": Documents for new students enrolling\n• ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": ": Documents for new students enrolling\n• ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Enrolment Application",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Enrolment Application",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " (Deadline: Saturday, July 19)\n• ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " (Deadline: Saturday, July 19)\n• ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Emergency Contact Information",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Emergency Contact Information",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "\n• ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "\n• ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Indemnity and Release Document",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Indemnity and Release Document",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "\n• ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "\n• ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Media Release",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Media Release",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " (Consent for the use of photos and videos)",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " (Consent for the use of photos and videos)",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "日本語科",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "日本語科",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/11ba8c0ecf8c814a80f1c3d5dc64f406",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "11ba8c0e-cf8c-81ef-919d-e6ce310e66f7",
+    "created_time": "2024-10-10T06:57:00.000Z",
+    "last_edited_time": "2025-06-23T21:51:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "11ba8c0e-cf8c-8059-bbdd-f42453136463"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "text": {
+        "id": "%3Bv%3Fc",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "新規入学者",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "新規入学者",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": ": 新しく入学する学生向けの書類\n• ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": ": 新しく入学する学生向けの書類\n• ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "入学願書",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "入学願書",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "（締切: 7月19日土曜日）\n• 緊急連絡先\n• 免責とリリースに関する書類\n•メディアに関する同意書（写真やビデオの使用に関するもの）",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "（締切: 7月19日土曜日）\n• 緊急連絡先\n• 免責とリリースに関する書類\n•メディアに関する同意書（写真やビデオの使用に関するもの）",
+            "href": null
+          }
+        ]
+      },
+      "en": {
+        "id": "GX%7B%7D",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "K-12 Division",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "K-12 Division",
+            "href": null
+          }
+        ]
+      },
+      "ordering": {
+        "id": "J_LQ",
+        "type": "number",
+        "number": 1
+      },
+      "text_en": {
+        "id": "fiOA",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "New Students",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "New Students",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": ": Documents for new students enrolling\n• ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": ": Documents for new students enrolling\n• ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Enrolment Application",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Enrolment Application",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " (Deadline: Saturday, July 19)\n• ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " (Deadline: Saturday, July 19)\n• ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Emergency Contact Information",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Emergency Contact Information",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "\n• ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "\n• ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Indemnity and Release Document",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Indemnity and Release Document",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "\n• ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "\n• ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Media Release",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Media Release",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " (Consent for the use of photos and videos)",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " (Consent for the use of photos and videos)",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "継承日本語科",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "継承日本語科",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/11ba8c0ecf8c81ef919de6ce310e66f7",
+    "public_url": null
+  }
+]
