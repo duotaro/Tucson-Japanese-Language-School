@@ -1,8 +1,9 @@
-# 作業ログ - feature/unified-multilingual-pages ブランチ
+# 作業ログ - feature/notion-cache-system ブランチ
 
 **作成日**: 2025年7月2日  
+**更新日**: 2025年7月13日  
 **対象**: ツーソン日本語学校ウェブサイト  
-**ブランチ**: feature/unified-multilingual-pages  
+**ブランチ**: feature/notion-cache-system  
 **作業者**: Claude AI + ユーザー
 
 ---
@@ -246,6 +247,36 @@
 **確認結果**: 
 - yarn dev で正常起動確認
 - contact/opportunity:143-144でOpportunityPageが呼び出される
+
+---
+
+### No.14 ビルド時間短縮のためのAPI呼び出し最適化
+**対応**: `pages/[[...slug]].js`で残っていたNotion API直接呼び出しをキャッシュシステムに完全移行
+**背景**: yarn buildでビルド時間が8分以上かかり、まだ複数箇所でAPI直接呼び出しが残っていた
+**原因**: 
+1. `getStaticPaths`でニュースデータ取得時にAPI直接呼び出し（228行）
+2. `fetchData`関数でAPI直接呼び出し（286行）
+3. ニュース詳細ページ取得でAPI直接呼び出し（397行）
+4. ニュース一覧ページで`fetchData`関数使用（541行）
+
+**修正内容**:
+1. **getStaticPaths修正**: `getDatabase(newsId)`を`loadCachedData('news', { fallbackToAPI: false })`に変更
+2. **fetchData関数廃止**: `fetchData`関数を削除し、`fetchCachedData`関数に置き換え
+3. **ニュース詳細修正**: `getDatabase(newsId)`を`fetchCachedData('news', null)`に変更
+4. **ニュース一覧修正**: `fetchData(newsId, "news", null)`を`fetchCachedData('news', null)`に変更
+
+**影響ファイル**:
+- `pages/[[...slug]].js` (API呼び出し4箇所を完全にキャッシュシステムに移行)
+
+**効果確認**:
+- ビルドログで「📁 キャッシュから読み込み: news (36件)」が大量に表示されることを確認
+- API直接呼び出しが完全に排除されキャッシュシステムのみが使用されることを確認
+- package.jsonにプレビューデプロイ用コマンド追加（`preview:cloudflare`, `preview:cloudflare:full`, `preview:cloudflare:fast`）
+
+**最終状態**: 
+- NotionAPIへの直接呼び出しは完全に排除
+- 全データ取得がキャッシュシステム経由で実行
+- ビルド時のAPIリクエスト数が大幅削減
 - opportunities (102a8c0ecf8c80089b21d14aec9edd22) データでタブ付き詳細表示
 - general (d9037016a0524f08adecdbab0c7302b7) データでページタイトル・説明表示
 

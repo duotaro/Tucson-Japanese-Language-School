@@ -35,12 +35,14 @@ function MyApp({ Component, pageProps }) {
 // };
 
 const getSponsors = async () => {
-  const database = await getDatabase("1e302ac5bce442b797e491aee309e7c4")
-  let props = []
-  for(let item of database){
-    props.push(item.properties)
+  try {
+    const { loadCachedData } = await import('../lib/cache-loader.js');
+    const database = await loadCachedData('sponsors', { fallbackToAPI: false });
+    return database;
+  } catch (error) {
+    console.error('Error loading sponsors from cache:', error);
+    return [];
   }
-  return database
 }
 
 export default MyApp;

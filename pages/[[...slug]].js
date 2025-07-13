@@ -222,10 +222,17 @@ export async function getStaticPaths() {
   // Generate paths for both languages
   const paths = [];
   
-  // Get news items for dynamic paths
+  // Initialize global cache for build performance
+  if (!global.buildTimeCache) {
+    global.buildTimeCache = {};
+  }
+  
+  // Get news items for dynamic paths using cache system
   let newsPaths = [];
   try {
-    const newsDatabase = await getDatabase(newsId);
+    const newsDatabase = await loadCachedData('news', { fallbackToAPI: false });
+    // Store in global cache for later use
+    global.buildTimeCache['news'] = newsDatabase;
     newsPaths = newsDatabase.map(item => ({ params: { slug: ['news', item.id] } }));
   } catch (error) {
     console.log('Error fetching news for paths:', error);
@@ -280,68 +287,33 @@ export async function getStaticProps({ params }) {
 
   const pageType = actualSlug.length === 0 ? 'home' : actualSlug.join('/');
 
-  // Lightweight fetch data for better performance
-  const fetchData = async (databaseId, pagePath, limit = null) => {
+  // Global cache to prevent duplicate loading
+  if (!global.buildTimeCache) {
+    global.buildTimeCache = {};
+  }
+
+  // Cache-based data fetching with global caching for build performance
+  const fetchCachedData = async (dataType, limit = null) => {
     try {
-      const database = await getDatabase(databaseId);
+      // Check global cache first
+      if (global.buildTimeCache[dataType]) {
+        console.log(`🚀 グローバルキャッシュから取得: ${dataType}`);
+        const cached = global.buildTimeCache[dataType];
+        return limit ? cached.slice(0, limit) : cached;
+      }
+
+      const database = await loadCachedData(dataType, { fallbackToAPI: false });
       if (!database || !Array.isArray(database)) {
-        console.warn(`No data found for database ID: ${databaseId}`);
+        console.warn(`No data found for cache: ${dataType}`);
         return [];
       }
       
-      const limitedDatabase = limit ? database.slice(0, limit) : database;
+      // Store in global cache
+      global.buildTimeCache[dataType] = database;
       
-      let props = [];
-      for(let item of limitedDatabase){
-        props.push(item.properties);
-      }
-      await saveImageIfNeeded(props, pagePath);
-
-      const processedDatabase = await Promise.all(limitedDatabase.map(async (item) => {
-        const essentialProps = {};
-        // Reduce image processing for better performance
-        const imageKeys = ['image', 'image1'];
-        const fileKeys = ['pdf']; // PDFファイルプロパティを追加
-
-        Object.keys(item.properties).forEach(key => {
-          const prop = item.properties[key];
-          // Include essential property types
-          if (imageKeys.includes(key) || fileKeys.includes(key) || prop.type === 'title' || prop.type === 'rich_text' || 
-              prop.type === 'date' || prop.type === 'select' || prop.type === 'multi_select' ||
-              prop.type === 'checkbox' || prop.type === 'url') {
-            essentialProps[key] = prop;
-          }
-          // Include specific essential properties by name
-          if (['tags', 'en', 'text', 'text_en', 'title', 'date'].includes(key)) {
-            essentialProps[key] = prop;
-          }
-        });
-
-        // Simplified image processing
-        if (essentialProps.image && essentialProps.image.type === 'files' && essentialProps.image.files[0]) {
-          const originalFileName = essentialProps.image.files[0].name;
-          const baseName = path.parse(originalFileName.replace(/ /g, '_')).name;
-          
-          essentialProps.image = {
-            ...essentialProps.image,
-            optimizedImage: {
-              baseName: baseName,
-              pagePath: pagePath,
-              alt: originalFileName,
-              width: 800,
-              height: 600,
-            }
-          };
-        }
-    
-        return {
-          id: item.id,
-          properties: essentialProps
-        };
-      }));
-      return processedDatabase;
+      return limit ? database.slice(0, limit) : database;
     } catch (error) {
-      console.error(`Error fetching data for database ${databaseId}:`, error);
+      console.error(`Error fetching cached data for ${dataType}:`, error);
       return [];
     }
   };
@@ -394,8 +366,8 @@ export async function getStaticProps({ params }) {
   if (pageType.startsWith('news/') && actualSlug.length === 2) {
     const newsItemId = actualSlug[1];
     try {
-      const newsItem = await getDatabase(newsId);
-      const foundItem = newsItem.find(item => item.id === newsItemId);
+      const newsDatabase = await fetchCachedData('news', null);
+      const foundItem = newsDatabase.find(item => item.id === newsItemId);
       if (foundItem) {
         props.newsItem = foundItem;
       }
@@ -538,7 +510,7 @@ export async function getStaticProps({ params }) {
     }
   } else if (pageType === 'news') {
     try {
-      const newsDatabase = await fetchData(newsId, "news", null);
+      const newsDatabase = await fetchCachedData('news', null);
       const newsList = await getNewsList(newsDatabase, null);
       
       props.newsList = newsList || [];

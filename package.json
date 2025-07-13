@@ -48,7 +48,10 @@
     "cache:dashboard:all": "node scripts/notion-cache/dashboard.js all",
     "deploy:cloudflare": "yarn build && npx wrangler pages deploy out --project-name tucson-japanese-language-school --commit-dirty=true",
     "deploy:cloudflare:full": "yarn cache:fetch-all && yarn build && npx wrangler pages deploy out --project-name tucson-japanese-language-school --commit-dirty=true",
-    "deploy:cloudflare:fast": "yarn cache:update:frequent && yarn build && npx wrangler pages deploy out --project-name tucson-japanese-language-school --commit-dirty=true"
+    "deploy:cloudflare:fast": "yarn cache:update:frequent && yarn build && npx wrangler pages deploy out --project-name tucson-japanese-language-school --commit-dirty=true",
+    "preview:cloudflare": "yarn build && npx wrangler pages deploy out --project-name tucson-japanese-language-school --branch preview --commit-dirty=true",
+    "preview:cloudflare:full": "yarn cache:fetch-all && yarn build && npx wrangler pages deploy out --project-name tucson-japanese-language-school --branch preview --commit-dirty=true",
+    "preview:cloudflare:fast": "yarn cache:update:frequent && yarn build && npx wrangler pages deploy out --project-name tucson-japanese-language-school --branch preview --commit-dirty=true"
   },
   "dependencies": {
     "@fullcalendar/core": "^6.1.15",

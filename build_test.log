@@ -1,0 +1,5098 @@
+   Linting and checking validity of types ...
+
+./components/pages/news/detail.js
+73:19  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./components/parts/news/detail.js
+54:15  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./components/parts/program/calender/index.js
+190:19  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+200:19  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
+   Creating an optimized production build ...
+ ⚠ Found lockfile missing swc dependencies, patching...
+ ⨯ Failed to patch lockfile, please try uninstalling and reinstalling next in this workspace
+TypeError: Cannot read properties of undefined (reading 'os')
+    at fetchPkgInfo (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/node_modules/next/dist/lib/patch-incorrect-lockfile.js:72:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Promise.all (index 6)
+    at async patchIncorrectLockfile (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/node_modules/next/dist/lib/patch-incorrect-lockfile.js:161:26)
+ ✓ Compiled successfully
+   Collecting page data ...
+📁 キャッシュから読み込み: news (36件)
+   Generating static pages (0/215) ...
+=============
+[
+  {
+    object: 'page',
+    id: '88fe2db2-68f6-4295-ab31-8253d1fda16b',
+    created_time: '2024-09-18T14:32:00.000Z',
+    last_edited_time: '2024-10-04T17:29:00.000Z',
+    created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '105a8c0e-cf8c-8082-a456-dd95fd87d0c2'
+    },
+    archived: false,
+    in_trash: false,
+    properties: { pdf: [Object], image: [Object], en: [Object], title: [Object] },
+    url: 'https://www.notion.so/88fe2db268f64295ab318253d1fda16b',
+    public_url: null
+  }
+]
+=======END======
+[convertAboutFromDatabase] Processing item with tag: vision, title: Vision
+[convertAboutFromDatabase] Set vision
+[convertAboutFromDatabase] Processing item with tag: about, title: 本校について
+[convertAboutFromDatabase] Set aboutSchool
+[convertAboutFromDatabase] Processing item with tag: mission, title: Mission
+[convertAboutFromDatabase] Set mission
+[convertAboutFromDatabase] Final result - aboutSchool: found, mission: found, vision: found
+============
+{
+  pdf: { id: '%3BCvS', type: 'files', files: [ [Object] ] },
+  image: { id: 'tHwI', type: 'files', files: [ [Object] ] },
+  en: { id: '%7CJmt', type: 'rich_text', rich_text: [ [Object] ] },
+  title: { id: 'title', type: 'title', title: [ [Object] ] }
+}
+============
+Warning: ImageOptimizer for "Sports_Day_2023" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+already exist.
+not pdf file
+OrgChart data received: {
+  object: 'page',
+  id: '7a5843cb-66c0-4555-b972-1ee1c3063962',
+  created_time: '2024-09-25T09:16:00.000Z',
+  last_edited_time: '2024-10-10T01:32:00.000Z',
+  created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+  last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+  cover: null,
+  icon: null,
+  parent: {
+    type: 'database_id',
+    database_id: '10ca8c0e-cf8c-8062-9eb3-ee7c40cf9005'
+  },
+  archived: false,
+  in_trash: false,
+  properties: {
+    image_en: { id: 'AnK%3A', type: 'files', files: [Array] },
+    en: { id: 'BggW', type: 'rich_text', rich_text: [Array] },
+    text_en: { id: 'OQjU', type: 'rich_text', rich_text: [Array] },
+    image: { id: 'zJ%3Cu', type: 'files', files: [Array] },
+    text: { id: '%7Dp_r', type: 'rich_text', rich_text: [Array] },
+    title: { id: 'title', type: 'title', title: [Array] }
+  },
+  url: 'https://www.notion.so/7a5843cb66c04555b9721ee1c3063962',
+  public_url: null
+}
+OrgChart entity created: OrganisationFlowChartEntity {
+  title: '運営組織図',
+  text: [
+    {
+      type: 'text',
+      text: [Object],
+      annotations: [Object],
+      plain_text: 'ツーソン日本語学校理事会は、創立理念の保持、学校運営の管理、指導、助言、また、短期、長期的計画を立案し、教職員、ボランティア父母と協力して実行し、本校が健全な運営を行えるように監視する役割を担い、日々の学校運営を行っているスタッフを支えます。',
+      href: null
+    }
+  ],
+  image: {
+    baseName: 'governance_chart_ja',
+    pagePath: 'org_chart',
+    alt: 'governance_chart_ja.jpg',
+    width: null,
+    height: null
+  }
+}
+already exist.
+already exist.
+already exist.
+already exist.
+[AboutEntity] Optimized image data not found for item.id: caedb020-e7de-46db-ad8f-6221961d3dab.
+                          Ensure 'pages/index.js/fetchData' correctly adds 'optimizedImage'.
+[AboutEntity] Optimized image data not found for item.id: 3b6fb768-3ff3-425b-8758-1c31f6fa231e.
+                          Ensure 'pages/index.js/fetchData' correctly adds 'optimizedImage'.
+[AboutEntity] Optimized image data not found for item.id: b3091c78-9b7c-4e8b-80de-dc5f98fd9d5b.
+                          Ensure 'pages/index.js/fetchData' correctly adds 'optimizedImage'.
+[convertAboutFromDatabase] Processing item with tag: vision, title: Vision
+[convertAboutFromDatabase] Set vision
+[convertAboutFromDatabase] Processing item with tag: about, title: 本校について
+[convertAboutFromDatabase] Set aboutSchool
+[convertAboutFromDatabase] Processing item with tag: mission, title: Mission
+[convertAboutFromDatabase] Set mission
+[convertAboutFromDatabase] Final result - aboutSchool: found, mission: found, vision: found
+already exist.
+Warning: ImageOptimizer for "Tjsfounders" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "historty1" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "historty2" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "historty3" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+OrgChart data received: {
+  object: 'page',
+  id: '7a5843cb-66c0-4555-b972-1ee1c3063962',
+  created_time: '2024-09-25T09:16:00.000Z',
+  last_edited_time: '2024-10-10T01:32:00.000Z',
+  created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+  last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+  cover: null,
+  icon: null,
+  parent: {
+    type: 'database_id',
+    database_id: '10ca8c0e-cf8c-8062-9eb3-ee7c40cf9005'
+  },
+  archived: false,
+  in_trash: false,
+  properties: {
+    image_en: {
+      id: 'AnK%3A',
+      type: 'files',
+      files: [Array],
+      optimizedImage: [Object]
+    },
+    en: { id: 'BggW', type: 'rich_text', rich_text: [Array] },
+    text_en: { id: 'OQjU', type: 'rich_text', rich_text: [Array] },
+    image: {
+      id: 'zJ%3Cu',
+      type: 'files',
+      files: [Array],
+      optimizedImage: [Object]
+    },
+    text: { id: '%7Dp_r', type: 'rich_text', rich_text: [Array] },
+    title: { id: 'title', type: 'title', title: [Array] }
+  },
+  url: 'https://www.notion.so/7a5843cb66c04555b9721ee1c3063962',
+  public_url: null
+}
+OrgChart entity created: OrganisationFlowChartEntity {
+  title: 'Governance Chart',
+  text: [
+    {
+      type: 'text',
+      text: [Object],
+      annotations: [Object],
+      plain_text: "Tucson Japanese Language School's Board of Directors oversees the school’s operation, provides guidance and advice, implements short and long-term plans, and carries out these plans in cooperation with faculty, staff, and volunteer parents for the school to pursue its mission and sustain as a healthy organization. The board of directors supports the operation team that runs the school daily.",
+      href: null
+    }
+  ],
+  image: {
+    baseName: 'governance_chart_en',
+    pagePath: 'org_chart',
+    alt: 'governance_chart_en.jpg',
+    width: null,
+    height: null
+  }
+}
+already exist.
+already exist.
+already exist.
+[AboutEntity] Optimized image data not found for item.id: caedb020-e7de-46db-ad8f-6221961d3dab.
+                          Ensure 'pages/index.js/fetchData' correctly adds 'optimizedImage'.
+[AboutEntity] Optimized image data not found for item.id: 3b6fb768-3ff3-425b-8758-1c31f6fa231e.
+                          Ensure 'pages/index.js/fetchData' correctly adds 'optimizedImage'.
+[AboutEntity] Optimized image data not found for item.id: b3091c78-9b7c-4e8b-80de-dc5f98fd9d5b.
+                          Ensure 'pages/index.js/fetchData' correctly adds 'optimizedImage'.
+[convertAboutFromDatabase] Processing item with tag: vision, title: Our Vision
+[convertAboutFromDatabase] Set vision
+[convertAboutFromDatabase] Processing item with tag: about, title: About
+[convertAboutFromDatabase] Set aboutSchool
+[convertAboutFromDatabase] Processing item with tag: mission, title: Our Mission
+[convertAboutFromDatabase] Set mission
+[convertAboutFromDatabase] Final result - aboutSchool: found, mission: found, vision: found
+[convertAboutFromDatabase] Processing item with tag: vision, title: Our Vision
+[convertAboutFromDatabase] Set vision
+[convertAboutFromDatabase] Processing item with tag: about, title: About
+[convertAboutFromDatabase] Set aboutSchool
+[convertAboutFromDatabase] Processing item with tag: mission, title: Our Mission
+[convertAboutFromDatabase] Set mission
+[convertAboutFromDatabase] Final result - aboutSchool: found, mission: found, vision: found
+============
+{
+  pdf: { id: '%3BCvS', type: 'files', files: [ [Object] ] },
+  image: { id: 'tHwI', type: 'files', files: [ [Object] ] },
+  en: { id: '%7CJmt', type: 'rich_text', rich_text: [ [Object] ] },
+  title: { id: 'title', type: 'title', title: [ [Object] ] }
+}
+============
+Warning: ImageOptimizer for "Sports_Day_2023" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+already exist.
+not pdf file
+already exist.
+already exist.
+Warning: ImageOptimizer for "Tjsfounders" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "historty1" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "historty2" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "historty3" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Staff data received: [
+  {
+    object: 'page',
+    id: '219a8c0e-cf8c-8086-95b6-dbe56a73880d',
+    created_time: '2025-06-21T20:02:00.000Z',
+    last_edited_time: '2025-06-21T20:03:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/219a8c0ecf8c808695b6dbe56a73880d',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '4377c087-e782-46e3-9eaf-261863837f19',
+    created_time: '2024-09-15T21:13:00.000Z',
+    last_edited_time: '2025-06-21T20:04:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/4377c087e78246e39eaf261863837f19',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '102a8c0e-cf8c-803e-9b33-f2d6b41189c5',
+    created_time: '2024-09-15T21:10:00.000Z',
+    last_edited_time: '2024-10-17T01:28:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/102a8c0ecf8c803e9b33f2d6b41189c5',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '102a8c0e-cf8c-80f9-bef0-dd401debb8af',
+    created_time: '2024-09-15T21:10:00.000Z',
+    last_edited_time: '2025-06-21T20:04:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/102a8c0ecf8c80f9bef0dd401debb8af',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: 'c452fe7f-4be8-4bdb-9afb-a32c10afbcab',
+    created_time: '2024-09-15T21:10:00.000Z',
+    last_edited_time: '2025-06-21T20:04:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/c452fe7f4be84bdb9afba32c10afbcab',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '102a8c0e-cf8c-80e6-9519-d25acdcfd0ec',
+    created_time: '2024-09-15T21:10:00.000Z',
+    last_edited_time: '2025-06-21T20:04:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/102a8c0ecf8c80e69519d25acdcfd0ec',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '102a8c0e-cf8c-80cd-a577-c9351f661364',
+    created_time: '2024-09-15T21:09:00.000Z',
+    last_edited_time: '2024-10-17T01:27:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/102a8c0ecf8c80cda577c9351f661364',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '102a8c0e-cf8c-80c8-9391-cb8332a09711',
+    created_time: '2024-09-15T21:09:00.000Z',
+    last_edited_time: '2025-06-21T20:04:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/102a8c0ecf8c80c89391cb8332a09711',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '102a8c0e-cf8c-80b6-a18a-f9a071308672',
+    created_time: '2024-09-15T21:09:00.000Z',
+    last_edited_time: '2025-06-21T20:04:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/102a8c0ecf8c80b6a18af9a071308672',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '102a8c0e-cf8c-80a2-9cba-f21c57ac7a99',
+    created_time: '2024-09-15T21:08:00.000Z',
+    last_edited_time: '2025-06-21T20:03:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/102a8c0ecf8c80a29cbaf21c57ac7a99',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '102a8c0e-cf8c-8032-ba7b-c79866f660eb',
+    created_time: '2024-09-15T21:08:00.000Z',
+    last_edited_time: '2025-06-21T20:03:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-816Warning: ImageOptimizer for "mcknight" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "minami" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "IMG_1299_edited" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "IMG_7789_edited_edited" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "IMG_7879_edited" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "default-staff" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "IMG_1228_edited" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "IMG_1280_edited" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "profile" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "profile" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "profile" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "IMG_7802_edited" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "IMG_7796" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "IMG_7799_edited" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "profile" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+8-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/102a8c0ecf8c8032ba7bc79866f660eb',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '102a8c0e-cf8c-803e-8c91-cdc26abf8c7b',
+    created_time: '2024-09-15T21:02:00.000Z',
+    last_edited_time: '2024-10-17T01:27:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/102a8c0ecf8c803e8c91cdc26abf8c7b',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '9a170ec8-c017-4cce-a0dd-d62f2edb82b6',
+    created_time: '2024-09-10T03:57:00.000Z',
+    last_edited_time: '2024-10-17T01:27:00.000Z',
+    created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/9a170ec8c0174ccea0ddd62f2edb82b6',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: 'd65a07cd-7eec-4319-8dbb-f05addf412a9',
+    created_time: '2024-09-10T03:57:00.000Z',
+    last_edited_time: '2024-10-17T01:27:00.000Z',
+    created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/d65a07cd7eec43198dbbf05addf412a9',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: 'f9633a2c-0dff-4b02-9161-9139ab8919d0',
+    created_time: '2024-09-10T03:57:00.000Z',
+    last_edited_time: '2024-10-17T01:27:00.000Z',
+    created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/f9633a2c0dff4b0291619139ab8919d0',
+    public_url: null
+  }
+]
+Role data received: [
+  {
+    object: 'page',
+    id: '122a8c0e-cf8c-808e-88c5-c0446f064f99',
+    created_time: '2024-10-17T01:16:00.000Z',
+    last_edited_time: '2024-10-17T01:19:00.000Z',
+    created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '122a8c0e-cf8c-8005-9934-c64693cc39ca'
+    },
+    archived: false,
+    in_trash: false,
+    properties: { role: [Object], en: [Object], title: [Object] },
+    url: 'https://www.notion.so/122a8c0ecf8c808e88c5c0446f064f99',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '122a8c0e-cf8c-80d5-85d2-d4a0673c1797',
+    created_time: '2024-10-17T01:16:00.000Z',
+    last_edited_time: '2024-10-17T01:19:00.000Z',
+    created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '122a8c0e-cf8c-8005-9934-c64693cc39ca'
+    },
+    archived: false,
+    in_trash: false,
+    properties: { role: [Object], en: [Object], title: [Object] },
+    url: 'https://www.notion.so/122a8c0ecf8c80d585d2d4a0673c1797',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '122a8c0e-cf8c-80ca-bded-ded104c18d96',
+    created_time: '2024-10-17T01:16:00.000Z',
+    last_edited_time: '2024-10-17T01:19:00.000Z',
+    created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '122a8c0e-cf8c-8005-9934-c64693cc39ca'
+    },
+    archived: false,
+    in_trash: false,
+    properties: { role: [Object], en: [Object], title: [Object] },
+    url: 'https://www.notion.so/122a8c0ecf8c80cabdedded104c18d96',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '25697b18-c8e5-48aa-948f-4716cf5e36e8',
+    created_time: '2024-10-17T01:12:00.000Z',
+    last_edited_time: '2024-10-17T01:18:00.000Z',
+    created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '122a8c0e-cf8c-8005-9934-c64693cc39ca'
+    },
+    archived: false,
+    in_trash: false,
+    properties: { role: [Object], en: [Object], title: [Object] },
+    url: 'https://www.notion.so/25697b18c8e548aa948f4716cf5e36e8',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '31cae8ce-3c54-4a0b-9b18-639b4de347b3',
+    created_time: '2024-10-17T01:12:00.000Z',
+    last_edited_time: '2024-10-17T01:17:00.000Z',
+    created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '122a8c0e-cf8c-8005-9934-c64693cc39ca'
+    },
+    archived: false,
+    in_trash: false,
+    properties: { role: [Object], en: [Object], title: [Object] },
+    url: 'https://www.notion.so/31cae8ce3c544a0b9b18639b4de347b3',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '9ad23647-a425-4c2a-8538-b77219acc481',
+    created_time: '2024-10-17T01:12:00.000Z',
+    last_edited_time: '2024-10-17T01:18:00.000Z',
+    created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '122a8c0e-cf8c-8005-9934-c64693cc39ca'
+    },
+    archived: false,
+    in_trash: false,
+    properties: { role: [Object], en: [Object], title: [Object] },
+    url: 'https://www.notion.so/9ad23647a4254c2a8538b77219acc481',
+    public_url: null
+  }
+]
+Processed role list: [
+  RoleEntity { role: 'nihongo-cafe', title: 'Nihongo Cafe' },
+  RoleEntity { role: 'volunteer', title: 'Volunteer' },
+  RoleEntity { role: 'manager', title: 'Manager' },
+  RoleEntity { role: 'teacher', title: 'Instructor' },
+  RoleEntity { role: 'co-director', title: 'Director ' },
+  RoleEntity { role: 'assistant', title: 'Assistant' }
+]
+Processed staff list: [
+  StaffEntity {
+    name: 'Hitomi McKnight',
+    text: [ [Object] ],
+    role: [ [RoleEntity], [RoleEntity] ],
+    image: {
+      baseName: 'mcknight',
+      pagePath: 'staff',
+      alt: 'mcknight.png',
+      width: null,
+      height: null
+    },
+    ordering: 1
+  },
+  StaffEntity {
+    name: 'Minami Espinosa',
+    text: [ [Object] ],
+    role: [ [RoleEntity], [RoleEntity] ],
+    image: {
+      baseName: 'minami',
+      pagePath: 'staff',
+      alt: 'minami.png',
+      width: null,
+      height: null
+    },
+    ordering: 2
+  },
+  StaffEntity {
+    name: 'Rie Butler',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: 'IMG_1299_edited',
+      pagePath: 'staff',
+      alt: 'IMG_1299_edited.jpg',
+      width: null,
+      height: null
+    },
+    ordering: 3
+  },
+  StaffEntity {
+    name: 'Bella Hennessy',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: 'IMG_7789_edited_edited',
+      pagePath: 'staff',
+      alt: 'IMG_7789_edited_edited.jpg',
+      width: null,
+      height: null
+    },
+    ordering: 4
+  },
+  StaffEntity {
+    name: 'Yasir Nemat',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: 'IMG_7879_edited',
+      pagePath: 'staff',
+      alt: 'IMG_7879_edited.jpg',
+      width: null,
+      height: null
+    },
+    ordering: 5
+  },
+  StaffEntity {
+    name: 'Katsuya Sato',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: null,
+    ordering: 6
+  },
+  StaffEntity {
+    name: 'Meg Nakamura',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: 'IMG_1228_edited',
+      pagePath: 'staff',
+      alt: 'IMG_1228_edited.jpg',
+      width: null,
+      height: null
+    },
+    ordering: 7
+  },
+  StaffEntity {
+    name: 'Miharu Lee',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: 'IMG_1280_edited',
+      pagePath: 'staff',
+      alt: 'IMG_1280_edited.jpg',
+      width: null,
+      height: null
+    },
+    ordering: 8
+  },
+  StaffEntity {
+    name: 'Manami Okoshi',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: 'profile',
+      pagePath: 'staff',
+      alt: 'profile.jpg',
+      width: null,
+      height: null
+    },
+    ordering: 9
+  },
+  StaffEntity {
+    name: 'Tasha Waldorf',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: 'profile',
+      pagePath: 'staff',
+      alt: 'profile.jpg',
+      width: null,
+      height: null
+    },
+    ordering: 10
+  },
+  StaffEntity {
+    name: 'Lumi Hisataka',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: 'profile',
+      pagePath: 'staff',
+      alt: 'profile.jpg',
+      width: null,
+      height: null
+    },
+    ordering: 11
+  },
+  StaffEntity {
+    name: 'Azumi Uchida',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: 'IMG_7802_edited',
+      pagePath: 'staff',
+      alt: 'IMG_7802_edited.jpg',
+      width: null,
+      height: null
+    },
+    ordering: 12
+  },
+  StaffEntity {
+    name: 'Hana McKnight',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: 'IMG_7796',
+      pagePath: 'staff',
+      alt: 'IMG_7796.jpeg',
+      width: null,
+      height: null
+    },
+    ordering: 13
+  },
+  StaffEntity {
+    name: 'Emi McKnight',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: 'IMG_7799_edited',
+      pagePath: 'staff',
+      alt: 'IMG_7799_edited.jpg',
+      width: null,
+      height: null
+    },
+    ordering: 14
+  },
+  StaffEntity {
+    name: 'Jennider Shioya',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: 'profile',
+      pagePath: 'staff',
+      alt: 'profile.jpg',
+      width: null,
+      height: null
+    },
+    ordering: 15
+  }
+]
+Warning: data for page "/en.bak/news" (path "/en.bak/news/") is 155 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+See more info here: https://nextjs.org/docs/messages/large-page-data
+[
+  {
+    object: 'page',
+    id: 'ba18afdf-a39a-49bd-a90e-459f9f12cf40',
+    created_time: '2024-10-09T04:42:00.000Z',
+    last_edited_time: '2024-10-09T06:35:00.000Z',
+    created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '11aa8c0e-cf8c-803e-8289-cb5bd9a5f80a'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      pdf_en: [Object],
+      image: [Object],
+      pdf: [Object],
+      title: [Object]
+    },
+    url: 'https://www.notion.so/ba18afdfa39a49bda90e459f9f12cf40',
+    public_url: null
+  }
+]
+not pdf file
+[
+  {
+    pdf_en: { id: 'v%3Dpe', type: 'rich_text', rich_text: [] },
+    image: { id: 'yWBU', type: 'files', files: [Array] },
+    pdf: { id: '%7C%5Bj%60', type: 'files', files: [Array] },
+    title: { id: 'title', type: 'title', title: [Array] }
+  }
+]
+Calendar files object: {
+  object: 'page',
+  id: 'ba18afdf-a39a-49bd-a90e-459f9f12cf40',
+  created_time: '2024-10-09T04:42:00.000Z',
+  last_edited_time: '2024-10-09T06:35:00.000Z',
+  created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+  last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+  cover: null,
+  icon: null,
+  parent: {
+    type: 'database_id',
+    database_id: '11aa8c0e-cf8c-803e-8289-cb5bd9a5f80a'
+  },
+  archived: false,
+  in_trash: false,
+  properties: {
+    pdf_en: { id: 'v%3Dpe', type: 'rich_text', rich_text: [] },
+    image: { id: 'yWBU', type: 'files', files: [Array] },
+    pdf: { id: '%7C%5Bj%60', type: 'files', files: [Array] },
+    title: { id: 'title', type: 'title', title: [Array] }
+  },
+  url: 'https://www.notion.so/ba18afdfa39a49bda90e459f9f12cf40',
+  public_url: null
+}
+Calendar files.properties: {
+  pdf_en: { id: 'v%3Dpe', type: 'rich_text', rich_text: [] },
+  image: { id: 'yWBU', type: 'files', files: [ [Object] ] },
+  pdf: { id: '%7C%5Bj%60', type: 'files', files: [ [Object] ] },
+  title: { id: 'title', type: 'title', title: [ [Object] ] }
+}
+Image files array: [
+  {
+    name: 'event.png',
+    type: 'file',
+    file: {
+      url: 'https://prod-files-secure.s3.us-west-2.amazonaws.com/ec34a095-6cd8-48a8-98c7-18f89317c7c4/85e303b4-e467-4145-ba76-4906a855b77c/event.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4667M3ILHAP%2F20250713%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250713T050020Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIEWeImmjAonGI%2F7E0YkZnb%2FZjN2wv1DgjvmgscvO8wzKAiEAqK%2BWMbGrSWqkJFpuzl%2BFa74%2Fh7edMjqJo5rP1JduvH8qiAQI%2Ff%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDK7%2BnDaGhj4ls5Dk8ircA8P5dX8NIeQoqsKY%2Ff4sJxURMrpv%2BZOIhzFcK4l6w%2F89J9X3UPCLiAGLVIqMAS5FrndqvqiFcWIyH1rpTi3n0Vk7KebGNoX3zyISH4gvr045JwkNbvvoCorbDL7qzN6kl07N7j7z5IX6fhTZyX%2F5P9Xyd%2FCrAAAZf%2FSmAOGkGhbm2BS8Zb16fYNgajvT2j1BviW1uQiQXWvSkZ%2BzVWPGTNhlYeMkDygTo3TGHnILLN4hs1DKw%2BncLJqon0B7%2B%2BBZ6w%2FgX4gBeyCpCkvb5BnnJdiZSHuuIcn%2F5BszDR2kHcyk6TkcuGLdAHOmeHA7hbVui4qyr28397M%2FdySG23OOiS7w%2BdKrnL97n7A%2FcmBNlK3N592Gq%2BLeO7NYaymK5WfyeoBRuOYReAMYRHbPRDforLw%2B0MYY1WK2BBlDBOF3nIaS9XzZmZBPeT6adwwiWE2M88tc7cOXzYCRVrFVOglIHLVYDIp1N%2BBiSSaR%2FpWVnxTPmI1Bwjv7GHg%2BuBlt69beSSeWCeAevV71kSj5l9YD3UXpAH1IVZaR9b4%2FSBFzo55bnu3nt2SZMVSggOQ3t52%2B0N5jLPzoELHDzF0ckmlEcxEJrZeA1mxpQHS%2FhfOT3XIc4dciY3gP7qu07xlIMPDYzMMGOqUBrfpuqbQ91DDm5tHuHOMKazGjx%2FxC2oNWQQkiAVdEYanFncI8%2BFlSUBu1HlF8Hg%2FpWuVVkFiZIARoR0CnV4mY4lQBiEi%2BwjhrpGXE%2FfWdcWNPJu4MSthk2NAtlK9ZMZwNR0HDrDWXsLCJDspmLPZJ0pV5g4esDdBbMo920%2FEG1CGpzHhBq0Fj5Q%2BWVFEM6aB%2FXlEuB4qvC%2FYTRwQ0YKyR11R8f3Tk&X-Amz-Signature=b760b12e819fcbb99db6fe6fa8d6a9028072aa8c7892e1009e33100a744c34c4&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject',
+      expiry_time: '2025-07-13T06:00:20.539Z'
+    }
+  }
+]
+Generated image path: /image/download/calendar/event.png.png
+   Generating static pages (25/215) 
+already exist.
+Class data received: {
+  category: [
+    {
+      object: 'page',
+      id: '99ec02fb-20f3-4fa5-8231-83c45df3f144',
+      created_time: '2024-10-09T07:36:00.000Z',
+      last_edited_time: '2024-10-09T07:42:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      properties: [Object],
+      url: 'https://www.notion.so/99ec02fb20f34fa5823183c45df3f144',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: 'a995f74b-7721-49eb-b767-2f2c963ad338',
+      created_time: '2024-10-09T07:36:00.000Z',
+      last_edited_time: '2024-10-09T09:25:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      properties: [Object],
+      url: 'https://www.notion.so/a995f74b772149ebb7672f2c963ad338',
+      public_url: null
+    }
+  ],
+  classes: [
+    {
+      object: 'page',
+      id: '11ca8c0e-cf8c-80d3-8615-f7d4f4007cf0',
+      created_time: '2024-10-11T09:43:00.000Z',
+      last_edited_time: '2024-10-11T09:51:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      properties: [Object],
+      url: 'https://www.notion.so/11ca8c0ecf8c80d38615f7d4f4007cf0',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '11ca8c0e-cf8c-80d8-8fda-ee7d75a0e718',
+      created_time: '2024-10-11T09:38:00.000Z',
+      last_edited_time: '2024-10-23T03:11:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      properties: [Object],
+      url: 'https://www.notion.so/11ca8c0ecf8c80d88fdaee7d75a0e718',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '11aa8c0e-cf8c-8000-b850-fef91292ae8c',
+      created_time: '2024-10-09T07:19:00.000Z',
+      last_edited_time: '2024-10-11T09:48:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      properties: [Object],
+      url: 'https://www.notion.so/11aa8c0ecf8c8000b850fef91292ae8c',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '11aa8c0e-cf8c-806d-bb6c-f2177df033cb',
+      created_time: '2024-10-09T07:14:00.000Z',
+      last_edited_time: '2024-10-23T03:10:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      properties: [Object],
+      url: 'https://www.notion.so/11aa8c0ecf8c806dbb6cf2177df033cb',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '11a3d234-161c-4116-bb01-34eeed87f99a',
+      created_time: '2024-10-09T07:09:00.000Z',
+      last_edited_time: '2024-10-11T09:49:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      properties: [Object],
+      url: 'https://www.notion.so/11a3d234161c4116bb0134eeed87f99a',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '53b5c5ad-de13-4cf2-a4c1-407d8d117dce',
+      created_time: '2024-10-09T07:09:00.000Z',
+      last_edited_time: '2024-10-23T03:10:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      properties: [Object],
+      url: 'https://www.notion.so/53b5c5adde134cf2a4c1407d8d117dce',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '63f53dc4-0f61-4505-abea-ff1ad51668e3',
+      created_time: '2024-10-09T07:09:00.000Z',
+      last_edited_time: '2024-10-23T03:10:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      properties: [Object],
+      url: 'https://www.notion.so/63f53dc40f614505abeaff1ad51668e3',
+      public_url: null
+    }
+  ]
+}
+Warning: ImageOptimizer for "AdobeStock_268595424" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "class20241023_01" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "class2" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "class20241023_02" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "winter" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "katakana" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "historty2" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+[convertAboutFromDatabase] Processing item with tag: vision, title: Our Vision
+[convertAboutFromDatabase] Set vision
+[convertAboutFromDatabase] Processing item with tag: about, title: About
+[convertAboutFromDatabase] Set aboutSchool
+[convertAboutFromDatabase] Processing item with tag: mission, title: Our Mission
+[convertAboutFromDatabase] Set mission
+[convertAboutFromDatabase] Final result - aboutSchool: found, mission: found, vision: found
+Warning: data for page "/en.bak" (path "/en.bak/") is 136 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+See more info here: https://nextjs.org/docs/messages/large-page-data
+Staff data received: [
+  {
+    object: 'page',
+    id: '219a8c0e-cf8c-8086-95b6-dbe56a73880d',
+    created_time: '2025-06-21T20:02:00.000Z',
+    last_edited_time: '2025-06-21T20:03:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/219a8c0ecf8c808695b6dbe56a73880d',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '4377c087-e782-46e3-9eaf-261863837f19',
+    created_time: '2024-09-15T21:13:00.000Z',
+    last_edited_time: '2025-06-21T20:04:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/4377c087e78246e39eaf261863837f19',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '102a8c0e-cf8c-803e-9b33-f2d6b41189c5',
+    created_time: '2024-09-15T21:10:00.000Z',
+    last_edited_time: '2024-10-17T01:28:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/102a8c0ecf8c803e9b33f2d6b41189c5',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '102a8c0e-cf8c-80f9-bef0-dd401debb8af',
+    created_time: '2024-09-15T21:10:00.000Z',
+    last_edited_time: '2025-06-21T20:04:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/102a8c0ecf8c80f9bef0dd401debb8af',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: 'c452fe7f-4be8-4bdb-9afb-a32c10afbcab',
+    created_time: '2024-09-15T21:10:00.000Z',
+    last_edited_time: '2025-06-21T20:04:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/c452fe7f4be84bdb9afba32c10afbcab',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '102a8c0e-cf8c-80e6-9519-d25acdcfd0ec',
+    created_time: '2024-09-15T21:10:00.000Z',
+    last_edited_time: '2025-06-21T20:04:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/102a8c0ecf8c80e69519d25acdcfd0ec',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '102a8c0e-cf8c-80cd-a577-c9351f661364',
+    created_time: '2024-09-15T21:09:00.000Z',
+    last_edited_time: '2024-10-17T01:27:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/102a8c0ecf8c80cda577c9351f661364',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '102a8c0e-cf8c-80c8-9391-cb8332a09711',
+    created_time: '2024-09-15T21:09:00.000Z',
+    last_edited_time: '2025-06-21T20:04:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/102a8c0ecf8c80c89391cb8332a09711',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '102a8c0e-cf8c-80b6-a18a-f9a071308672',
+    created_time: '2024-09-15T21:09:00.000Z',
+    last_edited_time: '2025-06-21T20:04:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/102a8c0ecf8c80b6a18af9a071308672',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '102a8c0e-cf8c-80a2-9cba-f21c57ac7a99',
+    created_time: '2024-09-15T21:08:00.000Z',
+    last_edited_time: '2025-06-21T20:03:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/102a8c0ecf8c80a29cbaf21c57ac7a99',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '102a8c0e-cf8c-8032-ba7b-c79866f660eb',
+    created_time: '2024-09-15T21:08:00.000Z',
+    last_edited_time: '2025-06-21T20:03:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-816Warning: ImageOptimizer for "mcknight" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "minami" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "IMG_1299_edited" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "IMG_7789_edited_edited" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "IMG_7879_edited" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "default-staff" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "IMG_1228_edited" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "IMG_1280_edited" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "profile" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "profile" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "profile" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "IMG_7802_edited" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "IMG_7796" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "IMG_7799_edited" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "profile" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+8-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/102a8c0ecf8c8032ba7bc79866f660eb',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '102a8c0e-cf8c-803e-8c91-cdc26abf8c7b',
+    created_time: '2024-09-15T21:02:00.000Z',
+    last_edited_time: '2024-10-17T01:27:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/102a8c0ecf8c803e8c91cdc26abf8c7b',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '9a170ec8-c017-4cce-a0dd-d62f2edb82b6',
+    created_time: '2024-09-10T03:57:00.000Z',
+    last_edited_time: '2024-10-17T01:27:00.000Z',
+    created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/9a170ec8c0174ccea0ddd62f2edb82b6',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: 'd65a07cd-7eec-4319-8dbb-f05addf412a9',
+    created_time: '2024-09-10T03:57:00.000Z',
+    last_edited_time: '2024-10-17T01:27:00.000Z',
+    created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/d65a07cd7eec43198dbbf05addf412a9',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: 'f9633a2c-0dff-4b02-9161-9139ab8919d0',
+    created_time: '2024-09-10T03:57:00.000Z',
+    last_edited_time: '2024-10-17T01:27:00.000Z',
+    created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/f9633a2c0dff4b0291619139ab8919d0',
+    public_url: null
+  }
+]
+Role data received: [
+  {
+    object: 'page',
+    id: '122a8c0e-cf8c-808e-88c5-c0446f064f99',
+    created_time: '2024-10-17T01:16:00.000Z',
+    last_edited_time: '2024-10-17T01:19:00.000Z',
+    created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '122a8c0e-cf8c-8005-9934-c64693cc39ca'
+    },
+    archived: false,
+    in_trash: false,
+    properties: { role: [Object], en: [Object], title: [Object] },
+    url: 'https://www.notion.so/122a8c0ecf8c808e88c5c0446f064f99',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '122a8c0e-cf8c-80d5-85d2-d4a0673c1797',
+    created_time: '2024-10-17T01:16:00.000Z',
+    last_edited_time: '2024-10-17T01:19:00.000Z',
+    created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '122a8c0e-cf8c-8005-9934-c64693cc39ca'
+    },
+    archived: false,
+    in_trash: false,
+    properties: { role: [Object], en: [Object], title: [Object] },
+    url: 'https://www.notion.so/122a8c0ecf8c80d585d2d4a0673c1797',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '122a8c0e-cf8c-80ca-bded-ded104c18d96',
+    created_time: '2024-10-17T01:16:00.000Z',
+    last_edited_time: '2024-10-17T01:19:00.000Z',
+    created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '122a8c0e-cf8c-8005-9934-c64693cc39ca'
+    },
+    archived: false,
+    in_trash: false,
+    properties: { role: [Object], en: [Object], title: [Object] },
+    url: 'https://www.notion.so/122a8c0ecf8c80cabdedded104c18d96',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '25697b18-c8e5-48aa-948f-4716cf5e36e8',
+    created_time: '2024-10-17T01:12:00.000Z',
+    last_edited_time: '2024-10-17T01:18:00.000Z',
+    created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '122a8c0e-cf8c-8005-9934-c64693cc39ca'
+    },
+    archived: false,
+    in_trash: false,
+    properties: { role: [Object], en: [Object], title: [Object] },
+    url: 'https://www.notion.so/25697b18c8e548aa948f4716cf5e36e8',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '31cae8ce-3c54-4a0b-9b18-639b4de347b3',
+    created_time: '2024-10-17T01:12:00.000Z',
+    last_edited_time: '2024-10-17T01:17:00.000Z',
+    created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '122a8c0e-cf8c-8005-9934-c64693cc39ca'
+    },
+    archived: false,
+    in_trash: false,
+    properties: { role: [Object], en: [Object], title: [Object] },
+    url: 'https://www.notion.so/31cae8ce3c544a0b9b18639b4de347b3',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '9ad23647-a425-4c2a-8538-b77219acc481',
+    created_time: '2024-10-17T01:12:00.000Z',
+    last_edited_time: '2024-10-17T01:18:00.000Z',
+    created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '122a8c0e-cf8c-8005-9934-c64693cc39ca'
+    },
+    archived: false,
+    in_trash: false,
+    properties: { role: [Object], en: [Object], title: [Object] },
+    url: 'https://www.notion.so/9ad23647a4254c2a8538b77219acc481',
+    public_url: null
+  }
+]
+Processed role list: [
+  RoleEntity { role: 'nihongo-cafe', title: 'にほんごかふぇ' },
+  RoleEntity { role: 'volunteer', title: 'ボランティア' },
+  RoleEntity { role: 'manager', title: 'マネージャー' },
+  RoleEntity { role: 'teacher', title: '講師' },
+  RoleEntity { role: 'co-director', title: 'ディレクター' },
+  RoleEntity { role: 'assistant', title: 'アシスタント' }
+]
+Processed staff list: [
+  StaffEntity {
+    name: 'マックナイト　ひとみ',
+    text: [ [Object] ],
+    role: [ [RoleEntity], [RoleEntity] ],
+    image: {
+      baseName: 'mcknight',
+      pagePath: 'staff',
+      alt: 'mcknight.png',
+      width: null,
+      height: null
+    },
+    ordering: 1
+  },
+  StaffEntity {
+    name: 'エスピノサ　みなみ',
+    text: [ [Object] ],
+    role: [ [RoleEntity], [RoleEntity] ],
+    image: {
+      baseName: 'minami',
+      pagePath: 'staff',
+      alt: 'minami.png',
+      width: null,
+      height: null
+    },
+    ordering: 2
+  },
+  StaffEntity {
+    name: 'バトラー　利恵',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: 'IMG_1299_edited',
+      pagePath: 'staff',
+      alt: 'IMG_1299_edited.jpg',
+      width: null,
+      height: null
+    },
+    ordering: 3
+  },
+  StaffEntity {
+    name: 'ヘネシー　ベラ',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: 'IMG_7789_edited_edited',
+      pagePath: 'staff',
+      alt: 'IMG_7789_edited_edited.jpg',
+      width: null,
+      height: null
+    },
+    ordering: 4
+  },
+  StaffEntity {
+    name: 'ネマット　ヤッサー',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: 'IMG_7879_edited',
+      pagePath: 'staff',
+      alt: 'IMG_7879_edited.jpg',
+      width: null,
+      height: null
+    },
+    ordering: 5
+  },
+  StaffEntity {
+    name: '佐藤かつや',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: null,
+    ordering: 6
+  },
+  StaffEntity {
+    name: '中村　めぐ',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: 'IMG_1228_edited',
+      pagePath: 'staff',
+      alt: 'IMG_1228_edited.jpg',
+      width: null,
+      height: null
+    },
+    ordering: 7
+  },
+  StaffEntity {
+    name: 'リー　美晴',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: 'IMG_1280_edited',
+      pagePath: 'staff',
+      alt: 'IMG_1280_edited.jpg',
+      width: null,
+      height: null
+    },
+    ordering: 8
+  },
+  StaffEntity {
+    name: '大越　愛巳',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: 'profile',
+      pagePath: 'staff',
+      alt: 'profile.jpg',
+      width: null,
+      height: null
+    },
+    ordering: 9
+  },
+  StaffEntity {
+    name: 'ワルドルフ　ターシャ',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: 'profile',
+      pagePath: 'staff',
+      alt: 'profile.jpg',
+      width: null,
+      height: null
+    },
+    ordering: 10
+  },
+  StaffEntity {
+    name: '久高　ルミ',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: 'profile',
+      pagePath: 'staff',
+      alt: 'profile.jpg',
+      width: null,
+      height: null
+    },
+    ordering: 11
+  },
+  StaffEntity {
+    name: '内田　愛澄',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: 'IMG_7802_edited',
+      pagePath: 'staff',
+      alt: 'IMG_7802_edited.jpg',
+      width: null,
+      height: null
+    },
+    ordering: 12
+  },
+  StaffEntity {
+    name: 'マックナイト　はな',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: 'IMG_7796',
+      pagePath: 'staff',
+      alt: 'IMG_7796.jpeg',
+      width: null,
+      height: null
+    },
+    ordering: 13
+  },
+  StaffEntity {
+    name: 'マックナイト　えみ',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: 'IMG_7799_edited',
+      pagePath: 'staff',
+      alt: 'IMG_7799_edited.jpg',
+      width: null,
+      height: null
+    },
+    ordering: 14
+  },
+  StaffEntity {
+    name: '塩屋　ジェニファー',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: 'profile',
+      pagePath: 'staff',
+      alt: 'profile.jpg',
+      width: null,
+      height: null
+    },
+    ordering: 15
+  }
+]
+Warning: data for page "/news.bak" (path "/news.bak/") is 154 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+See more info here: https://nextjs.org/docs/messages/large-page-data
+[
+  {
+    object: 'page',
+    id: 'ba18afdf-a39a-49bd-a90e-459f9f12cf40',
+    created_time: '2024-10-09T04:42:00.000Z',
+    last_edited_time: '2024-10-09T06:35:00.000Z',
+    created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '11aa8c0e-cf8c-803e-8289-cb5bd9a5f80a'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      pdf_en: [Object],
+      image: [Object],
+      pdf: [Object],
+      title: [Object]
+    },
+    url: 'https://www.notion.so/ba18afdfa39a49bda90e459f9f12cf40',
+    public_url: null
+  }
+]
+not pdf file
+[
+  {
+    pdf_en: { id: 'v%3Dpe', type: 'rich_text', rich_text: [] },
+    image: { id: 'yWBU', type: 'files', files: [Array] },
+    pdf: { id: '%7C%5Bj%60', type: 'files', files: [Array] },
+    title: { id: 'title', type: 'title', title: [Array] }
+  }
+]
+Calendar files object: {
+  object: 'page',
+  id: 'ba18afdf-a39a-49bd-a90e-459f9f12cf40',
+  created_time: '2024-10-09T04:42:00.000Z',
+  last_edited_time: '2024-10-09T06:35:00.000Z',
+  created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+  last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+  cover: null,
+  icon: null,
+  parent: {
+    type: 'database_id',
+    database_id: '11aa8c0e-cf8c-803e-8289-cb5bd9a5f80a'
+  },
+  archived: false,
+  in_trash: false,
+  properties: {
+    pdf_en: { id: 'v%3Dpe', type: 'rich_text', rich_text: [] },
+    image: { id: 'yWBU', type: 'files', files: [Array] },
+    pdf: { id: '%7C%5Bj%60', type: 'files', files: [Array] },
+    title: { id: 'title', type: 'title', title: [Array] }
+  },
+  url: 'https://www.notion.so/ba18afdfa39a49bda90e459f9f12cf40',
+  public_url: null
+}
+Calendar files.properties: {
+  pdf_en: { id: 'v%3Dpe', type: 'rich_text', rich_text: [] },
+  image: { id: 'yWBU', type: 'files', files: [ [Object] ] },
+  pdf: { id: '%7C%5Bj%60', type: 'files', files: [ [Object] ] },
+  title: { id: 'title', type: 'title', title: [ [Object] ] }
+}
+Image files array: [
+  {
+    name: 'event.png',
+    type: 'file',
+    file: {
+      url: 'https://prod-files-secure.s3.us-west-2.amazonaws.com/ec34a095-6cd8-48a8-98c7-18f89317c7c4/85e303b4-e467-4145-ba76-4906a855b77c/event.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466QZI5XZZP%2F20250713%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250713T050131Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIQD8jWU%2B2Oo8KzcAwUZLMX2D0o3AmvqavMRL44Accp8ITwIgCL%2Fwbj5SqKH4Ty1RcRsKBmFt1YGwi3IO1HnrhKpG1moqiAQI%2Ff%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDCojjM0bKNijrEzo6ircA2xpjtOO3xq0X0GF5XhsVySv2b0AQyofc6%2FIcLAAONMje%2FulRkZt5WzPbTv1LHHs7gWJFPLev2PCBE%2BhOqIp9rrET%2Bh36dSU470vkP7pmcStAZvNwSWF52YfnDu7rwQl76m6MiaxXPgpxS%2F%2BRakarNzxi01LWfBuazx7Ech1o2lusMTbSxUhMa2i%2BjkR2fiBlXFi6A6DC80GwaFha9Fz9TXYPhyHoR%2FnMa77XSQpVXObIBUaTfqjNN9VKSOzj5zNd7TFanKGaXNXHhzaAISI3UFh7%2BJYiTvInttByRxhotjxCMxChqPEP7FbUAWOz%2BOzVBhCds7O6GJq2R8gTStX%2ByZLr4Qqd8gi4tP%2B%2F6UzZt8lByjVvXxP1NSivauUugh6qCH%2F3ZxRVos90eHQLI37BM6dOAHqTGrnrwbahuHw5W726F2zurMKPD8RGBWJf6bFVjFEilyMHzjJCUZHSidqQmdB7YDpbsrajIGoY9JwK3P8pd8k%2FjLk2D2F2O%2BRzO1AoNJwOXFEDefOQen0IqyVQNDKRK%2F3y3cN5x5JBmGAZW4nmNsUWmgoxBGFd8CCbk%2BQU2sQrkOGYCEh2tCpJssaqfQiDzKuY8IId7q%2BkjHb%2Bl%2BCASGIvxHUAsuqTNTIMN%2FYzMMGOqUBqsi84bIXli4ujzq%2FifASuA6u3Qnm55ekS150ZDM6NITjjqhD44NG1vAOzbLjayv5ujKEqa75qYlmVC7o5tmVZ4c7n%2BPFYs%2BvUwPqOyr69ne9gOJz7pgdLgrms%2BJ6GT3kqV23%2Bt%2BlC3q3V3J%2FCx3ptEc8%2BS6j1aBUGTg5508uUVl6Y0NkazGMsECRRthxMGOw1iWg9q06lMycU2WZlJkM92vB23UF&X-Amz-Signature=a1f13ef92498acf9e3ce2f547e70bb5a819031982e412c39c486951c54d0eeff&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject',
+      expiry_time: '2025-07-13T06:01:31.747Z'
+    }
+  }
+]
+Generated image path: /image/download/calendar/event.png.png
+   Generating static pages (32/215) 
+already exist.
+Class data received: {
+  category: [
+    {
+      object: 'page',
+      id: '99ec02fb-20f3-4fa5-8231-83c45df3f144',
+      created_time: '2024-10-09T07:36:00.000Z',
+      last_edited_time: '2024-10-09T07:42:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      properties: [Object],
+      url: 'https://www.notion.so/99ec02fb20f34fa5823183c45df3f144',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: 'a995f74b-7721-49eb-b767-2f2c963ad338',
+      created_time: '2024-10-09T07:36:00.000Z',
+      last_edited_time: '2024-10-09T09:25:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      properties: [Object],
+      url: 'https://www.notion.so/a995f74b772149ebb7672f2c963ad338',
+      public_url: null
+    }
+  ],
+  classes: [
+    {
+      object: 'page',
+      id: '11ca8c0e-cf8c-80d3-8615-f7d4f4007cf0',
+      created_time: '2024-10-11T09:43:00.000Z',
+      last_edited_time: '2024-10-11T09:51:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      properties: [Object],
+      url: 'https://www.notion.so/11ca8c0ecf8c80d38615f7d4f4007cf0',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '11ca8c0e-cf8c-80d8-8fda-ee7d75a0e718',
+      created_time: '2024-10-11T09:38:00.000Z',
+      last_edited_time: '2024-10-23T03:11:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      properties: [Object],
+      url: 'https://www.notion.so/11ca8c0ecf8c80d88fdaee7d75a0e718',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '11aa8c0e-cf8c-8000-b850-fef91292ae8c',
+      created_time: '2024-10-09T07:19:00.000Z',
+      last_edited_time: '2024-10-11T09:48:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      properties: [Object],
+      url: 'https://www.notion.so/11aa8c0ecf8c8000b850fef91292ae8c',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '11aa8c0e-cf8c-806d-bb6c-f2177df033cb',
+      created_time: '2024-10-09T07:14:00.000Z',
+      last_edited_time: '2024-10-23T03:10:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      properties: [Object],
+      url: 'https://www.notion.so/11aa8c0ecf8c806dbb6cf2177df033cb',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '11a3d234-161c-4116-bb01-34eeed87f99a',
+      created_time: '2024-10-09T07:09:00.000Z',
+      last_edited_time: '2024-10-11T09:49:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      properties: [Object],
+      url: 'https://www.notion.so/11a3d234161c4116bb0134eeed87f99a',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '53b5c5ad-de13-4cf2-a4c1-407d8d117dce',
+      created_time: '2024-10-09T07:09:00.000Z',
+      last_edited_time: '2024-10-23T03:10:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      properties: [Object],
+      url: 'https://www.notion.so/53b5c5adde134cf2a4c1407d8d117dce',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '63f53dc4-0f61-4505-abea-ff1ad51668e3',
+      created_time: '2024-10-09T07:09:00.000Z',
+      last_edited_time: '2024-10-23T03:10:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      properties: [Object],
+      url: 'https://www.notion.so/63f53dc40f614505abeaff1ad51668e3',
+      public_url: null
+    }
+  ]
+}
+Warning: ImageOptimizer for "AdobeStock_268595424" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "class20241023_01" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "class2" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "class20241023_02" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "winter" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "katakana" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "historty2" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+📁 キャッシュから読み込み: slider (5件)
+📁 キャッシュから読み込み: sponsors (3件)
+📁 キャッシュから読み込み: general (1件)
+📁 キャッシュから読み込み: schedule (32件)
+📁 キャッシュから読み込み: about (3件)
+📁 キャッシュから読み込み: news (36件)
+[convertAboutFromDatabase] Processing item with tag: vision, title: Vision
+[convertAboutFromDatabase] Set vision
+[convertAboutFromDatabase] Processing item with tag: about, title: 本校について
+[convertAboutFromDatabase] Set aboutSchool
+[convertAboutFromDatabase] Processing item with tag: mission, title: Mission
+[convertAboutFromDatabase] Set mission
+[convertAboutFromDatabase] Final result - aboutSchool: found, mission: found, vision: found
+📁 キャッシュから読み込み: story (1件)
+📁 キャッシュから読み込み: greeting (1件)
+📁 キャッシュから読み込み: history (1件)
+Warning: ImageOptimizer for "54fad9f8-3ede-4a4d-a531-6a4c5b6d5ef2-Tjsfounders" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "1ac2adce-5bd8-453b-ab37-84e96ec667bc-historty1" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "historty2" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "historty3" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+📁 キャッシュから読み込み: greeting (1件)
+📁 キャッシュから読み込み: story (1件)
+📁 キャッシュから読み込み: history (1件)
+Warning: ImageOptimizer for "54fad9f8-3ede-4a4d-a531-6a4c5b6d5ef2-Tjsfounders" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "1ac2adce-5bd8-453b-ab37-84e96ec667bc-historty1" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "historty2" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "historty3" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+📁 キャッシュから読み込み: about (3件)
+📁 キャッシュから読み込み: mission (1件)
+📁 キャッシュから読み込み: vision (1件)
+[convertAboutFromDatabase] Processing item with tag: vision, title: Vision
+[convertAboutFromDatabase] Set vision
+[convertAboutFromDatabase] Processing item with tag: about, title: 本校について
+[convertAboutFromDatabase] Set aboutSchool
+[convertAboutFromDatabase] Processing item with tag: mission, title: Mission
+[convertAboutFromDatabase] Set mission
+[convertAboutFromDatabase] Final result - aboutSchool: found, mission: found, vision: found
+============
+{
+  pdf: { id: '%3BCvS', type: 'files', files: [ [Object] ] },
+  image: {
+    id: 'tHwI',
+    type: 'files',
+    files: [ [Object] ],
+    optimizedImage: {
+      baseName: '88fe2db2-68f6-4295-ab31-8253d1fda16b-Sports_Day_2023',
+      pagePath: 'vision',
+      alt: 'Sports Day 2023.JPG',
+      width: 800,
+      height: 600
+    }
+  },
+  en: { id: '%7CJmt', type: 'rich_text', rich_text: [ [Object] ] },
+  title: { id: 'title', type: 'title', title: [ [Object] ] }
+}
+============
+Warning: ImageOptimizer for "88fe2db2-68f6-4295-ab31-8253d1fda16b-Sports_Day_2023" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+TypeError: Failed to parse URL from /image/download/vision/88fe2db2-68f6-4295-ab31-8253d1fda16b-policy.pdf
+    at node:internal/deps/undici/undici:13502:13
+    at async getTemporaryImage (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:728)
+    at async checkBlock (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:500)
+    at async /Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:278 {
+  [cause]: TypeError: Invalid URL
+      at new URL (node:internal/url:806:29)
+      at new Request (node:internal/deps/undici/undici:9578:25)
+      at fetch (node:internal/deps/undici/undici:10307:25)
+      at fetch (node:internal/deps/undici/undici:13500:10)
+      at fetch (node:internal/bootstrap/web/exposed-window-or-worker:72:12)
+      at getTemporaryImage (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:734)
+      at checkBlock (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:506)
+      at /Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:284
+      at Array.forEach (<anonymous>)
+      at savePdfIfNeeded (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:227) {
+    code: 'ERR_INVALID_URL',
+    input: '/image/download/vision/88fe2db2-68f6-4295-ab31-8253d1fda16b-policy.pdf'
+  }
+}
+not found blob
+not pdf file
+📁 キャッシュから読み込み: orgChart (1件)
+📁 キャッシュから読み込み: directors (5件)
+📁 キャッシュから読み込み: policies (3件)
+OrgChart data received: {
+  object: 'page',
+  id: '7a5843cb-66c0-4555-b972-1ee1c3063962',
+  created_time: '2024-09-25T09:16:00.000Z',
+  last_edited_time: '2024-10-10T01:32:00.000Z',
+  created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+  last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+  cover: null,
+  icon: null,
+  parent: {
+    type: 'database_id',
+    database_id: '10ca8c0e-cf8c-8062-9eb3-ee7c40cf9005'
+  },
+  archived: false,
+  in_trash: false,
+  properties: {
+    image_en: { id: 'AnK%3A', type: 'files', files: [Array] },
+    en: { id: 'BggW', type: 'rich_text', rich_text: [Array] },
+    text_en: { id: 'OQjU', type: 'rich_text', rich_text: [Array] },
+    image: {
+      id: 'zJ%3Cu',
+      type: 'files',
+      files: [Array],
+      optimizedImage: [Object]
+    },
+    text: { id: '%7Dp_r', type: 'rich_text', rich_text: [Array] },
+    title: { id: 'title', type: 'title', title: [Array] }
+  },
+  url: 'https://www.notion.so/7a5843cb66c04555b9721ee1c3063962',
+  public_url: null
+}
+OrgChart entity created: OrganisationFlowChartEntity {
+  title: '運営組織図',
+  text: [
+    {
+      type: 'text',
+      text: [Object],
+      annotations: [Object],
+      plain_text: 'ツーソン日本語学校理事会は、創立理念の保持、学校運営の管理、指導、助言、また、短期、長期的計画を立案し、教職員、ボランティア父母と協力して実行し、本校が健全な運営を行えるように監視する役割を担い、日々の学校運営を行っているスタッフを支えます。',
+      href: null
+    }
+  ],
+  image: {
+    baseName: 'governance_chart_ja',
+    pagePath: 'org_chart',
+    alt: 'governance_chart_ja.jpg',
+    width: null,
+    height: null
+  }
+}
+TypeError: Failed to parse URL from /image/download/policies/4b97de15-bc21-456a-8119-9b6a5bafb03e-policy.pdf
+    at node:internal/deps/undici/undici:13502:13
+    at async getTemporaryImage (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:728)
+    at async checkBlock (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:500)
+    at async /Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:278 {
+  [cause]: TypeError: Invalid URL
+      at new URL (node:internal/url:806:29)
+      at new Request (node:internal/deps/undici/undici:9578:25)
+      at fetch (node:internal/deps/undici/undici:10307:25)
+      at fetch (node:internal/deps/undici/undici:13500:10)
+      at fetch (node:internal/bootstrap/web/exposed-window-or-worker:72:12)
+      at getTemporaryImage (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:734)
+      at checkBlock (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:506)
+      at /Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:284 {
+    code: 'ERR_INVALID_URL',
+    input: '/image/download/policies/4b97de15-bc21-456a-8119-9b6a5bafb03e-policy.pdf'
+  }
+}
+TypeError: Failed to parse URL from /image/download/policies/b65ec5d8-dda1-47b3-8bb2-c07ea87d5555-policy.pdf
+    at node:internal/deps/undici/undici:13502:13
+    at async getTemporaryImage (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:728)
+    at async checkBlock (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:500)
+    at async /Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:278 {
+  [cause]: TypeError: Invalid URL
+      at new URL (node:internal/url:806:29)
+      at new Request (node:internal/deps/undici/undici:9578:25)
+      at fetch (node:internal/deps/undici/undici:10307:25)
+      at fetch (node:internal/deps/undici/undici:13500:10)
+      at fetch (node:internal/bootstrap/web/exposed-window-or-worker:72:12)
+      at getTemporaryImage (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:734)
+      at checkBlock (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:506)
+      at /Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:284 {
+    code: 'ERR_INVALID_URL',
+    input: '/image/download/policies/b65ec5d8-dda1-47b3-8bb2-c07ea87d5555-policy.pdf'
+  }
+}
+TypeError: Failed to parse URL from /image/download/policies/d7efd34e-2499-4827-95c4-48f6e5ed0afb-Article_of_Incorporation_-_Manabi_of_Tucson__Inc..pdf
+    at node:internal/deps/undici/undici:13502:13
+    at async getTemporaryImage (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:728)
+    at async checkBlock (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:500)
+    at async /Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:278 {
+  [cause]: TypeError: Invalid URL
+      at new URL (node:internal/url:806:29)
+      at new Request (node:internal/deps/undici/undici:9578:25)
+      at fetch (node:internal/deps/undici/undici:10307:25)
+      at fetch (node:internal/deps/undici/undici:13500:10)
+      at fetch (node:internal/bootstrap/web/exposed-window-or-worker:72:12)
+      at getTemporaryImage (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:734)
+      at checkBlock (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:506)
+      at /Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:284 {
+    code: 'ERR_INVALID_URL',
+    input: '/image/download/policies/d7efd34e-2499-4827-95c4-48f6e5ed0afb-Article_of_Incorporation_-_Manabi_of_Tucson__Inc..pdf'
+  }
+}
+not found blob
+not found blob
+not found blob
+📁 キャッシュから読み込み: roleList (6件)
+📁 キャッシュから読み込み: staff (15件)
+Staff data received: [
+  {
+    object: 'page',
+    id: '219a8c0e-cf8c-8086-95b6-dbe56a73880d',
+    created_time: '2025-06-21T20:02:00.000Z',
+    last_edited_time: '2025-06-21T20:03:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/219a8c0ecf8c808695b6dbe56a73880d',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '4377c087-e782-46e3-9eaf-261863837f19',
+    created_time: '2024-09-15T21:13:00.000Z',
+    last_edited_time: '2025-06-21T20:04:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/4377c087e78246e39eaf261863837f19',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '102a8c0e-cf8c-803e-9b33-f2d6b41189c5',
+    created_time: '2024-09-15T21:10:00.000Z',
+    last_edited_time: '2024-10-17T01:28:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/102a8c0ecf8c803e9b33f2d6b41189c5',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '102a8c0e-cf8c-80f9-bef0-dd401debb8af',
+    created_time: '2024-09-15T21:10:00.000Z',
+    last_edited_time: '2025-06-21T20:04:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/102a8c0ecf8c80f9bef0dd401debb8af',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: 'c452fe7f-4be8-4bdb-9afb-a32c10afbcab',
+    created_time: '2024-09-15T21:10:00.000Z',
+    last_edited_time: '2025-06-21T20:04:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/c452fe7f4be84bdb9afba32c10afbcab',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '102a8c0e-cf8c-80e6-9519-d25acdcfd0ec',
+    created_time: '2024-09-15T21:10:00.000Z',
+    last_edited_time: '2025-06-21T20:04:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/102a8c0ecf8c80e69519d25acdcfd0ec',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '102a8c0e-cf8c-80cd-a577-c9351f661364',
+    created_time: '2024-09-15T21:09:00.000Z',
+    last_edited_time: '2024-10-17T01:27:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/102a8c0ecf8c80cda577c9351f661364',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '102a8c0e-cf8c-80c8-9391-cb8332a09711',
+    created_time: '2024-09-15T21:09:00.000Z',
+    last_edited_time: '2025-06-21T20:04:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/102a8c0ecf8c80c89391cb8332a09711',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '102a8c0e-cf8c-80b6-a18a-f9a071308672',
+    created_time: '2024-09-15T21:09:00.000Z',
+    last_edited_time: '2025-06-21T20:04:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/102a8c0ecf8c80b6a18af9a071308672',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '102a8c0e-cf8c-80a2-9cba-f21c57ac7a99',
+    created_time: '2024-09-15T21:08:00.000Z',
+    last_edited_time: '2025-06-21T20:03:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/102a8c0ecf8c80a29cbaf21c57ac7a99',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '102a8c0e-cf8c-8032-ba7b-c79866f660eb',
+    created_time: '2024-09-15T21:08:00.000Z',
+    last_edited_time: '2025-06-21T20:03:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-816Warning: ImageOptimizer for "f9633a2c-0dff-4b02-9161-9139ab8919d0-mcknight" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "9a170ec8-c017-4cce-a0dd-d62f2edb82b6-minami" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "d65a07cd-7eec-4319-8dbb-f05addf412a9-IMG_1299_edited" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "102a8c0e-cf8c-803e-8c91-cdc26abf8c7b-IMG_7789_edited_edited" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "102a8c0e-cf8c-80cd-a577-c9351f661364-IMG_7879_edited" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "default-staff" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "102a8c0e-cf8c-80a2-9cba-f21c57ac7a99-IMG_1228_edited" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "102a8c0e-cf8c-8032-ba7b-c79866f660eb-IMG_1280_edited" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "102a8c0e-cf8c-80b6-a18a-f9a071308672-profile" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "4377c087-e782-46e3-9eaf-261863837f19-profile" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "102a8c0e-cf8c-80c8-9391-cb8332a09711-profile" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "102a8c0e-cf8c-80e6-9519-d25acdcfd0ec-IMG_7802_edited" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "c452fe7f-4be8-4bdb-9afb-a32c10afbcab-IMG_7796" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "102a8c0e-cf8c-80f9-bef0-dd401debb8af-IMG_7799_edited" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "102a8c0e-cf8c-803e-9b33-f2d6b41189c5-profile" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+8-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/102a8c0ecf8c8032ba7bc79866f660eb',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '102a8c0e-cf8c-803e-8c91-cdc26abf8c7b',
+    created_time: '2024-09-15T21:02:00.000Z',
+    last_edited_time: '2024-10-17T01:27:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/102a8c0ecf8c803e8c91cdc26abf8c7b',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '9a170ec8-c017-4cce-a0dd-d62f2edb82b6',
+    created_time: '2024-09-10T03:57:00.000Z',
+    last_edited_time: '2024-10-17T01:27:00.000Z',
+    created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/9a170ec8c0174ccea0ddd62f2edb82b6',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: 'd65a07cd-7eec-4319-8dbb-f05addf412a9',
+    created_time: '2024-09-10T03:57:00.000Z',
+    last_edited_time: '2024-10-17T01:27:00.000Z',
+    created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/d65a07cd7eec43198dbbf05addf412a9',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: 'f9633a2c-0dff-4b02-9161-9139ab8919d0',
+    created_time: '2024-09-10T03:57:00.000Z',
+    last_edited_time: '2024-10-17T01:27:00.000Z',
+    created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/f9633a2c0dff4b0291619139ab8919d0',
+    public_url: null
+  }
+]
+Role data received: [
+  {
+    object: 'page',
+    id: '122a8c0e-cf8c-808e-88c5-c0446f064f99',
+    created_time: '2024-10-17T01:16:00.000Z',
+    last_edited_time: '2024-10-17T01:19:00.000Z',
+    created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '122a8c0e-cf8c-8005-9934-c64693cc39ca'
+    },
+    archived: false,
+    in_trash: false,
+    properties: { role: [Object], en: [Object], title: [Object] },
+    url: 'https://www.notion.so/122a8c0ecf8c808e88c5c0446f064f99',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '122a8c0e-cf8c-80d5-85d2-d4a0673c1797',
+    created_time: '2024-10-17T01:16:00.000Z',
+    last_edited_time: '2024-10-17T01:19:00.000Z',
+    created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '122a8c0e-cf8c-8005-9934-c64693cc39ca'
+    },
+    archived: false,
+    in_trash: false,
+    properties: { role: [Object], en: [Object], title: [Object] },
+    url: 'https://www.notion.so/122a8c0ecf8c80d585d2d4a0673c1797',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '122a8c0e-cf8c-80ca-bded-ded104c18d96',
+    created_time: '2024-10-17T01:16:00.000Z',
+    last_edited_time: '2024-10-17T01:19:00.000Z',
+    created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '122a8c0e-cf8c-8005-9934-c64693cc39ca'
+    },
+    archived: false,
+    in_trash: false,
+    properties: { role: [Object], en: [Object], title: [Object] },
+    url: 'https://www.notion.so/122a8c0ecf8c80cabdedded104c18d96',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '25697b18-c8e5-48aa-948f-4716cf5e36e8',
+    created_time: '2024-10-17T01:12:00.000Z',
+    last_edited_time: '2024-10-17T01:18:00.000Z',
+    created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '122a8c0e-cf8c-8005-9934-c64693cc39ca'
+    },
+    archived: false,
+    in_trash: false,
+    properties: { role: [Object], en: [Object], title: [Object] },
+    url: 'https://www.notion.so/25697b18c8e548aa948f4716cf5e36e8',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '31cae8ce-3c54-4a0b-9b18-639b4de347b3',
+    created_time: '2024-10-17T01:12:00.000Z',
+    last_edited_time: '2024-10-17T01:17:00.000Z',
+    created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '122a8c0e-cf8c-8005-9934-c64693cc39ca'
+    },
+    archived: false,
+    in_trash: false,
+    properties: { role: [Object], en: [Object], title: [Object] },
+    url: 'https://www.notion.so/31cae8ce3c544a0b9b18639b4de347b3',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '9ad23647-a425-4c2a-8538-b77219acc481',
+    created_time: '2024-10-17T01:12:00.000Z',
+    last_edited_time: '2024-10-17T01:18:00.000Z',
+    created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '122a8c0e-cf8c-8005-9934-c64693cc39ca'
+    },
+    archived: false,
+    in_trash: false,
+    properties: { role: [Object], en: [Object], title: [Object] },
+    url: 'https://www.notion.so/9ad23647a4254c2a8538b77219acc481',
+    public_url: null
+  }
+]
+Processed role list: [
+  RoleEntity { role: 'nihongo-cafe', title: 'にほんごかふぇ' },
+  RoleEntity { role: 'volunteer', title: 'ボランティア' },
+  RoleEntity { role: 'manager', title: 'マネージャー' },
+  RoleEntity { role: 'teacher', title: '講師' },
+  RoleEntity { role: 'co-director', title: 'ディレクター' },
+  RoleEntity { role: 'assistant', title: 'アシスタント' }
+]
+Processed staff list: [
+  StaffEntity {
+    name: 'マックナイト　ひとみ',
+    text: [ [Object] ],
+    role: [ [RoleEntity], [RoleEntity] ],
+    image: {
+      baseName: 'f9633a2c-0dff-4b02-9161-9139ab8919d0-mcknight',
+      pagePath: 'staff',
+      alt: 'mcknight.png',
+      width: 800,
+      height: 600
+    },
+    ordering: 1
+  },
+  StaffEntity {
+    name: 'エスピノサ　みなみ',
+    text: [ [Object] ],
+    role: [ [RoleEntity], [RoleEntity] ],
+    image: {
+      baseName: '9a170ec8-c017-4cce-a0dd-d62f2edb82b6-minami',
+      pagePath: 'staff',
+      alt: 'minami.png',
+      width: 800,
+      height: 600
+    },
+    ordering: 2
+  },
+  StaffEntity {
+    name: 'バトラー　利恵',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: 'd65a07cd-7eec-4319-8dbb-f05addf412a9-IMG_1299_edited',
+      pagePath: 'staff',
+      alt: 'IMG_1299_edited.jpg',
+      width: 800,
+      height: 600
+    },
+    ordering: 3
+  },
+  StaffEntity {
+    name: 'ヘネシー　ベラ',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: '102a8c0e-cf8c-803e-8c91-cdc26abf8c7b-IMG_7789_edited_edited',
+      pagePath: 'staff',
+      alt: 'IMG_7789_edited_edited.jpg',
+      width: 800,
+      height: 600
+    },
+    ordering: 4
+  },
+  StaffEntity {
+    name: 'ネマット　ヤッサー',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: '102a8c0e-cf8c-80cd-a577-c9351f661364-IMG_7879_edited',
+      pagePath: 'staff',
+      alt: 'IMG_7879_edited.jpg',
+      width: 800,
+      height: 600
+    },
+    ordering: 5
+  },
+  StaffEntity {
+    name: '佐藤かつや',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: null,
+    ordering: 6
+  },
+  StaffEntity {
+    name: '中村　めぐ',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: '102a8c0e-cf8c-80a2-9cba-f21c57ac7a99-IMG_1228_edited',
+      pagePath: 'staff',
+      alt: 'IMG_1228_edited.jpg',
+      width: 800,
+      height: 600
+    },
+    ordering: 7
+  },
+  StaffEntity {
+    name: 'リー　美晴',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: '102a8c0e-cf8c-8032-ba7b-c79866f660eb-IMG_1280_edited',
+      pagePath: 'staff',
+      alt: 'IMG_1280_edited.jpg',
+      width: 800,
+      height: 600
+    },
+    ordering: 8
+  },
+  StaffEntity {
+    name: '大越　愛巳',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: '102a8c0e-cf8c-80b6-a18a-f9a071308672-profile',
+      pagePath: 'staff',
+      alt: 'profile.jpg',
+      width: 800,
+      height: 600
+    },
+    ordering: 9
+  },
+  StaffEntity {
+    name: 'ワルドルフ　ターシャ',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: '4377c087-e782-46e3-9eaf-261863837f19-profile',
+      pagePath: 'staff',
+      alt: 'profile.jpg',
+      width: 800,
+      height: 600
+    },
+    ordering: 10
+  },
+  StaffEntity {
+    name: '久高　ルミ',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: '102a8c0e-cf8c-80c8-9391-cb8332a09711-profile',
+      pagePath: 'staff',
+      alt: 'profile.jpg',
+      width: 800,
+      height: 600
+    },
+    ordering: 11
+  },
+  StaffEntity {
+    name: '内田　愛澄',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: '102a8c0e-cf8c-80e6-9519-d25acdcfd0ec-IMG_7802_edited',
+      pagePath: 'staff',
+      alt: 'IMG_7802_edited.jpg',
+      width: 800,
+      height: 600
+    },
+    ordering: 12
+  },
+  StaffEntity {
+    name: 'マックナイト　はな',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: 'c452fe7f-4be8-4bdb-9afb-a32c10afbcab-IMG_7796',
+      pagePath: 'staff',
+      alt: 'IMG_7796.jpeg',
+      width: 800,
+      height: 600
+    },
+    ordering: 13
+  },
+  StaffEntity {
+    name: 'マックナイト　えみ',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: '102a8c0e-cf8c-80f9-bef0-dd401debb8af-IMG_7799_edited',
+      pagePath: 'staff',
+      alt: 'IMG_7799_edited.jpg',
+      width: 800,
+      height: 600
+    },
+    ordering: 14
+  },
+  StaffEntity {
+    name: '塩屋　ジェニファー',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: '102a8c0e-cf8c-803e-9b33-f2d6b41189c5-profile',
+      pagePath: 'staff',
+      alt: 'profile.jpg',
+      width: 800,
+      height: 600
+    },
+    ordering: 15
+  }
+]
+📁 キャッシュから読み込み: files (1件)
+not pdf file
+Error processing report list: TypeError: Cannot read properties of undefined (reading '0')
+    at new AnualReportEntity (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/1955.js:1:397)
+    at ReportPage (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/8512.js:1:352)
+    at Wc (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:68:44)
+    at Zc (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:70:253)
+    at Z (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:76:89)
+    at Zc (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:73:476)
+    at Z (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:76:89)
+    at $c (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:78:98)
+    at Zc (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:71:145)
+    at Z (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:76:89)
+TypeError: Failed to parse URL from /image/download/files/ba18afdf-a39a-49bd-a90e-459f9f12cf40-event.pdf
+    at node:internal/deps/undici/undici:13502:13
+    at async getTemporaryImage (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:728)
+    at async checkBlock (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:500)
+    at async /Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:278 {
+  [cause]: TypeError: Invalid URL
+      at new URL (node:internal/url:806:29)
+      at new Request (node:internal/deps/undici/undici:9578:25)
+      at fetch (node:internal/deps/undici/undici:10307:25)
+      at fetch (node:internal/deps/undici/undici:13500:10)
+      at fetch (node:internal/bootstrap/web/exposed-window-or-worker:72:12)
+      at getTemporaryImage (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:734)
+      at checkBlock (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:506)
+      at /Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:284 {
+    code: 'ERR_INVALID_URL',
+    input: '/image/download/files/ba18afdf-a39a-49bd-a90e-459f9f12cf40-event.pdf'
+  }
+}
+not found blob
+📁 キャッシュから読み込み: category (2件)
+📁 キャッシュから読み込み: classes (7件)
+Class data received: {
+  category: [
+    {
+      object: 'page',
+      id: '99ec02fb-20f3-4fa5-8231-83c45df3f144',
+      created_time: '2024-10-09T07:36:00.000Z',
+      last_edited_time: '2024-10-09T07:42:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      properties: [Object],
+      url: 'https://www.notion.so/99ec02fb20f34fa5823183c45df3f144',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: 'a995f74b-7721-49eb-b767-2f2c963ad338',
+      created_time: '2024-10-09T07:36:00.000Z',
+      last_edited_time: '2024-10-09T09:25:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      properties: [Object],
+      url: 'https://www.notion.so/a995f74b772149ebb7672f2c963ad338',
+      public_url: null
+    }
+  ],
+  classes: [
+    {
+      object: 'page',
+      id: '11ca8c0e-cf8c-80d3-8615-f7d4f4007cf0',
+      created_time: '2024-10-11T09:43:00.000Z',
+      last_edited_time: '2024-10-11T09:51:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      properties: [Object],
+      url: 'https://www.notion.so/11ca8c0ecf8c80d38615f7d4f4007cf0',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '11ca8c0e-cf8c-80d8-8fda-ee7d75a0e718',
+      created_time: '2024-10-11T09:38:00.000Z',
+      last_edited_time: '2024-10-23T03:11:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      properties: [Object],
+      url: 'https://www.notion.so/11ca8c0ecf8c80d88fdaee7d75a0e718',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '11aa8c0e-cf8c-8000-b850-fef91292ae8c',
+      created_time: '2024-10-09T07:19:00.000Z',
+      last_edited_time: '2024-10-11T09:48:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      properties: [Object],
+      url: 'https://www.notion.so/11aa8c0ecf8c8000b850fef91292ae8c',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '11aa8c0e-cf8c-806d-bb6c-f2177df033cb',
+      created_time: '2024-10-09T07:14:00.000Z',
+      last_edited_time: '2024-10-23T03:10:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      properties: [Object],
+      url: 'https://www.notion.so/11aa8c0ecf8c806dbb6cf2177df033cb',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '11a3d234-161c-4116-bb01-34eeed87f99a',
+      created_time: '2024-10-09T07:09:00.000Z',
+      last_edited_time: '2024-10-11T09:49:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      properties: [Object],
+      url: 'https://www.notion.so/11a3d234161c4116bb0134eeed87f99a',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '53b5c5ad-de13-4cf2-a4c1-407d8d117dce',
+      created_time: '2024-10-09T07:09:00.000Z',
+      last_edited_time: '2024-10-23T03:10:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      properties: [Object],
+      url: 'https://www.notion.so/53b5c5adde134cf2a4c1407d8d117dce',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '63f53dc4-0f61-4505-abea-ff1ad51668e3',
+      created_time: '2024-10-09T07:09:00.000Z',
+      last_edited_time: '2024-10-23T03:10:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      properties: [Object],
+      url: 'https://www.notion.so/63f53dc40f614505abeaff1ad51668e3',
+      public_url: null
+    }
+  ]
+}
+Warning: ImageOptimizer for "AdobeStock_268595424" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "class20241023_01" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "class2" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "class20241023_02" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "winter" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "katakana" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "historty2" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+📁 キャッシュから読み込み: category (2件)
+📁 キャッシュから読み込み: classes (7件)
+Class data received: {
+  category: [
+    {
+      object: 'page',
+      id: '99ec02fb-20f3-4fa5-8231-83c45df3f144',
+      created_time: '2024-10-09T07:36:00.000Z',
+      last_edited_time: '2024-10-09T07:42:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      properties: [Object],
+      url: 'https://www.notion.so/99ec02fb20f34fa5823183c45df3f144',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: 'a995f74b-7721-49eb-b767-2f2c963ad338',
+      created_time: '2024-10-09T07:36:00.000Z',
+      last_edited_time: '2024-10-09T09:25:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      properties: [Object],
+      url: 'https://www.notion.so/a995f74b772149ebb7672f2c963ad338',
+      public_url: null
+    }
+  ],
+  classes: [
+    {
+      object: 'page',
+      id: '11ca8c0e-cf8c-80d3-8615-f7d4f4007cf0',
+      created_time: '2024-10-11T09:43:00.000Z',
+      last_edited_time: '2024-10-11T09:51:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      properties: [Object],
+      url: 'https://www.notion.so/11ca8c0ecf8c80d38615f7d4f4007cf0',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '11ca8c0e-cf8c-80d8-8fda-ee7d75a0e718',
+      created_time: '2024-10-11T09:38:00.000Z',
+      last_edited_time: '2024-10-23T03:11:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      properties: [Object],
+      url: 'https://www.notion.so/11ca8c0ecf8c80d88fdaee7d75a0e718',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '11aa8c0e-cf8c-8000-b850-fef91292ae8c',
+      created_time: '2024-10-09T07:19:00.000Z',
+      last_edited_time: '2024-10-11T09:48:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      properties: [Object],
+      url: 'https://www.notion.so/11aa8c0ecf8c8000b850fef91292ae8c',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '11aa8c0e-cf8c-806d-bb6c-f2177df033cb',
+      created_time: '2024-10-09T07:14:00.000Z',
+      last_edited_time: '2024-10-23T03:10:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      properties: [Object],
+      url: 'https://www.notion.so/11aa8c0ecf8c806dbb6cf2177df033cb',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '11a3d234-161c-4116-bb01-34eeed87f99a',
+      created_time: '2024-10-09T07:09:00.000Z',
+      last_edited_time: '2024-10-11T09:49:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      properties: [Object],
+      url: 'https://www.notion.so/11a3d234161c4116bb0134eeed87f99a',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '53b5c5ad-de13-4cf2-a4c1-407d8d117dce',
+      created_time: '2024-10-09T07:09:00.000Z',
+      last_edited_time: '2024-10-23T03:10:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      properties: [Object],
+      url: 'https://www.notion.so/53b5c5adde134cf2a4c1407d8d117dce',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '63f53dc4-0f61-4505-abea-ff1ad51668e3',
+      created_time: '2024-10-09T07:09:00.000Z',
+      last_edited_time: '2024-10-23T03:10:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      properties: [Object],
+      url: 'https://www.notion.so/63f53dc40f614505abeaff1ad51668e3',
+      public_url: null
+    }
+  ]
+}
+Warning: ImageOptimizer for "AdobeStock_268595424" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "class20241023_01" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "class2" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "class20241023_02" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "winter" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "katakana" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "historty2" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+📁 キャッシュから読み込み: schedule (32件)
+Calendar files object: {
+  object: 'page',
+  id: '121a8c0e-cf8c-8016-8612-ccf75d74f3fe',
+  created_time: '2024-10-16T09:34:00.000Z',
+  last_edited_time: '2024-10-16T09:34:00.000Z',
+  created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+  last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+  cover: null,
+  icon: null,
+  parent: {
+    type: 'database_id',
+    database_id: '8d87080f-73f1-4e8a-9e7b-a934c1d928c6'
+  },
+  archived: false,
+  in_trash: false,
+  properties: {
+    en: { id: '%3F%7C%7C%7C', type: 'rich_text', rich_text: [Array] },
+    date: { id: '%40VMi', type: 'date', date: [Object] },
+    backgroundColor: { id: 'EJvw', type: 'rich_text', rich_text: [Array] },
+    title: { id: 'Ko%3Ej', type: 'rich_text', rich_text: [Array] },
+    location: { id: 'W%3CLR', type: 'rich_text', rich_text: [Array] },
+    link: { id: '%5Bdr%3C', type: 'url', url: null },
+    text_en: { id: '_xSP', type: 'rich_text', rich_text: [] },
+    isEvent: { id: 'nHgK', type: 'checkbox', checkbox: false },
+    text: { id: 'qBfG', type: 'rich_text', rich_text: [] },
+    '名前': { id: 'title', type: 'title', title: [Array] }
+  },
+  url: 'https://www.notion.so/121a8c0ecf8c80168612ccf75d74f3fe',
+  public_url: null
+}
+Calendar files.properties: {
+  en: { id: '%3F%7C%7C%7C', type: 'rich_text', rich_text: [ [Object] ] },
+  date: {
+    id: '%40VMi',
+    type: 'date',
+    date: { start: '2025-05-03', end: null, time_zone: null }
+  },
+  backgroundColor: { id: 'EJvw', type: 'rich_text', rich_text: [ [Object] ] },
+  title: { id: 'Ko%3Ej', type: 'rich_text', rich_text: [ [Object] ] },
+  location: { id: 'W%3CLR', type: 'rich_text', rich_text: [ [Object] ] },
+  link: { id: '%5Bdr%3C', type: 'url', url: null },
+  text_en: { id: '_xSP', type: 'rich_text', rich_text: [] },
+  isEvent: { id: 'nHgK', type: 'checkbox', checkbox: false },
+  text: { id: 'qBfG', type: 'rich_text', rich_text: [] },
+  '名前': { id: 'title', type: 'title', title: [ [Object] ] }
+}
+No image property found in files.properties
+📁 キャッシュから読み込み: discountFamily (3件)
+📁 キャッシュから読み込み: qualification (3件)
+📁 キャッシュから読み込み: discountStaff (3件)
+📁 キャッシュから読み込み: price (3件)
+📁 キャッシュから読み込み: enrollment (2件)
+📁 キャッシュから読み込み: qualification (3件)
+📁 キャッシュから読み込み: price (3件)
+📁 キャッシュから読み込み: discountFamily (3件)
+📁 キャッシュから読み込み: enrollment (2件)
+📁 キャッシュから読み込み: discountStaff (3件)
+🚀 グローバルキャッシュから取得: news
+📁 キャッシュから読み込み: sponsors (3件)
+📁 キャッシュから読み込み: support (1件)
+📁 キャッシュから読み込み: donation (1件)
+📁 キャッシュから読み込み: sponsor (1件)
+📁 キャッシュから読み込み: howto (3件)
+📁 キャッシュから読み込み: general (1件)
+📁 キャッシュから読み込み: general (1件)
+📁 キャッシュから読み込み: opportunity (3件)
+🚀 グローバルキャッシュから取得: news
+   Generating static pages (53/215) 
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+📁 キャッシュから読み込み: slider (5件)
+📁 キャッシュから読み込み: sponsors (3件)
+📁 キャッシュから読み込み: general (1件)
+📁 キャッシュから読み込み: about (3件)
+📁 キャッシュから読み込み: schedule (32件)
+📁 キャッシュから読み込み: news (36件)
+[convertAboutFromDatabase] Processing item with tag: vision, title: Our Vision
+[convertAboutFromDatabase] Set vision
+[convertAboutFromDatabase] Processing item with tag: about, title: About
+[convertAboutFromDatabase] Set aboutSchool
+[convertAboutFromDatabase] Processing item with tag: mission, title: Our Mission
+[convertAboutFromDatabase] Set mission
+[convertAboutFromDatabase] Final result - aboutSchool: found, mission: found, vision: found
+📁 キャッシュから読み込み: greeting (1件)
+📁 キャッシュから読み込み: story (1件)
+📁 キャッシュから読み込み: history (1件)
+Warning: ImageOptimizer for "54fad9f8-3ede-4a4d-a531-6a4c5b6d5ef2-Tjsfounders" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "1ac2adce-5bd8-453b-ab37-84e96ec667bc-historty1" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "historty2" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "historty3" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+📁 キャッシュから読み込み: greeting (1件)
+📁 キャッシュから読み込み: story (1件)
+📁 キャッシュから読み込み: history (1件)
+Warning: ImageOptimizer for "54fad9f8-3ede-4a4d-a531-6a4c5b6d5ef2-Tjsfounders" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "1ac2adce-5bd8-453b-ab37-84e96ec667bc-historty1" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "historty2" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "historty3" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+📁 キャッシュから読み込み: vision (1件)
+📁 キャッシュから読み込み: mission (1件)
+📁 キャッシュから読み込み: about (3件)
+[convertAboutFromDatabase] Processing item with tag: vision, title: Our Vision
+[convertAboutFromDatabase] Set vision
+[convertAboutFromDatabase] Processing item with tag: about, title: About
+[convertAboutFromDatabase] Set aboutSchool
+[convertAboutFromDatabase] Processing item with tag: mission, title: Our Mission
+[convertAboutFromDatabase] Set mission
+[convertAboutFromDatabase] Final result - aboutSchool: found, mission: found, vision: found
+============
+{
+  pdf: { id: '%3BCvS', type: 'files', files: [ [Object] ] },
+  image: {
+    id: 'tHwI',
+    type: 'files',
+    files: [ [Object] ],
+    optimizedImage: {
+      baseName: '88fe2db2-68f6-4295-ab31-8253d1fda16b-Sports_Day_2023',
+      pagePath: 'vision',
+      alt: 'Sports Day 2023.JPG',
+      width: 800,
+      height: 600
+    }
+  },
+  en: { id: '%7CJmt', type: 'rich_text', rich_text: [ [Object] ] },
+  title: { id: 'title', type: 'title', title: [ [Object] ] }
+}
+============
+Warning: ImageOptimizer for "88fe2db2-68f6-4295-ab31-8253d1fda16b-Sports_Day_2023" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+TypeError: Failed to parse URL from /image/download/vision/88fe2db2-68f6-4295-ab31-8253d1fda16b-policy.pdf
+    at node:internal/deps/undici/undici:13502:13
+    at async getTemporaryImage (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:728)
+    at async checkBlock (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:500)
+    at async /Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:278 {
+  [cause]: TypeError: Invalid URL
+      at new URL (node:internal/url:806:29)
+      at new Request (node:internal/deps/undici/undici:9578:25)
+      at fetch (node:internal/deps/undici/undici:10307:25)
+      at fetch (node:internal/deps/undici/undici:13500:10)
+      at fetch (node:internal/bootstrap/web/exposed-window-or-worker:72:12)
+      at getTemporaryImage (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:734)
+      at checkBlock (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:506)
+      at /Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:284
+      at Array.forEach (<anonymous>)
+      at savePdfIfNeeded (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:227) {
+    code: 'ERR_INVALID_URL',
+    input: '/image/download/vision/88fe2db2-68f6-4295-ab31-8253d1fda16b-policy.pdf'
+  }
+}
+not found blob
+not pdf file
+📁 キャッシュから読み込み: directors (5件)
+📁 キャッシュから読み込み: orgChart (1件)
+📁 キャッシュから読み込み: policies (3件)
+OrgChart data received: {
+  object: 'page',
+  id: '7a5843cb-66c0-4555-b972-1ee1c3063962',
+  created_time: '2024-09-25T09:16:00.000Z',
+  last_edited_time: '2024-10-10T01:32:00.000Z',
+  created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+  last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+  cover: null,
+  icon: null,
+  parent: {
+    type: 'database_id',
+    database_id: '10ca8c0e-cf8c-8062-9eb3-ee7c40cf9005'
+  },
+  archived: false,
+  in_trash: false,
+  properties: {
+    image_en: { id: 'AnK%3A', type: 'files', files: [Array] },
+    en: { id: 'BggW', type: 'rich_text', rich_text: [Array] },
+    text_en: { id: 'OQjU', type: 'rich_text', rich_text: [Array] },
+    image: {
+      id: 'zJ%3Cu',
+      type: 'files',
+      files: [Array],
+      optimizedImage: [Object]
+    },
+    text: { id: '%7Dp_r', type: 'rich_text', rich_text: [Array] },
+    title: { id: 'title', type: 'title', title: [Array] }
+  },
+  url: 'https://www.notion.so/7a5843cb66c04555b9721ee1c3063962',
+  public_url: null
+}
+OrgChart entity created: OrganisationFlowChartEntity {
+  title: 'Governance Chart',
+  text: [
+    {
+      type: 'text',
+      text: [Object],
+      annotations: [Object],
+      plain_text: "Tucson Japanese Language School's Board of Directors oversees the school’s operation, provides guidance and advice, implements short and long-term plans, and carries out these plans in cooperation with faculty, staff, and volunteer parents for the school to pursue its mission and sustain as a healthy organization. The board of directors supports the operation team that runs the school daily.",
+      href: null
+    }
+  ],
+  image: {
+    baseName: 'governance_chart_en',
+    pagePath: 'org_chart',
+    alt: 'governance_chart_en.jpg',
+    width: null,
+    height: null
+  }
+}
+TypeError: Failed to parse URL from /image/download/policies/4b97de15-bc21-456a-8119-9b6a5bafb03e-policy.pdf
+    at node:internal/deps/undici/undici:13502:13
+    at async getTemporaryImage (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:728)
+    at async checkBlock (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:500)
+    at async /Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:278 {
+  [cause]: TypeError: Invalid URL
+      at new URL (node:internal/url:806:29)
+      at new Request (node:internal/deps/undici/undici:9578:25)
+      at fetch (node:internal/deps/undici/undici:10307:25)
+      at fetch (node:internal/deps/undici/undici:13500:10)
+      at fetch (node:internal/bootstrap/web/exposed-window-or-worker:72:12)
+      at getTemporaryImage (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:734)
+      at checkBlock (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:506)
+      at /Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:284 {
+    code: 'ERR_INVALID_URL',
+    input: '/image/download/policies/4b97de15-bc21-456a-8119-9b6a5bafb03e-policy.pdf'
+  }
+}
+TypeError: Failed to parse URL from /image/download/policies/b65ec5d8-dda1-47b3-8bb2-c07ea87d5555-policy.pdf
+    at node:internal/deps/undici/undici:13502:13
+    at async getTemporaryImage (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:728)
+    at async checkBlock (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:500)
+    at async /Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:278 {
+  [cause]: TypeError: Invalid URL
+      at new URL (node:internal/url:806:29)
+      at new Request (node:internal/deps/undici/undici:9578:25)
+      at fetch (node:internal/deps/undici/undici:10307:25)
+      at fetch (node:internal/deps/undici/undici:13500:10)
+      at fetch (node:internal/bootstrap/web/exposed-window-or-worker:72:12)
+      at getTemporaryImage (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:734)
+      at checkBlock (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:506)
+      at /Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:284 {
+    code: 'ERR_INVALID_URL',
+    input: '/image/download/policies/b65ec5d8-dda1-47b3-8bb2-c07ea87d5555-policy.pdf'
+  }
+}
+TypeError: Failed to parse URL from /image/download/policies/d7efd34e-2499-4827-95c4-48f6e5ed0afb-Article_of_Incorporation_-_Manabi_of_Tucson__Inc..pdf
+    at node:internal/deps/undici/undici:13502:13
+    at async getTemporaryImage (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:728)
+    at async checkBlock (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:500)
+    at async /Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:278 {
+  [cause]: TypeError: Invalid URL
+      at new URL (node:internal/url:806:29)
+      at new Request (node:internal/deps/undici/undici:9578:25)
+      at fetch (node:internal/deps/undici/undici:10307:25)
+      at fetch (node:internal/deps/undici/undici:13500:10)
+      at fetch (node:internal/bootstrap/web/exposed-window-or-worker:72:12)
+      at getTemporaryImage (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:734)
+      at checkBlock (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:506)
+      at /Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:284 {
+    code: 'ERR_INVALID_URL',
+    input: '/image/download/policies/d7efd34e-2499-4827-95c4-48f6e5ed0afb-Article_of_Incorporation_-_Manabi_of_Tucson__Inc..pdf'
+  }
+}
+not found blob
+not found blob
+not found blob
+📁 キャッシュから読み込み: roleList (6件)
+📁 キャッシュから読み込み: staff (15件)
+Staff data received: [
+  {
+    object: 'page',
+    id: '219a8c0e-cf8c-8086-95b6-dbe56a73880d',
+    created_time: '2025-06-21T20:02:00.000Z',
+    last_edited_time: '2025-06-21T20:03:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/219a8c0ecf8c808695b6dbe56a73880d',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '4377c087-e782-46e3-9eaf-261863837f19',
+    created_time: '2024-09-15T21:13:00.000Z',
+    last_edited_time: '2025-06-21T20:04:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/4377c087e78246e39eaf261863837f19',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '102a8c0e-cf8c-803e-9b33-f2d6b41189c5',
+    created_time: '2024-09-15T21:10:00.000Z',
+    last_edited_time: '2024-10-17T01:28:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/102a8c0ecf8c803e9b33f2d6b41189c5',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '102a8c0e-cf8c-80f9-bef0-dd401debb8af',
+    created_time: '2024-09-15T21:10:00.000Z',
+    last_edited_time: '2025-06-21T20:04:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/102a8c0ecf8c80f9bef0dd401debb8af',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: 'c452fe7f-4be8-4bdb-9afb-a32c10afbcab',
+    created_time: '2024-09-15T21:10:00.000Z',
+    last_edited_time: '2025-06-21T20:04:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/c452fe7f4be84bdb9afba32c10afbcab',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '102a8c0e-cf8c-80e6-9519-d25acdcfd0ec',
+    created_time: '2024-09-15T21:10:00.000Z',
+    last_edited_time: '2025-06-21T20:04:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/102a8c0ecf8c80e69519d25acdcfd0ec',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '102a8c0e-cf8c-80cd-a577-c9351f661364',
+    created_time: '2024-09-15T21:09:00.000Z',
+    last_edited_time: '2024-10-17T01:27:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/102a8c0ecf8c80cda577c9351f661364',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '102a8c0e-cf8c-80c8-9391-cb8332a09711',
+    created_time: '2024-09-15T21:09:00.000Z',
+    last_edited_time: '2025-06-21T20:04:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/102a8c0ecf8c80c89391cb8332a09711',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '102a8c0e-cf8c-80b6-a18a-f9a071308672',
+    created_time: '2024-09-15T21:09:00.000Z',
+    last_edited_time: '2025-06-21T20:04:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/102a8c0ecf8c80b6a18af9a071308672',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '102a8c0e-cf8c-80a2-9cba-f21c57ac7a99',
+    created_time: '2024-09-15T21:08:00.000Z',
+    last_edited_time: '2025-06-21T20:03:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/102a8c0ecf8c80a29cbaf21c57ac7a99',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '102a8c0e-cf8c-8032-ba7b-c79866f660eb',
+    created_time: '2024-09-15T21:08:00.000Z',
+    last_edited_time: '2025-06-21T20:03:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-816Warning: ImageOptimizer for "f9633a2c-0dff-4b02-9161-9139ab8919d0-mcknight" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "9a170ec8-c017-4cce-a0dd-d62f2edb82b6-minami" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "d65a07cd-7eec-4319-8dbb-f05addf412a9-IMG_1299_edited" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "102a8c0e-cf8c-803e-8c91-cdc26abf8c7b-IMG_7789_edited_edited" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "102a8c0e-cf8c-80cd-a577-c9351f661364-IMG_7879_edited" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "default-staff" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "102a8c0e-cf8c-80a2-9cba-f21c57ac7a99-IMG_1228_edited" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "102a8c0e-cf8c-8032-ba7b-c79866f660eb-IMG_1280_edited" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "102a8c0e-cf8c-80b6-a18a-f9a071308672-profile" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "4377c087-e782-46e3-9eaf-261863837f19-profile" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "102a8c0e-cf8c-80c8-9391-cb8332a09711-profile" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "102a8c0e-cf8c-80e6-9519-d25acdcfd0ec-IMG_7802_edited" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "c452fe7f-4be8-4bdb-9afb-a32c10afbcab-IMG_7796" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "102a8c0e-cf8c-80f9-bef0-dd401debb8af-IMG_7799_edited" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "102a8c0e-cf8c-803e-9b33-f2d6b41189c5-profile" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+8-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/102a8c0ecf8c8032ba7bc79866f660eb',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '102a8c0e-cf8c-803e-8c91-cdc26abf8c7b',
+    created_time: '2024-09-15T21:02:00.000Z',
+    last_edited_time: '2024-10-17T01:27:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/102a8c0ecf8c803e8c91cdc26abf8c7b',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '9a170ec8-c017-4cce-a0dd-d62f2edb82b6',
+    created_time: '2024-09-10T03:57:00.000Z',
+    last_edited_time: '2024-10-17T01:27:00.000Z',
+    created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/9a170ec8c0174ccea0ddd62f2edb82b6',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: 'd65a07cd-7eec-4319-8dbb-f05addf412a9',
+    created_time: '2024-09-10T03:57:00.000Z',
+    last_edited_time: '2024-10-17T01:27:00.000Z',
+    created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/d65a07cd7eec43198dbbf05addf412a9',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: 'f9633a2c-0dff-4b02-9161-9139ab8919d0',
+    created_time: '2024-09-10T03:57:00.000Z',
+    last_edited_time: '2024-10-17T01:27:00.000Z',
+    created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/f9633a2c0dff4b0291619139ab8919d0',
+    public_url: null
+  }
+]
+Role data received: [
+  {
+    object: 'page',
+    id: '122a8c0e-cf8c-808e-88c5-c0446f064f99',
+    created_time: '2024-10-17T01:16:00.000Z',
+    last_edited_time: '2024-10-17T01:19:00.000Z',
+    created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '122a8c0e-cf8c-8005-9934-c64693cc39ca'
+    },
+    archived: false,
+    in_trash: false,
+    properties: { role: [Object], en: [Object], title: [Object] },
+    url: 'https://www.notion.so/122a8c0ecf8c808e88c5c0446f064f99',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '122a8c0e-cf8c-80d5-85d2-d4a0673c1797',
+    created_time: '2024-10-17T01:16:00.000Z',
+    last_edited_time: '2024-10-17T01:19:00.000Z',
+    created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '122a8c0e-cf8c-8005-9934-c64693cc39ca'
+    },
+    archived: false,
+    in_trash: false,
+    properties: { role: [Object], en: [Object], title: [Object] },
+    url: 'https://www.notion.so/122a8c0ecf8c80d585d2d4a0673c1797',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '122a8c0e-cf8c-80ca-bded-ded104c18d96',
+    created_time: '2024-10-17T01:16:00.000Z',
+    last_edited_time: '2024-10-17T01:19:00.000Z',
+    created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '122a8c0e-cf8c-8005-9934-c64693cc39ca'
+    },
+    archived: false,
+    in_trash: false,
+    properties: { role: [Object], en: [Object], title: [Object] },
+    url: 'https://www.notion.so/122a8c0ecf8c80cabdedded104c18d96',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '25697b18-c8e5-48aa-948f-4716cf5e36e8',
+    created_time: '2024-10-17T01:12:00.000Z',
+    last_edited_time: '2024-10-17T01:18:00.000Z',
+    created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '122a8c0e-cf8c-8005-9934-c64693cc39ca'
+    },
+    archived: false,
+    in_trash: false,
+    properties: { role: [Object], en: [Object], title: [Object] },
+    url: 'https://www.notion.so/25697b18c8e548aa948f4716cf5e36e8',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '31cae8ce-3c54-4a0b-9b18-639b4de347b3',
+    created_time: '2024-10-17T01:12:00.000Z',
+    last_edited_time: '2024-10-17T01:17:00.000Z',
+    created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '122a8c0e-cf8c-8005-9934-c64693cc39ca'
+    },
+    archived: false,
+    in_trash: false,
+    properties: { role: [Object], en: [Object], title: [Object] },
+    url: 'https://www.notion.so/31cae8ce3c544a0b9b18639b4de347b3',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '9ad23647-a425-4c2a-8538-b77219acc481',
+    created_time: '2024-10-17T01:12:00.000Z',
+    last_edited_time: '2024-10-17T01:18:00.000Z',
+    created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '122a8c0e-cf8c-8005-9934-c64693cc39ca'
+    },
+    archived: false,
+    in_trash: false,
+    properties: { role: [Object], en: [Object], title: [Object] },
+    url: 'https://www.notion.so/9ad23647a4254c2a8538b77219acc481',
+    public_url: null
+  }
+]
+Processed role list: [
+  RoleEntity { role: 'nihongo-cafe', title: 'Nihongo Cafe' },
+  RoleEntity { role: 'volunteer', title: 'Volunteer' },
+  RoleEntity { role: 'manager', title: 'Manager' },
+  RoleEntity { role: 'teacher', title: 'Instructor' },
+  RoleEntity { role: 'co-director', title: 'Director ' },
+  RoleEntity { role: 'assistant', title: 'Assistant' }
+]
+Processed staff list: [
+  StaffEntity {
+    name: 'Hitomi McKnight',
+    text: [ [Object] ],
+    role: [ [RoleEntity], [RoleEntity] ],
+    image: {
+      baseName: 'f9633a2c-0dff-4b02-9161-9139ab8919d0-mcknight',
+      pagePath: 'staff',
+      alt: 'mcknight.png',
+      width: 800,
+      height: 600
+    },
+    ordering: 1
+  },
+  StaffEntity {
+    name: 'Minami Espinosa',
+    text: [ [Object] ],
+    role: [ [RoleEntity], [RoleEntity] ],
+    image: {
+      baseName: '9a170ec8-c017-4cce-a0dd-d62f2edb82b6-minami',
+      pagePath: 'staff',
+      alt: 'minami.png',
+      width: 800,
+      height: 600
+    },
+    ordering: 2
+  },
+  StaffEntity {
+    name: 'Rie Butler',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: 'd65a07cd-7eec-4319-8dbb-f05addf412a9-IMG_1299_edited',
+      pagePath: 'staff',
+      alt: 'IMG_1299_edited.jpg',
+      width: 800,
+      height: 600
+    },
+    ordering: 3
+  },
+  StaffEntity {
+    name: 'Bella Hennessy',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: '102a8c0e-cf8c-803e-8c91-cdc26abf8c7b-IMG_7789_edited_edited',
+      pagePath: 'staff',
+      alt: 'IMG_7789_edited_edited.jpg',
+      width: 800,
+      height: 600
+    },
+    ordering: 4
+  },
+  StaffEntity {
+    name: 'Yasir Nemat',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: '102a8c0e-cf8c-80cd-a577-c9351f661364-IMG_7879_edited',
+      pagePath: 'staff',
+      alt: 'IMG_7879_edited.jpg',
+      width: 800,
+      height: 600
+    },
+    ordering: 5
+  },
+  StaffEntity {
+    name: 'Katsuya Sato',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: null,
+    ordering: 6
+  },
+  StaffEntity {
+    name: 'Meg Nakamura',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: '102a8c0e-cf8c-80a2-9cba-f21c57ac7a99-IMG_1228_edited',
+      pagePath: 'staff',
+      alt: 'IMG_1228_edited.jpg',
+      width: 800,
+      height: 600
+    },
+    ordering: 7
+  },
+  StaffEntity {
+    name: 'Miharu Lee',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: '102a8c0e-cf8c-8032-ba7b-c79866f660eb-IMG_1280_edited',
+      pagePath: 'staff',
+      alt: 'IMG_1280_edited.jpg',
+      width: 800,
+      height: 600
+    },
+    ordering: 8
+  },
+  StaffEntity {
+    name: 'Manami Okoshi',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: '102a8c0e-cf8c-80b6-a18a-f9a071308672-profile',
+      pagePath: 'staff',
+      alt: 'profile.jpg',
+      width: 800,
+      height: 600
+    },
+    ordering: 9
+  },
+  StaffEntity {
+    name: 'Tasha Waldorf',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: '4377c087-e782-46e3-9eaf-261863837f19-profile',
+      pagePath: 'staff',
+      alt: 'profile.jpg',
+      width: 800,
+      height: 600
+    },
+    ordering: 10
+  },
+  StaffEntity {
+    name: 'Lumi Hisataka',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: '102a8c0e-cf8c-80c8-9391-cb8332a09711-profile',
+      pagePath: 'staff',
+      alt: 'profile.jpg',
+      width: 800,
+      height: 600
+    },
+    ordering: 11
+  },
+  StaffEntity {
+    name: 'Azumi Uchida',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: '102a8c0e-cf8c-80e6-9519-d25acdcfd0ec-IMG_7802_edited',
+      pagePath: 'staff',
+      alt: 'IMG_7802_edited.jpg',
+      width: 800,
+      height: 600
+    },
+    ordering: 12
+  },
+  StaffEntity {
+    name: 'Hana McKnight',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: 'c452fe7f-4be8-4bdb-9afb-a32c10afbcab-IMG_7796',
+      pagePath: 'staff',
+      alt: 'IMG_7796.jpeg',
+      width: 800,
+      height: 600
+    },
+    ordering: 13
+  },
+  StaffEntity {
+    name: 'Emi McKnight',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: '102a8c0e-cf8c-80f9-bef0-dd401debb8af-IMG_7799_edited',
+      pagePath: 'staff',
+      alt: 'IMG_7799_edited.jpg',
+      width: 800,
+      height: 600
+    },
+    ordering: 14
+  },
+  StaffEntity {
+    name: 'Jennider Shioya',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: '102a8c0e-cf8c-803e-9b33-f2d6b41189c5-profile',
+      pagePath: 'staff',
+      alt: 'profile.jpg',
+      width: 800,
+      height: 600
+    },
+    ordering: 15
+  }
+]
+📁 キャッシュから読み込み: files (1件)
+not pdf file
+Error processing report list: TypeError: Cannot read properties of undefined (reading '0')
+    at new AnualReportEntity (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/1955.js:1:397)
+    at ReportPage (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/8512.js:1:352)
+    at Wc (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:68:44)
+    at Zc (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:70:253)
+    at Z (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:76:89)
+    at Zc (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:73:476)
+    at Z (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:76:89)
+    at $c (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:78:98)
+    at Zc (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:71:145)
+    at Z (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:76:89)
+TypeError: Failed to parse URL from /image/download/files/ba18afdf-a39a-49bd-a90e-459f9f12cf40-event.pdf
+    at node:internal/deps/undici/undici:13502:13
+    at async getTemporaryImage (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:728)
+    at async checkBlock (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:500)
+    at async /Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:278 {
+  [cause]: TypeError: Invalid URL
+      at new URL (node:internal/url:806:29)
+      at new Request (node:internal/deps/undici/undici:9578:25)
+      at fetch (node:internal/deps/undici/undici:10307:25)
+      at fetch (node:internal/deps/undici/undici:13500:10)
+      at fetch (node:internal/bootstrap/web/exposed-window-or-worker:72:12)
+      at getTemporaryImage (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:734)
+      at checkBlock (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:506)
+      at /Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/9520.js:1:284 {
+    code: 'ERR_INVALID_URL',
+    input: '/image/download/files/ba18afdf-a39a-49bd-a90e-459f9f12cf40-event.pdf'
+  }
+}
+not found blob
+📁 キャッシュから読み込み: category (2件)
+📁 キャッシュから読み込み: classes (7件)
+Class data received: {
+  category: [
+    {
+      object: 'page',
+      id: '99ec02fb-20f3-4fa5-8231-83c45df3f144',
+      created_time: '2024-10-09T07:36:00.000Z',
+      last_edited_time: '2024-10-09T07:42:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      properties: [Object],
+      url: 'https://www.notion.so/99ec02fb20f34fa5823183c45df3f144',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: 'a995f74b-7721-49eb-b767-2f2c963ad338',
+      created_time: '2024-10-09T07:36:00.000Z',
+      last_edited_time: '2024-10-09T09:25:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      properties: [Object],
+      url: 'https://www.notion.so/a995f74b772149ebb7672f2c963ad338',
+      public_url: null
+    }
+  ],
+  classes: [
+    {
+      object: 'page',
+      id: '11ca8c0e-cf8c-80d3-8615-f7d4f4007cf0',
+      created_time: '2024-10-11T09:43:00.000Z',
+      last_edited_time: '2024-10-11T09:51:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      properties: [Object],
+      url: 'https://www.notion.so/11ca8c0ecf8c80d38615f7d4f4007cf0',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '11ca8c0e-cf8c-80d8-8fda-ee7d75a0e718',
+      created_time: '2024-10-11T09:38:00.000Z',
+      last_edited_time: '2024-10-23T03:11:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      properties: [Object],
+      url: 'https://www.notion.so/11ca8c0ecf8c80d88fdaee7d75a0e718',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '11aa8c0e-cf8c-8000-b850-fef91292ae8c',
+      created_time: '2024-10-09T07:19:00.000Z',
+      last_edited_time: '2024-10-11T09:48:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      properties: [Object],
+      url: 'https://www.notion.so/11aa8c0ecf8c8000b850fef91292ae8c',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '11aa8c0e-cf8c-806d-bb6c-f2177df033cb',
+      created_time: '2024-10-09T07:14:00.000Z',
+      last_edited_time: '2024-10-23T03:10:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      properties: [Object],
+      url: 'https://www.notion.so/11aa8c0ecf8c806dbb6cf2177df033cb',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '11a3d234-161c-4116-bb01-34eeed87f99a',
+      created_time: '2024-10-09T07:09:00.000Z',
+      last_edited_time: '2024-10-11T09:49:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      properties: [Object],
+      url: 'https://www.notion.so/11a3d234161c4116bb0134eeed87f99a',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '53b5c5ad-de13-4cf2-a4c1-407d8d117dce',
+      created_time: '2024-10-09T07:09:00.000Z',
+      last_edited_time: '2024-10-23T03:10:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      properties: [Object],
+      url: 'https://www.notion.so/53b5c5adde134cf2a4c1407d8d117dce',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '63f53dc4-0f61-4505-abea-ff1ad51668e3',
+      created_time: '2024-10-09T07:09:00.000Z',
+      last_edited_time: '2024-10-23T03:10:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      properties: [Object],
+      url: 'https://www.notion.so/63f53dc40f614505abeaff1ad51668e3',
+      public_url: null
+    }
+  ]
+}
+Warning: ImageOptimizer for "AdobeStock_268595424" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "class20241023_01" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "class2" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "class20241023_02" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "winter" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "katakana" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "historty2" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+📁 キャッシュから読み込み: category (2件)
+📁 キャッシュから読み込み: classes (7件)
+Class data received: {
+  category: [
+    {
+      object: 'page',
+      id: '99ec02fb-20f3-4fa5-8231-83c45df3f144',
+      created_time: '2024-10-09T07:36:00.000Z',
+      last_edited_time: '2024-10-09T07:42:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      properties: [Object],
+      url: 'https://www.notion.so/99ec02fb20f34fa5823183c45df3f144',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: 'a995f74b-7721-49eb-b767-2f2c963ad338',
+      created_time: '2024-10-09T07:36:00.000Z',
+      last_edited_time: '2024-10-09T09:25:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      properties: [Object],
+      url: 'https://www.notion.so/a995f74b772149ebb7672f2c963ad338',
+      public_url: null
+    }
+  ],
+  classes: [
+    {
+      object: 'page',
+      id: '11ca8c0e-cf8c-80d3-8615-f7d4f4007cf0',
+      created_time: '2024-10-11T09:43:00.000Z',
+      last_edited_time: '2024-10-11T09:51:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      properties: [Object],
+      url: 'https://www.notion.so/11ca8c0ecf8c80d38615f7d4f4007cf0',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '11ca8c0e-cf8c-80d8-8fda-ee7d75a0e718',
+      created_time: '2024-10-11T09:38:00.000Z',
+      last_edited_time: '2024-10-23T03:11:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      properties: [Object],
+      url: 'https://www.notion.so/11ca8c0ecf8c80d88fdaee7d75a0e718',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '11aa8c0e-cf8c-8000-b850-fef91292ae8c',
+      created_time: '2024-10-09T07:19:00.000Z',
+      last_edited_time: '2024-10-11T09:48:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      properties: [Object],
+      url: 'https://www.notion.so/11aa8c0ecf8c8000b850fef91292ae8c',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '11aa8c0e-cf8c-806d-bb6c-f2177df033cb',
+      created_time: '2024-10-09T07:14:00.000Z',
+      last_edited_time: '2024-10-23T03:10:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      properties: [Object],
+      url: 'https://www.notion.so/11aa8c0ecf8c806dbb6cf2177df033cb',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '11a3d234-161c-4116-bb01-34eeed87f99a',
+      created_time: '2024-10-09T07:09:00.000Z',
+      last_edited_time: '2024-10-11T09:49:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      properties: [Object],
+      url: 'https://www.notion.so/11a3d234161c4116bb0134eeed87f99a',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '53b5c5ad-de13-4cf2-a4c1-407d8d117dce',
+      created_time: '2024-10-09T07:09:00.000Z',
+      last_edited_time: '2024-10-23T03:10:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      properties: [Object],
+      url: 'https://www.notion.so/53b5c5adde134cf2a4c1407d8d117dce',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '63f53dc4-0f61-4505-abea-ff1ad51668e3',
+      created_time: '2024-10-09T07:09:00.000Z',
+      last_edited_time: '2024-10-23T03:10:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      properties: [Object],
+      url: 'https://www.notion.so/63f53dc40f614505abeaff1ad51668e3',
+      public_url: null
+    }
+  ]
+}
+Warning: ImageOptimizer for "AdobeStock_268595424" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "class20241023_01" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "class2" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "class20241023_02" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "winter" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "katakana" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+Warning: ImageOptimizer for "historty2" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+📁 キャッシュから読み込み: schedule (32件)
+Calendar files object: {
+  object: 'page',
+  id: '121a8c0e-cf8c-8016-8612-ccf75d74f3fe',
+  created_time: '2024-10-16T09:34:00.000Z',
+  last_edited_time: '2024-10-16T09:34:00.000Z',
+  created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+  last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+  cover: null,
+  icon: null,
+  parent: {
+    type: 'database_id',
+    database_id: '8d87080f-73f1-4e8a-9e7b-a934c1d928c6'
+  },
+  archived: false,
+  in_trash: false,
+  properties: {
+    en: { id: '%3F%7C%7C%7C', type: 'rich_text', rich_text: [Array] },
+    date: { id: '%40VMi', type: 'date', date: [Object] },
+    backgroundColor: { id: 'EJvw', type: 'rich_text', rich_text: [Array] },
+    title: { id: 'Ko%3Ej', type: 'rich_text', rich_text: [Array] },
+    location: { id: 'W%3CLR', type: 'rich_text', rich_text: [Array] },
+    link: { id: '%5Bdr%3C', type: 'url', url: null },
+    text_en: { id: '_xSP', type: 'rich_text', rich_text: [] },
+    isEvent: { id: 'nHgK', type: 'checkbox', checkbox: false },
+    text: { id: 'qBfG', type: 'rich_text', rich_text: [] },
+    '名前': { id: 'title', type: 'title', title: [Array] }
+  },
+  url: 'https://www.notion.so/121a8c0ecf8c80168612ccf75d74f3fe',
+  public_url: null
+}
+Calendar files.properties: {
+  en: { id: '%3F%7C%7C%7C', type: 'rich_text', rich_text: [ [Object] ] },
+  date: {
+    id: '%40VMi',
+    type: 'date',
+    date: { start: '2025-05-03', end: null, time_zone: null }
+  },
+  backgroundColor: { id: 'EJvw', type: 'rich_text', rich_text: [ [Object] ] },
+  title: { id: 'Ko%3Ej', type: 'rich_text', rich_text: [ [Object] ] },
+  location: { id: 'W%3CLR', type: 'rich_text', rich_text: [ [Object] ] },
+  link: { id: '%5Bdr%3C', type: 'url', url: null },
+  text_en: { id: '_xSP', type: 'rich_text', rich_text: [] },
+  isEvent: { id: 'nHgK', type: 'checkbox', checkbox: false },
+  text: { id: 'qBfG', type: 'rich_text', rich_text: [] },
+  '名前': { id: 'title', type: 'title', title: [ [Object] ] }
+}
+No image property found in files.properties
+📁 キャッシュから読み込み: qualification (3件)
+📁 キャッシュから読み込み: price (3件)
+📁 キャッシュから読み込み: discountFamily (3件)
+📁 キャッシュから読み込み: discountStaff (3件)
+📁 キャッシュから読み込み: enrollment (2件)
+📁 キャッシュから読み込み: qualification (3件)
+📁 キャッシュから読み込み: price (3件)
+📁 キャッシュから読み込み: discountFamily (3件)
+📁 キャッシュから読み込み: discountStaff (3件)
+📁 キャッシュから読み込み: enrollment (2件)
+🚀 グローバルキャッシュから取得: news
+📁 キャッシュから読み込み: sponsors (3件)
+📁 キャッシュから読み込み: support (1件)
+📁 キャッシュから読み込み: sponsor (1件)
+📁 キャッシュから読み込み: donation (1件)
+📁 キャッシュから読み込み: howto (3件)
+📁 キャッシュから読み込み: general (1件)
+📁 キャッシュから読み込み: opportunity (3件)
+📁 キャッシュから読み込み: general (1件)
+🚀 グローバルキャッシュから取得: news
+   Generating static pages (107/215) 
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+   Generating static pages (161/215) 
+   Generating static pages (179/215) 
+   Generating static pages (195/215) 
+ ✓ Generating static pages (215/215) 
+
+> Build error occurred
+Error: ENOENT: no such file or directory, unlink '/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/pages/404.js'
+    at async Object.unlink (node:internal/fs/promises:1070:10)
+    at async /Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/node_modules/next/dist/build/index.js:1369:25
+    at async Span.traceAsyncFn (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/node_modules/next/dist/trace/trace.js:105:20)
+    at async /Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/node_modules/next/dist/build/index.js:1212:17
+    at async Span.traceAsyncFn (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/node_modules/next/dist/trace/trace.js:105:20)
+    at async build (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/node_modules/next/dist/build/index.js:185:29)
+    at async main (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/node_modules/next/dist/bin/next:157:5) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'unlink',
+  path: '/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/pages/404.js'
+}

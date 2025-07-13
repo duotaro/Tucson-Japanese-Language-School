@@ -106,7 +106,7 @@ jobs:
         env:
           NEXT_PUBLIC_NOTION_DATABASE_ID: ${{ secrets.NEXT_PUBLIC_NOTION_DATABASE_ID }}
           NEXT_PUBLIC_NOTION_NEWS_DATABASE_ID: ${{ secrets.NEXT_PUBLIC_NOTION_NEWS_DATABASE_ID }}
-          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
         run: |
           FREQUENCY="${{ steps.determine-frequency.outputs.frequency }}"
           
