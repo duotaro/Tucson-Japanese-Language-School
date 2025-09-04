@@ -700,3 +700,23 @@ this.pdf = `/${ACCESABLE_PDF_PATH}/org_policy/${pdfName}`;
 - yarn dev: 正常起動確認
 - yarn build: エラーなく正常ビルド完了
 - フルコンテンツ取得: NewsEntityのloadFullContent()が正常に動作
+
+---
+
+### 2025-09-04
+**やったこと:** ファビコンの設定変更と統一、古いキャッシュデータ問題の解決
+**理由:** `public/favicon.png`をサイトのファビコンとして使用し、開発環境での古いデータ表示問題を修正するため
+
+**ファビコン関連:**
+- `/pages/_document.js`で両形式のファビコンを指定（12-13行目）
+- `favicon.png`と同じ画像で新しい`favicon.ico`を作成（ImageMagick convert使用）
+
+**キャッシュ問題の解決:**
+- 原因：キャッシュファイルが52日前（75000分前）の古いデータ
+- 解決：`yarn cache:fetch-all`で31個のデータベース、181件のレコードを更新
+- 画像最適化データも自動再生成、新しい画像をWebP形式で追加
+- 開発サーバー正常稼働：http://localhost:3000
+
+**確認結果:** 
+- yarn dev：正常起動、最新データ表示
+- 画像表示問題解消、最適化画像正常生成

@@ -3,14 +3,14 @@
     "object": "page",
     "id": "1b9f6742-6ca7-438d-a4a6-c7a6ebb29013",
     "created_time": "2024-09-25T13:28:00.000Z",
-    "last_edited_time": "2024-10-07T14:49:00.000Z",
+    "last_edited_time": "2025-09-02T06:55:00.000Z",
     "created_by": {
       "object": "user",
       "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
     },
     "last_edited_by": {
       "object": "user",
-      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
     },
     "cover": null,
     "icon": null,
@@ -30,7 +30,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/howto/1b9f6742-6ca7-438d-a4a6-c7a6ebb29013-tickets.jpeg",
-              "expiry_time": "2025-07-13T12:15:11.548Z"
+              "expiry_time": "2025-09-04T01:48:42.684Z"
             }
           }
         ]
@@ -91,7 +91,7 @@
           {
             "type": "text",
             "text": {
-              "content": "The Grand Prize vehicle is a brand-new Jeep Wrangler Rubicon 4xe Plug-in Hybrid! Check out all the cool features and specs on this vehicle at the link below: ",
+              "content": "The Grand Prize vehicle is a new 2025 Kia Carnival Hybrid SX Prestige (MSRP $54,510).  ",
               "link": null
             },
             "annotations": {
@@ -102,32 +102,13 @@
               "code": false,
               "color": "default"
             },
-            "plain_text": "The Grand Prize vehicle is a brand-new Jeep Wrangler Rubicon 4xe Plug-in Hybrid! Check out all the cool features and specs on this vehicle at the link below: ",
+            "plain_text": "The Grand Prize vehicle is a new 2025 Kia Carnival Hybrid SX Prestige (MSRP $54,510).  ",
             "href": null
           },
           {
             "type": "text",
             "text": {
-              "content": "Jeep Wrangler Rubicon 4xe Plug-in Hybrid",
-              "link": {
-                "url": "https://www.jeep.com/wrangler/4xe.html"
-              }
-            },
-            "annotations": {
-              "bold": true,
-              "italic": true,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "Jeep Wrangler Rubicon 4xe Plug-in Hybrid",
-            "href": "https://www.jeep.com/wrangler/4xe.html"
-          },
-          {
-            "type": "text",
-            "text": {
-              "content": "\nThe second prize is two round-trip, first-class plane tickets to anywhere in the world (some restrictions apply) and the third prize is $5,000 in cash!\nTucson Japanese School gets to keep 100% of the proceeds.\nContact us to purchase the raffle tickets! ",
+              "content": "The second prize is two round-trip, first-class plane tickets to anywhere in the world (some restrictions apply) and the third prize is $5,000 in cash!\nTucson Japanese School gets to keep 100% of the proceeds.\nContact us to purchase the raffle tickets! ",
               "link": null
             },
             "annotations": {
@@ -138,7 +119,7 @@
               "code": false,
               "color": "default"
             },
-            "plain_text": "\nThe second prize is two round-trip, first-class plane tickets to anywhere in the world (some restrictions apply) and the third prize is $5,000 in cash!\nTucson Japanese School gets to keep 100% of the proceeds.\nContact us to purchase the raffle tickets! ",
+            "plain_text": "The second prize is two round-trip, first-class plane tickets to anywhere in the world (some restrictions apply) and the third prize is $5,000 in cash!\nTucson Japanese School gets to keep 100% of the proceeds.\nContact us to purchase the raffle tickets! ",
             "href": null
           }
         ]
@@ -170,7 +151,7 @@
           {
             "type": "text",
             "text": {
-              "content": "12月4日（水）までJim Click Millions for Tucson のラッフルチケットが100枚限定1枚＄25または5枚＄100で購入可能です。1等は2024製ジープ ",
+              "content": "12月上旬までJim Click Millions for Tucson のラッフルチケットが100枚限定、1枚＄25または5枚＄100で購入可能です。1等は2025製",
               "link": null
             },
             "annotations": {
@@ -181,32 +162,30 @@
               "code": false,
               "color": "default"
             },
-            "plain_text": "12月4日（水）までJim Click Millions for Tucson のラッフルチケットが100枚限定1枚＄25または5枚＄100で購入可能です。1等は2024製ジープ ",
+            "plain_text": "12月上旬までJim Click Millions for Tucson のラッフルチケットが100枚限定、1枚＄25または5枚＄100で購入可能です。1等は2025製",
             "href": null
           },
           {
             "type": "text",
             "text": {
-              "content": "Jeep Wrangler Rubicon 4xe Plug-in Hybrid",
-              "link": {
-                "url": "https://www.jeep.com/wrangler/4xe.html"
-              }
+              "content": " Kia Carnival Hybrid SX Prestige (MSRP $54,510)",
+              "link": null
             },
             "annotations": {
-              "bold": false,
-              "italic": true,
+              "bold": true,
+              "italic": false,
               "strikethrough": false,
               "underline": false,
               "code": false,
               "color": "default"
             },
-            "plain_text": "Jeep Wrangler Rubicon 4xe Plug-in Hybrid",
-            "href": "https://www.jeep.com/wrangler/4xe.html"
+            "plain_text": " Kia Carnival Hybrid SX Prestige (MSRP $54,510)",
+            "href": null
           },
           {
             "type": "text",
             "text": {
-              "content": "、２等はファーストクラス旅行往復券、3等は5000ドル現金が当たります。売上の100％が学校に寄付されます。チケットご購入希望の方はメールにてご連絡ください。\n",
+              "content": " 、２等はファーストクラス旅行往復券、3等は5000ドル現金が当たります。売上の100％が学校に寄付されます。チケットご購入希望の方はメールにてご連絡ください。\n",
               "link": null
             },
             "annotations": {
@@ -217,7 +196,7 @@
               "code": false,
               "color": "default"
             },
-            "plain_text": "、２等はファーストクラス旅行往復券、3等は5000ドル現金が当たります。売上の100％が学校に寄付されます。チケットご購入希望の方はメールにてご連絡ください。\n",
+            "plain_text": " 、２等はファーストクラス旅行往復券、3等は5000ドル現金が当たります。売上の100％が学校に寄付されます。チケットご購入希望の方はメールにてご連絡ください。\n",
             "href": null
           }
         ]
@@ -280,7 +259,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/howto/3041c786-8d8f-4d69-b0e8-bdb7db422ec4-sponsor.jpeg",
-              "expiry_time": "2025-07-13T12:15:11.548Z"
+              "expiry_time": "2025-09-04T01:48:42.684Z"
             }
           }
         ]
@@ -583,7 +562,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/howto/ecc09bd3-a2ae-46b2-8ca9-cddaf620c749-tickets.jpeg",
-              "expiry_time": "2025-07-13T12:15:11.548Z"
+              "expiry_time": "2025-09-04T01:48:42.684Z"
             }
           }
         ]

@@ -3,14 +3,14 @@
     "object": "page",
     "id": "ba18afdf-a39a-49bd-a90e-459f9f12cf40",
     "created_time": "2024-10-09T04:42:00.000Z",
-    "last_edited_time": "2024-10-09T06:35:00.000Z",
+    "last_edited_time": "2025-09-02T06:23:00.000Z",
     "created_by": {
       "object": "user",
       "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
     },
     "last_edited_by": {
       "object": "user",
-      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
     },
     "cover": null,
     "icon": null,
@@ -23,8 +23,17 @@
     "properties": {
       "pdf_en": {
         "id": "v%3Dpe",
-        "type": "rich_text",
-        "rich_text": []
+        "type": "files",
+        "files": [
+          {
+            "name": "2025-2026  Tucson Japanese School Calendar.pdf",
+            "type": "file",
+            "file": {
+              "url": "/image/download/files/ba18afdf-a39a-49bd-a90e-459f9f12cf40-2025-2026__Tucson_Japanese_School_Calendar.pdf",
+              "expiry_time": "2025-09-04T01:48:36.255Z"
+            }
+          }
+        ]
       },
       "image": {
         "id": "yWBU",
@@ -35,7 +44,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/files/ba18afdf-a39a-49bd-a90e-459f9f12cf40-event.png",
-              "expiry_time": "2025-07-13T12:14:56.504Z"
+              "expiry_time": "2025-09-04T01:48:36.260Z"
             }
           }
         ]
@@ -45,11 +54,11 @@
         "type": "files",
         "files": [
           {
-            "name": "event.pdf",
+            "name": "2025年度日本語補習校年間カレンダー.pdf",
             "type": "file",
             "file": {
-              "url": "/image/download/files/ba18afdf-a39a-49bd-a90e-459f9f12cf40-event.pdf",
-              "expiry_time": "2025-07-13T12:14:56.509Z"
+              "url": "/image/download/files/ba18afdf-a39a-49bd-a90e-459f9f12cf40-2025_______________.pdf",
+              "expiry_time": "2025-09-04T01:48:36.264Z"
             }
           }
         ]

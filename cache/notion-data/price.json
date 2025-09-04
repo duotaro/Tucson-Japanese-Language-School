@@ -1,12 +1,12 @@
 [
   {
     "object": "page",
-    "id": "2edc2c3c-e62f-4072-9a71-0634dc777f33",
-    "created_time": "2024-10-10T07:17:00.000Z",
-    "last_edited_time": "2025-06-23T21:55:00.000Z",
+    "id": "262a8c0e-cf8c-80e9-b7d6-ce0c64f071b6",
+    "created_time": "2025-09-02T05:26:00.000Z",
+    "last_edited_time": "2025-09-02T05:27:00.000Z",
     "created_by": {
       "object": "user",
-      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
     },
     "last_edited_by": {
       "object": "user",
@@ -29,7 +29,433 @@
       "ordering": {
         "id": "K%7C%7C%7B",
         "type": "number",
-        "number": 3
+        "number": 4
+      },
+      "frequency": {
+        "id": "N%60%3Eo",
+        "type": "number",
+        "number": 1
+      },
+      "en": {
+        "id": "R%3Bi%3B",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Once a year",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Once a year",
+            "href": null
+          }
+        ]
+      },
+      "payment": {
+        "id": "X%7BeH",
+        "type": "select",
+        "select": {
+          "id": "ozqh",
+          "name": "one",
+          "color": "orange"
+        }
+      },
+      "per": {
+        "id": "ZTEJ",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "年ごと",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "年ごと",
+            "href": null
+          }
+        ]
+      },
+      "per_en": {
+        "id": "clrE",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "per year",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "per year",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "教材費",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "教材費",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/262a8c0ecf8c80e9b7d6ce0c64f071b6",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "262a8c0e-cf8c-80eb-b5cc-ff5b2ba3afb3",
+    "created_time": "2025-09-02T05:21:00.000Z",
+    "last_edited_time": "2025-09-02T05:26:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "11ba8c0e-cf8c-8068-afc9-c4ba38330221"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "price": {
+        "id": "%40aTu",
+        "type": "number",
+        "number": 520
+      },
+      "ordering": {
+        "id": "K%7C%7C%7B",
+        "type": "number",
+        "number": 5
+      },
+      "frequency": {
+        "id": "N%60%3Eo",
+        "type": "number",
+        "number": 1
+      },
+      "en": {
+        "id": "R%3Bi%3B",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "One payment",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "One payment",
+            "href": null
+          }
+        ]
+      },
+      "payment": {
+        "id": "X%7BeH",
+        "type": "select",
+        "select": {
+          "id": "ozqh",
+          "name": "one",
+          "color": "orange"
+        }
+      },
+      "per": {
+        "id": "ZTEJ",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "年ごと",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "年ごと",
+            "href": null
+          }
+        ]
+      },
+      "per_en": {
+        "id": "clrE",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "per year",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "per year",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "年間一括払い",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "年間一括払い",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/262a8c0ecf8c80ebb5ccff5b2ba3afb3",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "262a8c0e-cf8c-8047-b2ba-d38fc8a2d6b5",
+    "created_time": "2025-09-02T05:21:00.000Z",
+    "last_edited_time": "2025-09-02T05:26:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "11ba8c0e-cf8c-8068-afc9-c4ba38330221"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "price": {
+        "id": "%40aTu",
+        "type": "number",
+        "number": 280
+      },
+      "ordering": {
+        "id": "K%7C%7C%7B",
+        "type": "number",
+        "number": 6
+      },
+      "frequency": {
+        "id": "N%60%3Eo",
+        "type": "number",
+        "number": 2
+      },
+      "en": {
+        "id": "R%3Bi%3B",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Two payment",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Two payment",
+            "href": null
+          }
+        ]
+      },
+      "payment": {
+        "id": "X%7BeH",
+        "type": "select",
+        "select": {
+          "id": "7f91611b-69e2-4f1b-9b81-c1b8288ae2f9",
+          "name": "two",
+          "color": "blue"
+        }
+      },
+      "per": {
+        "id": "ZTEJ",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "半期ごと",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "半期ごと",
+            "href": null
+          }
+        ]
+      },
+      "per_en": {
+        "id": "clrE",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "per semester",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "per semester",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "半期2回払い",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "半期2回払い",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/2-262a8c0ecf8c8047b2bad38fc8a2d6b5",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "262a8c0e-cf8c-80c0-b31c-fa4e08b68da7",
+    "created_time": "2025-09-02T05:21:00.000Z",
+    "last_edited_time": "2025-09-02T05:27:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "11ba8c0e-cf8c-8068-afc9-c4ba38330221"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "price": {
+        "id": "%40aTu",
+        "type": "number",
+        "number": 60
+      },
+      "ordering": {
+        "id": "K%7C%7C%7B",
+        "type": "number",
+        "number": 7
       },
       "frequency": {
         "id": "N%60%3Eo",
@@ -43,7 +469,7 @@
           {
             "type": "text",
             "text": {
-              "content": "10 Installments",
+              "content": "10 installments",
               "link": null
             },
             "annotations": {
@@ -54,7 +480,7 @@
               "code": false,
               "color": "default"
             },
-            "plain_text": "10 Installments",
+            "plain_text": "10 installments",
             "href": null
           }
         ]
@@ -138,17 +564,301 @@
         ]
       }
     },
-    "url": "https://www.notion.so/10-2edc2c3ce62f40729a710634dc777f33",
+    "url": "https://www.notion.so/10-262a8c0ecf8c80c0b31cfa4e08b68da7",
     "public_url": null
   },
   {
     "object": "page",
-    "id": "35fb2235-c522-434b-afff-7731fae5653f",
-    "created_time": "2024-10-10T07:17:00.000Z",
-    "last_edited_time": "2025-06-23T21:54:00.000Z",
+    "id": "262a8c0e-cf8c-8094-abee-c52a0da37a4a",
+    "created_time": "2025-09-02T05:18:00.000Z",
+    "last_edited_time": "2025-09-02T05:27:00.000Z",
     "created_by": {
       "object": "user",
-      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "11ba8c0e-cf8c-8068-afc9-c4ba38330221"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "price": {
+        "id": "%40aTu",
+        "type": "number",
+        "number": 30
+      },
+      "ordering": {
+        "id": "K%7C%7C%7B",
+        "type": "number",
+        "number": 8
+      },
+      "frequency": {
+        "id": "N%60%3Eo",
+        "type": "number",
+        "number": 1
+      },
+      "en": {
+        "id": "R%3Bi%3B",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Once a year",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Once a year",
+            "href": null
+          }
+        ]
+      },
+      "payment": {
+        "id": "X%7BeH",
+        "type": "select",
+        "select": {
+          "id": "ozqh",
+          "name": "one",
+          "color": "orange"
+        }
+      },
+      "per": {
+        "id": "ZTEJ",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "年ごと",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "年ごと",
+            "href": null
+          }
+        ]
+      },
+      "per_en": {
+        "id": "clrE",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "per year",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "per year",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "教材費",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "教材費",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/262a8c0ecf8c8094abeec52a0da37a4a",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "262a8c0e-cf8c-80d9-8185-e9488015d8cb",
+    "created_time": "2025-09-02T05:10:00.000Z",
+    "last_edited_time": "2025-09-02T05:24:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "11ba8c0e-cf8c-8068-afc9-c4ba38330221"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "price": {
+        "id": "%40aTu",
+        "type": "number",
+        "number": 30
+      },
+      "ordering": {
+        "id": "K%7C%7C%7B",
+        "type": "number",
+        "number": 3
+      },
+      "frequency": {
+        "id": "N%60%3Eo",
+        "type": "number",
+        "number": 10
+      },
+      "en": {
+        "id": "R%3Bi%3B",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "10 installments",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "10 installments",
+            "href": null
+          }
+        ]
+      },
+      "payment": {
+        "id": "X%7BeH",
+        "type": "select",
+        "select": {
+          "id": "d9cb2fe2-89c8-438f-9c2a-9531d811d3e1",
+          "name": "monthly",
+          "color": "green"
+        }
+      },
+      "per": {
+        "id": "ZTEJ",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "月々",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "月々",
+            "href": null
+          }
+        ]
+      },
+      "per_en": {
+        "id": "clrE",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "per month",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "per month",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "月々10回払い",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "月々10回払い",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/10-262a8c0ecf8c80d98185e9488015d8cb",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "262a8c0e-cf8c-806b-aa21-d31afb21280e",
+    "created_time": "2025-09-02T05:10:00.000Z",
+    "last_edited_time": "2025-09-02T05:23:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
     },
     "last_edited_by": {
       "object": "user",
@@ -185,7 +895,7 @@
           {
             "type": "text",
             "text": {
-              "content": "Two payment ",
+              "content": "Two payment",
               "link": null
             },
             "annotations": {
@@ -196,7 +906,7 @@
               "code": false,
               "color": "default"
             },
-            "plain_text": "Two payment ",
+            "plain_text": "Two payment",
             "href": null
           }
         ]
@@ -240,7 +950,7 @@
           {
             "type": "text",
             "text": {
-              "content": "Per 6 months",
+              "content": "per semester",
               "link": null
             },
             "annotations": {
@@ -251,7 +961,7 @@
               "code": false,
               "color": "default"
             },
-            "plain_text": "Per 6 months",
+            "plain_text": "per semester",
             "href": null
           }
         ]
@@ -280,17 +990,17 @@
         ]
       }
     },
-    "url": "https://www.notion.so/2-35fb2235c522434bafff7731fae5653f",
+    "url": "https://www.notion.so/2-262a8c0ecf8c806baa21d31afb21280e",
     "public_url": null
   },
   {
     "object": "page",
-    "id": "607784ea-9cd3-4b79-a180-a219230a9585",
-    "created_time": "2024-10-10T07:17:00.000Z",
-    "last_edited_time": "2025-06-23T21:53:00.000Z",
+    "id": "262a8c0e-cf8c-8017-b489-c286c6613ffe",
+    "created_time": "2025-09-02T05:10:00.000Z",
+    "last_edited_time": "2025-09-02T05:23:00.000Z",
     "created_by": {
       "object": "user",
-      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
     },
     "last_edited_by": {
       "object": "user",
@@ -382,7 +1092,7 @@
           {
             "type": "text",
             "text": {
-              "content": "Per year",
+              "content": "per year",
               "link": null
             },
             "annotations": {
@@ -393,7 +1103,7 @@
               "code": false,
               "color": "default"
             },
-            "plain_text": "Per year",
+            "plain_text": "per year",
             "href": null
           }
         ]
@@ -422,7 +1132,7 @@
         ]
       }
     },
-    "url": "https://www.notion.so/607784ea9cd34b79a180a219230a9585",
+    "url": "https://www.notion.so/262a8c0ecf8c8017b489c286c6613ffe",
     "public_url": null
   }
 ]

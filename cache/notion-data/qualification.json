@@ -126,7 +126,7 @@
     "object": "page",
     "id": "11ba8c0e-cf8c-8046-968c-c1cf03a409b4",
     "created_time": "2024-10-10T06:54:00.000Z",
-    "last_edited_time": "2025-06-22T15:13:00.000Z",
+    "last_edited_time": "2025-09-02T05:18:00.000Z",
     "created_by": {
       "object": "user",
       "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
@@ -151,7 +151,7 @@
           {
             "type": "text",
             "text": {
-              "content": "12歳以上の子供ならびに大人で日本語や日本文化に興味があり、家庭でも自主的に宿題や課題をこなすことができる者",
+              "content": "15歳以上の子供ならびに大人で日本語や日本文化に興味があり、家庭でも自主的に宿題や課題をこなすことができる者",
               "link": null
             },
             "annotations": {
@@ -162,7 +162,7 @@
               "code": false,
               "color": "default"
             },
-            "plain_text": "12歳以上の子供ならびに大人で日本語や日本文化に興味があり、家庭でも自主的に宿題や課題をこなすことができる者",
+            "plain_text": "15歳以上の子供ならびに大人で日本語や日本文化に興味があり、家庭でも自主的に宿題や課題をこなすことができる者",
             "href": null
           }
         ]
@@ -174,7 +174,7 @@
           {
             "type": "text",
             "text": {
-              "content": "Japanese Division",
+              "content": "Japanese as Second Langauge Division",
               "link": null
             },
             "annotations": {
@@ -185,7 +185,7 @@
               "code": false,
               "color": "default"
             },
-            "plain_text": "Japanese Division",
+            "plain_text": "Japanese as Second Langauge Division",
             "href": null
           }
         ]
@@ -249,7 +249,7 @@
     "object": "page",
     "id": "dd35b3c6-4cbd-4294-a0df-9f9f197afa62",
     "created_time": "2024-10-10T06:53:00.000Z",
-    "last_edited_time": "2025-06-22T15:13:00.000Z",
+    "last_edited_time": "2025-09-02T05:17:00.000Z",
     "created_by": {
       "object": "user",
       "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
@@ -297,7 +297,7 @@
           {
             "type": "text",
             "text": {
-              "content": "K-12 Division",
+              "content": "Japanese Heritage Language Division",
               "link": null
             },
             "annotations": {
@@ -308,7 +308,7 @@
               "code": false,
               "color": "default"
             },
-            "plain_text": "K-12 Division",
+            "plain_text": "Japanese Heritage Language Division",
             "href": null
           }
         ]

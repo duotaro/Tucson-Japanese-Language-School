@@ -1,9 +1,148 @@
 [
   {
     "object": "page",
+    "id": "262a8c0e-cf8c-8087-9157-eccd746e636d",
+    "created_time": "2025-09-02T05:49:00.000Z",
+    "last_edited_time": "2025-09-02T05:50:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "9b85f554-b3fc-42dc-b9d3-8f1ec87b168c"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "text_en": {
+        "id": "FevY",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "coming soon!",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "coming soon!",
+            "href": null
+          }
+        ]
+      },
+      "name_en": {
+        "id": "MMu%40",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": " Kayo Orosco",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " Kayo Orosco",
+            "href": null
+          }
+        ]
+      },
+      "image": {
+        "id": "%5DGFx",
+        "type": "files",
+        "files": []
+      },
+      "role": {
+        "id": "%60_YH",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "8857dd7d-7ed4-482b-84d8-f59c7d3679db",
+            "name": "nihongo-cafe",
+            "color": "brown"
+          }
+        ]
+      },
+      "text": {
+        "id": "uJ%3Eq",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Coming soon!",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Coming soon!",
+            "href": null
+          }
+        ]
+      },
+      "ordering": {
+        "id": "wvYp",
+        "type": "number",
+        "number": 16
+      },
+      "name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "オロスコ　佳代",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "オロスコ　佳代",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/262a8c0ecf8c80879157eccd746e636d",
+    "public_url": null
+  },
+  {
+    "object": "page",
     "id": "219a8c0e-cf8c-8086-95b6-dbe56a73880d",
     "created_time": "2025-06-21T20:02:00.000Z",
-    "last_edited_time": "2025-06-21T20:03:00.000Z",
+    "last_edited_time": "2025-09-02T05:48:00.000Z",
     "created_by": {
       "object": "user",
       "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
@@ -109,7 +248,7 @@
       "ordering": {
         "id": "wvYp",
         "type": "number",
-        "number": 6
+        "number": 5
       },
       "name": {
         "id": "title",
@@ -215,7 +354,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/staff/4377c087-e782-46e3-9eaf-261863837f19-profile.jpg",
-              "expiry_time": "2025-07-13T12:14:48.973Z"
+              "expiry_time": "2025-09-04T01:48:31.624Z"
             }
           }
         ]
@@ -363,7 +502,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/staff/102a8c0e-cf8c-803e-9b33-f2d6b41189c5-profile.jpg",
-              "expiry_time": "2025-07-13T12:14:48.973Z"
+              "expiry_time": "2025-09-04T01:48:31.624Z"
             }
           }
         ]
@@ -511,7 +650,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/staff/102a8c0e-cf8c-80f9-bef0-dd401debb8af-IMG_7799_edited.jpg",
-              "expiry_time": "2025-07-13T12:14:48.973Z"
+              "expiry_time": "2025-09-04T01:48:31.625Z"
             }
           }
         ]
@@ -659,7 +798,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/staff/c452fe7f-4be8-4bdb-9afb-a32c10afbcab-IMG_7796.jpeg",
-              "expiry_time": "2025-07-13T12:14:48.973Z"
+              "expiry_time": "2025-09-04T01:48:31.625Z"
             }
           }
         ]
@@ -807,7 +946,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/staff/102a8c0e-cf8c-80e6-9519-d25acdcfd0ec-IMG_7802_edited.jpg",
-              "expiry_time": "2025-07-13T12:14:48.974Z"
+              "expiry_time": "2025-09-04T01:48:31.625Z"
             }
           }
         ]
@@ -882,14 +1021,14 @@
     "object": "page",
     "id": "102a8c0e-cf8c-80cd-a577-c9351f661364",
     "created_time": "2024-09-15T21:09:00.000Z",
-    "last_edited_time": "2024-10-17T01:27:00.000Z",
+    "last_edited_time": "2025-09-02T05:48:00.000Z",
     "created_by": {
       "object": "user",
       "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
     },
     "last_edited_by": {
       "object": "user",
-      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
     },
     "cover": null,
     "icon": null,
@@ -955,7 +1094,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/staff/102a8c0e-cf8c-80cd-a577-c9351f661364-IMG_7879_edited.jpg",
-              "expiry_time": "2025-07-13T12:14:48.974Z"
+              "expiry_time": "2025-09-04T01:48:31.625Z"
             }
           }
         ]
@@ -997,7 +1136,7 @@
       "ordering": {
         "id": "wvYp",
         "type": "number",
-        "number": 5
+        "number": 7
       },
       "name": {
         "id": "title",
@@ -1103,7 +1242,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/staff/102a8c0e-cf8c-80c8-9391-cb8332a09711-profile.jpg",
-              "expiry_time": "2025-07-13T12:14:48.974Z"
+              "expiry_time": "2025-09-04T01:48:31.625Z"
             }
           }
         ]
@@ -1251,7 +1390,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/staff/102a8c0e-cf8c-80b6-a18a-f9a071308672-profile.jpg",
-              "expiry_time": "2025-07-13T12:14:48.974Z"
+              "expiry_time": "2025-09-04T01:48:31.625Z"
             }
           }
         ]
@@ -1326,7 +1465,7 @@
     "object": "page",
     "id": "102a8c0e-cf8c-80a2-9cba-f21c57ac7a99",
     "created_time": "2024-09-15T21:08:00.000Z",
-    "last_edited_time": "2025-06-21T20:03:00.000Z",
+    "last_edited_time": "2025-09-02T05:48:00.000Z",
     "created_by": {
       "object": "user",
       "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
@@ -1399,7 +1538,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/staff/102a8c0e-cf8c-80a2-9cba-f21c57ac7a99-IMG_1228_edited.jpg",
-              "expiry_time": "2025-07-13T12:14:48.974Z"
+              "expiry_time": "2025-09-04T01:48:31.625Z"
             }
           }
         ]
@@ -1441,7 +1580,7 @@
       "ordering": {
         "id": "wvYp",
         "type": "number",
-        "number": 7
+        "number": 6
       },
       "name": {
         "id": "title",
@@ -1547,7 +1686,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/staff/102a8c0e-cf8c-8032-ba7b-c79866f660eb-IMG_1280_edited.jpg",
-              "expiry_time": "2025-07-13T12:14:48.974Z"
+              "expiry_time": "2025-09-04T01:48:31.625Z"
             }
           }
         ]
@@ -1622,14 +1761,14 @@
     "object": "page",
     "id": "102a8c0e-cf8c-803e-8c91-cdc26abf8c7b",
     "created_time": "2024-09-15T21:02:00.000Z",
-    "last_edited_time": "2024-10-17T01:27:00.000Z",
+    "last_edited_time": "2025-09-02T05:48:00.000Z",
     "created_by": {
       "object": "user",
       "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
     },
     "last_edited_by": {
       "object": "user",
-      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
     },
     "cover": null,
     "icon": null,
@@ -1647,7 +1786,7 @@
           {
             "type": "text",
             "text": {
-              "content": "My name is Bella Hennessy, I am a Junior ( 11th grade ) In highschool. I was born in Las Vegas Nevada but I have lived all over the world. Most recently I lived in Yokohama Japan for 4 years ( 2020 - 2024 ). In those four years I taught myself Japanese almost to a fluent level. I love animals and going horse riding! I decided to join Tucson Nihongo Hosyuko so that I can keep up on my own Japanese and teach others Japanese.",
+              "content": "I majored in sculpture at the University of Tsukuba's School of Art and Design, and I taught art at a middle school during my student teaching. After graduating, I moved to Tucson, where I now enjoy crocheting.My younger brother, who is the same age as the students in Class 2, lives in Japan, so I sometimes feel a bit lonely being so far away. I also have experience with calligraphy, which I practiced from elementary school through high school.I'm looking forward to helping everyone have fun learning Japanese and engaging with the culture. I'm excited for a great year with all of you!\n\n",
               "link": null
             },
             "annotations": {
@@ -1658,7 +1797,7 @@
               "code": false,
               "color": "default"
             },
-            "plain_text": "My name is Bella Hennessy, I am a Junior ( 11th grade ) In highschool. I was born in Las Vegas Nevada but I have lived all over the world. Most recently I lived in Yokohama Japan for 4 years ( 2020 - 2024 ). In those four years I taught myself Japanese almost to a fluent level. I love animals and going horse riding! I decided to join Tucson Nihongo Hosyuko so that I can keep up on my own Japanese and teach others Japanese.",
+            "plain_text": "I majored in sculpture at the University of Tsukuba's School of Art and Design, and I taught art at a middle school during my student teaching. After graduating, I moved to Tucson, where I now enjoy crocheting.My younger brother, who is the same age as the students in Class 2, lives in Japan, so I sometimes feel a bit lonely being so far away. I also have experience with calligraphy, which I practiced from elementary school through high school.I'm looking forward to helping everyone have fun learning Japanese and engaging with the culture. I'm excited for a great year with all of you!\n\n",
             "href": null
           }
         ]
@@ -1670,7 +1809,7 @@
           {
             "type": "text",
             "text": {
-              "content": "Bella Hennessy",
+              "content": "Kokori Schrilla",
               "link": null
             },
             "annotations": {
@@ -1681,7 +1820,7 @@
               "code": false,
               "color": "default"
             },
-            "plain_text": "Bella Hennessy",
+            "plain_text": "Kokori Schrilla",
             "href": null
           }
         ]
@@ -1689,16 +1828,7 @@
       "image": {
         "id": "%5DGFx",
         "type": "files",
-        "files": [
-          {
-            "name": "IMG_7789_edited_edited.jpg",
-            "type": "file",
-            "file": {
-              "url": "/image/download/staff/102a8c0e-cf8c-803e-8c91-cdc26abf8c7b-IMG_7789_edited_edited.jpg",
-              "expiry_time": "2025-07-13T12:14:48.974Z"
-            }
-          }
-        ]
+        "files": []
       },
       "role": {
         "id": "%60_YH",
@@ -1718,7 +1848,7 @@
           {
             "type": "text",
             "text": {
-              "content": "初めまして、現在高校3年のヘネシー　ベラです！ネバダ州のラスベガス生まれで色んな国に住んだことがあります。2024年の3月まで横浜に住んでいました。（２０２０年から２０２４年までの約4年間）その4年間で自分の力でほぼ日本語ネイティブになりました。私は動物が大好きで趣味は乗馬です。ツーソン日本語補習校で自分の日本語を磨きながら、色んな人に日本語の魅力を見せてあげたいです。\n\n",
+              "content": "筑波大学芸術専門学群にて彫刻を専攻し、教育実習では中学校で美術を教えていました。卒業後はツーソンへ移住し、現在は編み物を楽しんでいます。日本にはクラス2の子どもたちと同世代の弟がおり、離れて暮らすのは少し寂しいです。また、小学校から高校まで書道を習っていました。皆さんと一緒に、日本語を楽しく勉強しながら、文化にも触れていきたいと思っています。よろしくお願いいたします。\n\n\n\n",
               "link": null
             },
             "annotations": {
@@ -1729,7 +1859,7 @@
               "code": false,
               "color": "default"
             },
-            "plain_text": "初めまして、現在高校3年のヘネシー　ベラです！ネバダ州のラスベガス生まれで色んな国に住んだことがあります。2024年の3月まで横浜に住んでいました。（２０２０年から２０２４年までの約4年間）その4年間で自分の力でほぼ日本語ネイティブになりました。私は動物が大好きで趣味は乗馬です。ツーソン日本語補習校で自分の日本語を磨きながら、色んな人に日本語の魅力を見せてあげたいです。\n\n",
+            "plain_text": "筑波大学芸術専門学群にて彫刻を専攻し、教育実習では中学校で美術を教えていました。卒業後はツーソンへ移住し、現在は編み物を楽しんでいます。日本にはクラス2の子どもたちと同世代の弟がおり、離れて暮らすのは少し寂しいです。また、小学校から高校まで書道を習っていました。皆さんと一緒に、日本語を楽しく勉強しながら、文化にも触れていきたいと思っています。よろしくお願いいたします。\n\n\n\n",
             "href": null
           }
         ]
@@ -1746,7 +1876,7 @@
           {
             "type": "text",
             "text": {
-              "content": "ヘネシー　ベラ",
+              "content": "シュリラ　心里",
               "link": null
             },
             "annotations": {
@@ -1757,7 +1887,7 @@
               "code": false,
               "color": "default"
             },
-            "plain_text": "ヘネシー　ベラ",
+            "plain_text": "シュリラ　心里",
             "href": null
           }
         ]
@@ -1843,7 +1973,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/staff/9a170ec8-c017-4cce-a0dd-d62f2edb82b6-minami.png",
-              "expiry_time": "2025-07-13T12:14:48.974Z"
+              "expiry_time": "2025-09-04T01:48:31.625Z"
             }
           }
         ]
@@ -1996,7 +2126,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/staff/d65a07cd-7eec-4319-8dbb-f05addf412a9-IMG_1299_edited.jpg",
-              "expiry_time": "2025-07-13T12:14:48.974Z"
+              "expiry_time": "2025-09-04T01:48:31.625Z"
             }
           }
         ]
@@ -2144,7 +2274,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/staff/f9633a2c-0dff-4b02-9161-9139ab8919d0-mcknight.png",
-              "expiry_time": "2025-07-13T12:14:48.974Z"
+              "expiry_time": "2025-09-04T01:48:31.625Z"
             }
           }
         ]

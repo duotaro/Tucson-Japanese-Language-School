@@ -9,7 +9,8 @@ export default function Document() {
         <meta name="robots" content="index, follow" />
         
         {/* favicon */}
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" href="/favicon.png" />
         
         {/* Open Graph メタタグ */}
         <meta property="og:type" content="website" />

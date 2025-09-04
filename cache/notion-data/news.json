@@ -1,6 +1,732 @@
 [
   {
     "object": "page",
+    "id": "262a8c0e-cf8c-80b2-98da-e5d1c7d3c4bd",
+    "created_time": "2025-09-02T09:26:00.000Z",
+    "last_edited_time": "2025-09-02T09:33:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "cc0b1eb3-5708-42ba-926c-c71ecaf5df4d"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "date": {
+        "id": "ELB%5B",
+        "type": "date",
+        "date": {
+          "start": "2025-06-28",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "text": {
+        "id": "SSPK",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "新年度生徒募集のお知らせです。授業は８月９日から始まります。新規入学、または継続を希望の生徒は７月21日までに登録を済ませてください。クラス登録は",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "新年度生徒募集のお知らせです。授業は８月９日から始まります。新規入学、または継続を希望の生徒は７月21日までに登録を済ませてください。クラス登録は",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "こちらから",
+              "link": {
+                "url": "https://tucsonnihongohosyu.wixsite.com/tucsonnihongohosyuko/admissions"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "こちらから",
+            "href": "https://tucsonnihongohosyu.wixsite.com/tucsonnihongohosyuko/admissions"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "！質問等ある方はお気軽に",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "！質問等ある方はお気軽に",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Email",
+              "link": {
+                "url": "mailto:tucson.nihongo.hosyuko@gmail.com?subject=Registration%20Inquiry%20"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Email",
+            "href": "mailto:tucson.nihongo.hosyuko@gmail.com?subject=Registration%20Inquiry%20"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "にてお問合せください。8月にみなさんにお会いできるのを楽しみにしています！\n\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "にてお問合せください。8月にみなさんにお会いできるのを楽しみにしています！\n\n",
+            "href": null
+          }
+        ]
+      },
+      "tags": {
+        "id": "%5DR%5BO",
+        "type": "multi_select",
+        "multi_select": []
+      },
+      "image": {
+        "id": "%5E%60%7DR",
+        "type": "files",
+        "files": [
+          {
+            "name": "Dangomaking2022.JPG",
+            "type": "file",
+            "file": {
+              "url": "/image/download/news/262a8c0e-cf8c-80b2-98da-e5d1c7d3c4bd-Dangomaking2022.JPG",
+              "expiry_time": "2025-09-04T01:48:52.640Z"
+            }
+          }
+        ]
+      },
+      "text_en": {
+        "id": "aM%60q",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "We are pleased to announce the reopening of our Japanese division beginner class and the in-person Japanese Cafe for the upcoming school year. If you are interested in programs, we encourage you to review the descriptions or contact us for further information. Please note that the enrollment deadline is Saturday, July 19th, 2025. To register, kindly visit our ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "We are pleased to announce the reopening of our Japanese division beginner class and the in-person Japanese Cafe for the upcoming school year. If you are interested in programs, we encourage you to review the descriptions or contact us for further information. Please note that the enrollment deadline is Saturday, July 19th, 2025. To register, kindly visit our ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "enrollment page ",
+              "link": {
+                "url": "https://tucsonnihongohosyu.wixsite.com/tucsonhosyuko-en/admissions"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "enrollment page ",
+            "href": "https://tucsonnihongohosyu.wixsite.com/tucsonhosyuko-en/admissions"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "and complete the form. If you have any inquiries regarding registration or our program offerings, please do not hesitate to contact us by email at ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "and complete the form. If you have any inquiries regarding registration or our program offerings, please do not hesitate to contact us by email at ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "tucson.nihongo.hosyuko@gmail.com",
+              "link": {
+                "url": "mailto:tucson.nihongo.hosyuko@gmail.com?subject=Inquiry%20about"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "tucson.nihongo.hosyuko@gmail.com",
+            "href": "mailto:tucson.nihongo.hosyuko@gmail.com?subject=Inquiry%20about"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": ". We look forward to welcoming you in August.\n\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": ". We look forward to welcoming you in August.\n\n",
+            "href": null
+          }
+        ]
+      },
+      "en": {
+        "id": "vck%3A",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Enrollment for 2025 school year Begins!",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Enrollment for 2025 school year Begins!",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "２０２５年度生徒募集開始",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "２０２５年度生徒募集開始",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/262a8c0ecf8c80b298dae5d1c7d3c4bd",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "262a8c0e-cf8c-80bb-b6c2-e12998eeaf15",
+    "created_time": "2025-09-02T09:19:00.000Z",
+    "last_edited_time": "2025-09-02T09:26:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "cc0b1eb3-5708-42ba-926c-c71ecaf5df4d"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "date": {
+        "id": "ELB%5B",
+        "type": "date",
+        "date": {
+          "start": "2025-01-10",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "text": {
+        "id": "SSPK",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "本校は米国で数少ない海外受験会場に認定されています。本年度の検定詳細は以下の通りです。\n\n日時：２０２５年１月２５日（土）12時～\n場所：",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "本校は米国で数少ない海外受験会場に認定されています。本年度の検定詳細は以下の通りです。\n\n日時：２０２５年１月２５日（土）12時～\n場所：",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "International School Of Tucson",
+              "link": {
+                "url": "https://g.co/kgs/trdRdRV"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "International School Of Tucson",
+            "href": "https://g.co/kgs/trdRdRV"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "　校舎にて\n \n＊本年度受験申し込みは締め切りました。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "　校舎にて\n \n＊本年度受験申し込みは締め切りました。",
+            "href": null
+          }
+        ]
+      },
+      "tags": {
+        "id": "%5DR%5BO",
+        "type": "multi_select",
+        "multi_select": []
+      },
+      "image": {
+        "id": "%5E%60%7DR",
+        "type": "files",
+        "files": [
+          {
+            "name": "Kanjikentei2025poster.png",
+            "type": "file",
+            "file": {
+              "url": "/image/download/news/262a8c0e-cf8c-80bb-b6c2-e12998eeaf15-Kanjikentei2025poster.png",
+              "expiry_time": "2025-09-04T01:48:52.640Z"
+            }
+          }
+        ]
+      },
+      "text_en": {
+        "id": "aM%60q",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "We are one of a few testing locations of Kanji Kentei in the U.S. See this year's exam details.\n \nDate & Time : Saturday, January 25th at 12pm\nLocation:",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "We are one of a few testing locations of Kanji Kentei in the U.S. See this year's exam details.\n \nDate & Time : Saturday, January 25th at 12pm\nLocation:",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " International School of Tucson ",
+              "link": {
+                "url": "https://g.co/kgs/trdRdRV"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " International School of Tucson ",
+            "href": "https://g.co/kgs/trdRdRV"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " \n\n*We are no longer accepting applications for the 2025 exam. ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " \n\n*We are no longer accepting applications for the 2025 exam. ",
+            "href": null
+          }
+        ]
+      },
+      "en": {
+        "id": "vck%3A",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "2025 Kanji Kentei",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "2025 Kanji Kentei",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "2025年漢字検定実施のお知らせ",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "2025年漢字検定実施のお知らせ",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/2025-262a8c0ecf8c80bbb6c2e12998eeaf15",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "262a8c0e-cf8c-8052-997a-cf0d2e43f5ab",
+    "created_time": "2025-09-02T09:14:00.000Z",
+    "last_edited_time": "2025-09-02T09:19:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "cc0b1eb3-5708-42ba-926c-c71ecaf5df4d"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+      "date": {
+        "id": "ELB%5B",
+        "type": "date",
+        "date": {
+          "start": "2024-10-05",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "text": {
+        "id": "SSPK",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ツーソン日本語補習校＆ツーソン日本人会共同開催\nTucson Japanese Sports Matsuri「ツーソン大運動会」\n小さい子供から大人までみんなが楽しめるスポーツイベントを10月27日（日）に開催します！参加費無料！景品あり！\n子供の部午前9時～ | 大人の部午後１時～　\n競技参加・ボランティア申し込みは10月12日(土)までに",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "ツーソン日本語補習校＆ツーソン日本人会共同開催\nTucson Japanese Sports Matsuri「ツーソン大運動会」\n小さい子供から大人までみんなが楽しめるスポーツイベントを10月27日（日）に開催します！参加費無料！景品あり！\n子供の部午前9時～ | 大人の部午後１時～　\n競技参加・ボランティア申し込みは10月12日(土)までに",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "https://www.tucsonundokai.org/",
+              "link": {
+                "url": "https://www.tucsonundokai.org/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "https://www.tucsonundokai.org/",
+            "href": "https://www.tucsonundokai.org/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "　から！\n日本食や日本のお菓子販売、水ヨーヨーや綿あめつくりなどもあります♪食品購入やゲームにはチケット購入が必要です。現金をお持ち下さい。\n田川トリオの弦楽器演奏、K-popグループAKDC、ツーソンよさこいクラブによるステージパフォーマンスもあり。\nお食事・お買い物、応援のみも大歓迎です！ぜひご参加ください。\n競技に参加する方、応援の方はキャンプチェアや敷物をご持参ください。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "　から！\n日本食や日本のお菓子販売、水ヨーヨーや綿あめつくりなどもあります♪食品購入やゲームにはチケット購入が必要です。現金をお持ち下さい。\n田川トリオの弦楽器演奏、K-popグループAKDC、ツーソンよさこいクラブによるステージパフォーマンスもあり。\nお食事・お買い物、応援のみも大歓迎です！ぜひご参加ください。\n競技に参加する方、応援の方はキャンプチェアや敷物をご持参ください。",
+            "href": null
+          }
+        ]
+      },
+      "tags": {
+        "id": "%5DR%5BO",
+        "type": "multi_select",
+        "multi_select": []
+      },
+      "image": {
+        "id": "%5E%60%7DR",
+        "type": "files",
+        "files": [
+          {
+            "name": "縦版　ツーソン大運動会ポスター  (9.4.2024).png",
+            "type": "file",
+            "file": {
+              "url": "/image/download/news/262a8c0e-cf8c-8052-997a-cf0d2e43f5ab-__________________9.4.2024_.png",
+              "expiry_time": "2025-09-04T01:48:52.640Z"
+            }
+          }
+        ]
+      },
+      "text_en": {
+        "id": "aM%60q",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Tucson Japanese Language School & Tucson Japanese Association Present:\nTucson Japanese Sports Matsuri will be held on Sunday, October 27th from 9am to 3pm. All ages are welcome! Free event!\nChildren's sports events start at 9am\nAdults sports events start at 1pm\nPlease register by Saturday, October 12th if you would like to participate in the sports events or volunteer for the event. ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Tucson Japanese Language School & Tucson Japanese Association Present:\nTucson Japanese Sports Matsuri will be held on Sunday, October 27th from 9am to 3pm. All ages are welcome! Free event!\nChildren's sports events start at 9am\nAdults sports events start at 1pm\nPlease register by Saturday, October 12th if you would like to participate in the sports events or volunteer for the event. ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "https://www.tucsonundokai.org/",
+              "link": {
+                "url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.tucsonundokai.org%2F%3Ffbclid%3DIwZXh0bgNhZW0CMTAAAR21eg_K9bq3OipET6MnOyhUgQO5Mqr8FheRQdzRI885imjL-wXuDFlRjqg_aem_2A9m58SXUnH8-O15wC_YgQ&h=AT0wbQkeS9QLMjZR-5v0_lhWJvkio378exFqbIAri1-17SH7sJ1U-Q3P0d4B0O5rjxI7Ixe5XF8aRlgCZeSPGIVmMAveF649oO18pA7GSMbf2cT3k7y4KBi5ES2uWwOs&__tn__=q&c%5B0%5D=AT2fKHM4Yq-burD3HKTRcYJ9p4_Re4jMStYSMaDemo9l8lP5FatwAB1DMWtASFCsypQEPXez3n08zrbeJvkW8mocpb5IiSY9ouBDc37jprREEMcTScwuA3CeWT-n1B9UtUpta5eAJqiPsPyoW9ROY2ga3JjpB4rm2pM9nA"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "https://www.tucsonundokai.org/",
+            "href": "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.tucsonundokai.org%2F%3Ffbclid%3DIwZXh0bgNhZW0CMTAAAR21eg_K9bq3OipET6MnOyhUgQO5Mqr8FheRQdzRI885imjL-wXuDFlRjqg_aem_2A9m58SXUnH8-O15wC_YgQ&h=AT0wbQkeS9QLMjZR-5v0_lhWJvkio378exFqbIAri1-17SH7sJ1U-Q3P0d4B0O5rjxI7Ixe5XF8aRlgCZeSPGIVmMAveF649oO18pA7GSMbf2cT3k7y4KBi5ES2uWwOs&__tn__=q&c%5B0%5D=AT2fKHM4Yq-burD3HKTRcYJ9p4_Re4jMStYSMaDemo9l8lP5FatwAB1DMWtASFCsypQEPXez3n08zrbeJvkW8mocpb5IiSY9ouBDc37jprREEMcTScwuA3CeWT-n1B9UtUpta5eAJqiPsPyoW9ROY2ga3JjpB4rm2pM9nA"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "\nThere will be Japanese food and snacks for sale and stage performances by Tagawa Trio, K-pop dance group AKDC, and Tucson Yosakoi Club from 12pm to 1pm. Also, there will be Japanese games, activities, and more! We only accept cash to purchase tickets to redeem for food and games.\nBring your own lawn chairs or blankets for seating.\nYou are welcome to just come shopping or cheering!",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "\nThere will be Japanese food and snacks for sale and stage performances by Tagawa Trio, K-pop dance group AKDC, and Tucson Yosakoi Club from 12pm to 1pm. Also, there will be Japanese games, activities, and more! We only accept cash to purchase tickets to redeem for food and games.\nBring your own lawn chairs or blankets for seating.\nYou are welcome to just come shopping or cheering!",
+            "href": null
+          }
+        ]
+      },
+      "en": {
+        "id": "vck%3A",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Annoucement for 10th Anniversary Tucson Japanese Langauge School’s Sports Day",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Annoucement for 10th Anniversary Tucson Japanese Langauge School’s Sports Day",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "第10回記念大運動会のお知らせ",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "第10回記念大運動会のお知らせ",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/10-262a8c0ecf8c8052997acf0d2e43f5ab",
+    "public_url": null
+  },
+  {
+    "object": "page",
     "id": "112a8c0e-cf8c-80ca-af61-e30b24fd97a7",
     "created_time": "2024-10-01T12:03:00.000Z",
     "last_edited_time": "2024-10-01T12:16:00.000Z",
@@ -72,8 +798,8 @@
             "name": "mochipounding.jpeg",
             "type": "file",
             "file": {
-              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/ec34a095-6cd8-48a8-98c7-18f89317c7c4/175d8737-273d-4d38-a710-94d292f823d8/mochipounding.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46632WDS2HD%2F20250713%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250713T134011Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQCXkHjIODBR%2Fi%2BZqYA5t%2Bc5VbMZatvuWoXCQip%2FUbwfNQIhAMAoz6Wf6zb6w1L6FimwRWTnodc32T6ZuW8YhXOpTHxoKv8DCBUQABoMNjM3NDIzMTgzODA1IgzhhJmbKzo9ucoIiqIq3ANpS7Uldei1GowRJjyD7gq0%2FWl%2B9qxQx2Xo%2BJ%2BooS3MW9umKZwHfnZR8iTnlxa8gk5wNMw4yR186vV7qQVkc5FfCZBa%2FOLrN7C19D2ZCzq7UrcQEgZT2Ml8PIVLedTF%2BsuUaPCe2O6%2Bzz7thzKDIO1%2B1b64gGK5tiM7wIGNxTEGCLvCcL%2Frs5fMddn1b2hWEmf5aSBX7j49FT%2FikcqdgdCAKbFXz3aOoseM7rRfwyvgYWI6RN3e6Dxd2DvvONv9ez5jyEcV9zxlKKf7ghkGywgMlm4V2qdg0qRugtrs1IUtlsT8OE5knMq67TvtKoTTUs%2B05fi1yUq3290rqBxdYvyMTqRtsiJol%2F7wU1DqTRg4KO%2B0OIpg%2B45zBZLPG8D3wqAN46BcibG%2FpyCAf0EN8ApmFMJxq%2B9ebVPOsMhrHoGu8Ila91FS2TS8xnayFy0viBJL0BFxfQXVgLq3Zc5kGorTdL2%2FxmslZnFRLmbmPdtqfIi5iuMVobmiK7zOp6ebPuOu5uDUlMPAfcMbEzJFX9gAH%2FvLRspAQizCnd9iV9enoFVm587rUzp8yOTmpV18bjH7f8rbhQWr23QD57xvZZZThTIsXG%2FNoOTvqpdPZFpKeo59HorLnr%2FsrOSIVzCowc7DBjqkAcwv9NcfvTA7PMJqRTnrYmbJgbp1FOv10VvAxGY9oHYA84M6SkaDW9zjoX89uhBLwysh%2B%2BnnYaynWgsIug03LFR%2FrTekYGq91llfiiCDEuhPDed%2F5RkPKwjgigBDF%2F5PsLVCZ16CT98C02JFDqkz52Ia9btBCelqG8qt17j9L9yNV9DJhthTsn1RLnBWic6HkoLTWW9P9Iwdz%2F45NaiQYExQXKsC&X-Amz-Signature=483e195666fca7684c4e3a3d3974f32ee552438f0dc24e6f6131e7a18e8b070f&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
-              "expiry_time": "2025-07-13T14:40:11.659Z"
+              "url": "/image/download/news/112a8c0e-cf8c-80ca-af61-e30b24fd97a7-mochipounding.jpeg",
+              "expiry_time": "2025-09-04T01:48:52.640Z"
             }
           }
         ]
@@ -224,8 +950,8 @@
             "name": "2020newyear.webp",
             "type": "file",
             "file": {
-              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/ec34a095-6cd8-48a8-98c7-18f89317c7c4/64f41403-821f-46f0-94ce-34f9450c3d57/2020newyear.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46632WDS2HD%2F20250713%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250713T134011Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQCXkHjIODBR%2Fi%2BZqYA5t%2Bc5VbMZatvuWoXCQip%2FUbwfNQIhAMAoz6Wf6zb6w1L6FimwRWTnodc32T6ZuW8YhXOpTHxoKv8DCBUQABoMNjM3NDIzMTgzODA1IgzhhJmbKzo9ucoIiqIq3ANpS7Uldei1GowRJjyD7gq0%2FWl%2B9qxQx2Xo%2BJ%2BooS3MW9umKZwHfnZR8iTnlxa8gk5wNMw4yR186vV7qQVkc5FfCZBa%2FOLrN7C19D2ZCzq7UrcQEgZT2Ml8PIVLedTF%2BsuUaPCe2O6%2Bzz7thzKDIO1%2B1b64gGK5tiM7wIGNxTEGCLvCcL%2Frs5fMddn1b2hWEmf5aSBX7j49FT%2FikcqdgdCAKbFXz3aOoseM7rRfwyvgYWI6RN3e6Dxd2DvvONv9ez5jyEcV9zxlKKf7ghkGywgMlm4V2qdg0qRugtrs1IUtlsT8OE5knMq67TvtKoTTUs%2B05fi1yUq3290rqBxdYvyMTqRtsiJol%2F7wU1DqTRg4KO%2B0OIpg%2B45zBZLPG8D3wqAN46BcibG%2FpyCAf0EN8ApmFMJxq%2B9ebVPOsMhrHoGu8Ila91FS2TS8xnayFy0viBJL0BFxfQXVgLq3Zc5kGorTdL2%2FxmslZnFRLmbmPdtqfIi5iuMVobmiK7zOp6ebPuOu5uDUlMPAfcMbEzJFX9gAH%2FvLRspAQizCnd9iV9enoFVm587rUzp8yOTmpV18bjH7f8rbhQWr23QD57xvZZZThTIsXG%2FNoOTvqpdPZFpKeo59HorLnr%2FsrOSIVzCowc7DBjqkAcwv9NcfvTA7PMJqRTnrYmbJgbp1FOv10VvAxGY9oHYA84M6SkaDW9zjoX89uhBLwysh%2B%2BnnYaynWgsIug03LFR%2FrTekYGq91llfiiCDEuhPDed%2F5RkPKwjgigBDF%2F5PsLVCZ16CT98C02JFDqkz52Ia9btBCelqG8qt17j9L9yNV9DJhthTsn1RLnBWic6HkoLTWW9P9Iwdz%2F45NaiQYExQXKsC&X-Amz-Signature=9cbcc1680850f5431a99ae11cd9a5aad17da858845cdf69278edc8c7e5694e25&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
-              "expiry_time": "2025-07-13T14:40:11.659Z"
+              "url": "/image/download/news/112a8c0e-cf8c-8032-ab02-db04c52a7455-2020newyear.webp",
+              "expiry_time": "2025-09-04T01:48:52.640Z"
             }
           }
         ]
@@ -376,8 +1102,8 @@
             "name": "emptyschool.webp",
             "type": "file",
             "file": {
-              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/ec34a095-6cd8-48a8-98c7-18f89317c7c4/8f65be36-3aad-4e8b-979c-73012d9569d3/emptyschool.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46632WDS2HD%2F20250713%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250713T134011Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQCXkHjIODBR%2Fi%2BZqYA5t%2Bc5VbMZatvuWoXCQip%2FUbwfNQIhAMAoz6Wf6zb6w1L6FimwRWTnodc32T6ZuW8YhXOpTHxoKv8DCBUQABoMNjM3NDIzMTgzODA1IgzhhJmbKzo9ucoIiqIq3ANpS7Uldei1GowRJjyD7gq0%2FWl%2B9qxQx2Xo%2BJ%2BooS3MW9umKZwHfnZR8iTnlxa8gk5wNMw4yR186vV7qQVkc5FfCZBa%2FOLrN7C19D2ZCzq7UrcQEgZT2Ml8PIVLedTF%2BsuUaPCe2O6%2Bzz7thzKDIO1%2B1b64gGK5tiM7wIGNxTEGCLvCcL%2Frs5fMddn1b2hWEmf5aSBX7j49FT%2FikcqdgdCAKbFXz3aOoseM7rRfwyvgYWI6RN3e6Dxd2DvvONv9ez5jyEcV9zxlKKf7ghkGywgMlm4V2qdg0qRugtrs1IUtlsT8OE5knMq67TvtKoTTUs%2B05fi1yUq3290rqBxdYvyMTqRtsiJol%2F7wU1DqTRg4KO%2B0OIpg%2B45zBZLPG8D3wqAN46BcibG%2FpyCAf0EN8ApmFMJxq%2B9ebVPOsMhrHoGu8Ila91FS2TS8xnayFy0viBJL0BFxfQXVgLq3Zc5kGorTdL2%2FxmslZnFRLmbmPdtqfIi5iuMVobmiK7zOp6ebPuOu5uDUlMPAfcMbEzJFX9gAH%2FvLRspAQizCnd9iV9enoFVm587rUzp8yOTmpV18bjH7f8rbhQWr23QD57xvZZZThTIsXG%2FNoOTvqpdPZFpKeo59HorLnr%2FsrOSIVzCowc7DBjqkAcwv9NcfvTA7PMJqRTnrYmbJgbp1FOv10VvAxGY9oHYA84M6SkaDW9zjoX89uhBLwysh%2B%2BnnYaynWgsIug03LFR%2FrTekYGq91llfiiCDEuhPDed%2F5RkPKwjgigBDF%2F5PsLVCZ16CT98C02JFDqkz52Ia9btBCelqG8qt17j9L9yNV9DJhthTsn1RLnBWic6HkoLTWW9P9Iwdz%2F45NaiQYExQXKsC&X-Amz-Signature=08cc2924c90c2290b344c712346a243b9ccf9e5bfdd082dce7a37c5ac0ce4e11&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
-              "expiry_time": "2025-07-13T14:40:11.659Z"
+              "url": "/image/download/news/112a8c0e-cf8c-80ef-bc49-fe1172c9ce8f-emptyschool.webp",
+              "expiry_time": "2025-09-04T01:48:52.640Z"
             }
           }
         ]
@@ -528,8 +1254,8 @@
             "name": "pandemicprevention.jpg",
             "type": "file",
             "file": {
-              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/ec34a095-6cd8-48a8-98c7-18f89317c7c4/73e00c41-2967-4f83-bc5b-6eebed5cf21a/pandemicprevention.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46632WDS2HD%2F20250713%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250713T134011Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQCXkHjIODBR%2Fi%2BZqYA5t%2Bc5VbMZatvuWoXCQip%2FUbwfNQIhAMAoz6Wf6zb6w1L6FimwRWTnodc32T6ZuW8YhXOpTHxoKv8DCBUQABoMNjM3NDIzMTgzODA1IgzhhJmbKzo9ucoIiqIq3ANpS7Uldei1GowRJjyD7gq0%2FWl%2B9qxQx2Xo%2BJ%2BooS3MW9umKZwHfnZR8iTnlxa8gk5wNMw4yR186vV7qQVkc5FfCZBa%2FOLrN7C19D2ZCzq7UrcQEgZT2Ml8PIVLedTF%2BsuUaPCe2O6%2Bzz7thzKDIO1%2B1b64gGK5tiM7wIGNxTEGCLvCcL%2Frs5fMddn1b2hWEmf5aSBX7j49FT%2FikcqdgdCAKbFXz3aOoseM7rRfwyvgYWI6RN3e6Dxd2DvvONv9ez5jyEcV9zxlKKf7ghkGywgMlm4V2qdg0qRugtrs1IUtlsT8OE5knMq67TvtKoTTUs%2B05fi1yUq3290rqBxdYvyMTqRtsiJol%2F7wU1DqTRg4KO%2B0OIpg%2B45zBZLPG8D3wqAN46BcibG%2FpyCAf0EN8ApmFMJxq%2B9ebVPOsMhrHoGu8Ila91FS2TS8xnayFy0viBJL0BFxfQXVgLq3Zc5kGorTdL2%2FxmslZnFRLmbmPdtqfIi5iuMVobmiK7zOp6ebPuOu5uDUlMPAfcMbEzJFX9gAH%2FvLRspAQizCnd9iV9enoFVm587rUzp8yOTmpV18bjH7f8rbhQWr23QD57xvZZZThTIsXG%2FNoOTvqpdPZFpKeo59HorLnr%2FsrOSIVzCowc7DBjqkAcwv9NcfvTA7PMJqRTnrYmbJgbp1FOv10VvAxGY9oHYA84M6SkaDW9zjoX89uhBLwysh%2B%2BnnYaynWgsIug03LFR%2FrTekYGq91llfiiCDEuhPDed%2F5RkPKwjgigBDF%2F5PsLVCZ16CT98C02JFDqkz52Ia9btBCelqG8qt17j9L9yNV9DJhthTsn1RLnBWic6HkoLTWW9P9Iwdz%2F45NaiQYExQXKsC&X-Amz-Signature=dd302185793501d465ac7e9bef6f820a3cd39cab81ab6ab76e8a4affb344dc93&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
-              "expiry_time": "2025-07-13T14:40:11.660Z"
+              "url": "/image/download/news/112a8c0e-cf8c-80b7-b324-ea602066a777-pandemicprevention.jpg",
+              "expiry_time": "2025-09-04T01:48:52.640Z"
             }
           }
         ]
@@ -680,8 +1406,8 @@
             "name": "emptyschool.webp",
             "type": "file",
             "file": {
-              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/ec34a095-6cd8-48a8-98c7-18f89317c7c4/3e4b827b-ebce-435b-addd-6995111e6cea/emptyschool.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46632WDS2HD%2F20250713%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250713T134011Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQCXkHjIODBR%2Fi%2BZqYA5t%2Bc5VbMZatvuWoXCQip%2FUbwfNQIhAMAoz6Wf6zb6w1L6FimwRWTnodc32T6ZuW8YhXOpTHxoKv8DCBUQABoMNjM3NDIzMTgzODA1IgzhhJmbKzo9ucoIiqIq3ANpS7Uldei1GowRJjyD7gq0%2FWl%2B9qxQx2Xo%2BJ%2BooS3MW9umKZwHfnZR8iTnlxa8gk5wNMw4yR186vV7qQVkc5FfCZBa%2FOLrN7C19D2ZCzq7UrcQEgZT2Ml8PIVLedTF%2BsuUaPCe2O6%2Bzz7thzKDIO1%2B1b64gGK5tiM7wIGNxTEGCLvCcL%2Frs5fMddn1b2hWEmf5aSBX7j49FT%2FikcqdgdCAKbFXz3aOoseM7rRfwyvgYWI6RN3e6Dxd2DvvONv9ez5jyEcV9zxlKKf7ghkGywgMlm4V2qdg0qRugtrs1IUtlsT8OE5knMq67TvtKoTTUs%2B05fi1yUq3290rqBxdYvyMTqRtsiJol%2F7wU1DqTRg4KO%2B0OIpg%2B45zBZLPG8D3wqAN46BcibG%2FpyCAf0EN8ApmFMJxq%2B9ebVPOsMhrHoGu8Ila91FS2TS8xnayFy0viBJL0BFxfQXVgLq3Zc5kGorTdL2%2FxmslZnFRLmbmPdtqfIi5iuMVobmiK7zOp6ebPuOu5uDUlMPAfcMbEzJFX9gAH%2FvLRspAQizCnd9iV9enoFVm587rUzp8yOTmpV18bjH7f8rbhQWr23QD57xvZZZThTIsXG%2FNoOTvqpdPZFpKeo59HorLnr%2FsrOSIVzCowc7DBjqkAcwv9NcfvTA7PMJqRTnrYmbJgbp1FOv10VvAxGY9oHYA84M6SkaDW9zjoX89uhBLwysh%2B%2BnnYaynWgsIug03LFR%2FrTekYGq91llfiiCDEuhPDed%2F5RkPKwjgigBDF%2F5PsLVCZ16CT98C02JFDqkz52Ia9btBCelqG8qt17j9L9yNV9DJhthTsn1RLnBWic6HkoLTWW9P9Iwdz%2F45NaiQYExQXKsC&X-Amz-Signature=0264e228fff104a245e1dad6959a812b115add5a8b943de399005a02ee876d27&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
-              "expiry_time": "2025-07-13T14:40:11.659Z"
+              "url": "/image/download/news/112a8c0e-cf8c-8093-b82c-cf686345f657-emptyschool.webp",
+              "expiry_time": "2025-09-04T01:48:52.640Z"
             }
           }
         ]
@@ -832,8 +1558,8 @@
             "name": "remotelearningkid.webp",
             "type": "file",
             "file": {
-              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/ec34a095-6cd8-48a8-98c7-18f89317c7c4/77481c51-122e-4466-9bc6-d243dda7bafd/remotelearningkid.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46632WDS2HD%2F20250713%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250713T134011Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQCXkHjIODBR%2Fi%2BZqYA5t%2Bc5VbMZatvuWoXCQip%2FUbwfNQIhAMAoz6Wf6zb6w1L6FimwRWTnodc32T6ZuW8YhXOpTHxoKv8DCBUQABoMNjM3NDIzMTgzODA1IgzhhJmbKzo9ucoIiqIq3ANpS7Uldei1GowRJjyD7gq0%2FWl%2B9qxQx2Xo%2BJ%2BooS3MW9umKZwHfnZR8iTnlxa8gk5wNMw4yR186vV7qQVkc5FfCZBa%2FOLrN7C19D2ZCzq7UrcQEgZT2Ml8PIVLedTF%2BsuUaPCe2O6%2Bzz7thzKDIO1%2B1b64gGK5tiM7wIGNxTEGCLvCcL%2Frs5fMddn1b2hWEmf5aSBX7j49FT%2FikcqdgdCAKbFXz3aOoseM7rRfwyvgYWI6RN3e6Dxd2DvvONv9ez5jyEcV9zxlKKf7ghkGywgMlm4V2qdg0qRugtrs1IUtlsT8OE5knMq67TvtKoTTUs%2B05fi1yUq3290rqBxdYvyMTqRtsiJol%2F7wU1DqTRg4KO%2B0OIpg%2B45zBZLPG8D3wqAN46BcibG%2FpyCAf0EN8ApmFMJxq%2B9ebVPOsMhrHoGu8Ila91FS2TS8xnayFy0viBJL0BFxfQXVgLq3Zc5kGorTdL2%2FxmslZnFRLmbmPdtqfIi5iuMVobmiK7zOp6ebPuOu5uDUlMPAfcMbEzJFX9gAH%2FvLRspAQizCnd9iV9enoFVm587rUzp8yOTmpV18bjH7f8rbhQWr23QD57xvZZZThTIsXG%2FNoOTvqpdPZFpKeo59HorLnr%2FsrOSIVzCowc7DBjqkAcwv9NcfvTA7PMJqRTnrYmbJgbp1FOv10VvAxGY9oHYA84M6SkaDW9zjoX89uhBLwysh%2B%2BnnYaynWgsIug03LFR%2FrTekYGq91llfiiCDEuhPDed%2F5RkPKwjgigBDF%2F5PsLVCZ16CT98C02JFDqkz52Ia9btBCelqG8qt17j9L9yNV9DJhthTsn1RLnBWic6HkoLTWW9P9Iwdz%2F45NaiQYExQXKsC&X-Amz-Signature=af06f9dd5de9d1f8fabd108b3caf1f7bdb861da290ecb16154c503d7a79fe00c&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
-              "expiry_time": "2025-07-13T14:40:11.659Z"
+              "url": "/image/download/news/112a8c0e-cf8c-8075-bdbf-cc1dfe962559-remotelearningkid.webp",
+              "expiry_time": "2025-09-04T01:48:52.640Z"
             }
           }
         ]
@@ -984,8 +1710,8 @@
             "name": "SAJCClogo.png",
             "type": "file",
             "file": {
-              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/ec34a095-6cd8-48a8-98c7-18f89317c7c4/5abaa453-c51e-4656-8573-3eb2a43211fe/SAJCClogo.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46632WDS2HD%2F20250713%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250713T134011Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQCXkHjIODBR%2Fi%2BZqYA5t%2Bc5VbMZatvuWoXCQip%2FUbwfNQIhAMAoz6Wf6zb6w1L6FimwRWTnodc32T6ZuW8YhXOpTHxoKv8DCBUQABoMNjM3NDIzMTgzODA1IgzhhJmbKzo9ucoIiqIq3ANpS7Uldei1GowRJjyD7gq0%2FWl%2B9qxQx2Xo%2BJ%2BooS3MW9umKZwHfnZR8iTnlxa8gk5wNMw4yR186vV7qQVkc5FfCZBa%2FOLrN7C19D2ZCzq7UrcQEgZT2Ml8PIVLedTF%2BsuUaPCe2O6%2Bzz7thzKDIO1%2B1b64gGK5tiM7wIGNxTEGCLvCcL%2Frs5fMddn1b2hWEmf5aSBX7j49FT%2FikcqdgdCAKbFXz3aOoseM7rRfwyvgYWI6RN3e6Dxd2DvvONv9ez5jyEcV9zxlKKf7ghkGywgMlm4V2qdg0qRugtrs1IUtlsT8OE5knMq67TvtKoTTUs%2B05fi1yUq3290rqBxdYvyMTqRtsiJol%2F7wU1DqTRg4KO%2B0OIpg%2B45zBZLPG8D3wqAN46BcibG%2FpyCAf0EN8ApmFMJxq%2B9ebVPOsMhrHoGu8Ila91FS2TS8xnayFy0viBJL0BFxfQXVgLq3Zc5kGorTdL2%2FxmslZnFRLmbmPdtqfIi5iuMVobmiK7zOp6ebPuOu5uDUlMPAfcMbEzJFX9gAH%2FvLRspAQizCnd9iV9enoFVm587rUzp8yOTmpV18bjH7f8rbhQWr23QD57xvZZZThTIsXG%2FNoOTvqpdPZFpKeo59HorLnr%2FsrOSIVzCowc7DBjqkAcwv9NcfvTA7PMJqRTnrYmbJgbp1FOv10VvAxGY9oHYA84M6SkaDW9zjoX89uhBLwysh%2B%2BnnYaynWgsIug03LFR%2FrTekYGq91llfiiCDEuhPDed%2F5RkPKwjgigBDF%2F5PsLVCZ16CT98C02JFDqkz52Ia9btBCelqG8qt17j9L9yNV9DJhthTsn1RLnBWic6HkoLTWW9P9Iwdz%2F45NaiQYExQXKsC&X-Amz-Signature=dfb2fbdd88a162b29b6f16f34c53af9c1900cfe44c33cac505f89e4773f89f1f&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
-              "expiry_time": "2025-07-13T14:40:11.659Z"
+              "url": "/image/download/news/112a8c0e-cf8c-80f1-b6b9-c101f6b58f00-SAJCClogo.png",
+              "expiry_time": "2025-09-04T01:48:52.641Z"
             }
           }
         ]
@@ -1279,8 +2005,8 @@
             "name": "newyear2021.jpg",
             "type": "file",
             "file": {
-              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/ec34a095-6cd8-48a8-98c7-18f89317c7c4/81c843c9-a627-41f7-af43-2ea9aa972ef5/newyear2021.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46632WDS2HD%2F20250713%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250713T134011Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQCXkHjIODBR%2Fi%2BZqYA5t%2Bc5VbMZatvuWoXCQip%2FUbwfNQIhAMAoz6Wf6zb6w1L6FimwRWTnodc32T6ZuW8YhXOpTHxoKv8DCBUQABoMNjM3NDIzMTgzODA1IgzhhJmbKzo9ucoIiqIq3ANpS7Uldei1GowRJjyD7gq0%2FWl%2B9qxQx2Xo%2BJ%2BooS3MW9umKZwHfnZR8iTnlxa8gk5wNMw4yR186vV7qQVkc5FfCZBa%2FOLrN7C19D2ZCzq7UrcQEgZT2Ml8PIVLedTF%2BsuUaPCe2O6%2Bzz7thzKDIO1%2B1b64gGK5tiM7wIGNxTEGCLvCcL%2Frs5fMddn1b2hWEmf5aSBX7j49FT%2FikcqdgdCAKbFXz3aOoseM7rRfwyvgYWI6RN3e6Dxd2DvvONv9ez5jyEcV9zxlKKf7ghkGywgMlm4V2qdg0qRugtrs1IUtlsT8OE5knMq67TvtKoTTUs%2B05fi1yUq3290rqBxdYvyMTqRtsiJol%2F7wU1DqTRg4KO%2B0OIpg%2B45zBZLPG8D3wqAN46BcibG%2FpyCAf0EN8ApmFMJxq%2B9ebVPOsMhrHoGu8Ila91FS2TS8xnayFy0viBJL0BFxfQXVgLq3Zc5kGorTdL2%2FxmslZnFRLmbmPdtqfIi5iuMVobmiK7zOp6ebPuOu5uDUlMPAfcMbEzJFX9gAH%2FvLRspAQizCnd9iV9enoFVm587rUzp8yOTmpV18bjH7f8rbhQWr23QD57xvZZZThTIsXG%2FNoOTvqpdPZFpKeo59HorLnr%2FsrOSIVzCowc7DBjqkAcwv9NcfvTA7PMJqRTnrYmbJgbp1FOv10VvAxGY9oHYA84M6SkaDW9zjoX89uhBLwysh%2B%2BnnYaynWgsIug03LFR%2FrTekYGq91llfiiCDEuhPDed%2F5RkPKwjgigBDF%2F5PsLVCZ16CT98C02JFDqkz52Ia9btBCelqG8qt17j9L9yNV9DJhthTsn1RLnBWic6HkoLTWW9P9Iwdz%2F45NaiQYExQXKsC&X-Amz-Signature=96acd3045989f24ebdb54d15a3cc0bb4b8b4459b54708fb3ff0e29446b179d84&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
-              "expiry_time": "2025-07-13T14:40:11.660Z"
+              "url": "/image/download/news/112a8c0e-cf8c-8034-8ce5-dced417d9e42-newyear2021.jpg",
+              "expiry_time": "2025-09-04T01:48:52.641Z"
             }
           }
         ]
@@ -1436,8 +2162,8 @@
             "name": "kanjikentei2020.webp",
             "type": "file",
             "file": {
-              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/ec34a095-6cd8-48a8-98c7-18f89317c7c4/d3a80eb3-3d6d-48bb-8932-8e376c08aa02/kanjikentei2020.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46632WDS2HD%2F20250713%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250713T134011Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQCXkHjIODBR%2Fi%2BZqYA5t%2Bc5VbMZatvuWoXCQip%2FUbwfNQIhAMAoz6Wf6zb6w1L6FimwRWTnodc32T6ZuW8YhXOpTHxoKv8DCBUQABoMNjM3NDIzMTgzODA1IgzhhJmbKzo9ucoIiqIq3ANpS7Uldei1GowRJjyD7gq0%2FWl%2B9qxQx2Xo%2BJ%2BooS3MW9umKZwHfnZR8iTnlxa8gk5wNMw4yR186vV7qQVkc5FfCZBa%2FOLrN7C19D2ZCzq7UrcQEgZT2Ml8PIVLedTF%2BsuUaPCe2O6%2Bzz7thzKDIO1%2B1b64gGK5tiM7wIGNxTEGCLvCcL%2Frs5fMddn1b2hWEmf5aSBX7j49FT%2FikcqdgdCAKbFXz3aOoseM7rRfwyvgYWI6RN3e6Dxd2DvvONv9ez5jyEcV9zxlKKf7ghkGywgMlm4V2qdg0qRugtrs1IUtlsT8OE5knMq67TvtKoTTUs%2B05fi1yUq3290rqBxdYvyMTqRtsiJol%2F7wU1DqTRg4KO%2B0OIpg%2B45zBZLPG8D3wqAN46BcibG%2FpyCAf0EN8ApmFMJxq%2B9ebVPOsMhrHoGu8Ila91FS2TS8xnayFy0viBJL0BFxfQXVgLq3Zc5kGorTdL2%2FxmslZnFRLmbmPdtqfIi5iuMVobmiK7zOp6ebPuOu5uDUlMPAfcMbEzJFX9gAH%2FvLRspAQizCnd9iV9enoFVm587rUzp8yOTmpV18bjH7f8rbhQWr23QD57xvZZZThTIsXG%2FNoOTvqpdPZFpKeo59HorLnr%2FsrOSIVzCowc7DBjqkAcwv9NcfvTA7PMJqRTnrYmbJgbp1FOv10VvAxGY9oHYA84M6SkaDW9zjoX89uhBLwysh%2B%2BnnYaynWgsIug03LFR%2FrTekYGq91llfiiCDEuhPDed%2F5RkPKwjgigBDF%2F5PsLVCZ16CT98C02JFDqkz52Ia9btBCelqG8qt17j9L9yNV9DJhthTsn1RLnBWic6HkoLTWW9P9Iwdz%2F45NaiQYExQXKsC&X-Amz-Signature=3e2b71d46b0a99ceaefb58e23021d13cb5efe340f0c2971a2f57e9f5f0c54495&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
-              "expiry_time": "2025-07-13T14:40:11.660Z"
+              "url": "/image/download/news/112a8c0e-cf8c-802e-9036-c481d58ca391-kanjikentei2020.webp",
+              "expiry_time": "2025-09-04T01:48:52.641Z"
             }
           }
         ]
@@ -1588,8 +2314,8 @@
             "name": "boystudyonline.jpg",
             "type": "file",
             "file": {
-              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/ec34a095-6cd8-48a8-98c7-18f89317c7c4/fea39e3d-bdb0-4f55-80e9-01918fa159a2/boystudyonline.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46632WDS2HD%2F20250713%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250713T134011Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQCXkHjIODBR%2Fi%2BZqYA5t%2Bc5VbMZatvuWoXCQip%2FUbwfNQIhAMAoz6Wf6zb6w1L6FimwRWTnodc32T6ZuW8YhXOpTHxoKv8DCBUQABoMNjM3NDIzMTgzODA1IgzhhJmbKzo9ucoIiqIq3ANpS7Uldei1GowRJjyD7gq0%2FWl%2B9qxQx2Xo%2BJ%2BooS3MW9umKZwHfnZR8iTnlxa8gk5wNMw4yR186vV7qQVkc5FfCZBa%2FOLrN7C19D2ZCzq7UrcQEgZT2Ml8PIVLedTF%2BsuUaPCe2O6%2Bzz7thzKDIO1%2B1b64gGK5tiM7wIGNxTEGCLvCcL%2Frs5fMddn1b2hWEmf5aSBX7j49FT%2FikcqdgdCAKbFXz3aOoseM7rRfwyvgYWI6RN3e6Dxd2DvvONv9ez5jyEcV9zxlKKf7ghkGywgMlm4V2qdg0qRugtrs1IUtlsT8OE5knMq67TvtKoTTUs%2B05fi1yUq3290rqBxdYvyMTqRtsiJol%2F7wU1DqTRg4KO%2B0OIpg%2B45zBZLPG8D3wqAN46BcibG%2FpyCAf0EN8ApmFMJxq%2B9ebVPOsMhrHoGu8Ila91FS2TS8xnayFy0viBJL0BFxfQXVgLq3Zc5kGorTdL2%2FxmslZnFRLmbmPdtqfIi5iuMVobmiK7zOp6ebPuOu5uDUlMPAfcMbEzJFX9gAH%2FvLRspAQizCnd9iV9enoFVm587rUzp8yOTmpV18bjH7f8rbhQWr23QD57xvZZZThTIsXG%2FNoOTvqpdPZFpKeo59HorLnr%2FsrOSIVzCowc7DBjqkAcwv9NcfvTA7PMJqRTnrYmbJgbp1FOv10VvAxGY9oHYA84M6SkaDW9zjoX89uhBLwysh%2B%2BnnYaynWgsIug03LFR%2FrTekYGq91llfiiCDEuhPDed%2F5RkPKwjgigBDF%2F5PsLVCZ16CT98C02JFDqkz52Ia9btBCelqG8qt17j9L9yNV9DJhthTsn1RLnBWic6HkoLTWW9P9Iwdz%2F45NaiQYExQXKsC&X-Amz-Signature=b4204f36252ad3883f811c4512c96712c7b73609df219ca0b520d15f3eb4c020&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
-              "expiry_time": "2025-07-13T14:40:11.660Z"
+              "url": "/image/download/news/112a8c0e-cf8c-8063-bbb4-da44890294de-boystudyonline.jpg",
+              "expiry_time": "2025-09-04T01:48:52.641Z"
             }
           }
         ]
@@ -1745,8 +2471,8 @@
             "name": "schoolchairtable.webp",
             "type": "file",
             "file": {
-              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/ec34a095-6cd8-48a8-98c7-18f89317c7c4/40e06555-9f3d-489e-a6ea-5863c5cf6d3b/schoolchairtable.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46632WDS2HD%2F20250713%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250713T134011Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQCXkHjIODBR%2Fi%2BZqYA5t%2Bc5VbMZatvuWoXCQip%2FUbwfNQIhAMAoz6Wf6zb6w1L6FimwRWTnodc32T6ZuW8YhXOpTHxoKv8DCBUQABoMNjM3NDIzMTgzODA1IgzhhJmbKzo9ucoIiqIq3ANpS7Uldei1GowRJjyD7gq0%2FWl%2B9qxQx2Xo%2BJ%2BooS3MW9umKZwHfnZR8iTnlxa8gk5wNMw4yR186vV7qQVkc5FfCZBa%2FOLrN7C19D2ZCzq7UrcQEgZT2Ml8PIVLedTF%2BsuUaPCe2O6%2Bzz7thzKDIO1%2B1b64gGK5tiM7wIGNxTEGCLvCcL%2Frs5fMddn1b2hWEmf5aSBX7j49FT%2FikcqdgdCAKbFXz3aOoseM7rRfwyvgYWI6RN3e6Dxd2DvvONv9ez5jyEcV9zxlKKf7ghkGywgMlm4V2qdg0qRugtrs1IUtlsT8OE5knMq67TvtKoTTUs%2B05fi1yUq3290rqBxdYvyMTqRtsiJol%2F7wU1DqTRg4KO%2B0OIpg%2B45zBZLPG8D3wqAN46BcibG%2FpyCAf0EN8ApmFMJxq%2B9ebVPOsMhrHoGu8Ila91FS2TS8xnayFy0viBJL0BFxfQXVgLq3Zc5kGorTdL2%2FxmslZnFRLmbmPdtqfIi5iuMVobmiK7zOp6ebPuOu5uDUlMPAfcMbEzJFX9gAH%2FvLRspAQizCnd9iV9enoFVm587rUzp8yOTmpV18bjH7f8rbhQWr23QD57xvZZZThTIsXG%2FNoOTvqpdPZFpKeo59HorLnr%2FsrOSIVzCowc7DBjqkAcwv9NcfvTA7PMJqRTnrYmbJgbp1FOv10VvAxGY9oHYA84M6SkaDW9zjoX89uhBLwysh%2B%2BnnYaynWgsIug03LFR%2FrTekYGq91llfiiCDEuhPDed%2F5RkPKwjgigBDF%2F5PsLVCZ16CT98C02JFDqkz52Ia9btBCelqG8qt17j9L9yNV9DJhthTsn1RLnBWic6HkoLTWW9P9Iwdz%2F45NaiQYExQXKsC&X-Amz-Signature=840c9d5531fd61cc5f411757dec19b9df584d825b271a871e5957b7147aeed78&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
-              "expiry_time": "2025-07-13T14:40:11.660Z"
+              "url": "/image/download/news/112a8c0e-cf8c-8069-8e70-c39caa81b7b6-schoolchairtable.webp",
+              "expiry_time": "2025-09-04T01:48:52.641Z"
             }
           }
         ]
@@ -1897,8 +2623,8 @@
             "name": "tucsonundokai2020.webp",
             "type": "file",
             "file": {
-              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/ec34a095-6cd8-48a8-98c7-18f89317c7c4/68da7fb7-89dc-49f1-a996-59f51189d24b/tucsonundokai2020.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46632WDS2HD%2F20250713%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250713T134011Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQCXkHjIODBR%2Fi%2BZqYA5t%2Bc5VbMZatvuWoXCQip%2FUbwfNQIhAMAoz6Wf6zb6w1L6FimwRWTnodc32T6ZuW8YhXOpTHxoKv8DCBUQABoMNjM3NDIzMTgzODA1IgzhhJmbKzo9ucoIiqIq3ANpS7Uldei1GowRJjyD7gq0%2FWl%2B9qxQx2Xo%2BJ%2BooS3MW9umKZwHfnZR8iTnlxa8gk5wNMw4yR186vV7qQVkc5FfCZBa%2FOLrN7C19D2ZCzq7UrcQEgZT2Ml8PIVLedTF%2BsuUaPCe2O6%2Bzz7thzKDIO1%2B1b64gGK5tiM7wIGNxTEGCLvCcL%2Frs5fMddn1b2hWEmf5aSBX7j49FT%2FikcqdgdCAKbFXz3aOoseM7rRfwyvgYWI6RN3e6Dxd2DvvONv9ez5jyEcV9zxlKKf7ghkGywgMlm4V2qdg0qRugtrs1IUtlsT8OE5knMq67TvtKoTTUs%2B05fi1yUq3290rqBxdYvyMTqRtsiJol%2F7wU1DqTRg4KO%2B0OIpg%2B45zBZLPG8D3wqAN46BcibG%2FpyCAf0EN8ApmFMJxq%2B9ebVPOsMhrHoGu8Ila91FS2TS8xnayFy0viBJL0BFxfQXVgLq3Zc5kGorTdL2%2FxmslZnFRLmbmPdtqfIi5iuMVobmiK7zOp6ebPuOu5uDUlMPAfcMbEzJFX9gAH%2FvLRspAQizCnd9iV9enoFVm587rUzp8yOTmpV18bjH7f8rbhQWr23QD57xvZZZThTIsXG%2FNoOTvqpdPZFpKeo59HorLnr%2FsrOSIVzCowc7DBjqkAcwv9NcfvTA7PMJqRTnrYmbJgbp1FOv10VvAxGY9oHYA84M6SkaDW9zjoX89uhBLwysh%2B%2BnnYaynWgsIug03LFR%2FrTekYGq91llfiiCDEuhPDed%2F5RkPKwjgigBDF%2F5PsLVCZ16CT98C02JFDqkz52Ia9btBCelqG8qt17j9L9yNV9DJhthTsn1RLnBWic6HkoLTWW9P9Iwdz%2F45NaiQYExQXKsC&X-Amz-Signature=4f7bb6fbc60e400b9aa78f8f96a0d3910b45cbe6022d1c58699dca87e31ce3f0&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
-              "expiry_time": "2025-07-13T14:40:11.660Z"
+              "url": "/image/download/news/112a8c0e-cf8c-8047-9797-e58ca59ecd54-tucsonundokai2020.webp",
+              "expiry_time": "2025-09-04T01:48:52.641Z"
             }
           }
         ]
@@ -2054,8 +2780,8 @@
             "name": "kanken2022.webp",
             "type": "file",
             "file": {
-              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/ec34a095-6cd8-48a8-98c7-18f89317c7c4/afa3cfd3-59d0-4d3f-abb0-b426beeee406/kanken2022.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46632WDS2HD%2F20250713%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250713T134011Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQCXkHjIODBR%2Fi%2BZqYA5t%2Bc5VbMZatvuWoXCQip%2FUbwfNQIhAMAoz6Wf6zb6w1L6FimwRWTnodc32T6ZuW8YhXOpTHxoKv8DCBUQABoMNjM3NDIzMTgzODA1IgzhhJmbKzo9ucoIiqIq3ANpS7Uldei1GowRJjyD7gq0%2FWl%2B9qxQx2Xo%2BJ%2BooS3MW9umKZwHfnZR8iTnlxa8gk5wNMw4yR186vV7qQVkc5FfCZBa%2FOLrN7C19D2ZCzq7UrcQEgZT2Ml8PIVLedTF%2BsuUaPCe2O6%2Bzz7thzKDIO1%2B1b64gGK5tiM7wIGNxTEGCLvCcL%2Frs5fMddn1b2hWEmf5aSBX7j49FT%2FikcqdgdCAKbFXz3aOoseM7rRfwyvgYWI6RN3e6Dxd2DvvONv9ez5jyEcV9zxlKKf7ghkGywgMlm4V2qdg0qRugtrs1IUtlsT8OE5knMq67TvtKoTTUs%2B05fi1yUq3290rqBxdYvyMTqRtsiJol%2F7wU1DqTRg4KO%2B0OIpg%2B45zBZLPG8D3wqAN46BcibG%2FpyCAf0EN8ApmFMJxq%2B9ebVPOsMhrHoGu8Ila91FS2TS8xnayFy0viBJL0BFxfQXVgLq3Zc5kGorTdL2%2FxmslZnFRLmbmPdtqfIi5iuMVobmiK7zOp6ebPuOu5uDUlMPAfcMbEzJFX9gAH%2FvLRspAQizCnd9iV9enoFVm587rUzp8yOTmpV18bjH7f8rbhQWr23QD57xvZZZThTIsXG%2FNoOTvqpdPZFpKeo59HorLnr%2FsrOSIVzCowc7DBjqkAcwv9NcfvTA7PMJqRTnrYmbJgbp1FOv10VvAxGY9oHYA84M6SkaDW9zjoX89uhBLwysh%2B%2BnnYaynWgsIug03LFR%2FrTekYGq91llfiiCDEuhPDed%2F5RkPKwjgigBDF%2F5PsLVCZ16CT98C02JFDqkz52Ia9btBCelqG8qt17j9L9yNV9DJhthTsn1RLnBWic6HkoLTWW9P9Iwdz%2F45NaiQYExQXKsC&X-Amz-Signature=7a58b37f20845327f9a1be27bb18a165bd20348c387dafa7fd9ee4fe18f91998&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
-              "expiry_time": "2025-07-13T14:40:11.660Z"
+              "url": "/image/download/news/112a8c0e-cf8c-8027-968c-e601184cc884-kanken2022.webp",
+              "expiry_time": "2025-09-04T01:48:52.641Z"
             }
           }
         ]
@@ -2206,8 +2932,8 @@
             "name": "lastdayofschool2021.jpg",
             "type": "file",
             "file": {
-              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/ec34a095-6cd8-48a8-98c7-18f89317c7c4/6f5fc2ba-e040-4508-ad53-0bd62d304b45/lastdayofschool2021.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46632WDS2HD%2F20250713%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250713T134011Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQCXkHjIODBR%2Fi%2BZqYA5t%2Bc5VbMZatvuWoXCQip%2FUbwfNQIhAMAoz6Wf6zb6w1L6FimwRWTnodc32T6ZuW8YhXOpTHxoKv8DCBUQABoMNjM3NDIzMTgzODA1IgzhhJmbKzo9ucoIiqIq3ANpS7Uldei1GowRJjyD7gq0%2FWl%2B9qxQx2Xo%2BJ%2BooS3MW9umKZwHfnZR8iTnlxa8gk5wNMw4yR186vV7qQVkc5FfCZBa%2FOLrN7C19D2ZCzq7UrcQEgZT2Ml8PIVLedTF%2BsuUaPCe2O6%2Bzz7thzKDIO1%2B1b64gGK5tiM7wIGNxTEGCLvCcL%2Frs5fMddn1b2hWEmf5aSBX7j49FT%2FikcqdgdCAKbFXz3aOoseM7rRfwyvgYWI6RN3e6Dxd2DvvONv9ez5jyEcV9zxlKKf7ghkGywgMlm4V2qdg0qRugtrs1IUtlsT8OE5knMq67TvtKoTTUs%2B05fi1yUq3290rqBxdYvyMTqRtsiJol%2F7wU1DqTRg4KO%2B0OIpg%2B45zBZLPG8D3wqAN46BcibG%2FpyCAf0EN8ApmFMJxq%2B9ebVPOsMhrHoGu8Ila91FS2TS8xnayFy0viBJL0BFxfQXVgLq3Zc5kGorTdL2%2FxmslZnFRLmbmPdtqfIi5iuMVobmiK7zOp6ebPuOu5uDUlMPAfcMbEzJFX9gAH%2FvLRspAQizCnd9iV9enoFVm587rUzp8yOTmpV18bjH7f8rbhQWr23QD57xvZZZThTIsXG%2FNoOTvqpdPZFpKeo59HorLnr%2FsrOSIVzCowc7DBjqkAcwv9NcfvTA7PMJqRTnrYmbJgbp1FOv10VvAxGY9oHYA84M6SkaDW9zjoX89uhBLwysh%2B%2BnnYaynWgsIug03LFR%2FrTekYGq91llfiiCDEuhPDed%2F5RkPKwjgigBDF%2F5PsLVCZ16CT98C02JFDqkz52Ia9btBCelqG8qt17j9L9yNV9DJhthTsn1RLnBWic6HkoLTWW9P9Iwdz%2F45NaiQYExQXKsC&X-Amz-Signature=8949ec7e9a03fd5d8a0a3a7126b74ab594d732f088e97ba6e9c49bd5addad797&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
-              "expiry_time": "2025-07-13T14:40:11.660Z"
+              "url": "/image/download/news/112a8c0e-cf8c-80f5-8b6d-ce0e28639bcd-lastdayofschool2021.jpg",
+              "expiry_time": "2025-09-04T01:48:52.641Z"
             }
           }
         ]
@@ -2358,8 +3084,8 @@
             "name": "kanjikenteilogo.jpg",
             "type": "file",
             "file": {
-              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/ec34a095-6cd8-48a8-98c7-18f89317c7c4/0aedb206-224d-4ada-98ce-acc5c2e40c29/kanjikenteilogo.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46632WDS2HD%2F20250713%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250713T134011Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQCXkHjIODBR%2Fi%2BZqYA5t%2Bc5VbMZatvuWoXCQip%2FUbwfNQIhAMAoz6Wf6zb6w1L6FimwRWTnodc32T6ZuW8YhXOpTHxoKv8DCBUQABoMNjM3NDIzMTgzODA1IgzhhJmbKzo9ucoIiqIq3ANpS7Uldei1GowRJjyD7gq0%2FWl%2B9qxQx2Xo%2BJ%2BooS3MW9umKZwHfnZR8iTnlxa8gk5wNMw4yR186vV7qQVkc5FfCZBa%2FOLrN7C19D2ZCzq7UrcQEgZT2Ml8PIVLedTF%2BsuUaPCe2O6%2Bzz7thzKDIO1%2B1b64gGK5tiM7wIGNxTEGCLvCcL%2Frs5fMddn1b2hWEmf5aSBX7j49FT%2FikcqdgdCAKbFXz3aOoseM7rRfwyvgYWI6RN3e6Dxd2DvvONv9ez5jyEcV9zxlKKf7ghkGywgMlm4V2qdg0qRugtrs1IUtlsT8OE5knMq67TvtKoTTUs%2B05fi1yUq3290rqBxdYvyMTqRtsiJol%2F7wU1DqTRg4KO%2B0OIpg%2B45zBZLPG8D3wqAN46BcibG%2FpyCAf0EN8ApmFMJxq%2B9ebVPOsMhrHoGu8Ila91FS2TS8xnayFy0viBJL0BFxfQXVgLq3Zc5kGorTdL2%2FxmslZnFRLmbmPdtqfIi5iuMVobmiK7zOp6ebPuOu5uDUlMPAfcMbEzJFX9gAH%2FvLRspAQizCnd9iV9enoFVm587rUzp8yOTmpV18bjH7f8rbhQWr23QD57xvZZZThTIsXG%2FNoOTvqpdPZFpKeo59HorLnr%2FsrOSIVzCowc7DBjqkAcwv9NcfvTA7PMJqRTnrYmbJgbp1FOv10VvAxGY9oHYA84M6SkaDW9zjoX89uhBLwysh%2B%2BnnYaynWgsIug03LFR%2FrTekYGq91llfiiCDEuhPDed%2F5RkPKwjgigBDF%2F5PsLVCZ16CT98C02JFDqkz52Ia9btBCelqG8qt17j9L9yNV9DJhthTsn1RLnBWic6HkoLTWW9P9Iwdz%2F45NaiQYExQXKsC&X-Amz-Signature=7472f98a2e39af29bef0336e7592510e945e83a14ed8fa7c8036c4b4e1a20670&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
-              "expiry_time": "2025-07-13T14:40:11.660Z"
+              "url": "/image/download/news/112a8c0e-cf8c-8033-ac6e-fc3d0614a4d0-kanjikenteilogo.jpg",
+              "expiry_time": "2025-09-04T01:48:52.641Z"
             }
           }
         ]
@@ -2510,8 +3236,8 @@
             "name": "hitomimcknight.webp",
             "type": "file",
             "file": {
-              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/ec34a095-6cd8-48a8-98c7-18f89317c7c4/3daa0d79-211a-461b-a4a9-82716be9c358/hitomimcknight.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46632WDS2HD%2F20250713%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250713T134011Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQCXkHjIODBR%2Fi%2BZqYA5t%2Bc5VbMZatvuWoXCQip%2FUbwfNQIhAMAoz6Wf6zb6w1L6FimwRWTnodc32T6ZuW8YhXOpTHxoKv8DCBUQABoMNjM3NDIzMTgzODA1IgzhhJmbKzo9ucoIiqIq3ANpS7Uldei1GowRJjyD7gq0%2FWl%2B9qxQx2Xo%2BJ%2BooS3MW9umKZwHfnZR8iTnlxa8gk5wNMw4yR186vV7qQVkc5FfCZBa%2FOLrN7C19D2ZCzq7UrcQEgZT2Ml8PIVLedTF%2BsuUaPCe2O6%2Bzz7thzKDIO1%2B1b64gGK5tiM7wIGNxTEGCLvCcL%2Frs5fMddn1b2hWEmf5aSBX7j49FT%2FikcqdgdCAKbFXz3aOoseM7rRfwyvgYWI6RN3e6Dxd2DvvONv9ez5jyEcV9zxlKKf7ghkGywgMlm4V2qdg0qRugtrs1IUtlsT8OE5knMq67TvtKoTTUs%2B05fi1yUq3290rqBxdYvyMTqRtsiJol%2F7wU1DqTRg4KO%2B0OIpg%2B45zBZLPG8D3wqAN46BcibG%2FpyCAf0EN8ApmFMJxq%2B9ebVPOsMhrHoGu8Ila91FS2TS8xnayFy0viBJL0BFxfQXVgLq3Zc5kGorTdL2%2FxmslZnFRLmbmPdtqfIi5iuMVobmiK7zOp6ebPuOu5uDUlMPAfcMbEzJFX9gAH%2FvLRspAQizCnd9iV9enoFVm587rUzp8yOTmpV18bjH7f8rbhQWr23QD57xvZZZThTIsXG%2FNoOTvqpdPZFpKeo59HorLnr%2FsrOSIVzCowc7DBjqkAcwv9NcfvTA7PMJqRTnrYmbJgbp1FOv10VvAxGY9oHYA84M6SkaDW9zjoX89uhBLwysh%2B%2BnnYaynWgsIug03LFR%2FrTekYGq91llfiiCDEuhPDed%2F5RkPKwjgigBDF%2F5PsLVCZ16CT98C02JFDqkz52Ia9btBCelqG8qt17j9L9yNV9DJhthTsn1RLnBWic6HkoLTWW9P9Iwdz%2F45NaiQYExQXKsC&X-Amz-Signature=eb97ca98efe6989ff8276830d7132f9374f2925c54101c34711205c4787a2d01&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
-              "expiry_time": "2025-07-13T14:40:11.660Z"
+              "url": "/image/download/news/112a8c0e-cf8c-800f-abed-e7a03eae0e70-hitomimcknight.webp",
+              "expiry_time": "2025-09-04T01:48:52.641Z"
             }
           }
         ]
@@ -2667,8 +3393,8 @@
             "name": "schoolchildrensmiles.webp",
             "type": "file",
             "file": {
-              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/ec34a095-6cd8-48a8-98c7-18f89317c7c4/5e8b13e8-6c90-43a9-b3a0-a3a6947839cf/schoolchildrensmiles.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46632WDS2HD%2F20250713%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250713T134011Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQCXkHjIODBR%2Fi%2BZqYA5t%2Bc5VbMZatvuWoXCQip%2FUbwfNQIhAMAoz6Wf6zb6w1L6FimwRWTnodc32T6ZuW8YhXOpTHxoKv8DCBUQABoMNjM3NDIzMTgzODA1IgzhhJmbKzo9ucoIiqIq3ANpS7Uldei1GowRJjyD7gq0%2FWl%2B9qxQx2Xo%2BJ%2BooS3MW9umKZwHfnZR8iTnlxa8gk5wNMw4yR186vV7qQVkc5FfCZBa%2FOLrN7C19D2ZCzq7UrcQEgZT2Ml8PIVLedTF%2BsuUaPCe2O6%2Bzz7thzKDIO1%2B1b64gGK5tiM7wIGNxTEGCLvCcL%2Frs5fMddn1b2hWEmf5aSBX7j49FT%2FikcqdgdCAKbFXz3aOoseM7rRfwyvgYWI6RN3e6Dxd2DvvONv9ez5jyEcV9zxlKKf7ghkGywgMlm4V2qdg0qRugtrs1IUtlsT8OE5knMq67TvtKoTTUs%2B05fi1yUq3290rqBxdYvyMTqRtsiJol%2F7wU1DqTRg4KO%2B0OIpg%2B45zBZLPG8D3wqAN46BcibG%2FpyCAf0EN8ApmFMJxq%2B9ebVPOsMhrHoGu8Ila91FS2TS8xnayFy0viBJL0BFxfQXVgLq3Zc5kGorTdL2%2FxmslZnFRLmbmPdtqfIi5iuMVobmiK7zOp6ebPuOu5uDUlMPAfcMbEzJFX9gAH%2FvLRspAQizCnd9iV9enoFVm587rUzp8yOTmpV18bjH7f8rbhQWr23QD57xvZZZThTIsXG%2FNoOTvqpdPZFpKeo59HorLnr%2FsrOSIVzCowc7DBjqkAcwv9NcfvTA7PMJqRTnrYmbJgbp1FOv10VvAxGY9oHYA84M6SkaDW9zjoX89uhBLwysh%2B%2BnnYaynWgsIug03LFR%2FrTekYGq91llfiiCDEuhPDed%2F5RkPKwjgigBDF%2F5PsLVCZ16CT98C02JFDqkz52Ia9btBCelqG8qt17j9L9yNV9DJhthTsn1RLnBWic6HkoLTWW9P9Iwdz%2F45NaiQYExQXKsC&X-Amz-Signature=23f89cb8c8544151ed0b3037c1b1bffce61196446ff547f99cdeea247e897f91&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
-              "expiry_time": "2025-07-13T14:40:11.660Z"
+              "url": "/image/download/news/112a8c0e-cf8c-8033-8993-dd0d3afd1728-schoolchildrensmiles.webp",
+              "expiry_time": "2025-09-04T01:48:52.641Z"
             }
           }
         ]
@@ -2819,8 +3545,8 @@
             "name": "childreninclassroom.webp",
             "type": "file",
             "file": {
-              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/ec34a095-6cd8-48a8-98c7-18f89317c7c4/26fe76c1-468f-4bb6-a5f7-381bc9f2fad8/childreninclassroom.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46632WDS2HD%2F20250713%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250713T134011Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQCXkHjIODBR%2Fi%2BZqYA5t%2Bc5VbMZatvuWoXCQip%2FUbwfNQIhAMAoz6Wf6zb6w1L6FimwRWTnodc32T6ZuW8YhXOpTHxoKv8DCBUQABoMNjM3NDIzMTgzODA1IgzhhJmbKzo9ucoIiqIq3ANpS7Uldei1GowRJjyD7gq0%2FWl%2B9qxQx2Xo%2BJ%2BooS3MW9umKZwHfnZR8iTnlxa8gk5wNMw4yR186vV7qQVkc5FfCZBa%2FOLrN7C19D2ZCzq7UrcQEgZT2Ml8PIVLedTF%2BsuUaPCe2O6%2Bzz7thzKDIO1%2B1b64gGK5tiM7wIGNxTEGCLvCcL%2Frs5fMddn1b2hWEmf5aSBX7j49FT%2FikcqdgdCAKbFXz3aOoseM7rRfwyvgYWI6RN3e6Dxd2DvvONv9ez5jyEcV9zxlKKf7ghkGywgMlm4V2qdg0qRugtrs1IUtlsT8OE5knMq67TvtKoTTUs%2B05fi1yUq3290rqBxdYvyMTqRtsiJol%2F7wU1DqTRg4KO%2B0OIpg%2B45zBZLPG8D3wqAN46BcibG%2FpyCAf0EN8ApmFMJxq%2B9ebVPOsMhrHoGu8Ila91FS2TS8xnayFy0viBJL0BFxfQXVgLq3Zc5kGorTdL2%2FxmslZnFRLmbmPdtqfIi5iuMVobmiK7zOp6ebPuOu5uDUlMPAfcMbEzJFX9gAH%2FvLRspAQizCnd9iV9enoFVm587rUzp8yOTmpV18bjH7f8rbhQWr23QD57xvZZZThTIsXG%2FNoOTvqpdPZFpKeo59HorLnr%2FsrOSIVzCowc7DBjqkAcwv9NcfvTA7PMJqRTnrYmbJgbp1FOv10VvAxGY9oHYA84M6SkaDW9zjoX89uhBLwysh%2B%2BnnYaynWgsIug03LFR%2FrTekYGq91llfiiCDEuhPDed%2F5RkPKwjgigBDF%2F5PsLVCZ16CT98C02JFDqkz52Ia9btBCelqG8qt17j9L9yNV9DJhthTsn1RLnBWic6HkoLTWW9P9Iwdz%2F45NaiQYExQXKsC&X-Amz-Signature=2ab6344720c2fdff8f670ddda00793e9f9d02ce1071fb37d8c70fa2f47643539&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
-              "expiry_time": "2025-07-13T14:40:11.660Z"
+              "url": "/image/download/news/112a8c0e-cf8c-800a-83bb-f34240a26317-childreninclassroom.webp",
+              "expiry_time": "2025-09-04T01:48:52.641Z"
             }
           }
         ]
@@ -2976,8 +3702,8 @@
             "name": "tucsonundokai2021.webp",
             "type": "file",
             "file": {
-              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/ec34a095-6cd8-48a8-98c7-18f89317c7c4/d2f257b7-6ac3-49d6-8521-6a918870716d/tucsonundokai2021.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46632WDS2HD%2F20250713%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250713T134011Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQCXkHjIODBR%2Fi%2BZqYA5t%2Bc5VbMZatvuWoXCQip%2FUbwfNQIhAMAoz6Wf6zb6w1L6FimwRWTnodc32T6ZuW8YhXOpTHxoKv8DCBUQABoMNjM3NDIzMTgzODA1IgzhhJmbKzo9ucoIiqIq3ANpS7Uldei1GowRJjyD7gq0%2FWl%2B9qxQx2Xo%2BJ%2BooS3MW9umKZwHfnZR8iTnlxa8gk5wNMw4yR186vV7qQVkc5FfCZBa%2FOLrN7C19D2ZCzq7UrcQEgZT2Ml8PIVLedTF%2BsuUaPCe2O6%2Bzz7thzKDIO1%2B1b64gGK5tiM7wIGNxTEGCLvCcL%2Frs5fMddn1b2hWEmf5aSBX7j49FT%2FikcqdgdCAKbFXz3aOoseM7rRfwyvgYWI6RN3e6Dxd2DvvONv9ez5jyEcV9zxlKKf7ghkGywgMlm4V2qdg0qRugtrs1IUtlsT8OE5knMq67TvtKoTTUs%2B05fi1yUq3290rqBxdYvyMTqRtsiJol%2F7wU1DqTRg4KO%2B0OIpg%2B45zBZLPG8D3wqAN46BcibG%2FpyCAf0EN8ApmFMJxq%2B9ebVPOsMhrHoGu8Ila91FS2TS8xnayFy0viBJL0BFxfQXVgLq3Zc5kGorTdL2%2FxmslZnFRLmbmPdtqfIi5iuMVobmiK7zOp6ebPuOu5uDUlMPAfcMbEzJFX9gAH%2FvLRspAQizCnd9iV9enoFVm587rUzp8yOTmpV18bjH7f8rbhQWr23QD57xvZZZThTIsXG%2FNoOTvqpdPZFpKeo59HorLnr%2FsrOSIVzCowc7DBjqkAcwv9NcfvTA7PMJqRTnrYmbJgbp1FOv10VvAxGY9oHYA84M6SkaDW9zjoX89uhBLwysh%2B%2BnnYaynWgsIug03LFR%2FrTekYGq91llfiiCDEuhPDed%2F5RkPKwjgigBDF%2F5PsLVCZ16CT98C02JFDqkz52Ia9btBCelqG8qt17j9L9yNV9DJhthTsn1RLnBWic6HkoLTWW9P9Iwdz%2F45NaiQYExQXKsC&X-Amz-Signature=58b70895b84b07a9e2cda34f12b3c25799bd57485e76489a20c35a4bff49f153&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
-              "expiry_time": "2025-07-13T14:40:11.660Z"
+              "url": "/image/download/news/112a8c0e-cf8c-80f9-9a0d-cb47c5c91e9c-tucsonundokai2021.webp",
+              "expiry_time": "2025-09-04T01:48:52.641Z"
             }
           }
         ]
@@ -3128,8 +3854,8 @@
             "name": "sponsorthanks.webp",
             "type": "file",
             "file": {
-              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/ec34a095-6cd8-48a8-98c7-18f89317c7c4/22f4be9e-9ead-413b-8988-63ddb625676c/sponsorthanks.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46632WDS2HD%2F20250713%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250713T134011Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQCXkHjIODBR%2Fi%2BZqYA5t%2Bc5VbMZatvuWoXCQip%2FUbwfNQIhAMAoz6Wf6zb6w1L6FimwRWTnodc32T6ZuW8YhXOpTHxoKv8DCBUQABoMNjM3NDIzMTgzODA1IgzhhJmbKzo9ucoIiqIq3ANpS7Uldei1GowRJjyD7gq0%2FWl%2B9qxQx2Xo%2BJ%2BooS3MW9umKZwHfnZR8iTnlxa8gk5wNMw4yR186vV7qQVkc5FfCZBa%2FOLrN7C19D2ZCzq7UrcQEgZT2Ml8PIVLedTF%2BsuUaPCe2O6%2Bzz7thzKDIO1%2B1b64gGK5tiM7wIGNxTEGCLvCcL%2Frs5fMddn1b2hWEmf5aSBX7j49FT%2FikcqdgdCAKbFXz3aOoseM7rRfwyvgYWI6RN3e6Dxd2DvvONv9ez5jyEcV9zxlKKf7ghkGywgMlm4V2qdg0qRugtrs1IUtlsT8OE5knMq67TvtKoTTUs%2B05fi1yUq3290rqBxdYvyMTqRtsiJol%2F7wU1DqTRg4KO%2B0OIpg%2B45zBZLPG8D3wqAN46BcibG%2FpyCAf0EN8ApmFMJxq%2B9ebVPOsMhrHoGu8Ila91FS2TS8xnayFy0viBJL0BFxfQXVgLq3Zc5kGorTdL2%2FxmslZnFRLmbmPdtqfIi5iuMVobmiK7zOp6ebPuOu5uDUlMPAfcMbEzJFX9gAH%2FvLRspAQizCnd9iV9enoFVm587rUzp8yOTmpV18bjH7f8rbhQWr23QD57xvZZZThTIsXG%2FNoOTvqpdPZFpKeo59HorLnr%2FsrOSIVzCowc7DBjqkAcwv9NcfvTA7PMJqRTnrYmbJgbp1FOv10VvAxGY9oHYA84M6SkaDW9zjoX89uhBLwysh%2B%2BnnYaynWgsIug03LFR%2FrTekYGq91llfiiCDEuhPDed%2F5RkPKwjgigBDF%2F5PsLVCZ16CT98C02JFDqkz52Ia9btBCelqG8qt17j9L9yNV9DJhthTsn1RLnBWic6HkoLTWW9P9Iwdz%2F45NaiQYExQXKsC&X-Amz-Signature=2f22ca82b47789cdd47a6f9710f185f99576af6e13762bea53bd0ce45abf24bb&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
-              "expiry_time": "2025-07-13T14:40:11.660Z"
+              "url": "/image/download/news/112a8c0e-cf8c-8081-9293-cf90f6aefa52-sponsorthanks.webp",
+              "expiry_time": "2025-09-04T01:48:52.641Z"
             }
           }
         ]
@@ -3285,8 +4011,8 @@
             "name": "kanjikentei2023.webp",
             "type": "file",
             "file": {
-              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/ec34a095-6cd8-48a8-98c7-18f89317c7c4/0344b9be-c200-4df9-9908-03d2a5b09346/kanjikentei2023.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46632WDS2HD%2F20250713%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250713T134011Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQCXkHjIODBR%2Fi%2BZqYA5t%2Bc5VbMZatvuWoXCQip%2FUbwfNQIhAMAoz6Wf6zb6w1L6FimwRWTnodc32T6ZuW8YhXOpTHxoKv8DCBUQABoMNjM3NDIzMTgzODA1IgzhhJmbKzo9ucoIiqIq3ANpS7Uldei1GowRJjyD7gq0%2FWl%2B9qxQx2Xo%2BJ%2BooS3MW9umKZwHfnZR8iTnlxa8gk5wNMw4yR186vV7qQVkc5FfCZBa%2FOLrN7C19D2ZCzq7UrcQEgZT2Ml8PIVLedTF%2BsuUaPCe2O6%2Bzz7thzKDIO1%2B1b64gGK5tiM7wIGNxTEGCLvCcL%2Frs5fMddn1b2hWEmf5aSBX7j49FT%2FikcqdgdCAKbFXz3aOoseM7rRfwyvgYWI6RN3e6Dxd2DvvONv9ez5jyEcV9zxlKKf7ghkGywgMlm4V2qdg0qRugtrs1IUtlsT8OE5knMq67TvtKoTTUs%2B05fi1yUq3290rqBxdYvyMTqRtsiJol%2F7wU1DqTRg4KO%2B0OIpg%2B45zBZLPG8D3wqAN46BcibG%2FpyCAf0EN8ApmFMJxq%2B9ebVPOsMhrHoGu8Ila91FS2TS8xnayFy0viBJL0BFxfQXVgLq3Zc5kGorTdL2%2FxmslZnFRLmbmPdtqfIi5iuMVobmiK7zOp6ebPuOu5uDUlMPAfcMbEzJFX9gAH%2FvLRspAQizCnd9iV9enoFVm587rUzp8yOTmpV18bjH7f8rbhQWr23QD57xvZZZThTIsXG%2FNoOTvqpdPZFpKeo59HorLnr%2FsrOSIVzCowc7DBjqkAcwv9NcfvTA7PMJqRTnrYmbJgbp1FOv10VvAxGY9oHYA84M6SkaDW9zjoX89uhBLwysh%2B%2BnnYaynWgsIug03LFR%2FrTekYGq91llfiiCDEuhPDed%2F5RkPKwjgigBDF%2F5PsLVCZ16CT98C02JFDqkz52Ia9btBCelqG8qt17j9L9yNV9DJhthTsn1RLnBWic6HkoLTWW9P9Iwdz%2F45NaiQYExQXKsC&X-Amz-Signature=64cc7813de9b78fd4c86d44a987f3bc3bf17a8d5dbb426af49d1b1de48764fe1&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
-              "expiry_time": "2025-07-13T14:40:11.660Z"
+              "url": "/image/download/news/112a8c0e-cf8c-8081-ba97-ef38f356233d-kanjikentei2023.webp",
+              "expiry_time": "2025-09-04T01:48:52.641Z"
             }
           }
         ]
@@ -3437,8 +4163,8 @@
             "name": "arizonamatsurilogo.png",
             "type": "file",
             "file": {
-              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/ec34a095-6cd8-48a8-98c7-18f89317c7c4/82f2c706-430c-40b5-8309-55b8468f4ae5/arizonamatsurilogo.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46632WDS2HD%2F20250713%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250713T134011Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQCXkHjIODBR%2Fi%2BZqYA5t%2Bc5VbMZatvuWoXCQip%2FUbwfNQIhAMAoz6Wf6zb6w1L6FimwRWTnodc32T6ZuW8YhXOpTHxoKv8DCBUQABoMNjM3NDIzMTgzODA1IgzhhJmbKzo9ucoIiqIq3ANpS7Uldei1GowRJjyD7gq0%2FWl%2B9qxQx2Xo%2BJ%2BooS3MW9umKZwHfnZR8iTnlxa8gk5wNMw4yR186vV7qQVkc5FfCZBa%2FOLrN7C19D2ZCzq7UrcQEgZT2Ml8PIVLedTF%2BsuUaPCe2O6%2Bzz7thzKDIO1%2B1b64gGK5tiM7wIGNxTEGCLvCcL%2Frs5fMddn1b2hWEmf5aSBX7j49FT%2FikcqdgdCAKbFXz3aOoseM7rRfwyvgYWI6RN3e6Dxd2DvvONv9ez5jyEcV9zxlKKf7ghkGywgMlm4V2qdg0qRugtrs1IUtlsT8OE5knMq67TvtKoTTUs%2B05fi1yUq3290rqBxdYvyMTqRtsiJol%2F7wU1DqTRg4KO%2B0OIpg%2B45zBZLPG8D3wqAN46BcibG%2FpyCAf0EN8ApmFMJxq%2B9ebVPOsMhrHoGu8Ila91FS2TS8xnayFy0viBJL0BFxfQXVgLq3Zc5kGorTdL2%2FxmslZnFRLmbmPdtqfIi5iuMVobmiK7zOp6ebPuOu5uDUlMPAfcMbEzJFX9gAH%2FvLRspAQizCnd9iV9enoFVm587rUzp8yOTmpV18bjH7f8rbhQWr23QD57xvZZZThTIsXG%2FNoOTvqpdPZFpKeo59HorLnr%2FsrOSIVzCowc7DBjqkAcwv9NcfvTA7PMJqRTnrYmbJgbp1FOv10VvAxGY9oHYA84M6SkaDW9zjoX89uhBLwysh%2B%2BnnYaynWgsIug03LFR%2FrTekYGq91llfiiCDEuhPDed%2F5RkPKwjgigBDF%2F5PsLVCZ16CT98C02JFDqkz52Ia9btBCelqG8qt17j9L9yNV9DJhthTsn1RLnBWic6HkoLTWW9P9Iwdz%2F45NaiQYExQXKsC&X-Amz-Signature=5a0997196498046034d0e698dfc03fa59dde08a3b178b2c7bf63dec46e9bb7d9&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
-              "expiry_time": "2025-07-13T14:40:11.660Z"
+              "url": "/image/download/news/110a8c0e-cf8c-80cc-9cd5-f9546949b571-arizonamatsurilogo.png",
+              "expiry_time": "2025-09-04T01:48:52.727Z"
             }
           }
         ]
@@ -3589,8 +4315,8 @@
             "name": "supportinghands.webp",
             "type": "file",
             "file": {
-              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/ec34a095-6cd8-48a8-98c7-18f89317c7c4/e7cfb438-bccf-4d6d-916e-54469f648be2/supportinghands.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46632WDS2HD%2F20250713%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250713T134011Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQCXkHjIODBR%2Fi%2BZqYA5t%2Bc5VbMZatvuWoXCQip%2FUbwfNQIhAMAoz6Wf6zb6w1L6FimwRWTnodc32T6ZuW8YhXOpTHxoKv8DCBUQABoMNjM3NDIzMTgzODA1IgzhhJmbKzo9ucoIiqIq3ANpS7Uldei1GowRJjyD7gq0%2FWl%2B9qxQx2Xo%2BJ%2BooS3MW9umKZwHfnZR8iTnlxa8gk5wNMw4yR186vV7qQVkc5FfCZBa%2FOLrN7C19D2ZCzq7UrcQEgZT2Ml8PIVLedTF%2BsuUaPCe2O6%2Bzz7thzKDIO1%2B1b64gGK5tiM7wIGNxTEGCLvCcL%2Frs5fMddn1b2hWEmf5aSBX7j49FT%2FikcqdgdCAKbFXz3aOoseM7rRfwyvgYWI6RN3e6Dxd2DvvONv9ez5jyEcV9zxlKKf7ghkGywgMlm4V2qdg0qRugtrs1IUtlsT8OE5knMq67TvtKoTTUs%2B05fi1yUq3290rqBxdYvyMTqRtsiJol%2F7wU1DqTRg4KO%2B0OIpg%2B45zBZLPG8D3wqAN46BcibG%2FpyCAf0EN8ApmFMJxq%2B9ebVPOsMhrHoGu8Ila91FS2TS8xnayFy0viBJL0BFxfQXVgLq3Zc5kGorTdL2%2FxmslZnFRLmbmPdtqfIi5iuMVobmiK7zOp6ebPuOu5uDUlMPAfcMbEzJFX9gAH%2FvLRspAQizCnd9iV9enoFVm587rUzp8yOTmpV18bjH7f8rbhQWr23QD57xvZZZThTIsXG%2FNoOTvqpdPZFpKeo59HorLnr%2FsrOSIVzCowc7DBjqkAcwv9NcfvTA7PMJqRTnrYmbJgbp1FOv10VvAxGY9oHYA84M6SkaDW9zjoX89uhBLwysh%2B%2BnnYaynWgsIug03LFR%2FrTekYGq91llfiiCDEuhPDed%2F5RkPKwjgigBDF%2F5PsLVCZ16CT98C02JFDqkz52Ia9btBCelqG8qt17j9L9yNV9DJhthTsn1RLnBWic6HkoLTWW9P9Iwdz%2F45NaiQYExQXKsC&X-Amz-Signature=9210c1fae1b57f17a79113e7ed597e282ed0e71ce146afd70fc1ef079c3c88c0&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
-              "expiry_time": "2025-07-13T14:40:11.660Z"
+              "url": "/image/download/news/110a8c0e-cf8c-80dd-afcb-f422b241bd32-supportinghands.webp",
+              "expiry_time": "2025-09-04T01:48:52.727Z"
             }
           }
         ]
@@ -3746,8 +4472,8 @@
             "name": "tucsonundokai2023.webp",
             "type": "file",
             "file": {
-              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/ec34a095-6cd8-48a8-98c7-18f89317c7c4/75bfe088-fd81-466d-9714-3707a19c8db6/tucsonundokai2023.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46632WDS2HD%2F20250713%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250713T134011Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQCXkHjIODBR%2Fi%2BZqYA5t%2Bc5VbMZatvuWoXCQip%2FUbwfNQIhAMAoz6Wf6zb6w1L6FimwRWTnodc32T6ZuW8YhXOpTHxoKv8DCBUQABoMNjM3NDIzMTgzODA1IgzhhJmbKzo9ucoIiqIq3ANpS7Uldei1GowRJjyD7gq0%2FWl%2B9qxQx2Xo%2BJ%2BooS3MW9umKZwHfnZR8iTnlxa8gk5wNMw4yR186vV7qQVkc5FfCZBa%2FOLrN7C19D2ZCzq7UrcQEgZT2Ml8PIVLedTF%2BsuUaPCe2O6%2Bzz7thzKDIO1%2B1b64gGK5tiM7wIGNxTEGCLvCcL%2Frs5fMddn1b2hWEmf5aSBX7j49FT%2FikcqdgdCAKbFXz3aOoseM7rRfwyvgYWI6RN3e6Dxd2DvvONv9ez5jyEcV9zxlKKf7ghkGywgMlm4V2qdg0qRugtrs1IUtlsT8OE5knMq67TvtKoTTUs%2B05fi1yUq3290rqBxdYvyMTqRtsiJol%2F7wU1DqTRg4KO%2B0OIpg%2B45zBZLPG8D3wqAN46BcibG%2FpyCAf0EN8ApmFMJxq%2B9ebVPOsMhrHoGu8Ila91FS2TS8xnayFy0viBJL0BFxfQXVgLq3Zc5kGorTdL2%2FxmslZnFRLmbmPdtqfIi5iuMVobmiK7zOp6ebPuOu5uDUlMPAfcMbEzJFX9gAH%2FvLRspAQizCnd9iV9enoFVm587rUzp8yOTmpV18bjH7f8rbhQWr23QD57xvZZZThTIsXG%2FNoOTvqpdPZFpKeo59HorLnr%2FsrOSIVzCowc7DBjqkAcwv9NcfvTA7PMJqRTnrYmbJgbp1FOv10VvAxGY9oHYA84M6SkaDW9zjoX89uhBLwysh%2B%2BnnYaynWgsIug03LFR%2FrTekYGq91llfiiCDEuhPDed%2F5RkPKwjgigBDF%2F5PsLVCZ16CT98C02JFDqkz52Ia9btBCelqG8qt17j9L9yNV9DJhthTsn1RLnBWic6HkoLTWW9P9Iwdz%2F45NaiQYExQXKsC&X-Amz-Signature=bbf934c6835c8e1c044023fd55662be092d60c1387e49c622c301b8fb8bfe49b&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
-              "expiry_time": "2025-07-13T14:40:11.660Z"
+              "url": "/image/download/news/110a8c0e-cf8c-8035-98f6-d438d58ac188-tucsonundokai2023.webp",
+              "expiry_time": "2025-09-04T01:48:52.727Z"
             }
           }
         ]
@@ -3903,8 +4629,8 @@
             "name": "kanjikentei2024.png",
             "type": "file",
             "file": {
-              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/ec34a095-6cd8-48a8-98c7-18f89317c7c4/0677076b-4462-4e37-86de-048e803e7dcf/kanjikentei2024.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46632WDS2HD%2F20250713%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250713T134012Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQCXkHjIODBR%2Fi%2BZqYA5t%2Bc5VbMZatvuWoXCQip%2FUbwfNQIhAMAoz6Wf6zb6w1L6FimwRWTnodc32T6ZuW8YhXOpTHxoKv8DCBUQABoMNjM3NDIzMTgzODA1IgzhhJmbKzo9ucoIiqIq3ANpS7Uldei1GowRJjyD7gq0%2FWl%2B9qxQx2Xo%2BJ%2BooS3MW9umKZwHfnZR8iTnlxa8gk5wNMw4yR186vV7qQVkc5FfCZBa%2FOLrN7C19D2ZCzq7UrcQEgZT2Ml8PIVLedTF%2BsuUaPCe2O6%2Bzz7thzKDIO1%2B1b64gGK5tiM7wIGNxTEGCLvCcL%2Frs5fMddn1b2hWEmf5aSBX7j49FT%2FikcqdgdCAKbFXz3aOoseM7rRfwyvgYWI6RN3e6Dxd2DvvONv9ez5jyEcV9zxlKKf7ghkGywgMlm4V2qdg0qRugtrs1IUtlsT8OE5knMq67TvtKoTTUs%2B05fi1yUq3290rqBxdYvyMTqRtsiJol%2F7wU1DqTRg4KO%2B0OIpg%2B45zBZLPG8D3wqAN46BcibG%2FpyCAf0EN8ApmFMJxq%2B9ebVPOsMhrHoGu8Ila91FS2TS8xnayFy0viBJL0BFxfQXVgLq3Zc5kGorTdL2%2FxmslZnFRLmbmPdtqfIi5iuMVobmiK7zOp6ebPuOu5uDUlMPAfcMbEzJFX9gAH%2FvLRspAQizCnd9iV9enoFVm587rUzp8yOTmpV18bjH7f8rbhQWr23QD57xvZZZThTIsXG%2FNoOTvqpdPZFpKeo59HorLnr%2FsrOSIVzCowc7DBjqkAcwv9NcfvTA7PMJqRTnrYmbJgbp1FOv10VvAxGY9oHYA84M6SkaDW9zjoX89uhBLwysh%2B%2BnnYaynWgsIug03LFR%2FrTekYGq91llfiiCDEuhPDed%2F5RkPKwjgigBDF%2F5PsLVCZ16CT98C02JFDqkz52Ia9btBCelqG8qt17j9L9yNV9DJhthTsn1RLnBWic6HkoLTWW9P9Iwdz%2F45NaiQYExQXKsC&X-Amz-Signature=5549e493fdf182de80d3b7cd6e9fb7939954254f6b50c93765b6853c94439e65&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
-              "expiry_time": "2025-07-13T14:40:12.079Z"
+              "url": "/image/download/news/110a8c0e-cf8c-805b-a3bf-cba51426fdfb-kanjikentei2024.png",
+              "expiry_time": "2025-09-04T01:48:52.727Z"
             }
           }
         ]
@@ -4060,24 +4786,24 @@
             "name": "notoearthquake1.jpg",
             "type": "file",
             "file": {
-              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/ec34a095-6cd8-48a8-98c7-18f89317c7c4/3c4a1ba0-8a33-4c94-9178-bec1184b927d/notoearthquake1.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46632WDS2HD%2F20250713%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250713T134012Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQCXkHjIODBR%2Fi%2BZqYA5t%2Bc5VbMZatvuWoXCQip%2FUbwfNQIhAMAoz6Wf6zb6w1L6FimwRWTnodc32T6ZuW8YhXOpTHxoKv8DCBUQABoMNjM3NDIzMTgzODA1IgzhhJmbKzo9ucoIiqIq3ANpS7Uldei1GowRJjyD7gq0%2FWl%2B9qxQx2Xo%2BJ%2BooS3MW9umKZwHfnZR8iTnlxa8gk5wNMw4yR186vV7qQVkc5FfCZBa%2FOLrN7C19D2ZCzq7UrcQEgZT2Ml8PIVLedTF%2BsuUaPCe2O6%2Bzz7thzKDIO1%2B1b64gGK5tiM7wIGNxTEGCLvCcL%2Frs5fMddn1b2hWEmf5aSBX7j49FT%2FikcqdgdCAKbFXz3aOoseM7rRfwyvgYWI6RN3e6Dxd2DvvONv9ez5jyEcV9zxlKKf7ghkGywgMlm4V2qdg0qRugtrs1IUtlsT8OE5knMq67TvtKoTTUs%2B05fi1yUq3290rqBxdYvyMTqRtsiJol%2F7wU1DqTRg4KO%2B0OIpg%2B45zBZLPG8D3wqAN46BcibG%2FpyCAf0EN8ApmFMJxq%2B9ebVPOsMhrHoGu8Ila91FS2TS8xnayFy0viBJL0BFxfQXVgLq3Zc5kGorTdL2%2FxmslZnFRLmbmPdtqfIi5iuMVobmiK7zOp6ebPuOu5uDUlMPAfcMbEzJFX9gAH%2FvLRspAQizCnd9iV9enoFVm587rUzp8yOTmpV18bjH7f8rbhQWr23QD57xvZZZThTIsXG%2FNoOTvqpdPZFpKeo59HorLnr%2FsrOSIVzCowc7DBjqkAcwv9NcfvTA7PMJqRTnrYmbJgbp1FOv10VvAxGY9oHYA84M6SkaDW9zjoX89uhBLwysh%2B%2BnnYaynWgsIug03LFR%2FrTekYGq91llfiiCDEuhPDed%2F5RkPKwjgigBDF%2F5PsLVCZ16CT98C02JFDqkz52Ia9btBCelqG8qt17j9L9yNV9DJhthTsn1RLnBWic6HkoLTWW9P9Iwdz%2F45NaiQYExQXKsC&X-Amz-Signature=78e7d3a4aa63bde9dc6f49f0c8c043d53bd9661dc2e8e574be9a2db8743bc64c&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
-              "expiry_time": "2025-07-13T14:40:12.079Z"
+              "url": "/image/download/news/110a8c0e-cf8c-804e-b7d6-dfe14f5651ea-notoearthquake1.jpg",
+              "expiry_time": "2025-09-04T01:48:52.727Z"
             }
           },
           {
             "name": "notoearthquake2.jpg",
             "type": "file",
             "file": {
-              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/ec34a095-6cd8-48a8-98c7-18f89317c7c4/931747cb-252d-4243-bcc7-cddfa75855e0/notoearthquake2.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46632WDS2HD%2F20250713%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250713T134012Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQCXkHjIODBR%2Fi%2BZqYA5t%2Bc5VbMZatvuWoXCQip%2FUbwfNQIhAMAoz6Wf6zb6w1L6FimwRWTnodc32T6ZuW8YhXOpTHxoKv8DCBUQABoMNjM3NDIzMTgzODA1IgzhhJmbKzo9ucoIiqIq3ANpS7Uldei1GowRJjyD7gq0%2FWl%2B9qxQx2Xo%2BJ%2BooS3MW9umKZwHfnZR8iTnlxa8gk5wNMw4yR186vV7qQVkc5FfCZBa%2FOLrN7C19D2ZCzq7UrcQEgZT2Ml8PIVLedTF%2BsuUaPCe2O6%2Bzz7thzKDIO1%2B1b64gGK5tiM7wIGNxTEGCLvCcL%2Frs5fMddn1b2hWEmf5aSBX7j49FT%2FikcqdgdCAKbFXz3aOoseM7rRfwyvgYWI6RN3e6Dxd2DvvONv9ez5jyEcV9zxlKKf7ghkGywgMlm4V2qdg0qRugtrs1IUtlsT8OE5knMq67TvtKoTTUs%2B05fi1yUq3290rqBxdYvyMTqRtsiJol%2F7wU1DqTRg4KO%2B0OIpg%2B45zBZLPG8D3wqAN46BcibG%2FpyCAf0EN8ApmFMJxq%2B9ebVPOsMhrHoGu8Ila91FS2TS8xnayFy0viBJL0BFxfQXVgLq3Zc5kGorTdL2%2FxmslZnFRLmbmPdtqfIi5iuMVobmiK7zOp6ebPuOu5uDUlMPAfcMbEzJFX9gAH%2FvLRspAQizCnd9iV9enoFVm587rUzp8yOTmpV18bjH7f8rbhQWr23QD57xvZZZThTIsXG%2FNoOTvqpdPZFpKeo59HorLnr%2FsrOSIVzCowc7DBjqkAcwv9NcfvTA7PMJqRTnrYmbJgbp1FOv10VvAxGY9oHYA84M6SkaDW9zjoX89uhBLwysh%2B%2BnnYaynWgsIug03LFR%2FrTekYGq91llfiiCDEuhPDed%2F5RkPKwjgigBDF%2F5PsLVCZ16CT98C02JFDqkz52Ia9btBCelqG8qt17j9L9yNV9DJhthTsn1RLnBWic6HkoLTWW9P9Iwdz%2F45NaiQYExQXKsC&X-Amz-Signature=a7d979d4ce32d6f2f31d877f0d4edb10112ced59eefbfa91d5f7f7a33710f2b5&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
-              "expiry_time": "2025-07-13T14:40:12.098Z"
+              "url": "/image/download/news/110a8c0e-cf8c-804e-b7d6-dfe14f5651ea-notoearthquake2.jpg",
+              "expiry_time": "2025-09-04T01:48:52.750Z"
             }
           },
           {
             "name": "notoearthquake3.jpg",
             "type": "file",
             "file": {
-              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/ec34a095-6cd8-48a8-98c7-18f89317c7c4/4584a18d-43eb-4112-a1ee-36bd4a413000/notoearthquake3.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46632WDS2HD%2F20250713%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250713T134012Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQCXkHjIODBR%2Fi%2BZqYA5t%2Bc5VbMZatvuWoXCQip%2FUbwfNQIhAMAoz6Wf6zb6w1L6FimwRWTnodc32T6ZuW8YhXOpTHxoKv8DCBUQABoMNjM3NDIzMTgzODA1IgzhhJmbKzo9ucoIiqIq3ANpS7Uldei1GowRJjyD7gq0%2FWl%2B9qxQx2Xo%2BJ%2BooS3MW9umKZwHfnZR8iTnlxa8gk5wNMw4yR186vV7qQVkc5FfCZBa%2FOLrN7C19D2ZCzq7UrcQEgZT2Ml8PIVLedTF%2BsuUaPCe2O6%2Bzz7thzKDIO1%2B1b64gGK5tiM7wIGNxTEGCLvCcL%2Frs5fMddn1b2hWEmf5aSBX7j49FT%2FikcqdgdCAKbFXz3aOoseM7rRfwyvgYWI6RN3e6Dxd2DvvONv9ez5jyEcV9zxlKKf7ghkGywgMlm4V2qdg0qRugtrs1IUtlsT8OE5knMq67TvtKoTTUs%2B05fi1yUq3290rqBxdYvyMTqRtsiJol%2F7wU1DqTRg4KO%2B0OIpg%2B45zBZLPG8D3wqAN46BcibG%2FpyCAf0EN8ApmFMJxq%2B9ebVPOsMhrHoGu8Ila91FS2TS8xnayFy0viBJL0BFxfQXVgLq3Zc5kGorTdL2%2FxmslZnFRLmbmPdtqfIi5iuMVobmiK7zOp6ebPuOu5uDUlMPAfcMbEzJFX9gAH%2FvLRspAQizCnd9iV9enoFVm587rUzp8yOTmpV18bjH7f8rbhQWr23QD57xvZZZThTIsXG%2FNoOTvqpdPZFpKeo59HorLnr%2FsrOSIVzCowc7DBjqkAcwv9NcfvTA7PMJqRTnrYmbJgbp1FOv10VvAxGY9oHYA84M6SkaDW9zjoX89uhBLwysh%2B%2BnnYaynWgsIug03LFR%2FrTekYGq91llfiiCDEuhPDed%2F5RkPKwjgigBDF%2F5PsLVCZ16CT98C02JFDqkz52Ia9btBCelqG8qt17j9L9yNV9DJhthTsn1RLnBWic6HkoLTWW9P9Iwdz%2F45NaiQYExQXKsC&X-Amz-Signature=bd2fe4c9056a0aa1790eb38ced0270dac18598bc927306194096a988ff8b5bc6&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
-              "expiry_time": "2025-07-13T14:40:12.103Z"
+              "url": "/image/download/news/110a8c0e-cf8c-804e-b7d6-dfe14f5651ea-notoearthquake3.jpg",
+              "expiry_time": "2025-09-04T01:48:52.755Z"
             }
           }
         ]
@@ -4228,8 +4954,8 @@
             "name": "newyearprayer.webp",
             "type": "file",
             "file": {
-              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/ec34a095-6cd8-48a8-98c7-18f89317c7c4/08dacea8-4384-4226-8b87-b947e7bd3ec1/newyearprayer.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46632WDS2HD%2F20250713%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250713T134012Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQCXkHjIODBR%2Fi%2BZqYA5t%2Bc5VbMZatvuWoXCQip%2FUbwfNQIhAMAoz6Wf6zb6w1L6FimwRWTnodc32T6ZuW8YhXOpTHxoKv8DCBUQABoMNjM3NDIzMTgzODA1IgzhhJmbKzo9ucoIiqIq3ANpS7Uldei1GowRJjyD7gq0%2FWl%2B9qxQx2Xo%2BJ%2BooS3MW9umKZwHfnZR8iTnlxa8gk5wNMw4yR186vV7qQVkc5FfCZBa%2FOLrN7C19D2ZCzq7UrcQEgZT2Ml8PIVLedTF%2BsuUaPCe2O6%2Bzz7thzKDIO1%2B1b64gGK5tiM7wIGNxTEGCLvCcL%2Frs5fMddn1b2hWEmf5aSBX7j49FT%2FikcqdgdCAKbFXz3aOoseM7rRfwyvgYWI6RN3e6Dxd2DvvONv9ez5jyEcV9zxlKKf7ghkGywgMlm4V2qdg0qRugtrs1IUtlsT8OE5knMq67TvtKoTTUs%2B05fi1yUq3290rqBxdYvyMTqRtsiJol%2F7wU1DqTRg4KO%2B0OIpg%2B45zBZLPG8D3wqAN46BcibG%2FpyCAf0EN8ApmFMJxq%2B9ebVPOsMhrHoGu8Ila91FS2TS8xnayFy0viBJL0BFxfQXVgLq3Zc5kGorTdL2%2FxmslZnFRLmbmPdtqfIi5iuMVobmiK7zOp6ebPuOu5uDUlMPAfcMbEzJFX9gAH%2FvLRspAQizCnd9iV9enoFVm587rUzp8yOTmpV18bjH7f8rbhQWr23QD57xvZZZThTIsXG%2FNoOTvqpdPZFpKeo59HorLnr%2FsrOSIVzCowc7DBjqkAcwv9NcfvTA7PMJqRTnrYmbJgbp1FOv10VvAxGY9oHYA84M6SkaDW9zjoX89uhBLwysh%2B%2BnnYaynWgsIug03LFR%2FrTekYGq91llfiiCDEuhPDed%2F5RkPKwjgigBDF%2F5PsLVCZ16CT98C02JFDqkz52Ia9btBCelqG8qt17j9L9yNV9DJhthTsn1RLnBWic6HkoLTWW9P9Iwdz%2F45NaiQYExQXKsC&X-Amz-Signature=023035dc479b0ffa1aecff8e013558074ca73d240f3c7f4e1a03b0e1a4ddea0c&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
-              "expiry_time": "2025-07-13T14:40:12.079Z"
+              "url": "/image/download/news/110a8c0e-cf8c-805b-8379-fb368fd40346-newyearprayer.webp",
+              "expiry_time": "2025-09-04T01:48:52.727Z"
             }
           }
         ]
@@ -4385,8 +5111,8 @@
             "name": "japanesegarden.webp",
             "type": "file",
             "file": {
-              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/ec34a095-6cd8-48a8-98c7-18f89317c7c4/e5176624-46b1-4f73-b127-78f464418d23/japanesegarden.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46632WDS2HD%2F20250713%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250713T134012Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQCXkHjIODBR%2Fi%2BZqYA5t%2Bc5VbMZatvuWoXCQip%2FUbwfNQIhAMAoz6Wf6zb6w1L6FimwRWTnodc32T6ZuW8YhXOpTHxoKv8DCBUQABoMNjM3NDIzMTgzODA1IgzhhJmbKzo9ucoIiqIq3ANpS7Uldei1GowRJjyD7gq0%2FWl%2B9qxQx2Xo%2BJ%2BooS3MW9umKZwHfnZR8iTnlxa8gk5wNMw4yR186vV7qQVkc5FfCZBa%2FOLrN7C19D2ZCzq7UrcQEgZT2Ml8PIVLedTF%2BsuUaPCe2O6%2Bzz7thzKDIO1%2B1b64gGK5tiM7wIGNxTEGCLvCcL%2Frs5fMddn1b2hWEmf5aSBX7j49FT%2FikcqdgdCAKbFXz3aOoseM7rRfwyvgYWI6RN3e6Dxd2DvvONv9ez5jyEcV9zxlKKf7ghkGywgMlm4V2qdg0qRugtrs1IUtlsT8OE5knMq67TvtKoTTUs%2B05fi1yUq3290rqBxdYvyMTqRtsiJol%2F7wU1DqTRg4KO%2B0OIpg%2B45zBZLPG8D3wqAN46BcibG%2FpyCAf0EN8ApmFMJxq%2B9ebVPOsMhrHoGu8Ila91FS2TS8xnayFy0viBJL0BFxfQXVgLq3Zc5kGorTdL2%2FxmslZnFRLmbmPdtqfIi5iuMVobmiK7zOp6ebPuOu5uDUlMPAfcMbEzJFX9gAH%2FvLRspAQizCnd9iV9enoFVm587rUzp8yOTmpV18bjH7f8rbhQWr23QD57xvZZZThTIsXG%2FNoOTvqpdPZFpKeo59HorLnr%2FsrOSIVzCowc7DBjqkAcwv9NcfvTA7PMJqRTnrYmbJgbp1FOv10VvAxGY9oHYA84M6SkaDW9zjoX89uhBLwysh%2B%2BnnYaynWgsIug03LFR%2FrTekYGq91llfiiCDEuhPDed%2F5RkPKwjgigBDF%2F5PsLVCZ16CT98C02JFDqkz52Ia9btBCelqG8qt17j9L9yNV9DJhthTsn1RLnBWic6HkoLTWW9P9Iwdz%2F45NaiQYExQXKsC&X-Amz-Signature=c9e6c43d5896c43f3d46d10498d717b2fd529af2b3a7825ec46444258bde1f28&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
-              "expiry_time": "2025-07-13T14:40:12.079Z"
+              "url": "/image/download/news/110a8c0e-cf8c-8021-8942-c4bc95ab4782-japanesegarden.webp",
+              "expiry_time": "2025-09-04T01:48:52.728Z"
             }
           }
         ]
@@ -4690,8 +5416,8 @@
             "name": "schooltablechair.webp",
             "type": "file",
             "file": {
-              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/ec34a095-6cd8-48a8-98c7-18f89317c7c4/d900662e-73a1-4a3c-af2c-f7b2fdebd91f/schooltablechair.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46632WDS2HD%2F20250713%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250713T134012Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQCXkHjIODBR%2Fi%2BZqYA5t%2Bc5VbMZatvuWoXCQip%2FUbwfNQIhAMAoz6Wf6zb6w1L6FimwRWTnodc32T6ZuW8YhXOpTHxoKv8DCBUQABoMNjM3NDIzMTgzODA1IgzhhJmbKzo9ucoIiqIq3ANpS7Uldei1GowRJjyD7gq0%2FWl%2B9qxQx2Xo%2BJ%2BooS3MW9umKZwHfnZR8iTnlxa8gk5wNMw4yR186vV7qQVkc5FfCZBa%2FOLrN7C19D2ZCzq7UrcQEgZT2Ml8PIVLedTF%2BsuUaPCe2O6%2Bzz7thzKDIO1%2B1b64gGK5tiM7wIGNxTEGCLvCcL%2Frs5fMddn1b2hWEmf5aSBX7j49FT%2FikcqdgdCAKbFXz3aOoseM7rRfwyvgYWI6RN3e6Dxd2DvvONv9ez5jyEcV9zxlKKf7ghkGywgMlm4V2qdg0qRugtrs1IUtlsT8OE5knMq67TvtKoTTUs%2B05fi1yUq3290rqBxdYvyMTqRtsiJol%2F7wU1DqTRg4KO%2B0OIpg%2B45zBZLPG8D3wqAN46BcibG%2FpyCAf0EN8ApmFMJxq%2B9ebVPOsMhrHoGu8Ila91FS2TS8xnayFy0viBJL0BFxfQXVgLq3Zc5kGorTdL2%2FxmslZnFRLmbmPdtqfIi5iuMVobmiK7zOp6ebPuOu5uDUlMPAfcMbEzJFX9gAH%2FvLRspAQizCnd9iV9enoFVm587rUzp8yOTmpV18bjH7f8rbhQWr23QD57xvZZZThTIsXG%2FNoOTvqpdPZFpKeo59HorLnr%2FsrOSIVzCowc7DBjqkAcwv9NcfvTA7PMJqRTnrYmbJgbp1FOv10VvAxGY9oHYA84M6SkaDW9zjoX89uhBLwysh%2B%2BnnYaynWgsIug03LFR%2FrTekYGq91llfiiCDEuhPDed%2F5RkPKwjgigBDF%2F5PsLVCZ16CT98C02JFDqkz52Ia9btBCelqG8qt17j9L9yNV9DJhthTsn1RLnBWic6HkoLTWW9P9Iwdz%2F45NaiQYExQXKsC&X-Amz-Signature=87870a3404b8e25fa060ef7dc00119e853b8f3c82453235741866b7f154cae6b&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
-              "expiry_time": "2025-07-13T14:40:12.079Z"
+              "url": "/image/download/news/110a8c0e-cf8c-80a0-a8aa-e0523eae6b07-schooltablechair.webp",
+              "expiry_time": "2025-09-04T01:48:52.728Z"
             }
           }
         ]
@@ -4990,8 +5716,8 @@
             "name": "Oasissep2017.jpg",
             "type": "file",
             "file": {
-              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/ec34a095-6cd8-48a8-98c7-18f89317c7c4/55fdf620-2205-497b-a921-9c1238be936b/Oasissep2017.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46632WDS2HD%2F20250713%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250713T134012Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQCXkHjIODBR%2Fi%2BZqYA5t%2Bc5VbMZatvuWoXCQip%2FUbwfNQIhAMAoz6Wf6zb6w1L6FimwRWTnodc32T6ZuW8YhXOpTHxoKv8DCBUQABoMNjM3NDIzMTgzODA1IgzhhJmbKzo9ucoIiqIq3ANpS7Uldei1GowRJjyD7gq0%2FWl%2B9qxQx2Xo%2BJ%2BooS3MW9umKZwHfnZR8iTnlxa8gk5wNMw4yR186vV7qQVkc5FfCZBa%2FOLrN7C19D2ZCzq7UrcQEgZT2Ml8PIVLedTF%2BsuUaPCe2O6%2Bzz7thzKDIO1%2B1b64gGK5tiM7wIGNxTEGCLvCcL%2Frs5fMddn1b2hWEmf5aSBX7j49FT%2FikcqdgdCAKbFXz3aOoseM7rRfwyvgYWI6RN3e6Dxd2DvvONv9ez5jyEcV9zxlKKf7ghkGywgMlm4V2qdg0qRugtrs1IUtlsT8OE5knMq67TvtKoTTUs%2B05fi1yUq3290rqBxdYvyMTqRtsiJol%2F7wU1DqTRg4KO%2B0OIpg%2B45zBZLPG8D3wqAN46BcibG%2FpyCAf0EN8ApmFMJxq%2B9ebVPOsMhrHoGu8Ila91FS2TS8xnayFy0viBJL0BFxfQXVgLq3Zc5kGorTdL2%2FxmslZnFRLmbmPdtqfIi5iuMVobmiK7zOp6ebPuOu5uDUlMPAfcMbEzJFX9gAH%2FvLRspAQizCnd9iV9enoFVm587rUzp8yOTmpV18bjH7f8rbhQWr23QD57xvZZZThTIsXG%2FNoOTvqpdPZFpKeo59HorLnr%2FsrOSIVzCowc7DBjqkAcwv9NcfvTA7PMJqRTnrYmbJgbp1FOv10VvAxGY9oHYA84M6SkaDW9zjoX89uhBLwysh%2B%2BnnYaynWgsIug03LFR%2FrTekYGq91llfiiCDEuhPDed%2F5RkPKwjgigBDF%2F5PsLVCZ16CT98C02JFDqkz52Ia9btBCelqG8qt17j9L9yNV9DJhthTsn1RLnBWic6HkoLTWW9P9Iwdz%2F45NaiQYExQXKsC&X-Amz-Signature=0152ed1040c07621a89be37101fb590652c9bf99349b82d31378425a722af7fa&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
-              "expiry_time": "2025-07-13T14:40:12.079Z"
+              "url": "/image/download/news/10ba8c0e-cf8c-803e-aaa0-c598d2fa0976-Oasissep2017.jpg",
+              "expiry_time": "2025-09-04T01:48:52.728Z"
             }
           }
         ]
@@ -5147,8 +5873,8 @@
             "name": "unitymural02.jpg",
             "type": "file",
             "file": {
-              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/ec34a095-6cd8-48a8-98c7-18f89317c7c4/e12eb856-01cd-4eba-89ed-6fe09b177cce/unitymural02.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46632WDS2HD%2F20250713%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250713T134012Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQCXkHjIODBR%2Fi%2BZqYA5t%2Bc5VbMZatvuWoXCQip%2FUbwfNQIhAMAoz6Wf6zb6w1L6FimwRWTnodc32T6ZuW8YhXOpTHxoKv8DCBUQABoMNjM3NDIzMTgzODA1IgzhhJmbKzo9ucoIiqIq3ANpS7Uldei1GowRJjyD7gq0%2FWl%2B9qxQx2Xo%2BJ%2BooS3MW9umKZwHfnZR8iTnlxa8gk5wNMw4yR186vV7qQVkc5FfCZBa%2FOLrN7C19D2ZCzq7UrcQEgZT2Ml8PIVLedTF%2BsuUaPCe2O6%2Bzz7thzKDIO1%2B1b64gGK5tiM7wIGNxTEGCLvCcL%2Frs5fMddn1b2hWEmf5aSBX7j49FT%2FikcqdgdCAKbFXz3aOoseM7rRfwyvgYWI6RN3e6Dxd2DvvONv9ez5jyEcV9zxlKKf7ghkGywgMlm4V2qdg0qRugtrs1IUtlsT8OE5knMq67TvtKoTTUs%2B05fi1yUq3290rqBxdYvyMTqRtsiJol%2F7wU1DqTRg4KO%2B0OIpg%2B45zBZLPG8D3wqAN46BcibG%2FpyCAf0EN8ApmFMJxq%2B9ebVPOsMhrHoGu8Ila91FS2TS8xnayFy0viBJL0BFxfQXVgLq3Zc5kGorTdL2%2FxmslZnFRLmbmPdtqfIi5iuMVobmiK7zOp6ebPuOu5uDUlMPAfcMbEzJFX9gAH%2FvLRspAQizCnd9iV9enoFVm587rUzp8yOTmpV18bjH7f8rbhQWr23QD57xvZZZThTIsXG%2FNoOTvqpdPZFpKeo59HorLnr%2FsrOSIVzCowc7DBjqkAcwv9NcfvTA7PMJqRTnrYmbJgbp1FOv10VvAxGY9oHYA84M6SkaDW9zjoX89uhBLwysh%2B%2BnnYaynWgsIug03LFR%2FrTekYGq91llfiiCDEuhPDed%2F5RkPKwjgigBDF%2F5PsLVCZ16CT98C02JFDqkz52Ia9btBCelqG8qt17j9L9yNV9DJhthTsn1RLnBWic6HkoLTWW9P9Iwdz%2F45NaiQYExQXKsC&X-Amz-Signature=c87e0c5c0dc52386914d0772ba259d067036c13b83be8b3d67da5adf82f961dc&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
-              "expiry_time": "2025-07-13T14:40:12.080Z"
+              "url": "/image/download/news/102a8c0e-cf8c-8096-b2f7-e91ec767e38e-unitymural02.jpg",
+              "expiry_time": "2025-09-04T01:48:52.728Z"
             }
           }
         ]
@@ -5376,8 +6102,8 @@
             "name": "sakura radio minnano gakko.jpg",
             "type": "file",
             "file": {
-              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/ec34a095-6cd8-48a8-98c7-18f89317c7c4/d435d105-3d83-4caa-81c5-a12984ebe7ac/sakura_radio_minnano_gakko.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46632WDS2HD%2F20250713%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250713T134012Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQCXkHjIODBR%2Fi%2BZqYA5t%2Bc5VbMZatvuWoXCQip%2FUbwfNQIhAMAoz6Wf6zb6w1L6FimwRWTnodc32T6ZuW8YhXOpTHxoKv8DCBUQABoMNjM3NDIzMTgzODA1IgzhhJmbKzo9ucoIiqIq3ANpS7Uldei1GowRJjyD7gq0%2FWl%2B9qxQx2Xo%2BJ%2BooS3MW9umKZwHfnZR8iTnlxa8gk5wNMw4yR186vV7qQVkc5FfCZBa%2FOLrN7C19D2ZCzq7UrcQEgZT2Ml8PIVLedTF%2BsuUaPCe2O6%2Bzz7thzKDIO1%2B1b64gGK5tiM7wIGNxTEGCLvCcL%2Frs5fMddn1b2hWEmf5aSBX7j49FT%2FikcqdgdCAKbFXz3aOoseM7rRfwyvgYWI6RN3e6Dxd2DvvONv9ez5jyEcV9zxlKKf7ghkGywgMlm4V2qdg0qRugtrs1IUtlsT8OE5knMq67TvtKoTTUs%2B05fi1yUq3290rqBxdYvyMTqRtsiJol%2F7wU1DqTRg4KO%2B0OIpg%2B45zBZLPG8D3wqAN46BcibG%2FpyCAf0EN8ApmFMJxq%2B9ebVPOsMhrHoGu8Ila91FS2TS8xnayFy0viBJL0BFxfQXVgLq3Zc5kGorTdL2%2FxmslZnFRLmbmPdtqfIi5iuMVobmiK7zOp6ebPuOu5uDUlMPAfcMbEzJFX9gAH%2FvLRspAQizCnd9iV9enoFVm587rUzp8yOTmpV18bjH7f8rbhQWr23QD57xvZZZThTIsXG%2FNoOTvqpdPZFpKeo59HorLnr%2FsrOSIVzCowc7DBjqkAcwv9NcfvTA7PMJqRTnrYmbJgbp1FOv10VvAxGY9oHYA84M6SkaDW9zjoX89uhBLwysh%2B%2BnnYaynWgsIug03LFR%2FrTekYGq91llfiiCDEuhPDed%2F5RkPKwjgigBDF%2F5PsLVCZ16CT98C02JFDqkz52Ia9btBCelqG8qt17j9L9yNV9DJhthTsn1RLnBWic6HkoLTWW9P9Iwdz%2F45NaiQYExQXKsC&X-Amz-Signature=2806aa04e023795f23b4a1d0d611485994b8cf12057900d874838d44ffe0e7e5&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
-              "expiry_time": "2025-07-13T14:40:12.080Z"
+              "url": "/image/download/news/57b1ff72-dbca-43d3-b6eb-8e3fd7d8c18f-sakura_radio_minnano_gakko.jpg",
+              "expiry_time": "2025-09-04T01:48:52.728Z"
             }
           }
         ]
@@ -5495,7 +6221,7 @@
     "object": "page",
     "id": "2c5574c7-67e7-4213-9c29-4bbee673f2a7",
     "created_time": "2024-09-05T07:32:00.000Z",
-    "last_edited_time": "2025-07-13T13:38:00.000Z",
+    "last_edited_time": "2025-07-13T13:48:00.000Z",
     "created_by": {
       "object": "user",
       "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
@@ -5605,8 +6331,8 @@
             "name": "sakura radio minnano gakko.jpg",
             "type": "file",
             "file": {
-              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/ec34a095-6cd8-48a8-98c7-18f89317c7c4/d1e8bb2e-5b13-42d6-93ec-b9303729eb26/sakura_radio_minnano_gakko.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46632WDS2HD%2F20250713%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250713T134012Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQCXkHjIODBR%2Fi%2BZqYA5t%2Bc5VbMZatvuWoXCQip%2FUbwfNQIhAMAoz6Wf6zb6w1L6FimwRWTnodc32T6ZuW8YhXOpTHxoKv8DCBUQABoMNjM3NDIzMTgzODA1IgzhhJmbKzo9ucoIiqIq3ANpS7Uldei1GowRJjyD7gq0%2FWl%2B9qxQx2Xo%2BJ%2BooS3MW9umKZwHfnZR8iTnlxa8gk5wNMw4yR186vV7qQVkc5FfCZBa%2FOLrN7C19D2ZCzq7UrcQEgZT2Ml8PIVLedTF%2BsuUaPCe2O6%2Bzz7thzKDIO1%2B1b64gGK5tiM7wIGNxTEGCLvCcL%2Frs5fMddn1b2hWEmf5aSBX7j49FT%2FikcqdgdCAKbFXz3aOoseM7rRfwyvgYWI6RN3e6Dxd2DvvONv9ez5jyEcV9zxlKKf7ghkGywgMlm4V2qdg0qRugtrs1IUtlsT8OE5knMq67TvtKoTTUs%2B05fi1yUq3290rqBxdYvyMTqRtsiJol%2F7wU1DqTRg4KO%2B0OIpg%2B45zBZLPG8D3wqAN46BcibG%2FpyCAf0EN8ApmFMJxq%2B9ebVPOsMhrHoGu8Ila91FS2TS8xnayFy0viBJL0BFxfQXVgLq3Zc5kGorTdL2%2FxmslZnFRLmbmPdtqfIi5iuMVobmiK7zOp6ebPuOu5uDUlMPAfcMbEzJFX9gAH%2FvLRspAQizCnd9iV9enoFVm587rUzp8yOTmpV18bjH7f8rbhQWr23QD57xvZZZThTIsXG%2FNoOTvqpdPZFpKeo59HorLnr%2FsrOSIVzCowc7DBjqkAcwv9NcfvTA7PMJqRTnrYmbJgbp1FOv10VvAxGY9oHYA84M6SkaDW9zjoX89uhBLwysh%2B%2BnnYaynWgsIug03LFR%2FrTekYGq91llfiiCDEuhPDed%2F5RkPKwjgigBDF%2F5PsLVCZ16CT98C02JFDqkz52Ia9btBCelqG8qt17j9L9yNV9DJhthTsn1RLnBWic6HkoLTWW9P9Iwdz%2F45NaiQYExQXKsC&X-Amz-Signature=627848d78454fbadf123e2b75a1808f02b8be32d0b25f104e048252216d91e4f&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
-              "expiry_time": "2025-07-13T14:40:12.080Z"
+              "url": "/image/download/news/2c5574c7-67e7-4213-9c29-4bbee673f2a7-sakura_radio_minnano_gakko.jpg",
+              "expiry_time": "2025-09-04T01:48:52.728Z"
             }
           }
         ]
