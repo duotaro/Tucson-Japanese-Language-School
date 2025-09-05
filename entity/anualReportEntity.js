@@ -27,7 +27,7 @@ export default class AnualReportEntity {
                 const pdfName = tmpPdfName.replace(/ /g, '_');
                 const tmpPdfEnName = pdfEnFiles[0].name;
                 const pdfEnName = tmpPdfEnName.replace(/ /g, '_');
-                this.pdf = isJpn ? `/${ACCESABLE_PDF_PATH}/reports/${pdfName}` : `/${ACCESABLE_PDF_PATH}/reports/${pdfEnName}`;
+                this.pdf = isJpn ? `/${ACCESABLE_PDF_PATH}/report/${pdfName}` : `/${ACCESABLE_PDF_PATH}/report/${pdfEnName}`;
             } else {
                 console.warn("[AnualReportEntity] Missing PDF files for year:", this.year);
                 this.pdf = null;
