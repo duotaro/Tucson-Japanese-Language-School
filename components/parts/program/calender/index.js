@@ -200,7 +200,7 @@ export default function Calender({files, list, locale="ja"}) {
                   <ImageOptimizer
                     baseName="event"
                     pagePath="calendar"
-                    alt="年間カレンダー"
+                    alt={`${json.calender.title}`}
                     width={800}
                     height={600}
                     objectFit="cover"
@@ -238,7 +238,7 @@ export default function Calender({files, list, locale="ja"}) {
       
       <Section>
           <div className="flex flex-col justify-center items-center mb-2 ">
-            <Title title="年間カレンダー（翻訳）" />
+            <Title title={`${json.calender.title}`} />
           </div>
           {/* <div className="text-center max-w-sm">
             <a href='' className="text-center max-w-sm">
@@ -246,7 +246,7 @@ export default function Calender({files, list, locale="ja"}) {
             </a>
           </div> */}
           <div className="mb-6 max-w-xs mx-auto">
-            <PdfDownloads filePath={res.pdf} title="年間カレンダー（翻訳）" />
+            <PdfDownloads filePath={res.pdf} title={`${json.calender.title}`} />
           </div>
           <div className="flex-1">
             <FullCalendar 
