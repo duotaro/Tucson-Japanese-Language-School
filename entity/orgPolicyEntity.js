@@ -30,7 +30,7 @@ export default class OrgPolicyEntity {
             const fileName = tmpName.replace(/ /g, '_');
             this.image = {
                 baseName: path.parse(fileName).name,
-                pagePath: 'org_policy',
+                pagePath: 'policy',
                 alt: item.properties.image.files[0].caption?.[0]?.plain_text || fileName,
                 width: null,
                 height: null,

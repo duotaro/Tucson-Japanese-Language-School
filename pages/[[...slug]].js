@@ -76,6 +76,10 @@ const KanjiKenteiPage = dynamic(() => import('../components/pages/program/kanji_
   loading: () => <PageLoading />,
   ssr: true
 });
+const NihongocafePage = dynamic(() => import('../components/pages/program/nihongocafe.js'), {
+  loading: () => <PageLoading />,
+  ssr: true
+});
 const FormsPage = dynamic(() => import('../components/pages/admissions/forms.js'), {
   loading: () => <PageLoading />,
   ssr: true
@@ -194,6 +198,10 @@ export default function DynamicPage({ pageType, slug, locale: pageLocale, ...pag
         return <EventsPage {...pageProps} locale={currentLocale} />;
       case 'program/kanji_kentei':
         return <KanjiKenteiPage {...pageProps} locale={currentLocale} />;
+      case 'program/kanjikentei':
+        return <KanjiKenteiPage {...pageProps} locale={currentLocale} />;
+      case 'program/nihongocafe':
+        return <NihongocafePage {...pageProps} locale={currentLocale} />;
       case 'admissions':
         return <FormsPage {...pageProps} locale={currentLocale} />;
       case 'admissions/forms':
@@ -252,6 +260,8 @@ export async function getStaticPaths() {
     { params: { slug: ['program', 'calendar'] } },
     { params: { slug: ['program', 'events'] } },
     { params: { slug: ['program', 'kanji_kentei'] } },
+    { params: { slug: ['program', 'kanjikentei'] } },
+    { params: { slug: ['program', 'nihongocafe'] } },
     { params: { slug: ['admissions'] } },
     { params: { slug: ['admissions', 'forms'] } },
     { params: { slug: ['news'] } },
@@ -462,6 +472,15 @@ export async function getStaticProps({ params }) {
       const about = isDev ? cacheData.about.slice(0, 3) : cacheData.about;
       const philosophy = isDev ? cacheData.mission.slice(0, 1) : cacheData.mission;
       const policy = cacheData.vision;
+      
+      // Policyデータに画像ファイルがある場合、saveImageIfNeededを実行
+      if (policy && policy.length > 0) {
+        let policyProps = [];
+        for(let item of policy){
+          policyProps.push(item.properties);
+        }
+        await saveImageIfNeeded(policyProps, "policy");
+      }
       
       // PolicyデータにPDFファイルがある場合、savePdfIfNeededを実行
       if (policy && policy.length > 0) {

@@ -1,10 +1,45 @@
 # 作業ログ - feature/notion-cache-system ブランチ
 
 **作成日**: 2025年7月2日  
-**更新日**: 2025年7月13日（画像404エラー修正）  
+**更新日**: 2025年9月5日（Policy画像表示問題修正）  
 **対象**: ツーソン日本語学校ウェブサイト  
-**ブランチ**: feature/notion-cache-system  
+**ブランチ**: develop  
 **作業者**: Claude AI + ユーザー
+
+---
+
+## 2025年9月5日（木） - Policy画像表示問題修正
+
+### 作業内容
+components/parts/about/mission/policy.jsで、Notionから取得した画像が表示されない問題を調査・修正しました。
+
+### 発見した問題
+**画像保存処理の欠如**: about/missionページでpolicyデータを取得する際、PDFファイルの保存処理（savePdfIfNeeded）は実装されていましたが、画像ファイルの保存処理（saveImageIfNeeded）が実装されていませんでした。
+
+### 修正内容
+**pages/[[...slug]].js修正** (line 467-493):
+- about/missionページ処理部分にsaveImageIfNeeded処理を追加
+- policyデータに画像が含まれている場合、"policy"ディレクトリに画像を保存する処理を実装
+- 既存のPDF保存処理の前に画像保存処理を追加
+
+```javascript
+// Policyデータに画像ファイルがある場合、saveImageIfNeededを実行
+if (policy && policy.length > 0) {
+  let policyProps = [];
+  for(let item of policy){
+    policyProps.push(item.properties);
+  }
+  await saveImageIfNeeded(policyProps, "policy");
+}
+```
+
+### 修正結果
+- ビルドログで正常にoptimizedImageが設定されることを確認
+- PolicyEntityクラスが正常にoptimizedImageデータを受け取り、ImageOptimizerコンポーネントで画像表示可能な状態になったことを確認
+
+### 原因と解消方法
+**原因**: about/missionページでのpolicyデータ処理時にsaveImageIfNeeded呼び出しが欠けていた  
+**解消**: about/staffやabout/governanceと同様にsaveImageIfNeeded処理を追加
 
 ---
 

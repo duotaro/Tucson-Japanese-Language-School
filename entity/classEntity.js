@@ -31,8 +31,10 @@ export default class ClassEntity {
             this.target = item.properties["target_en"].rich_text
         }
         
-        // 従来の画像データ処理
-        if (item.properties?.image?.files?.[0]) {
+        // ImageOptimizer対応の画像データ処理
+        if (item.properties?.image?.optimizedImage) {
+            this.image = item.properties.image.optimizedImage;
+        } else if (item.properties?.image?.files?.[0]) {
             const tmpName = item.properties.image.files[0].name;
             const name = tmpName.replace(/ /g, '_');
             this.image = {

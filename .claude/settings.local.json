@@ -55,7 +55,8 @@
       "Bash(yarn ci:test:*)",
       "Bash(cat:*)",
       "WebFetch(domain:tjschool.org)",
-      "Bash(gtimeout:*)"
+      "Bash(gtimeout:*)",
+      "WebFetch(domain:localhost)"
     ],
     "deny": []
   }

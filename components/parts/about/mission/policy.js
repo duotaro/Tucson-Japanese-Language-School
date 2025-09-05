@@ -13,7 +13,10 @@ import ImageOptimizer from '@/components/download/ImageOptimizer';
 export default function Policy({ policy }) {
   const { locale } = useContext(LocaleContext);
 
+  console.log("[Policy Component] Received policy:", policy);
   let entity = new PolicyEntity(policy, locale == "ja")
+  console.log("[Policy Component] Entity created:", entity);
+  console.log("[Policy Component] Entity image:", entity.image);
 
   return (
     <Section>
@@ -24,9 +27,6 @@ export default function Policy({ policy }) {
                 baseName={entity.image?.baseName || 'policy'}
                 pagePath={entity.image?.pagePath || 'policy'}
                 alt={entity.image?.alt || 'Policy'}
-                
-                
-                
                 
                 objectFit="cover"
                 className="md:col-start-1 rounded-lg shadow-md"

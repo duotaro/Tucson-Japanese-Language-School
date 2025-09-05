@@ -87,6 +87,9 @@ const ImageOptimizer = ({
     `/image/logo.png`
   ];
   
+  console.log(`[ImageOptimizer] baseName: ${baseName}, pagePath: ${pagePath}`);
+  console.log(`[ImageOptimizer] imagePaths:`, imagePaths.slice(0, 5)); // 最初の5つのパスを表示
+  
   // 画像のフォールバック処理のためのstate（ユニークキーでキャッシュ改善）
   const imageKey = `${pagePath}-${baseName}`;
   const [currentImageIndex, setCurrentImageIndex] = useState(0);

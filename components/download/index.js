@@ -116,6 +116,12 @@ const processAndSaveImage = async (imageBuffer, outputPath, baseName) => {
       // console.log(`Image saved: ${fullOutputPath}`); // デバッグ用に残しても良いが、本番ではコメントアウトを推奨
     } catch (error) {
       console.error(`Error processing image ${baseName}-${suffix}:`, error);
+      console.error('This might be due to unsupported image format (e.g., HEIC). Please convert the image to JPEG/PNG format in Notion.');
+      
+      // エラー時は空のWebPファイルを削除（存在する場合）
+      if (fs.existsSync(fullOutputPath)) {
+        fs.unlinkSync(fullOutputPath);
+      }
     }
   }));
 }
