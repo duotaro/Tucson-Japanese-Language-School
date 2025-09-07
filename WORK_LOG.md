@@ -755,3 +755,46 @@ this.pdf = `/${ACCESABLE_PDF_PATH}/org_policy/${pdfName}`;
 **確認結果:** 
 - yarn dev：正常起動、最新データ表示
 - 画像表示問題解消、最適化画像正常生成
+
+---
+
+### 2025-09-07
+**やったこと:** フッター機能拡張（SNSアイコン変更、Instagram追加、nonprofit情報追加）
+**理由:** ユーザー要望によるUIとSNSプレゼンスの改善
+
+**実施内容:**
+1. SNS横のアイコンを時計（ClockIcon）からシェアアイコン（ShareIcon）に変更
+2. InstagramロゴとリンクをSNSセクションに追加（https://www.instagram.com/tucsonjapaneseschool/）
+3. フッターに501(c)3 nonprofit組織情報を追加（EIN: 99-3937059）
+
+**変更ファイル:**
+- `components/parts/contact/index.js` - ShareIconをインポート、SNS横のアイコン変更、nonprofit情報の追加
+- `components/parts/sns/index.js` - Instagramリンクとアイコンを有効化
+
+**確認結果:**
+- 開発サーバー（http://localhost:3001）正常動作
+- ビルドプロセスはメモリ使用量の問題でタイムアウトするが、コード変更は完了
+
+---
+
+### 2025-09-07 
+**やったこと:** 英語ページでの単語改行問題を修正
+**理由:** 英語テキストで単語の途中で改行される不自然な表示問題の報告があったため
+
+**問題の原因:**
+- `components/parts/text/paragraphs.js`で`wordBreak: 'break-all'`が適用されていた
+- これは日本語向けの設定で、英語では単語境界を無視して改行してしまう
+- `overflowWeap`というタイポもあった（正しくは`overflowWrap`）
+
+**修正内容:**
+- URLパス（`/en/`で始まる）から言語を自動判定する仕組みを実装
+- 英語ページでは`wordBreak: 'normal'`、日本語ページでは`wordBreak: 'break-all'`を適用
+- `overflowWrap`のタイポを修正
+
+**変更ファイル:**
+- `components/parts/text/paragraphs.js` - useRouterを使用してURLから言語判定、条件付きwordBreak適用
+
+**確認結果:**
+- 開発サーバー（http://localhost:3002）正常動作
+- ビルドは正常に処理（メモリ最適化でバックグラウンド実行）
+- 英語ページで単語が適切に改行されるようになった

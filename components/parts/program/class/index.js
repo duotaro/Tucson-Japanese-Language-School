@@ -24,6 +24,7 @@ import Caution from '../../caution'
 
 export default function ClassComponent({category, classes, locale="ja"}) {
   const { json } = useLocale(locale)
+  const lang = json.class
 
   console.log("Class data received:", { category, classes });
 
@@ -134,7 +135,7 @@ export default function ClassComponent({category, classes, locale="ja"}) {
      })}
 
      <Section>
-       <Caution text={`※対象年齢はあくまで目安として定めているものであり、クラスプレイスメントは生徒の日本語レベルに応じて、相談をしながら決定します。(翻訳　表示場所考える)`} />
+       <Caution text={lang.caution} />
      </Section>
     </>
   );

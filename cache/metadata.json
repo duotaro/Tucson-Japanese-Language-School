@@ -1,165 +1,165 @@
 {
-  "lastUpdate": "2025-09-04T01:02:16.653Z",
+  "lastUpdate": "2025-09-07T05:43:57.618Z",
   "totalDatabases": 31,
   "successCount": 31,
   "failedCount": 0,
-  "totalRecords": 181,
-  "executionTime": 79199,
+  "totalRecords": 183,
+  "executionTime": 76083,
   "databases": {
     "slider": {
       "recordCount": 5,
       "databaseId": "f2bd94d61f7c45958755562d366af5ea",
-      "lastFetch": "2025-09-04T01:02:16.654Z"
+      "lastFetch": "2025-09-07T05:43:57.621Z"
     },
     "sponsors": {
       "recordCount": 2,
       "databaseId": "1e302ac5bce442b797e491aee309e7c4",
-      "lastFetch": "2025-09-04T01:02:16.654Z"
+      "lastFetch": "2025-09-07T05:43:57.621Z"
     },
     "about": {
       "recordCount": 3,
       "databaseId": "d4eb3828e74c469b9179ca7be9edb5cf",
-      "lastFetch": "2025-09-04T01:02:16.654Z"
+      "lastFetch": "2025-09-07T05:43:57.621Z"
     },
     "mission": {
       "recordCount": 1,
       "databaseId": "f40ad3a82b894969a6a1b0ee0bfcb0cf",
-      "lastFetch": "2025-09-04T01:02:16.654Z"
+      "lastFetch": "2025-09-07T05:43:57.621Z"
     },
     "vision": {
       "recordCount": 1,
       "databaseId": "105a8c0ecf8c8082a456dd95fd87d0c2",
-      "lastFetch": "2025-09-04T01:02:16.654Z"
+      "lastFetch": "2025-09-07T05:43:57.621Z"
     },
     "story": {
       "recordCount": 1,
       "databaseId": "02ed913f2ebe4151b0235d91a9306403",
-      "lastFetch": "2025-09-04T01:02:16.654Z"
+      "lastFetch": "2025-09-07T05:43:57.621Z"
     },
     "greeting": {
       "recordCount": 1,
       "databaseId": "5ceb6b37e4584fa39fb78161869d885f",
-      "lastFetch": "2025-09-04T01:02:16.654Z"
+      "lastFetch": "2025-09-07T05:43:57.621Z"
     },
     "history": {
       "recordCount": 1,
       "databaseId": "15c93b4fe6154400902a623b20c6fe49",
-      "lastFetch": "2025-09-04T01:02:16.654Z"
+      "lastFetch": "2025-09-07T05:43:57.621Z"
     },
     "directors": {
       "recordCount": 4,
       "databaseId": "10ba8c0ecf8c807ba7c6c7c9128d9770",
-      "lastFetch": "2025-09-04T01:02:16.654Z"
+      "lastFetch": "2025-09-07T05:43:57.621Z"
     },
     "orgChart": {
       "recordCount": 1,
       "databaseId": "10ca8c0ecf8c80629eb3ee7c40cf9005",
-      "lastFetch": "2025-09-04T01:02:16.654Z"
+      "lastFetch": "2025-09-07T05:43:57.622Z"
     },
     "policies": {
       "recordCount": 3,
       "databaseId": "10ca8c0ecf8c80998e3bfb0372ccc293",
-      "lastFetch": "2025-09-04T01:02:16.654Z"
+      "lastFetch": "2025-09-07T05:43:57.622Z"
     },
     "roleList": {
       "recordCount": 6,
       "databaseId": "122a8c0ecf8c80059934c64693cc39ca",
-      "lastFetch": "2025-09-04T01:02:16.654Z"
+      "lastFetch": "2025-09-07T05:43:57.622Z"
     },
     "staff": {
       "recordCount": 16,
       "databaseId": "9b85f554b3fc42dcb9d38f1ec87b168c",
-      "lastFetch": "2025-09-04T01:02:16.654Z"
+      "lastFetch": "2025-09-07T05:43:57.622Z"
     },
     "category": {
       "recordCount": 2,
       "databaseId": "11aa8c0ecf8c80ed885ff949e5ee51bb",
-      "lastFetch": "2025-09-04T01:02:16.654Z"
+      "lastFetch": "2025-09-07T05:43:57.622Z"
     },
     "classes": {
       "recordCount": 7,
       "databaseId": "11aa8c0ecf8c80a7ab2cf31cd0b0a881",
-      "lastFetch": "2025-09-04T01:02:16.654Z"
+      "lastFetch": "2025-09-07T05:43:57.622Z"
     },
     "schedule": {
-      "recordCount": 32,
+      "recordCount": 33,
       "databaseId": "8d87080f73f14e8a9e7ba934c1d928c6",
-      "lastFetch": "2025-09-04T01:02:16.654Z"
+      "lastFetch": "2025-09-07T05:43:57.622Z"
     },
     "files": {
       "recordCount": 1,
       "databaseId": "11aa8c0ecf8c803e8289cb5bd9a5f80a",
-      "lastFetch": "2025-09-04T01:02:16.654Z"
+      "lastFetch": "2025-09-07T05:43:57.622Z"
     },
     "qualification": {
       "recordCount": 3,
       "databaseId": "11ba8c0ecf8c80e4a3d6cb2cae30ac08",
-      "lastFetch": "2025-09-04T01:02:16.654Z"
+      "lastFetch": "2025-09-07T05:43:57.622Z"
     },
     "price": {
       "recordCount": 8,
       "databaseId": "11ba8c0ecf8c8068afc9c4ba38330221",
-      "lastFetch": "2025-09-04T01:02:16.654Z"
+      "lastFetch": "2025-09-07T05:43:57.622Z"
     },
     "discountFamily": {
       "recordCount": 3,
       "databaseId": "11ba8c0ecf8c80daa4a0e58b368b1dc3",
-      "lastFetch": "2025-09-04T01:02:16.654Z"
+      "lastFetch": "2025-09-07T05:43:57.622Z"
     },
     "discountStaff": {
       "recordCount": 3,
       "databaseId": "11ca8c0ecf8c80658187d57a17357400",
-      "lastFetch": "2025-09-04T01:02:16.654Z"
+      "lastFetch": "2025-09-07T05:43:57.622Z"
     },
     "enrollment": {
       "recordCount": 2,
       "databaseId": "11ba8c0ecf8c8059bbddf42453136463",
-      "lastFetch": "2025-09-04T01:02:16.654Z"
+      "lastFetch": "2025-09-07T05:43:57.622Z"
     },
     "support": {
       "recordCount": 1,
       "databaseId": "10ca8c0ecf8c8039a51bdd38f640a34e",
-      "lastFetch": "2025-09-04T01:02:16.654Z"
+      "lastFetch": "2025-09-07T05:43:57.622Z"
     },
     "sponsor": {
       "recordCount": 1,
       "databaseId": "10ea8c0ecf8c80eeae62cc2050b7e7f7",
-      "lastFetch": "2025-09-04T01:02:16.654Z"
+      "lastFetch": "2025-09-07T05:43:57.622Z"
     },
     "donation": {
       "recordCount": 1,
       "databaseId": "10ea8c0ecf8c801b802bc2b43a3ecf91",
-      "lastFetch": "2025-09-04T01:02:16.654Z"
+      "lastFetch": "2025-09-07T05:43:57.622Z"
     },
     "howto": {
       "recordCount": 3,
       "databaseId": "10ca8c0ecf8c8081a8a0e9a9a6166cc1",
-      "lastFetch": "2025-09-04T01:02:16.654Z"
+      "lastFetch": "2025-09-07T05:43:57.622Z"
     },
     "opportunity": {
       "recordCount": 3,
       "databaseId": "102a8c0ecf8c80089b21d14aec9edd22",
-      "lastFetch": "2025-09-04T01:02:16.654Z"
+      "lastFetch": "2025-09-07T05:43:57.622Z"
     },
     "general": {
       "recordCount": 1,
       "databaseId": "d9037016a0524f08adecdbab0c7302b7",
-      "lastFetch": "2025-09-04T01:02:16.654Z"
+      "lastFetch": "2025-09-07T05:43:57.622Z"
     },
     "reports": {
-      "recordCount": 1,
+      "recordCount": 2,
       "databaseId": "10da8c0ecf8c80029cf8f3860f21e33f",
-      "lastFetch": "2025-09-04T01:02:16.654Z"
+      "lastFetch": "2025-09-07T05:43:57.622Z"
     },
     "news": {
       "recordCount": 39,
       "databaseId": "cc0b1eb3570842ba926cc71ecaf5df4d",
-      "lastFetch": "2025-09-04T01:02:16.654Z"
+      "lastFetch": "2025-09-07T05:43:57.622Z"
     },
     "layout": {
       "recordCount": 25,
       "databaseId": "5bf76e8fcd304274b21ad0f5f8d42e8a",
-      "lastFetch": "2025-09-04T01:02:16.654Z"
+      "lastFetch": "2025-09-07T05:43:57.622Z"
     }
   },
   "failures": []

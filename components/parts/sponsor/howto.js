@@ -80,10 +80,16 @@ export default function HowToDonate({ howto, locale = "ja" }) {
 
       res.tag = item.properties?.["tag"]?.select?.name || "other"
       if(item.properties?.["image"]?.files?.[0]){
-        const tmpName = item.properties["image"].files[0].name
-        const name = tmpName.replace(/ /g, '_')
-
-        res.image = `/${ACCESABLE_IMAGE_PATH}/howto/${name}${DOWNLOAD_IMAGE_EXTENSION}`
+        // Use the URL directly from the cached data if it's already a local path
+        const fileData = item.properties["image"].files[0];
+        if (fileData.file?.url?.startsWith('/')) {
+          res.image = fileData.file.url;
+        } else {
+          // Fallback to constructing the path (though this shouldn't happen with cached data)
+          const tmpName = fileData.name
+          const name = tmpName.replace(/ /g, '_')
+          res.image = `/${ACCESABLE_IMAGE_PATH}/howto/${item.id}-${name}`
+        }
       }
       if(isJpn){
           if(item.properties?.["btn_label"]?.rich_text?.[0]){
