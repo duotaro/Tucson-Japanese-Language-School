@@ -18,14 +18,14 @@ export default function SocialMedia({ isFooter }) {
                 <FbIcon className={iconBorder}/>
             </a>
         </li>
+        <li>
+            <a href="https://www.instagram.com/tucsonjapaneseschool/" target="_blank" className={iconClass}>
+                <InstagramIcon className={iconBorder}/>
+            </a>
+        </li>
         {/* <li>
             <a href="https://www.facebook.com/tucsonnihongohosyuko/" target="_blank" className={iconClass}>
                 <GoogleIcon />
-            </a>
-        </li>
-        <li>
-            <a href="https://www.facebook.com/tucsonnihongohosyuko/" target="_blank" className={iconClass}>
-                <InstagramIcon />
             </a>
         </li>
         <li>

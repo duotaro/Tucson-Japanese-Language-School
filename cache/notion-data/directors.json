@@ -3,7 +3,7 @@
     "object": "page",
     "id": "10ea8c0e-cf8c-80bc-a73d-d20e096f2c0c",
     "created_time": "2024-09-27T07:15:00.000Z",
-    "last_edited_time": "2025-09-04T07:25:00.000Z",
+    "last_edited_time": "2025-09-05T05:04:00.000Z",
     "created_by": {
       "object": "user",
       "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
@@ -49,14 +49,19 @@
         "type": "multi_select",
         "multi_select": [
           {
-            "id": "0edc6f0b-23bf-48bf-8dc0-ebb1ab476f92",
-            "name": "代表",
-            "color": "pink"
+            "id": "5e4de00f-6431-455a-8e13-a9587d140094",
+            "name": "理事",
+            "color": "default"
           },
           {
             "id": "9f811b71-651d-4cd0-900b-0cf2cfa954bf",
             "name": "会計補佐",
             "color": "brown"
+          },
+          {
+            "id": "0edc6f0b-23bf-48bf-8dc0-ebb1ab476f92",
+            "name": "代表",
+            "color": "pink"
           }
         ]
       },
@@ -85,7 +90,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/directors/10ea8c0e-cf8c-80bc-a73d-d20e096f2c0c-DSC08141_edited_edited.jpg",
-              "expiry_time": "2025-09-05T05:18:54.708Z"
+              "expiry_time": "2025-09-07T06:42:53.454Z"
             }
           }
         ]
@@ -126,7 +131,7 @@
     "object": "page",
     "id": "10ba8c0e-cf8c-80e6-8546-c4d0fbbcdbf0",
     "created_time": "2024-09-24T14:14:00.000Z",
-    "last_edited_time": "2025-09-04T07:25:00.000Z",
+    "last_edited_time": "2025-09-05T05:04:00.000Z",
     "created_by": {
       "object": "user",
       "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
@@ -172,14 +177,19 @@
         "type": "multi_select",
         "multi_select": [
           {
-            "id": "0edc6f0b-23bf-48bf-8dc0-ebb1ab476f92",
-            "name": "代表",
-            "color": "pink"
+            "id": "5e4de00f-6431-455a-8e13-a9587d140094",
+            "name": "理事",
+            "color": "default"
           },
           {
             "id": "543c76b4-2a24-4835-99f0-07edce926129",
             "name": "書記補佐",
             "color": "green"
+          },
+          {
+            "id": "0edc6f0b-23bf-48bf-8dc0-ebb1ab476f92",
+            "name": "代表",
+            "color": "pink"
           }
         ]
       },
@@ -208,7 +218,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/directors/10ba8c0e-cf8c-80e6-8546-c4d0fbbcdbf0-DSC08145_edited_edited_edited.jpg",
-              "expiry_time": "2025-09-05T05:18:54.708Z"
+              "expiry_time": "2025-09-07T06:42:53.454Z"
             }
           }
         ]
@@ -249,14 +259,14 @@
     "object": "page",
     "id": "12a4999b-cd97-4488-a688-6c398358c991",
     "created_time": "2024-09-24T14:06:00.000Z",
-    "last_edited_time": "2024-10-01T15:43:00.000Z",
+    "last_edited_time": "2025-09-05T05:03:00.000Z",
     "created_by": {
       "object": "user",
       "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
     },
     "last_edited_by": {
       "object": "user",
-      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
     },
     "cover": null,
     "icon": null,
@@ -296,7 +306,7 @@
         "multi_select": [
           {
             "id": "53d6f7f6-1995-4eb7-b0ad-aaa19feb50ed",
-            "name": "副理事",
+            "name": "副理事長",
             "color": "blue"
           }
         ]
@@ -321,7 +331,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/directors/12a4999b-cd97-4488-a688-6c398358c991-profile.jpg",
-              "expiry_time": "2025-09-05T05:18:54.708Z"
+              "expiry_time": "2025-09-07T06:42:53.454Z"
             }
           }
         ]
@@ -362,7 +372,7 @@
     "object": "page",
     "id": "2c933574-5423-431b-9564-9ac63cf02078",
     "created_time": "2024-09-24T14:06:00.000Z",
-    "last_edited_time": "2025-09-02T06:58:00.000Z",
+    "last_edited_time": "2025-09-05T05:04:00.000Z",
     "created_by": {
       "object": "user",
       "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
@@ -427,6 +437,11 @@
             "id": "c50cbdb2-ba76-4edc-8177-ce1cb9997b1d",
             "name": "Chair of the Board",
             "color": "red"
+          },
+          {
+            "id": "4732f5c7-4679-49af-bb9b-8668f966eeb0",
+            "name": "Treasurer",
+            "color": "orange"
           }
         ]
       },
@@ -439,7 +454,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/directors/2c933574-5423-431b-9564-9ac63cf02078-profile.jpg",
-              "expiry_time": "2025-09-05T05:18:54.708Z"
+              "expiry_time": "2025-09-07T06:42:53.454Z"
             }
           }
         ]

@@ -6,7 +6,8 @@ import {
   MapPinIcon,
   BuildingOfficeIcon,
   EnvelopeIcon,
-  ClockIcon
+  ClockIcon,
+  ShareIcon
 } from '@heroicons/react/24/outline'
 import SocialMedia from '../sns';
 import Caution from '../caution';
@@ -90,7 +91,7 @@ export default function Contact({ isFooter, locale="ja" }) {
               <div className="col-md-6 mb-4 mb-md-0">
                 <div className="flex items-center p-4">
                   <div className="flex items-center justify-center w-10 h-10 border-2 border-white-300 p-1 mr-3">
-                    <ClockIcon className="w-8 h-8" />
+                    <ShareIcon className="w-8 h-8" />
                   </div>
                   <span className="text-md font-semibold p-1 mr-3">{lang.sns}:</span>
                   <span className={`${hClass} flex space-x-4`}>
@@ -104,6 +105,12 @@ export default function Contact({ isFooter, locale="ja" }) {
                 </ul>
               </div>
             </ul>
+            {isFooter && (
+              <div className="mt-6 pt-6 border-t border-gray-600 text-center text-sm">
+                <p>{lang.npo_description}</p>
+                <p>EIN: 99-3937059</p>
+              </div>
+            )}
         </div>
     )
 };
