@@ -20,6 +20,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "text": {
         "id": "LBgW",
@@ -53,7 +54,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/about/caedb020-e7de-46db-ad8f-6221961d3dab-vision.png",
-              "expiry_time": "2025-09-07T13:55:43.157Z"
+              "expiry_time": "2025-09-20T18:21:03.371Z"
             }
           }
         ]
@@ -161,6 +162,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "text": {
         "id": "LBgW",
@@ -194,7 +196,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/about/3b6fb768-3ff3-425b-8758-1c31f6fa231e-about.png",
-              "expiry_time": "2025-09-07T13:55:43.157Z"
+              "expiry_time": "2025-09-20T18:21:03.371Z"
             }
           }
         ]
@@ -302,6 +304,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "text": {
         "id": "LBgW",
@@ -335,7 +338,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/about/b3091c78-9b7c-4e8b-80de-dc5f98fd9d5b-mission.png",
-              "expiry_time": "2025-09-07T13:55:43.157Z"
+              "expiry_time": "2025-09-20T18:21:03.371Z"
             }
           }
         ]

@@ -1,9 +1,9 @@
 [
   {
     "object": "page",
-    "id": "262a8c0e-cf8c-80b2-98da-e5d1c7d3c4bd",
-    "created_time": "2025-09-02T09:26:00.000Z",
-    "last_edited_time": "2025-09-02T09:33:00.000Z",
+    "id": "274a8c0e-cf8c-8034-b822-e9d8549cd983",
+    "created_time": "2025-09-20T09:22:00.000Z",
+    "last_edited_time": "2025-09-20T09:43:00.000Z",
     "created_by": {
       "object": "user",
       "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
@@ -20,6 +20,428 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "date": {
+        "id": "ELB%5B",
+        "type": "date",
+        "date": {
+          "start": "2025-09-11",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "text": {
+        "id": "SSPK",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "先週宇宙の果てから地球探検にやってきた（?）MaxZeeksがツーソン日本語学校を訪れ、生徒たちと日本語クラスに参加！？さて、Maxはどんなことを学んだのでしょう？詳しくは最新エピソードをご覧ください！",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "先週宇宙の果てから地球探検にやってきた（?）MaxZeeksがツーソン日本語学校を訪れ、生徒たちと日本語クラスに参加！？さて、Maxはどんなことを学んだのでしょう？詳しくは最新エピソードをご覧ください！",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "https://youtu.be/lRmionS_mq0",
+              "link": {
+                "url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fyoutu.be%2FlRmionS_mq0%3Ffbclid%3DIwZXh0bgNhZW0CMTAAYnJpZBExUXZ6aU9uZExwbk5qQ1JhQwEeFcQnhxFkPktwsQaNP9zJlcbcUfs3R92M3fNJ3sbw1r0jczmma855BvrRZXI_aem_IZUBKL-kfdDqIS4zF-Rk-w&h=AT0seS2CpRbR-y1EVyn6RlEEWCP_ac2t1ZpEXyunUFnIEANnunosnaPiJAEX1JY71l77fvbTrL-lNk3VDfijftpDxjLhpITWD8n-3rZ2hDxwLONL5MF9Wqm3Wk9T-X1ymQ"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "https://youtu.be/lRmionS_mq0",
+            "href": "https://l.facebook.com/l.php?u=https%3A%2F%2Fyoutu.be%2FlRmionS_mq0%3Ffbclid%3DIwZXh0bgNhZW0CMTAAYnJpZBExUXZ6aU9uZExwbk5qQ1JhQwEeFcQnhxFkPktwsQaNP9zJlcbcUfs3R92M3fNJ3sbw1r0jczmma855BvrRZXI_aem_IZUBKL-kfdDqIS4zF-Rk-w&h=AT0seS2CpRbR-y1EVyn6RlEEWCP_ac2t1ZpEXyunUFnIEANnunosnaPiJAEX1JY71l77fvbTrL-lNk3VDfijftpDxjLhpITWD8n-3rZ2hDxwLONL5MF9Wqm3Wk9T-X1ymQ"
+          }
+        ]
+      },
+      "tags": {
+        "id": "%5DR%5BO",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "5c3f5569-4d25-4886-973e-c2abf80c8f7e",
+            "name": "news",
+            "color": "blue"
+          }
+        ]
+      },
+      "image": {
+        "id": "%5E%60%7DR",
+        "type": "files",
+        "files": [
+          {
+            "name": "Maxzeeks_visit-tjs.jpeg.png",
+            "type": "file",
+            "file": {
+              "url": "/image/download/news/274a8c0e-cf8c-8034-b822-e9d8549cd983-Maxzeeks_visit-tjs.jpeg.png",
+              "expiry_time": "2025-09-20T18:21:30.201Z"
+            }
+          }
+        ]
+      },
+      "text_en": {
+        "id": "aM%60q",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Max Zeeks, a curious explorer from the Planet Digby, visited our school last Saturday to learn Japanese language and culture. What did he learn? Check out an upcoming episode with Tucson Japanese School on YouTube @MaxZeeks　",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Max Zeeks, a curious explorer from the Planet Digby, visited our school last Saturday to learn Japanese language and culture. What did he learn? Check out an upcoming episode with Tucson Japanese School on YouTube @MaxZeeks　",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "https://youtu.be/lRmionS_mq0",
+              "link": {
+                "url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fyoutu.be%2FlRmionS_mq0%3Ffbclid%3DIwZXh0bgNhZW0CMTAAYnJpZBExUXZ6aU9uZExwbk5qQ1JhQwEeFcQnhxFkPktwsQaNP9zJlcbcUfs3R92M3fNJ3sbw1r0jczmma855BvrRZXI_aem_IZUBKL-kfdDqIS4zF-Rk-w&h=AT0seS2CpRbR-y1EVyn6RlEEWCP_ac2t1ZpEXyunUFnIEANnunosnaPiJAEX1JY71l77fvbTrL-lNk3VDfijftpDxjLhpITWD8n-3rZ2hDxwLONL5MF9Wqm3Wk9T-X1ymQ"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "https://youtu.be/lRmionS_mq0",
+            "href": "https://l.facebook.com/l.php?u=https%3A%2F%2Fyoutu.be%2FlRmionS_mq0%3Ffbclid%3DIwZXh0bgNhZW0CMTAAYnJpZBExUXZ6aU9uZExwbk5qQ1JhQwEeFcQnhxFkPktwsQaNP9zJlcbcUfs3R92M3fNJ3sbw1r0jczmma855BvrRZXI_aem_IZUBKL-kfdDqIS4zF-Rk-w&h=AT0seS2CpRbR-y1EVyn6RlEEWCP_ac2t1ZpEXyunUFnIEANnunosnaPiJAEX1JY71l77fvbTrL-lNk3VDfijftpDxjLhpITWD8n-3rZ2hDxwLONL5MF9Wqm3Wk9T-X1ymQ"
+          }
+        ]
+      },
+      "en": {
+        "id": "vck%3A",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "MaxZeeks visited Tucson Japanese School!?",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "MaxZeeks visited Tucson Japanese School!?",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "MaxZeeksツーソン日本語学校にやってきた？！",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "MaxZeeksツーソン日本語学校にやってきた？！",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/MaxZeeks-274a8c0ecf8c8034b822e9d8549cd983",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "274a8c0e-cf8c-80d7-b60c-d7f20a69ad72",
+    "created_time": "2025-09-20T08:17:00.000Z",
+    "last_edited_time": "2025-09-20T08:25:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "cc0b1eb3-5708-42ba-926c-c71ecaf5df4d"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "date": {
+        "id": "ELB%5B",
+        "type": "date",
+        "date": {
+          "start": "2025-09-19",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "text": {
+        "id": "SSPK",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "さて今年もやってきました！ご家族そろって楽しんでいただける、ツーソン日本語学校主催第11回運動会へみなさまをご招待いたします！イベント詳細日程: 11月15日(土)競技時間: 午前9時～午後12時半ピクニックランチ: 午後12時半～2時会場：ツーソンインターナショナルスクール校庭　1701 E Seneca St Tucson, AZ 85719費用：ゲスト家族につき＄10（学校生徒とその家族は無料）11月6日(金)までにお支払いください。対象：0歳から18歳までのお子様とご家族参加登録はこちらから: ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "さて今年もやってきました！ご家族そろって楽しんでいただける、ツーソン日本語学校主催第11回運動会へみなさまをご招待いたします！イベント詳細日程: 11月15日(土)競技時間: 午前9時～午後12時半ピクニックランチ: 午後12時半～2時会場：ツーソンインターナショナルスクール校庭　1701 E Seneca St Tucson, AZ 85719費用：ゲスト家族につき＄10（学校生徒とその家族は無料）11月6日(金)までにお支払いください。対象：0歳から18歳までのお子様とご家族参加登録はこちらから: ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "https://forms.gle/3xWpAfcWJfEPc69x7",
+              "link": {
+                "url": "https://forms.gle/3xWpAfcWJfEPc69x7?fbclid=IwZXh0bgNhZW0CMTAAYnJpZBExTVNQMERudXZWUER2cmszUAEerqhkrBWbkJh2EYNgBc3_6cjtyUa0aAP6zWvUg6vpUaCPvPc1t2CNmwdp858_aem_1xyO0Nhba451YT5lzpav6A"
+              }
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "https://forms.gle/3xWpAfcWJfEPc69x7",
+            "href": "https://forms.gle/3xWpAfcWJfEPc69x7?fbclid=IwZXh0bgNhZW0CMTAAYnJpZBExTVNQMERudXZWUER2cmszUAEerqhkrBWbkJh2EYNgBc3_6cjtyUa0aAP6zWvUg6vpUaCPvPc1t2CNmwdp858_aem_1xyO0Nhba451YT5lzpav6A"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "登録締め切り日は10月20日(月)です。多くの皆様のご参加をお待ちしております。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "登録締め切り日は10月20日(月)です。多くの皆様のご参加をお待ちしております。",
+            "href": null
+          }
+        ]
+      },
+      "tags": {
+        "id": "%5DR%5BO",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "d828ae0b-61ac-4a9f-9196-d7469b1352f8",
+            "name": "event",
+            "color": "pink"
+          },
+          {
+            "id": "600b1fd2-9b5f-4c13-abec-8c7679cdfd6d",
+            "name": "announcement",
+            "color": "purple"
+          }
+        ]
+      },
+      "image": {
+        "id": "%5E%60%7DR",
+        "type": "files",
+        "files": [
+          {
+            "name": "11th_Annual_Sports_Day_flyer.png",
+            "type": "file",
+            "file": {
+              "url": "/image/download/news/274a8c0e-cf8c-80d7-b60c-d7f20a69ad72-11th_Annual_Sports_Day_flyer.png",
+              "expiry_time": "2025-09-20T18:21:30.201Z"
+            }
+          }
+        ]
+      },
+      "text_en": {
+        "id": "aM%60q",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Tucson Japanese Language School invites you to the 11th Annual Sports Day, a day filled with laughter, excitement, and spectacular sports events! All Japanese families and Japanese learners in the Tucson area are welcome to participate in this fun family event!Date： Saturday, November 15, 2025Competition: 9:00 am to 12:30 pmLunch: 12:30 pm to 2:00 pmLocation: 1701 E Seneca St, Tucson AZCost: $10/family ( Free for TJS students and their families)Participant Qualification: 0 to 18 years old and their families.Please register online using this link: ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Tucson Japanese Language School invites you to the 11th Annual Sports Day, a day filled with laughter, excitement, and spectacular sports events! All Japanese families and Japanese learners in the Tucson area are welcome to participate in this fun family event!Date： Saturday, November 15, 2025Competition: 9:00 am to 12:30 pmLunch: 12:30 pm to 2:00 pmLocation: 1701 E Seneca St, Tucson AZCost: $10/family ( Free for TJS students and their families)Participant Qualification: 0 to 18 years old and their families.Please register online using this link: ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "https://forms.gle/3xWpAfcWJfEPc69x7",
+              "link": {
+                "url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fforms.gle%2F3xWpAfcWJfEPc69x7%3Ffbclid%3DIwZXh0bgNhZW0CMTAAYnJpZBExTVNQMERudXZWUER2cmszUAEeODRlHe770ObflalI3Ayxz-nhQI4jHGMWZWFKKAq-IU-21I3iejt8Ij2Bfwc_aem_qh-2MO5rm9vr8OMqBKs0zw&h=AT2O36kDLGw3wssuN74Bupcl2Y7d6JxgKiq3uloaH-3C4sLzS01srr589eX8TpVTwdzHRDYcoSzRpDh2Q0rxrhRw5rNU4suQg6jxVe2Ai9Bpha5fNc0WdtN_LitB672eKtxyXzxKFZTm&__tn__=q&c%5B0%5D=AT20gJ9U1WxzecljnryHNyRxgVmLcAwLHIBc3mPZCHIA_ausfNrGyOr4R9tqI8ujJXkDpO4OoryD_hxWbmW-4bJsDSi2GVP1QPB9wKGNL-0ddr_5CfA_vIw2hxU5PCSGigWly5rHPVhh39urk6i84q9BxjtykNnQEAc"
+              }
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "https://forms.gle/3xWpAfcWJfEPc69x7",
+            "href": "https://l.facebook.com/l.php?u=https%3A%2F%2Fforms.gle%2F3xWpAfcWJfEPc69x7%3Ffbclid%3DIwZXh0bgNhZW0CMTAAYnJpZBExTVNQMERudXZWUER2cmszUAEeODRlHe770ObflalI3Ayxz-nhQI4jHGMWZWFKKAq-IU-21I3iejt8Ij2Bfwc_aem_qh-2MO5rm9vr8OMqBKs0zw&h=AT2O36kDLGw3wssuN74Bupcl2Y7d6JxgKiq3uloaH-3C4sLzS01srr589eX8TpVTwdzHRDYcoSzRpDh2Q0rxrhRw5rNU4suQg6jxVe2Ai9Bpha5fNc0WdtN_LitB672eKtxyXzxKFZTm&__tn__=q&c%5B0%5D=AT20gJ9U1WxzecljnryHNyRxgVmLcAwLHIBc3mPZCHIA_ausfNrGyOr4R9tqI8ujJXkDpO4OoryD_hxWbmW-4bJsDSi2GVP1QPB9wKGNL-0ddr_5CfA_vIw2hxU5PCSGigWly5rHPVhh39urk6i84q9BxjtykNnQEAc"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Registration deadline is Monday, October 20th, 2025.Hope to see many of you there!!!",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Registration deadline is Monday, October 20th, 2025.Hope to see many of you there!!!",
+            "href": null
+          }
+        ]
+      },
+      "en": {
+        "id": "vck%3A",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Tucson Japanese School 11th Annual Sports Day Announcement",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Tucson Japanese School 11th Annual Sports Day Announcement",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "第11回ツーソン日本語学校運動会開催のお知らせ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "第11回ツーソン日本語学校運動会開催のお知らせ",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/11-274a8c0ecf8c80d7b60cd7f20a69ad72",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "262a8c0e-cf8c-80b2-98da-e5d1c7d3c4bd",
+    "created_time": "2025-09-02T09:26:00.000Z",
+    "last_edited_time": "2025-09-20T08:23:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "cc0b1eb3-5708-42ba-926c-c71ecaf5df4d"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
     "properties": {
       "date": {
         "id": "ELB%5B",
@@ -128,7 +550,18 @@
       "tags": {
         "id": "%5DR%5BO",
         "type": "multi_select",
-        "multi_select": []
+        "multi_select": [
+          {
+            "id": "5c3f5569-4d25-4886-973e-c2abf80c8f7e",
+            "name": "news",
+            "color": "blue"
+          },
+          {
+            "id": "9062e3c7-6d08-46f9-9191-fbbe0074155a",
+            "name": "Enrollment",
+            "color": "green"
+          }
+        ]
       },
       "image": {
         "id": "%5E%60%7DR",
@@ -139,7 +572,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/news/262a8c0e-cf8c-80b2-98da-e5d1c7d3c4bd-Dangomaking2022.JPG",
-              "expiry_time": "2025-09-07T13:56:16.083Z"
+              "expiry_time": "2025-09-20T18:21:30.201Z"
             }
           }
         ]
@@ -293,7 +726,7 @@
     "object": "page",
     "id": "262a8c0e-cf8c-80bb-b6c2-e12998eeaf15",
     "created_time": "2025-09-02T09:19:00.000Z",
-    "last_edited_time": "2025-09-02T09:26:00.000Z",
+    "last_edited_time": "2025-09-20T08:24:00.000Z",
     "created_by": {
       "object": "user",
       "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
@@ -310,6 +743,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "date": {
         "id": "ELB%5B",
@@ -382,7 +816,18 @@
       "tags": {
         "id": "%5DR%5BO",
         "type": "multi_select",
-        "multi_select": []
+        "multi_select": [
+          {
+            "id": "83a44d44-c539-4f88-82e0-4b36bfb5e6c7",
+            "name": "kanji_kentei",
+            "color": "orange"
+          },
+          {
+            "id": "d828ae0b-61ac-4a9f-9196-d7469b1352f8",
+            "name": "event",
+            "color": "pink"
+          }
+        ]
       },
       "image": {
         "id": "%5E%60%7DR",
@@ -393,7 +838,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/news/262a8c0e-cf8c-80bb-b6c2-e12998eeaf15-Kanjikentei2025poster.png",
-              "expiry_time": "2025-09-07T13:56:16.083Z"
+              "expiry_time": "2025-09-20T18:21:30.201Z"
             }
           }
         ]
@@ -511,7 +956,7 @@
     "object": "page",
     "id": "262a8c0e-cf8c-8052-997a-cf0d2e43f5ab",
     "created_time": "2025-09-02T09:14:00.000Z",
-    "last_edited_time": "2025-09-02T09:19:00.000Z",
+    "last_edited_time": "2025-09-20T08:24:00.000Z",
     "created_by": {
       "object": "user",
       "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
@@ -528,6 +973,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "date": {
         "id": "ELB%5B",
@@ -600,7 +1046,18 @@
       "tags": {
         "id": "%5DR%5BO",
         "type": "multi_select",
-        "multi_select": []
+        "multi_select": [
+          {
+            "id": "d828ae0b-61ac-4a9f-9196-d7469b1352f8",
+            "name": "event",
+            "color": "pink"
+          },
+          {
+            "id": "600b1fd2-9b5f-4c13-abec-8c7679cdfd6d",
+            "name": "announcement",
+            "color": "purple"
+          }
+        ]
       },
       "image": {
         "id": "%5E%60%7DR",
@@ -611,7 +1068,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/news/262a8c0e-cf8c-8052-997a-cf0d2e43f5ab-__________________9.4.2024_.png",
-              "expiry_time": "2025-09-07T13:56:16.083Z"
+              "expiry_time": "2025-09-20T18:21:30.201Z"
             }
           }
         ]
@@ -746,6 +1203,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "date": {
         "id": "ELB%5B",
@@ -799,7 +1257,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/news/112a8c0e-cf8c-80ca-af61-e30b24fd97a7-mochipounding.jpeg",
-              "expiry_time": "2025-09-07T13:56:16.083Z"
+              "expiry_time": "2025-09-20T18:21:30.201Z"
             }
           }
         ]
@@ -898,6 +1356,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "date": {
         "id": "ELB%5B",
@@ -951,7 +1410,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/news/112a8c0e-cf8c-8032-ab02-db04c52a7455-2020newyear.webp",
-              "expiry_time": "2025-09-07T13:56:16.083Z"
+              "expiry_time": "2025-09-20T18:21:30.201Z"
             }
           }
         ]
@@ -1050,6 +1509,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "date": {
         "id": "ELB%5B",
@@ -1103,7 +1563,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/news/112a8c0e-cf8c-80ef-bc49-fe1172c9ce8f-emptyschool.webp",
-              "expiry_time": "2025-09-07T13:56:16.083Z"
+              "expiry_time": "2025-09-20T18:21:30.201Z"
             }
           }
         ]
@@ -1202,6 +1662,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "date": {
         "id": "ELB%5B",
@@ -1255,7 +1716,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/news/112a8c0e-cf8c-80b7-b324-ea602066a777-pandemicprevention.jpg",
-              "expiry_time": "2025-09-07T13:56:16.083Z"
+              "expiry_time": "2025-09-20T18:21:30.201Z"
             }
           }
         ]
@@ -1354,6 +1815,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "date": {
         "id": "ELB%5B",
@@ -1407,7 +1869,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/news/112a8c0e-cf8c-8093-b82c-cf686345f657-emptyschool.webp",
-              "expiry_time": "2025-09-07T13:56:16.083Z"
+              "expiry_time": "2025-09-20T18:21:30.201Z"
             }
           }
         ]
@@ -1506,6 +1968,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "date": {
         "id": "ELB%5B",
@@ -1559,7 +2022,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/news/112a8c0e-cf8c-8075-bdbf-cc1dfe962559-remotelearningkid.webp",
-              "expiry_time": "2025-09-07T13:56:16.084Z"
+              "expiry_time": "2025-09-20T18:21:30.201Z"
             }
           }
         ]
@@ -1658,6 +2121,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "date": {
         "id": "ELB%5B",
@@ -1711,7 +2175,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/news/112a8c0e-cf8c-80f1-b6b9-c101f6b58f00-SAJCClogo.png",
-              "expiry_time": "2025-09-07T13:56:16.084Z"
+              "expiry_time": "2025-09-20T18:21:30.201Z"
             }
           }
         ]
@@ -1810,6 +2274,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "date": {
         "id": "ELB%5B",
@@ -1953,6 +2418,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "date": {
         "id": "ELB%5B",
@@ -2006,7 +2472,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/news/112a8c0e-cf8c-8034-8ce5-dced417d9e42-newyear2021.jpg",
-              "expiry_time": "2025-09-07T13:56:16.084Z"
+              "expiry_time": "2025-09-20T18:21:30.201Z"
             }
           }
         ]
@@ -2105,6 +2571,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "date": {
         "id": "ELB%5B",
@@ -2163,7 +2630,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/news/112a8c0e-cf8c-802e-9036-c481d58ca391-kanjikentei2020.webp",
-              "expiry_time": "2025-09-07T13:56:16.084Z"
+              "expiry_time": "2025-09-20T18:21:30.201Z"
             }
           }
         ]
@@ -2262,6 +2729,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "date": {
         "id": "ELB%5B",
@@ -2315,7 +2783,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/news/112a8c0e-cf8c-8063-bbb4-da44890294de-boystudyonline.jpg",
-              "expiry_time": "2025-09-07T13:56:16.084Z"
+              "expiry_time": "2025-09-20T18:21:30.201Z"
             }
           }
         ]
@@ -2414,6 +2882,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "date": {
         "id": "ELB%5B",
@@ -2472,7 +2941,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/news/112a8c0e-cf8c-8069-8e70-c39caa81b7b6-schoolchairtable.webp",
-              "expiry_time": "2025-09-07T13:56:16.084Z"
+              "expiry_time": "2025-09-20T18:21:30.201Z"
             }
           }
         ]
@@ -2571,6 +3040,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "date": {
         "id": "ELB%5B",
@@ -2624,7 +3094,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/news/112a8c0e-cf8c-8047-9797-e58ca59ecd54-tucsonundokai2020.webp",
-              "expiry_time": "2025-09-07T13:56:16.084Z"
+              "expiry_time": "2025-09-20T18:21:30.201Z"
             }
           }
         ]
@@ -2723,6 +3193,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "date": {
         "id": "ELB%5B",
@@ -2781,7 +3252,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/news/112a8c0e-cf8c-8027-968c-e601184cc884-kanken2022.webp",
-              "expiry_time": "2025-09-07T13:56:16.084Z"
+              "expiry_time": "2025-09-20T18:21:30.201Z"
             }
           }
         ]
@@ -2880,6 +3351,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "date": {
         "id": "ELB%5B",
@@ -2933,7 +3405,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/news/112a8c0e-cf8c-80f5-8b6d-ce0e28639bcd-lastdayofschool2021.jpg",
-              "expiry_time": "2025-09-07T13:56:16.084Z"
+              "expiry_time": "2025-09-20T18:21:30.202Z"
             }
           }
         ]
@@ -3032,6 +3504,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "date": {
         "id": "ELB%5B",
@@ -3085,7 +3558,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/news/112a8c0e-cf8c-8033-ac6e-fc3d0614a4d0-kanjikenteilogo.jpg",
-              "expiry_time": "2025-09-07T13:56:16.084Z"
+              "expiry_time": "2025-09-20T18:21:30.202Z"
             }
           }
         ]
@@ -3184,6 +3657,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "date": {
         "id": "ELB%5B",
@@ -3237,7 +3711,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/news/112a8c0e-cf8c-800f-abed-e7a03eae0e70-hitomimcknight.webp",
-              "expiry_time": "2025-09-07T13:56:16.084Z"
+              "expiry_time": "2025-09-20T18:21:30.202Z"
             }
           }
         ]
@@ -3336,6 +3810,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "date": {
         "id": "ELB%5B",
@@ -3394,7 +3869,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/news/112a8c0e-cf8c-8033-8993-dd0d3afd1728-schoolchildrensmiles.webp",
-              "expiry_time": "2025-09-07T13:56:16.084Z"
+              "expiry_time": "2025-09-20T18:21:30.202Z"
             }
           }
         ]
@@ -3493,6 +3968,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "date": {
         "id": "ELB%5B",
@@ -3546,7 +4022,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/news/112a8c0e-cf8c-800a-83bb-f34240a26317-childreninclassroom.webp",
-              "expiry_time": "2025-09-07T13:56:16.084Z"
+              "expiry_time": "2025-09-20T18:21:30.202Z"
             }
           }
         ]
@@ -3645,6 +4121,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "date": {
         "id": "ELB%5B",
@@ -3703,7 +4180,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/news/112a8c0e-cf8c-80f9-9a0d-cb47c5c91e9c-tucsonundokai2021.webp",
-              "expiry_time": "2025-09-07T13:56:16.084Z"
+              "expiry_time": "2025-09-20T18:21:30.202Z"
             }
           }
         ]
@@ -3802,6 +4279,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "date": {
         "id": "ELB%5B",
@@ -3855,7 +4333,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/news/112a8c0e-cf8c-8081-9293-cf90f6aefa52-sponsorthanks.webp",
-              "expiry_time": "2025-09-07T13:56:16.084Z"
+              "expiry_time": "2025-09-20T18:21:30.354Z"
             }
           }
         ]
@@ -3954,6 +4432,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "date": {
         "id": "ELB%5B",
@@ -4012,7 +4491,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/news/112a8c0e-cf8c-8081-ba97-ef38f356233d-kanjikentei2023.webp",
-              "expiry_time": "2025-09-07T13:56:16.084Z"
+              "expiry_time": "2025-09-20T18:21:30.354Z"
             }
           }
         ]
@@ -4111,6 +4590,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "date": {
         "id": "ELB%5B",
@@ -4164,7 +4644,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/news/110a8c0e-cf8c-80cc-9cd5-f9546949b571-arizonamatsurilogo.png",
-              "expiry_time": "2025-09-07T13:56:16.194Z"
+              "expiry_time": "2025-09-20T18:21:30.354Z"
             }
           }
         ]
@@ -4263,6 +4743,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "date": {
         "id": "ELB%5B",
@@ -4316,7 +4797,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/news/110a8c0e-cf8c-80dd-afcb-f422b241bd32-supportinghands.webp",
-              "expiry_time": "2025-09-07T13:56:16.194Z"
+              "expiry_time": "2025-09-20T18:21:30.354Z"
             }
           }
         ]
@@ -4415,6 +4896,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "date": {
         "id": "ELB%5B",
@@ -4473,7 +4955,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/news/110a8c0e-cf8c-8035-98f6-d438d58ac188-tucsonundokai2023.webp",
-              "expiry_time": "2025-09-07T13:56:16.194Z"
+              "expiry_time": "2025-09-20T18:21:30.354Z"
             }
           }
         ]
@@ -4572,6 +5054,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "date": {
         "id": "ELB%5B",
@@ -4630,7 +5113,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/news/110a8c0e-cf8c-805b-a3bf-cba51426fdfb-kanjikentei2024.png",
-              "expiry_time": "2025-09-07T13:56:16.194Z"
+              "expiry_time": "2025-09-20T18:21:30.354Z"
             }
           }
         ]
@@ -4729,6 +5212,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "date": {
         "id": "ELB%5B",
@@ -4787,7 +5271,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/news/110a8c0e-cf8c-804e-b7d6-dfe14f5651ea-notoearthquake1.jpg",
-              "expiry_time": "2025-09-07T13:56:16.194Z"
+              "expiry_time": "2025-09-20T18:21:30.354Z"
             }
           },
           {
@@ -4795,7 +5279,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/news/110a8c0e-cf8c-804e-b7d6-dfe14f5651ea-notoearthquake2.jpg",
-              "expiry_time": "2025-09-07T13:56:16.220Z"
+              "expiry_time": "2025-09-20T18:21:30.385Z"
             }
           },
           {
@@ -4803,7 +5287,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/news/110a8c0e-cf8c-804e-b7d6-dfe14f5651ea-notoearthquake3.jpg",
-              "expiry_time": "2025-09-07T13:56:16.227Z"
+              "expiry_time": "2025-09-20T18:21:30.390Z"
             }
           }
         ]
@@ -4902,6 +5386,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "date": {
         "id": "ELB%5B",
@@ -4955,7 +5440,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/news/110a8c0e-cf8c-805b-8379-fb368fd40346-newyearprayer.webp",
-              "expiry_time": "2025-09-07T13:56:16.194Z"
+              "expiry_time": "2025-09-20T18:21:30.354Z"
             }
           }
         ]
@@ -5054,6 +5539,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "date": {
         "id": "ELB%5B",
@@ -5112,7 +5598,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/news/110a8c0e-cf8c-8021-8942-c4bc95ab4782-japanesegarden.webp",
-              "expiry_time": "2025-09-07T13:56:16.194Z"
+              "expiry_time": "2025-09-20T18:21:30.355Z"
             }
           }
         ]
@@ -5211,6 +5697,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "date": {
         "id": "ELB%5B",
@@ -5359,6 +5846,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "date": {
         "id": "ELB%5B",
@@ -5417,7 +5905,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/news/110a8c0e-cf8c-80a0-a8aa-e0523eae6b07-schooltablechair.webp",
-              "expiry_time": "2025-09-07T13:56:16.195Z"
+              "expiry_time": "2025-09-20T18:21:30.355Z"
             }
           }
         ]
@@ -5516,6 +6004,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "date": {
         "id": "ELB%5B",
@@ -5664,6 +6153,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "date": {
         "id": "ELB%5B",
@@ -5717,7 +6207,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/news/10ba8c0e-cf8c-803e-aaa0-c598d2fa0976-Oasissep2017.jpg",
-              "expiry_time": "2025-09-07T13:56:16.195Z"
+              "expiry_time": "2025-09-20T18:21:30.355Z"
             }
           }
         ]
@@ -5816,6 +6306,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "date": {
         "id": "ELB%5B",
@@ -5874,7 +6365,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/news/102a8c0e-cf8c-8096-b2f7-e91ec767e38e-unitymural02.jpg",
-              "expiry_time": "2025-09-07T13:56:16.195Z"
+              "expiry_time": "2025-09-20T18:21:30.355Z"
             }
           }
         ]
@@ -5973,6 +6464,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "date": {
         "id": "ELB%5B",
@@ -6103,7 +6595,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/news/57b1ff72-dbca-43d3-b6eb-8e3fd7d8c18f-sakura_radio_minnano_gakko.jpg",
-              "expiry_time": "2025-09-07T13:56:16.195Z"
+              "expiry_time": "2025-09-20T18:21:30.355Z"
             }
           }
         ]
@@ -6238,6 +6730,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "date": {
         "id": "ELB%5B",
@@ -6332,7 +6825,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/news/2c5574c7-67e7-4213-9c29-4bbee673f2a7-sakura_radio_minnano_gakko.jpg",
-              "expiry_time": "2025-09-07T13:56:16.195Z"
+              "expiry_time": "2025-09-20T18:21:30.355Z"
             }
           }
         ]

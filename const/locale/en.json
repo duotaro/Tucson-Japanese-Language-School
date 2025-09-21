@@ -61,7 +61,9 @@
     },
     "calender": {
       "title": "School Year Calendar",
-      "download": "Download PDF"
+      "download": "Download PDF",
+      "add_google": "Google Calendar",
+      "add_i": "iCalender"
     },
     "director": {
       "title": "Board of Director",

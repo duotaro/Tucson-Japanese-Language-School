@@ -20,6 +20,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "en": {
         "id": "%3Dxxv",
@@ -90,7 +91,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/directors/10ea8c0e-cf8c-80bc-a73d-d20e096f2c0c-DSC08141_edited_edited.jpg",
-              "expiry_time": "2025-09-07T13:55:48.251Z"
+              "expiry_time": "2025-09-20T18:21:10.435Z"
             }
           }
         ]
@@ -148,6 +149,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "en": {
         "id": "%3Dxxv",
@@ -218,7 +220,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/directors/10ba8c0e-cf8c-80e6-8546-c4d0fbbcdbf0-DSC08145_edited_edited_edited.jpg",
-              "expiry_time": "2025-09-07T13:55:48.251Z"
+              "expiry_time": "2025-09-20T18:21:10.435Z"
             }
           }
         ]
@@ -276,6 +278,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "en": {
         "id": "%3Dxxv",
@@ -331,7 +334,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/directors/12a4999b-cd97-4488-a688-6c398358c991-profile.jpg",
-              "expiry_time": "2025-09-07T13:55:48.251Z"
+              "expiry_time": "2025-09-20T18:21:10.435Z"
             }
           }
         ]
@@ -389,6 +392,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "en": {
         "id": "%3Dxxv",
@@ -454,7 +458,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/directors/2c933574-5423-431b-9564-9ac63cf02078-profile.jpg",
-              "expiry_time": "2025-09-07T13:55:48.251Z"
+              "expiry_time": "2025-09-20T18:21:10.435Z"
             }
           }
         ]

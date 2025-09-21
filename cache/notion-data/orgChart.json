@@ -20,6 +20,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "image_en": {
         "id": "AnK%3A",
@@ -30,7 +31,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/orgChart/7a5843cb-66c0-4555-b972-1ee1c3063962-governance_chart_en.jpg",
-              "expiry_time": "2025-09-07T13:55:48.963Z"
+              "expiry_time": "2025-09-20T18:21:11.326Z"
             }
           }
         ]
@@ -90,7 +91,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/orgChart/7a5843cb-66c0-4555-b972-1ee1c3063962-governance_chart_ja.jpg",
-              "expiry_time": "2025-09-07T13:55:48.966Z"
+              "expiry_time": "2025-09-20T18:21:11.332Z"
             }
           }
         ]

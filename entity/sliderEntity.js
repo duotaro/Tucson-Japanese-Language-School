@@ -31,22 +31,24 @@ export default class SliderEntity {
 
         if(this.active){ // activeなスライダーのみ処理
 
-            // ★★★ 画像データの処理を修正 ★★★
-            // pages/index.js の fetchData で item.properties.image に optimizedImage が追加されていることを期待
-            if (item.properties?.image?.optimizedImage) {
-                // optimizedImage プロパティから直接情報を取得
-                this.image = item.properties.image.optimizedImage;
-                // this.image は { baseName, pagePath, alt, width, height } のオブジェクトになる
+            // 画像データの処理
+            if (item.properties?.image?.files?.[0]) {
+                const imageFile = item.properties.image.files[0];
+                // ファイル名からベース名を作成（拡張子を除去し、スペースをアンダースコアに変換）
+                const originalName = imageFile.name;
+                const baseName = originalName.replace(/\.[^/.]+$/, '').replace(/ /g, '_');
+
+                // ImageOptimizerで使用するための画像データ構造を作成
+                this.image = {
+                    baseName: baseName,
+                    pagePath: 'slider',
+                    alt: this.label || 'スライダー画像',
+                    url: imageFile.file?.url || imageFile.external?.url
+                };
             } else {
-                // optimizedImage が見つからない場合のフォールバック（デバッグ用メッセージ）
-                console.warn(`[SliderEntity] Optimized image data not found for Slider ID: ${item.id}.
-                              Ensure 'pages/index.js/fetchData' correctly adds 'optimizedImage'.`);
-                // 必要であれば、元のNotion画像URLなどをフォールバックとして設定
-                // 例: const tmpName = item.properties.image?.files?.[0]?.name?.replace(/ /g, '_');
-                //     this.image = tmpName ? `/${ACCESABLE_IMAGE_PATH}/slider/${tmpName}${DOWNLOAD_IMAGE_EXTENSION}` : null;
-                this.image = null; // 画像がない場合はnull
+                console.warn(`[SliderEntity] No image data found for Slider ID: ${item.id}`);
+                this.image = null;
             }
-            // ★★★ 修正ここまで ★★★
 
             // orderingプロパティを安全に取得
             this.ordering = item.properties?.["ordering"]?.number || null;

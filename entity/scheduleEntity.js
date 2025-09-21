@@ -11,6 +11,8 @@ export class SchaduleEntity {
             this.end = null;
             this.startStr = null;
             this.endStr = null;
+            this.startTime = null;
+            this.endTime = null;
             this.date = null;
             this.year = null;
             this.month = null;
@@ -18,6 +20,7 @@ export class SchaduleEntity {
             this.dayName = null;
             this.title = '';
             this.extendedProps = { description: null };
+            this.text = null;
             this.link = null;
             this.location = null;
             this.isEvent = false;
@@ -30,12 +33,23 @@ export class SchaduleEntity {
         this.id = item.id
         this.dateTime = item.properties["date"]?.date?.start || null
         this.allDay = true
-        this.start = item.properties["date"]?.date?.start || null
-        this.end = item.properties["date"]?.date?.end || null
-        this.startStr = item.properties["date"]?.date?.start || null
-        this.endStr = item.properties["date"]?.date?.end || null
+        const rawStart = item.properties["date"]?.date?.start || null
+        const rawEnd = item.properties["date"]?.date?.end || null
+        
+        this.start = rawStart
+        this.end = (rawStart === rawEnd) ? null : rawEnd // 同じ日付の場合はendをnullに
+        this.startStr = rawStart
+        this.endStr = rawEnd
+        
+        // 時間表示用のプロパティを追加
+        this.startTime = null
+        this.endTime = null
+        
         if(this.startStr && this.endStr){
             this.allDay = false
+            // 時間があるイベントの場合、アリゾナ時間でフォーマット
+            this.startTime = formatDateForHHmm(this.startStr, isJpn)
+            this.endTime = formatDateForHHmm(this.endStr, isJpn)
         }
         // 日付はstart基準
         if(this.start){
@@ -52,18 +66,36 @@ export class SchaduleEntity {
             this.dayName = null
         }
 
-        this.title = isJpn ? item.properties["title"]?.rich_text?.[0]?.text?.content || '' : item.properties["en"]?.rich_text?.[0]?.text?.content || ''
+        // 多言語対応のタイトル処理（英語時は日本語にフォールバック）
+        if (isJpn) {
+            this.title = item.properties["title"]?.rich_text?.[0]?.text?.content || ''
+        } else {
+            // 英語表示時：英語タイトルがあればそれを使用、なければ日本語にフォールバック
+            const enTitle = item.properties["en"]?.rich_text?.[0]?.text?.content
+            const jpTitle = item.properties["title"]?.rich_text?.[0]?.text?.content
+            this.title = enTitle || jpTitle || ''
+        }
         this.extendedProps = {
             description : ''
         }
         this.extendedProps.description = null
+        this.text = null
+
+        // 多言語対応の説明文処理（英語時は日本語にフォールバック）
         if(isJpn){
             if(item.properties["text"]?.rich_text?.[0]){
                 this.extendedProps.description = item.properties["text"].rich_text[0].text.content
+                this.text = item.properties["text"].rich_text[0].text.content
             }
         } else {
-            if(item.properties["text_en"]?.rich_text?.[0]){
-                this.extendedProps.description = item.properties["text_en"].rich_text[0].text.content
+            // 英語表示時：英語説明文があればそれを使用、なければ日本語にフォールバック
+            const enText = item.properties["text_en"]?.rich_text?.[0]?.text?.content
+            const jpText = item.properties["text"]?.rich_text?.[0]?.text?.content
+            const finalText = enText || jpText || null
+
+            if(finalText) {
+                this.extendedProps.description = finalText
+                this.text = finalText
             }
         }
         if(item.properties["link"] && item.properties["link"].url){
@@ -80,7 +112,8 @@ export class SchaduleEntity {
             this.backgroundColor = item.properties["backgroundColor"].rich_text[0].text.content
             this.borderColor = item.properties["backgroundColor"].rich_text[0].text.content
         }
-        
+
+
         this.editable = false
     }
 }

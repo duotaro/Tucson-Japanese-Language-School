@@ -20,6 +20,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "en": {
         "id": "%3FvxR",
@@ -53,7 +54,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/policies/4b97de15-bc21-456a-8119-9b6a5bafb03e-Manabi_of_Tucson__Inc._Corporate_Bylaws.pdf",
-              "expiry_time": "2025-09-07T13:55:49.654Z"
+              "expiry_time": "2025-09-20T18:21:12.870Z"
             }
           }
         ]
@@ -106,6 +107,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "en": {
         "id": "%3FvxR",
@@ -139,7 +141,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/policies/b65ec5d8-dda1-47b3-8bb2-c07ea87d5555-TJS_Conflict_of_Interest_Policy.pdf",
-              "expiry_time": "2025-09-07T13:55:49.654Z"
+              "expiry_time": "2025-09-20T18:21:12.870Z"
             }
           }
         ]
@@ -192,6 +194,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "en": {
         "id": "%3FvxR",
@@ -225,7 +228,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/policies/d7efd34e-2499-4827-95c4-48f6e5ed0afb-Article_of_Incorporation_-_Manabi_of_Tucson__Inc..pdf",
-              "expiry_time": "2025-09-07T13:55:49.655Z"
+              "expiry_time": "2025-09-20T18:21:12.870Z"
             }
           }
         ]

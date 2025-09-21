@@ -20,6 +20,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "en": {
         "id": "%3Bz%7Di",
@@ -53,7 +54,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/history/1ac2adce-5bd8-453b-ab37-84e96ec667bc-historty3.jpg",
-              "expiry_time": "2025-09-07T13:55:47.509Z"
+              "expiry_time": "2025-09-20T18:21:09.606Z"
             }
           }
         ]
@@ -67,7 +68,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/history/1ac2adce-5bd8-453b-ab37-84e96ec667bc-historty2.jpg",
-              "expiry_time": "2025-09-07T13:55:47.512Z"
+              "expiry_time": "2025-09-20T18:21:09.609Z"
             }
           }
         ]
@@ -427,7 +428,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/history/1ac2adce-5bd8-453b-ab37-84e96ec667bc-historty1.jpg",
-              "expiry_time": "2025-09-07T13:55:47.516Z"
+              "expiry_time": "2025-09-20T18:21:09.612Z"
             }
           }
         ]

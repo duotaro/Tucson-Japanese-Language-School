@@ -1,12 +1,12 @@
 [
   {
     "object": "page",
-    "id": "179ab0fe-382d-43b5-a6f5-e1a55f186f5c",
-    "created_time": "2024-09-05T02:17:00.000Z",
-    "last_edited_time": "2024-09-11T16:41:00.000Z",
+    "id": "274a8c0e-cf8c-806c-990b-cb99e428831d",
+    "created_time": "2025-09-20T08:11:00.000Z",
+    "last_edited_time": "2025-09-20T15:38:00.000Z",
     "created_by": {
       "object": "user",
-      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
     },
     "last_edited_by": {
       "object": "user",
@@ -20,6 +20,140 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "active": {
+        "id": "%3CnDj",
+        "type": "checkbox",
+        "checkbox": true
+      },
+      "link": {
+        "id": "%40pN%5C",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "https://jba-arizona.org/",
+              "link": {
+                "url": "https://jba-arizona.org/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "https://jba-arizona.org/",
+            "href": "https://jba-arizona.org/"
+          }
+        ]
+      },
+      "タグ": {
+        "id": "HB%3C%3B",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "28cb56a3-a7cc-416c-9f94-d7d8e2393340",
+            "name": "組織",
+            "color": "pink"
+          }
+        ]
+      },
+      "image": {
+        "id": "X%7DGg",
+        "type": "files",
+        "files": [
+          {
+            "name": "JBAALogo.jpg",
+            "type": "file",
+            "file": {
+              "url": "/image/download/sponsors/274a8c0e-cf8c-806c-990b-cb99e428831d-JBAALogo.jpg",
+              "expiry_time": "2025-09-20T18:21:02.619Z"
+            }
+          }
+        ]
+      },
+      "ordering": {
+        "id": "eyz_",
+        "type": "number",
+        "number": 1
+      },
+      "en": {
+        "id": "fWSY",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Japan Business Association Arizona",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Japan Business Association Arizona",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "JABAA",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "JABAA",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/JABAA-274a8c0ecf8c806c990bcb99e428831d",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "179ab0fe-382d-43b5-a6f5-e1a55f186f5c",
+    "created_time": "2024-09-05T02:17:00.000Z",
+    "last_edited_time": "2025-09-20T08:11:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "1e302ac5-bce4-42b7-97e4-91aee309e7c4"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
     "properties": {
       "active": {
         "id": "%3CnDj",
@@ -56,9 +190,9 @@
         "type": "multi_select",
         "multi_select": [
           {
-            "id": "28cb56a3-a7cc-416c-9f94-d7d8e2393340",
-            "name": "組織",
-            "color": "pink"
+            "id": "0ff007ef-4f42-4294-91a9-9a47b0eb8234",
+            "name": "企業",
+            "color": "orange"
           }
         ]
       },
@@ -71,7 +205,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/sponsors/179ab0fe-382d-43b5-a6f5-e1a55f186f5c-ikkyu.png",
-              "expiry_time": "2025-09-07T13:55:42.479Z"
+              "expiry_time": "2025-09-20T18:21:02.620Z"
             }
           }
         ]
@@ -139,7 +273,7 @@
     "object": "page",
     "id": "b2568ae1-1f5c-41b0-a80c-4ec50d4a9b41",
     "created_time": "2024-09-05T02:17:00.000Z",
-    "last_edited_time": "2024-09-29T05:38:00.000Z",
+    "last_edited_time": "2025-09-20T08:11:00.000Z",
     "created_by": {
       "object": "user",
       "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
@@ -156,6 +290,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "active": {
         "id": "%3CnDj",
@@ -192,9 +327,9 @@
         "type": "multi_select",
         "multi_select": [
           {
-            "id": "28cb56a3-a7cc-416c-9f94-d7d8e2393340",
-            "name": "組織",
-            "color": "pink"
+            "id": "0ff007ef-4f42-4294-91a9-9a47b0eb8234",
+            "name": "企業",
+            "color": "orange"
           }
         ]
       },
@@ -207,7 +342,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/sponsors/b2568ae1-1f5c-41b0-a80c-4ec50d4a9b41-tucsonblossomacpuncture.png",
-              "expiry_time": "2025-09-07T13:55:42.479Z"
+              "expiry_time": "2025-09-20T18:21:02.620Z"
             }
           }
         ]
