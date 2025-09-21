@@ -1,10 +1,54 @@
 # 作業ログ - feature/notion-cache-system ブランチ
 
-**作成日**: 2025年7月2日  
-**更新日**: 2025年9月20日（スライダー画像「No image」問題修正）  
-**対象**: ツーソン日本語学校ウェブサイト  
-**ブランチ**: develop  
+**作成日**: 2025年7月2日
+**更新日**: 2025年9月21日（にほんごかふぇデータ連携）
+**対象**: ツーソン日本語学校ウェブサイト
+**ブランチ**: develop
 **作業者**: Claude AI + ユーザー
+
+---
+
+## 2025年9月21日（土） - にほんごかふぇページのNotion DB連携実装
+
+### 作業内容
+program/nihongocafe ページでNotionデータベースから動的にコンテンツを取得できるようにした。
+
+### 実装内容
+
+1. **entityクラスの作成**
+   - `entity/nihongoCafeEntity.js`を新規作成
+   - 3つのentityクラスを実装：
+     - `NihongoCafeOverviewEntity`: 概要情報用
+     - `NihongoCafePriceEntity`: 価格情報用
+     - `NihongoCafeDetailsEntity`: 詳細情報用
+   - 日英切り替え対応（`isJpn`パラメータ）
+
+2. **Notion DBからのデータ取得処理**
+   - `pages/[[...slug]].js`にnihongocafeページ用のデータフェッチ処理を追加（703-732行）
+   - 5つのNotionデータベースからデータ取得：
+     - にほんごかふぇ概要：274a8c0ecf8c814a98b8e817ef55df69
+     - 対面にほんごかふぇ概要：274a8c0ecf8c80e1841ce20b2ffd582f
+     - 対面にほんごかふぇ価格情報：274a8c0ecf8c806bb30ccf9629c77830
+     - オンラインにほんごかふぇ概要：274a8c0ecf8c8064878de70e4f5c8826
+     - オンラインにほんごかふぇ価格情報：274a8c0ecf8c808aa55cfb90733e2119
+
+3. **コンポーネントの更新**
+   - `components/pages/program/nihongocafe.js`を修正
+   - entityクラスをインポートし、データ変換処理を追加
+   - console.logでデータ取得確認用のデバッグ出力を実装
+
+### 技術的詳細
+- 各entityクラスにtoJSON()メソッドを実装し、シリアライズ可能に
+- nullセーフティを考慮したオプショナルチェーニングを使用
+- 価格情報は表示順（order）でソート
+
+### 確認結果
+- yarn dev: 正常起動、エラーなし
+- yarn build: 正常にビルド完了
+- console.logでデータ取得を確認（useEffectフック内で出力）
+
+### 次のステップ
+HTMLの部分を修正して、取得したデータを実際に画面に表示する実装が必要。
 
 ---
 
@@ -84,7 +128,7 @@ if (policy && policy.length > 0) {
 - PolicyEntityクラスが正常にoptimizedImageデータを受け取り、ImageOptimizerコンポーネントで画像表示可能な状態になったことを確認
 
 ### 原因と解消方法
-**原因**: about/missionページでのpolicyデータ処理時にsaveImageIfNeeded呼び出しが欠けていた  
+**原因**: about/missionページでのpolicyデータ処理時にsaveImageIfNeeded呼び出しが欠けていた
 **解消**: about/staffやabout/governanceと同様にsaveImageIfNeeded処理を追加
 
 ---
@@ -149,7 +193,7 @@ PDFファイルリンクのNext.jsプリフェッチエラーを修正しまし�
 ### No.1 言語ページ統一とSEO最適化の基盤整備
 **対応**: ページ構造の大幅リファクタリング - 既存の個別ページをすべて`.bak`に移動し、`[[...slug]].js`による統一ルーティングシステムを構築
 **背景**: SEO調査で「サイトマップ内のURLに.bakが付いている問題」と「インデックス登録されているのに検索結果に表示されない問題」が発覚。多言語サイトの URL構造とSEO最適化が必要だった
-**影響ファイル**: 
+**影響ファイル**:
 - `pages/[[...slug]].js` (新規作成、529行追加)
 - 全ページファイルを `.bak` ディレクトリに移動
 - サイトマップ生成スクリプト修正
@@ -162,7 +206,7 @@ PDFファイルリンクのNext.jsプリフェッチエラーを修正しまし�
 - `components/layout.js` メタタグ統一管理
 - `const/pageUrl.js` URL設定統一
 
-### No.3 Next.js Image最適化とレスポンシブ対応の大幅改善  
+### No.3 Next.js Image最適化とレスポンシブ対応の大幅改善
 **対応**: ImageOptimizerコンポーネントの修正、`placeholder="blur"`削除、レスポンシブ画像設定の統一
 **背景**: ユーザーから「画像が表示されない」「画像サイズが変」との報告があり、さらに画像最適化が無効（`unoptimized: true`）になっていて性能問題があった
 **影響ファイル**:
@@ -175,7 +219,7 @@ PDFファイルリンクのNext.jsプリフェッチエラーを修正しまし�
 **背景**: Notionデータ取得時の例外処理が不十分で、データが不完全な場合にアプリケーションがクラッシュしていた
 **影響ファイル**:
 - `entity/aboutEntity.js` (nullチェック強化)
-- `entity/classEntity.js` 
+- `entity/classEntity.js`
 - `entity/orgChartEntity.js`
 - `entity/philosophyEntity.js`
 - `entity/policyEntity.js`
@@ -187,9 +231,9 @@ PDFファイルリンクのNext.jsプリフェッチエラーを修正しまし�
 - `components/context/localeContext.js`
 
 ### No.6 画像表示問題の修正とNotionキャッシュシステムの完全実装
-**対応日**: 2025年7月13日  
-**対応**: Notionキャッシュシステムの画像表示問題修正、Notion画像ダウンロード機能の実装、APIルート削除によるビルドエラー解消  
-**背景**: 前回セッションでNotionキャッシュシステムを実装したが、一部画像が表示されない問題と、APIルートが静的エクスポートで使用できない警告が発生していた  
+**対応日**: 2025年7月13日
+**対応**: Notionキャッシュシステムの画像表示問題修正、Notion画像ダウンロード機能の実装、APIルート削除によるビルドエラー解消
+**背景**: 前回セッションでNotionキャッシュシステムを実装したが、一部画像が表示されない問題と、APIルートが静的エクスポートで使用できない警告が発生していた
 **技術的詳細**:
 - cache-loader.jsのaddOptimizedImage関数のpagePathを修正（`/${dataType}` → `dataType`）
 - fetch-all.jsに画像ダウンロード機能を実装（node-fetch使用）
@@ -206,12 +250,12 @@ PDFファイルリンクのNext.jsプリフェッチエラーを修正しまし�
 **影響ファイル**:
 - `lib/cache-loader.js` (pagePath修正、ローカルパス対応)
 - `scripts/notion-cache/fetch-all.js` (画像ダウンロード機能追加、98行追加)
-- `package.json` (node-fetch^3.3.2追加)  
+- `package.json` (node-fetch^3.3.2追加)
 - `pages/api/` ディレクトリ削除
 - `public/image/download/news/` 配下に34個の画像ファイル保存
 
 **検証結果**:
-- newsデータベーステスト: 36件のデータ、34個の画像を正常にダウンロード・保存
+- newsデータベーステスト: 36件のデータ、34個の画像をダウンロード・保存
 - ビルド成功: 8分でエラーなく完了
 - 画像表示確認: `/image/download/news/112a8c0e-cf8c-80ca-af61-e30b24fd97a7-mochipounding.jpeg`等が正常に参照される
 - `components/parts/menu/LocaleLink.jsx`
@@ -336,7 +380,7 @@ PDFファイルリンクのNext.jsプリフェッチエラーを修正しまし�
 - `contact` ページ: opportunity データベース (d9037016a0524f08adecdbab0c7302b7)
 - `contact/opportunity` ページ: opportunities データベース (102a8c0ecf8c80089b21d14aec9edd22) + general データベース
 
-**確認結果**: 
+**確認結果**:
 - yarn dev でエラーなし（警告はあるが正常起動）
 - yarn build でビルド進行確認（警告あるが致命的エラーなし）
 
@@ -354,11 +398,11 @@ PDFファイルリンクのNext.jsプリフェッチエラーを修正しまし�
 // 修正前
 <Contact isFooter={true}/>
 
-// 修正後  
+// 修正後
 <Contact isFooter={true} locale={locale}/>
 ```
 
-**確認結果**: 
+**確認結果**:
 - yarn dev で正常起動確認
 - 翻訳ファイル確認: ja.json「お問い合わせ」→ en.json「CONTACT INFO」
 
@@ -367,7 +411,7 @@ PDFファイルリンクのNext.jsプリフェッチエラーを修正しまし�
 ### No.13 `/contact/opportunity/` ページ表示修正
 **対応**: `components/pages/contact/opportunity.js` のOpportunityPageコンポーネントを正しいpropsと詳細コンポーネントを使用するよう修正
 **背景**: `/contact/opportunity/`で「もっと詳しく」ボタンしか表示されない問題が報告された
-**原因**: 
+**原因**:
 1. OpportunityPageコンポーネントが間違ったprops（`opportunity`）を期待していたが、`[[...slug]].js`からは`opportunities`と`general`が渡される
 2. ホームページ用の`OpportunityComponent`（簡易版）を使用していたが、詳細ページでは`OpportunityDetail`コンポーネント（タブ付き詳細版）を使用すべきだった
 
@@ -380,7 +424,7 @@ PDFファイルリンクのNext.jsプリフェッチエラーを修正しまし�
 - generalデータからタイトルとテキストを抽出する処理を追加
 - 適切なレイアウト構造（Section、Title、Paragraphs）を追加
 
-**確認結果**: 
+**確認結果**:
 - yarn dev で正常起動確認
 - contact/opportunity:143-144でOpportunityPageが呼び出される
 
@@ -389,7 +433,7 @@ PDFファイルリンクのNext.jsプリフェッチエラーを修正しまし�
 ### No.14 ビルド時間短縮のためのAPI呼び出し最適化
 **対応**: `pages/[[...slug]].js`で残っていたNotion API直接呼び出しをキャッシュシステムに完全移行
 **背景**: yarn buildでビルド時間が8分以上かかり、まだ複数箇所でAPI直接呼び出しが残っていた
-**原因**: 
+**原因**:
 1. `getStaticPaths`でニュースデータ取得時にAPI直接呼び出し（228行）
 2. `fetchData`関数でAPI直接呼び出し（286行）
 3. ニュース詳細ページ取得でAPI直接呼び出し（397行）
@@ -409,7 +453,7 @@ PDFファイルリンクのNext.jsプリフェッチエラーを修正しまし�
 - API直接呼び出しが完全に排除されキャッシュシステムのみが使用されることを確認
 - package.jsonにプレビューデプロイ用コマンド追加（`preview:cloudflare`, `preview:cloudflare:full`, `preview:cloudflare:fast`）
 
-**最終状態**: 
+**最終状態**:
 - NotionAPIへの直接呼び出しは完全に排除
 - 全データ取得がキャッシュシステム経由で実行
 - ビルド時のAPIリクエスト数が大幅削減
@@ -424,7 +468,7 @@ PDFファイルリンクのNext.jsプリフェッチエラーを修正しまし�
 **対応日**: 2025年7月13日（続き）
 **対応**: ホームページでVisionセクション下にボランティアではなく教員・スタッフ募集が表示されるよう修正、スポンサー画像のフォールバック問題修正
 **背景**: ホームページでVisionセクション下にボランティアセクションが誤って表示され、スポンサー画像が全てフォールバック画像になっていた
-**原因**: 
+**原因**:
 1. ホームページで`opportunity`データを使用していたがこれはボランティア募集データだった、正しくは`general`データ使用
 2. スポンサー画像の`baseName`が`ImageOptimizer`で期待する形式と一致していなかった
 
@@ -438,7 +482,7 @@ PDFファイルリンクのNext.jsプリフェッチエラーを修正しまし�
 - `lib/cache-loader.js` (baseName計算修正)
 - `components/download/ImageOptimizer.js` (大文字拡張子対応)
 
-**確認結果**: 
+**確認結果**:
 - ホームページで教員・スタッフ募集セクションが正しく表示
 - スポンサー画像が正常に表示（フォールバック画像解消）
 
@@ -457,7 +501,7 @@ PDFファイルリンクのNext.jsプリフェッチエラーを修正しまし�
 **影響ファイル**:
 - 7つの.bakディレクトリ完全削除
 
-**効果**: 
+**効果**:
 - ビルド時間が96%短縮（381秒→14秒）
 - 不要なページ生成が排除され効率化
 
@@ -466,7 +510,7 @@ PDFファイルリンクのNext.jsプリフェッチエラーを修正しまし�
 ### No.17 スライダー画像表示問題修正と画像最適化404エラー対策
 **対応**: スライダー縁日イベント画像のフォールバック問題修正、ImageOptimizerの画像パス優先順序調整による404エラー削減
 **背景**: スライダー画像がフォールバック表示され、ブラウザコンソールで大量の404エラーが発生していた
-**原因**: 
+**原因**:
 1. ImageOptimizerが存在しない最適化画像パス（-md.webp等）を最初に試していた
 2. 大文字拡張子（.JPG, .PNG）がサポートされていなかった
 
@@ -480,7 +524,7 @@ PDFファイルリンクのNext.jsプリフェッチエラーを修正しまし�
 **影響ファイル**:
 - `components/download/ImageOptimizer.js` (パス優先順序変更、大文字拡張子対応)
 
-**効果**: 
+**効果**:
 - スライダー画像の正常表示
 - 404エラーの大幅削減
 - 画像読み込み速度の向上
@@ -504,11 +548,11 @@ import sharp from 'sharp';
 async function generateOptimizedImages(originalPath, dataType, baseName) {
   const sizes = [
     { suffix: 'sm', width: 400, height: 300 },
-    { suffix: 'md', width: 800, height: 600 }, 
+    { suffix: 'md', width: 800, height: 600 },
     { suffix: 'lg', width: 1200, height: 900 },
     { suffix: 'xl', width: 1600, height: 1200 }
   ];
-  
+
   for (const size of sizes) {
     await sharp(originalPath)
       .resize(size.width, size.height, {
@@ -524,7 +568,7 @@ async function generateOptimizedImages(originalPath, dataType, baseName) {
 **影響ファイル**:
 - `scripts/notion-cache/fetch-all.js` (最適化システム実装)
 
-**効果**: 
+**効果**:
 - 画像404エラーの完全解消
 - 自動最適化によるパフォーマンス向上
 - 手動最適化作業の不要化
@@ -547,8 +591,8 @@ async function generateOptimizedImages(originalPath, dataType, baseName) {
 1. **lib/cache-loader.js** - addOptimizedImage関数の修正
    ```javascript
    // 修正前: ページIDプレフィックス付きファイル名をbaseNameとして使用
-   const baseName = path.parse(fileName).name; 
-   
+   const baseName = path.parse(fileName).name;
+
    // 修正後: 正規表現でページIDプレフィックスを除去
    const baseName = path.parse(fileName).name.replace(/^[a-f0-9-]+-/, '');
    ```
@@ -575,7 +619,7 @@ async function generateOptimizedImages(originalPath, dataType, baseName) {
 
 **確認済み**:
 - yarn dev: 正常起動
-- yarn build: 14秒で正常ビルド完了、エラーなし  
+- yarn build: 14秒で正常ビルド完了、エラーなし
 - 画像表示: 全ページで404エラー解消を確認
 
 ---
@@ -596,7 +640,7 @@ async function generateOptimizedImages(originalPath, dataType, baseName) {
    ```javascript
    // 修正前: プレフィックス除去のみ
    const baseName = match ? match[1] : file.name ? path.parse(file.name).name : fullBaseName;
-   
+
    // 修正後: 同じファイル名の場合は短いページIDを追加
    let baseName;
    if (match) {
@@ -694,7 +738,7 @@ async function generateOptimizedImages(originalPath, dataType, baseName) {
 ---
 
 ### No.22 PolicyEntity PDFパス修正
-**対応日**: 2025年7月13日（最終）  
+**対応日**: 2025年7月13日（最終）
 **対応**: `policyEntity.js` でPDFパスが間違ったディレクトリを指していた問題を修正
 **背景**: No.21の修正後もまだPDFの404エラーが発生していたため、詳細調査を実施
 
@@ -709,7 +753,7 @@ async function generateOptimizedImages(originalPath, dataType, baseName) {
 // 修正前
 this.pdf = `/${ACCESABLE_PDF_PATH}/policy/${pdfName}`;
 
-// 修正後  
+// 修正後
 this.pdf = `/${ACCESABLE_PDF_PATH}/org_policy/${pdfName}`;
 ```
 
@@ -746,7 +790,7 @@ this.pdf = `/${ACCESABLE_PDF_PATH}/org_policy/${pdfName}`;
    const { default: NewsEntity } = await import('../entity/newsEntity.js');
    const newsEntity = new NewsEntity(foundItem, params.slug[0] !== 'en');
    await newsEntity.loadFullContent();
-   
+
    props.newsItem = foundItem;
    props.fullTextLoaded = newsEntity.fullContentLoaded;
    props.fullText = newsEntity.text;
@@ -798,7 +842,7 @@ this.pdf = `/${ACCESABLE_PDF_PATH}/org_policy/${pdfName}`;
 - 画像最適化データも自動再生成、新しい画像をWebP形式で追加
 - 開発サーバー正常稼働：http://localhost:3000
 
-**確認結果:** 
+**確認結果:**
 - yarn dev：正常起動、最新データ表示
 - 画像表示問題解消、最適化画像正常生成
 
@@ -936,3 +980,21 @@ convertToArizonaTime(dateString) {
 
 **技術的詳細:**
 JavaScriptの`new Date('2025-11-01')`はUTC時間の00:00として解釈されるため、アメリカ山地時間（UTC-7）では前日の17:00になってしまう。これを回避するため、日付文字列を分解してローカルタイムゾーンでDateオブジェクトを作成。
+
+---
+
+### 2025-09-21 - にほんごかふぇページメールアドレス表示バグ修正
+**やったこと:** オンラインにほんごかふぇセクションで間違ったメールアドレスが表示される問題を修正
+**理由:** オンラインセクションで`inPersonDetails?.email`を表示していたが、正しくは`onlineDetails?.email`を表示すべきだったため
+
+**問題の詳細:**
+- オンラインにほんごかふぇセクション（line 243-244）で`inPersonDetails?.email`を表示
+- NotionDBでは`tucson.nihongo.cafe@gmail.com`が設定されているのに、対面の`tucson.nihongo.hosyuko@gmail.com`が表示されていた
+
+**修正内容:**
+- `components/pages/program/nihongocafe.js`のline 243で`inPersonDetails?.email`を`onlineDetails?.email`に修正
+- これでオンラインセクションに正しく`tucson.nihongo.cafe@gmail.com`が表示される
+
+**確認結果:**
+- yarn dev: 正常起動確認
+- yarn build: エラーなく正常ビルド完了

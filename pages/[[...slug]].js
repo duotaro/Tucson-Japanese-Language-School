@@ -692,13 +692,42 @@ export async function getStaticProps({ params }) {
     // Contact Opportunity page用のデータフェッチ
     try {
       const cacheData = await loadMultipleCachedData(['opportunity', 'general']);
-      
+
       props.opportunities = cacheData.opportunity || [];
       props.general = cacheData.general && cacheData.general.length > 0 ? cacheData.general[0] : null;
     } catch (error) {
       console.log('Error fetching opportunity data:', error);
       props.opportunities = [];
       props.general = null;
+    }
+  } else if (pageType === 'program/nihongocafe') {
+    // にほんごかふぇページ用のデータフェッチ
+    try {
+      // Notion DBからデータを取得
+      const nihongoCafeOverview = await getDatabase('274a8c0ecf8c814a98b8e817ef55df69'); // にほんごかふぇ概要
+      const inPersonOverview = await getDatabase('274a8c0ecf8c80e1841ce20b2ffd582f'); // 対面にほんごかふぇ概要
+      const inPersonPrice = await getDatabase('274a8c0ecf8c806bb30ccf9629c77830'); // 対面にほんごかふぇ価格情報
+      const onlineOverview = await getDatabase('274a8c0ecf8c8064878de70e4f5c8826'); // オンラインにほんごかふぇ概要
+      const onlinePrice = await getDatabase('274a8c0ecf8c808aa55cfb90733e2119'); // オンラインにほんごかふぇ価格情報
+
+      props.nihongoCafeData = {
+        overview: nihongoCafeOverview || [],
+        inPerson: {
+          overview: inPersonOverview || [],
+          price: inPersonPrice || []
+        },
+        online: {
+          overview: onlineOverview || [],
+          price: onlinePrice || []
+        }
+      };
+    } catch (error) {
+      console.log('Error fetching nihongocafe data:', error);
+      props.nihongoCafeData = {
+        overview: [],
+        inPerson: { overview: [], price: [] },
+        online: { overview: [], price: [] }
+      };
     }
   }
   // Add more specific page data fetching as needed
