@@ -20,6 +20,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "price": {
         "id": "%40aTu",
@@ -162,6 +163,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "price": {
         "id": "%40aTu",
@@ -304,6 +306,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "price": {
         "id": "%40aTu",
@@ -446,6 +449,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "price": {
         "id": "%40aTu",
@@ -588,6 +592,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "price": {
         "id": "%40aTu",
@@ -730,6 +735,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "price": {
         "id": "%40aTu",
@@ -872,6 +878,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "price": {
         "id": "%40aTu",
@@ -1014,6 +1021,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "price": {
         "id": "%40aTu",

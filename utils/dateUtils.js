@@ -41,16 +41,25 @@ export const formatDateForCalander = (dateString, isJpn) => {
     // ISO 8601形式の文字列をDateオブジェクトに変換
     const date = new Date(dateString);
 
-    // 日を取得
-    const day = date.getDate();
-    var month = date.getMonth() + 1;
-    const year = date.getFullYear();
-    const dayNumber = date.getDay(); // 0 (日曜日) から 6 (土曜日) までの整数
+    // アリゾナ州のタイムゾーン（America/Phoenix）を指定
+    const arizonaTimeZone = 'America/Phoenix';
+    
+    // アリゾナ時間で日付を取得
+    const arizonaDate = new Intl.DateTimeFormat('en-CA', {
+        timeZone: arizonaTimeZone,
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit'
+    }).format(date);
+    
+    const [year, month, day] = arizonaDate.split('-').map(Number);
+    
+    // 曜日を取得（アリゾナ時間基準）
+    const dayNumber = new Date(year, month - 1, day).getDay();
     const daysOfWeek = ["日", "月", "火", "水", "木", "金", "土"];
     var dayName = daysOfWeek[dayNumber];
 
     if(isJpn){
-
         return {
             "year" : year,
             "month" : month,
@@ -59,26 +68,44 @@ export const formatDateForCalander = (dateString, isJpn) => {
         }
     }
 
+    // 英語の月略称を取得（アリゾナ時間基準）
+    const monthFormatter = new Intl.DateTimeFormat("en", { 
+        month: 'short',
+        timeZone: arizonaTimeZone
+    });
+    const monthFormatted = monthFormatter.format(date);
 
-    // 月の略称を取得するためのオプション
-    const monthFormatter = new Intl.DateTimeFormat("en", { month: 'short' });
-    month = monthFormatter.format(date);
-
-    const formatterWeekday = new Intl.DateTimeFormat("en", { weekday: 'short' });
-    dayName = formatterWeekday.format(date);
+    const formatterWeekday = new Intl.DateTimeFormat("en", { 
+        weekday: 'short',
+        timeZone: arizonaTimeZone
+    });
+    const dayNameFormatted = formatterWeekday.format(date);
         
     return {
         "year" : year,
-        "month" : month,
+        "month" : monthFormatted,
         "day" : day,
-        "dayName" : dayName
+        "dayName" : dayNameFormatted
     }
 }
 
 export const formatDateForHHmm = (dateString, isJpn) => {
     const date = new Date(dateString);
-    const hour = date.getHours()
-    const minutes = formatMinutes(date)
+    
+    // アリゾナ州のタイムゾーン（America/Phoenix）を指定
+    const arizonaTimeZone = 'America/Phoenix';
+    
+    // アリゾナ時間で時刻を取得
+    const arizonaTime = new Intl.DateTimeFormat('en-US', {
+        timeZone: arizonaTimeZone,
+        hour: '2-digit',
+        minute: '2-digit',
+        hour12: false
+    }).format(date);
+    
+    const [hourStr, minuteStr] = arizonaTime.split(':');
+    const hour = parseInt(hourStr);
+    const minutes = minuteStr;
 
     var period = hour >= 12 ? 'PM' : 'AM';
     if(isJpn){
@@ -89,12 +116,6 @@ export const formatDateForHHmm = (dateString, isJpn) => {
     return `${hour}:${minutes} ${period}`
 }
 
-function formatMinutes(date) {
-    // 分を取得
-    const minutes = date.getMinutes();
-    // 分を2桁の文字列にフォーマット
-    return minutes.toString().padStart(2, '0');
-}
 
 export function getSchoolYear(locale) {
     const startMonth = 7

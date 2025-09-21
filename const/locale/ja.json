@@ -61,7 +61,9 @@
     },
     "calender": {
       "title": "年間カレンダー",
-      "download": "こちらからダウンロードできます"
+      "download": "PDFダウンロード",
+      "add_google": "Googleカレンダー",
+      "add_i": "iCalender"
     },
     "director": {
       "title": "理事役員会",

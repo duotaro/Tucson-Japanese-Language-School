@@ -20,6 +20,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "text": {
         "id": "E%5DSM",
@@ -345,6 +346,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "text": {
         "id": "E%5DSM",
@@ -551,6 +553,7 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
       "text": {
         "id": "E%5DSM",

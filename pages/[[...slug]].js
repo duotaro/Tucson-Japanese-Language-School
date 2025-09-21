@@ -624,17 +624,27 @@ export async function getStaticProps({ params }) {
   } else if (pageType === 'program/calendar') {
     try {
       // キャッシュからデータを読み込み
-      const database = await loadCachedData('schedule');
-      
+      const cacheData = await loadMultipleCachedData(['schedule', 'files']);
+
       // カレンダーファイル用の画像保存処理
       let calendarProps = [];
-      for(let item of database){
+      for(let item of cacheData.schedule || []){
         calendarProps.push(item.properties);
       }
       await saveImageIfNeeded(calendarProps, "calendar");
-      
-      props.files = database && database.length > 0 ? database[0] : {};
-      props.scheduleList = database || [];
+
+      // PDFファイル用の保存処理を追加
+      if (cacheData.files && cacheData.files.length > 0) {
+        let fileProps = [];
+        for(let item of cacheData.files){
+          fileProps.push(item.properties);
+        }
+        await savePdfIfNeeded(fileProps, "calendar");
+      }
+
+      // filesデータベースからPDFファイル情報を取得
+      props.files = cacheData.files && cacheData.files.length > 0 ? cacheData.files[0] : {};
+      props.scheduleList = cacheData.schedule || [];
     } catch (error) {
       console.log('Error fetching calendar data:', error);
       props.files = {};

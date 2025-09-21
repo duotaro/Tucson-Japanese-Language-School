@@ -10,21 +10,24 @@ export default class OpportunityEntity { // export default class に変更
             return;
         }
 
-        // ★★★ 画像データの処理を修正 ★★★
-        // pages/index.js の fetchData で item.properties.image に optimizedImage が追加されていることを期待
-        if (item.properties?.image?.optimizedImage) { // ★ オプショナルチェーニングで安全にアクセス
-            this.image = item.properties.image.optimizedImage;
-            // this.image は { baseName, pagePath, alt, width, height } のオブジェクトになる
+        // 画像データの処理
+        if (item.properties?.image?.files?.[0]) {
+            const imageFile = item.properties.image.files[0];
+            // ファイル名からベース名を作成（拡張子を除去し、スペースをアンダースコアに変換）
+            const originalName = imageFile.name;
+            const baseName = originalName.replace(/\.[^/.]+$/, '').replace(/ /g, '_');
+
+            // ImageOptimizerで使用するための画像データ構造を作成
+            this.image = {
+                baseName: baseName,
+                pagePath: 'opportunity',
+                alt: this.title || 'Opportunity画像',
+                url: imageFile.file?.url || imageFile.external?.url
+            };
         } else {
-            // optimizedImage が見つからない場合のフォールバック（デバッグ用メッセージ）
-            console.warn(`[OpportunityEntity] Optimized image data not found for item.id: ${item.id}.
-                          Ensure 'pages/index.js/fetchData' correctly adds 'optimizedImage'.`);
-            // 必要であれば、元のNotion画像URLなどをフォールバックとして設定
-            // const tmpName = item.properties.image?.files?.[0]?.name?.replace(/ /g, '_');
-            // this.image = tmpName ? `/${ACCESABLE_IMAGE_PATH}/opportunity/${tmpName}${DOWNLOAD_IMAGE_EXTENSION}` : null;
-            this.image = null; // 画像がない場合はnull
+            console.warn(`[OpportunityEntity] No image data found for Opportunity ID: ${item.id}`);
+            this.image = null;
         }
-        // ★★★ 修正ここまで ★★★
 
         // titleの処理を安全に
         this.title = isJpn 

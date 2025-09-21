@@ -6,11 +6,13 @@ import LocaleContext from "../../context/localeContext";
 import { useLocale } from "@/utils/locale";
 import CalenderDetail from "./detail";
 import { SchaduleEntity } from "@/entity/scheduleEntity";
+import { co } from "@fullcalendar/core/internal-common";
 
 export default function Calender({ scheduleList }) {
   const { locale } = useContext(LocaleContext);
   const { json } = useLocale(locale)
 
+  console.log(scheduleList)
   
 
   const isJpn = locale == "ja"

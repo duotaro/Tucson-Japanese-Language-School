@@ -1,5 +1,4 @@
-import { DOWNLOAD_IMAGE_EXTENSION, ACCESABLE_IMAGE_PATH } from "../const"
-import path from 'path'
+// entity/sponsorEntity.js
 
 export default class SponsorEntity {
     constructor(item, isJpn){
@@ -17,20 +16,22 @@ export default class SponsorEntity {
         this.ordering = item.properties["ordering"]?.number || null
         this.title = isJpn ? item.properties["title"]?.title?.[0]?.text?.content || '' : item.properties["en"]?.rich_text?.[0]?.text?.content || ''
 
-        // ImageOptimizer対応の画像データ処理
-        if (item.properties?.image?.optimizedImage) {
-            this.image = item.properties.image.optimizedImage;
-        } else if (item.properties?.image?.files?.[0]) {
-            const tmpName = item.properties.image.files[0].name;
-            const name = tmpName.replace(/ /g, '_');
+        // 画像データの処理
+        if (item.properties?.image?.files?.[0]) {
+            const imageFile = item.properties.image.files[0];
+            // ファイル名からベース名を作成（拡張子を除去し、スペースをアンダースコアに変換）
+            const originalName = imageFile.name;
+            const baseName = originalName.replace(/\.[^/.]+$/, '').replace(/ /g, '_');
+
+            // ImageOptimizerで使用するための画像データ構造を作成
             this.image = {
-                baseName: path.parse(name).name,
+                baseName: baseName,
                 pagePath: 'sponsor',
-                alt: item.properties.image.files[0].caption?.[0]?.plain_text || name,
-                width: null,
-                height: null,
+                alt: this.title || 'スポンサー画像',
+                url: imageFile.file?.url || imageFile.external?.url
             };
         } else {
+            console.warn(`[SponsorEntity] No image data found for Sponsor ID: ${item.id}`);
             this.image = null;
         }
 

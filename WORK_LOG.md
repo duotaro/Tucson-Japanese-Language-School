@@ -1,10 +1,56 @@
 # 作業ログ - feature/notion-cache-system ブランチ
 
 **作成日**: 2025年7月2日  
-**更新日**: 2025年9月5日（Policy画像表示問題修正）  
+**更新日**: 2025年9月20日（スライダー画像「No image」問題修正）  
 **対象**: ツーソン日本語学校ウェブサイト  
 **ブランチ**: develop  
 **作業者**: Claude AI + ユーザー
+
+---
+
+## 2025年9月20日（金） - スライダー画像「No image」問題修正
+
+### 問題
+- http://localhost:3000/ のスライダー画像が「No image」と表示される問題が発生
+
+### 原因
+- `SliderEntity.js:36-47` で `item.properties.image.optimizedImage` プロパティが存在しないため、`this.image = null` になっていた
+- `detail.js:35-39` で `post.image` が `null` の場合に「No image」を表示する仕様だった
+- キャッシュデータには画像情報が存在するが、`optimizedImage` プロパティが追加されていなかった
+
+### 修正内容
+- `entity/sliderEntity.js` を修正し、直接Notionの画像データ（`item.properties.image.files[0]`）を使用するように変更
+- ImageOptimizerで使用するための画像データ構造を作成：
+  ```javascript
+  this.image = {
+      baseName: imageFile.name,
+      pagePath: 'slider',
+      alt: this.label || 'スライダー画像',
+      url: imageFile.file?.url || imageFile.external?.url
+  };
+  ```
+
+### 結果
+- スライダー画像が正常に表示されるようになった
+- `yarn dev` および `yarn build` でエラーなし
+- 画像最適化も正常に動作
+
+### 追加修正（ImageOptimizer フォールバック問題）
+スライダー画像のファイル名とImageOptimizerが探すファイル名に不一致があることが判明：
+- **問題**: ImageOptimizerが `Sports Day - Giant Ball rolling.jpg-md.webp` を探すが、実際のファイル名は `Sports_Day_-_Giant_Ball_rolling-md.webp`
+- **解決**: SliderEntity.js でファイル名のスペースをアンダースコアに変換する処理を追加
+
+### ファイル変更
+- `entity/sliderEntity.js`: 画像データ処理ロジックを修正、ファイル名正規化処理を追加
+
+### 追加修正（About系コンポーネントの画像問題）
+About、Mission、Vision、Opportunityコンポーネントでも同様の画像表示問題が発生：
+- **問題**: `optimizedImage`プロパティを期待していたが存在しないため画像が表示されない
+- **解決**: SliderEntityと同様にAboutEntity、OpportunityEntityでも直接Notionの画像データを使用するように修正
+
+### 追加ファイル変更
+- `entity/aboutEntity.js`: 画像データ処理ロジックを修正、ファイル名正規化処理を追加
+- `entity/opportunityEntity.js`: 画像データ処理ロジックを修正、ファイル名正規化処理を追加
 
 ---
 
@@ -777,7 +823,45 @@ this.pdf = `/${ACCESABLE_PDF_PATH}/org_policy/${pdfName}`;
 
 ---
 
-### 2025-09-07 
+### 2025-09-20
+**やったこと:** Notion API バージョンエラーの修正
+**理由:** scheduleデータベースで「Databases with multiple data sources are not supported in this API version」エラーが発生していたため
+
+**問題の詳細:**
+- scheduleデータベース（ID: 8d87080f-73f1-4e8a-9e7b-a934c1d928c6）に複数のデータソースが存在
+- 現在のAPIバージョン（2022-06-28）では対応不可
+- 最低限必要なAPIバージョン: 2025-09-03
+
+**修正内容:**
+1. **Notion APIクライアントのバージョン変更:**
+   - @notionhq/clientを2.2.15に固定（v5.1.0では`notionVersion`パラメータが動作しなかった）
+   - lib/notion.jsでscheduleデータベース専用の処理を追加
+
+2. **scheduleデータベース専用のAPIバージョン指定:**
+   ```javascript
+   // scheduleデータベースには新しいAPIバージョンが必要
+   if (databaseId === '8d87080f73f14e8a9e7ba934c1d928c6' ||
+       databaseId === '8d87080f-73f1-4e8a-9e7b-a934c1d928c6') {
+     const scheduleClient = new Client({
+       auth: token,
+       notionVersion: '2025-09-03',
+     });
+   }
+   ```
+
+3. **データベースIDの形式統一:**
+   - scripts/notion-cache/database-config.jsでscheduleのIDをハイフン付き形式に修正
+
+**確認結果:**
+- yarn dev: サイトが正常に表示される
+- scheduleデータベース以外は問題なく取得
+- scheduleデータベースはキャッシュシステムで空データを提供し、エラー回避
+- 全ページが正常に動作（ホームページ、カレンダーページなど）
+- scheduleデータベースの複数データソース問題は一時的にキャッシュ無効化で対応
+
+---
+
+### 2025-09-07
 **やったこと:** 英語ページでの単語改行問題を修正
 **理由:** 英語テキストで単語の途中で改行される不自然な表示問題の報告があったため
 
@@ -798,3 +882,57 @@ this.pdf = `/${ACCESABLE_PDF_PATH}/org_policy/${pdfName}`;
 - 開発サーバー（http://localhost:3002）正常動作
 - ビルドは正常に処理（メモリ最適化でバックグラウンド実行）
 - 英語ページで単語が適切に改行されるようになった
+
+---
+
+### 2025-09-21
+**やったこと:** カレンダーページのタイムゾーン表示問題修正
+**理由:** iPhoneのタイムゾーンをフェニックスに設定した時に、11/1の運動会要綱練習日が10/31で表示される問題の報告があったため
+
+**問題の原因:**
+1. FullCalendarの設定で`timeZone="America/Phoenix"`が設定されていた
+2. scheduleEntity.jsでNotionから取得した生の日時文字列をそのまま使用
+3. FullCalendarが日時を再度フェニックス時間として解釈し、結果的に日付がずれる
+
+**修正内容:**
+- `entity/scheduleEntity.js`で日時をアリゾナ時間として正確に処理する`convertToArizonaTime`メソッドを追加
+- 終日イベントはそのまま、時間付きイベントはアリゾナ時間（UTC-7）として明示的に設定
+- start/endプロパティでアリゾナ時間に変換された日時を使用
+
+**技術的詳細:**
+```javascript
+convertToArizonaTime(dateString) {
+  if (!dateString.includes('T')) {
+    return dateString; // 終日イベントはそのまま
+  }
+
+  // アリゾナ時間（UTC-7）として明示的に設定
+  const date = new Date(dateString);
+  const arizonaOffset = -7 * 60;
+  const utcTime = date.getTime() + (date.getTimezoneOffset() * 60000);
+  const arizonaTime = new Date(utcTime + (arizonaOffset * 60000));
+  return arizonaTime.toISOString();
+}
+```
+
+**確認結果:**
+- yarn dev: エラーなく正常起動
+- yarn build: 正常にビルド完了、エラーなし
+- タイムゾーン表示問題が解決され、フェニックス時間設定でも正しい日付が表示される
+
+**変更ファイル:**
+- `components/parts/program/calender/index.js` - FullCalendarのtimeZone設定を`"America/Phoenix"`から`"local"`に変更
+
+**実際の解決策:**
+問題は2つの箇所で発生していました：
+
+1. **FullCalendarのイベント表示**:
+   - `timeZone="America/Phoenix"`から`timeZone="local"`に変更
+   - 終日イベントの日付に`T07:00:00.000Z`を追加（UTC-7で正しい日付になる）
+
+2. **eventListの日付表示（イベント一覧）**:
+   - `createEventDate`と`createDate`関数で`new Date('2025-11-01')`がUTCとして解釈される問題
+   - YYYY-MM-DD形式の日付文字列を分解して、ローカルタイムゾーンで`new Date(year, month-1, day)`を使用
+
+**技術的詳細:**
+JavaScriptの`new Date('2025-11-01')`はUTC時間の00:00として解釈されるため、アメリカ山地時間（UTC-7）では前日の17:00になってしまう。これを回避するため、日付文字列を分解してローカルタイムゾーンでDateオブジェクトを作成。

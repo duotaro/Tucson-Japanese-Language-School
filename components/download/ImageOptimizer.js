@@ -83,6 +83,21 @@ const ImageOptimizer = ({
       `/image/download/staff/profile-sm.webp`,
       `/image/download/staff/profile-lg.webp`,
     ] : []),
+
+    // sponsor用のフォールバック - sponsors (複数形) ディレクトリも確認
+    ...(pagePath === 'sponsor' ? [
+      `/image/download/sponsors/${baseName}-md.webp`,
+      `/image/download/sponsors/${baseName}-sm.webp`,
+      `/image/download/sponsors/${baseName}-lg.webp`,
+      `/image/download/sponsors/${baseName}.png`,
+      `/image/download/sponsors/${baseName}.jpg`,
+      // JBAA_Logo_copy -> JBAA_Logo のような名前変異への対応
+      `/image/download/sponsors/${baseName.replace(/_copy$/, '')}-md.webp`,
+      `/image/download/sponsors/${baseName.replace(/_copy$/, '')}-sm.webp`,
+      `/image/download/sponsors/${baseName.replace(/_copy$/, '')}-lg.webp`,
+      `/image/download/sponsors/${baseName.replace(/_copy$/, '')}.png`,
+      `/image/download/sponsors/${baseName.replace(/_copy$/, '')}.jpg`,
+    ] : []),
     `/image/blog/image1.jpeg`,
     `/image/logo.png`
   ];

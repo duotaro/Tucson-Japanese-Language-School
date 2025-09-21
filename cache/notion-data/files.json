@@ -3,7 +3,7 @@
     "object": "page",
     "id": "ba18afdf-a39a-49bd-a90e-459f9f12cf40",
     "created_time": "2024-10-09T04:42:00.000Z",
-    "last_edited_time": "2025-09-02T06:23:00.000Z",
+    "last_edited_time": "2025-09-08T07:40:00.000Z",
     "created_by": {
       "object": "user",
       "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
@@ -20,17 +20,32 @@
     },
     "archived": false,
     "in_trash": false,
+    "is_locked": false,
     "properties": {
+      "pdf": {
+        "id": "nKT%5E",
+        "type": "files",
+        "files": [
+          {
+            "name": "2025-2026_Tucson_Japanese_School_Calendar_jp.pdf",
+            "type": "file",
+            "file": {
+              "url": "/image/download/files/ba18afdf-a39a-49bd-a90e-459f9f12cf40-2025-2026_Tucson_Japanese_School_Calendar_jp.pdf",
+              "expiry_time": "2025-09-20T18:21:18.137Z"
+            }
+          }
+        ]
+      },
       "pdf_en": {
         "id": "v%3Dpe",
         "type": "files",
         "files": [
           {
-            "name": "2025-2026  Tucson Japanese School Calendar.pdf",
+            "name": "2025-2026 _Tucson_Japanese_School Calendar_en.pdf",
             "type": "file",
             "file": {
-              "url": "/image/download/files/ba18afdf-a39a-49bd-a90e-459f9f12cf40-2025-2026__Tucson_Japanese_School_Calendar.pdf",
-              "expiry_time": "2025-09-07T06:43:01.228Z"
+              "url": "/image/download/files/ba18afdf-a39a-49bd-a90e-459f9f12cf40-2025-2026__Tucson_Japanese_School_Calendar_en.pdf",
+              "expiry_time": "2025-09-20T18:21:18.141Z"
             }
           }
         ]
@@ -44,21 +59,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/files/ba18afdf-a39a-49bd-a90e-459f9f12cf40-event.png",
-              "expiry_time": "2025-09-07T06:43:01.232Z"
-            }
-          }
-        ]
-      },
-      "pdf": {
-        "id": "%7C%5Bj%60",
-        "type": "files",
-        "files": [
-          {
-            "name": "2025年度日本語補習校年間カレンダー.pdf",
-            "type": "file",
-            "file": {
-              "url": "/image/download/files/ba18afdf-a39a-49bd-a90e-459f9f12cf40-2025_______________.pdf",
-              "expiry_time": "2025-09-07T06:43:01.236Z"
+              "expiry_time": "2025-09-20T18:21:18.145Z"
             }
           }
         ]
