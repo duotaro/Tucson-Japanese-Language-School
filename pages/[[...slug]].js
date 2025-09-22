@@ -738,6 +738,33 @@ export async function getStaticProps({ params }) {
         online: { overview: [], price: [] }
       };
     }
+  } else if (pageType === 'program/kanji_kentei' || pageType === 'program/kanjikentei') {
+    // 漢字検定ページ用のデータフェッチ
+    try {
+      // Notion DBからデータを取得
+      const kanjiKenteiOverview = await getDatabase('276a8c0ecf8c814f950beee0a0ffe973'); // 漢検概要情報
+      const kanjiKenteiMaterials = await getDatabase('276a8c0ecf8c8176b701dd1e670dfa12'); // 漢検教材情報
+      const kanjiKenteiSchedule = await getDatabase('276a8c0ecf8c80f883d2e9a738a63b90'); // 漢検日程情報
+      const kanjiKenteiVenue = await getDatabase('276a8c0ecf8c80e089a0e4e1ce8dbdad'); // 漢検会場情報
+      const kanjiKenteiDeadline = await getDatabase('276a8c0ecf8c80d7bda5c94af8d4c3cc'); // 漢検申し込み期限情報
+
+      props.kanjiKenteiData = {
+        overview: kanjiKenteiOverview || [],
+        materials: kanjiKenteiMaterials || [],
+        schedule: kanjiKenteiSchedule || [],
+        venue: kanjiKenteiVenue || [],
+        deadline: kanjiKenteiDeadline || []
+      };
+    } catch (error) {
+      console.log('Error fetching kanji kentei data:', error);
+      props.kanjiKenteiData = {
+        overview: [],
+        materials: [],
+        schedule: [],
+        venue: [],
+        deadline: []
+      };
+    }
   }
   // Add more specific page data fetching as needed
 

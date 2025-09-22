@@ -99,7 +99,7 @@ export const KANJI_URL = {
     ORDERING: null,
     GROUP_ORDERING: 3,
     IS_PARENT:false,
-    IS_ACTIVE:false
+    IS_ACTIVE:true
 }
 export const CAFE_URL = {
     PAGE_KEY:"nihongocafe",
@@ -107,7 +107,7 @@ export const CAFE_URL = {
     ORDERING: null,
     GROUP_ORDERING: 4,
     IS_PARENT:false,
-    IS_ACTIVE:false
+    IS_ACTIVE:true
 }
 
 /** admissions */
@@ -137,11 +137,19 @@ export const NEWS_URL ={
     IS_PARENT:true,
     IS_ACTIVE:true
 }
+export const NEWS_URL2 = {
+    PAGE_KEY:"news",
+    GROUP:"news",
+    ORDERING: null,
+    GROUP_ORDERING: 1,
+    IS_PARENT:false,
+    IS_ACTIVE:false
+}
 export const EVENT_URL = {
     PAGE_KEY:"event",
     GROUP:"news",
     ORDERING: null,
-    GROUP_ORDERING: 1,
+    GROUP_ORDERING: 2,
     IS_PARENT:false,
     IS_ACTIVE:false
 }
@@ -228,6 +236,7 @@ export const URLS = {
     ADMISSION_URL,
     FORMS_URL,
     NEWS_URL,
+    NEWS_URL2,
     SUPPORT_URL,
     CONTACT_URL,
     CONTACT2_URL,
