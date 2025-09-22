@@ -99,7 +99,7 @@ export const KANJI_URL = {
     ORDERING: null,
     GROUP_ORDERING: 3,
     IS_PARENT:false,
-    IS_ACTIVE:true
+    IS_ACTIVE:false
 }
 export const CAFE_URL = {
     PAGE_KEY:"nihongocafe",
@@ -107,7 +107,7 @@ export const CAFE_URL = {
     ORDERING: null,
     GROUP_ORDERING: 4,
     IS_PARENT:false,
-    IS_ACTIVE:true
+    IS_ACTIVE:false
 }
 export const EVENT_URL = {
     PAGE_KEY:"event",

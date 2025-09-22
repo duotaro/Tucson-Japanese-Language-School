@@ -66,6 +66,7 @@ const renderEventContent = (eventInfo, locale) => {
 export default function Calender({files, list, locale="ja"}) {
   const calendarRef = useRef(null);
   const { json } = useLocale(locale)
+  const isJpn = locale === 'ja';
   const schoolYear = getSchoolYear(locale)
 
   const selectDates = (start) => {
@@ -407,15 +408,19 @@ export default function Calender({files, list, locale="ja"}) {
               dateClick={(info) => {selectDate(info.dateStr)}}
               eventClick={(info) => selectEvent(info)}
               eventDidMount={(info) => {
-                // FullCalendarでの実際のレンダリング確認
-
-                if (info.event.title && (info.event.title.includes('運動会予行') || info.event.title.includes('Sports Day Rehearsal'))) {
-                  console.log('=== FullCalendarレンダリング時 ===');
-                  console.log('イベントタイトル:', info.event.title);
-                  console.log('表示される開始日:', info.event.start);
-                  console.log('ローカル日付表示:', info.event.start?.toLocaleDateString());
-                  console.log('ISO表示:', info.event.start?.toISOString());
-                  console.log('FullCalendar内部データ:', info.event);
+                // 色が設定されているイベントのDOM要素を直接確認
+                if (info.event.backgroundColor) {
+                  console.log('Event mounted with color:', {
+                    title: info.event.title,
+                    backgroundColor: info.event.backgroundColor,
+                    borderColor: info.event.borderColor,
+                    elementStyle: info.el.style.backgroundColor
+                  });
+                  // 手動で背景色を設定（FullCalendarが適用していない場合の回避策）
+                  if (info.event.backgroundColor && !info.el.style.backgroundColor) {
+                    info.el.style.backgroundColor = info.event.backgroundColor;
+                    info.el.style.borderColor = info.event.borderColor || info.event.backgroundColor;
+                  }
                 }
               }}
               displayEventEnd={true}
@@ -483,7 +488,7 @@ export default function Calender({files, list, locale="ja"}) {
                               <div className="flex items-center text-gray-600 mb-2">
                                 <CalendarDaysIcon className="w-4 h-4 mr-2" />
                                 {detail.allDay ? (
-                                  <span>終日</span>
+                                  <span>{isJpn ? "終日" : "all day"}</span>
                                 ) : (
                                   <span>{startTime}〜{endTime}</span>
                                 )}
@@ -516,7 +521,7 @@ export default function Calender({files, list, locale="ja"}) {
                                 onClick={() => window.open(detail.link, '_blank')}
                                 className="inline-flex items-center px-3 py-2 bg-green-600 hover:bg-green-700 text-white text-sm rounded-lg transition-colors duration-200"
                               >
-                                詳細を見る
+                                {isJpn ? "詳細を見る" : "Details"}
                               </button>
                             )}
                           </div>
@@ -527,7 +532,7 @@ export default function Calender({files, list, locale="ja"}) {
                     {(!detailList || detailList.length === 0) && (
                       <div className="text-center py-8">
                         <CalendarDaysIcon className="w-12 h-12 mx-auto text-gray-400 mb-4" />
-                        <p className="text-gray-500">この日の予定はありません</p>
+                        <p className="text-gray-500">{isJpn ? "この日の予定はありません" : "There are no plans for this day"}</p>
                       </div>
                     )}
                   </div>
@@ -538,7 +543,7 @@ export default function Calender({files, list, locale="ja"}) {
                       className="inline-flex justify-center rounded-md border border-transparent bg-gray-100 px-4 py-2 text-sm font-medium text-gray-900 hover:bg-gray-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-500 focus-visible:ring-offset-2"
                       onClick={closeModal}
                     >
-                      閉じる
+                      {isJpn ? "閉じる" : "Close"}
                     </button>
                   </div>
                 </Dialog.Panel>

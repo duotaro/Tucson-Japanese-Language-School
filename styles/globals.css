@@ -158,11 +158,14 @@ html {
   .fc .fc-today-button {
     color: #37362f;
   }
+  /* FullCalendarイベントの色を動的に適用できるよう調整 */
   .fc-event {
-    background-color: var(--fc-event-bg-color);
-    border: 1px solid var(--fc-event-border-color);
     display: block;
-}
+  }
+  /* カスタムイベントコンテンツのスタイル */
+  .fc-event .custom-event {
+    background-color: transparent;
+  }
 .breadcrumb-item {
   overflow: hidden;
   white-space: nowrap;
