@@ -24,6 +24,12 @@ export default class OpportunityEntity { // export default class に変更
                 alt: this.title || 'Opportunity画像',
                 url: imageFile.file?.url || imageFile.external?.url
             };
+
+            console.log('[OpportunityEntity] 画像データ:', {
+                originalName: originalName,
+                baseName: baseName,
+                expectedPath: `/image/download/opportunity/${baseName}.png`
+            });
         } else {
             console.warn(`[OpportunityEntity] No image data found for Opportunity ID: ${item.id}`);
             this.image = null;

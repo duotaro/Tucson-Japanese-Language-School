@@ -8,6 +8,84 @@
 
 ---
 
+## 2025年9月22日（日） - FullCalendarの色が正しく表示されない問題を修正
+
+### 作業内容
+FullCalendarコンポーネントで、イベントに設定されたbackgroundColor（orange等）が適用されず、青っぽく表示される問題を修正した。
+
+### 原因
+1. **CSSのオーバーライド**: `styles/globals.css`の161-163行目で`.fc-event`のスタイルが固定され、CSS変数`var(--fc-event-bg-color)`が未定義だった
+2. **FullCalendarの仕様**: FullCalendarが自動的に背景色を適用しない場合がある
+
+### 解決方法
+1. **CSS修正**（globals.css）:
+   - 固定的な背景色指定を削除
+   - FullCalendarがインラインスタイルで色を設定できるよう調整
+
+2. **JavaScriptでの対応**（components/parts/program/calender/index.js）:
+   - `eventDidMount`コールバックで、色が設定されているイベントのDOM要素に直接背景色を適用
+   - デバッグログを追加して色の適用状況を確認可能に
+
+### 修正箇所
+- `/styles/globals.css`: 161-168行目
+- `/components/parts/program/calender/index.js`: 419-434行目
+
+### 確認結果
+- yarn dev: 正常起動
+- yarn build: ビルド成功
+- FullCalendarで個別のイベント色（orange等）が正しく表示されるようになった
+
+### 追加修正: FullCalendarの時間表示をアリゾナ時間に統一
+
+FullCalendarで表示される時間帯がユーザーの地域によって異なる問題を解決するため、アリゾナ州フェニックス時間（America/Phoenix）に統一した。
+
+#### 修正内容
+1. **FullCalendarのtimeZone設定**: `timeZone="local"` → `timeZone="America/Phoenix"`
+2. **renderEventContent関数**: 時間表示形式を`'2-digit'`に統一
+3. **Google Calendar/iCalendar生成**: アリゾナ時間で処理してからUTC変換するよう修正
+
+#### 影響範囲
+- カレンダー表示での時間帯統一
+- Google Calendarへの追加時の時間正確性向上
+- iCalendarファイル生成時の時間正確性向上
+
+---
+
+## 2025年9月22日（日） - にほんごかふぇページのレイアウト改善
+
+### 作業内容
+にほんごかふぇページのデザインとレイアウトを改善し、より見やすく統一感のあるページに更新した。
+
+### 変更内容
+1. **横並びレイアウトの実装**:
+   - 大画面（lg:以上）で対面とオンラインのセクションを横並びに配置
+   - 1つのSectionコンポーネント内で`lg:flex lg:gap-8`を使用して実装
+
+2. **背景色の統一**:
+   - 両セクションの背景を統一した`bg-gray-50`に変更
+   - 個別のSection背景色を削除し、親要素で管理
+
+3. **カード形式の削除**:
+   - `bg-white p-6 rounded-lg shadow-sm`のカードスタイルを削除
+   - よりシンプルでフラットなデザインに変更
+
+### 修正箇所
+- `/components/pages/program/nihongocafe.js`: 87-350行目
+
+### 理由
+- ユーザーから横並び表示の要望があった
+- カード形式をやめてシンプルなデザインにしたいという要望があった
+- 背景色を統一して見やすくするため
+
+#### 追加修正: イベント一覧の日付表示もアリゾナ時間に統一
+
+イベント一覧で使用される`createDate()`と`createEventDate()`関数にも`timeZone: "America/Phoenix"`を追加し、全ての日付・時間表示をアリゾナ時間に統一した。
+
+**修正前の問題**: イベント一覧の日付がユーザーのローカルタイムゾーン（日本時間など）で表示されていた
+**修正後**: すべての日付・時間表示がアリゾナ時間で統一表示
+
+---
+
 ## 2025年9月21日（土） - にほんごかふぇページのNotion DB連携実装
 
 ### 作業内容

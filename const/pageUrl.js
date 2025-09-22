@@ -109,14 +109,6 @@ export const CAFE_URL = {
     IS_PARENT:false,
     IS_ACTIVE:false
 }
-export const EVENT_URL = {
-    PAGE_KEY:"event",
-    GROUP:"program",
-    ORDERING: null,
-    GROUP_ORDERING: 5,
-    IS_PARENT:false,
-    IS_ACTIVE:false
-}
 
 /** admissions */
 export const ADMISSION_URL ={
@@ -144,6 +136,14 @@ export const NEWS_URL ={
     GROUP_ORDERING: null,
     IS_PARENT:true,
     IS_ACTIVE:true
+}
+export const EVENT_URL = {
+    PAGE_KEY:"event",
+    GROUP:"news",
+    ORDERING: null,
+    GROUP_ORDERING: 1,
+    IS_PARENT:false,
+    IS_ACTIVE:false
 }
 
 /** support */

@@ -48,14 +48,14 @@ const renderEventContent = (eventInfo, locale) => {
       )} */}
       {isSingleDayEvent && !allDay && start && end && (
         <p className=''>{start.toLocaleTimeString('en-US', {
-          timeZone: 'America/Phoenix',
-          hour: 'numeric',
-          minute: 'numeric',
+          timeZone: 'UTC',
+          hour: '2-digit',
+          minute: '2-digit',
           hour12: false
         })}-{end.toLocaleTimeString('en-US', {
-          timeZone: 'America/Phoenix',
-          hour: 'numeric',
-          minute: 'numeric',
+          timeZone: 'UTC',
+          hour: '2-digit',
+          minute: '2-digit',
           hour12: false
         })} </p>
       )}
@@ -86,6 +86,7 @@ export default function Calender({files, list, locale="ja"}) {
       return targetDate.toLocaleString(
         locale,
         {
+          timeZone: "America/Phoenix",
           month: "short",
           day: "numeric",
           year: "numeric",
@@ -97,6 +98,7 @@ export default function Calender({files, list, locale="ja"}) {
     return targetDate.toLocaleString(
       locale,
         {
+          timeZone: "America/Phoenix",
           month: "short",
           day: "numeric",
           year: "numeric",
@@ -113,6 +115,7 @@ export default function Calender({files, list, locale="ja"}) {
       return targetDate.toLocaleString(
         locale,
         {
+          timeZone: "America/Phoenix",
           month: "short",
           day: "numeric",
         }
@@ -123,6 +126,7 @@ export default function Calender({files, list, locale="ja"}) {
     return targetDate.toLocaleString(
       locale,
         {
+          timeZone: "America/Phoenix",
           month: "short",
           day: "numeric",
         }
@@ -195,23 +199,74 @@ export default function Calender({files, list, locale="ja"}) {
 
       // 日付を正確に処理する - 元のstartStr/endStrを使用
       if (item.allDay && item.startStr && !item.startStr.includes('T')) {
+        // デバッグログ：レイバーの日のデータを確認
+        if (item.title && item.title.includes('レイバー')) {
+          console.log('=== レイバーの日のデバッグ ===');
+          console.log('元のデータ:', {
+            title: item.title,
+            startStr: item.startStr,
+            allDay: item.allDay
+          });
+        }
+
         // 終日イベントの場合、ローカルタイムゾーンで日付が変わらないように
-        // 日付文字列に時間を追加（T07:00:00）- これはUTC-7のアリゾナ時間で00:00になる
-        startDate = item.startStr + 'T07:00:00.000Z'
+        // アリゾナ時間の正午（12:00）をUTCに変換して使用
+        startDate = item.startStr + 'T19:00:00.000Z' // UTC 19:00 = アリゾナ時間 12:00 (標準時)
 
         // FullCalendarの終日イベントでは終了日は排他的なので、
         // 実際の最後の日の翌日を設定する必要がある
         if (item.endStr && item.endStr !== item.startStr) {
-          const endDateObj = new Date(item.endStr + 'T07:00:00.000Z')
+          const endDateObj = new Date(item.endStr + 'T19:00:00.000Z')
           endDateObj.setDate(endDateObj.getDate() + 1) // 1日加算
-          endDate = endDateObj.toISOString().split('T')[0] + 'T07:00:00.000Z'
+          endDate = endDateObj.toISOString().split('T')[0] + 'T19:00:00.000Z'
         } else {
           endDate = null
         }
       } else if (item.startStr && item.startStr.includes('T')) {
-        // 時間付きイベントの場合、元のstartStr/endStrを使用（UTC変換されていない）
-        startDate = item.startStr
-        endDate = item.endStr && item.endStr !== item.startStr ? item.endStr : null
+        // デバッグログ：始業式のデータを確認
+        if (item.title && item.title.includes('始業式')) {
+          console.log('=== 始業式のデバッグ ===');
+          console.log('元のデータ:', {
+            title: item.title,
+            startStr: item.startStr,
+            endStr: item.endStr,
+            allDay: item.allDay
+          });
+        }
+
+        // 時間付きイベントの場合、Notion DBから来るUTC時間を調整
+        // 問題: Notion DBの時間がUTCで保存されているが、実際はアリゾナ時間として入力されている
+
+        // 元の時間を一度Dateオブジェクトに変換
+        const originalStart = new Date(item.startStr);
+        const originalEnd = item.endStr ? new Date(item.endStr) : null;
+
+        // アリゾナ時間として解釈するため、UTC時間を調整
+        // UTC時間から7時間引いて、実際のアリゾナ時間に合わせる
+        const adjustedStart = new Date(originalStart);
+        adjustedStart.setHours(adjustedStart.getHours() - 7);
+        startDate = adjustedStart.toISOString();
+
+        if (originalEnd) {
+          const adjustedEnd = new Date(originalEnd);
+          adjustedEnd.setHours(adjustedEnd.getHours() - 7);
+          endDate = adjustedEnd.toISOString();
+        } else {
+          endDate = null;
+        }
+
+        // デバッグログで時間変換を確認
+        if (item.title && item.title.includes('始業式')) {
+          console.log('時間付きイベントの調整:', {
+            title: item.title,
+            original_startStr: item.startStr,
+            original_endStr: item.endStr,
+            adjusted_startDate: startDate,
+            adjusted_endDate: endDate,
+            phoenixTimeStart: new Date(startDate).toLocaleString('en-US', {timeZone: 'America/Phoenix'}),
+            phoenixTimeEnd: endDate ? new Date(endDate).toLocaleString('en-US', {timeZone: 'America/Phoenix'}) : null
+          });
+        }
       }
 
 
@@ -391,7 +446,7 @@ export default function Calender({files, list, locale="ja"}) {
             <FullCalendar
               ref={calendarRef}
               locale={locale}
-              timeZone="local"
+              timeZone="America/Phoenix"
               plugins={[
                 dayGridPlugin,
                 interactionPlugin,
@@ -471,16 +526,38 @@ export default function Calender({files, list, locale="ja"}) {
                 leaveTo="opacity-0 scale-95"
               >
                 <Dialog.Panel className="w-full max-w-2xl transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
-                  <Dialog.Title as="h3" className="text-lg font-medium leading-6 text-gray-900 mb-4">
-                    {current}
-                  </Dialog.Title>
+                  
 
                   <div className="space-y-4">
                     {detailList && detailList.map((detail) => {
-                      const startTime = extractTime(detail.start);
-                      const endTime = extractTime(detail.end);
-
+                      // ダイアログ用：UTC時間をそのまま時刻表示（タイムゾーン変換なし）
+                      const startTime = detail.start ? new Date(detail.start).toLocaleTimeString('en-US', {
+                        timeZone: 'UTC',
+                        hour: '2-digit',
+                        minute: '2-digit',
+                        hour12: false
+                      }) : '';
+                      const endTime = detail.end ? new Date(detail.end).toLocaleTimeString('en-US', {
+                        timeZone: 'UTC',
+                        hour: '2-digit',
+                        minute: '2-digit',
+                        hour12: false
+                      }) : '';
+console.log('ダイアログのdetail:', {
+  title: detail.title,
+  start: detail.start,
+  end: detail.end,
+  startISO: detail.start?.toISOString?.(),
+  endISO: detail.end?.toISOString?.(),
+  startTime: startTime,
+  endTime: endTime,
+  allDay: detail.allDay
+})
                       return (
+                        <div>
+                        <Dialog.Title as="h3" className="text-lg font-medium leading-6 text-gray-900 mb-4">
+                          {createDate(detail.start)}
+                        </Dialog.Title>
                         <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-6 border border-blue-100" key={detail.id}>
                           <div className="flex justify-between items-start mb-4">
                             <div className="flex-1">
@@ -525,6 +602,7 @@ export default function Calender({files, list, locale="ja"}) {
                               </button>
                             )}
                           </div>
+                        </div>
                         </div>
                       );
                     })}
@@ -578,7 +656,9 @@ const generateGoogleCalendarUrl = (event) => {
   const endDate = end ? new Date(end) : new Date(startDate.getTime() + 60 * 60 * 1000); // 1時間後
 
   const formatDateForGoogle = (date) => {
-    return date.toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z';
+    // アリゾナ時間で処理してからUTCに変換
+    const arizonaDate = new Date(date.toLocaleString("en-US", {timeZone: "America/Phoenix"}));
+    return arizonaDate.toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z';
   };
 
   const params = new URLSearchParams({
@@ -599,7 +679,9 @@ const generateICalendarFile = (event) => {
   const endDate = end ? new Date(end) : new Date(startDate.getTime() + 60 * 60 * 1000);
 
   const formatDateForICal = (date) => {
-    return date.toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z';
+    // アリゾナ時間で処理してからUTCに変換
+    const arizonaDate = new Date(date.toLocaleString("en-US", {timeZone: "America/Phoenix"}));
+    return arizonaDate.toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z';
   };
 
   const icsContent = [

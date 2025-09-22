@@ -7,6 +7,7 @@ export class NihongoCafeOverviewEntity {
             console.warn("[NihongoCafeOverviewEntity] Invalid item or item.properties provided.");
             this.title = '';
             this.description = '';
+            this.features = [];
             this.target = '';
             return;
         }
@@ -21,6 +22,13 @@ export class NihongoCafeOverviewEntity {
             ? item.properties?.["content"]?.rich_text?.[0]?.plain_text 
             : item.properties?.["content_en"]?.rich_text?.[0]?.plain_text;
 
+        // 機能/特徴の処理
+        let features = isJpn
+            ? item.properties?.["feature"]?.rich_text?.[0]?.plain_text
+            : item.properties?.["feature_en"]?.rich_text?.[0]?.plain_text;
+
+        // featuresを改行で分割して配列に
+        this.features = features ? features.split('\n').filter(line => line.trim() !== '') : []
 
         // JSON シリアライズ可能にするための toJSON メソッドを追加
         this.toJSON = () => {
