@@ -364,6 +364,15 @@ export async function getStaticProps({ params }) {
     const scheduleList = isDev ? cacheData.schedule.slice(0, 5) : cacheData.schedule;
     const about = isDev ? cacheData.about.slice(0, 3) : cacheData.about;
     const general = isDev ? cacheData.general.slice(0, 1) : cacheData.general;
+
+    // スライダー画像の保存処理
+    if (sliderList && sliderList.length > 0) {
+      let sliderProps = [];
+      for(let item of sliderList){
+        sliderProps.push(item.properties);
+      }
+      await saveImageIfNeeded(sliderProps, "slider");
+    }
     
     // ニュースは環境変数未設定のため一時的にモックデータを使用
     let newsList = [];

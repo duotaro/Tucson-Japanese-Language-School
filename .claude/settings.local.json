@@ -57,7 +57,11 @@
       "WebFetch(domain:tjschool.org)",
       "Bash(gtimeout:*)",
       "WebFetch(domain:localhost)",
-      "Bash(sudo systemsetup:*)"
+      "Bash(sudo systemsetup:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(yarn --version)"
     ],
     "deny": []
   }

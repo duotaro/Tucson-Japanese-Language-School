@@ -42,8 +42,7 @@ export default class SliderEntity {
                 this.image = {
                     baseName: baseName,
                     pagePath: 'slider',
-                    alt: this.label || 'スライダー画像',
-                    url: imageFile.file?.url || imageFile.external?.url
+                    alt: this.label || 'スライダー画像'
                 };
             } else {
                 console.warn(`[SliderEntity] No image data found for Slider ID: ${item.id}`);

@@ -45,11 +45,14 @@ export class SchaduleEntity {
         this.startTime = null
         this.endTime = null
         
-        if(this.startStr && this.endStr){
+        // 時間が含まれているかどうかを確認
+        if(this.startStr && this.startStr.includes('T')){
             this.allDay = false
             // 時間があるイベントの場合、アリゾナ時間でフォーマット
             this.startTime = formatDateForHHmm(this.startStr, isJpn)
-            this.endTime = formatDateForHHmm(this.endStr, isJpn)
+            if(this.endStr){
+                this.endTime = formatDateForHHmm(this.endStr, isJpn)
+            }
         }
         // 日付はstart基準
         if(this.start){

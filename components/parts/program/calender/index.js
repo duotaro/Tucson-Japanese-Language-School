@@ -173,6 +173,7 @@ export default function Calender({files, list, locale="ja"}) {
 
       return true
     }).map(item => {
+
       // デバッグログ：11/1の運動会予行の処理を追跡
       if (item.title && (item.title.includes('運動会予行') || item.title.includes('Sports Day Rehearsal'))) {
         console.log('=== 運動会予行データのデバッグ ===');
@@ -196,14 +197,23 @@ export default function Calender({files, list, locale="ja"}) {
         // 終日イベントの場合、ローカルタイムゾーンで日付が変わらないように
         // 日付文字列に時間を追加（T07:00:00）- これはUTC-7のアリゾナ時間で00:00になる
         startDate = item.startStr + 'T07:00:00.000Z'
-        endDate = item.endStr && item.endStr !== item.startStr ? item.endStr + 'T07:00:00.000Z' : null
+
+        // FullCalendarの終日イベントでは終了日は排他的なので、
+        // 実際の最後の日の翌日を設定する必要がある
+        if (item.endStr && item.endStr !== item.startStr) {
+          const endDateObj = new Date(item.endStr + 'T07:00:00.000Z')
+          endDateObj.setDate(endDateObj.getDate() + 1) // 1日加算
+          endDate = endDateObj.toISOString().split('T')[0] + 'T07:00:00.000Z'
+        } else {
+          endDate = null
+        }
       } else if (item.startStr && item.startStr.includes('T')) {
         // 時間付きイベントの場合、元のstartStr/endStrを使用（UTC変換されていない）
         startDate = item.startStr
         endDate = item.endStr && item.endStr !== item.startStr ? item.endStr : null
       }
 
-      // デバッグログ：処理後のデータ
+
       if (item.title && (item.title.includes('運動会予行') || item.title.includes('Sports Day Rehearsal'))) {
         console.log('処理後:', {
           startDate: startDate,
@@ -219,7 +229,7 @@ export default function Calender({files, list, locale="ja"}) {
         title: item.title,
         start: startDate,
         end: endDate,
-        allDay: item.allDay !== false, // デフォルトはtrue
+        allDay: item.allDay, // SchedualEntityで正しく設定されたallDayプロパティを使用
         backgroundColor: item.backgroundColor,
         borderColor: item.borderColor,
         editable: false,
@@ -231,7 +241,7 @@ export default function Calender({files, list, locale="ja"}) {
       }
 
 
-      // デバッグログ：FullCalendarに渡される最終データ
+
       if (item.title && (item.title.includes('運動会予行') || item.title.includes('Sports Day Rehearsal'))) {
         console.log('FullCalendarに渡すデータ:', calendarEvent);
       }
@@ -289,8 +299,9 @@ export default function Calender({files, list, locale="ja"}) {
       pdfFile = files.properties["pdf_en"].files[0];
     }
 
-    // Notionファイルの直接URLを使用するか、フォールバック
-    res.pdf = pdfFile.file?.url || `/${ACCESABLE_PDF_PATH}/calendar/${pdfFile.name.replace(/ /g, '_')}`
+    // ローカルに保存されたPDFファイルパスを優先使用
+    const localPdfPath = `/${ACCESABLE_PDF_PATH}/calendar/${pdfFile.name.replace(/ /g, '_')}`;
+    res.pdf = localPdfPath;
   }
 
   useEffect(() => {
@@ -397,6 +408,7 @@ export default function Calender({files, list, locale="ja"}) {
               eventClick={(info) => selectEvent(info)}
               eventDidMount={(info) => {
                 // FullCalendarでの実際のレンダリング確認
+
                 if (info.event.title && (info.event.title.includes('運動会予行') || info.event.title.includes('Sports Day Rehearsal'))) {
                   console.log('=== FullCalendarレンダリング時 ===');
                   console.log('イベントタイトル:', info.event.title);
