@@ -104,8 +104,6 @@ const ImageOptimizer = ({
   
   console.log(`[ImageOptimizer] baseName: ${baseName}, pagePath: ${pagePath}`);
   console.log(`[ImageOptimizer] imagePaths:`, imagePaths.slice(0, 5)); // 最初の5つのパスを表示
-  console.log(`[DEBUG] 環境: ${process.env.NODE_ENV}, ビルド時刻: ${new Date().toISOString()}`);
-  console.log(`[DEBUG] 現在の画像インデックス: ${currentImageIndex}, 試行中のパス: ${imageSrc}`);
   
   // 画像のフォールバック処理のためのstate（ユニークキーでキャッシュ改善）
   const imageKey = `${pagePath}-${baseName}`;
@@ -114,12 +112,8 @@ const ImageOptimizer = ({
 
   // 画像読み込みエラー時のフォールバック処理
   const handleImageError = () => {
-    console.log(`[DEBUG] 画像エラー発生: ${imageSrc} (インデックス ${currentImageIndex})`);
     if (currentImageIndex < imagePaths.length - 1) {
-      console.log(`[DEBUG] 次の画像を試行: インデックス ${currentImageIndex + 1}`);
       setCurrentImageIndex(currentImageIndex + 1);
-    } else {
-      console.log(`[DEBUG] 全ての画像が失敗、最後のフォールバック画像を使用`);
     }
   };
 
