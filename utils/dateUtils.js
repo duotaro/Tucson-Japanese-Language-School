@@ -38,24 +38,21 @@ export const formatDate = (dateString, locale) => {
 }
 
 export const formatDateForCalander = (dateString, isJpn) => {
-    // ISO 8601形式の文字列をDateオブジェクトに変換
-    const date = new Date(dateString);
+    // 日付文字列をパースして、タイムゾーンに関係なく同じ日付を表示
+    let year, month, day;
 
-    // アリゾナ州のタイムゾーン（America/Phoenix）を指定
-    const arizonaTimeZone = 'America/Phoenix';
-    
-    // アリゾナ時間で日付を取得
-    const arizonaDate = new Intl.DateTimeFormat('en-CA', {
-        timeZone: arizonaTimeZone,
-        year: 'numeric',
-        month: '2-digit',
-        day: '2-digit'
-    }).format(date);
-    
-    const [year, month, day] = arizonaDate.split('-').map(Number);
-    
-    // 曜日を取得（アリゾナ時間基準）
-    const dayNumber = new Date(year, month - 1, day).getDay();
+    if (dateString.includes('T')) {
+        // ISO 8601形式の場合（例: "2025-02-15T00:00:00.000Z"）
+        const datePart = dateString.split('T')[0];
+        [year, month, day] = datePart.split('-').map(Number);
+    } else {
+        // 日付のみの場合（例: "2025-02-15"）
+        [year, month, day] = dateString.split('-').map(Number);
+    }
+
+    // 曜日を取得（ローカル日付で計算）
+    const localDate = new Date(year, month - 1, day);
+    const dayNumber = localDate.getDay();
     const daysOfWeek = ["日", "月", "火", "水", "木", "金", "土"];
     var dayName = daysOfWeek[dayNumber];
 
@@ -68,23 +65,35 @@ export const formatDateForCalander = (dateString, isJpn) => {
         }
     }
 
-    // 英語の月略称を取得（アリゾナ時間基準）
-    const monthFormatter = new Intl.DateTimeFormat("en", { 
-        month: 'short',
-        timeZone: arizonaTimeZone
+    // 英語の月名を取得（フルネーム）
+    const monthFormatter = new Intl.DateTimeFormat("en", {
+        month: 'long'
     });
-    const monthFormatted = monthFormatter.format(date);
+    const monthFormatted = monthFormatter.format(localDate);
 
-    const formatterWeekday = new Intl.DateTimeFormat("en", { 
-        weekday: 'short',
-        timeZone: arizonaTimeZone
+    // 英語の曜日を取得（フルネーム）
+    const formatterWeekday = new Intl.DateTimeFormat("en", {
+        weekday: 'long'
     });
-    const dayNameFormatted = formatterWeekday.format(date);
-        
+    const dayNameFormatted = formatterWeekday.format(localDate);
+
+    // 日に序数接尾辞を追加（1st, 2nd, 3rd, 4th, etc.）
+    const getOrdinalSuffix = (day) => {
+        if (day > 3 && day < 21) return 'th'; // 11-13は例外
+        switch (day % 10) {
+            case 1: return 'st';
+            case 2: return 'nd';
+            case 3: return 'rd';
+            default: return 'th';
+        }
+    };
+
+    const dayWithSuffix = `${day}${getOrdinalSuffix(day)}`;
+
     return {
         "year" : year,
         "month" : monthFormatted,
-        "day" : day,
+        "day" : dayWithSuffix,
         "dayName" : dayNameFormatted
     }
 }

@@ -95,12 +95,25 @@ export default function KanjiKenteiPage({ kanjiKenteiData, locale }) {
   const getApplicationStatus = () => {
     if (deadlineData.length === 0) return { isOpen: false, message: isJpn ? '情報を読み込み中...' : 'Loading...' };
 
-    const now = new Date();
     const deadline = deadlineData[0];
 
     if (!deadline.date) return { isOpen: false, message: isJpn ? '期限情報が設定されていません' : 'Deadline not set' };
 
-    const deadlineDate = new Date(deadline.date);
+    // フェニックス時間での現在日時を取得
+    const nowInPhoenix = new Date().toLocaleString("en-US", {timeZone: "America/Phoenix"});
+    const now = new Date(nowInPhoenix);
+
+    // 締切日をフェニックス時間基準で解釈（日付文字列から直接パース）
+    let deadlineDate;
+    if (deadline.date.includes('T')) {
+      // ISO形式の場合、日付部分のみ取得
+      const datePart = deadline.date.split('T')[0];
+      deadlineDate = new Date(datePart + 'T23:59:59'); // 締切日の終了時刻
+    } else {
+      // 日付のみの場合
+      deadlineDate = new Date(deadline.date + 'T23:59:59');
+    }
+
     const isOpen = now <= deadlineDate;
 
     return {
@@ -177,8 +190,10 @@ export default function KanjiKenteiPage({ kanjiKenteiData, locale }) {
                 )}
                 {scheduleData[0].formattedExamDate && (
                   <p className="text-lg font-semibold text-gray-900">
-                    {scheduleData[0].formattedExamDate.year}/{scheduleData[0].formattedExamDate.month}/{scheduleData[0].formattedExamDate.day}
-                    ({scheduleData[0].formattedExamDate.dayName})
+                    {isJpn
+                      ? `${scheduleData[0].formattedExamDate.year}/${scheduleData[0].formattedExamDate.month}/${scheduleData[0].formattedExamDate.day}(${scheduleData[0].formattedExamDate.dayName})`
+                      : `${scheduleData[0].formattedExamDate.dayName}, ${scheduleData[0].formattedExamDate.month} ${scheduleData[0].formattedExamDate.day}, ${scheduleData[0].formattedExamDate.year}`
+                    }
                   </p>
                 )}
                 <p className="text-sm text-gray-600 mt-1">
@@ -219,8 +234,10 @@ export default function KanjiKenteiPage({ kanjiKenteiData, locale }) {
               <div className="text-gray-700">
                 {deadlineData[0].formattedExamDate && (
                   <p className="text-lg font-semibold text-gray-900 mb-2">
-                    {deadlineData[0].formattedExamDate.year}/{deadlineData[0].formattedExamDate.month}/{deadlineData[0].formattedExamDate.day}
-                    ({deadlineData[0].formattedExamDate.dayName})
+                    {isJpn
+                      ? `${deadlineData[0].formattedExamDate.year}/${deadlineData[0].formattedExamDate.month}/${deadlineData[0].formattedExamDate.day}(${deadlineData[0].formattedExamDate.dayName})`
+                      : `${deadlineData[0].formattedExamDate.dayName}, ${deadlineData[0].formattedExamDate.month} ${deadlineData[0].formattedExamDate.day}, ${deadlineData[0].formattedExamDate.year}`
+                    }
                   </p>
                 )}
                 <p className={`text-sm ${getApplicationStatus().isOpen ? 'text-green-600' : 'text-red-600'}`}>
@@ -313,8 +330,10 @@ export default function KanjiKenteiPage({ kanjiKenteiData, locale }) {
                     {isJpn ? '締め切り日' : 'Deadline'}
                   </p>
                   <p className="text-xl font-bold">
-                    {deadlineData[0].formattedExamDate.year}/{deadlineData[0].formattedExamDate.month}/{deadlineData[0].formattedExamDate.day}
-                    ({deadlineData[0].formattedExamDate.dayName})
+                    {isJpn
+                      ? `${deadlineData[0].formattedExamDate.year}/${deadlineData[0].formattedExamDate.month}/${deadlineData[0].formattedExamDate.day}(${deadlineData[0].formattedExamDate.dayName})`
+                      : `${deadlineData[0].formattedExamDate.dayName}, ${deadlineData[0].formattedExamDate.month} ${deadlineData[0].formattedExamDate.day}, ${deadlineData[0].formattedExamDate.year}`
+                    }
                   </p>
                 </div>
               )}
