@@ -9,6 +9,10 @@ export class KanjiKenteiOverviewEntity {
             this.linkLabel = '';
             this.linkUrl = '';
             this.officialLink = '';
+            this.pdfUrl = null;
+            this.pdfEnUrl = null;
+            this._originalNotionPdfUrl = null;
+            this._originalNotionPdfEnUrl = null;
             return;
         }
 
@@ -58,6 +62,26 @@ export class KanjiKenteiOverviewEntity {
         } else {
             this.imageUrl = null;
             this._originalNotionImageUrl = null;
+        }
+
+        // PDF URLの処理（日本語版）
+        if (item.properties["pdf"]?.files?.[0]) {
+            const notionPdfUrl = item.properties["pdf"].files[0].file?.url || item.properties["pdf"].files[0].external?.url;
+            this.pdfUrl = notionPdfUrl; // 一時的にNotionのURLを保持
+            this._originalNotionPdfUrl = notionPdfUrl;
+        } else {
+            this.pdfUrl = null;
+            this._originalNotionPdfUrl = null;
+        }
+
+        // PDF URLの処理（英語版）
+        if (item.properties["pdf_en"]?.files?.[0]) {
+            const notionPdfEnUrl = item.properties["pdf_en"].files[0].file?.url || item.properties["pdf_en"].files[0].external?.url;
+            this.pdfEnUrl = notionPdfEnUrl; // 一時的にNotionのURLを保持
+            this._originalNotionPdfEnUrl = notionPdfEnUrl;
+        } else {
+            this.pdfEnUrl = null;
+            this._originalNotionPdfEnUrl = null;
         }
     }
 }

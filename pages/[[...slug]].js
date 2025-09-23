@@ -747,13 +747,51 @@ export async function getStaticProps({ params }) {
       const kanjiKenteiSchedule = await getDatabase('276a8c0ecf8c80f883d2e9a738a63b90'); // 漢検日程情報
       const kanjiKenteiVenue = await getDatabase('276a8c0ecf8c80e089a0e4e1ce8dbdad'); // 漢検会場情報
       const kanjiKenteiDeadline = await getDatabase('276a8c0ecf8c80d7bda5c94af8d4c3cc'); // 漢検申し込み期限情報
+      const kanjiKenteiVenueImages = await getDatabase('276a8c0ecf8c8027be3aed9903ef0202'); // 漢検会場の様子画像情報
+
+      // 画像ダウンロード処理
+      if (kanjiKenteiOverview && kanjiKenteiOverview.length > 0) {
+        let overviewProps = [];
+        for(let item of kanjiKenteiOverview){
+          overviewProps.push(item.properties);
+        }
+        await saveImageIfNeeded(overviewProps, "kanji_kentei_overview");
+      }
+
+      // 教材画像ダウンロード処理
+      if (kanjiKenteiMaterials && kanjiKenteiMaterials.length > 0) {
+        let materialProps = [];
+        for(let item of kanjiKenteiMaterials){
+          materialProps.push(item.properties);
+        }
+        await saveImageIfNeeded(materialProps, "kanji_kentei_materials");
+      }
+
+      // 会場画像ダウンロード処理
+      if (kanjiKenteiVenueImages && kanjiKenteiVenueImages.length > 0) {
+        let venueImageProps = [];
+        for(let item of kanjiKenteiVenueImages){
+          venueImageProps.push(item.properties);
+        }
+        await saveImageIfNeeded(venueImageProps, "kanji_kentei_venue_images");
+      }
+
+      // PDFダウンロード処理
+      if (kanjiKenteiOverview && kanjiKenteiOverview.length > 0) {
+        let pdfProps = [];
+        for(let item of kanjiKenteiOverview){
+          pdfProps.push(item.properties);
+        }
+        await savePdfIfNeeded(pdfProps, "kanji_kentei_pdf");
+      }
 
       props.kanjiKenteiData = {
         overview: kanjiKenteiOverview || [],
         materials: kanjiKenteiMaterials || [],
         schedule: kanjiKenteiSchedule || [],
         venue: kanjiKenteiVenue || [],
-        deadline: kanjiKenteiDeadline || []
+        deadline: kanjiKenteiDeadline || [],
+        venueImages: kanjiKenteiVenueImages || []
       };
     } catch (error) {
       console.log('Error fetching kanji kentei data:', error);
@@ -762,7 +800,8 @@ export async function getStaticProps({ params }) {
         materials: [],
         schedule: [],
         venue: [],
-        deadline: []
+        deadline: [],
+        venueImages: []
       };
     }
   }

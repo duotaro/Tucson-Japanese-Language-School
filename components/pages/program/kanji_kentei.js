@@ -9,6 +9,8 @@ import { KanjiKenteiMaterialEntity } from '../../../entity/kanjiKenteiMaterialEn
 import { KanjiKenteiScheduleEntity } from '../../../entity/kanjiKenteiScheduleEntity';
 import { KanjiKenteiVenueEntity } from '../../../entity/kanjiKenteiVenueEntity';
 import { KanjiKenteiDeadlineEntity } from '../../../entity/kanjiKenteiDeadlineEntity';
+import { KanjiKenteiVenueImagesEntity } from '../../../entity/kanjiKenteiVenueImagesEntity';
+import { updateEntityPaths } from '../../../utils/filePathUtils';
 
 export default function KanjiKenteiPage({ kanjiKenteiData, locale }) {
   console.log('KanjiKenteiPage props:', { kanjiKenteiData: !!kanjiKenteiData, locale });
@@ -21,19 +23,26 @@ export default function KanjiKenteiPage({ kanjiKenteiData, locale }) {
   const [scheduleData, setScheduleData] = useState([]);
   const [venueData, setVenueData] = useState([]);
   const [deadlineData, setDeadlineData] = useState([]);
+  const [venueImagesData, setVenueImagesData] = useState([]);
 
   const processKanjiKenteiData = () => {
     try {
       if (!kanjiKenteiData) return;
 
       // エンティティクラスに変換
-      const overviewEntities = kanjiKenteiData.overview.map(item =>
-        new KanjiKenteiOverviewEntity(item, isJpn)
-      );
+      const overviewEntities = kanjiKenteiData.overview.map(item => {
+        const entity = new KanjiKenteiOverviewEntity(item, isJpn);
+        // ダウンロード済みのファイルパスに更新
+        return updateEntityPaths(entity, 'kanji_kentei_overview', 'kanji_kentei_pdf');
+      });
 
       const materialEntities = kanjiKenteiData.materials
         .sort((a, b) => (a.properties?.ordering?.number || 0) - (b.properties?.ordering?.number || 0))
-        .map(item => new KanjiKenteiMaterialEntity(item, isJpn));
+        .map(item => {
+          const entity = new KanjiKenteiMaterialEntity(item, isJpn);
+          // 教材画像のパスを更新
+          return updateEntityPaths(entity, 'kanji_kentei_materials', null);
+        });
 
       const scheduleEntities = kanjiKenteiData.schedule.map(item =>
         new KanjiKenteiScheduleEntity(item, isJpn)
@@ -46,6 +55,17 @@ export default function KanjiKenteiPage({ kanjiKenteiData, locale }) {
       const deadlineEntities = kanjiKenteiData.deadline.map(item =>
         new KanjiKenteiDeadlineEntity(item, isJpn)
       );
+
+      // 会場画像データを処理
+      const venueImagesEntities = kanjiKenteiData.venueImages
+        ? kanjiKenteiData.venueImages
+            .sort((a, b) => (a.properties?.ordering?.number || 0) - (b.properties?.ordering?.number || 0))
+            .map(item => {
+              const entity = new KanjiKenteiVenueImagesEntity(item, isJpn);
+              // 会場画像のパスを更新
+              return updateEntityPaths(entity, 'kanji_kentei_venue_images', null);
+            })
+        : [];
 
       // コンソールに出力して確認
       console.log('=== 漢検概要データ ===');
@@ -68,12 +88,17 @@ export default function KanjiKenteiPage({ kanjiKenteiData, locale }) {
       console.log('Raw Data:', kanjiKenteiData.deadline);
       console.log('Entities:', deadlineEntities);
 
+      console.log('=== 漢検会場画像データ ===');
+      console.log('Raw Data:', kanjiKenteiData.venueImages);
+      console.log('Entities:', venueImagesEntities);
+
       // ステートに保存
       setOverviewData(overviewEntities);
       setMaterialsData(materialEntities);
       setScheduleData(scheduleEntities);
       setVenueData(venueEntities);
       setDeadlineData(deadlineEntities);
+      setVenueImagesData(venueImagesEntities);
 
     } catch (error) {
       console.error('Error processing kanji kentei data:', error);
@@ -290,27 +315,64 @@ export default function KanjiKenteiPage({ kanjiKenteiData, locale }) {
 
 
       {/* 画像セクション */}
-      <Section py="py-8">
-        <Title title="漢字検定の様子" level="h2" size="h3" className="mb-8" />
-        <div className="grid md:grid-cols-2 gap-6">
-          <Image 
-            src="https://static.wixstatic.com/media/f474ab_9b96b0f3bb284fb8879f2d38ec43d026~mv2.jpg/v1/fill/w_972,h_786,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_0630_JPG.jpg" 
-            alt="漢字検定実施の様子1"
-            width={972}
-            height={786}
-            className="h-64 md:h-72"
-            objectFit="cover"
+      {venueImagesData.length > 0 && (
+        <Section py="py-8">
+          <Title
+            title={isJpn ? "漢字検定の様子" : "Kanji Test Venue"}
+            level="h2"
+            size="h3"
+            className="mb-8"
           />
-          {/* <CustomImage 
-            src="/images/placeholder-kanji-test-2.jpg" 
-            alt="漢字検定実施の様子2" 
-            hClass="h-64 md:h-72"
-          /> */}
-        </div>
-        <p className="text-center text-gray-600 mt-4">
-          集中して問題に取り組む受検者の皆さん
-        </p>
-      </Section>
+          <div className={`grid ${venueImagesData.length === 1 ? 'grid-cols-1' : 'md:grid-cols-2'} gap-6`}>
+            {venueImagesData.map((image, index) => (
+              <div key={image.id || index} className="relative">
+                {image.imageUrl ? (
+                  <Image
+                    src={image.imageUrl}
+                    alt={image.title || `${isJpn ? '漢字検定実施の様子' : 'Kanji Test Venue'} ${index + 1}`}
+                    width={972}
+                    height={786}
+                    className="h-64 md:h-72 w-full object-cover rounded-lg"
+                    objectFit="cover"
+                  />
+                ) : (
+                  <div className="h-64 md:h-72 w-full bg-gray-200 rounded-lg flex items-center justify-center">
+                    <p className="text-gray-500">{isJpn ? '画像を読み込み中...' : 'Loading image...'}</p>
+                  </div>
+                )}
+                {image.title && (
+                  <p className="text-center text-sm text-gray-600 mt-2">{image.title}</p>
+                )}
+              </div>
+            ))}
+          </div>
+          {venueImagesData.length > 0 && venueImagesData[0].title && (
+            <p className="text-center text-gray-600 mt-4">
+              {venueImagesData[0].title}
+            </p>
+          )}
+        </Section>
+      )}
+
+      {/* フォールバック - 画像データがない場合 */}
+      {venueImagesData.length === 0 && (
+        <Section py="py-8">
+          <Title title={isJpn ? "漢字検定の様子" : "Kanji Test Venue"} level="h2" size="h3" className="mb-8" />
+          <div className="grid md:grid-cols-2 gap-6">
+            <Image
+              src="https://static.wixstatic.com/media/f474ab_9b96b0f3bb284fb8879f2d38ec43d026~mv2.jpg/v1/fill/w_972,h_786,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_0630_JPG.jpg"
+              alt="漢字検定実施の様子1"
+              width={972}
+              height={786}
+              className="h-64 md:h-72"
+              objectFit="cover"
+            />
+          </div>
+          <p className="text-center text-gray-600 mt-4">
+            {isJpn ? '集中して問題に取り組む受検者の皆さん' : 'Test takers concentrating on the exam'}
+          </p>
+        </Section>
+      )}
 
       {/* お申し込み・お問い合わせ */}
       {overviewData.length > 0 && overviewData[0].linkUrl && (

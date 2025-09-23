@@ -64,19 +64,19 @@ export default function NihongocafePage({ nihongoCafeData, locale }) {
       {/* メインタイトル */}
       <Section py="py-6 md:py-8">
         <Title title={overview?.title || "ようこそ！「にほんごかふぇ」のページへ"} level="h1" size="h1" className="mb-8 " />
-        <div className="text-center text-gray-600 mb-6">
+        <div className="text-center text-gray-600 mb-12">
           {/* <CustomImage
             src="/images/placeholder-nihongo-cafe-logo.jpg"
             alt="にほんごかふぇ ロゴ"
             hClass="h-64 md:h-80"
-            addClass="mb-6"
+            addClass="mb-12"
           /> */}
           <Image
             src="https://static.wixstatic.com/media/f474ab_53f44824c4e048688fcff23e9ff80107~mv2.png/v1/fill/w_700,h_672,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/f474ab_53f44824c4e048688fcff23e9ff80107~mv2.png"
             alt="にほんごかふぇ"
             width={512}
             height={384}
-            className="h-64 md:h-80 mb-6 text-center mx-auto justify-center"
+            className="h-64 md:h-80 mb-12 text-center mx-auto justify-center"
           />
           <p className="text-lg font-semibold ">
             {overview?.description || "2020年からオンラインに移行していた「にほんごかふぇ」の対面式かふぇを再開します！"}
@@ -89,14 +89,14 @@ export default function NihongocafePage({ nihongoCafeData, locale }) {
         <div className="lg:flex lg:gap-16 xl:gap-20">
           {/* 対面にほんごかふぇ */}
           <div className="lg:flex-1 lg:mr-5">
-          <Title title={inPersonOverview?.title || "1. 対面にほんごかふぇ"} level="h2" size="h2" className="mb-6 text-orange-700" />
+          <Title title={inPersonOverview?.title || "1. 対面にほんごかふぇ"} level="h2" size="h2" className="mb-12 text-orange-700" />
 
-          <div className="mb-6">
+          <div className="mb-12">
             <p className="text-gray-700 mb-4 whitespace-pre-wrap">
               {inPersonOverview?.description || "新年度より日本語で会話練習をしたいという多くの方々を全力で応援すべく、対面式にほんごかふぇを土曜日の朝9時～11時に開催します。1回のセッションは2時間で$7.5～"}
             </p>
             {inPersonOverview?.features && inPersonOverview.features.length > 0 && (
-              <div className="mt-6 border-l-4 border-orange-500 pl-4">
+              <div className="mt-12 border-l-4 border-orange-500 pl-4">
                 <h4 className="text-lg font-bold text-orange-700 mb-3">
                   {isJpn ? "🎉 こんな方におススメ！" : "🎉 Recommended for..."}
                 </h4>
@@ -113,7 +113,7 @@ export default function NihongocafePage({ nihongoCafeData, locale }) {
           </div>
 
           {/* 料金 */}
-          <div className="mb-6">
+          <div className="mb-12">
             <h3 className="text-xl font-semibold text-orange-700 mb-4">{isJpn ? "料金" : "Cost"}</h3>
             <div className="space-y-3">
               {inPersonPrice && inPersonPrice.length > 0 && (
@@ -180,7 +180,7 @@ export default function NihongocafePage({ nihongoCafeData, locale }) {
               </div>
             </div>
 
-            <div className="mt-6 flex flex-col sm:flex-row gap-4">
+            <div className="mt-12 flex flex-col sm:flex-row gap-4">
               <a
                 href={inPersonDetails?.registrationUrl}
                 target="_blank"
@@ -213,15 +213,15 @@ export default function NihongocafePage({ nihongoCafeData, locale }) {
 
         {/* オンラインにほんごかふぇ */}
         <div className="lg:flex-1 lg:ml-5">
-          <Title title={onlineOverview?.title || "2. オンラインにほんごかふぇ"} level="h2" size="h2" className="mb-6 text-blue-700" />
+          <Title title={onlineOverview?.title || "2. オンラインにほんごかふぇ"} level="h2" size="h2" className="mb-12 text-blue-700" />
 
-          <div className="mb-6">
+          <div className="mb-12">
             <p className="text-gray-700 mb-4 whitespace-pre-wrap">
               {onlineOverview?.description || "オンラインにほんごかふぇはツーソンに在住の日本語学習者のために、国際交流の盛んな愛知県安城市の市民ボランティアとコラボし、2020年9月より日本語/英語のランゲージエクスチェンジを行っています。"}
             </p>
            
             {onlineOverview?.features && onlineOverview.features.length > 0 && (
-              <div className="mt-6 border-l-4 border-blue-500 pl-4">
+              <div className="mt-12 border-l-4 border-blue-500 pl-4">
                 <h4 className="text-lg font-bold text-blue-700 mb-3">
                   {isJpn ? "🎉 こんな方におススメ！" : "🎉 Recommended for..."}
                 </h4>
@@ -235,6 +235,38 @@ export default function NihongocafePage({ nihongoCafeData, locale }) {
                 </ul>
               </div>
             )}
+          </div>
+
+          {/* 料金 */}
+          <div className="mb-12">
+            <h3 className="text-xl font-semibold text-orange-700 mb-4">{isJpn ? "料金" : "Cost"}</h3>
+            <div className="space-y-3">
+              {onlinePrice && onlinePrice.length > 0 && (
+                onlinePrice.map((price, index) => (
+                  <div
+                    key={index}
+                    className={`flex items-center justify-between p-3 rounded ${
+                      price.isSpecial
+                        ? 'bg-green-100'
+                        : index === 0
+                        ? 'bg-orange-100'
+                        : 'bg-gray-100'
+                    }`}
+                  >
+                    {/* <span>{price.planName}</span> */}
+                    <span className={`font-semibold ${
+                      price.isSpecial
+                        ? 'text-green-800'
+                        : index === 0
+                        ? 'text-orange-800'
+                        : ''
+                    }`}>
+                      {price.price}
+                    </span>
+                  </div>
+                ))
+              )}
+            </div>
           </div>
 
           {/* オンライン式の詳細情報 */}
@@ -278,7 +310,7 @@ export default function NihongocafePage({ nihongoCafeData, locale }) {
             </div>
 
             {/* {onlineDetails?.note || !onlinePrice?.length ? (
-              <div className="mt-6 bg-yellow-100 p-4 rounded-lg">
+              <div className="mt-12 bg-yellow-100 p-4 rounded-lg">
                 <p className="text-sm text-yellow-800">
                   {onlineDetails?.note || (
                     <>
@@ -290,7 +322,7 @@ export default function NihongocafePage({ nihongoCafeData, locale }) {
               </div>
             ) : null} */}
 
-            <div className="mt-6 flex flex-col sm:flex-row gap-4">
+            <div className="mt-12 flex flex-col sm:flex-row gap-4">
               <a
                 href={onlineDetails?.registrationUrl || "https://forms.gle/FpUcYwPSr1mapsV66"}
                 target="_blank"
