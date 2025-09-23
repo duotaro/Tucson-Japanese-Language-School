@@ -50,6 +50,7 @@ export const DATABASES = {
   
   // 動的コンテンツ（高頻度更新）
   news: "cc0b1eb3570842ba926cc71ecaf5df4d", // ニュースデータベース
+  event: "277a8c0ecf8c81ca99a5fb387ce465d8", // イベントデータベース
   
   // レイアウト設定（低頻度更新）
   layout: "5bf76e8fcd304274b21ad0f5f8d42e8a",      // レイアウト設定
@@ -57,8 +58,8 @@ export const DATABASES = {
 
 // 更新頻度別分類
 export const UPDATE_STRATEGIES = {
-  // 高頻度更新（毎日） - ニュースやイベント  
-  frequent: ['news', 'slider', 'sponsors'], // ニュース、スライダー、スポンサー
+  // 高頻度更新（毎日） - ニュースやイベント
+  frequent: ['news', 'event', 'slider', 'sponsors'], // ニュース、イベント、スライダー、スポンサー
   
   // 中頻度更新（週1回） - スタッフ、クラス、スケジュール
   moderate: [

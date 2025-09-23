@@ -143,7 +143,7 @@ export const NEWS_URL2 = {
     ORDERING: null,
     GROUP_ORDERING: 1,
     IS_PARENT:false,
-    IS_ACTIVE:false
+    IS_ACTIVE:true
 }
 export const EVENT_URL = {
     PAGE_KEY:"event",
@@ -151,7 +151,7 @@ export const EVENT_URL = {
     ORDERING: null,
     GROUP_ORDERING: 2,
     IS_PARENT:false,
-    IS_ACTIVE:false
+    IS_ACTIVE:true
 }
 
 /** support */
@@ -260,6 +260,9 @@ export const createNavUrl = (item) => {
         return `/${item.PAGE_KEY}/`
     }
     if(item.PAGE_KEY == CONTACT2_URL.PAGE_KEY){
+        return `/${item.GROUP}/`
+    }
+    if(item.PAGE_KEY == NEWS_URL2.PAGE_KEY){
         return `/${item.GROUP}/`
     }
     if(item.PAGE_KEY == PAYMENT_URL.PAGE_KEY){

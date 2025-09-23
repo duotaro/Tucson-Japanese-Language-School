@@ -92,6 +92,14 @@ const NewsDetailPage = dynamic(() => import('../components/pages/news/detail.js'
   loading: () => <PageLoading />,
   ssr: true
 });
+const EventIndexPage = dynamic(() => import('../components/pages/event/index.js'), {
+  loading: () => <PageLoading />,
+  ssr: true
+});
+const EventDetailPage = dynamic(() => import('../components/pages/event/detail.js'), {
+  loading: () => <PageLoading />,
+  ssr: true
+});
 const SupportPage = dynamic(() => import('../components/pages/support.js'), {
   loading: () => <PageLoading />,
   ssr: true
@@ -169,11 +177,19 @@ export default function DynamicPage({ pageType, slug, locale: pageLocale, ...pag
 
   // Route to appropriate page component
   const renderPageComponent = () => {
-    // Handle news detail pages
-    if (pageType.startsWith('news/') && actualSlug.length === 2) {
+    // Handle event detail pages
+    if (pageType.startsWith('news/event/') && actualSlug.length === 3) {
+      const eventId = actualSlug[2];
+      return <EventDetailPage {...pageProps} locale={currentLocale} eventId={eventId} />;
+    }
+
+    // Handle news detail pages (but exclude news/event path)
+    if (pageType.startsWith('news/') && actualSlug.length === 2 && actualSlug[1] !== 'event') {
       const newsId = actualSlug[1];
       return <NewsDetailPage {...pageProps} locale={currentLocale} newsId={newsId} />;
     }
+
+
     
     switch (pageType) {
       case 'about':
@@ -208,6 +224,8 @@ export default function DynamicPage({ pageType, slug, locale: pageLocale, ...pag
         return <FormsPage {...pageProps} locale={currentLocale} />;
       case 'news':
         return <NewsIndexPage {...pageProps} locale={currentLocale} />;
+      case 'news/event':
+        return <EventIndexPage {...pageProps} locale={currentLocale} />;
       case 'support':
         return <SupportPage {...pageProps} locale={currentLocale} />;
       case 'contact':
@@ -245,6 +263,17 @@ export async function getStaticPaths() {
   } catch (error) {
     console.log('Error fetching news for paths:', error);
   }
+
+  // Get event items for dynamic paths using cache system
+  let eventPaths = [];
+  try {
+    const eventDatabase = await loadCachedData('event', { fallbackToAPI: false });
+    // Store in global cache for later use
+    global.buildTimeCache['event'] = eventDatabase;
+    eventPaths = eventDatabase.map(item => ({ params: { slug: ['news', 'event', item.id] } }));
+  } catch (error) {
+    console.log('Error fetching events for paths:', error);
+  }
   
   // Japanese paths (root)
   const japanesePages = [
@@ -265,10 +294,12 @@ export async function getStaticPaths() {
     { params: { slug: ['admissions'] } },
     { params: { slug: ['admissions', 'forms'] } },
     { params: { slug: ['news'] } },
+    { params: { slug: ['news', 'event'] } },
     { params: { slug: ['support'] } },
     { params: { slug: ['contact'] } },
     { params: { slug: ['contact', 'opportunity'] } },
-    ...newsPaths
+    ...newsPaths,
+    ...eventPaths
   ];
 
   // English paths (/en prefix)
@@ -402,8 +433,8 @@ export async function getStaticProps({ params }) {
 
   // Add specific page data fetching logic for different page types
   
-  // Handle news detail pages
-  if (pageType.startsWith('news/') && actualSlug.length === 2) {
+  // Handle news detail pages (but exclude news/event path)
+  if (pageType.startsWith('news/') && actualSlug.length === 2 && actualSlug[1] !== 'event') {
     const newsItemId = actualSlug[1];
     try {
       const newsDatabase = await fetchCachedData('news', null);
@@ -458,7 +489,64 @@ export async function getStaticProps({ params }) {
       props.newsItem = null;
     }
   }
-  
+
+  // Handle event detail pages
+  if (pageType.startsWith('news/event/') && actualSlug.length === 3) {
+    const eventItemId = actualSlug[2];
+    try {
+      const eventDatabase = await fetchCachedData('event', null);
+      const foundItem = eventDatabase.find(item => item.id === eventItemId);
+
+      if (foundItem) {
+        // イベント画像の保存処理
+        let eventProps = [foundItem.properties];
+        await saveImageIfNeeded(eventProps, "event");
+
+        // Master版の実装と同じように子データベースから詳細コンテンツを取得
+        const { getPage, getBlocks, getDatabase } = await import('../lib/notion.js');
+
+        let pageMap = {"ja": null, "en": null};
+        let blockMap = {"ja": null, "en": null};
+
+        // 詳細ページとブロックを取得
+        const detailPage = await getPage(eventItemId);
+        const detailBlock = await getBlocks(eventItemId);
+
+        // 子データベースが存在する場合
+        if (detailBlock && detailBlock.length > 0 && detailBlock[0].type === 'child_database') {
+          const localeList = await getDatabase(detailBlock[0].id);
+
+          // 各言語の詳細コンテンツを取得
+          const paramsPromises = localeList.map(async (localeItem) => {
+            const locale = localeItem.properties["locale"].title[0].plain_text;
+            const page = await getPage(localeItem.id);
+            const blocks = await getBlocks(localeItem.id);
+
+            if (locale === "ja") {
+              pageMap[locale] = page;
+              blockMap[locale] = blocks;
+            } else {
+              pageMap[locale] = page;
+              blockMap[locale] = blocks;
+            }
+          });
+
+          await Promise.all(paramsPromises);
+        }
+
+        props.eventItem = foundItem;
+        props.detailPage = detailPage;
+        props.pageMap = pageMap;
+        props.blockMap = blockMap;
+      } else {
+        props.eventItem = null;
+      }
+    } catch (error) {
+      console.log('Error fetching event item:', error);
+      props.eventItem = null;
+    }
+  }
+
   // Add specific page data for different page types
   if (pageType === 'about' || pageType === 'about/welcome') {
     try {
@@ -604,11 +692,22 @@ export async function getStaticProps({ params }) {
     try {
       const newsDatabase = await fetchCachedData('news', null);
       const newsList = await getNewsList(newsDatabase, null);
-      
+
       props.newsList = newsList || [];
     } catch (error) {
       console.log('Error fetching news data:', error);
       props.newsList = [];
+    }
+  } else if (pageType === 'news/event') {
+    try {
+      const eventDatabase = await fetchCachedData('event', null);
+      const { getEventList } = await import('../entity/eventEntity.js');
+      const eventList = await getEventList(eventDatabase, null);
+
+      props.eventList = eventList || [];
+    } catch (error) {
+      console.log('Error fetching event data:', error);
+      props.eventList = [];
     }
   } else if (pageType === 'admissions' || pageType === 'admissions/forms') {
     try {
