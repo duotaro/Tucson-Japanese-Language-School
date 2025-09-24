@@ -11,6 +11,8 @@ import SponsorEntity from '../entity/sponsorEntity.js';
 import LocaleContext from '../components/context/localeContext.js';
 import saveImageIfNeeded from '../components/download/index.js';
 import savePdfIfNeeded from '../components/download/pdf.js';
+import saveEventContentIfNeeded from '../components/download/event.js';
+import saveNewsContentIfNeeded from '../components/download/news.js';
 import Mission from '../components/parts/about/mission/mission.js';
 import Vision from '../components/parts/about/mission/vision.js';
 import { convertAboutFromDatabase } from '../entity/aboutEntity.js';
@@ -468,9 +470,13 @@ export async function getStaticProps({ params }) {
             if (locale === "ja") {
               pageMap[locale] = page;
               blockMap[locale] = blocks;
+              // ニュースコンテンツ（画像・PDF）のダウンロード
+              await saveNewsContentIfNeeded(blocks, newsItemId);
             } else {
               pageMap[locale] = page;
               blockMap[locale] = blocks;
+              // ニュースコンテンツ（画像・PDF）のダウンロード
+              await saveNewsContentIfNeeded(blocks, newsItemId);
             }
           });
           
@@ -525,9 +531,13 @@ export async function getStaticProps({ params }) {
             if (locale === "ja") {
               pageMap[locale] = page;
               blockMap[locale] = blocks;
+              // イベントコンテンツ（画像・PDF）のダウンロード
+              await saveEventContentIfNeeded(blocks, eventItemId);
             } else {
               pageMap[locale] = page;
               blockMap[locale] = blocks;
+              // イベントコンテンツ（画像・PDF）のダウンロード
+              await saveEventContentIfNeeded(blocks, eventItemId);
             }
           });
 

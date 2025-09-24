@@ -7,6 +7,7 @@ import { ACCESABLE_BLOG_IMAGE_PATH, DOWNLOAD_IMAGE_EXTENSION } from "../../../co
 import LocaleLink from "../../parts/menu/LocaleLink";
 import { TwitterTweetEmbed } from 'react-twitter-embed';
 import ImageOptimizer from "../../download/ImageOptimizer";
+import { getLocalImagePath, getLocalPdfPath } from "../../download/clientPathHelper";
 
 
 export const Text = ({ text }) => {
@@ -36,7 +37,7 @@ export const Text = ({ text }) => {
   });
 };
 
-const renderNestedList = (block) => {
+const renderNestedList = (block, newsId) => {
   const { type } = block;
   const value = block[type];
   if (!value) return null;
@@ -44,12 +45,12 @@ const renderNestedList = (block) => {
   const isNumberedList = value.children[0].type === "numbered_list_item";
 
   if (isNumberedList) {
-    return <ol>{value.children.map((block) => renderBlock(block))}</ol>;
+    return <ol>{value.children.map((block) => renderBlock(block, newsId))}</ol>;
   }
-  return <ul>{value.children.map((block) => renderBlock(block))}</ul>;
+  return <ul>{value.children.map((block) => renderBlock(block, newsId))}</ul>;
 };
 
-const renderBlock = (block) => {
+const renderBlock = (block, newsId) => {
   const { type, id } = block;
   const value = block[type];
 
@@ -105,14 +106,14 @@ const renderBlock = (block) => {
     case "bulleted_list": {
       return (
         <ul className="space-y-2 text-left text-gray-500 dark:text-gray-400 p-5 mt-5 mb-5 rounded-lg bg-gray-100">
-          {value.children.map((child) => renderBlock(child))}
+          {value.children.map((child) => renderBlock(child, newsId))}
         </ul>
       );
     }
     case "numbered_list": {
       return (
         <ol className="space-y-2 text-left text-gray-500 dark:text-gray-400 p-5 mt-5 mb-5 rounded-lg bg-gray-100">
-          {value.children.map((child) => renderBlock(child))}
+          {value.children.map((child) => renderBlock(child, newsId))}
         </ol>
       );
     }
@@ -121,7 +122,7 @@ const renderBlock = (block) => {
       return (
         <li key={block.id} className="flex items-center space-x-3 rtl:space-x-reverse">
           <Text text={value.rich_text} />
-          {!!value.children && renderNestedList(block)}
+          {!!value.children && renderNestedList(block, newsId)}
         </li>
       );
     case "to_do":
@@ -140,7 +141,7 @@ const renderBlock = (block) => {
             <Text text={value.rich_text} />
           </summary>
           {block.children?.map((child) => (
-            <Fragment key={child.id}>{renderBlock(child)}</Fragment>
+            <Fragment key={child.id}>{renderBlock(child, newsId)}</Fragment>
           ))}
         </details>
       );
@@ -148,12 +149,16 @@ const renderBlock = (block) => {
       return (
         <div className="">
           <strong>{value.title}</strong>
-          {block.children.map((child) => renderBlock(child))}
+          {block.children.map((child) => renderBlock(child, newsId))}
         </div>
       );
     case "image":
-      const src =
-        value.type === "external" ? value.external.url : `/${ACCESABLE_BLOG_IMAGE_PATH}/${block.parent.page_id}/${block.id}${DOWNLOAD_IMAGE_EXTENSION}`;
+      const localImagePath = getLocalImagePath('news', newsId, block.id);
+      const src = localImagePath
+        ? localImagePath
+        : value.type === "external"
+        ? value.external.url
+        : value.file?.url || `/${ACCESABLE_BLOG_IMAGE_PATH}/${block.parent.page_id}/${block.id}${DOWNLOAD_IMAGE_EXTENSION}`;
       const caption = value.caption ? value.caption[0]?.plain_text : "";
       return (
         <figure>
@@ -182,13 +187,16 @@ const renderBlock = (block) => {
         value.type === "external" ? value.external.url : value.file.url;
       const splitSourceArray = src_file.split("/");
       const lastElementInArray = splitSourceArray[splitSourceArray.length - 1];
+      const fileName = lastElementInArray.split("?")[0];
+      const localPdfPath = getLocalPdfPath('news', newsId, fileName);
+      const finalSrc = localPdfPath || src_file;
       const caption_file = value.caption ? value.caption[0]?.plain_text : "";
       return (
         <figure>
           <div className="max-w-md mx-auto">
             📎{" "}
-            <a href={src_file} passHref target="_blank">
-              {lastElementInArray.split("?")[0]}
+            <a href={finalSrc} passHref target="_blank">
+              {fileName}
             </a>
           </div>
           {caption_file && <figcaption>{caption_file}</figcaption>}
@@ -232,7 +240,7 @@ const renderBlock = (block) => {
       );
     }
     case "column": {
-      return <div>{block.children.map((child) => renderBlock(child))}</div>;
+      return <div>{block.children.map((child) => renderBlock(child, newsId))}</div>;
     }
     case "embed": {
       const url = value.url;
@@ -460,7 +468,7 @@ export default function NewsDetailPage({ newsItem, locale, newsId, pageMap, bloc
                 <div className="prose prose-lg max-w-none">
                   {validBlocks.map((block) => (
                     <div key={block.id} className="mb-6">
-                      {renderBlock(block)}
+                      {renderBlock(block, newsId)}
                     </div>
                   ))}
                 </div>
