@@ -8,6 +8,7 @@ import LocaleLink from "../../parts/menu/LocaleLink";
 import { TwitterTweetEmbed } from 'react-twitter-embed';
 import ImageOptimizer from "../../download/ImageOptimizer";
 import { getLocalImagePath, getLocalPdfPath } from "../../download/clientPathHelper";
+import ShareButton from "../../parts/share/ShareButton";
 
 
 export const Text = ({ text }) => {
@@ -407,25 +408,25 @@ export default function NewsDetailPage({ newsItem, locale, newsId, pageMap, bloc
         <link rel="alternate" hrefLang="x-default" href={`https://tjschool.org/news/${newsId}/`} />
       </Head>
 
-      <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-indigo-50">
-        {/* Hero Section */}
-        <div className="bg-white shadow-sm border-b">
+      <div className="min-h-screen bg-white">
+        {/* Header Section */}
+        <div className="bg-gray-50 border-b border-gray-200">
           <div className="container mx-auto px-6 py-8">
             <div className="max-w-4xl mx-auto">
               <div className="flex items-center text-sm text-gray-500 mb-4">
-                <a href={locale === 'ja' ? '/news' : '/en/news'} 
+                <a href={locale === 'ja' ? '/news' : '/en/news'}
                    className="hover:text-blue-600 transition-colors">
                   {locale === 'ja' ? 'ニュース' : 'News'}
                 </a>
                 <span className="mx-2">／</span>
                 <span className="text-gray-700">{pageTitle}</span>
               </div>
-              
+
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
                 {pageTitle}
               </h1>
-              
-              <div className="flex items-center space-x-6 text-sm text-gray-600 ">
+
+              <div className="flex flex-wrap items-center gap-6 text-sm text-gray-600">
                 <div className="flex items-center space-x-2">
                   <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
@@ -446,59 +447,52 @@ export default function NewsDetailPage({ newsItem, locale, newsId, pageMap, bloc
         {/* Main Content */}
         <div className="container mx-auto px-6 py-12">
           <div className="max-w-4xl mx-auto">
-            <article className="bg-white rounded-xl shadow-lg overflow-hidden">
-              {/* Featured Image */}
-              {imageInfo && (
-                <div className="relative h-64 md:h-80 lg:h-96 bg-gray-100">
+            {/* Featured Image */}
+            {imageInfo && (
+              <div className="mb-12">
+                <div className="relative w-full max-w-3xl mx-auto">
                   <ImageOptimizer
                     baseName={imageInfo.baseName}
                     pagePath={imageInfo.pagePath}
                     alt={imageInfo.alt || pageTitle}
-                    fill={true}
-                    objectFit="cover"
-                    className="transition-transform duration-700 ease-out hover:scale-105"
+                    width={800}
+                    height={450}
+                    className="w-full h-auto rounded-lg shadow-lg"
                     loading="eager"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
-                </div>
-              )}
-              
-              {/* Article Content */}
-              <div className="p-8 md:p-12">
-                <div className="prose prose-lg max-w-none">
-                  {validBlocks.map((block) => (
-                    <div key={block.id} className="mb-6">
-                      {renderBlock(block, newsId)}
-                    </div>
-                  ))}
                 </div>
               </div>
+            )}
+
+            {/* Article Content */}
+            <article className="prose prose-lg max-w-none prose-headings:text-gray-800 prose-p:text-gray-700 prose-p:leading-relaxed">
+              {validBlocks.map((block) => (
+                <div key={block.id} className="mb-6">
+                  {renderBlock(block, newsId)}
+                </div>
+              ))}
             </article>
 
             {/* Navigation */}
-            <div className="mt-12 bg-white rounded-xl shadow-sm p-6">
+            <div className="mt-12 pt-8 border-t border-gray-200">
               <div className="flex flex-col sm:flex-row items-center justify-between space-y-4 sm:space-y-0">
                 <a
                   href={locale === 'ja' ? '/news' : '/en/news'}
-                  className="inline-flex items-center px-6 py-3 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-all duration-200 transform hover:scale-105 shadow-md hover:shadow-lg"
+                  className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
                 >
                   <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
                   </svg>
-{locale === 'ja' ? 'ニュース一覧に戻る' : 'Back to News'}
+                  {locale === 'ja' ? 'ニュース一覧に戻る' : 'Back to News'}
                 </a>
-                
+
                 <div className="flex items-center space-x-4">
-                  <button className="p-2 text-gray-400 hover:text-blue-600 transition-colors">
-                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M15 8a3 3 0 10-2.977-2.63l-4.94 2.47a3 3 0 100 4.319l4.94 2.47a3 3 0 10.895-1.789l-4.94-2.47a3.027 3.027 0 000-.74l4.94-2.47C13.456 7.68 14.19 8 15 8z" />
-                    </svg>
-                  </button>
-                  {/* <button className="p-2 text-gray-400 hover:text-red-500 transition-colors">
-                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clipRule="evenodd" />
-                    </svg>
-                  </button> */}
+                  <ShareButton
+                    url={`/news/${newsId}/`}
+                    title={pageTitle}
+                    description={pageTitle}
+                    locale={locale}
+                  />
                 </div>
               </div>
             </div>

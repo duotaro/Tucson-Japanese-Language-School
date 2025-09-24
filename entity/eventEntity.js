@@ -61,6 +61,23 @@ export default class EventEntity {
         this.tag = item.properties["tags"].multi_select && item.properties["tags"].multi_select[0] ?
             item.properties["tags"].multi_select[0] : { name: 'event' }
 
+        // 申し込みリンク関連のプロパティ
+        this.application_link_label = item.properties["application_link_label"] &&
+            item.properties["application_link_label"].rich_text &&
+            item.properties["application_link_label"].rich_text[0] ?
+            item.properties["application_link_label"].rich_text[0].plain_text : ''
+        this.application_link_label_en = item.properties["application_link_label_en"] &&
+            item.properties["application_link_label_en"].rich_text &&
+            item.properties["application_link_label_en"].rich_text[0] ?
+            item.properties["application_link_label_en"].rich_text[0].plain_text : ''
+        // URLプロパティの場合は.urlで直接取得
+        this.application_link = item.properties["application_link"] &&
+            item.properties["application_link"].url ?
+            item.properties["application_link"].url : ''
+        this.application_link_en = item.properties["application_link_en"] &&
+            item.properties["application_link_en"].url ?
+            item.properties["application_link_en"].url : ''
+
         // フルコンテンツロード用のフラグ
         this.fullContentLoaded = false;
     }
