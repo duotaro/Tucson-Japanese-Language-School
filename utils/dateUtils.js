@@ -153,13 +153,60 @@ export function getSchoolYear(locale) {
 
 export function isWithinSchoolYear(dateString, schoolYearStartMonth = 8) {
     const date = new Date(dateString); // 'YYYY-MM-DD'形式の文字列をDateオブジェクトに変換
-    
+
     const year = date.getFullYear();
     const startYear = date.getMonth() >= schoolYearStartMonth - 1 ? year : year - 1; // 学年度の開始年を決定
     const endYear = startYear + 1; // 学年度の終了年
-  
+
     const schoolYearStart = new Date(startYear, schoolYearStartMonth - 1, 1); // 学年度開始日
     const schoolYearEnd = new Date(endYear, 5, 31); // 学年度終了日（5月31日）
-  
+
     return date >= schoolYearStart && date <= schoolYearEnd; // 判定
+}
+
+/**
+ * 日付を日本語または英語の標準形式でフォーマットします
+ * @param {string} dateString - ISO 8601形式の日付文字列 (例: "2025-02-15" or "2025-02-15T00:00:00.000Z")
+ * @param {string} locale - 'ja' または 'en'
+ * @returns {string} フォーマットされた日付文字列
+ *                   日本語: "YYYY年M月D日（曜日）" (例: "2025年2月15日（土）")
+ *                   英語: "Day, Month/Date/Year" (例: "Saturday, February/15/2025")
+ */
+export const formatDateWithDay = (dateString, isJpn) => {
+    // 日付文字列をパースして、タイムゾーンに関係なく同じ日付を表示
+    let year, month, day;
+
+    if (dateString.includes('T')) {
+        // ISO 8601形式の場合（例: "2025-02-15T00:00:00.000Z"）
+        const datePart = dateString.split('T')[0];
+        [year, month, day] = datePart.split('-').map(Number);
+    } else {
+        // 日付のみの場合（例: "2025-02-15"）
+        [year, month, day] = dateString.split('-').map(Number);
+    }
+
+    // ローカル日付で曜日を計算
+    const localDate = new Date(year, month - 1, day);
+
+    if (isJpn) {
+        // 日本語の曜日を取得
+        const daysOfWeek = ["日", "月", "火", "水", "木", "金", "土"];
+        const dayName = daysOfWeek[localDate.getDay()];
+
+        return `${year}年${month}月${day}日（${dayName}）`;
+    } else {
+        // 英語の曜日を取得（フルネーム）
+        const dayFormatter = new Intl.DateTimeFormat('en', {
+            weekday: 'long'
+        });
+        const dayName = dayFormatter.format(localDate);
+
+        // 英語の月名を取得（フルネーム）
+        const monthFormatter = new Intl.DateTimeFormat('en', {
+            month: 'long'
+        });
+        const monthName = monthFormatter.format(localDate);
+
+        return `${dayName}, ${monthName}/${day}/${year}`;
+    }
 }

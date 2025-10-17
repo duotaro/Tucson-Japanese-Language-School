@@ -41,8 +41,8 @@ export default function Directors({ directors = [], locale="ja" }) {
                       {list.map((director, index) => {
                       let entity = new DirectorsEntity(director, locale == "ja")
                       return (
-                        <div key={director.id || index} className="flex flex-col text-center">
-                          <div className="inline-block mb-4 relative shrink-0 rounded-[.90rem] w-[130px] h-[130px]">
+                        <div key={director.id || index} className="flex flex-col items-center text-center">
+                          <div className="mb-4 relative shrink-0 rounded-[.90rem] w-[130px] h-[130px]">
                             <ImageOptimizer
                               baseName={entity.image?.baseName || 'profile'}
                               pagePath={entity.image?.pagePath || 'director'}
@@ -50,14 +50,14 @@ export default function Directors({ directors = [], locale="ja" }) {
                               width={130}
                               height={130}
                               loading="lazy"
-                              
+                              fill={true}
                               objectFit="cover"
-                              className="rounded-lg shadow-md w-full h-full"
+                              className="rounded-lg shadow-md"
                             />
                           </div>
                           <div className="text-center">
                             <a href="javascript:void(0)" className="text-dark font-semibold hover:text-primary text-sm transition-colors duration-200 ease-in-out">{entity.name}</a>
-                            {entity.positions.map((position, index) => {
+                            {entity.positions && entity.positions.map((position, index) => {
                               return (
                                 <React.Fragment key={index}>
                                 {index == 0 && (

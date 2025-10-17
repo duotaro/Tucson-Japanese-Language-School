@@ -69,10 +69,11 @@ export default function Calender({files, list, locale="ja"}) {
   const isJpn = locale === 'ja';
   const schoolYear = getSchoolYear(locale)
 
-  const selectDates = (start) => {
-    const calendarApi = calendarRef.current.getApi();
-    calendarApi.select(start);
-  };
+  // FullCalendarがコメントアウトされているため、selectDates関数も無効化
+  // const selectDates = (start) => {
+  //   const calendarApi = calendarRef.current.getApi();
+  //   calendarApi.select(start);
+  // };
 
   const [detailList, setDetailList] = useState([])
 
@@ -179,35 +180,12 @@ export default function Calender({files, list, locale="ja"}) {
       return true
     }).map(item => {
 
-      // デバッグログ：11/1の運動会予行の処理を追跡
-      if (item.title && (item.title.includes('運動会予行') || item.title.includes('Sports Day Rehearsal'))) {
-        console.log('=== 運動会予行データのデバッグ ===');
-        console.log('元のデータ:', {
-          title: item.title,
-          start: item.start,
-          end: item.end,
-          startStr: item.startStr,
-          endStr: item.endStr,
-          allDay: item.allDay,
-          dateTime: item.dateTime
-        });
-      }
-
       // 日付文字列を正しいISO形式に変換
       let startDate = item.start
       let endDate = item.end
 
       // 日付を正確に処理する - 元のstartStr/endStrを使用
       if (item.allDay && item.startStr && !item.startStr.includes('T')) {
-        // デバッグログ：レイバーの日のデータを確認
-        if (item.title && item.title.includes('レイバー')) {
-          console.log('=== レイバーの日のデバッグ ===');
-          console.log('元のデータ:', {
-            title: item.title,
-            startStr: item.startStr,
-            allDay: item.allDay
-          });
-        }
 
         // 終日イベントの場合、ローカルタイムゾーンで日付が変わらないように
         // アリゾナ時間の正午（12:00）をUTCに変換して使用
@@ -224,18 +202,6 @@ export default function Calender({files, list, locale="ja"}) {
         }
       } else if (item.startStr && item.startStr.includes('T')) {
         // デバッグログ：始業式のデータを確認
-        if (item.title && item.title.includes('始業式')) {
-          console.log('=== 始業式のデバッグ ===');
-          console.log('元のデータ:', {
-            title: item.title,
-            startStr: item.startStr,
-            endStr: item.endStr,
-            allDay: item.allDay
-          });
-        }
-
-        // 時間付きイベントの場合、Notion DBから来るUTC時間を調整
-        // 問題: Notion DBの時間がUTCで保存されているが、実際はアリゾナ時間として入力されている
 
         // 元の時間を一度Dateオブジェクトに変換
         const originalStart = new Date(item.startStr);
@@ -255,28 +221,6 @@ export default function Calender({files, list, locale="ja"}) {
           endDate = null;
         }
 
-        // デバッグログで時間変換を確認
-        if (item.title && item.title.includes('始業式')) {
-          console.log('時間付きイベントの調整:', {
-            title: item.title,
-            original_startStr: item.startStr,
-            original_endStr: item.endStr,
-            adjusted_startDate: startDate,
-            adjusted_endDate: endDate,
-            phoenixTimeStart: new Date(startDate).toLocaleString('en-US', {timeZone: 'America/Phoenix'}),
-            phoenixTimeEnd: endDate ? new Date(endDate).toLocaleString('en-US', {timeZone: 'America/Phoenix'}) : null
-          });
-        }
-      }
-
-
-      if (item.title && (item.title.includes('運動会予行') || item.title.includes('Sports Day Rehearsal'))) {
-        console.log('処理後:', {
-          startDate: startDate,
-          endDate: endDate
-        });
-        console.log('Date オブジェクト:', new Date(startDate));
-        console.log('現在のタイムゾーン:', Intl.DateTimeFormat().resolvedOptions().timeZone);
       }
 
       // FullCalendar用にイベントの形式を調整
@@ -294,12 +238,6 @@ export default function Calender({files, list, locale="ja"}) {
           location: item.location,
           isEvent: item.isEvent
         }
-      }
-
-
-
-      if (item.title && (item.title.includes('運動会予行') || item.title.includes('Sports Day Rehearsal'))) {
-        console.log('FullCalendarに渡すデータ:', calendarEvent);
       }
 
       return calendarEvent
@@ -361,7 +299,7 @@ export default function Calender({files, list, locale="ja"}) {
   }
 
   useEffect(() => {
-    selectDates(new Date(rowDate))
+    //selectDates(new Date(rowDate))
     setCurrent(createDate(rowDate))
   }, [rowDate, locale, createDate]);
   
@@ -408,8 +346,10 @@ export default function Calender({files, list, locale="ja"}) {
                         <li className="flex justify-between py-1" key={item.id}>
                           {/* <div className="flex min-w-0 gap-x-4"> */}
                           <div className="min-w-0 flex-auto">
-                            <span className="mt-1 text-sm text-gray-500">{createEventDate(item.start)}{!isSingleDayEvent && (`〜${createEventDate(item.end)}`)} {isSingleDayEvent && !item.allDay && ( `${startTime}〜${endTime}`)}</span>
-                            
+                            <span className="mt-1 text-sm text-gray-500">
+                              {createEventDate(item.start)}{!isSingleDayEvent && (`〜${createEventDate(item.end)}`)} 
+                              {/* {isSingleDayEvent && !item.allDay && ( `${startTime}〜${endTime}`)} */}
+                            </span>
                             <span className="text-md font-semibold leading-6 text-gray-900 ml-2">
                               {item.link && (<a href={item.link} target='_blank' className="hover:text-blue-600">{item.title}</a>)}
                               {!item.link && (<>{item.title}</>)}
@@ -422,11 +362,24 @@ export default function Calender({files, list, locale="ja"}) {
                   </ul>
               </div>
           </div>
+          {res.pdf && (
+            <div className="flex justify-center m-8">
+              <a
+                href={res.pdf}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 ease-in-out focus:outline-none focus:ring-4 focus:ring-blue-300 focus:ring-offset-2"
+              >
+                <ArrowDownOnSquareStackIcon className='w-5 h-5 mr-3 group-hover:animate-bounce' />
+                <span className="text-sm lg:text-base">{`${json.calender.download}`}</span>
+              </a>
+            </div>
+          )}
         </div>
       </Section>
       
-      <Section>
-          <div className="flex flex-col justify-center items-center mb-2 ">
+      {/* <Section> */}
+          {/* <div className="flex flex-col justify-center items-center mb-2 ">
             <Title title={`${json.calender.title}`} />
           </div>
           {res.pdf && (
@@ -441,8 +394,8 @@ export default function Calender({files, list, locale="ja"}) {
                 <span className="text-sm lg:text-base">{`${json.calender.download}`}</span>
               </a>
             </div>
-          )}
-          <div className="flex-1">
+          )} */}
+          {/* <div className="flex-1">
             <FullCalendar
               ref={calendarRef}
               locale={locale}
@@ -498,8 +451,8 @@ export default function Calender({files, list, locale="ja"}) {
                 }
               }}}
             />
-          </div>
-      </Section>
+          </div> */}
+      {/* </Section> */}
       <Transition appear show={isModalOpen} as="div">
         <Dialog as="div" className="relative z-50" onClose={closeModal}>
           <Transition.Child
@@ -543,16 +496,7 @@ export default function Calender({files, list, locale="ja"}) {
                         minute: '2-digit',
                         hour12: false
                       }) : '';
-console.log('ダイアログのdetail:', {
-  title: detail.title,
-  start: detail.start,
-  end: detail.end,
-  startISO: detail.start?.toISOString?.(),
-  endISO: detail.end?.toISOString?.(),
-  startTime: startTime,
-  endTime: endTime,
-  allDay: detail.allDay
-})
+
                       return (
                         <div>
                         <Dialog.Title as="h3" className="text-lg font-medium leading-6 text-gray-900 mb-4">

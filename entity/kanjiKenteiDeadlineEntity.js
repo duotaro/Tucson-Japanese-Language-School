@@ -1,4 +1,4 @@
-import { formatDateForCalander } from "../utils/dateUtils"
+import { formatDateWithDay } from "../utils/dateUtils"
 
 export class KanjiKenteiDeadlineEntity {
     constructor(item, isJpn) {
@@ -27,7 +27,7 @@ export class KanjiKenteiDeadlineEntity {
 
         // 日付をフォーマット（アリゾナ時間で表示）
         if (this.date) {
-            this.formattedExamDate = formatDateForCalander(this.date, isJpn);
+            this.formattedExamDate = formatDateWithDay(this.date, isJpn);
         } else {
             this.formattedExamDate = null;
         }

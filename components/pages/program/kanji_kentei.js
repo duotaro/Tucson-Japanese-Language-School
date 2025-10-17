@@ -21,6 +21,7 @@ export default function KanjiKenteiPage({ kanjiKenteiData, locale }) {
   const [overviewData, setOverviewData] = useState([]);
   const [materialsData, setMaterialsData] = useState([]);
   const [scheduleData, setScheduleData] = useState([]);
+  const [scheduleData2, setScheduleData2] = useState([]);
   const [venueData, setVenueData] = useState([]);
   const [deadlineData, setDeadlineData] = useState([]);
   const [venueImagesData, setVenueImagesData] = useState([]);
@@ -190,10 +191,7 @@ export default function KanjiKenteiPage({ kanjiKenteiData, locale }) {
                 )}
                 {scheduleData[0].formattedExamDate && (
                   <p className="text-lg font-semibold text-gray-900">
-                    {isJpn
-                      ? `${scheduleData[0].formattedExamDate.year}/${scheduleData[0].formattedExamDate.month}/${scheduleData[0].formattedExamDate.day}(${scheduleData[0].formattedExamDate.dayName})`
-                      : `${scheduleData[0].formattedExamDate.dayName}, ${scheduleData[0].formattedExamDate.month} ${scheduleData[0].formattedExamDate.day}, ${scheduleData[0].formattedExamDate.year}`
-                    }
+                    {scheduleData[0].formattedExamDate}
                   </p>
                 )}
                 <p className="text-sm text-gray-600 mt-1">
@@ -234,10 +232,7 @@ export default function KanjiKenteiPage({ kanjiKenteiData, locale }) {
               <div className="text-gray-700">
                 {deadlineData[0].formattedExamDate && (
                   <p className="text-lg font-semibold text-gray-900 mb-2">
-                    {isJpn
-                      ? `${deadlineData[0].formattedExamDate.year}/${deadlineData[0].formattedExamDate.month}/${deadlineData[0].formattedExamDate.day}(${deadlineData[0].formattedExamDate.dayName})`
-                      : `${deadlineData[0].formattedExamDate.dayName}, ${deadlineData[0].formattedExamDate.month} ${deadlineData[0].formattedExamDate.day}, ${deadlineData[0].formattedExamDate.year}`
-                    }
+                    {deadlineData[0].formattedExamDate}
                   </p>
                 )}
                 <p className={`text-sm ${getApplicationStatus().isOpen ? 'text-green-600' : 'text-red-600'}`}>
@@ -367,10 +362,7 @@ export default function KanjiKenteiPage({ kanjiKenteiData, locale }) {
                     {isJpn ? '締め切り日' : 'Deadline'}
                   </p>
                   <p className="text-xl font-bold">
-                    {isJpn
-                      ? `${deadlineData[0].formattedExamDate.year}/${deadlineData[0].formattedExamDate.month}/${deadlineData[0].formattedExamDate.day}(${deadlineData[0].formattedExamDate.dayName})`
-                      : `${deadlineData[0].formattedExamDate.dayName}, ${deadlineData[0].formattedExamDate.month} ${deadlineData[0].formattedExamDate.day}, ${deadlineData[0].formattedExamDate.year}`
-                    }
+                    {deadlineData[0].formattedExamDate}
                   </p>
                 </div>
               )}
@@ -383,7 +375,7 @@ export default function KanjiKenteiPage({ kanjiKenteiData, locale }) {
                 >
                   {overviewData[0].linkLabel || (isJpn ? '申し込みはこちらから' : 'Apply Here')} →
                 </a>
-                {overviewData[0].officialLink && (
+                {/* {overviewData[0].officialLink && (
                   <a
                     href={overviewData[0].officialLink}
                     target="_blank"
@@ -392,7 +384,7 @@ export default function KanjiKenteiPage({ kanjiKenteiData, locale }) {
                   >
                     {isJpn ? '公式サイト' : 'Official Site'} →
                   </a>
-                )}
+                )} */}
               </div>
             </div>
           </div>

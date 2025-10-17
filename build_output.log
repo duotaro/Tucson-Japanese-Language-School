@@ -1,0 +1,4625 @@
+   Linting and checking validity of types ...
+
+./components/pages/event/detail.js
+166:11  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./components/pages/news/detail.js
+166:11  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./components/pages/program/kanji_kentei.js
+87:6  Warning: React Hook useEffect has a missing dependency: 'processKanjiKenteiData'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./components/parts/event/detail.js
+53:15  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./components/parts/news/detail.js
+53:15  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./components/parts/program/calender/index.js
+316:6  Warning: React Hook useMemo has an unnecessary dependency: 'locale'. Either exclude it or remove the dependency array.  react-hooks/exhaustive-deps
+381:19  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+557:25  Warning: Missing "key" prop for element in iterator  react/jsx-key
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
+   Creating an optimized production build ...
+ ⚠ Found lockfile missing swc dependencies, patching...
+ ⨯ Failed to patch lockfile, please try uninstalling and reinstalling next in this workspace
+TypeError: Cannot read properties of undefined (reading 'os')
+    at fetchPkgInfo (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/node_modules/next/dist/lib/patch-incorrect-lockfile.js:72:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Promise.all (index 6)
+    at async patchIncorrectLockfile (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/node_modules/next/dist/lib/patch-incorrect-lockfile.js:161:26)
+ ✓ Compiled successfully
+   Collecting page data ...
+🚫 キャッシュ無効 (news): 直接APIから取得します
+🌐 Notion APIから取得中: news
+✅ API取得完了: news (41件)
+🚫 キャッシュ無効 (event): 直接APIから取得します
+🌐 Notion APIから取得中: event
+✅ API取得完了: event (2件)
+   Generating static pages (0/130) ...
+🚫 キャッシュ無効 (slider): 直接APIから取得します
+🚫 キャッシュ無効 (sponsors): 直接APIから取得します
+🚫 キャッシュ無効 (schedule): 直接APIから取得します
+🚫 キャッシュ無効 (about): 直接APIから取得します
+🚫 キャッシュ無効 (general): 直接APIから取得します
+🌐 Notion APIから取得中: slider
+🌐 Notion APIから取得中: sponsors
+🌐 Notion APIから取得中: schedule
+🌐 Notion APIから取得中: about
+🌐 Notion APIから取得中: general
+✅ API取得完了: slider (4件)
+✅ API取得完了: general (1件)
+✅ API取得完了: sponsors (3件)
+✅ API取得完了: about (3件)
+✅ API取得完了: schedule (48件)
+🚫 キャッシュ無効 (news): 直接APIから取得します
+🌐 Notion APIから取得中: news
+✅ API取得完了: news (41件)
+[convertAboutFromDatabase] Processing item with tag: about, title: 本校について
+[convertAboutFromDatabase] Set aboutSchool
+[convertAboutFromDatabase] Processing item with tag: mission, title: Mission
+[convertAboutFromDatabase] Set mission
+[convertAboutFromDatabase] Processing item with tag: vision, title: Vision
+[convertAboutFromDatabase] Set vision
+[convertAboutFromDatabase] Final result - aboutSchool: found, mission: found, vision: found
+[ImageOptimizer] baseName: Sports_Day_-_Giant_Ball_rolling, pagePath: slider
+[ImageOptimizer] imagePaths: [
+  '/image/download/slider/Sports_Day_-_Giant_Ball_rolling-md.webp',
+  '/image/download/slider/Sports_Day_-_Giant_Ball_rolling-sm.webp',
+  '/image/download/slider/Sports_Day_-_Giant_Ball_rolling-lg.webp',
+  '/image/download/slider/Sports_Day_-_Giant_Ball_rolling.png',
+  '/image/download/slider/Sports_Day_-_Giant_Ball_rolling.jpg'
+]
+[ImageOptimizer] baseName: Summer_Festival_-_Snack_fishing, pagePath: slider
+[ImageOptimizer] imagePaths: [
+  '/image/download/slider/Summer_Festival_-_Snack_fishing-md.webp',
+  '/image/download/slider/Summer_Festival_-_Snack_fishing-sm.webp',
+  '/image/download/slider/Summer_Festival_-_Snack_fishing-lg.webp',
+  '/image/download/slider/Summer_Festival_-_Snack_fishing.png',
+  '/image/download/slider/Summer_Festival_-_Snack_fishing.jpg'
+]
+[ImageOptimizer] baseName: winter, pagePath: slider
+[ImageOptimizer] imagePaths: [
+  '/image/download/slider/winter-md.webp',
+  '/image/download/slider/winter-sm.webp',
+  '/image/download/slider/winter-lg.webp',
+  '/image/download/slider/winter.png',
+  '/image/download/slider/winter.jpg'
+]
+[ImageOptimizer] baseName: katakana, pagePath: slider
+[ImageOptimizer] imagePaths: [
+  '/image/download/slider/katakana-md.webp',
+  '/image/download/slider/katakana-sm.webp',
+  '/image/download/slider/katakana-lg.webp',
+  '/image/download/slider/katakana.png',
+  '/image/download/slider/katakana.jpg'
+]
+[ImageOptimizer] baseName: 11th_Annual_Sports_Day_flyer, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/11th_Annual_Sports_Day_flyer-md.webp',
+  '/image/download/news/11th_Annual_Sports_Day_flyer-sm.webp',
+  '/image/download/news/11th_Annual_Sports_Day_flyer-lg.webp',
+  '/image/download/news/11th_Annual_Sports_Day_flyer.png',
+  '/image/download/news/11th_Annual_Sports_Day_flyer.jpg'
+]
+[ImageOptimizer] baseName: Maxzeeks_visit-tjs.jpeg, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/Maxzeeks_visit-tjs.jpeg-md.webp',
+  '/image/download/news/Maxzeeks_visit-tjs.jpeg-sm.webp',
+  '/image/download/news/Maxzeeks_visit-tjs.jpeg-lg.webp',
+  '/image/download/news/Maxzeeks_visit-tjs.jpeg.png',
+  '/image/download/news/Maxzeeks_visit-tjs.jpeg.jpg'
+]
+[ImageOptimizer] baseName: Dangomaking2022, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/Dangomaking2022-md.webp',
+  '/image/download/news/Dangomaking2022-sm.webp',
+  '/image/download/news/Dangomaking2022-lg.webp',
+  '/image/download/news/Dangomaking2022.png',
+  '/image/download/news/Dangomaking2022.jpg'
+]
+[ImageOptimizer] baseName: about, pagePath: about
+[ImageOptimizer] imagePaths: [
+  '/image/download/about/about-md.webp',
+  '/image/download/about/about-sm.webp',
+  '/image/download/about/about-lg.webp',
+  '/image/download/about/about.png',
+  '/image/download/about/about.jpg'
+]
+[ImageOptimizer] baseName: mission, pagePath: about
+[ImageOptimizer] imagePaths: [
+  '/image/download/about/mission-md.webp',
+  '/image/download/about/mission-sm.webp',
+  '/image/download/about/mission-lg.webp',
+  '/image/download/about/mission.png',
+  '/image/download/about/mission.jpg'
+]
+[ImageOptimizer] baseName: vision, pagePath: about
+[ImageOptimizer] imagePaths: [
+  '/image/download/about/vision-md.webp',
+  '/image/download/about/vision-sm.webp',
+  '/image/download/about/vision-lg.webp',
+  '/image/download/about/vision.png',
+  '/image/download/about/vision.jpg'
+]
+[OpportunityEntity] 画像データ: {
+  originalName: 'employment.png',
+  baseName: 'employment',
+  expectedPath: '/image/download/opportunity/employment.png'
+}
+[ImageOptimizer] baseName: employment, pagePath: opportunity
+[ImageOptimizer] imagePaths: [
+  '/image/download/opportunity/employment-md.webp',
+  '/image/download/opportunity/employment-sm.webp',
+  '/image/download/opportunity/employment-lg.webp',
+  '/image/download/opportunity/employment.png',
+  '/image/download/opportunity/employment.jpg'
+]
+[ImageOptimizer] baseName: ikkyu, pagePath: sponsor
+[ImageOptimizer] imagePaths: [
+  '/image/download/sponsor/ikkyu-md.webp',
+  '/image/download/sponsor/ikkyu-sm.webp',
+  '/image/download/sponsor/ikkyu-lg.webp',
+  '/image/download/sponsor/ikkyu.png',
+  '/image/download/sponsor/ikkyu.jpg'
+]
+[ImageOptimizer] baseName: JBAALogo, pagePath: sponsor
+[ImageOptimizer] imagePaths: [
+  '/image/download/sponsor/JBAALogo-md.webp',
+  '/image/download/sponsor/JBAALogo-sm.webp',
+  '/image/download/sponsor/JBAALogo-lg.webp',
+  '/image/download/sponsor/JBAALogo.png',
+  '/image/download/sponsor/JBAALogo.jpg'
+]
+[ImageOptimizer] baseName: tucsonblossomacpuncture, pagePath: sponsor
+[ImageOptimizer] imagePaths: [
+  '/image/download/sponsor/tucsonblossomacpuncture-md.webp',
+  '/image/download/sponsor/tucsonblossomacpuncture-sm.webp',
+  '/image/download/sponsor/tucsonblossomacpuncture-lg.webp',
+  '/image/download/sponsor/tucsonblossomacpuncture.png',
+  '/image/download/sponsor/tucsonblossomacpuncture.jpg'
+]
+Warning: data for page "/[[...slug]]" (path "/") is 203 kB which exceeds the threshold of 128 kB, this amount of data can reduce performance.
+See more info here: https://nextjs.org/docs/messages/large-page-data
+🚫 キャッシュ無効 (greeting): 直接APIから取得します
+🚫 キャッシュ無効 (story): 直接APIから取得します
+🚫 キャッシュ無効 (history): 直接APIから取得します
+🌐 Notion APIから取得中: greeting
+🌐 Notion APIから取得中: story
+🌐 Notion APIから取得中: history
+✅ API取得完了: story (1件)
+✅ API取得完了: history (1件)
+✅ API取得完了: greeting (1件)
+[ImageOptimizer] baseName: Tjsfounders, pagePath: greeting
+[ImageOptimizer] imagePaths: [
+  '/image/download/greeting/Tjsfounders-md.webp',
+  '/image/download/greeting/Tjsfounders-sm.webp',
+  '/image/download/greeting/Tjsfounders-lg.webp',
+  '/image/download/greeting/Tjsfounders.png',
+  '/image/download/greeting/Tjsfounders.jpg'
+]
+[ImageOptimizer] baseName: historty1, pagePath: history
+[ImageOptimizer] imagePaths: [
+  '/image/download/history/historty1-md.webp',
+  '/image/download/history/historty1-sm.webp',
+  '/image/download/history/historty1-lg.webp',
+  '/image/download/history/historty1.png',
+  '/image/download/history/historty1.jpg'
+]
+Warning: ImageOptimizer for "historty1" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+[ImageOptimizer] baseName: historty2, pagePath: history
+[ImageOptimizer] imagePaths: [
+  '/image/download/history/historty2-md.webp',
+  '/image/download/history/historty2-sm.webp',
+  '/image/download/history/historty2-lg.webp',
+  '/image/download/history/historty2.png',
+  '/image/download/history/historty2.jpg'
+]
+Warning: ImageOptimizer for "historty2" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+[ImageOptimizer] baseName: historty3, pagePath: history
+[ImageOptimizer] imagePaths: [
+  '/image/download/history/historty3-md.webp',
+  '/image/download/history/historty3-sm.webp',
+  '/image/download/history/historty3-lg.webp',
+  '/image/download/history/historty3.png',
+  '/image/download/history/historty3.jpg'
+]
+Warning: ImageOptimizer for "historty3" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+🚫 キャッシュ無効 (greeting): 直接APIから取得します
+🚫 キャッシュ無効 (story): 直接APIから取得します
+🚫 キャッシュ無効 (history): 直接APIから取得します
+🌐 Notion APIから取得中: greeting
+🌐 Notion APIから取得中: story
+🌐 Notion APIから取得中: history
+✅ API取得完了: greeting (1件)
+✅ API取得完了: history (1件)
+✅ API取得完了: story (1件)
+[ImageOptimizer] baseName: Tjsfounders, pagePath: greeting
+[ImageOptimizer] imagePaths: [
+  '/image/download/greeting/Tjsfounders-md.webp',
+  '/image/download/greeting/Tjsfounders-sm.webp',
+  '/image/download/greeting/Tjsfounders-lg.webp',
+  '/image/download/greeting/Tjsfounders.png',
+  '/image/download/greeting/Tjsfounders.jpg'
+]
+[ImageOptimizer] baseName: historty1, pagePath: history
+[ImageOptimizer] imagePaths: [
+  '/image/download/history/historty1-md.webp',
+  '/image/download/history/historty1-sm.webp',
+  '/image/download/history/historty1-lg.webp',
+  '/image/download/history/historty1.png',
+  '/image/download/history/historty1.jpg'
+]
+Warning: ImageOptimizer for "historty1" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+[ImageOptimizer] baseName: historty2, pagePath: history
+[ImageOptimizer] imagePaths: [
+  '/image/download/history/historty2-md.webp',
+  '/image/download/history/historty2-sm.webp',
+  '/image/download/history/historty2-lg.webp',
+  '/image/download/history/historty2.png',
+  '/image/download/history/historty2.jpg'
+]
+Warning: ImageOptimizer for "historty2" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+[ImageOptimizer] baseName: historty3, pagePath: history
+[ImageOptimizer] imagePaths: [
+  '/image/download/history/historty3-md.webp',
+  '/image/download/history/historty3-sm.webp',
+  '/image/download/history/historty3-lg.webp',
+  '/image/download/history/historty3.png',
+  '/image/download/history/historty3.jpg'
+]
+Warning: ImageOptimizer for "historty3" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+🚫 キャッシュ無効 (about): 直接APIから取得します
+🚫 キャッシュ無効 (mission): 直接APIから取得します
+🚫 キャッシュ無効 (vision): 直接APIから取得します
+🌐 Notion APIから取得中: about
+🌐 Notion APIから取得中: mission
+🌐 Notion APIから取得中: vision
+✅ API取得完了: vision (1件)
+✅ API取得完了: about (3件)
+✅ API取得完了: mission (1件)
+[convertAboutFromDatabase] Processing item with tag: about, title: 本校について
+[convertAboutFromDatabase] Set aboutSchool
+[convertAboutFromDatabase] Processing item with tag: mission, title: Mission
+[convertAboutFromDatabase] Set mission
+[convertAboutFromDatabase] Processing item with tag: vision, title: Vision
+[convertAboutFromDatabase] Set vision
+[convertAboutFromDatabase] Final result - aboutSchool: found, mission: found, vision: found
+[ImageOptimizer] baseName: mission, pagePath: about
+[ImageOptimizer] imagePaths: [
+  '/image/download/about/mission-md.webp',
+  '/image/download/about/mission-sm.webp',
+  '/image/download/about/mission-lg.webp',
+  '/image/download/about/mission.png',
+  '/image/download/about/mission.jpg'
+]
+[ImageOptimizer] baseName: vision, pagePath: about
+[ImageOptimizer] imagePaths: [
+  '/image/download/about/vision-md.webp',
+  '/image/download/about/vision-sm.webp',
+  '/image/download/about/vision-lg.webp',
+  '/image/download/about/vision.png',
+  '/image/download/about/vision.jpg'
+]
+[Policy Component] Received policy: {
+  object: 'page',
+  id: '88fe2db2-68f6-4295-ab31-8253d1fda16b',
+  created_time: '2024-09-18T14:32:00.000Z',
+  last_edited_time: '2025-09-05T01:49:00.000Z',
+  created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+  last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+  cover: null,
+  icon: null,
+  parent: {
+    type: 'database_id',
+    database_id: '105a8c0e-cf8c-8082-a456-dd95fd87d0c2'
+  },
+  archived: false,
+  in_trash: false,
+  is_locked: false,
+  properties: {
+    pdf: { id: '%3BCvS', type: 'files', files: [Array] },
+    image: { id: 'tHwI', type: 'files', files: [Array] },
+    'pdf-en': { id: 'tW~u', type: 'files', files: [Array] },
+    en: { id: '%7CJmt', type: 'rich_text', rich_text: [Array] },
+    title: { id: 'title', type: 'title', title: [Array] }
+  },
+  url: 'https://www.notion.so/88fe2db268f64295ab318253d1fda16b',
+  public_url: null
+}
+{
+  pdf: { id: '%3BCvS', type: 'files', files: [ [Object] ] },
+  image: { id: 'tHwI', type: 'files', files: [ [Object] ] },
+  'pdf-en': { id: 'tW~u', type: 'files', files: [ [Object] ] },
+  en: { id: '%7CJmt', type: 'rich_text', rich_text: [ [Object] ] },
+  title: { id: 'title', type: 'title', title: [ [Object] ] }
+}
+[PolicyEntity] properties.image: {
+  id: 'tHwI',
+  type: 'files',
+  files: [ { name: 'setsubun2022.JPG', type: 'file', file: [Object] } ]
+}
+[PolicyEntity] Using files[0]: {
+  name: 'setsubun2022.JPG',
+  type: 'file',
+  file: {
+    url: 'https://prod-files-secure.s3.us-west-2.amazonaws.com/ec34a095-6cd8-48a8-98c7-18f89317c7c4/cd8e3c8d-b536-4bc7-8df9-3a55b148cc0d/setsubun2022.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4663KI2HHHJ%2F20251017%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20251017T045042Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPL%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIHfzKDx%2FnJH00jWix5yuSFII7raCv5IIb44%2BosXkeQAyAiBh5Uj3%2Brwd3W8vz3ZpLqVpMsyHSJsosNFEcmO1W12zzCqIBAia%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIMpXJByd1TMs27et7OKtwDXyPdATaUFr3s5PqEu%2BcRyvb%2Bu62Q0iW7ZooMVfqxLfOMkhwJ7pC0TH%2BGfxZK5tvT3IFp2AoqWrMTp%2FUCBbVpjz0C8%2BFpn1iDqESjDMalhD1qil%2BMyQI%2BbPaOgI%2FpI289UjK4rNOMjJZ9xEkPor%2BM006HPcu5cvB2Rsvmn5qajCdqLf%2FHZQzrfAdDXghY1WH3GKf0cy31u0nq4Bu5V8%2BIadrWD3cMIe%2BdtNWpTvbej2v%2FYsBdRiB2ye9qaqmrJAUW5xJiT3xOnTpbOC%2FQDzDj5dpBjyHOQ3GtGa82D9CdyQubSLUSpAp5iwEYsxv83XbyBK0N5yeucnVlc7YLo1y2FY%2FYDdWzd8eWY128JmKxwuqLjQJq4AQPgLPMTkak6LR0xg5QeVd51Ug%2B7NzDFM5Zw%2Fz1yn5gKFzY96wZFdotYkwS9uEGXafJ2MPypGPQf46BQ7YI%2FZlQJtvayPPpWDVGaMozKpVu62cgqNvPpXZcN8SlDAAAOYgS9GMxH3NT48MLB6zc7NVFZD8Gr5vfWIcQCranB2CLgUMwQogMNsHHw1fziW7U%2FyTxKU56fMsjU7Qx0wudESoP%2FsgOkRC7SCXJLnNhcwz5IqawpkhCjXSrKKClr2lUz2Y0jj25qrYwl7TGxwY6pgGy%2FQV%2Bq0qs0Ou%2F9mROkUszptKZiXq5Wkv3NbDHOOhHGGLGjRahkET4SUozIIwlHgET16gd6AZpOVNuxTrjTmi1lhBe3DYR4RWCZU8IbH1kkuaMJQYs5oLLcMEbUKjhuqh%2BOv9iyoSHpJAgqr2DeNVwsoTHU7bQaGTKZ%2Bb5iNISmiNE5DwHPo%2BmSj81xaw33RXbCJLe00ZCYzIfnm42NMaQoDJYemSv&X-Amz-Signature=cdb824acf76c8c70ea8f337ad7b0d86132bac45202622c97446263e2299c7f30&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject',
+    expiry_time: '2025-10-17T05:50:42.987Z'
+  }
+}
+[PolicyEntity] Created image object: {
+  baseName: 'setsubun2022',
+  pagePath: 'policy',
+  alt: 'setsubun2022.JPG',
+  width: null,
+  height: null
+}
+[PolicyEntity] Final image: {
+  baseName: 'setsubun2022',
+  pagePath: 'policy',
+  alt: 'setsubun2022.JPG',
+  width: null,
+  height: null
+}
+============
+{
+  pdf: { id: '%3BCvS', type: 'files', files: [ [Object] ] },
+  image: { id: 'tHwI', type: 'files', files: [ [Object] ] },
+  'pdf-en': { id: 'tW~u', type: 'files', files: [ [Object] ] },
+  en: { id: '%7CJmt', type: 'rich_text', rich_text: [ [Object] ] },
+  title: { id: 'title', type: 'title', title: [ [Object] ] }
+}
+============
+[PolicyEntity] properties.pdf: {
+  id: '%3BCvS',
+  type: 'files',
+  files: [
+    {
+      name: '2025GuidelineBook_ja_20250905.pdf',
+      type: 'file',
+      file: [Object]
+    }
+  ]
+}
+[PolicyEntity] tmpPdfName: 2025GuidelineBook_ja_20250905.pdf
+[PolicyEntity] pdfName: 2025GuidelineBook_ja_20250905.pdf
+[PolicyEntity] Final PDF path: /pdf/download/policy/2025GuidelineBook_ja_20250905.pdf
+[Policy Component] Entity created: PolicyEntity {
+  title: '学校要覧',
+  image: {
+    baseName: 'setsubun2022',
+    pagePath: 'policy',
+    alt: 'setsubun2022.JPG',
+    width: null,
+    height: null
+  },
+  pdf: '/pdf/download/policy/2025GuidelineBook_ja_20250905.pdf'
+}
+[Policy Component] Entity image: {
+  baseName: 'setsubun2022',
+  pagePath: 'policy',
+  alt: 'setsubun2022.JPG',
+  width: null,
+  height: null
+}
+[ImageOptimizer] baseName: setsubun2022, pagePath: policy
+[ImageOptimizer] imagePaths: [
+  '/image/download/policy/setsubun2022-md.webp',
+  '/image/download/policy/setsubun2022-sm.webp',
+  '/image/download/policy/setsubun2022-lg.webp',
+  '/image/download/policy/setsubun2022.png',
+  '/image/download/policy/setsubun2022.jpg'
+]
+Warning: ImageOptimizer for "setsubun2022" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+🚫 キャッシュ無効 (directors): 直接APIから取得します
+🚫 キャッシュ無効 (orgChart): 直接APIから取得します
+🚫 キャッシュ無効 (policies): 直接APIから取得します
+🌐 Notion APIから取得中: directors
+🌐 Notion APIから取得中: orgChart
+🌐 Notion APIから取得中: policies
+already exist.
+not pdf file
+✅ API取得完了: policies (3件)
+✅ API取得完了: directors (5件)
+already exist.
+✅ API取得完了: orgChart (1件)
+TypeError: Cannot read properties of null (reading 'map')
+    at /Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/626.js:1:2677
+    at Array.map (<anonymous>)
+    at Directors (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/626.js:1:2006)
+    at Wc (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:68:44)
+    at Zc (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:70:253)
+    at Z (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:76:89)
+    at $c (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:78:98)
+    at bd (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:77:404)
+    at Z (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:76:217)
+    at $c (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:78:98)
+
+Error occurred prerendering page "/about/governance". Read more: https://nextjs.org/docs/messages/prerender-error
+TypeError: Cannot read properties of null (reading 'map')
+    at /Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/626.js:1:2677
+    at Array.map (<anonymous>)
+    at Directors (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/626.js:1:2006)
+    at Wc (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:68:44)
+    at Zc (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:70:253)
+    at Z (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:76:89)
+    at $c (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:78:98)
+    at bd (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:77:404)
+    at Z (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:76:217)
+    at $c (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:78:98)
+🚫 キャッシュ無効 (roleList): 直接APIから取得します
+🚫 キャッシュ無効 (staff): 直接APIから取得します
+🌐 Notion APIから取得中: roleList
+🌐 Notion APIから取得中: staff
+already exist.
+✅ API取得完了: roleList (6件)
+already exist.
+already exist.
+✅ API取得完了: staff (16件)
+Staff data received: [
+  {
+    object: 'page',
+    id: '102a8c0e-cf8c-8032-ba7b-c79866f660eb',
+    created_time: '2024-09-15T21:08:00.000Z',
+    last_edited_time: '2025-06-21T20:03:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    is_locked: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/102a8c0ecf8c8032ba7bc79866f660eb',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '102a8c0e-cf8c-803e-8c91-cdc26abf8c7b',
+    created_time: '2024-09-15T21:02:00.000Z',
+    last_edited_time: '2025-09-04T07:50:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    is_locked: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/102a8c0ecf8c803e8c91cdc26abf8c7b',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '102a8c0e-cf8c-803e-9b33-f2d6b41189c5',
+    created_time: '2024-09-15T21:10:00.000Z',
+    last_edited_time: '2025-09-04T07:57:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    is_locked: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/102a8c0ecf8c803e9b33f2d6b41189c5',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '102a8c0e-cf8c-80a2-9cba-f21c57ac7a99',
+    created_time: '2024-09-15T21:08:00.000Z',
+    last_edited_time: '2025-09-04T07:52:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    is_locked: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/102a8c0ecf8c80a29cbaf21c57ac7a99',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '102a8c0e-cf8c-80b6-a18a-f9a071308672',
+    created_time: '2024-09-15T21:09:00.000Z',
+    last_edited_time: '2025-09-04T07:56:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    is_locked: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/102a8c0ecf8c80b6a18af9a071308672',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '102a8c0e-cf8c-80c8-9391-cb8332a09711',
+    created_time: '2024-09-15T21:09:00.000Z',
+    last_edited_time: '2025-09-04T07:57:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    is_locked: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/102a8c0ecf8c80c89391cb8332a09711',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '102a8c0e-cf8c-80cd-a577-c9351f661364',
+    created_time: '2024-09-15T21:09:00.000Z',
+    last_edited_time: '2025-09-02T05:48:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    is_locked: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/102a8c0ecf8c80cda577c9351f661364',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '102a8c0e-cf8c-80e6-9519-d25acdcfd0ec',
+    created_time: '2024-09-15T21:10:00.000Z',
+    last_edited_time: '2025-09-04T08:02:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    is_locked: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/102a8c0ecf8c80e69519d25acdcfd0ec',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '102a8c0e-cf8c-80f9-bef0-dd401debb8af',
+    created_time: '2024-09-15T21:10:00.000Z',
+    last_edited_time: '2025-09-04T08:01:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    is_locked: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/102a8c0ecf8c80f9bef0dd401debb8af',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '219a8c0e-cf8c-8086-95b6-dbe56a73880d',
+    created_time: '2025-06-21T20:02:00.000Z',
+    last_edited_time: '2025-09-04T07:51:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    is_locked: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/219a8c0ecf8c808695b6dbe56a73880d',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '262a8c0e-cf8c-8087-9157-eccd746e636d',
+    created_time: '2025-09-02T05:49:00.000Z',
+    last_edited_time: '2025-09-04T07:58:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    is_locked: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/262a8c0ecf8c80879157eccd746e636d',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '4377c087-e782-46e3-9eaf-261863837f19',
+    created_time: '2024-09-15T21:13:00.000Z',
+    last_edited_time: '2025-06-21T20:04:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    is_locked: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/4377c087e78246e39eaf261863837f19',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '9a170ec8-c017-4cce-a0dd-d62f2edb82b6',
+    created_time: '2024-09-10T03:57:00.000Z',
+    last_edited_time: '2024-10-17T01:27:00.000Z',
+    created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    is_locked: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/9a170ec8c0174ccea0ddd62f2edb82b6',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: 'c452fe7f-4be8-4bdb-9afb-a32c10afbcab',
+    created_time: '2024-09-15T21:10:00.000Z',
+    last_edited_time: '2025-09-04T08:01:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    is_locked: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/c452fe7f4be84bdb9afba32c10afbcab',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: 'd65a07cd-7eec-4319-8dbb-f05addf412a9',
+    created_time: '2024-09-10T03:57:00.000Z',
+    last_edited_time: '2024-10-17T01:27:00.000Z',
+    created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    is_locked: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/d65a07cd7eec43198dbbf05addf412a9',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: 'f9633a2c-0dff-4b02-9161-9139ab8919d0',
+    created_time: '2024-09-10T03:57:00.000Z',
+    last_edited_time: '2024-10-17T01:27:00.000Z',
+    created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    is_locked: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/f9633a2c0dff4b0291619139ab8919d0',
+    public_url: null
+  }
+]
+Role data received: [
+  {
+    object: 'page',
+    id: '122a8c0e-cf8c-808e-88c5-c0446f064f99',
+    created_time: '2024-10-17T01:16:00.000Z',
+    last_edited_time: '2024-10-17T01:19:00.000Z',
+    created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '122a8c0e-cf8c-8005-9934-c64693cc39ca'
+    },
+    archived: false,
+    in_trash: false,
+    is_locked: false,
+    properties: { role: [Object], en: [Object], title: [Object] },
+    url: 'https://www.notion.so/122a8c0ecf8c808e88c5c0446f064f99',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '122a8c0e-cf8c-80ca-bded-ded104c18d96',
+    created_time: '2024-10-17T01:16:00.000Z',
+    last_edited_time: '2024-10-17T01:19:00.000Z',
+    created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '122a8c0e-cf8c-8005-9934-c64693cc39ca'
+    },
+    archived: false,
+    in_trash: false,
+    is_locked: false,
+    properties: { role: [Object], en: [Object], title: [Object] },
+    url: 'https://www.notion.so/122a8c0ecf8c80cabdedded104c18d96',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '122a8c0e-cf8c-80d5-85d2-d4a0673c1797',
+    created_time: '2024-10-17T01:16:00.000Z',
+    last_edited_time: '2024-10-17T01:19:00.000Z',
+    created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '122a8c0e-cf8c-8005-9934-c64693cc39ca'
+    },
+    archived: false,
+    in_trash: false,
+    is_locked: false,
+    properties: { role: [Object], en: [Object], title: [Object] },
+    url: 'https://www.notion.so/122a8c0ecf8c80d585d2d4a0673c1797',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '25697b18-c8e5-48aa-948f-4716cf5e36e8',
+    created_time: '2024-10-17T01:12:00.000Z',
+    last_edited_time: '2024-10-17T01:18:00.000Z',
+    created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '122a8c0e-cf8c-8005-9934-c64693cc39ca'
+    },
+    archived: false,
+    in_trash: false,
+    is_locked: false,
+    properties: { role: [Object], en: [Object], title: [Object] },
+    url: 'https://www.notion.so/25697b18c8e548aa948f4716cf5e36e8',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '31cae8ce-3c54-4a0b-9b18-639b4de347b3',
+    created_time: '2024-10-17T01:12:00.000Z',
+    last_edited_time: '2024-10-17T01:17:00.000Z',
+    created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '122a8c0e-cf8c-8005-9934-c64693cc39ca'
+    },
+    archived: false,
+    in_trash: false,
+    is_locked: false,
+    properties: { role: [Object], en: [Object], title: [Object] },
+    url: 'https://www.notion.so/31cae8ce3c544a0b9b18639b4de347b3',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '9ad23647-a425-4c2a-8538-b77219acc481',
+    created_time: '2024-10-17T01:12:00.000Z',
+    last_edited_time: '2024-10-17T01:18:00.000Z',
+    created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '122a8c0e-cf8c-8005-9934-c64693cc39ca'
+    },
+    archived: false,
+    in_trash: false,
+    is_locked: false,
+    properties: { role: [Object], en: [Object], title: [Object] },
+    url: 'https://www.notion.so/9ad23647a4254c2a8538b77219acc481',
+    public_url: null
+  }
+]
+Processed role list: [
+  RoleEntity { role: 'nihongo-cafe', title: 'にほんごかふぇ' },
+  RoleEntity { role: 'manager', title: 'マネージャー' },
+  RoleEntity { role: 'volunteer', title: 'ボランティア' },
+  RoleEntity { role: 'teacher', title: '講師' },
+  RoleEntity { role: 'co-director', title: 'ディレクター' },
+  RoleEntity { role: 'assistant', title: 'アシスタント' }
+]
+Processed staff list: [
+  StaffEntity {
+    name: 'マックナイト　ひとみ',
+    text: [ [Object] ],
+    role: [ [RoleEntity], [RoleEntity] ],
+    image: {
+      baseName: 'mcknight',
+      pagePath: 'staff',
+      alt: 'mcknight.png',
+      width: null,
+      height: null
+    },
+    ordering: 1
+  },
+  StaffEntity {
+    name: 'エスピノサ　みなみ',
+    text: [ [Object] ],
+    role: [ [RoleEntity], [RoleEntity] ],
+    image: {
+      baseName: 'minami',
+      pagePath: 'staff',
+      alt: 'minami.png',
+      width: null,
+      height: null
+    },
+    ordering: 2
+  },
+  StaffEntity {
+    name: 'バトラー　利恵',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: 'IMG_1299_edited',
+      pagePath: 'staff',
+      alt: 'IMG_1299_edited.jpg',
+      width: null,
+      height: null
+    },
+    ordering: 3
+  },
+  StaffEntity {
+    name: 'シュリラ　心里',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: 'Kokori-TJS',
+      pagePath: 'staff',
+      alt: 'Kokori-TJS.jpg',
+      width: null,
+      height: null
+    },
+    ordering: 4
+  },
+  StaffEntity {
+    name: '佐藤かつや',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: 'Katsu-TJS',
+      pagePath: 'staff',
+      alt: 'Katsu-TJS.jpg',
+      width: null,
+      height: null
+    },
+    ordering: 5
+  },
+  StaffEntity {
+    name: '中村　めぐ',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: 'Meg-TJS',
+      pagePath: 'staff',
+      alt: 'Meg-TJS.jpg',
+      width: null,
+      height: null
+    },
+    ordering: 6
+  },
+  StaffEntity {
+    name: 'ネマット　ヤッサー',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: 'IMG_7879_edited',
+      pagePath: 'staff',
+      alt: 'IMG_7879_edited.jpg',
+      width: null,
+      height: null
+    },
+    ordering: 7
+  },
+  StaffEntity {
+    name: 'リー　美晴',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: 'IMG_1280_edited',
+      pagePath: 'staff',
+      alt: 'IMG_1280_edited.jpg',
+      width: null,
+      height: null
+    },
+    ordering: 8
+  },
+  StaffEntity {
+    name: '大越　愛巳',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: 'Manami-TJS',
+      pagePath: 'staff',
+      alt: 'Manami-TJS.jpg',
+      width: null,
+      height: null
+    },
+    ordering: 9
+  },
+  StaffEntity {
+    name: 'ワルドルフ　ターシャ',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: 'profile',
+      pagePath: 'staff',
+      alt: 'profile.jpg',
+      width: null,
+      height: null
+    },
+    ordering: 10
+  },
+  StaffEntity {
+    name: '久高　ルミ',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: 'Lumi-TJS',
+      pagePath: 'staff',
+      alt: 'Lumi-TJS.jpg',
+      width: null,
+      height: null
+    },
+    ordering: 11
+  },
+  StaffEntity {
+    name: 'マックナイト　はな',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: 'IMG_7796',
+      pagePath: 'staff',
+      alt: 'IMG_7796.jpeg',
+      width: null,
+      height: null
+    },
+    ordering: 12
+  },
+  StaffEntity {
+    name: 'マックナイト　えみ',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: 'IMG_7799_edited',
+      pagePath: 'staff',
+      alt: 'IMG_7799_edited.jpg',
+      width: null,
+      height: null
+    },
+    ordering: 13
+  },
+  StaffEntity {
+    name: '内田　比奈子',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: 'profile',
+      pagePath: 'staff',
+      alt: 'profile.jpg',
+      width: null,
+      height: null
+    },
+    ordering: 14
+  },
+  StaffEntity {
+    name: 'オロスコ　佳代',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: 'Kayo-TJS',
+      pagePath: 'staff',
+      alt: 'Kayo-TJS.jpg',
+      width: null,
+      height: null
+    },
+    ordering: 15
+  },
+  StaffEntity {
+    name: '塩屋　ジェニファー',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: 'profile',
+      pagePath: 'staff',
+      alt: 'profile.jpg',
+      width: null,
+      height: null
+    },
+    ordering: 16
+  }
+]
+[ImageOptimizer] baseName: mcknight, pagePath: staff
+[ImageOptimizer] imagePaths: [
+  '/image/download/staff/mcknight-md.webp',
+  '/image/download/staff/mcknight-sm.webp',
+  '/image/download/staff/mcknight-lg.webp',
+  '/image/download/staff/mcknight.png',
+  '/image/download/staff/mcknight.jpg'
+]
+[ImageOptimizer] baseName: minami, pagePath: staff
+[ImageOptimizer] imagePaths: [
+  '/image/download/staff/minami-md.webp',
+  '/image/download/staff/minami-sm.webp',
+  '/image/download/staff/minami-lg.webp',
+  '/image/download/staff/minami.png',
+  '/image/download/staff/minami.jpg'
+]
+[ImageOptimizer] baseName: IMG_1299_edited, pagePath: staff
+[ImageOptimizer] imagePaths: [
+  '/image/download/staff/IMG_1299_edited-md.webp',
+  '/image/download/staff/IMG_1299_edited-sm.webp',
+  '/image/download/staff/IMG_1299_edited-lg.webp',
+  '/image/download/staff/IMG_1299_edited.png',
+  '/image/download/staff/IMG_1299_edited.jpg'
+]
+[ImageOptimizer] baseName: Kokori-TJS, pagePath: staff
+[ImageOptimizer] imagePaths: [
+  '/image/download/staff/Kokori-TJS-md.webp',
+  '/image/download/staff/Kokori-TJS-sm.webp',
+  '/image/download/staff/Kokori-TJS-lg.webp',
+  '/image/download/staff/Kokori-TJS.png',
+  '/image/download/staff/Kokori-TJS.jpg'
+]
+[ImageOptimizer] baseName: Katsu-TJS, pagePath: staff
+[ImageOptimizer] imagePaths: [
+  '/image/download/staff/Katsu-TJS-md.webp',
+  '/image/download/staff/Katsu-TJS-sm.webp',
+  '/image/download/staff/Katsu-TJS-lg.webp',
+  '/image/download/staff/Katsu-TJS.png',
+  '/image/download/staff/Katsu-TJS.jpg'
+]
+[ImageOptimizer] baseName: Meg-TJS, pagePath: staff
+[ImageOptimizer] imagePaths: [
+  '/image/download/staff/Meg-TJS-md.webp',
+  '/image/download/staff/Meg-TJS-sm.webp',
+  '/image/download/staff/Meg-TJS-lg.webp',
+  '/image/download/staff/Meg-TJS.png',
+  '/image/download/staff/Meg-TJS.jpg'
+]
+[ImageOptimizer] baseName: IMG_7879_edited, pagePath: staff
+[ImageOptimizer] imagePaths: [
+  '/image/download/staff/IMG_7879_edited-md.webp',
+  '/image/download/staff/IMG_7879_edited-sm.webp',
+  '/image/download/staff/IMG_7879_edited-lg.webp',
+  '/image/download/staff/IMG_7879_edited.png',
+  '/image/download/staff/IMG_7879_edited.jpg'
+]
+[ImageOptimizer] baseName: IMG_1280_edited, pagePath: staff
+[ImageOptimizer] imagePaths: [
+  '/image/download/staff/IMG_1280_edited-md.webp',
+  '/image/download/staff/IMG_1280_edited-sm.webp',
+  '/image/download/staff/IMG_1280_edited-lg.webp',
+  '/image/download/staff/IMG_1280_edited.png',
+  '/image/download/staff/IMG_1280_edited.jpg'
+]
+[ImageOptimizer] baseName: Manami-TJS, pagePath: staff
+[ImageOptimizer] imagePaths: [
+  '/image/download/staff/Manami-TJS-md.webp',
+  '/image/download/staff/Manami-TJS-sm.webp',
+  '/image/download/staff/Manami-TJS-lg.webp',
+  '/image/download/staff/Manami-TJS.png',
+  '/image/download/staff/Manami-TJS.jpg'
+]
+[ImageOptimizer] baseName: profile, pagePath: staff
+[ImageOptimizer] imagePaths: [
+  '/image/download/staff/profile-md.webp',
+  '/image/download/staff/profile-sm.webp',
+  '/image/download/staff/profile-lg.webp',
+  '/image/download/staff/profile.png',
+  '/image/download/staff/profile.jpg'
+]
+[ImageOptimizer] baseName: Lumi-TJS, pagePath: staff
+[ImageOptimizer] imagePaths: [
+  '/image/download/staff/Lumi-TJS-md.webp',
+  '/image/download/staff/Lumi-TJS-sm.webp',
+  '/image/download/staff/Lumi-TJS-lg.webp',
+  '/image/download/staff/Lumi-TJS.png',
+  '/image/download/staff/Lumi-TJS.jpg'
+]
+[ImageOptimizer] baseName: IMG_7796, pagePath: staff
+[ImageOptimizer] imagePaths: [
+  '/image/download/staff/IMG_7796-md.webp',
+  '/image/download/staff/IMG_7796-sm.webp',
+  '/image/download/staff/IMG_7796-lg.webp',
+  '/image/download/staff/IMG_7796.png',
+  '/image/download/staff/IMG_7796.jpg'
+]
+[ImageOptimizer] baseName: IMG_7799_edited, pagePath: staff
+[ImageOptimizer] imagePaths: [
+  '/image/download/staff/IMG_7799_edited-md.webp',
+  '/image/download/staff/IMG_7799_edited-sm.webp',
+  '/image/download/staff/IMG_7799_edited-lg.webp',
+  '/image/download/staff/IMG_7799_edited.png',
+  '/image/download/staff/IMG_7799_edited.jpg'
+]
+[ImageOptimizer] baseName: profile, pagePath: staff
+[ImageOptimizer] imagePaths: [
+  '/image/download/staff/profile-md.webp',
+  '/image/download/staff/profile-sm.webp',
+  '/image/download/staff/profile-lg.webp',
+  '/image/download/staff/profile.png',
+  '/image/download/staff/profile.jpg'
+]
+[ImageOptimizer] baseName: Kayo-TJS, pagePath: staff
+[ImageOptimizer] imagePaths: [
+  '/image/download/staff/Kayo-TJS-md.webp',
+  '/image/download/staff/Kayo-TJS-sm.webp',
+  '/image/download/staff/Kayo-TJS-lg.webp',
+  '/image/download/staff/Kayo-TJS.png',
+  '/image/download/staff/Kayo-TJS.jpg'
+]
+[ImageOptimizer] baseName: profile, pagePath: staff
+[ImageOptimizer] imagePaths: [
+  '/image/download/staff/profile-md.webp',
+  '/image/download/staff/profile-sm.webp',
+  '/image/download/staff/profile-lg.webp',
+  '/image/download/staff/profile.png',
+  '/image/download/staff/profile.jpg'
+]
+🚫 キャッシュ無効 (reports): 直接APIから取得します
+🌐 Notion APIから取得中: reports
+✅ API取得完了: reports (2件)
+🚫 キャッシュ無効 (category): 直接APIから取得します
+🚫 キャッシュ無効 (classes): 直接APIから取得します
+🌐 Notion APIから取得中: category
+🌐 Notion APIから取得中: classes
+✅ API取得完了: category (2件)
+✅ API取得完了: classes (7件)
+already exist.
+already exist.
+already exist.
+already exist.
+Class data received: {
+  category: [
+    {
+      object: 'page',
+      id: '99ec02fb-20f3-4fa5-8231-83c45df3f144',
+      created_time: '2024-10-09T07:36:00.000Z',
+      last_edited_time: '2025-09-02T09:40:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      is_locked: false,
+      properties: [Object],
+      url: 'https://www.notion.so/99ec02fb20f34fa5823183c45df3f144',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: 'a995f74b-7721-49eb-b767-2f2c963ad338',
+      created_time: '2024-10-09T07:36:00.000Z',
+      last_edited_time: '2025-09-02T09:39:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      is_locked: false,
+      properties: [Object],
+      url: 'https://www.notion.so/a995f74b772149ebb7672f2c963ad338',
+      public_url: null
+    }
+  ],
+  classes: [
+    {
+      object: 'page',
+      id: '11a3d234-161c-4116-bb01-34eeed87f99a',
+      created_time: '2024-10-09T07:09:00.000Z',
+      last_edited_time: '2025-09-02T09:39:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      is_locked: false,
+      properties: [Object],
+      url: 'https://www.notion.so/11a3d234161c4116bb0134eeed87f99a',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '11aa8c0e-cf8c-8000-b850-fef91292ae8c',
+      created_time: '2024-10-09T07:19:00.000Z',
+      last_edited_time: '2025-09-02T09:40:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      is_locked: false,
+      properties: [Object],
+      url: 'https://www.notion.so/11aa8c0ecf8c8000b850fef91292ae8c',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '11aa8c0e-cf8c-806d-bb6c-f2177df033cb',
+      created_time: '2024-10-09T07:14:00.000Z',
+      last_edited_time: '2025-09-02T09:40:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      is_locked: false,
+      properties: [Object],
+      url: 'https://www.notion.so/11aa8c0ecf8c806dbb6cf2177df033cb',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '11ca8c0e-cf8c-80d3-8615-f7d4f4007cf0',
+      created_time: '2024-10-11T09:43:00.000Z',
+      last_edited_time: '2025-09-05T02:40:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      is_locked: false,
+      properties: [Object],
+      url: 'https://www.notion.so/11ca8c0ecf8c80d38615f7d4f4007cf0',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '11ca8c0e-cf8c-80d8-8fda-ee7d75a0e718',
+      created_time: '2024-10-11T09:38:00.000Z',
+      last_edited_time: '2025-09-02T09:39:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      is_locked: false,
+      properties: [Object],
+      url: 'https://www.notion.so/11ca8c0ecf8c80d88fdaee7d75a0e718',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '53b5c5ad-de13-4cf2-a4c1-407d8d117dce',
+      created_time: '2024-10-09T07:09:00.000Z',
+      last_edited_time: '2025-09-02T09:39:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      is_locked: false,
+      properties: [Object],
+      url: 'https://www.notion.so/53b5c5adde134cf2a4c1407d8d117dce',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '63f53dc4-0f61-4505-abea-ff1ad51668e3',
+      created_time: '2024-10-09T07:09:00.000Z',
+      last_edited_time: '2025-09-05T02:40:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      is_locked: false,
+      properties: [Object],
+      url: 'https://www.notion.so/63f53dc40f614505abeaff1ad51668e3',
+      public_url: null
+    }
+  ]
+}
+[ImageOptimizer] baseName: IMG_1866, pagePath: class
+[ImageOptimizer] imagePaths: [
+  '/image/download/class/IMG_1866-md.webp',
+  '/image/download/class/IMG_1866-sm.webp',
+  '/image/download/class/IMG_1866-lg.webp',
+  '/image/download/class/IMG_1866.png',
+  '/image/download/class/IMG_1866.jpg'
+]
+[ImageOptimizer] baseName: IMG_3364, pagePath: class
+[ImageOptimizer] imagePaths: [
+  '/image/download/class/IMG_3364-md.webp',
+  '/image/download/class/IMG_3364-sm.webp',
+  '/image/download/class/IMG_3364-lg.webp',
+  '/image/download/class/IMG_3364.png',
+  '/image/download/class/IMG_3364.jpg'
+]
+[ImageOptimizer] baseName: 20240210_110201, pagePath: class
+[ImageOptimizer] imagePaths: [
+  '/image/download/class/20240210_110201-md.webp',
+  '/image/download/class/20240210_110201-sm.webp',
+  '/image/download/class/20240210_110201-lg.webp',
+  '/image/download/class/20240210_110201.png',
+  '/image/download/class/20240210_110201.jpg'
+]
+[ImageOptimizer] baseName: IMG_7919, pagePath: class
+[ImageOptimizer] imagePaths: [
+  '/image/download/class/IMG_7919-md.webp',
+  '/image/download/class/IMG_7919-sm.webp',
+  '/image/download/class/IMG_7919-lg.webp',
+  '/image/download/class/IMG_7919.png',
+  '/image/download/class/IMG_7919.jpg'
+]
+[ImageOptimizer] baseName: IMG_7892, pagePath: class
+[ImageOptimizer] imagePaths: [
+  '/image/download/class/IMG_7892-md.webp',
+  '/image/download/class/IMG_7892-sm.webp',
+  '/image/download/class/IMG_7892-lg.webp',
+  '/image/download/class/IMG_7892.png',
+  '/image/download/class/IMG_7892.jpg'
+]
+[ImageOptimizer] baseName: IMG_3338, pagePath: class
+[ImageOptimizer] imagePaths: [
+  '/image/download/class/IMG_3338-md.webp',
+  '/image/download/class/IMG_3338-sm.webp',
+  '/image/download/class/IMG_3338-lg.webp',
+  '/image/download/class/IMG_3338.png',
+  '/image/download/class/IMG_3338.jpg'
+]
+[ImageOptimizer] baseName: IMG_8125, pagePath: class
+[ImageOptimizer] imagePaths: [
+  '/image/download/class/IMG_8125-md.webp',
+  '/image/download/class/IMG_8125-sm.webp',
+  '/image/download/class/IMG_8125-lg.webp',
+  '/image/download/class/IMG_8125.png',
+  '/image/download/class/IMG_8125.jpg'
+]
+🚫 キャッシュ無効 (category): 直接APIから取得します
+🚫 キャッシュ無効 (classes): 直接APIから取得します
+🌐 Notion APIから取得中: category
+🌐 Notion APIから取得中: classes
+✅ API取得完了: classes (7件)
+✅ API取得完了: category (2件)
+Class data received: {
+  category: [
+    {
+      object: 'page',
+      id: '99ec02fb-20f3-4fa5-8231-83c45df3f144',
+      created_time: '2024-10-09T07:36:00.000Z',
+      last_edited_time: '2025-09-02T09:40:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      is_locked: false,
+      properties: [Object],
+      url: 'https://www.notion.so/99ec02fb20f34fa5823183c45df3f144',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: 'a995f74b-7721-49eb-b767-2f2c963ad338',
+      created_time: '2024-10-09T07:36:00.000Z',
+      last_edited_time: '2025-09-02T09:39:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      is_locked: false,
+      properties: [Object],
+      url: 'https://www.notion.so/a995f74b772149ebb7672f2c963ad338',
+      public_url: null
+    }
+  ],
+  classes: [
+    {
+      object: 'page',
+      id: '11a3d234-161c-4116-bb01-34eeed87f99a',
+      created_time: '2024-10-09T07:09:00.000Z',
+      last_edited_time: '2025-09-02T09:39:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      is_locked: false,
+      properties: [Object],
+      url: 'https://www.notion.so/11a3d234161c4116bb0134eeed87f99a',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '11aa8c0e-cf8c-8000-b850-fef91292ae8c',
+      created_time: '2024-10-09T07:19:00.000Z',
+      last_edited_time: '2025-09-02T09:40:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      is_locked: false,
+      properties: [Object],
+      url: 'https://www.notion.so/11aa8c0ecf8c8000b850fef91292ae8c',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '11aa8c0e-cf8c-806d-bb6c-f2177df033cb',
+      created_time: '2024-10-09T07:14:00.000Z',
+      last_edited_time: '2025-09-02T09:40:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      is_locked: false,
+      properties: [Object],
+      url: 'https://www.notion.so/11aa8c0ecf8c806dbb6cf2177df033cb',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '11ca8c0e-cf8c-80d3-8615-f7d4f4007cf0',
+      created_time: '2024-10-11T09:43:00.000Z',
+      last_edited_time: '2025-09-05T02:40:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      is_locked: false,
+      properties: [Object],
+      url: 'https://www.notion.so/11ca8c0ecf8c80d38615f7d4f4007cf0',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '11ca8c0e-cf8c-80d8-8fda-ee7d75a0e718',
+      created_time: '2024-10-11T09:38:00.000Z',
+      last_edited_time: '2025-09-02T09:39:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      is_locked: false,
+      properties: [Object],
+      url: 'https://www.notion.so/11ca8c0ecf8c80d88fdaee7d75a0e718',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '53b5c5ad-de13-4cf2-a4c1-407d8d117dce',
+      created_time: '2024-10-09T07:09:00.000Z',
+      last_edited_time: '2025-09-02T09:39:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      is_locked: false,
+      properties: [Object],
+      url: 'https://www.notion.so/53b5c5adde134cf2a4c1407d8d117dce',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '63f53dc4-0f61-4505-abea-ff1ad51668e3',
+      created_time: '2024-10-09T07:09:00.000Z',
+      last_edited_time: '2025-09-05T02:40:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      is_locked: false,
+      properties: [Object],
+      url: 'https://www.notion.so/63f53dc40f614505abeaff1ad51668e3',
+      public_url: null
+    }
+  ]
+}
+[ImageOptimizer] baseName: IMG_1866, pagePath: class
+[ImageOptimizer] imagePaths: [
+  '/image/download/class/IMG_1866-md.webp',
+  '/image/download/class/IMG_1866-sm.webp',
+  '/image/download/class/IMG_1866-lg.webp',
+  '/image/download/class/IMG_1866.png',
+  '/image/download/class/IMG_1866.jpg'
+]
+[ImageOptimizer] baseName: IMG_3364, pagePath: class
+[ImageOptimizer] imagePaths: [
+  '/image/download/class/IMG_3364-md.webp',
+  '/image/download/class/IMG_3364-sm.webp',
+  '/image/download/class/IMG_3364-lg.webp',
+  '/image/download/class/IMG_3364.png',
+  '/image/download/class/IMG_3364.jpg'
+]
+[ImageOptimizer] baseName: 20240210_110201, pagePath: class
+[ImageOptimizer] imagePaths: [
+  '/image/download/class/20240210_110201-md.webp',
+  '/image/download/class/20240210_110201-sm.webp',
+  '/image/download/class/20240210_110201-lg.webp',
+  '/image/download/class/20240210_110201.png',
+  '/image/download/class/20240210_110201.jpg'
+]
+[ImageOptimizer] baseName: IMG_7919, pagePath: class
+[ImageOptimizer] imagePaths: [
+  '/image/download/class/IMG_7919-md.webp',
+  '/image/download/class/IMG_7919-sm.webp',
+  '/image/download/class/IMG_7919-lg.webp',
+  '/image/download/class/IMG_7919.png',
+  '/image/download/class/IMG_7919.jpg'
+]
+[ImageOptimizer] baseName: IMG_7892, pagePath: class
+[ImageOptimizer] imagePaths: [
+  '/image/download/class/IMG_7892-md.webp',
+  '/image/download/class/IMG_7892-sm.webp',
+  '/image/download/class/IMG_7892-lg.webp',
+  '/image/download/class/IMG_7892.png',
+  '/image/download/class/IMG_7892.jpg'
+]
+[ImageOptimizer] baseName: IMG_3338, pagePath: class
+[ImageOptimizer] imagePaths: [
+  '/image/download/class/IMG_3338-md.webp',
+  '/image/download/class/IMG_3338-sm.webp',
+  '/image/download/class/IMG_3338-lg.webp',
+  '/image/download/class/IMG_3338.png',
+  '/image/download/class/IMG_3338.jpg'
+]
+[ImageOptimizer] baseName: IMG_8125, pagePath: class
+[ImageOptimizer] imagePaths: [
+  '/image/download/class/IMG_8125-md.webp',
+  '/image/download/class/IMG_8125-sm.webp',
+  '/image/download/class/IMG_8125-lg.webp',
+  '/image/download/class/IMG_8125.png',
+  '/image/download/class/IMG_8125.jpg'
+]
+🚫 キャッシュ無効 (schedule): 直接APIから取得します
+🚫 キャッシュ無効 (files): 直接APIから取得します
+🌐 Notion APIから取得中: schedule
+🌐 Notion APIから取得中: files
+✅ API取得完了: files (1件)
+✅ API取得完了: schedule (48件)
+=== 運動会予行データのデバッグ ===
+元のデータ: {
+  title: '運動会予行',
+  start: '2025-11-01T09:00:00.000-07:00',
+  end: '2025-11-01T11:00:00.000-07:00',
+  startStr: '2025-11-01T09:00:00.000-07:00',
+  endStr: '2025-11-01T11:00:00.000-07:00',
+  allDay: false,
+  dateTime: '2025-11-01T09:00:00.000-07:00'
+}
+処理後: {
+  startDate: '2025-11-01T09:00:00.000Z',
+  endDate: '2025-11-01T11:00:00.000Z'
+}
+Date オブジェクト: 2025-11-01T09:00:00.000Z
+現在のタイムゾーン: Asia/Tokyo
+FullCalendarに渡すデータ: {
+  id: '11aa8c0e-cf8c-805b-a1b7-d797bf51903a',
+  title: '運動会予行',
+  start: '2025-11-01T09:00:00.000Z',
+  end: '2025-11-01T11:00:00.000Z',
+  allDay: false,
+  backgroundColor: 'orange',
+  borderColor: 'orange',
+  editable: false,
+  extendedProps: {
+    description: '運動会予行',
+    location: 'International School of Tucson1701 East Seneca Street, Tucson, AZ 85719',
+    isEvent: true
+  }
+}
+=== レイバーの日のデバッグ ===
+元のデータ: { title: 'レイバーの日', startStr: '2025-09-01', allDay: true }
+=== 始業式のデバッグ ===
+元のデータ: {
+  title: '始業式',
+  startStr: '2025-08-09T09:00:00.000-07:00',
+  endStr: '2025-08-09T11:00:00.000-07:00',
+  allDay: false
+}
+時間付きイベントの調整: {
+  title: '始業式',
+  original_startStr: '2025-08-09T09:00:00.000-07:00',
+  original_endStr: '2025-08-09T11:00:00.000-07:00',
+  adjusted_startDate: '2025-08-09T09:00:00.000Z',
+  adjusted_endDate: '2025-08-09T11:00:00.000Z',
+  phoenixTimeStart: '8/9/2025, 2:00:00 AM',
+  phoenixTimeEnd: '8/9/2025, 4:00:00 AM'
+}
+already exist.
+already exist.
+not pdf file
+KanjiKenteiPage props: { kanjiKenteiData: true, locale: 'ja' }
+already exist.
+not pdf file
+already exist.
+KanjiKenteiPage props: { kanjiKenteiData: true, locale: 'ja' }
+already exist.
+not pdf file
+already exist.
+   Generating static pages (15/130) 
+🚫 キャッシュ無効 (qualification): 直接APIから取得します
+🚫 キャッシュ無効 (price): 直接APIから取得します
+🚫 キャッシュ無効 (discountFamily): 直接APIから取得します
+🚫 キャッシュ無効 (discountStaff): 直接APIから取得します
+🚫 キャッシュ無効 (enrollment): 直接APIから取得します
+🌐 Notion APIから取得中: qualification
+🌐 Notion APIから取得中: price
+🌐 Notion APIから取得中: discountFamily
+🌐 Notion APIから取得中: discountStaff
+🌐 Notion APIから取得中: enrollment
+✅ API取得完了: qualification (3件)
+✅ API取得完了: discountFamily (3件)
+✅ API取得完了: discountStaff (3件)
+✅ API取得完了: enrollment (2件)
+✅ API取得完了: price (8件)
+🚫 キャッシュ無効 (qualification): 直接APIから取得します
+🚫 キャッシュ無効 (price): 直接APIから取得します
+🚫 キャッシュ無効 (discountFamily): 直接APIから取得します
+🚫 キャッシュ無効 (discountStaff): 直接APIから取得します
+🚫 キャッシュ無効 (enrollment): 直接APIから取得します
+🌐 Notion APIから取得中: qualification
+🌐 Notion APIから取得中: price
+🌐 Notion APIから取得中: discountFamily
+🌐 Notion APIから取得中: discountStaff
+🌐 Notion APIから取得中: enrollment
+✅ API取得完了: discountFamily (3件)
+✅ API取得完了: enrollment (2件)
+✅ API取得完了: qualification (3件)
+✅ API取得完了: discountStaff (3件)
+✅ API取得完了: price (8件)
+🚀 グローバルキャッシュから取得: news
+[ImageOptimizer] baseName: 11th_Annual_Sports_Day_flyer, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/11th_Annual_Sports_Day_flyer-md.webp',
+  '/image/download/news/11th_Annual_Sports_Day_flyer-sm.webp',
+  '/image/download/news/11th_Annual_Sports_Day_flyer-lg.webp',
+  '/image/download/news/11th_Annual_Sports_Day_flyer.png',
+  '/image/download/news/11th_Annual_Sports_Day_flyer.jpg'
+]
+[ImageOptimizer] baseName: Maxzeeks_visit-tjs.jpeg, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/Maxzeeks_visit-tjs.jpeg-md.webp',
+  '/image/download/news/Maxzeeks_visit-tjs.jpeg-sm.webp',
+  '/image/download/news/Maxzeeks_visit-tjs.jpeg-lg.webp',
+  '/image/download/news/Maxzeeks_visit-tjs.jpeg.png',
+  '/image/download/news/Maxzeeks_visit-tjs.jpeg.jpg'
+]
+[ImageOptimizer] baseName: Dangomaking2022, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/Dangomaking2022-md.webp',
+  '/image/download/news/Dangomaking2022-sm.webp',
+  '/image/download/news/Dangomaking2022-lg.webp',
+  '/image/download/news/Dangomaking2022.png',
+  '/image/download/news/Dangomaking2022.jpg'
+]
+[ImageOptimizer] baseName: Kanjikentei2025poster, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/Kanjikentei2025poster-md.webp',
+  '/image/download/news/Kanjikentei2025poster-sm.webp',
+  '/image/download/news/Kanjikentei2025poster-lg.webp',
+  '/image/download/news/Kanjikentei2025poster.png',
+  '/image/download/news/Kanjikentei2025poster.jpg'
+]
+[ImageOptimizer] baseName: 縦版　ツーソン大運動会ポスター__(9.4.2024), pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/縦版　ツーソン大運動会ポスター__(9.4.2024)-md.webp',
+  '/image/download/news/縦版　ツーソン大運動会ポスター__(9.4.2024)-sm.webp',
+  '/image/download/news/縦版　ツーソン大運動会ポスター__(9.4.2024)-lg.webp',
+  '/image/download/news/縦版　ツーソン大運動会ポスター__(9.4.2024).png',
+  '/image/download/news/縦版　ツーソン大運動会ポスター__(9.4.2024).jpg'
+]
+[ImageOptimizer] baseName: unitymural02, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/unitymural02-md.webp',
+  '/image/download/news/unitymural02-sm.webp',
+  '/image/download/news/unitymural02-lg.webp',
+  '/image/download/news/unitymural02.png',
+  '/image/download/news/unitymural02.jpg'
+]
+[ImageOptimizer] baseName: sakura_radio_minnano_gakko, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/sakura_radio_minnano_gakko-md.webp',
+  '/image/download/news/sakura_radio_minnano_gakko-sm.webp',
+  '/image/download/news/sakura_radio_minnano_gakko-lg.webp',
+  '/image/download/news/sakura_radio_minnano_gakko.png',
+  '/image/download/news/sakura_radio_minnano_gakko.jpg'
+]
+[ImageOptimizer] baseName: sakura_radio_minnano_gakko, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/sakura_radio_minnano_gakko-md.webp',
+  '/image/download/news/sakura_radio_minnano_gakko-sm.webp',
+  '/image/download/news/sakura_radio_minnano_gakko-lg.webp',
+  '/image/download/news/sakura_radio_minnano_gakko.png',
+  '/image/download/news/sakura_radio_minnano_gakko.jpg'
+]
+[ImageOptimizer] baseName: schooltablechair, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/schooltablechair-md.webp',
+  '/image/download/news/schooltablechair-sm.webp',
+  '/image/download/news/schooltablechair-lg.webp',
+  '/image/download/news/schooltablechair.png',
+  '/image/download/news/schooltablechair.jpg'
+]
+[ImageOptimizer] baseName: japanesegarden, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/japanesegarden-md.webp',
+  '/image/download/news/japanesegarden-sm.webp',
+  '/image/download/news/japanesegarden-lg.webp',
+  '/image/download/news/japanesegarden.png',
+  '/image/download/news/japanesegarden.jpg'
+]
+[ImageOptimizer] baseName: notoearthquake1, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/notoearthquake1-md.webp',
+  '/image/download/news/notoearthquake1-sm.webp',
+  '/image/download/news/notoearthquake1-lg.webp',
+  '/image/download/news/notoearthquake1.png',
+  '/image/download/news/notoearthquake1.jpg'
+]
+🚀 グローバルキャッシュから取得: event
+[ImageOptimizer] baseName: 2026kenken, pagePath: event
+[ImageOptimizer] imagePaths: [
+  '/image/download/event/2026kenken-md.webp',
+  '/image/download/event/2026kenken-sm.webp',
+  '/image/download/event/2026kenken-lg.webp',
+  '/image/download/event/2026kenken.png',
+  '/image/download/event/2026kenken.jpg'
+]
+[ImageOptimizer] baseName: 11th_Annual_Sports_Day_flyer, pagePath: event
+[ImageOptimizer] imagePaths: [
+  '/image/download/event/11th_Annual_Sports_Day_flyer-md.webp',
+  '/image/download/event/11th_Annual_Sports_Day_flyer-sm.webp',
+  '/image/download/event/11th_Annual_Sports_Day_flyer-lg.webp',
+  '/image/download/event/11th_Annual_Sports_Day_flyer.png',
+  '/image/download/event/11th_Annual_Sports_Day_flyer.jpg'
+]
+🚫 キャッシュ無効 (sponsors): 直接APIから取得します
+🚫 キャッシュ無効 (support): 直接APIから取得します
+🚫 キャッシュ無効 (sponsor): 直接APIから取得します
+🚫 キャッシュ無効 (donation): 直接APIから取得します
+🚫 キャッシュ無効 (howto): 直接APIから取得します
+🌐 Notion APIから取得中: sponsors
+🌐 Notion APIから取得中: support
+🌐 Notion APIから取得中: sponsor
+🌐 Notion APIから取得中: donation
+🌐 Notion APIから取得中: howto
+✅ API取得完了: support (1件)
+✅ API取得完了: howto (3件)
+✅ API取得完了: donation (1件)
+✅ API取得完了: sponsor (1件)
+✅ API取得完了: sponsors (3件)
+[ImageOptimizer] baseName: ikkyu, pagePath: sponsor
+[ImageOptimizer] imagePaths: [
+  '/image/download/sponsor/ikkyu-md.webp',
+  '/image/download/sponsor/ikkyu-sm.webp',
+  '/image/download/sponsor/ikkyu-lg.webp',
+  '/image/download/sponsor/ikkyu.png',
+  '/image/download/sponsor/ikkyu.jpg'
+]
+[ImageOptimizer] baseName: JBAALogo, pagePath: sponsor
+[ImageOptimizer] imagePaths: [
+  '/image/download/sponsor/JBAALogo-md.webp',
+  '/image/download/sponsor/JBAALogo-sm.webp',
+  '/image/download/sponsor/JBAALogo-lg.webp',
+  '/image/download/sponsor/JBAALogo.png',
+  '/image/download/sponsor/JBAALogo.jpg'
+]
+[ImageOptimizer] baseName: tucsonblossomacpuncture, pagePath: sponsor
+[ImageOptimizer] imagePaths: [
+  '/image/download/sponsor/tucsonblossomacpuncture-md.webp',
+  '/image/download/sponsor/tucsonblossomacpuncture-sm.webp',
+  '/image/download/sponsor/tucsonblossomacpuncture-lg.webp',
+  '/image/download/sponsor/tucsonblossomacpuncture.png',
+  '/image/download/sponsor/tucsonblossomacpuncture.jpg'
+]
+🚫 キャッシュ無効 (general): 直接APIから取得します
+🌐 Notion APIから取得中: general
+✅ API取得完了: general (1件)
+🚫 キャッシュ無効 (opportunity): 直接APIから取得します
+🚫 キャッシュ無効 (general): 直接APIから取得します
+🌐 Notion APIから取得中: opportunity
+🌐 Notion APIから取得中: general
+✅ API取得完了: general (1件)
+✅ API取得完了: opportunity (3件)
+🚀 グローバルキャッシュから取得: news
+[ImageOptimizer] baseName: unitymural02, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/unitymural02-md.webp',
+  '/image/download/news/unitymural02-sm.webp',
+  '/image/download/news/unitymural02-lg.webp',
+  '/image/download/news/unitymural02.png',
+  '/image/download/news/unitymural02.jpg'
+]
+🚀 グローバルキャッシュから取得: news
+[ImageOptimizer] baseName: Oasissep2017, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/Oasissep2017-md.webp',
+  '/image/download/news/Oasissep2017-sm.webp',
+  '/image/download/news/Oasissep2017-lg.webp',
+  '/image/download/news/Oasissep2017.png',
+  '/image/download/news/Oasissep2017.jpg'
+]
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+[ImageOptimizer] baseName: japanesegarden, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/japanesegarden-md.webp',
+  '/image/download/news/japanesegarden-sm.webp',
+  '/image/download/news/japanesegarden-lg.webp',
+  '/image/download/news/japanesegarden.png',
+  '/image/download/news/japanesegarden.jpg'
+]
+🚀 グローバルキャッシュから取得: news
+[ImageOptimizer] baseName: tucsonundokai2023, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/tucsonundokai2023-md.webp',
+  '/image/download/news/tucsonundokai2023-sm.webp',
+  '/image/download/news/tucsonundokai2023-lg.webp',
+  '/image/download/news/tucsonundokai2023.png',
+  '/image/download/news/tucsonundokai2023.jpg'
+]
+🚀 グローバルキャッシュから取得: news
+[ImageOptimizer] baseName: notoearthquake1, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/notoearthquake1-md.webp',
+  '/image/download/news/notoearthquake1-sm.webp',
+  '/image/download/news/notoearthquake1-lg.webp',
+  '/image/download/news/notoearthquake1.png',
+  '/image/download/news/notoearthquake1.jpg'
+]
+🚀 グローバルキャッシュから取得: news
+[ImageOptimizer] baseName: newyearprayer, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/newyearprayer-md.webp',
+  '/image/download/news/newyearprayer-sm.webp',
+  '/image/download/news/newyearprayer-lg.webp',
+  '/image/download/news/newyearprayer.png',
+  '/image/download/news/newyearprayer.jpg'
+]
+🚀 グローバルキャッシュから取得: news
+[ImageOptimizer] baseName: kanjikentei2024, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/kanjikentei2024-md.webp',
+  '/image/download/news/kanjikentei2024-sm.webp',
+  '/image/download/news/kanjikentei2024-lg.webp',
+  '/image/download/news/kanjikentei2024.png',
+  '/image/download/news/kanjikentei2024.jpg'
+]
+🚀 グローバルキャッシュから取得: news
+[ImageOptimizer] baseName: schooltablechair, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/schooltablechair-md.webp',
+  '/image/download/news/schooltablechair-sm.webp',
+  '/image/download/news/schooltablechair-lg.webp',
+  '/image/download/news/schooltablechair.png',
+  '/image/download/news/schooltablechair.jpg'
+]
+   Generating static pages (31/130) 
+🚀 グローバルキャッシュから取得: news
+   Generating static pages (32/130) 
+🚀 グローバルキャッシュから取得: news
+[ImageOptimizer] baseName: arizonamatsurilogo, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/arizonamatsurilogo-md.webp',
+  '/image/download/news/arizonamatsurilogo-sm.webp',
+  '/image/download/news/arizonamatsurilogo-lg.webp',
+  '/image/download/news/arizonamatsurilogo.png',
+  '/image/download/news/arizonamatsurilogo.jpg'
+]
+🚀 グローバルキャッシュから取得: news
+[ImageOptimizer] baseName: supportinghands, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/supportinghands-md.webp',
+  '/image/download/news/supportinghands-sm.webp',
+  '/image/download/news/supportinghands-lg.webp',
+  '/image/download/news/supportinghands.png',
+  '/image/download/news/supportinghands.jpg'
+]
+🚀 グローバルキャッシュから取得: news
+[ImageOptimizer] baseName: childreninclassroom, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/childreninclassroom-md.webp',
+  '/image/download/news/childreninclassroom-sm.webp',
+  '/image/download/news/childreninclassroom-lg.webp',
+  '/image/download/news/childreninclassroom.png',
+  '/image/download/news/childreninclassroom.jpg'
+]
+🚀 グローバルキャッシュから取得: news
+[ImageOptimizer] baseName: hitomimcknight, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/hitomimcknight-md.webp',
+  '/image/download/news/hitomimcknight-sm.webp',
+  '/image/download/news/hitomimcknight-lg.webp',
+  '/image/download/news/hitomimcknight.png',
+  '/image/download/news/hitomimcknight.jpg'
+]
+🚀 グローバルキャッシュから取得: news
+[ImageOptimizer] baseName: kanken2022, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/kanken2022-md.webp',
+  '/image/download/news/kanken2022-sm.webp',
+  '/image/download/news/kanken2022-lg.webp',
+  '/image/download/news/kanken2022.png',
+  '/image/download/news/kanken2022.jpg'
+]
+🚀 グローバルキャッシュから取得: news
+[ImageOptimizer] baseName: kanjikentei2020, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/kanjikentei2020-md.webp',
+  '/image/download/news/kanjikentei2020-sm.webp',
+  '/image/download/news/kanjikentei2020-lg.webp',
+  '/image/download/news/kanjikentei2020.png',
+  '/image/download/news/kanjikentei2020.jpg'
+]
+🚀 グローバルキャッシュから取得: news
+[ImageOptimizer] baseName: 2020newyear, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/2020newyear-md.webp',
+  '/image/download/news/2020newyear-sm.webp',
+  '/image/download/news/2020newyear-lg.webp',
+  '/image/download/news/2020newyear.png',
+  '/image/download/news/2020newyear.jpg'
+]
+🚀 グローバルキャッシュから取得: news
+[ImageOptimizer] baseName: schoolchildrensmiles, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/schoolchildrensmiles-md.webp',
+  '/image/download/news/schoolchildrensmiles-sm.webp',
+  '/image/download/news/schoolchildrensmiles-lg.webp',
+  '/image/download/news/schoolchildrensmiles.png',
+  '/image/download/news/schoolchildrensmiles.jpg'
+]
+🚀 グローバルキャッシュから取得: news
+Skipping non-PDF file: kanjikenteiapplication2023.png (.png)
+Skipping non-PDF file: kanjikenteiapplication2023.png (.png)
+[ImageOptimizer] baseName: kanjikenteilogo, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/kanjikenteilogo-md.webp',
+  '/image/download/news/kanjikenteilogo-sm.webp',
+  '/image/download/news/kanjikenteilogo-lg.webp',
+  '/image/download/news/kanjikenteilogo.png',
+  '/image/download/news/kanjikenteilogo.jpg'
+]
+🚀 グローバルキャッシュから取得: news
+[ImageOptimizer] baseName: newyear2021, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/newyear2021-md.webp',
+  '/image/download/news/newyear2021-sm.webp',
+  '/image/download/news/newyear2021-lg.webp',
+  '/image/download/news/newyear2021.png',
+  '/image/download/news/newyear2021.jpg'
+]
+🚀 グローバルキャッシュから取得: news
+[ImageOptimizer] baseName: tucsonundokai2020, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/tucsonundokai2020-md.webp',
+  '/image/download/news/tucsonundokai2020-sm.webp',
+  '/image/download/news/tucsonundokai2020-lg.webp',
+  '/image/download/news/tucsonundokai2020.png',
+  '/image/download/news/tucsonundokai2020.jpg'
+]
+🚀 グローバルキャッシュから取得: news
+[ImageOptimizer] baseName: boystudyonline, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/boystudyonline-md.webp',
+  '/image/download/news/boystudyonline-sm.webp',
+  '/image/download/news/boystudyonline-lg.webp',
+  '/image/download/news/boystudyonline.png',
+  '/image/download/news/boystudyonline.jpg'
+]
+🚀 グローバルキャッシュから取得: news
+[ImageOptimizer] baseName: schoolchairtable, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/schoolchairtable-md.webp',
+  '/image/download/news/schoolchairtable-sm.webp',
+  '/image/download/news/schoolchairtable-lg.webp',
+  '/image/download/news/schoolchairtable.png',
+  '/image/download/news/schoolchairtable.jpg'
+]
+🚀 グローバルキャッシュから取得: news
+[ImageOptimizer] baseName: remotelearningkid, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/remotelearningkid-md.webp',
+  '/image/download/news/remotelearningkid-sm.webp',
+  '/image/download/news/remotelearningkid-lg.webp',
+  '/image/download/news/remotelearningkid.png',
+  '/image/download/news/remotelearningkid.jpg'
+]
+   Generating static pages (46/130) 
+🚀 グローバルキャッシュから取得: news
+[ImageOptimizer] baseName: sponsorthanks, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/sponsorthanks-md.webp',
+  '/image/download/news/sponsorthanks-sm.webp',
+  '/image/download/news/sponsorthanks-lg.webp',
+  '/image/download/news/sponsorthanks.png',
+  '/image/download/news/sponsorthanks.jpg'
+]
+🚀 グローバルキャッシュから取得: news
+[ImageOptimizer] baseName: kanjikentei2023, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/kanjikentei2023-md.webp',
+  '/image/download/news/kanjikentei2023-sm.webp',
+  '/image/download/news/kanjikentei2023-lg.webp',
+  '/image/download/news/kanjikentei2023.png',
+  '/image/download/news/kanjikentei2023.jpg'
+]
+🚀 グローバルキャッシュから取得: news
+[ImageOptimizer] baseName: emptyschool, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/emptyschool-md.webp',
+  '/image/download/news/emptyschool-sm.webp',
+  '/image/download/news/emptyschool-lg.webp',
+  '/image/download/news/emptyschool.png',
+  '/image/download/news/emptyschool.jpg'
+]
+🚀 グローバルキャッシュから取得: news
+[ImageOptimizer] baseName: pandemicprevention, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/pandemicprevention-md.webp',
+  '/image/download/news/pandemicprevention-sm.webp',
+  '/image/download/news/pandemicprevention-lg.webp',
+  '/image/download/news/pandemicprevention.png',
+  '/image/download/news/pandemicprevention.jpg'
+]
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+[ImageOptimizer] baseName: mochipounding, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/mochipounding-md.webp',
+  '/image/download/news/mochipounding-sm.webp',
+  '/image/download/news/mochipounding-lg.webp',
+  '/image/download/news/mochipounding.png',
+  '/image/download/news/mochipounding.jpg'
+]
+🚀 グローバルキャッシュから取得: news
+[ImageOptimizer] baseName: emptyschool, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/emptyschool-md.webp',
+  '/image/download/news/emptyschool-sm.webp',
+  '/image/download/news/emptyschool-lg.webp',
+  '/image/download/news/emptyschool.png',
+  '/image/download/news/emptyschool.jpg'
+]
+🚀 グローバルキャッシュから取得: news
+[ImageOptimizer] baseName: SAJCClogo, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/SAJCClogo-md.webp',
+  '/image/download/news/SAJCClogo-sm.webp',
+  '/image/download/news/SAJCClogo-lg.webp',
+  '/image/download/news/SAJCClogo.png',
+  '/image/download/news/SAJCClogo.jpg'
+]
+🚀 グローバルキャッシュから取得: news
+[ImageOptimizer] baseName: lastdayofschool2021, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/lastdayofschool2021-md.webp',
+  '/image/download/news/lastdayofschool2021-sm.webp',
+  '/image/download/news/lastdayofschool2021-lg.webp',
+  '/image/download/news/lastdayofschool2021.png',
+  '/image/download/news/lastdayofschool2021.jpg'
+]
+🚀 グローバルキャッシュから取得: news
+[ImageOptimizer] baseName: tucsonundokai2021, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/tucsonundokai2021-md.webp',
+  '/image/download/news/tucsonundokai2021-sm.webp',
+  '/image/download/news/tucsonundokai2021-lg.webp',
+  '/image/download/news/tucsonundokai2021.png',
+  '/image/download/news/tucsonundokai2021.jpg'
+]
+🚀 グローバルキャッシュから取得: news
+[ImageOptimizer] baseName: 縦版　ツーソン大運動会ポスター__(9.4.2024), pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/縦版　ツーソン大運動会ポスター__(9.4.2024)-md.webp',
+  '/image/download/news/縦版　ツーソン大運動会ポスター__(9.4.2024)-sm.webp',
+  '/image/download/news/縦版　ツーソン大運動会ポスター__(9.4.2024)-lg.webp',
+  '/image/download/news/縦版　ツーソン大運動会ポスター__(9.4.2024).png',
+  '/image/download/news/縦版　ツーソン大運動会ポスター__(9.4.2024).jpg'
+]
+🚀 グローバルキャッシュから取得: news
+[ImageOptimizer] baseName: Dangomaking2022, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/Dangomaking2022-md.webp',
+  '/image/download/news/Dangomaking2022-sm.webp',
+  '/image/download/news/Dangomaking2022-lg.webp',
+  '/image/download/news/Dangomaking2022.png',
+  '/image/download/news/Dangomaking2022.jpg'
+]
+🚀 グローバルキャッシュから取得: news
+[ImageOptimizer] baseName: Kanjikentei2025poster, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/Kanjikentei2025poster-md.webp',
+  '/image/download/news/Kanjikentei2025poster-sm.webp',
+  '/image/download/news/Kanjikentei2025poster-lg.webp',
+  '/image/download/news/Kanjikentei2025poster.png',
+  '/image/download/news/Kanjikentei2025poster.jpg'
+]
+🚀 グローバルキャッシュから取得: news
+[ImageOptimizer] baseName: Maxzeeks_visit-tjs.jpeg, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/Maxzeeks_visit-tjs.jpeg-md.webp',
+  '/image/download/news/Maxzeeks_visit-tjs.jpeg-sm.webp',
+  '/image/download/news/Maxzeeks_visit-tjs.jpeg-lg.webp',
+  '/image/download/news/Maxzeeks_visit-tjs.jpeg.png',
+  '/image/download/news/Maxzeeks_visit-tjs.jpeg.jpg'
+]
+🚀 グローバルキャッシュから取得: news
+[ImageOptimizer] baseName: 11th_Annual_Sports_Day_flyer, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/11th_Annual_Sports_Day_flyer-md.webp',
+  '/image/download/news/11th_Annual_Sports_Day_flyer-sm.webp',
+  '/image/download/news/11th_Annual_Sports_Day_flyer-lg.webp',
+  '/image/download/news/11th_Annual_Sports_Day_flyer.png',
+  '/image/download/news/11th_Annual_Sports_Day_flyer.jpg'
+]
+🚀 グローバルキャッシュから取得: news
+[ImageOptimizer] baseName: sakura_radio_minnano_gakko, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/sakura_radio_minnano_gakko-md.webp',
+  '/image/download/news/sakura_radio_minnano_gakko-sm.webp',
+  '/image/download/news/sakura_radio_minnano_gakko-lg.webp',
+  '/image/download/news/sakura_radio_minnano_gakko.png',
+  '/image/download/news/sakura_radio_minnano_gakko.jpg'
+]
+   Generating static pages (62/130) 
+🚀 グローバルキャッシュから取得: news
+[ImageOptimizer] baseName: sakura_radio_minnano_gakko, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/sakura_radio_minnano_gakko-md.webp',
+  '/image/download/news/sakura_radio_minnano_gakko-sm.webp',
+  '/image/download/news/sakura_radio_minnano_gakko-lg.webp',
+  '/image/download/news/sakura_radio_minnano_gakko.png',
+  '/image/download/news/sakura_radio_minnano_gakko.jpg'
+]
+🚀 グローバルキャッシュから取得: event
+PDF already exists: 2026kenken.pdf
+PDF already exists: 2026kenken.pdf
+[ImageOptimizer] baseName: 2026kenken, pagePath: event
+[ImageOptimizer] imagePaths: [
+  '/image/download/event/2026kenken-md.webp',
+  '/image/download/event/2026kenken-sm.webp',
+  '/image/download/event/2026kenken-lg.webp',
+  '/image/download/event/2026kenken.png',
+  '/image/download/event/2026kenken.jpg'
+]
+   Generating static pages (64/130) 
+🚀 グローバルキャッシュから取得: event
+Error fetching event item: TypeError: Cannot read properties of undefined (reading 'plain_text')
+    at /Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/pages/[[...slug]].js:1:40205
+    at Array.map (<anonymous>)
+    at getStaticProps (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/pages/[[...slug]].js:1:40156)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+🚫 キャッシュ無効 (slider): 直接APIから取得します
+🚫 キャッシュ無効 (sponsors): 直接APIから取得します
+🚫 キャッシュ無効 (schedule): 直接APIから取得します
+🚫 キャッシュ無効 (about): 直接APIから取得します
+🚫 キャッシュ無効 (general): 直接APIから取得します
+🌐 Notion APIから取得中: slider
+🌐 Notion APIから取得中: sponsors
+🌐 Notion APIから取得中: schedule
+🌐 Notion APIから取得中: about
+🌐 Notion APIから取得中: general
+✅ API取得完了: general (1件)
+✅ API取得完了: sponsors (3件)
+✅ API取得完了: slider (4件)
+✅ API取得完了: schedule (48件)
+✅ API取得完了: about (3件)
+🚫 キャッシュ無効 (news): 直接APIから取得します
+🌐 Notion APIから取得中: news
+✅ API取得完了: news (41件)
+[convertAboutFromDatabase] Processing item with tag: about, title: About
+[convertAboutFromDatabase] Set aboutSchool
+[convertAboutFromDatabase] Processing item with tag: mission, title: Our Mission
+[convertAboutFromDatabase] Set mission
+[convertAboutFromDatabase] Processing item with tag: vision, title: Our Vision
+[convertAboutFromDatabase] Set vision
+[convertAboutFromDatabase] Final result - aboutSchool: found, mission: found, vision: found
+[ImageOptimizer] baseName: Sports_Day_-_Giant_Ball_rolling, pagePath: slider
+[ImageOptimizer] imagePaths: [
+  '/image/download/slider/Sports_Day_-_Giant_Ball_rolling-md.webp',
+  '/image/download/slider/Sports_Day_-_Giant_Ball_rolling-sm.webp',
+  '/image/download/slider/Sports_Day_-_Giant_Ball_rolling-lg.webp',
+  '/image/download/slider/Sports_Day_-_Giant_Ball_rolling.png',
+  '/image/download/slider/Sports_Day_-_Giant_Ball_rolling.jpg'
+]
+[ImageOptimizer] baseName: Summer_Festival_-_Snack_fishing, pagePath: slider
+[ImageOptimizer] imagePaths: [
+  '/image/download/slider/Summer_Festival_-_Snack_fishing-md.webp',
+  '/image/download/slider/Summer_Festival_-_Snack_fishing-sm.webp',
+  '/image/download/slider/Summer_Festival_-_Snack_fishing-lg.webp',
+  '/image/download/slider/Summer_Festival_-_Snack_fishing.png',
+  '/image/download/slider/Summer_Festival_-_Snack_fishing.jpg'
+]
+[ImageOptimizer] baseName: winter, pagePath: slider
+[ImageOptimizer] imagePaths: [
+  '/image/download/slider/winter-md.webp',
+  '/image/download/slider/winter-sm.webp',
+  '/image/download/slider/winter-lg.webp',
+  '/image/download/slider/winter.png',
+  '/image/download/slider/winter.jpg'
+]
+[ImageOptimizer] baseName: katakana, pagePath: slider
+[ImageOptimizer] imagePaths: [
+  '/image/download/slider/katakana-md.webp',
+  '/image/download/slider/katakana-sm.webp',
+  '/image/download/slider/katakana-lg.webp',
+  '/image/download/slider/katakana.png',
+  '/image/download/slider/katakana.jpg'
+]
+[ImageOptimizer] baseName: 11th_Annual_Sports_Day_flyer, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/11th_Annual_Sports_Day_flyer-md.webp',
+  '/image/download/news/11th_Annual_Sports_Day_flyer-sm.webp',
+  '/image/download/news/11th_Annual_Sports_Day_flyer-lg.webp',
+  '/image/download/news/11th_Annual_Sports_Day_flyer.png',
+  '/image/download/news/11th_Annual_Sports_Day_flyer.jpg'
+]
+[ImageOptimizer] baseName: Maxzeeks_visit-tjs.jpeg, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/Maxzeeks_visit-tjs.jpeg-md.webp',
+  '/image/download/news/Maxzeeks_visit-tjs.jpeg-sm.webp',
+  '/image/download/news/Maxzeeks_visit-tjs.jpeg-lg.webp',
+  '/image/download/news/Maxzeeks_visit-tjs.jpeg.png',
+  '/image/download/news/Maxzeeks_visit-tjs.jpeg.jpg'
+]
+[ImageOptimizer] baseName: Dangomaking2022, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/Dangomaking2022-md.webp',
+  '/image/download/news/Dangomaking2022-sm.webp',
+  '/image/download/news/Dangomaking2022-lg.webp',
+  '/image/download/news/Dangomaking2022.png',
+  '/image/download/news/Dangomaking2022.jpg'
+]
+[ImageOptimizer] baseName: about, pagePath: about
+[ImageOptimizer] imagePaths: [
+  '/image/download/about/about-md.webp',
+  '/image/download/about/about-sm.webp',
+  '/image/download/about/about-lg.webp',
+  '/image/download/about/about.png',
+  '/image/download/about/about.jpg'
+]
+[ImageOptimizer] baseName: mission, pagePath: about
+[ImageOptimizer] imagePaths: [
+  '/image/download/about/mission-md.webp',
+  '/image/download/about/mission-sm.webp',
+  '/image/download/about/mission-lg.webp',
+  '/image/download/about/mission.png',
+  '/image/download/about/mission.jpg'
+]
+[ImageOptimizer] baseName: vision, pagePath: about
+[ImageOptimizer] imagePaths: [
+  '/image/download/about/vision-md.webp',
+  '/image/download/about/vision-sm.webp',
+  '/image/download/about/vision-lg.webp',
+  '/image/download/about/vision.png',
+  '/image/download/about/vision.jpg'
+]
+[OpportunityEntity] 画像データ: {
+  originalName: 'employment.png',
+  baseName: 'employment',
+  expectedPath: '/image/download/opportunity/employment.png'
+}
+[ImageOptimizer] baseName: employment, pagePath: opportunity
+[ImageOptimizer] imagePaths: [
+  '/image/download/opportunity/employment-md.webp',
+  '/image/download/opportunity/employment-sm.webp',
+  '/image/download/opportunity/employment-lg.webp',
+  '/image/download/opportunity/employment.png',
+  '/image/download/opportunity/employment.jpg'
+]
+[ImageOptimizer] baseName: ikkyu, pagePath: sponsor
+[ImageOptimizer] imagePaths: [
+  '/image/download/sponsor/ikkyu-md.webp',
+  '/image/download/sponsor/ikkyu-sm.webp',
+  '/image/download/sponsor/ikkyu-lg.webp',
+  '/image/download/sponsor/ikkyu.png',
+  '/image/download/sponsor/ikkyu.jpg'
+]
+[ImageOptimizer] baseName: JBAALogo, pagePath: sponsor
+[ImageOptimizer] imagePaths: [
+  '/image/download/sponsor/JBAALogo-md.webp',
+  '/image/download/sponsor/JBAALogo-sm.webp',
+  '/image/download/sponsor/JBAALogo-lg.webp',
+  '/image/download/sponsor/JBAALogo.png',
+  '/image/download/sponsor/JBAALogo.jpg'
+]
+[ImageOptimizer] baseName: tucsonblossomacpuncture, pagePath: sponsor
+[ImageOptimizer] imagePaths: [
+  '/image/download/sponsor/tucsonblossomacpuncture-md.webp',
+  '/image/download/sponsor/tucsonblossomacpuncture-sm.webp',
+  '/image/download/sponsor/tucsonblossomacpuncture-lg.webp',
+  '/image/download/sponsor/tucsonblossomacpuncture.png',
+  '/image/download/sponsor/tucsonblossomacpuncture.jpg'
+]
+🚫 キャッシュ無効 (greeting): 直接APIから取得します
+🚫 キャッシュ無効 (story): 直接APIから取得します
+🚫 キャッシュ無効 (history): 直接APIから取得します
+🌐 Notion APIから取得中: greeting
+🌐 Notion APIから取得中: story
+🌐 Notion APIから取得中: history
+✅ API取得完了: history (1件)
+✅ API取得完了: greeting (1件)
+✅ API取得完了: story (1件)
+[ImageOptimizer] baseName: Tjsfounders, pagePath: greeting
+[ImageOptimizer] imagePaths: [
+  '/image/download/greeting/Tjsfounders-md.webp',
+  '/image/download/greeting/Tjsfounders-sm.webp',
+  '/image/download/greeting/Tjsfounders-lg.webp',
+  '/image/download/greeting/Tjsfounders.png',
+  '/image/download/greeting/Tjsfounders.jpg'
+]
+[ImageOptimizer] baseName: historty1, pagePath: history
+[ImageOptimizer] imagePaths: [
+  '/image/download/history/historty1-md.webp',
+  '/image/download/history/historty1-sm.webp',
+  '/image/download/history/historty1-lg.webp',
+  '/image/download/history/historty1.png',
+  '/image/download/history/historty1.jpg'
+]
+Warning: ImageOptimizer for "historty1" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+[ImageOptimizer] baseName: historty2, pagePath: history
+[ImageOptimizer] imagePaths: [
+  '/image/download/history/historty2-md.webp',
+  '/image/download/history/historty2-sm.webp',
+  '/image/download/history/historty2-lg.webp',
+  '/image/download/history/historty2.png',
+  '/image/download/history/historty2.jpg'
+]
+Warning: ImageOptimizer for "historty2" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+[ImageOptimizer] baseName: historty3, pagePath: history
+[ImageOptimizer] imagePaths: [
+  '/image/download/history/historty3-md.webp',
+  '/image/download/history/historty3-sm.webp',
+  '/image/download/history/historty3-lg.webp',
+  '/image/download/history/historty3.png',
+  '/image/download/history/historty3.jpg'
+]
+Warning: ImageOptimizer for "historty3" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+🚫 キャッシュ無効 (greeting): 直接APIから取得します
+🚫 キャッシュ無効 (story): 直接APIから取得します
+🚫 キャッシュ無効 (history): 直接APIから取得します
+🌐 Notion APIから取得中: greeting
+🌐 Notion APIから取得中: story
+🌐 Notion APIから取得中: history
+✅ API取得完了: story (1件)
+✅ API取得完了: greeting (1件)
+✅ API取得完了: history (1件)
+[ImageOptimizer] baseName: Tjsfounders, pagePath: greeting
+[ImageOptimizer] imagePaths: [
+  '/image/download/greeting/Tjsfounders-md.webp',
+  '/image/download/greeting/Tjsfounders-sm.webp',
+  '/image/download/greeting/Tjsfounders-lg.webp',
+  '/image/download/greeting/Tjsfounders.png',
+  '/image/download/greeting/Tjsfounders.jpg'
+]
+[ImageOptimizer] baseName: historty1, pagePath: history
+[ImageOptimizer] imagePaths: [
+  '/image/download/history/historty1-md.webp',
+  '/image/download/history/historty1-sm.webp',
+  '/image/download/history/historty1-lg.webp',
+  '/image/download/history/historty1.png',
+  '/image/download/history/historty1.jpg'
+]
+Warning: ImageOptimizer for "historty1" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+[ImageOptimizer] baseName: historty2, pagePath: history
+[ImageOptimizer] imagePaths: [
+  '/image/download/history/historty2-md.webp',
+  '/image/download/history/historty2-sm.webp',
+  '/image/download/history/historty2-lg.webp',
+  '/image/download/history/historty2.png',
+  '/image/download/history/historty2.jpg'
+]
+Warning: ImageOptimizer for "historty2" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+[ImageOptimizer] baseName: historty3, pagePath: history
+[ImageOptimizer] imagePaths: [
+  '/image/download/history/historty3-md.webp',
+  '/image/download/history/historty3-sm.webp',
+  '/image/download/history/historty3-lg.webp',
+  '/image/download/history/historty3.png',
+  '/image/download/history/historty3.jpg'
+]
+Warning: ImageOptimizer for "historty3" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+🚫 キャッシュ無効 (about): 直接APIから取得します
+🚫 キャッシュ無効 (mission): 直接APIから取得します
+🚫 キャッシュ無効 (vision): 直接APIから取得します
+🌐 Notion APIから取得中: about
+🌐 Notion APIから取得中: mission
+🌐 Notion APIから取得中: vision
+✅ API取得完了: mission (1件)
+✅ API取得完了: about (3件)
+✅ API取得完了: vision (1件)
+[convertAboutFromDatabase] Processing item with tag: about, title: About
+[convertAboutFromDatabase] Set aboutSchool
+[convertAboutFromDatabase] Processing item with tag: mission, title: Our Mission
+[convertAboutFromDatabase] Set mission
+[convertAboutFromDatabase] Processing item with tag: vision, title: Our Vision
+[convertAboutFromDatabase] Set vision
+[convertAboutFromDatabase] Final result - aboutSchool: found, mission: found, vision: found
+[ImageOptimizer] baseName: mission, pagePath: about
+[ImageOptimizer] imagePaths: [
+  '/image/download/about/mission-md.webp',
+  '/image/download/about/mission-sm.webp',
+  '/image/download/about/mission-lg.webp',
+  '/image/download/about/mission.png',
+  '/image/download/about/mission.jpg'
+]
+[ImageOptimizer] baseName: vision, pagePath: about
+[ImageOptimizer] imagePaths: [
+  '/image/download/about/vision-md.webp',
+  '/image/download/about/vision-sm.webp',
+  '/image/download/about/vision-lg.webp',
+  '/image/download/about/vision.png',
+  '/image/download/about/vision.jpg'
+]
+[Policy Component] Received policy: {
+  object: 'page',
+  id: '88fe2db2-68f6-4295-ab31-8253d1fda16b',
+  created_time: '2024-09-18T14:32:00.000Z',
+  last_edited_time: '2025-09-05T01:49:00.000Z',
+  created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+  last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+  cover: null,
+  icon: null,
+  parent: {
+    type: 'database_id',
+    database_id: '105a8c0e-cf8c-8082-a456-dd95fd87d0c2'
+  },
+  archived: false,
+  in_trash: false,
+  is_locked: false,
+  properties: {
+    pdf: { id: '%3BCvS', type: 'files', files: [Array] },
+    image: { id: 'tHwI', type: 'files', files: [Array] },
+    'pdf-en': { id: 'tW~u', type: 'files', files: [Array] },
+    en: { id: '%7CJmt', type: 'rich_text', rich_text: [Array] },
+    title: { id: 'title', type: 'title', title: [Array] }
+  },
+  url: 'https://www.notion.so/88fe2db268f64295ab318253d1fda16b',
+  public_url: null
+}
+{
+  pdf: { id: '%3BCvS', type: 'files', files: [ [Object] ] },
+  image: { id: 'tHwI', type: 'files', files: [ [Object] ] },
+  'pdf-en': { id: 'tW~u', type: 'files', files: [ [Object] ] },
+  en: { id: '%7CJmt', type: 'rich_text', rich_text: [ [Object] ] },
+  title: { id: 'title', type: 'title', title: [ [Object] ] }
+}
+[PolicyEntity] properties.image: {
+  id: 'tHwI',
+  type: 'files',
+  files: [ { name: 'setsubun2022.JPG', type: 'file', file: [Object] } ]
+}
+[PolicyEntity] Using files[0]: {
+  name: 'setsubun2022.JPG',
+  type: 'file',
+  file: {
+    url: 'https://prod-files-secure.s3.us-west-2.amazonaws.com/ec34a095-6cd8-48a8-98c7-18f89317c7c4/cd8e3c8d-b536-4bc7-8df9-3a55b148cc0d/setsubun2022.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466XBMQST4U%2F20251017%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20251017T045510Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPL%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIDjopVG4y3Mte1opqpeF4gAyOhnnMYXtnJ6iGMxXAbRBAiEAgI%2FG9vu5Ha8VwMcnDVfcuDC%2FCo%2BNWUMzN0eymb1BQlEqiAQImv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDB2rvS7pu4DPswn9zircAzNyUG4oVvH6B6w%2BD2twJi1jxBffbrmGLB6Ce3nh2xe%2BiN05P%2FjQsg%2F9Phf2QioMUVRS0%2BfxPK7kmyTcNZws%2FALAZqZssAY89LD5ZGUYhn%2FXLpT6%2B93bp5bd6Y2Z9bG1%2Fyoi8pjAB2%2B526wSubzLtpYNY4jZhwwKoPd61aoyN2q0Ic9yzyPnKffuPGaXyjDRh9Cb4JtN3HLVNS1yWajlzETDTezHb%2BPn3ABBMZDddbrwhC7fXP%2BpSqQN47Mq7ENcK4G3T9JGl4Q5CaoUQOWwPZLnpJfixIR2xg%2FaiHMBRCuDYkPg0oA9%2Fh2450n98PTPfkBAi4JobMrzVi5QbRIzcpg%2Brr0FPL7%2FsKHLjVUudujjJ%2BTvIvzsdm3c1inrrYgeu80KtdIdf%2BRpomxnqEYSwET724aGkN43kdwUZiZ4%2BXeiOuwJJDSNBFJXUN5GNMBMDPaeTgoBSecxxOwOipwKKIg7XEhlZta5T2Pc85Vh1rWjbYotDgr4GW5PMVJJjx5ME0DrmR62pGdU8t1AKF9WM1biAAmMrDCBoiqu8t6udc1VpTi8VlqZgTdPGoVYPgwykPeDWANNRzz%2Fgs1e4Q4yiyHBlUcZobRzF73jxIPHT%2Fnr8phTp7EVF1deXkb2MKu0xscGOqUBdID2cWG%2Ftp5eW54F%2F9r4cCx4xkHaDNmqpE3nslKKZGqQp0HVv1PjYcp3hXEw3IVy3J0b6aAgThePea32GFbj7XSKNYmRCCwcbx5kX7lcgsZgstVOT7ZoquwFhcp5tidbwVHI0h0hDHyQCMA%2BzuQtpn4Qvpo1gfA3GxsfmE5KPGD7OO8tU67fXO5Zou4ajgzdF5qMtZfrE0nVceTHJfF49Z%2Frgpay&X-Amz-Signature=6bb5330c36488af71e6010970dd1688bb90c7ee3c707b077fb7973c0c4bef61f&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject',
+    expiry_time: '2025-10-17T05:55:10.028Z'
+  }
+}
+[PolicyEntity] Created image object: {
+  baseName: 'setsubun2022',
+  pagePath: 'policy',
+  alt: 'setsubun2022.JPG',
+  width: null,
+  height: null
+}
+[PolicyEntity] Final image: {
+  baseName: 'setsubun2022',
+  pagePath: 'policy',
+  alt: 'setsubun2022.JPG',
+  width: null,
+  height: null
+}
+============
+{
+  pdf: { id: '%3BCvS', type: 'files', files: [ [Object] ] },
+  image: { id: 'tHwI', type: 'files', files: [ [Object] ] },
+  'pdf-en': { id: 'tW~u', type: 'files', files: [ [Object] ] },
+  en: { id: '%7CJmt', type: 'rich_text', rich_text: [ [Object] ] },
+  title: { id: 'title', type: 'title', title: [ [Object] ] }
+}
+============
+[PolicyEntity] properties.pdf: {
+  id: '%3BCvS',
+  type: 'files',
+  files: [
+    {
+      name: '2025GuidelineBook_ja_20250905.pdf',
+      type: 'file',
+      file: [Object]
+    }
+  ]
+}
+[PolicyEntity] tmpPdfName: 2025GuidelineBook_ja_20250905.pdf
+[PolicyEntity] pdfName: 2025GuidelineBook_ja_20250905.pdf
+[PolicyEntity] Final PDF path: /pdf/download/policy/2025GuidelineBook_ja_20250905.pdf
+[Policy Component] Entity created: PolicyEntity {
+  title: '学校要覧',
+  image: {
+    baseName: 'setsubun2022',
+    pagePath: 'policy',
+    alt: 'setsubun2022.JPG',
+    width: null,
+    height: null
+  },
+  pdf: '/pdf/download/policy/2025GuidelineBook_ja_20250905.pdf'
+}
+[Policy Component] Entity image: {
+  baseName: 'setsubun2022',
+  pagePath: 'policy',
+  alt: 'setsubun2022.JPG',
+  width: null,
+  height: null
+}
+[ImageOptimizer] baseName: setsubun2022, pagePath: policy
+[ImageOptimizer] imagePaths: [
+  '/image/download/policy/setsubun2022-md.webp',
+  '/image/download/policy/setsubun2022-sm.webp',
+  '/image/download/policy/setsubun2022-lg.webp',
+  '/image/download/policy/setsubun2022.png',
+  '/image/download/policy/setsubun2022.jpg'
+]
+Warning: ImageOptimizer for "setsubun2022" is missing width or height props.
+    Consider adding them for better performance and CLS prevention, or use the 'fill' or 'responsive' prop.
+🚫 キャッシュ無効 (directors): 直接APIから取得します
+🚫 キャッシュ無効 (orgChart): 直接APIから取得します
+🚫 キャッシュ無効 (policies): 直接APIから取得します
+🌐 Notion APIから取得中: directors
+🌐 Notion APIから取得中: orgChart
+🌐 Notion APIから取得中: policies
+already exist.
+not pdf file
+✅ API取得完了: directors (5件)
+✅ API取得完了: policies (3件)
+✅ API取得完了: orgChart (1件)
+already exist.
+TypeError: Cannot read properties of null (reading 'map')
+    at /Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/626.js:1:2677
+    at Array.map (<anonymous>)
+    at Directors (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/626.js:1:2006)
+    at Wc (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:68:44)
+    at Zc (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:70:253)
+    at Z (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:76:89)
+    at $c (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:78:98)
+    at bd (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:77:404)
+    at Z (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:76:217)
+    at $c (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:78:98)
+
+Error occurred prerendering page "/en/about/governance". Read more: https://nextjs.org/docs/messages/prerender-error
+TypeError: Cannot read properties of null (reading 'map')
+    at /Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/626.js:1:2677
+    at Array.map (<anonymous>)
+    at Directors (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/.next/server/chunks/626.js:1:2006)
+    at Wc (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:68:44)
+    at Zc (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:70:253)
+    at Z (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:76:89)
+    at $c (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:78:98)
+    at bd (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:77:404)
+    at Z (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:76:217)
+    at $c (/Users/taroyamauchi/projects/next/TucsonJapaneseLanguageSchool/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:78:98)
+🚫 キャッシュ無効 (roleList): 直接APIから取得します
+🚫 キャッシュ無効 (staff): 直接APIから取得します
+🌐 Notion APIから取得中: roleList
+🌐 Notion APIから取得中: staff
+already exist.
+✅ API取得完了: staff (16件)
+already exist.
+already exist.
+✅ API取得完了: roleList (6件)
+Staff data received: [
+  {
+    object: 'page',
+    id: '102a8c0e-cf8c-8032-ba7b-c79866f660eb',
+    created_time: '2024-09-15T21:08:00.000Z',
+    last_edited_time: '2025-06-21T20:03:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    is_locked: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/102a8c0ecf8c8032ba7bc79866f660eb',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '102a8c0e-cf8c-803e-8c91-cdc26abf8c7b',
+    created_time: '2024-09-15T21:02:00.000Z',
+    last_edited_time: '2025-09-04T07:50:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    is_locked: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/102a8c0ecf8c803e8c91cdc26abf8c7b',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '102a8c0e-cf8c-803e-9b33-f2d6b41189c5',
+    created_time: '2024-09-15T21:10:00.000Z',
+    last_edited_time: '2025-09-04T07:57:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    is_locked: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/102a8c0ecf8c803e9b33f2d6b41189c5',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '102a8c0e-cf8c-80a2-9cba-f21c57ac7a99',
+    created_time: '2024-09-15T21:08:00.000Z',
+    last_edited_time: '2025-09-04T07:52:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    is_locked: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/102a8c0ecf8c80a29cbaf21c57ac7a99',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '102a8c0e-cf8c-80b6-a18a-f9a071308672',
+    created_time: '2024-09-15T21:09:00.000Z',
+    last_edited_time: '2025-09-04T07:56:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    is_locked: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/102a8c0ecf8c80b6a18af9a071308672',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '102a8c0e-cf8c-80c8-9391-cb8332a09711',
+    created_time: '2024-09-15T21:09:00.000Z',
+    last_edited_time: '2025-09-04T07:57:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    is_locked: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/102a8c0ecf8c80c89391cb8332a09711',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '102a8c0e-cf8c-80cd-a577-c9351f661364',
+    created_time: '2024-09-15T21:09:00.000Z',
+    last_edited_time: '2025-09-02T05:48:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    is_locked: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/102a8c0ecf8c80cda577c9351f661364',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '102a8c0e-cf8c-80e6-9519-d25acdcfd0ec',
+    created_time: '2024-09-15T21:10:00.000Z',
+    last_edited_time: '2025-09-04T08:02:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    is_locked: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/102a8c0ecf8c80e69519d25acdcfd0ec',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '102a8c0e-cf8c-80f9-bef0-dd401debb8af',
+    created_time: '2024-09-15T21:10:00.000Z',
+    last_edited_time: '2025-09-04T08:01:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    is_locked: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/102a8c0ecf8c80f9bef0dd401debb8af',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '219a8c0e-cf8c-8086-95b6-dbe56a73880d',
+    created_time: '2025-06-21T20:02:00.000Z',
+    last_edited_time: '2025-09-04T07:51:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    is_locked: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/219a8c0ecf8c808695b6dbe56a73880d',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '262a8c0e-cf8c-8087-9157-eccd746e636d',
+    created_time: '2025-09-02T05:49:00.000Z',
+    last_edited_time: '2025-09-04T07:58:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    is_locked: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/262a8c0ecf8c80879157eccd746e636d',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '4377c087-e782-46e3-9eaf-261863837f19',
+    created_time: '2024-09-15T21:13:00.000Z',
+    last_edited_time: '2025-06-21T20:04:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    is_locked: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/4377c087e78246e39eaf261863837f19',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '9a170ec8-c017-4cce-a0dd-d62f2edb82b6',
+    created_time: '2024-09-10T03:57:00.000Z',
+    last_edited_time: '2024-10-17T01:27:00.000Z',
+    created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    is_locked: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/9a170ec8c0174ccea0ddd62f2edb82b6',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: 'c452fe7f-4be8-4bdb-9afb-a32c10afbcab',
+    created_time: '2024-09-15T21:10:00.000Z',
+    last_edited_time: '2025-09-04T08:01:00.000Z',
+    created_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    last_edited_by: { object: 'user', id: '3fda8b5e-8168-4161-bc56-173b84095a41' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    is_locked: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/c452fe7f4be84bdb9afba32c10afbcab',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: 'd65a07cd-7eec-4319-8dbb-f05addf412a9',
+    created_time: '2024-09-10T03:57:00.000Z',
+    last_edited_time: '2024-10-17T01:27:00.000Z',
+    created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    is_locked: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/d65a07cd7eec43198dbbf05addf412a9',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: 'f9633a2c-0dff-4b02-9161-9139ab8919d0',
+    created_time: '2024-09-10T03:57:00.000Z',
+    last_edited_time: '2024-10-17T01:27:00.000Z',
+    created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '9b85f554-b3fc-42dc-b9d3-8f1ec87b168c'
+    },
+    archived: false,
+    in_trash: false,
+    is_locked: false,
+    properties: {
+      text_en: [Object],
+      name_en: [Object],
+      image: [Object],
+      role: [Object],
+      text: [Object],
+      ordering: [Object],
+      name: [Object]
+    },
+    url: 'https://www.notion.so/f9633a2c0dff4b0291619139ab8919d0',
+    public_url: null
+  }
+]
+Role data received: [
+  {
+    object: 'page',
+    id: '122a8c0e-cf8c-808e-88c5-c0446f064f99',
+    created_time: '2024-10-17T01:16:00.000Z',
+    last_edited_time: '2024-10-17T01:19:00.000Z',
+    created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '122a8c0e-cf8c-8005-9934-c64693cc39ca'
+    },
+    archived: false,
+    in_trash: false,
+    is_locked: false,
+    properties: { role: [Object], en: [Object], title: [Object] },
+    url: 'https://www.notion.so/122a8c0ecf8c808e88c5c0446f064f99',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '122a8c0e-cf8c-80ca-bded-ded104c18d96',
+    created_time: '2024-10-17T01:16:00.000Z',
+    last_edited_time: '2024-10-17T01:19:00.000Z',
+    created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '122a8c0e-cf8c-8005-9934-c64693cc39ca'
+    },
+    archived: false,
+    in_trash: false,
+    is_locked: false,
+    properties: { role: [Object], en: [Object], title: [Object] },
+    url: 'https://www.notion.so/122a8c0ecf8c80cabdedded104c18d96',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '122a8c0e-cf8c-80d5-85d2-d4a0673c1797',
+    created_time: '2024-10-17T01:16:00.000Z',
+    last_edited_time: '2024-10-17T01:19:00.000Z',
+    created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '122a8c0e-cf8c-8005-9934-c64693cc39ca'
+    },
+    archived: false,
+    in_trash: false,
+    is_locked: false,
+    properties: { role: [Object], en: [Object], title: [Object] },
+    url: 'https://www.notion.so/122a8c0ecf8c80d585d2d4a0673c1797',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '25697b18-c8e5-48aa-948f-4716cf5e36e8',
+    created_time: '2024-10-17T01:12:00.000Z',
+    last_edited_time: '2024-10-17T01:18:00.000Z',
+    created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '122a8c0e-cf8c-8005-9934-c64693cc39ca'
+    },
+    archived: false,
+    in_trash: false,
+    is_locked: false,
+    properties: { role: [Object], en: [Object], title: [Object] },
+    url: 'https://www.notion.so/25697b18c8e548aa948f4716cf5e36e8',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '31cae8ce-3c54-4a0b-9b18-639b4de347b3',
+    created_time: '2024-10-17T01:12:00.000Z',
+    last_edited_time: '2024-10-17T01:17:00.000Z',
+    created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '122a8c0e-cf8c-8005-9934-c64693cc39ca'
+    },
+    archived: false,
+    in_trash: false,
+    is_locked: false,
+    properties: { role: [Object], en: [Object], title: [Object] },
+    url: 'https://www.notion.so/31cae8ce3c544a0b9b18639b4de347b3',
+    public_url: null
+  },
+  {
+    object: 'page',
+    id: '9ad23647-a425-4c2a-8538-b77219acc481',
+    created_time: '2024-10-17T01:12:00.000Z',
+    last_edited_time: '2024-10-17T01:18:00.000Z',
+    created_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    last_edited_by: { object: 'user', id: '350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4' },
+    cover: null,
+    icon: null,
+    parent: {
+      type: 'database_id',
+      database_id: '122a8c0e-cf8c-8005-9934-c64693cc39ca'
+    },
+    archived: false,
+    in_trash: false,
+    is_locked: false,
+    properties: { role: [Object], en: [Object], title: [Object] },
+    url: 'https://www.notion.so/9ad23647a4254c2a8538b77219acc481',
+    public_url: null
+  }
+]
+Processed role list: [
+  RoleEntity { role: 'nihongo-cafe', title: 'Nihongo Cafe' },
+  RoleEntity { role: 'manager', title: 'Manager' },
+  RoleEntity { role: 'volunteer', title: 'Volunteer' },
+  RoleEntity { role: 'teacher', title: 'Instructor' },
+  RoleEntity { role: 'co-director', title: 'Director ' },
+  RoleEntity { role: 'assistant', title: 'Assistant' }
+]
+Processed staff list: [
+  StaffEntity {
+    name: 'Hitomi McKnight',
+    text: [ [Object] ],
+    role: [ [RoleEntity], [RoleEntity] ],
+    image: {
+      baseName: 'mcknight',
+      pagePath: 'staff',
+      alt: 'mcknight.png',
+      width: null,
+      height: null
+    },
+    ordering: 1
+  },
+  StaffEntity {
+    name: 'Minami Espinosa',
+    text: [ [Object] ],
+    role: [ [RoleEntity], [RoleEntity] ],
+    image: {
+      baseName: 'minami',
+      pagePath: 'staff',
+      alt: 'minami.png',
+      width: null,
+      height: null
+    },
+    ordering: 2
+  },
+  StaffEntity {
+    name: 'Rie Butler',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: 'IMG_1299_edited',
+      pagePath: 'staff',
+      alt: 'IMG_1299_edited.jpg',
+      width: null,
+      height: null
+    },
+    ordering: 3
+  },
+  StaffEntity {
+    name: 'Kokori Schrilla',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: 'Kokori-TJS',
+      pagePath: 'staff',
+      alt: 'Kokori-TJS.jpg',
+      width: null,
+      height: null
+    },
+    ordering: 4
+  },
+  StaffEntity {
+    name: 'Katsuya Sato',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: 'Katsu-TJS',
+      pagePath: 'staff',
+      alt: 'Katsu-TJS.jpg',
+      width: null,
+      height: null
+    },
+    ordering: 5
+  },
+  StaffEntity {
+    name: 'Meg Nakamura',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: 'Meg-TJS',
+      pagePath: 'staff',
+      alt: 'Meg-TJS.jpg',
+      width: null,
+      height: null
+    },
+    ordering: 6
+  },
+  StaffEntity {
+    name: 'Yasir Nemat',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: 'IMG_7879_edited',
+      pagePath: 'staff',
+      alt: 'IMG_7879_edited.jpg',
+      width: null,
+      height: null
+    },
+    ordering: 7
+  },
+  StaffEntity {
+    name: 'Miharu Lee',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: 'IMG_1280_edited',
+      pagePath: 'staff',
+      alt: 'IMG_1280_edited.jpg',
+      width: null,
+      height: null
+    },
+    ordering: 8
+  },
+  StaffEntity {
+    name: 'Manami Okoshi',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: 'Manami-TJS',
+      pagePath: 'staff',
+      alt: 'Manami-TJS.jpg',
+      width: null,
+      height: null
+    },
+    ordering: 9
+  },
+  StaffEntity {
+    name: 'Tasha Waldorf',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: 'profile',
+      pagePath: 'staff',
+      alt: 'profile.jpg',
+      width: null,
+      height: null
+    },
+    ordering: 10
+  },
+  StaffEntity {
+    name: 'Lumi Hisataka',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: 'Lumi-TJS',
+      pagePath: 'staff',
+      alt: 'Lumi-TJS.jpg',
+      width: null,
+      height: null
+    },
+    ordering: 11
+  },
+  StaffEntity {
+    name: 'Hana McKnight',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: 'IMG_7796',
+      pagePath: 'staff',
+      alt: 'IMG_7796.jpeg',
+      width: null,
+      height: null
+    },
+    ordering: 12
+  },
+  StaffEntity {
+    name: 'Emi McKnight',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: 'IMG_7799_edited',
+      pagePath: 'staff',
+      alt: 'IMG_7799_edited.jpg',
+      width: null,
+      height: null
+    },
+    ordering: 13
+  },
+  StaffEntity {
+    name: 'Azumi Uchida',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: 'profile',
+      pagePath: 'staff',
+      alt: 'profile.jpg',
+      width: null,
+      height: null
+    },
+    ordering: 14
+  },
+  StaffEntity {
+    name: ' Kayo Orosco',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: 'Kayo-TJS',
+      pagePath: 'staff',
+      alt: 'Kayo-TJS.jpg',
+      width: null,
+      height: null
+    },
+    ordering: 15
+  },
+  StaffEntity {
+    name: 'Jennider Shioya',
+    text: [ [Object] ],
+    role: [ [RoleEntity] ],
+    image: {
+      baseName: 'profile',
+      pagePath: 'staff',
+      alt: 'profile.jpg',
+      width: null,
+      height: null
+    },
+    ordering: 16
+  }
+]
+[ImageOptimizer] baseName: mcknight, pagePath: staff
+[ImageOptimizer] imagePaths: [
+  '/image/download/staff/mcknight-md.webp',
+  '/image/download/staff/mcknight-sm.webp',
+  '/image/download/staff/mcknight-lg.webp',
+  '/image/download/staff/mcknight.png',
+  '/image/download/staff/mcknight.jpg'
+]
+[ImageOptimizer] baseName: minami, pagePath: staff
+[ImageOptimizer] imagePaths: [
+  '/image/download/staff/minami-md.webp',
+  '/image/download/staff/minami-sm.webp',
+  '/image/download/staff/minami-lg.webp',
+  '/image/download/staff/minami.png',
+  '/image/download/staff/minami.jpg'
+]
+[ImageOptimizer] baseName: IMG_1299_edited, pagePath: staff
+[ImageOptimizer] imagePaths: [
+  '/image/download/staff/IMG_1299_edited-md.webp',
+  '/image/download/staff/IMG_1299_edited-sm.webp',
+  '/image/download/staff/IMG_1299_edited-lg.webp',
+  '/image/download/staff/IMG_1299_edited.png',
+  '/image/download/staff/IMG_1299_edited.jpg'
+]
+[ImageOptimizer] baseName: Kokori-TJS, pagePath: staff
+[ImageOptimizer] imagePaths: [
+  '/image/download/staff/Kokori-TJS-md.webp',
+  '/image/download/staff/Kokori-TJS-sm.webp',
+  '/image/download/staff/Kokori-TJS-lg.webp',
+  '/image/download/staff/Kokori-TJS.png',
+  '/image/download/staff/Kokori-TJS.jpg'
+]
+[ImageOptimizer] baseName: Katsu-TJS, pagePath: staff
+[ImageOptimizer] imagePaths: [
+  '/image/download/staff/Katsu-TJS-md.webp',
+  '/image/download/staff/Katsu-TJS-sm.webp',
+  '/image/download/staff/Katsu-TJS-lg.webp',
+  '/image/download/staff/Katsu-TJS.png',
+  '/image/download/staff/Katsu-TJS.jpg'
+]
+[ImageOptimizer] baseName: Meg-TJS, pagePath: staff
+[ImageOptimizer] imagePaths: [
+  '/image/download/staff/Meg-TJS-md.webp',
+  '/image/download/staff/Meg-TJS-sm.webp',
+  '/image/download/staff/Meg-TJS-lg.webp',
+  '/image/download/staff/Meg-TJS.png',
+  '/image/download/staff/Meg-TJS.jpg'
+]
+[ImageOptimizer] baseName: IMG_7879_edited, pagePath: staff
+[ImageOptimizer] imagePaths: [
+  '/image/download/staff/IMG_7879_edited-md.webp',
+  '/image/download/staff/IMG_7879_edited-sm.webp',
+  '/image/download/staff/IMG_7879_edited-lg.webp',
+  '/image/download/staff/IMG_7879_edited.png',
+  '/image/download/staff/IMG_7879_edited.jpg'
+]
+[ImageOptimizer] baseName: IMG_1280_edited, pagePath: staff
+[ImageOptimizer] imagePaths: [
+  '/image/download/staff/IMG_1280_edited-md.webp',
+  '/image/download/staff/IMG_1280_edited-sm.webp',
+  '/image/download/staff/IMG_1280_edited-lg.webp',
+  '/image/download/staff/IMG_1280_edited.png',
+  '/image/download/staff/IMG_1280_edited.jpg'
+]
+[ImageOptimizer] baseName: Manami-TJS, pagePath: staff
+[ImageOptimizer] imagePaths: [
+  '/image/download/staff/Manami-TJS-md.webp',
+  '/image/download/staff/Manami-TJS-sm.webp',
+  '/image/download/staff/Manami-TJS-lg.webp',
+  '/image/download/staff/Manami-TJS.png',
+  '/image/download/staff/Manami-TJS.jpg'
+]
+[ImageOptimizer] baseName: profile, pagePath: staff
+[ImageOptimizer] imagePaths: [
+  '/image/download/staff/profile-md.webp',
+  '/image/download/staff/profile-sm.webp',
+  '/image/download/staff/profile-lg.webp',
+  '/image/download/staff/profile.png',
+  '/image/download/staff/profile.jpg'
+]
+[ImageOptimizer] baseName: Lumi-TJS, pagePath: staff
+[ImageOptimizer] imagePaths: [
+  '/image/download/staff/Lumi-TJS-md.webp',
+  '/image/download/staff/Lumi-TJS-sm.webp',
+  '/image/download/staff/Lumi-TJS-lg.webp',
+  '/image/download/staff/Lumi-TJS.png',
+  '/image/download/staff/Lumi-TJS.jpg'
+]
+[ImageOptimizer] baseName: IMG_7796, pagePath: staff
+[ImageOptimizer] imagePaths: [
+  '/image/download/staff/IMG_7796-md.webp',
+  '/image/download/staff/IMG_7796-sm.webp',
+  '/image/download/staff/IMG_7796-lg.webp',
+  '/image/download/staff/IMG_7796.png',
+  '/image/download/staff/IMG_7796.jpg'
+]
+[ImageOptimizer] baseName: IMG_7799_edited, pagePath: staff
+[ImageOptimizer] imagePaths: [
+  '/image/download/staff/IMG_7799_edited-md.webp',
+  '/image/download/staff/IMG_7799_edited-sm.webp',
+  '/image/download/staff/IMG_7799_edited-lg.webp',
+  '/image/download/staff/IMG_7799_edited.png',
+  '/image/download/staff/IMG_7799_edited.jpg'
+]
+[ImageOptimizer] baseName: profile, pagePath: staff
+[ImageOptimizer] imagePaths: [
+  '/image/download/staff/profile-md.webp',
+  '/image/download/staff/profile-sm.webp',
+  '/image/download/staff/profile-lg.webp',
+  '/image/download/staff/profile.png',
+  '/image/download/staff/profile.jpg'
+]
+[ImageOptimizer] baseName: Kayo-TJS, pagePath: staff
+[ImageOptimizer] imagePaths: [
+  '/image/download/staff/Kayo-TJS-md.webp',
+  '/image/download/staff/Kayo-TJS-sm.webp',
+  '/image/download/staff/Kayo-TJS-lg.webp',
+  '/image/download/staff/Kayo-TJS.png',
+  '/image/download/staff/Kayo-TJS.jpg'
+]
+[ImageOptimizer] baseName: profile, pagePath: staff
+[ImageOptimizer] imagePaths: [
+  '/image/download/staff/profile-md.webp',
+  '/image/download/staff/profile-sm.webp',
+  '/image/download/staff/profile-lg.webp',
+  '/image/download/staff/profile.png',
+  '/image/download/staff/profile.jpg'
+]
+🚫 キャッシュ無効 (reports): 直接APIから取得します
+🌐 Notion APIから取得中: reports
+✅ API取得完了: reports (2件)
+🚫 キャッシュ無効 (category): 直接APIから取得します
+🚫 キャッシュ無効 (classes): 直接APIから取得します
+🌐 Notion APIから取得中: category
+🌐 Notion APIから取得中: classes
+already exist.
+already exist.
+✅ API取得完了: classes (7件)
+already exist.
+already exist.
+✅ API取得完了: category (2件)
+Class data received: {
+  category: [
+    {
+      object: 'page',
+      id: '99ec02fb-20f3-4fa5-8231-83c45df3f144',
+      created_time: '2024-10-09T07:36:00.000Z',
+      last_edited_time: '2025-09-02T09:40:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      is_locked: false,
+      properties: [Object],
+      url: 'https://www.notion.so/99ec02fb20f34fa5823183c45df3f144',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: 'a995f74b-7721-49eb-b767-2f2c963ad338',
+      created_time: '2024-10-09T07:36:00.000Z',
+      last_edited_time: '2025-09-02T09:39:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      is_locked: false,
+      properties: [Object],
+      url: 'https://www.notion.so/a995f74b772149ebb7672f2c963ad338',
+      public_url: null
+    }
+  ],
+  classes: [
+    {
+      object: 'page',
+      id: '11a3d234-161c-4116-bb01-34eeed87f99a',
+      created_time: '2024-10-09T07:09:00.000Z',
+      last_edited_time: '2025-09-02T09:39:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      is_locked: false,
+      properties: [Object],
+      url: 'https://www.notion.so/11a3d234161c4116bb0134eeed87f99a',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '11aa8c0e-cf8c-8000-b850-fef91292ae8c',
+      created_time: '2024-10-09T07:19:00.000Z',
+      last_edited_time: '2025-09-02T09:40:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      is_locked: false,
+      properties: [Object],
+      url: 'https://www.notion.so/11aa8c0ecf8c8000b850fef91292ae8c',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '11aa8c0e-cf8c-806d-bb6c-f2177df033cb',
+      created_time: '2024-10-09T07:14:00.000Z',
+      last_edited_time: '2025-09-02T09:40:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      is_locked: false,
+      properties: [Object],
+      url: 'https://www.notion.so/11aa8c0ecf8c806dbb6cf2177df033cb',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '11ca8c0e-cf8c-80d3-8615-f7d4f4007cf0',
+      created_time: '2024-10-11T09:43:00.000Z',
+      last_edited_time: '2025-09-05T02:40:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      is_locked: false,
+      properties: [Object],
+      url: 'https://www.notion.so/11ca8c0ecf8c80d38615f7d4f4007cf0',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '11ca8c0e-cf8c-80d8-8fda-ee7d75a0e718',
+      created_time: '2024-10-11T09:38:00.000Z',
+      last_edited_time: '2025-09-02T09:39:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      is_locked: false,
+      properties: [Object],
+      url: 'https://www.notion.so/11ca8c0ecf8c80d88fdaee7d75a0e718',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '53b5c5ad-de13-4cf2-a4c1-407d8d117dce',
+      created_time: '2024-10-09T07:09:00.000Z',
+      last_edited_time: '2025-09-02T09:39:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      is_locked: false,
+      properties: [Object],
+      url: 'https://www.notion.so/53b5c5adde134cf2a4c1407d8d117dce',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '63f53dc4-0f61-4505-abea-ff1ad51668e3',
+      created_time: '2024-10-09T07:09:00.000Z',
+      last_edited_time: '2025-09-05T02:40:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      is_locked: false,
+      properties: [Object],
+      url: 'https://www.notion.so/63f53dc40f614505abeaff1ad51668e3',
+      public_url: null
+    }
+  ]
+}
+[ImageOptimizer] baseName: IMG_1866, pagePath: class
+[ImageOptimizer] imagePaths: [
+  '/image/download/class/IMG_1866-md.webp',
+  '/image/download/class/IMG_1866-sm.webp',
+  '/image/download/class/IMG_1866-lg.webp',
+  '/image/download/class/IMG_1866.png',
+  '/image/download/class/IMG_1866.jpg'
+]
+[ImageOptimizer] baseName: IMG_3364, pagePath: class
+[ImageOptimizer] imagePaths: [
+  '/image/download/class/IMG_3364-md.webp',
+  '/image/download/class/IMG_3364-sm.webp',
+  '/image/download/class/IMG_3364-lg.webp',
+  '/image/download/class/IMG_3364.png',
+  '/image/download/class/IMG_3364.jpg'
+]
+[ImageOptimizer] baseName: 20240210_110201, pagePath: class
+[ImageOptimizer] imagePaths: [
+  '/image/download/class/20240210_110201-md.webp',
+  '/image/download/class/20240210_110201-sm.webp',
+  '/image/download/class/20240210_110201-lg.webp',
+  '/image/download/class/20240210_110201.png',
+  '/image/download/class/20240210_110201.jpg'
+]
+[ImageOptimizer] baseName: IMG_7919, pagePath: class
+[ImageOptimizer] imagePaths: [
+  '/image/download/class/IMG_7919-md.webp',
+  '/image/download/class/IMG_7919-sm.webp',
+  '/image/download/class/IMG_7919-lg.webp',
+  '/image/download/class/IMG_7919.png',
+  '/image/download/class/IMG_7919.jpg'
+]
+[ImageOptimizer] baseName: IMG_7892, pagePath: class
+[ImageOptimizer] imagePaths: [
+  '/image/download/class/IMG_7892-md.webp',
+  '/image/download/class/IMG_7892-sm.webp',
+  '/image/download/class/IMG_7892-lg.webp',
+  '/image/download/class/IMG_7892.png',
+  '/image/download/class/IMG_7892.jpg'
+]
+[ImageOptimizer] baseName: IMG_3338, pagePath: class
+[ImageOptimizer] imagePaths: [
+  '/image/download/class/IMG_3338-md.webp',
+  '/image/download/class/IMG_3338-sm.webp',
+  '/image/download/class/IMG_3338-lg.webp',
+  '/image/download/class/IMG_3338.png',
+  '/image/download/class/IMG_3338.jpg'
+]
+[ImageOptimizer] baseName: IMG_8125, pagePath: class
+[ImageOptimizer] imagePaths: [
+  '/image/download/class/IMG_8125-md.webp',
+  '/image/download/class/IMG_8125-sm.webp',
+  '/image/download/class/IMG_8125-lg.webp',
+  '/image/download/class/IMG_8125.png',
+  '/image/download/class/IMG_8125.jpg'
+]
+🚫 キャッシュ無効 (category): 直接APIから取得します
+🚫 キャッシュ無効 (classes): 直接APIから取得します
+🌐 Notion APIから取得中: category
+🌐 Notion APIから取得中: classes
+✅ API取得完了: category (2件)
+✅ API取得完了: classes (7件)
+Class data received: {
+  category: [
+    {
+      object: 'page',
+      id: '99ec02fb-20f3-4fa5-8231-83c45df3f144',
+      created_time: '2024-10-09T07:36:00.000Z',
+      last_edited_time: '2025-09-02T09:40:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      is_locked: false,
+      properties: [Object],
+      url: 'https://www.notion.so/99ec02fb20f34fa5823183c45df3f144',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: 'a995f74b-7721-49eb-b767-2f2c963ad338',
+      created_time: '2024-10-09T07:36:00.000Z',
+      last_edited_time: '2025-09-02T09:39:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      is_locked: false,
+      properties: [Object],
+      url: 'https://www.notion.so/a995f74b772149ebb7672f2c963ad338',
+      public_url: null
+    }
+  ],
+  classes: [
+    {
+      object: 'page',
+      id: '11a3d234-161c-4116-bb01-34eeed87f99a',
+      created_time: '2024-10-09T07:09:00.000Z',
+      last_edited_time: '2025-09-02T09:39:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      is_locked: false,
+      properties: [Object],
+      url: 'https://www.notion.so/11a3d234161c4116bb0134eeed87f99a',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '11aa8c0e-cf8c-8000-b850-fef91292ae8c',
+      created_time: '2024-10-09T07:19:00.000Z',
+      last_edited_time: '2025-09-02T09:40:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      is_locked: false,
+      properties: [Object],
+      url: 'https://www.notion.so/11aa8c0ecf8c8000b850fef91292ae8c',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '11aa8c0e-cf8c-806d-bb6c-f2177df033cb',
+      created_time: '2024-10-09T07:14:00.000Z',
+      last_edited_time: '2025-09-02T09:40:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      is_locked: false,
+      properties: [Object],
+      url: 'https://www.notion.so/11aa8c0ecf8c806dbb6cf2177df033cb',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '11ca8c0e-cf8c-80d3-8615-f7d4f4007cf0',
+      created_time: '2024-10-11T09:43:00.000Z',
+      last_edited_time: '2025-09-05T02:40:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      is_locked: false,
+      properties: [Object],
+      url: 'https://www.notion.so/11ca8c0ecf8c80d38615f7d4f4007cf0',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '11ca8c0e-cf8c-80d8-8fda-ee7d75a0e718',
+      created_time: '2024-10-11T09:38:00.000Z',
+      last_edited_time: '2025-09-02T09:39:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      is_locked: false,
+      properties: [Object],
+      url: 'https://www.notion.so/11ca8c0ecf8c80d88fdaee7d75a0e718',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '53b5c5ad-de13-4cf2-a4c1-407d8d117dce',
+      created_time: '2024-10-09T07:09:00.000Z',
+      last_edited_time: '2025-09-02T09:39:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      is_locked: false,
+      properties: [Object],
+      url: 'https://www.notion.so/53b5c5adde134cf2a4c1407d8d117dce',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '63f53dc4-0f61-4505-abea-ff1ad51668e3',
+      created_time: '2024-10-09T07:09:00.000Z',
+      last_edited_time: '2025-09-05T02:40:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      in_trash: false,
+      is_locked: false,
+      properties: [Object],
+      url: 'https://www.notion.so/63f53dc40f614505abeaff1ad51668e3',
+      public_url: null
+    }
+  ]
+}
+[ImageOptimizer] baseName: IMG_1866, pagePath: class
+[ImageOptimizer] imagePaths: [
+  '/image/download/class/IMG_1866-md.webp',
+  '/image/download/class/IMG_1866-sm.webp',
+  '/image/download/class/IMG_1866-lg.webp',
+  '/image/download/class/IMG_1866.png',
+  '/image/download/class/IMG_1866.jpg'
+]
+[ImageOptimizer] baseName: IMG_3364, pagePath: class
+[ImageOptimizer] imagePaths: [
+  '/image/download/class/IMG_3364-md.webp',
+  '/image/download/class/IMG_3364-sm.webp',
+  '/image/download/class/IMG_3364-lg.webp',
+  '/image/download/class/IMG_3364.png',
+  '/image/download/class/IMG_3364.jpg'
+]
+[ImageOptimizer] baseName: 20240210_110201, pagePath: class
+[ImageOptimizer] imagePaths: [
+  '/image/download/class/20240210_110201-md.webp',
+  '/image/download/class/20240210_110201-sm.webp',
+  '/image/download/class/20240210_110201-lg.webp',
+  '/image/download/class/20240210_110201.png',
+  '/image/download/class/20240210_110201.jpg'
+]
+[ImageOptimizer] baseName: IMG_7919, pagePath: class
+[ImageOptimizer] imagePaths: [
+  '/image/download/class/IMG_7919-md.webp',
+  '/image/download/class/IMG_7919-sm.webp',
+  '/image/download/class/IMG_7919-lg.webp',
+  '/image/download/class/IMG_7919.png',
+  '/image/download/class/IMG_7919.jpg'
+]
+[ImageOptimizer] baseName: IMG_7892, pagePath: class
+[ImageOptimizer] imagePaths: [
+  '/image/download/class/IMG_7892-md.webp',
+  '/image/download/class/IMG_7892-sm.webp',
+  '/image/download/class/IMG_7892-lg.webp',
+  '/image/download/class/IMG_7892.png',
+  '/image/download/class/IMG_7892.jpg'
+]
+[ImageOptimizer] baseName: IMG_3338, pagePath: class
+[ImageOptimizer] imagePaths: [
+  '/image/download/class/IMG_3338-md.webp',
+  '/image/download/class/IMG_3338-sm.webp',
+  '/image/download/class/IMG_3338-lg.webp',
+  '/image/download/class/IMG_3338.png',
+  '/image/download/class/IMG_3338.jpg'
+]
+[ImageOptimizer] baseName: IMG_8125, pagePath: class
+[ImageOptimizer] imagePaths: [
+  '/image/download/class/IMG_8125-md.webp',
+  '/image/download/class/IMG_8125-sm.webp',
+  '/image/download/class/IMG_8125-lg.webp',
+  '/image/download/class/IMG_8125.png',
+  '/image/download/class/IMG_8125.jpg'
+]
+🚫 キャッシュ無効 (schedule): 直接APIから取得します
+🚫 キャッシュ無効 (files): 直接APIから取得します
+🌐 Notion APIから取得中: schedule
+🌐 Notion APIから取得中: files
+✅ API取得完了: files (1件)
+✅ API取得完了: schedule (48件)
+=== 運動会予行データのデバッグ ===
+元のデータ: {
+  title: 'Sports Day Rehearsal',
+  start: '2025-11-01T09:00:00.000-07:00',
+  end: '2025-11-01T11:00:00.000-07:00',
+  startStr: '2025-11-01T09:00:00.000-07:00',
+  endStr: '2025-11-01T11:00:00.000-07:00',
+  allDay: false,
+  dateTime: '2025-11-01T09:00:00.000-07:00'
+}
+処理後: {
+  startDate: '2025-11-01T09:00:00.000Z',
+  endDate: '2025-11-01T11:00:00.000Z'
+}
+Date オブジェクト: 2025-11-01T09:00:00.000Z
+現在のタイムゾーン: Asia/Tokyo
+FullCalendarに渡すデータ: {
+  id: '11aa8c0e-cf8c-805b-a1b7-d797bf51903a',
+  title: 'Sports Day Rehearsal',
+  start: '2025-11-01T09:00:00.000Z',
+  end: '2025-11-01T11:00:00.000Z',
+  allDay: false,
+  backgroundColor: 'orange',
+  borderColor: 'orange',
+  editable: false,
+  extendedProps: {
+    description: 'Sports Day Rehearsal',
+    location: 'International School of Tucson1701 East Seneca Street, Tucson, AZ 85719',
+    isEvent: true
+  }
+}
+already exist.
+already exist.
+not pdf file
+KanjiKenteiPage props: { kanjiKenteiData: true, locale: 'en' }
+already exist.
+not pdf file
+already exist.
+KanjiKenteiPage props: { kanjiKenteiData: true, locale: 'en' }
+already exist.
+not pdf file
+already exist.
+🚫 キャッシュ無効 (qualification): 直接APIから取得します
+🚫 キャッシュ無効 (price): 直接APIから取得します
+🚫 キャッシュ無効 (discountFamily): 直接APIから取得します
+🚫 キャッシュ無効 (discountStaff): 直接APIから取得します
+🚫 キャッシュ無効 (enrollment): 直接APIから取得します
+🌐 Notion APIから取得中: qualification
+🌐 Notion APIから取得中: price
+🌐 Notion APIから取得中: discountFamily
+🌐 Notion APIから取得中: discountStaff
+🌐 Notion APIから取得中: enrollment
+✅ API取得完了: qualification (3件)
+✅ API取得完了: discountStaff (3件)
+✅ API取得完了: enrollment (2件)
+✅ API取得完了: discountFamily (3件)
+✅ API取得完了: price (8件)
+🚫 キャッシュ無効 (qualification): 直接APIから取得します
+🚫 キャッシュ無効 (price): 直接APIから取得します
+🚫 キャッシュ無効 (discountFamily): 直接APIから取得します
+🚫 キャッシュ無効 (discountStaff): 直接APIから取得します
+🚫 キャッシュ無効 (enrollment): 直接APIから取得します
+🌐 Notion APIから取得中: qualification
+🌐 Notion APIから取得中: price
+🌐 Notion APIから取得中: discountFamily
+🌐 Notion APIから取得中: discountStaff
+🌐 Notion APIから取得中: enrollment
+✅ API取得完了: enrollment (2件)
+✅ API取得完了: discountFamily (3件)
+✅ API取得完了: qualification (3件)
+✅ API取得完了: price (8件)
+✅ API取得完了: discountStaff (3件)
+🚀 グローバルキャッシュから取得: news
+[ImageOptimizer] baseName: 11th_Annual_Sports_Day_flyer, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/11th_Annual_Sports_Day_flyer-md.webp',
+  '/image/download/news/11th_Annual_Sports_Day_flyer-sm.webp',
+  '/image/download/news/11th_Annual_Sports_Day_flyer-lg.webp',
+  '/image/download/news/11th_Annual_Sports_Day_flyer.png',
+  '/image/download/news/11th_Annual_Sports_Day_flyer.jpg'
+]
+[ImageOptimizer] baseName: Maxzeeks_visit-tjs.jpeg, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/Maxzeeks_visit-tjs.jpeg-md.webp',
+  '/image/download/news/Maxzeeks_visit-tjs.jpeg-sm.webp',
+  '/image/download/news/Maxzeeks_visit-tjs.jpeg-lg.webp',
+  '/image/download/news/Maxzeeks_visit-tjs.jpeg.png',
+  '/image/download/news/Maxzeeks_visit-tjs.jpeg.jpg'
+]
+[ImageOptimizer] baseName: Dangomaking2022, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/Dangomaking2022-md.webp',
+  '/image/download/news/Dangomaking2022-sm.webp',
+  '/image/download/news/Dangomaking2022-lg.webp',
+  '/image/download/news/Dangomaking2022.png',
+  '/image/download/news/Dangomaking2022.jpg'
+]
+[ImageOptimizer] baseName: Kanjikentei2025poster, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/Kanjikentei2025poster-md.webp',
+  '/image/download/news/Kanjikentei2025poster-sm.webp',
+  '/image/download/news/Kanjikentei2025poster-lg.webp',
+  '/image/download/news/Kanjikentei2025poster.png',
+  '/image/download/news/Kanjikentei2025poster.jpg'
+]
+[ImageOptimizer] baseName: 縦版　ツーソン大運動会ポスター__(9.4.2024), pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/縦版　ツーソン大運動会ポスター__(9.4.2024)-md.webp',
+  '/image/download/news/縦版　ツーソン大運動会ポスター__(9.4.2024)-sm.webp',
+  '/image/download/news/縦版　ツーソン大運動会ポスター__(9.4.2024)-lg.webp',
+  '/image/download/news/縦版　ツーソン大運動会ポスター__(9.4.2024).png',
+  '/image/download/news/縦版　ツーソン大運動会ポスター__(9.4.2024).jpg'
+]
+[ImageOptimizer] baseName: unitymural02, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/unitymural02-md.webp',
+  '/image/download/news/unitymural02-sm.webp',
+  '/image/download/news/unitymural02-lg.webp',
+  '/image/download/news/unitymural02.png',
+  '/image/download/news/unitymural02.jpg'
+]
+[ImageOptimizer] baseName: sakura_radio_minnano_gakko, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/sakura_radio_minnano_gakko-md.webp',
+  '/image/download/news/sakura_radio_minnano_gakko-sm.webp',
+  '/image/download/news/sakura_radio_minnano_gakko-lg.webp',
+  '/image/download/news/sakura_radio_minnano_gakko.png',
+  '/image/download/news/sakura_radio_minnano_gakko.jpg'
+]
+[ImageOptimizer] baseName: sakura_radio_minnano_gakko, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/sakura_radio_minnano_gakko-md.webp',
+  '/image/download/news/sakura_radio_minnano_gakko-sm.webp',
+  '/image/download/news/sakura_radio_minnano_gakko-lg.webp',
+  '/image/download/news/sakura_radio_minnano_gakko.png',
+  '/image/download/news/sakura_radio_minnano_gakko.jpg'
+]
+[ImageOptimizer] baseName: schooltablechair, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/schooltablechair-md.webp',
+  '/image/download/news/schooltablechair-sm.webp',
+  '/image/download/news/schooltablechair-lg.webp',
+  '/image/download/news/schooltablechair.png',
+  '/image/download/news/schooltablechair.jpg'
+]
+[ImageOptimizer] baseName: japanesegarden, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/japanesegarden-md.webp',
+  '/image/download/news/japanesegarden-sm.webp',
+  '/image/download/news/japanesegarden-lg.webp',
+  '/image/download/news/japanesegarden.png',
+  '/image/download/news/japanesegarden.jpg'
+]
+[ImageOptimizer] baseName: notoearthquake1, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/notoearthquake1-md.webp',
+  '/image/download/news/notoearthquake1-sm.webp',
+  '/image/download/news/notoearthquake1-lg.webp',
+  '/image/download/news/notoearthquake1.png',
+  '/image/download/news/notoearthquake1.jpg'
+]
+🚀 グローバルキャッシュから取得: event
+[ImageOptimizer] baseName: 2026kenken, pagePath: event
+[ImageOptimizer] imagePaths: [
+  '/image/download/event/2026kenken-md.webp',
+  '/image/download/event/2026kenken-sm.webp',
+  '/image/download/event/2026kenken-lg.webp',
+  '/image/download/event/2026kenken.png',
+  '/image/download/event/2026kenken.jpg'
+]
+[ImageOptimizer] baseName: 11th_Annual_Sports_Day_flyer, pagePath: event
+[ImageOptimizer] imagePaths: [
+  '/image/download/event/11th_Annual_Sports_Day_flyer-md.webp',
+  '/image/download/event/11th_Annual_Sports_Day_flyer-sm.webp',
+  '/image/download/event/11th_Annual_Sports_Day_flyer-lg.webp',
+  '/image/download/event/11th_Annual_Sports_Day_flyer.png',
+  '/image/download/event/11th_Annual_Sports_Day_flyer.jpg'
+]
+🚫 キャッシュ無効 (sponsors): 直接APIから取得します
+🚫 キャッシュ無効 (support): 直接APIから取得します
+🚫 キャッシュ無効 (sponsor): 直接APIから取得します
+🚫 キャッシュ無効 (donation): 直接APIから取得します
+🚫 キャッシュ無効 (howto): 直接APIから取得します
+🌐 Notion APIから取得中: sponsors
+🌐 Notion APIから取得中: support
+🌐 Notion APIから取得中: sponsor
+🌐 Notion APIから取得中: donation
+🌐 Notion APIから取得中: howto
+✅ API取得完了: donation (1件)
+✅ API取得完了: support (1件)
+✅ API取得完了: howto (3件)
+✅ API取得完了: sponsors (3件)
+✅ API取得完了: sponsor (1件)
+[ImageOptimizer] baseName: ikkyu, pagePath: sponsor
+[ImageOptimizer] imagePaths: [
+  '/image/download/sponsor/ikkyu-md.webp',
+  '/image/download/sponsor/ikkyu-sm.webp',
+  '/image/download/sponsor/ikkyu-lg.webp',
+  '/image/download/sponsor/ikkyu.png',
+  '/image/download/sponsor/ikkyu.jpg'
+]
+[ImageOptimizer] baseName: JBAALogo, pagePath: sponsor
+[ImageOptimizer] imagePaths: [
+  '/image/download/sponsor/JBAALogo-md.webp',
+  '/image/download/sponsor/JBAALogo-sm.webp',
+  '/image/download/sponsor/JBAALogo-lg.webp',
+  '/image/download/sponsor/JBAALogo.png',
+  '/image/download/sponsor/JBAALogo.jpg'
+]
+[ImageOptimizer] baseName: tucsonblossomacpuncture, pagePath: sponsor
+[ImageOptimizer] imagePaths: [
+  '/image/download/sponsor/tucsonblossomacpuncture-md.webp',
+  '/image/download/sponsor/tucsonblossomacpuncture-sm.webp',
+  '/image/download/sponsor/tucsonblossomacpuncture-lg.webp',
+  '/image/download/sponsor/tucsonblossomacpuncture.png',
+  '/image/download/sponsor/tucsonblossomacpuncture.jpg'
+]
+🚫 キャッシュ無効 (general): 直接APIから取得します
+🌐 Notion APIから取得中: general
+✅ API取得完了: general (1件)
+🚫 キャッシュ無効 (opportunity): 直接APIから取得します
+🚫 キャッシュ無効 (general): 直接APIから取得します
+🌐 Notion APIから取得中: opportunity
+🌐 Notion APIから取得中: general
+✅ API取得完了: opportunity (3件)
+✅ API取得完了: general (1件)
+🚀 グローバルキャッシュから取得: news
+[ImageOptimizer] baseName: unitymural02, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/unitymural02-md.webp',
+  '/image/download/news/unitymural02-sm.webp',
+  '/image/download/news/unitymural02-lg.webp',
+  '/image/download/news/unitymural02.png',
+  '/image/download/news/unitymural02.jpg'
+]
+🚀 グローバルキャッシュから取得: news
+[ImageOptimizer] baseName: Oasissep2017, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/Oasissep2017-md.webp',
+  '/image/download/news/Oasissep2017-sm.webp',
+  '/image/download/news/Oasissep2017-lg.webp',
+  '/image/download/news/Oasissep2017.png',
+  '/image/download/news/Oasissep2017.jpg'
+]
+   Generating static pages (88/130) 
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+[ImageOptimizer] baseName: japanesegarden, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/japanesegarden-md.webp',
+  '/image/download/news/japanesegarden-sm.webp',
+  '/image/download/news/japanesegarden-lg.webp',
+  '/image/download/news/japanesegarden.png',
+  '/image/download/news/japanesegarden.jpg'
+]
+🚀 グローバルキャッシュから取得: news
+[ImageOptimizer] baseName: tucsonundokai2023, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/tucsonundokai2023-md.webp',
+  '/image/download/news/tucsonundokai2023-sm.webp',
+  '/image/download/news/tucsonundokai2023-lg.webp',
+  '/image/download/news/tucsonundokai2023.png',
+  '/image/download/news/tucsonundokai2023.jpg'
+]
+🚀 グローバルキャッシュから取得: news
+[ImageOptimizer] baseName: notoearthquake1, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/notoearthquake1-md.webp',
+  '/image/download/news/notoearthquake1-sm.webp',
+  '/image/download/news/notoearthquake1-lg.webp',
+  '/image/download/news/notoearthquake1.png',
+  '/image/download/news/notoearthquake1.jpg'
+]
+🚀 グローバルキャッシュから取得: news
+[ImageOptimizer] baseName: newyearprayer, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/newyearprayer-md.webp',
+  '/image/download/news/newyearprayer-sm.webp',
+  '/image/download/news/newyearprayer-lg.webp',
+  '/image/download/news/newyearprayer.png',
+  '/image/download/news/newyearprayer.jpg'
+]
+🚀 グローバルキャッシュから取得: news
+[ImageOptimizer] baseName: kanjikentei2024, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/kanjikentei2024-md.webp',
+  '/image/download/news/kanjikentei2024-sm.webp',
+  '/image/download/news/kanjikentei2024-lg.webp',
+  '/image/download/news/kanjikentei2024.png',
+  '/image/download/news/kanjikentei2024.jpg'
+]
+🚀 グローバルキャッシュから取得: news
+[ImageOptimizer] baseName: schooltablechair, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/schooltablechair-md.webp',
+  '/image/download/news/schooltablechair-sm.webp',
+  '/image/download/news/schooltablechair-lg.webp',
+  '/image/download/news/schooltablechair.png',
+  '/image/download/news/schooltablechair.jpg'
+]
+🚀 グローバルキャッシュから取得: news
+🚀 グローバルキャッシュから取得: news
+[ImageOptimizer] baseName: arizonamatsurilogo, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/arizonamatsurilogo-md.webp',
+  '/image/download/news/arizonamatsurilogo-sm.webp',
+  '/image/download/news/arizonamatsurilogo-lg.webp',
+  '/image/download/news/arizonamatsurilogo.png',
+  '/image/download/news/arizonamatsurilogo.jpg'
+]
+   Generating static pages (97/130) 
+🚀 グローバルキャッシュから取得: news
+[ImageOptimizer] baseName: supportinghands, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/supportinghands-md.webp',
+  '/image/download/news/supportinghands-sm.webp',
+  '/image/download/news/supportinghands-lg.webp',
+  '/image/download/news/supportinghands.png',
+  '/image/download/news/supportinghands.jpg'
+]
+🚀 グローバルキャッシュから取得: news
+[ImageOptimizer] baseName: childreninclassroom, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/childreninclassroom-md.webp',
+  '/image/download/news/childreninclassroom-sm.webp',
+  '/image/download/news/childreninclassroom-lg.webp',
+  '/image/download/news/childreninclassroom.png',
+  '/image/download/news/childreninclassroom.jpg'
+]
+🚀 グローバルキャッシュから取得: news
+[ImageOptimizer] baseName: hitomimcknight, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/hitomimcknight-md.webp',
+  '/image/download/news/hitomimcknight-sm.webp',
+  '/image/download/news/hitomimcknight-lg.webp',
+  '/image/download/news/hitomimcknight.png',
+  '/image/download/news/hitomimcknight.jpg'
+]
+🚀 グローバルキャッシュから取得: news
+[ImageOptimizer] baseName: kanken2022, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/kanken2022-md.webp',
+  '/image/download/news/kanken2022-sm.webp',
+  '/image/download/news/kanken2022-lg.webp',
+  '/image/download/news/kanken2022.png',
+  '/image/download/news/kanken2022.jpg'
+]
+🚀 グローバルキャッシュから取得: news
+[ImageOptimizer] baseName: kanjikentei2020, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/kanjikentei2020-md.webp',
+  '/image/download/news/kanjikentei2020-sm.webp',
+  '/image/download/news/kanjikentei2020-lg.webp',
+  '/image/download/news/kanjikentei2020.png',
+  '/image/download/news/kanjikentei2020.jpg'
+]
+🚀 グローバルキャッシュから取得: news
+[ImageOptimizer] baseName: 2020newyear, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/2020newyear-md.webp',
+  '/image/download/news/2020newyear-sm.webp',
+  '/image/download/news/2020newyear-lg.webp',
+  '/image/download/news/2020newyear.png',
+  '/image/download/news/2020newyear.jpg'
+]
+🚀 グローバルキャッシュから取得: news
+[ImageOptimizer] baseName: schoolchildrensmiles, pagePath: news
+[ImageOptimizer] imagePaths: [
+  '/image/download/news/schoolchildrensmiles-md.webp',
+  '/image/download/news/schoolchildrensmiles-sm.webp',
+  '/image/download/news/schoolchildrensmiles-lg.webp',
+  '/image/download/news/schoolchildrensmiles.png',
+  '/image/download/news/schoolchildrensmiles.jpg'
+]
+🚀 グローバルキャッシュから取得: news

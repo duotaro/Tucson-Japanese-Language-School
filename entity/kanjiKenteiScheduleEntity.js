@@ -1,4 +1,4 @@
-import { formatDateForCalander } from "../utils/dateUtils"
+import { formatDateWithDay, formatDateForCalander } from "../utils/dateUtils"
 
 export class KanjiKenteiScheduleEntity {
     constructor(item, isJpn) {
@@ -9,6 +9,7 @@ export class KanjiKenteiScheduleEntity {
             this.schoolYear = null;
             this.examDate = null;
             this.formattedExamDate = null;
+            this.formattedExamDate2 = null;
             return;
         }
 
@@ -31,9 +32,13 @@ export class KanjiKenteiScheduleEntity {
 
         // 日付をフォーマット（アリゾナ時間で表示）
         if (this.examDate) {
-            this.formattedExamDate = formatDateForCalander(this.examDate, isJpn);
+            this.formattedExamDate = formatDateWithDay(this.examDate, isJpn);
+            this.formattedExamDate2 = formatDateForCalander(this.examDate, isJpn);
         } else {
             this.formattedExamDate = null;
+            this.formattedExamDate2 = null;
         }
+
+        
     }
 }
