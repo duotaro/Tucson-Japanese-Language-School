@@ -67,31 +67,6 @@ export default function KanjiKenteiPage({ kanjiKenteiData, locale }) {
             })
         : [];
 
-      // コンソールに出力して確認
-      console.log('=== 漢検概要データ ===');
-      console.log('Raw Data:', kanjiKenteiData.overview);
-      console.log('Entities:', overviewEntities);
-
-      console.log('=== 漢検教材データ ===');
-      console.log('Raw Data:', kanjiKenteiData.materials);
-      console.log('Entities:', materialEntities);
-
-      console.log('=== 漢検日程データ ===');
-      console.log('Raw Data:', kanjiKenteiData.schedule);
-      console.log('Entities:', scheduleEntities);
-
-      console.log('=== 漢検会場データ ===');
-      console.log('Raw Data:', kanjiKenteiData.venue);
-      console.log('Entities:', venueEntities);
-
-      console.log('=== 漢検申し込み期限データ ===');
-      console.log('Raw Data:', kanjiKenteiData.deadline);
-      console.log('Entities:', deadlineEntities);
-
-      console.log('=== 漢検会場画像データ ===');
-      console.log('Raw Data:', kanjiKenteiData.venueImages);
-      console.log('Entities:', venueImagesEntities);
-
       // ステートに保存
       setOverviewData(overviewEntities);
       setMaterialsData(materialEntities);
@@ -340,9 +315,9 @@ export default function KanjiKenteiPage({ kanjiKenteiData, locale }) {
                     <p className="text-gray-500">{isJpn ? '画像を読み込み中...' : 'Loading image...'}</p>
                   </div>
                 )}
-                {image.title && (
+                {/* {image.title && (
                   <p className="text-center text-sm text-gray-600 mt-2">{image.title}</p>
-                )}
+                )} */}
               </div>
             ))}
           </div>

@@ -34,9 +34,12 @@ jobs:
         with:
           node-version: ${{ env.NODE_VERSION }}
 
+      - name: 📦 Enable Corepack
+        run: corepack enable
+
       - name: 📦 Setup Yarn
         run: |
-          npm install -g yarn@${{ env.YARN_VERSION }}
+          corepack prepare yarn@${{ env.YARN_VERSION }} --activate
           yarn --version
 
       - name: 🔄 Cache node_modules
