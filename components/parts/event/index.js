@@ -103,7 +103,7 @@ export default function Event({ list, isTop, locale="ja" }) {
       )}
       <div className="container px-6 mx-auto">
         {/* 年度選択ドロップダウン（トップページ以外で表示） */}
-        {!isTop && (
+        {/* {!isTop && (
           <div className="mb-6 flex justify-center">
             <div className="inline-block">
               <label htmlFor="year-filter" className="block text-sm font-medium text-gray-700 mb-2">
@@ -122,7 +122,7 @@ export default function Event({ list, isTop, locale="ja" }) {
               </select>
             </div>
           </div>
-        )}
+        )} */}
 
         <div className={divClass}>
           {!filteredList || filteredList.length == 0 && (

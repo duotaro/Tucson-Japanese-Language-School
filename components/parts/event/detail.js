@@ -9,6 +9,7 @@ import LocaleLink from "../menu/LocaleLink";
 
 export default function EventDetail({ item, locale="ja" }) {
   const { json } = useLocale(locale)
+  const isJpn = locale === 'ja';
 
   let {id, page} = item
   let entity = new EventEntity(page, locale == "ja")
@@ -64,9 +65,9 @@ export default function EventDetail({ item, locale="ja" }) {
             <div>
               {/* Tag and Date */}
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3 gap-2">
-                <span className="inline-block px-3 py-1 text-xs font-medium bg-green-100 text-green-800 rounded-full hover:bg-green-200 transition-colors duration-200 w-fit">
+                {/* <span className="inline-block px-3 py-1 text-xs font-medium bg-green-100 text-green-800 rounded-full hover:bg-green-200 transition-colors duration-200 w-fit">
                   {entity.tag && entity.tag.name ? entity.tag.name : 'イベント'}
-                </span>
+                </span> */}
                 <div className="flex items-center text-sm text-gray-500">
                   <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
@@ -91,7 +92,7 @@ export default function EventDetail({ item, locale="ja" }) {
             {/* Read More */}
             <div className="flex justify-end">
               <span className="text-green-600 text-sm font-medium group-hover:text-green-700 transition-colors duration-200 inline-flex items-center">
-                詳細を見る
+                {isJpn ? "詳細を見る" : "Details"}
                 <svg className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
