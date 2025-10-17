@@ -362,7 +362,7 @@ export default function Calender({files, list, locale="ja"}) {
                   </ul>
               </div>
           </div>
-          {res.pdf && (
+          {/* {res.pdf && (
             <div className="flex justify-center m-8">
               <a
                 href={res.pdf}
@@ -374,12 +374,12 @@ export default function Calender({files, list, locale="ja"}) {
                 <span className="text-sm lg:text-base">{`${json.calender.download}`}</span>
               </a>
             </div>
-          )}
+          )} */}
         </div>
       </Section>
       
-      {/* <Section> */}
-          {/* <div className="flex flex-col justify-center items-center mb-2 ">
+      <Section>
+          <div className="flex flex-col justify-center items-center mb-2 ">
             <Title title={`${json.calender.title}`} />
           </div>
           {res.pdf && (
@@ -394,12 +394,12 @@ export default function Calender({files, list, locale="ja"}) {
                 <span className="text-sm lg:text-base">{`${json.calender.download}`}</span>
               </a>
             </div>
-          )} */}
-          {/* <div className="flex-1">
+          )}
+          <div className="flex-1">
             <FullCalendar
               ref={calendarRef}
               locale={locale}
-              timeZone="America/Phoenix"
+              // timeZone="America/Phoenix"
               plugins={[
                 dayGridPlugin,
                 interactionPlugin,
@@ -451,8 +451,8 @@ export default function Calender({files, list, locale="ja"}) {
                 }
               }}}
             />
-          </div> */}
-      {/* </Section> */}
+          </div>
+      </Section>
       <Transition appear show={isModalOpen} as="div">
         <Dialog as="div" className="relative z-50" onClose={closeModal}>
           <Transition.Child
