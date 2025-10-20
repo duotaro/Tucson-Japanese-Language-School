@@ -8,7 +8,7 @@ import Philosophy from "../../parts/about/mission/philosophy.js";
 import Policy from "../../parts/about/mission/policy.js";
 
 export default function MissionPage({ about, philosophy, policy, locale }) {
-  const { json, metaTitleExtension } = useLocale(locale)
+  const { json, titleSuffix } = useLocale(locale)
   let lang = json.navigation
 
   let {mission, vision} = convertAboutFromDatabase(about, locale == "ja")
@@ -20,7 +20,7 @@ export default function MissionPage({ about, philosophy, policy, locale }) {
   return (
     <>
       <Head>
-        <title>{lang.mission} - {metaTitleExtension} </title>
+        <title>{lang.mission} - {titleSuffix} </title>
         <meta name="description" content={`${lang.mission} - ${json?.navigation?.description || lang.mission}`} />
         
         {/* Language alternatives for SEO */}

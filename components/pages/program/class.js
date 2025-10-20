@@ -4,13 +4,13 @@ import { useLocale } from "../../../utils/locale";
 import ClassComponent from "../../parts/program/class/index.js";
 
 export default function ClassPage({ category, classes, locale }) {
-  const { json, metaTitleExtension } = useLocale(locale)
+  const { json, titleSuffix } = useLocale(locale)
   let lang = json.navigation
 
   return (
     <>
       <Head>
-        <title>{lang.class} - {metaTitleExtension} </title>
+        <title>{lang.class} - {titleSuffix} </title>
         <meta name="description" content={`${lang.class} - ${json?.navigation?.description || lang.class}`} />
         
         {/* Language alternatives for SEO */}

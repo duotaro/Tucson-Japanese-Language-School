@@ -7,7 +7,7 @@ import Paragraphs from "../../parts/text/paragraphs";
 import Section from "../../parts/section";
 
 export default function OpportunityPage({ opportunities, general, locale }) {
-  const { json, metaTitleExtension } = useLocale(locale)
+  const { json, titleSuffix } = useLocale(locale)
   let lang = json.navigation
 
   const title = locale == "ja" ? general?.properties["title"]?.title[0]?.text?.content : general?.properties["en"]?.rich_text[0]?.text?.content
@@ -30,7 +30,7 @@ export default function OpportunityPage({ opportunities, general, locale }) {
   return (
     <>
       <Head>
-        <title>{lang.opportunity} - {metaTitleExtension} </title>
+        <title>{lang.opportunity} - {titleSuffix} </title>
         <meta name="description" content={`${lang.opportunity} - ${json?.navigation?.description || lang.opportunity}`} />
         
         {/* Language alternatives for SEO */}

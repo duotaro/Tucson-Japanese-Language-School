@@ -268,13 +268,13 @@ const renderBlock = (block, eventId) => {
 };
 
 export default function EventDetailPage({ eventItem, locale, eventId, pageMap, blockMap, detailPage }) {
-  const { json, metaTitleExtension } = useLocale(locale)
+  const { json, titleSuffix } = useLocale(locale)
 
   if (!eventItem) {
     return (
       <>
         <Head>
-          <title>Event Not Found - {metaTitleExtension}</title>
+          <title>Event Not Found - {titleSuffix}</title>
         </Head>
         <div className="container px-6 mx-auto py-12">
           <div className="text-center">
@@ -302,7 +302,7 @@ export default function EventDetailPage({ eventItem, locale, eventId, pageMap, b
     return (
       <>
         <Head>
-          <title>{title} - {metaTitleExtension}</title>
+          <title>{title} - {titleSuffix}</title>
           <meta name="description" content={`${title} - ${json?.navigation?.description || title}`} />
 
           {/* Language alternatives for SEO */}
@@ -399,7 +399,7 @@ export default function EventDetailPage({ eventItem, locale, eventId, pageMap, b
   return (
     <>
       <Head>
-        <title>{pageTitle} - {metaTitleExtension}</title>
+        <title>{pageTitle} - {titleSuffix}</title>
         <meta name="description" content={`${pageTitle} - ${json?.navigation?.description || pageTitle}`} />
 
         {/* Language alternatives for SEO */}

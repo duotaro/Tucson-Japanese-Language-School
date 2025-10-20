@@ -61,7 +61,10 @@
       "Bash(git add:*)",
       "Bash(git commit:*)",
       "Bash(git push:*)",
-      "Bash(yarn --version)"
+      "Bash(yarn --version)",
+      "Bash(for file in ./contact/index.js ./contact/opportunity.js ./about/staff.js ./about/welcome.js ./about/governance.js ./about/report.js ./about/mission.js ./support.js ./news/index.js ./news/detail.js ./admissions/forms.js ./program/events.js ./program/nihongocafe.js ./program/kanji_kentei.js ./program/class.js ./event/index.js ./event/detail.js)",
+      "Bash(do sed -i '' 's/{metaTitleExtension}/{titleSuffix}/g' \"$file\")",
+      "Bash(done)"
     ],
     "deny": []
   }

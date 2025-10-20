@@ -15,7 +15,7 @@ import { updateEntityPaths } from '../../../utils/filePathUtils';
 export default function KanjiKenteiPage({ kanjiKenteiData, locale }) {
   console.log('KanjiKenteiPage props:', { kanjiKenteiData: !!kanjiKenteiData, locale });
 
-  const { json, metaTitleExtension } = useLocale(locale || 'ja')
+  const { json, titleSuffix } = useLocale(locale || 'ja')
   let lang = json.navigation
   const isJpn = locale === 'ja';
   const [overviewData, setOverviewData] = useState([]);
@@ -128,7 +128,7 @@ export default function KanjiKenteiPage({ kanjiKenteiData, locale }) {
   return (
     <>
       <Head>
-        <title>{lang.kanjikentei} - {metaTitleExtension} </title>
+        <title>{lang.kanjikentei} - {titleSuffix} </title>
         <meta name="description" content={`${lang.kanjikentei} - ${json?.navigation?.description || lang.kanjikentei}`} />
         
         {/* Language alternatives for SEO */}

@@ -7,13 +7,13 @@ import Price from "../../parts/admission/forms/price.js";
 import Qualification from "../../parts/admission/forms/qualification.js";
 
 export default function FormsPage({ qualification, price, discountFamily, discountStaff, enrollment, locale }) {
-  const { json, metaTitleExtension } = useLocale(locale)
+  const { json, titleSuffix } = useLocale(locale)
   let lang = json.navigation
 
   return (
     <>
       <Head>
-        <title>{lang.forms} - {metaTitleExtension} </title>
+        <title>{lang.forms} - {titleSuffix} </title>
         <meta name="description" content={`${lang.forms} - ${json?.navigation?.description || lang.forms}`} />
         
         {/* Language alternatives for SEO */}

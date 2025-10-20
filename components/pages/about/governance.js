@@ -6,13 +6,13 @@ import OrganisationFlowChart from "../../parts/about/governance/chart.js";
 import GovernancePolicy from "../../parts/about/governance/governancePolicy.js";
 
 export default function GovernancePage({ directors, orgChart, org_policys, locale }) {
-  const { json, metaTitleExtension } = useLocale(locale)
+  const { json, titleSuffix } = useLocale(locale)
   let lang = json.navigation
 
   return (
     <>
       <Head>
-        <title>{lang.governance} - {metaTitleExtension} </title>
+        <title>{lang.governance} - {titleSuffix} </title>
         <meta name="description" content={`${lang.governance} - ${json?.navigation?.description || lang.governance}`} />
         
         {/* Language alternatives for SEO */}

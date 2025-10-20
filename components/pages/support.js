@@ -8,7 +8,7 @@ import SponsorRequest from "../parts/sponsor/request";
 import HowToDonate from "../parts/sponsor/howto";
 
 export default function SupportPage({ sponsors, support, sponsor, donation, howto, locale }) {
-  const { json, metaTitleExtension } = useLocale(locale)
+  const { json, titleSuffix } = useLocale(locale)
   let lang = json.navigation
 
   let sponsorList = []
@@ -23,7 +23,7 @@ export default function SupportPage({ sponsors, support, sponsor, donation, howt
   return (
     <>
       <Head>
-        <title>{lang.support} - {metaTitleExtension} </title>
+        <title>{lang.support} - {titleSuffix} </title>
         <meta name="description" content={`${lang.support} - ${json?.navigation?.description || lang.support}`} />
         
         {/* Language alternatives for SEO */}

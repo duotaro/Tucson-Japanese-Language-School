@@ -268,13 +268,13 @@ const renderBlock = (block, newsId) => {
 };
 
 export default function NewsDetailPage({ newsItem, locale, newsId, pageMap, blockMap, detailPage }) {
-  const { json, metaTitleExtension } = useLocale(locale)
+  const { json, titleSuffix } = useLocale(locale)
 
   if (!newsItem) {
     return (
       <>
         <Head>
-          <title>News Not Found - {metaTitleExtension}</title>
+          <title>News Not Found - {titleSuffix}</title>
         </Head>
         <div className="container px-6 mx-auto py-12">
           <div className="text-center">
@@ -302,7 +302,7 @@ export default function NewsDetailPage({ newsItem, locale, newsId, pageMap, bloc
     return (
       <>
         <Head>
-          <title>{title} - {metaTitleExtension}</title>
+          <title>{title} - {titleSuffix}</title>
           <meta name="description" content={`${title} - ${json?.navigation?.description || title}`} />
           
           {/* Language alternatives for SEO */}
@@ -399,7 +399,7 @@ export default function NewsDetailPage({ newsItem, locale, newsId, pageMap, bloc
   return (
     <>
       <Head>
-        <title>{pageTitle} - {metaTitleExtension}</title>
+        <title>{pageTitle} - {titleSuffix}</title>
         <meta name="description" content={`${pageTitle} - ${json?.navigation?.description || pageTitle}`} />
         
         {/* Language alternatives for SEO */}

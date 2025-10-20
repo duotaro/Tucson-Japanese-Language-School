@@ -4,13 +4,13 @@ import { useLocale } from "../../../utils/locale";
 import ContactComponent from "../../parts/contact/index.js";
 
 export default function ContactPage({ contact, locale }) {
-  const { json, metaTitleExtension } = useLocale(locale)
+  const { json, titleSuffix } = useLocale(locale)
   let lang = json.navigation
 
   return (
     <>
       <Head>
-        <title>{lang.contact} - {metaTitleExtension} </title>
+        <title>{lang.contact} - {titleSuffix} </title>
         <meta name="description" content={`${lang.contact} - ${json?.navigation?.description || lang.contact}`} />
         
         {/* Language alternatives for SEO */}

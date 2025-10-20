@@ -19,7 +19,7 @@ import {
 } from '@heroicons/react/24/outline';
 
 export default function NihongocafePage({ nihongoCafeData, locale }) {
-  const { json, metaTitleExtension } = useLocale(locale)
+  const { json, titleSuffix } = useLocale(locale)
   let lang = json.navigation
   const isJpn = locale === 'ja';
 
@@ -52,7 +52,7 @@ export default function NihongocafePage({ nihongoCafeData, locale }) {
   return (
     <>
       <Head>
-        <title>{lang.nihongocafe || 'にほんご café'} - {metaTitleExtension} </title>
+        <title>{lang.nihongocafe || 'にほんご café'} - {titleSuffix} </title>
         <meta name="description" content={`${lang.nihongocafe || 'にほんご café'} - ${json?.navigation?.description || lang.nihongocafe || 'にほんご café'}`} />
 
         {/* Language alternatives for SEO */}

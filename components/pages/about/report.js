@@ -7,7 +7,7 @@ import Title from "../../parts/text/title.js";
 import PdfDownloads from "../../parts/files/downloadsPdf.js";
 
 export default function ReportPage({ reportList, locale }) {
-  const { json, metaTitleExtension } = useLocale(locale)
+  const { json, titleSuffix } = useLocale(locale)
   let lang = json.navigation
 
   let resList = []
@@ -36,7 +36,7 @@ export default function ReportPage({ reportList, locale }) {
   return (
     <>
       <Head>
-        <title>{lang.report} - {metaTitleExtension} </title>
+        <title>{lang.report} - {titleSuffix} </title>
         <meta name="description" content={`${lang.report} - ${json?.navigation?.description || lang.report}`} />
         
         {/* Language alternatives for SEO */}

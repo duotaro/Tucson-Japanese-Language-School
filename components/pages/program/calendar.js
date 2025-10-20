@@ -4,13 +4,13 @@ import { useLocale } from "../../../utils/locale";
 import Calender from "../../parts/program/calender/index.js";
 
 export default function CalendarPage({ files, scheduleList, locale }) {
-  const { json, metaTitleExtension } = useLocale(locale)
+  const { json, titleSuffix } = useLocale(locale)
   let lang = json.navigation
 
   return (
     <>
       <Head>
-        <title>{lang.calendar} - {metaTitleExtension} </title>
+        <title>{lang.calendar} - {titleSuffix}</title>
         <meta name="description" content={`${lang.calendar} - ${json?.navigation?.description || lang.calendar}`} />
         
         {/* Language alternatives for SEO */}

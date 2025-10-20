@@ -6,7 +6,7 @@ import OurStory from "../../parts/about/welcome/our_story";
 import History from "../../parts/about/welcome/history";
 
 export default function WelcomePage({ welcome, locale }) {
-  const { json, metaTitleExtension } = useLocale(locale)
+  const { json, titleSuffix } = useLocale(locale)
   let lang = json.navigation
 
   let {greeting, story, history} = welcome || {}
@@ -19,7 +19,7 @@ export default function WelcomePage({ welcome, locale }) {
   return (
     <>
       <Head>
-        <title>{lang.welcome} - {metaTitleExtension} </title>
+        <title>{lang.welcome} - {titleSuffix} </title>
         <meta name="description" content={`${lang.welcome} - ${json?.navigation?.description || lang.welcome}`} />
         
         {/* Language alternatives for SEO */}

@@ -4,13 +4,13 @@ import { useLocale } from "../../../utils/locale";
 import ProfileCardList from "../../parts/about/staff/index.js";
 
 export default function StaffPage({ staffList, roleList, locale }) {
-  const { json, metaTitleExtension } = useLocale(locale)
+  const { json, titleSuffix } = useLocale(locale)
   let lang = json.navigation
 
   return (
     <>
       <Head>
-        <title>{lang.staff} - {metaTitleExtension} </title>
+        <title>{lang.staff} - {titleSuffix} </title>
         <meta name="description" content={`${lang.staff} - ${json?.navigation?.description || lang.staff}`} />
         
         {/* Language alternatives for SEO */}

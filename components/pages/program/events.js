@@ -3,13 +3,13 @@ import React from 'react';
 import { useLocale } from "../../../utils/locale";
 
 export default function EventsPage({ events, locale }) {
-  const { json, metaTitleExtension } = useLocale(locale)
+  const { json, titleSuffix } = useLocale(locale)
   let lang = json.navigation
 
   return (
     <>
       <Head>
-        <title>{lang.event} - {metaTitleExtension} </title>
+        <title>{lang.event} - {titleSuffix} </title>
         <meta name="description" content={`${lang.event} - ${json?.navigation?.description || lang.event}`} />
         
         {/* Language alternatives for SEO */}

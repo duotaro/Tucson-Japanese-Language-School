@@ -4,13 +4,13 @@ import { useLocale } from "../../../utils/locale";
 import News from "../../parts/news/index.js";
 
 export default function NewsIndexPage({ newsList, locale }) {
-  const { json, metaTitleExtension } = useLocale(locale)
+  const { json, titleSuffix } = useLocale(locale)
   let lang = json.navigation
 
   return (
     <>
       <Head>
-        <title>{lang.news} - {metaTitleExtension} </title>
+        <title>{lang.news} - {titleSuffix} </title>
         <meta name="description" content={`${lang.news} - ${json?.navigation?.description || lang.news}`} />
         
         {/* Language alternatives for SEO */}

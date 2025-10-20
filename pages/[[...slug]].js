@@ -119,7 +119,7 @@ export default function DynamicPage({ pageType, slug, locale: pageLocale, ...pag
   // 静的生成時に確定した言語を使用（クライアントサイドの判定に依存しない）
   const currentLocale = pageLocale;
   const actualSlug = slug || [];
-  const { json, metaTitleExtension } = useLocale(currentLocale);
+  const { json, businessName } = useLocale(currentLocale);
 
   // Home page
   if (pageType === 'home') {
@@ -136,26 +136,26 @@ export default function DynamicPage({ pageType, slug, locale: pageLocale, ...pag
     return (
       <Layout locale={currentLocale}>
         <Head>
-          <title>{metaTitleExtension}</title>
+          <title>{businessName}</title>
           <meta name="description" content={currentLocale === 'ja' ? 'ツーソン日本語学校は、アリゾナ州ツーソンで日本語教育を提供する学校です。子どもから大人まで、日本語と日本文化を学ぶ機会を提供しています。' : 'Tucson Japanese Language School provides Japanese language education and cultural programs for children and adults in Tucson, Arizona.'} />
           <meta name="language" content={currentLocale} />
           <meta httpEquiv="content-language" content={currentLocale} />
           <link rel="icon" href="/favicon.ico" />
-          
+
           {/* Language alternatives for SEO */}
           <link rel="alternate" hrefLang="ja" href="https://tjschool.org/" />
           <link rel="alternate" hrefLang="en" href="https://tjschool.org/en/" />
           <link rel="alternate" hrefLang="x-default" href="https://tjschool.org/" />
-          
+
           {/* Open Graph with language specification */}
-          <meta property="og:title" content={metaTitleExtension} />
+          <meta property="og:title" content={businessName} />
           <meta property="og:description" content={currentLocale === 'ja' ? 'ツーソン日本語学校は、アリゾナ州ツーソンで日本語教育を提供する学校です。子どもから大人まで、日本語と日本文化を学ぶ機会を提供しています。' : 'Tucson Japanese Language School provides Japanese language education and cultural programs for children and adults in Tucson, Arizona.'} />
           <meta property="og:type" content="website" />
           <meta property="og:locale" content={currentLocale === 'ja' ? 'ja_JP' : 'en_US'} />
           <meta property="og:url" content={currentLocale === 'ja' ? 'https://tjschool.org/' : 'https://tjschool.org/en/'} />
-          
+
           {/* Twitter Card */}
-          <meta name="twitter:title" content={metaTitleExtension} />
+          <meta name="twitter:title" content={businessName} />
           <meta name="twitter:description" content={currentLocale === 'ja' ? 'ツーソン日本語学校は、アリゾナ州ツーソンで日本語教育を提供する学校です。子どもから大人まで、日本語と日本文化を学ぶ機会を提供しています。' : 'Tucson Japanese Language School provides Japanese language education and cultural programs for children and adults in Tucson, Arizona.'} />
           
           {/* 追加のメタタグ */}

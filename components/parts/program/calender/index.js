@@ -346,8 +346,8 @@ export default function Calender({files, list, locale="ja"}) {
                         <li className="flex justify-between py-1" key={item.id}>
                           {/* <div className="flex min-w-0 gap-x-4"> */}
                           <div className="min-w-0 flex-auto">
-                            <span className="mt-1 text-sm text-gray-500">
-                              {createEventDate(item.start)}{!isSingleDayEvent && (`〜${createEventDate(item.end)}`)} 
+                            <span className="mt-1 text-sm text-gray-500" suppressHydrationWarning>
+                              {createEventDate(item.start)}{!isSingleDayEvent && (`〜${createEventDate(item.end)}`)}
                               {/* {isSingleDayEvent && !item.allDay && ( `${startTime}〜${endTime}`)} */}
                             </span>
                             <span className="text-md font-semibold leading-6 text-gray-900 ml-2">
@@ -499,7 +499,7 @@ export default function Calender({files, list, locale="ja"}) {
 
                       return (
                         <div>
-                        <Dialog.Title as="h3" className="text-lg font-medium leading-6 text-gray-900 mb-4">
+                        <Dialog.Title as="h3" className="text-lg font-medium leading-6 text-gray-900 mb-4" suppressHydrationWarning>
                           {createDate(detail.start)}
                         </Dialog.Title>
                         <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-6 border border-blue-100" key={detail.id}>
