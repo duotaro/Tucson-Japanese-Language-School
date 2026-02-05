@@ -1,135 +1,6 @@
 [
   {
     "object": "page",
-    "id": "10ea8c0e-cf8c-80bc-a73d-d20e096f2c0c",
-    "created_time": "2024-09-27T07:15:00.000Z",
-    "last_edited_time": "2025-09-05T05:04:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
-    },
-    "cover": null,
-    "icon": null,
-    "parent": {
-      "type": "database_id",
-      "database_id": "10ba8c0e-cf8c-807b-a7c6-c7c9128d9770"
-    },
-    "archived": false,
-    "in_trash": false,
-    "is_locked": false,
-    "properties": {
-      "en": {
-        "id": "%3Dxxv",
-        "type": "rich_text",
-        "rich_text": [
-          {
-            "type": "text",
-            "text": {
-              "content": "Minami Espinosa",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "Minami Espinosa",
-            "href": null
-          }
-        ]
-      },
-      "position": {
-        "id": "dYWE",
-        "type": "multi_select",
-        "multi_select": [
-          {
-            "id": "5e4de00f-6431-455a-8e13-a9587d140094",
-            "name": "理事",
-            "color": "default"
-          },
-          {
-            "id": "9f811b71-651d-4cd0-900b-0cf2cfa954bf",
-            "name": "会計補佐",
-            "color": "brown"
-          },
-          {
-            "id": "0edc6f0b-23bf-48bf-8dc0-ebb1ab476f92",
-            "name": "代表",
-            "color": "pink"
-          }
-        ]
-      },
-      "position_en": {
-        "id": "ttm%3D",
-        "type": "multi_select",
-        "multi_select": [
-          {
-            "id": "f1d5383e-06d9-4a2f-a8f9-6801ec433076",
-            "name": "Co-Exective Director",
-            "color": "pink"
-          },
-          {
-            "id": "867a3084-8913-4fc5-884a-58c7f6062596",
-            "name": "Assistant Tresurer",
-            "color": "green"
-          }
-        ]
-      },
-      "image": {
-        "id": "uiCC",
-        "type": "files",
-        "files": [
-          {
-            "name": "DSC08141_edited_edited.jpg",
-            "type": "file",
-            "file": {
-              "url": "/image/download/directors/10ea8c0e-cf8c-80bc-a73d-d20e096f2c0c-DSC08141_edited_edited.jpg",
-              "expiry_time": "2025-09-22T06:01:01.448Z"
-            }
-          }
-        ]
-      },
-      "ordering": {
-        "id": "%7DRAG",
-        "type": "number",
-        "number": 5
-      },
-      "name": {
-        "id": "title",
-        "type": "title",
-        "title": [
-          {
-            "type": "text",
-            "text": {
-              "content": "エスピノサ みなみ",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "エスピノサ みなみ",
-            "href": null
-          }
-        ]
-      }
-    },
-    "url": "https://www.notion.so/10ea8c0ecf8c80bca73dd20e096f2c0c",
-    "public_url": null
-  },
-  {
-    "object": "page",
     "id": "10ba8c0e-cf8c-80e6-8546-c4d0fbbcdbf0",
     "created_time": "2024-09-24T14:14:00.000Z",
     "last_edited_time": "2025-09-05T05:04:00.000Z",
@@ -220,7 +91,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/directors/10ba8c0e-cf8c-80e6-8546-c4d0fbbcdbf0-DSC08145_edited_edited_edited.jpg",
-              "expiry_time": "2025-09-22T06:01:01.448Z"
+              "expiry_time": "2026-02-05T16:53:48.281Z"
             }
           }
         ]
@@ -259,9 +130,138 @@
   },
   {
     "object": "page",
+    "id": "10ea8c0e-cf8c-80bc-a73d-d20e096f2c0c",
+    "created_time": "2024-09-27T07:15:00.000Z",
+    "last_edited_time": "2025-09-05T05:04:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "10ba8c0e-cf8c-807b-a7c6-c7c9128d9770"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "en": {
+        "id": "%3Dxxv",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Minami Espinosa",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Minami Espinosa",
+            "href": null
+          }
+        ]
+      },
+      "position": {
+        "id": "dYWE",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "5e4de00f-6431-455a-8e13-a9587d140094",
+            "name": "理事",
+            "color": "default"
+          },
+          {
+            "id": "9f811b71-651d-4cd0-900b-0cf2cfa954bf",
+            "name": "会計補佐",
+            "color": "brown"
+          },
+          {
+            "id": "0edc6f0b-23bf-48bf-8dc0-ebb1ab476f92",
+            "name": "代表",
+            "color": "pink"
+          }
+        ]
+      },
+      "position_en": {
+        "id": "ttm%3D",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "f1d5383e-06d9-4a2f-a8f9-6801ec433076",
+            "name": "Co-Exective Director",
+            "color": "pink"
+          },
+          {
+            "id": "867a3084-8913-4fc5-884a-58c7f6062596",
+            "name": "Assistant Tresurer",
+            "color": "green"
+          }
+        ]
+      },
+      "image": {
+        "id": "uiCC",
+        "type": "files",
+        "files": [
+          {
+            "name": "DSC08141_edited_edited.jpg",
+            "type": "file",
+            "file": {
+              "url": "/image/download/directors/10ea8c0e-cf8c-80bc-a73d-d20e096f2c0c-DSC08141_edited_edited.jpg",
+              "expiry_time": "2026-02-05T16:53:48.282Z"
+            }
+          }
+        ]
+      },
+      "ordering": {
+        "id": "%7DRAG",
+        "type": "number",
+        "number": 5
+      },
+      "name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "エスピノサ みなみ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "エスピノサ みなみ",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/10ea8c0ecf8c80bca73dd20e096f2c0c",
+    "public_url": null
+  },
+  {
+    "object": "page",
     "id": "12a4999b-cd97-4488-a688-6c398358c991",
     "created_time": "2024-09-24T14:06:00.000Z",
-    "last_edited_time": "2025-09-05T05:03:00.000Z",
+    "last_edited_time": "2025-10-03T22:00:00.000Z",
     "created_by": {
       "object": "user",
       "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
@@ -330,11 +330,11 @@
         "type": "files",
         "files": [
           {
-            "name": "profile.jpg",
+            "name": "yukari_image.jpg",
             "type": "file",
             "file": {
-              "url": "/image/download/directors/12a4999b-cd97-4488-a688-6c398358c991-profile.jpg",
-              "expiry_time": "2025-09-22T06:01:01.448Z"
+              "url": "/image/download/directors/12a4999b-cd97-4488-a688-6c398358c991-yukari_image.jpg",
+              "expiry_time": "2026-02-05T16:53:48.282Z"
             }
           }
         ]
@@ -369,6 +369,108 @@
       }
     },
     "url": "https://www.notion.so/12a4999bcd974488a6886c398358c991",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "281a8c0e-cf8c-8045-9f50-ca0e7d0222e1",
+    "created_time": "2025-10-03T22:00:00.000Z",
+    "last_edited_time": "2025-10-03T22:03:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "10ba8c0e-cf8c-807b-a7c6-c7c9128d9770"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "en": {
+        "id": "%3Dxxv",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Joshua Schlachet",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Joshua Schlachet",
+            "href": null
+          }
+        ]
+      },
+      "position": {
+        "id": "dYWE",
+        "type": "multi_select",
+        "multi_select": []
+      },
+      "position_en": {
+        "id": "ttm%3D",
+        "type": "multi_select",
+        "multi_select": []
+      },
+      "image": {
+        "id": "uiCC",
+        "type": "files",
+        "files": [
+          {
+            "name": "istockphoto-1495088043-612x612.jpg",
+            "type": "file",
+            "file": {
+              "url": "/image/download/directors/281a8c0e-cf8c-8045-9f50-ca0e7d0222e1-istockphoto-1495088043-612x612.jpg",
+              "expiry_time": "2026-02-05T16:53:48.282Z"
+            }
+          }
+        ]
+      },
+      "ordering": {
+        "id": "%7DRAG",
+        "type": "number",
+        "number": null
+      },
+      "name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "シュラケット　ジョシュア",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "シュラケット　ジョシュア",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/281a8c0ecf8c80459f50ca0e7d0222e1",
     "public_url": null
   },
   {
@@ -458,7 +560,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/directors/2c933574-5423-431b-9564-9ac63cf02078-profile.jpg",
-              "expiry_time": "2025-09-22T06:01:01.448Z"
+              "expiry_time": "2026-02-05T16:53:48.282Z"
             }
           }
         ]

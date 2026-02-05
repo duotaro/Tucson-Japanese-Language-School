@@ -1,201 +1,8 @@
 [
   {
     "object": "page",
-    "id": "11ca8c0e-cf8c-80d3-8615-f7d4f4007cf0",
-    "created_time": "2024-10-11T09:43:00.000Z",
-    "last_edited_time": "2025-09-05T02:40:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
-    },
-    "cover": null,
-    "icon": null,
-    "parent": {
-      "type": "database_id",
-      "database_id": "11aa8c0e-cf8c-80a7-ab2c-f31cd0b0a881"
-    },
-    "archived": false,
-    "in_trash": false,
-    "is_locked": false,
-    "properties": {
-      "target": {
-        "id": "%3FkLj",
-        "type": "rich_text",
-        "rich_text": [
-          {
-            "type": "text",
-            "text": {
-              "content": "日本語の基礎を習得済の方向け",
-              "link": null
-            },
-            "annotations": {
-              "bold": true,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "日本語の基礎を習得済の方向け",
-            "href": null
-          }
-        ]
-      },
-      "text": {
-        "id": "ADOb",
-        "type": "rich_text",
-        "rich_text": [
-          {
-            "type": "text",
-            "text": {
-              "content": "中級・上級クラスは日常的な言葉や会話に加え、幅広い話題や分野への理解を深め、より高度なスキルを身につけることができます。また、コミュニケーションに重点を置くことで、より実践的な学びを得ることができます。日本語の構成や文章作成、新しい単語、漢字学習なども取り入れ、より複雑な文を読み書きできるようになることを目標とします。日本の伝統的な文化や習慣を学んでいくと同時に、近代文学やポップカルチャーも取り入れながら、第二言語としてよりレベルの高く、実社会で実用できる日本語の習得を目指します。また日本ならではの行事、運動会や学芸会、文化祭などを通して、文化の違いに気づき、文化の多様性に理解を深めます。",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "中級・上級クラスは日常的な言葉や会話に加え、幅広い話題や分野への理解を深め、より高度なスキルを身につけることができます。また、コミュニケーションに重点を置くことで、より実践的な学びを得ることができます。日本語の構成や文章作成、新しい単語、漢字学習なども取り入れ、より複雑な文を読み書きできるようになることを目標とします。日本の伝統的な文化や習慣を学んでいくと同時に、近代文学やポップカルチャーも取り入れながら、第二言語としてよりレベルの高く、実社会で実用できる日本語の習得を目指します。また日本ならではの行事、運動会や学芸会、文化祭などを通して、文化の違いに気づき、文化の多様性に理解を深めます。",
-            "href": null
-          }
-        ]
-      },
-      "target_en": {
-        "id": "Jz%3F%3B",
-        "type": "rich_text",
-        "rich_text": [
-          {
-            "type": "text",
-            "text": {
-              "content": "For basic learners",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "For basic learners",
-            "href": null
-          }
-        ]
-      },
-      "text_en": {
-        "id": "Rr%3BB",
-        "type": "rich_text",
-        "rich_text": [
-          {
-            "type": "text",
-            "text": {
-              "content": "The intermediate and advanced classes allow students to deepen their understanding of everyday language and conversation while exploring a wide range of topics and fields, developing more advanced skills. By emphasizing communication, students gain practical learning experiences. The curriculum also incorporates Japanese structure, composition, new vocabulary, and kanji study, aiming for students to read and write more complex sentences. Alongside learning about traditional Japanese culture and customs, the classes will include modern literature and pop culture, aiming for higher-level proficiency in Japanese as a second language that can be applied in real-world contexts. Additionally, through participation in uniquely Japanese events such as sports days, art festivals, and cultural festivals, students will become aware of cultural differences and deepen their understanding of cultural diversity.",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "The intermediate and advanced classes allow students to deepen their understanding of everyday language and conversation while exploring a wide range of topics and fields, developing more advanced skills. By emphasizing communication, students gain practical learning experiences. The curriculum also incorporates Japanese structure, composition, new vocabulary, and kanji study, aiming for students to read and write more complex sentences. Alongside learning about traditional Japanese culture and customs, the classes will include modern literature and pop culture, aiming for higher-level proficiency in Japanese as a second language that can be applied in real-world contexts. Additionally, through participation in uniquely Japanese events such as sports days, art festivals, and cultural festivals, students will become aware of cultural differences and deepen their understanding of cultural diversity.",
-            "href": null
-          }
-        ]
-      },
-      "image": {
-        "id": "SW%3Fe",
-        "type": "files",
-        "files": [
-          {
-            "name": "IMG_8125.jpg",
-            "type": "file",
-            "file": {
-              "url": "/image/download/classes/11ca8c0e-cf8c-80d3-8615-f7d4f4007cf0-IMG_8125.jpg",
-              "expiry_time": "2025-09-22T06:01:07.430Z"
-            }
-          }
-        ]
-      },
-      "ordering": {
-        "id": "%60%3BQ%60",
-        "type": "number",
-        "number": 7
-      },
-      "category": {
-        "id": "e%3DA%5E",
-        "type": "select",
-        "select": {
-          "id": "888c0c89-eb95-456c-a29a-2b842baf991f",
-          "name": "JSL",
-          "color": "purple"
-        }
-      },
-      "en": {
-        "id": "oram",
-        "type": "rich_text",
-        "rich_text": [
-          {
-            "type": "text",
-            "text": {
-              "content": "Advanced Classes",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "Advanced Classes",
-            "href": null
-          }
-        ]
-      },
-      "title": {
-        "id": "title",
-        "type": "title",
-        "title": [
-          {
-            "type": "text",
-            "text": {
-              "content": "中級・上級クラス",
-              "link": null
-            },
-            "annotations": {
-              "bold": true,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "中級・上級クラス",
-            "href": null
-          }
-        ]
-      }
-    },
-    "url": "https://www.notion.so/11ca8c0ecf8c80d38615f7d4f4007cf0",
-    "public_url": null
-  },
-  {
-    "object": "page",
-    "id": "11ca8c0e-cf8c-80d8-8fda-ee7d75a0e718",
-    "created_time": "2024-10-11T09:38:00.000Z",
+    "id": "11a3d234-161c-4116-bb01-34eeed87f99a",
+    "created_time": "2024-10-09T07:09:00.000Z",
     "last_edited_time": "2025-09-02T09:39:00.000Z",
     "created_by": {
       "object": "user",
@@ -222,7 +29,7 @@
           {
             "type": "text",
             "text": {
-              "content": "対象年齢１２歳～１８歳",
+              "content": "対象年齢７歳～１２歳",
               "link": null
             },
             "annotations": {
@@ -233,7 +40,7 @@
               "code": false,
               "color": "default"
             },
-            "plain_text": "対象年齢１２歳～１８歳",
+            "plain_text": "対象年齢７歳～１２歳",
             "href": null
           }
         ]
@@ -245,7 +52,7 @@
           {
             "type": "text",
             "text": {
-              "content": "クラス４は小学校高学年以上のレベルとし、より高度な言語能力が求められます。漢字の学習では読み書にに加え、漢字辞書を導入し、部首のつくりや構成を理解し、自力で辞書を引き活用できるようにします。また新聞記事などを取り入れ、事柄の順序立てや要点を的確にとらえ、事柄の相互関係を念頭に置きながら、創意工夫を凝らして表現できる力を養います。取材を通して、新聞記事を書いたり、小さい子のために絵本を創作して読み聞かせをするなど、楽しみながら自己表現力と独創性の豊かさを育む活動をします。同時に日本文化をより深く理解するために、時事問題や短歌や俳句、ことわざ、慣用句なども取り入れていきます。",
+              "content": "クラス２では、ひらがな/カタカナの読み書きの定着とともに、漢字の学習も始めます。漢字も使いながら、簡単な構成を考えて文章を書く練習もします。また、人との会話を念頭に置き、自分の気持ちや考えを順序よくまとめ、表現力豊かに話ができ、相手に応じて丁寧な言葉も使えるような能力を養います。曜日や日にち、時間など日常生活に欠かせない言葉や概念を定着させると共に、神話や伝承なども取り入れ、より幅広い分野に学習内容を広げ、好奇心や探求心を高めながら様々な知識を得る楽しみを教えます。",
               "link": null
             },
             "annotations": {
@@ -256,7 +63,7 @@
               "code": false,
               "color": "default"
             },
-            "plain_text": "クラス４は小学校高学年以上のレベルとし、より高度な言語能力が求められます。漢字の学習では読み書にに加え、漢字辞書を導入し、部首のつくりや構成を理解し、自力で辞書を引き活用できるようにします。また新聞記事などを取り入れ、事柄の順序立てや要点を的確にとらえ、事柄の相互関係を念頭に置きながら、創意工夫を凝らして表現できる力を養います。取材を通して、新聞記事を書いたり、小さい子のために絵本を創作して読み聞かせをするなど、楽しみながら自己表現力と独創性の豊かさを育む活動をします。同時に日本文化をより深く理解するために、時事問題や短歌や俳句、ことわざ、慣用句なども取り入れていきます。",
+            "plain_text": "クラス２では、ひらがな/カタカナの読み書きの定着とともに、漢字の学習も始めます。漢字も使いながら、簡単な構成を考えて文章を書く練習もします。また、人との会話を念頭に置き、自分の気持ちや考えを順序よくまとめ、表現力豊かに話ができ、相手に応じて丁寧な言葉も使えるような能力を養います。曜日や日にち、時間など日常生活に欠かせない言葉や概念を定着させると共に、神話や伝承なども取り入れ、より幅広い分野に学習内容を広げ、好奇心や探求心を高めながら様々な知識を得る楽しみを教えます。",
             "href": null
           }
         ]
@@ -268,7 +75,7 @@
           {
             "type": "text",
             "text": {
-              "content": "Age: 12 to 18",
+              "content": "Age: 7 to 12",
               "link": null
             },
             "annotations": {
@@ -279,7 +86,7 @@
               "code": false,
               "color": "default"
             },
-            "plain_text": "Age: 12 to 18",
+            "plain_text": "Age: 7 to 12",
             "href": null
           }
         ]
@@ -291,7 +98,7 @@
           {
             "type": "text",
             "text": {
-              "content": "In Class 4, designed for students at a higher elementary school level, more advanced language skills are required. Alongside reading and writing kanji, students will be introduced to kanji dictionaries to understand radicals and structures, enabling them to use dictionaries independently. Incorporating materials such as newspaper articles will help students learn to organize information, accurately identify key points, and express their thoughts creatively while considering the relationships between various topics. Through activities like writing newspaper articles and creating picture books for younger children, students will enjoy developing their self-expression and originality. Additionally, to deepen their understanding of Japanese culture, the curriculum will include current events, tanka and haiku poetry, proverbs, and idioms.",
+              "content": "In Class 2, students will solidify their skills in reading and writing hiragana and katakana while also beginning to learn kanji. They will practice writing simple sentences using kanji, focusing on organizing their thoughts and feelings in conversations. The goal is to develop the ability to express themselves clearly and use polite language appropriate to the situation. Students will learn essential words and concepts related to days of the week, dates, and time, while also exploring myths and folklore to expand their learning into a broader range of topics. This approach aims to foster curiosity and a spirit of inquiry, making the process of gaining knowledge enjoyable.",
               "link": null
             },
             "annotations": {
@@ -302,7 +109,7 @@
               "code": false,
               "color": "default"
             },
-            "plain_text": "In Class 4, designed for students at a higher elementary school level, more advanced language skills are required. Alongside reading and writing kanji, students will be introduced to kanji dictionaries to understand radicals and structures, enabling them to use dictionaries independently. Incorporating materials such as newspaper articles will help students learn to organize information, accurately identify key points, and express their thoughts creatively while considering the relationships between various topics. Through activities like writing newspaper articles and creating picture books for younger children, students will enjoy developing their self-expression and originality. Additionally, to deepen their understanding of Japanese culture, the curriculum will include current events, tanka and haiku poetry, proverbs, and idioms.",
+            "plain_text": "In Class 2, students will solidify their skills in reading and writing hiragana and katakana while also beginning to learn kanji. They will practice writing simple sentences using kanji, focusing on organizing their thoughts and feelings in conversations. The goal is to develop the ability to express themselves clearly and use polite language appropriate to the situation. Students will learn essential words and concepts related to days of the week, dates, and time, while also exploring myths and folklore to expand their learning into a broader range of topics. This approach aims to foster curiosity and a spirit of inquiry, making the process of gaining knowledge enjoyable.",
             "href": null
           }
         ]
@@ -312,11 +119,11 @@
         "type": "files",
         "files": [
           {
-            "name": "IMG_7892.jpg",
+            "name": "20240210_110201.jpg",
             "type": "file",
             "file": {
-              "url": "/image/download/classes/11ca8c0e-cf8c-80d8-8fda-ee7d75a0e718-IMG_7892.jpg",
-              "expiry_time": "2025-09-22T06:01:07.430Z"
+              "url": "/image/download/classes/11a3d234-161c-4116-bb01-34eeed87f99a-20240210_110201.jpg",
+              "expiry_time": "2026-02-05T16:53:55.741Z"
             }
           }
         ]
@@ -324,7 +131,7 @@
       "ordering": {
         "id": "%60%3BQ%60",
         "type": "number",
-        "number": 5
+        "number": 3
       },
       "category": {
         "id": "e%3DA%5E",
@@ -342,7 +149,7 @@
           {
             "type": "text",
             "text": {
-              "content": "Class 4",
+              "content": "Class 2",
               "link": null
             },
             "annotations": {
@@ -353,7 +160,7 @@
               "code": false,
               "color": "default"
             },
-            "plain_text": "Class 4",
+            "plain_text": "Class 2",
             "href": null
           }
         ]
@@ -365,7 +172,7 @@
           {
             "type": "text",
             "text": {
-              "content": "クラス４",
+              "content": "クラス２",
               "link": null
             },
             "annotations": {
@@ -376,13 +183,13 @@
               "code": false,
               "color": "default"
             },
-            "plain_text": "クラス４",
+            "plain_text": "クラス２",
             "href": null
           }
         ]
       }
     },
-    "url": "https://www.notion.so/11ca8c0ecf8c80d88fdaee7d75a0e718",
+    "url": "https://www.notion.so/11a3d234161c4116bb0134eeed87f99a",
     "public_url": null
   },
   {
@@ -509,7 +316,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/classes/11aa8c0e-cf8c-8000-b850-fef91292ae8c-IMG_1866.jpg",
-              "expiry_time": "2025-09-22T06:01:07.430Z"
+              "expiry_time": "2026-02-05T16:53:55.741Z"
             }
           }
         ]
@@ -702,7 +509,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/classes/11aa8c0e-cf8c-806d-bb6c-f2177df033cb-IMG_3338.jpg",
-              "expiry_time": "2025-09-22T06:01:07.430Z"
+              "expiry_time": "2026-02-05T16:53:55.742Z"
             }
           }
         ]
@@ -773,8 +580,201 @@
   },
   {
     "object": "page",
-    "id": "11a3d234-161c-4116-bb01-34eeed87f99a",
-    "created_time": "2024-10-09T07:09:00.000Z",
+    "id": "11ca8c0e-cf8c-80d3-8615-f7d4f4007cf0",
+    "created_time": "2024-10-11T09:43:00.000Z",
+    "last_edited_time": "2025-09-05T02:40:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "11aa8c0e-cf8c-80a7-ab2c-f31cd0b0a881"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "target": {
+        "id": "%3FkLj",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "日本語の基礎を習得済の方向け",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "日本語の基礎を習得済の方向け",
+            "href": null
+          }
+        ]
+      },
+      "text": {
+        "id": "ADOb",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "中級・上級クラスは日常的な言葉や会話に加え、幅広い話題や分野への理解を深め、より高度なスキルを身につけることができます。また、コミュニケーションに重点を置くことで、より実践的な学びを得ることができます。日本語の構成や文章作成、新しい単語、漢字学習なども取り入れ、より複雑な文を読み書きできるようになることを目標とします。日本の伝統的な文化や習慣を学んでいくと同時に、近代文学やポップカルチャーも取り入れながら、第二言語としてよりレベルの高く、実社会で実用できる日本語の習得を目指します。また日本ならではの行事、運動会や学芸会、文化祭などを通して、文化の違いに気づき、文化の多様性に理解を深めます。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "中級・上級クラスは日常的な言葉や会話に加え、幅広い話題や分野への理解を深め、より高度なスキルを身につけることができます。また、コミュニケーションに重点を置くことで、より実践的な学びを得ることができます。日本語の構成や文章作成、新しい単語、漢字学習なども取り入れ、より複雑な文を読み書きできるようになることを目標とします。日本の伝統的な文化や習慣を学んでいくと同時に、近代文学やポップカルチャーも取り入れながら、第二言語としてよりレベルの高く、実社会で実用できる日本語の習得を目指します。また日本ならではの行事、運動会や学芸会、文化祭などを通して、文化の違いに気づき、文化の多様性に理解を深めます。",
+            "href": null
+          }
+        ]
+      },
+      "target_en": {
+        "id": "Jz%3F%3B",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "For basic learners",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "For basic learners",
+            "href": null
+          }
+        ]
+      },
+      "text_en": {
+        "id": "Rr%3BB",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "The intermediate and advanced classes allow students to deepen their understanding of everyday language and conversation while exploring a wide range of topics and fields, developing more advanced skills. By emphasizing communication, students gain practical learning experiences. The curriculum also incorporates Japanese structure, composition, new vocabulary, and kanji study, aiming for students to read and write more complex sentences. Alongside learning about traditional Japanese culture and customs, the classes will include modern literature and pop culture, aiming for higher-level proficiency in Japanese as a second language that can be applied in real-world contexts. Additionally, through participation in uniquely Japanese events such as sports days, art festivals, and cultural festivals, students will become aware of cultural differences and deepen their understanding of cultural diversity.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "The intermediate and advanced classes allow students to deepen their understanding of everyday language and conversation while exploring a wide range of topics and fields, developing more advanced skills. By emphasizing communication, students gain practical learning experiences. The curriculum also incorporates Japanese structure, composition, new vocabulary, and kanji study, aiming for students to read and write more complex sentences. Alongside learning about traditional Japanese culture and customs, the classes will include modern literature and pop culture, aiming for higher-level proficiency in Japanese as a second language that can be applied in real-world contexts. Additionally, through participation in uniquely Japanese events such as sports days, art festivals, and cultural festivals, students will become aware of cultural differences and deepen their understanding of cultural diversity.",
+            "href": null
+          }
+        ]
+      },
+      "image": {
+        "id": "SW%3Fe",
+        "type": "files",
+        "files": [
+          {
+            "name": "IMG_8125.jpg",
+            "type": "file",
+            "file": {
+              "url": "/image/download/classes/11ca8c0e-cf8c-80d3-8615-f7d4f4007cf0-IMG_8125.jpg",
+              "expiry_time": "2026-02-05T16:53:55.742Z"
+            }
+          }
+        ]
+      },
+      "ordering": {
+        "id": "%60%3BQ%60",
+        "type": "number",
+        "number": 7
+      },
+      "category": {
+        "id": "e%3DA%5E",
+        "type": "select",
+        "select": {
+          "id": "888c0c89-eb95-456c-a29a-2b842baf991f",
+          "name": "JSL",
+          "color": "purple"
+        }
+      },
+      "en": {
+        "id": "oram",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Advanced Classes",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Advanced Classes",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "中級・上級クラス",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "中級・上級クラス",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/11ca8c0ecf8c80d38615f7d4f4007cf0",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "11ca8c0e-cf8c-80d8-8fda-ee7d75a0e718",
+    "created_time": "2024-10-11T09:38:00.000Z",
     "last_edited_time": "2025-09-02T09:39:00.000Z",
     "created_by": {
       "object": "user",
@@ -801,7 +801,7 @@
           {
             "type": "text",
             "text": {
-              "content": "対象年齢７歳～１２歳",
+              "content": "対象年齢１２歳～１８歳",
               "link": null
             },
             "annotations": {
@@ -812,7 +812,7 @@
               "code": false,
               "color": "default"
             },
-            "plain_text": "対象年齢７歳～１２歳",
+            "plain_text": "対象年齢１２歳～１８歳",
             "href": null
           }
         ]
@@ -824,7 +824,7 @@
           {
             "type": "text",
             "text": {
-              "content": "クラス２では、ひらがな/カタカナの読み書きの定着とともに、漢字の学習も始めます。漢字も使いながら、簡単な構成を考えて文章を書く練習もします。また、人との会話を念頭に置き、自分の気持ちや考えを順序よくまとめ、表現力豊かに話ができ、相手に応じて丁寧な言葉も使えるような能力を養います。曜日や日にち、時間など日常生活に欠かせない言葉や概念を定着させると共に、神話や伝承なども取り入れ、より幅広い分野に学習内容を広げ、好奇心や探求心を高めながら様々な知識を得る楽しみを教えます。",
+              "content": "クラス４は小学校高学年以上のレベルとし、より高度な言語能力が求められます。漢字の学習では読み書にに加え、漢字辞書を導入し、部首のつくりや構成を理解し、自力で辞書を引き活用できるようにします。また新聞記事などを取り入れ、事柄の順序立てや要点を的確にとらえ、事柄の相互関係を念頭に置きながら、創意工夫を凝らして表現できる力を養います。取材を通して、新聞記事を書いたり、小さい子のために絵本を創作して読み聞かせをするなど、楽しみながら自己表現力と独創性の豊かさを育む活動をします。同時に日本文化をより深く理解するために、時事問題や短歌や俳句、ことわざ、慣用句なども取り入れていきます。",
               "link": null
             },
             "annotations": {
@@ -835,7 +835,7 @@
               "code": false,
               "color": "default"
             },
-            "plain_text": "クラス２では、ひらがな/カタカナの読み書きの定着とともに、漢字の学習も始めます。漢字も使いながら、簡単な構成を考えて文章を書く練習もします。また、人との会話を念頭に置き、自分の気持ちや考えを順序よくまとめ、表現力豊かに話ができ、相手に応じて丁寧な言葉も使えるような能力を養います。曜日や日にち、時間など日常生活に欠かせない言葉や概念を定着させると共に、神話や伝承なども取り入れ、より幅広い分野に学習内容を広げ、好奇心や探求心を高めながら様々な知識を得る楽しみを教えます。",
+            "plain_text": "クラス４は小学校高学年以上のレベルとし、より高度な言語能力が求められます。漢字の学習では読み書にに加え、漢字辞書を導入し、部首のつくりや構成を理解し、自力で辞書を引き活用できるようにします。また新聞記事などを取り入れ、事柄の順序立てや要点を的確にとらえ、事柄の相互関係を念頭に置きながら、創意工夫を凝らして表現できる力を養います。取材を通して、新聞記事を書いたり、小さい子のために絵本を創作して読み聞かせをするなど、楽しみながら自己表現力と独創性の豊かさを育む活動をします。同時に日本文化をより深く理解するために、時事問題や短歌や俳句、ことわざ、慣用句なども取り入れていきます。",
             "href": null
           }
         ]
@@ -847,7 +847,7 @@
           {
             "type": "text",
             "text": {
-              "content": "Age: 7 to 12",
+              "content": "Age: 12 to 18",
               "link": null
             },
             "annotations": {
@@ -858,7 +858,7 @@
               "code": false,
               "color": "default"
             },
-            "plain_text": "Age: 7 to 12",
+            "plain_text": "Age: 12 to 18",
             "href": null
           }
         ]
@@ -870,7 +870,7 @@
           {
             "type": "text",
             "text": {
-              "content": "In Class 2, students will solidify their skills in reading and writing hiragana and katakana while also beginning to learn kanji. They will practice writing simple sentences using kanji, focusing on organizing their thoughts and feelings in conversations. The goal is to develop the ability to express themselves clearly and use polite language appropriate to the situation. Students will learn essential words and concepts related to days of the week, dates, and time, while also exploring myths and folklore to expand their learning into a broader range of topics. This approach aims to foster curiosity and a spirit of inquiry, making the process of gaining knowledge enjoyable.",
+              "content": "In Class 4, designed for students at a higher elementary school level, more advanced language skills are required. Alongside reading and writing kanji, students will be introduced to kanji dictionaries to understand radicals and structures, enabling them to use dictionaries independently. Incorporating materials such as newspaper articles will help students learn to organize information, accurately identify key points, and express their thoughts creatively while considering the relationships between various topics. Through activities like writing newspaper articles and creating picture books for younger children, students will enjoy developing their self-expression and originality. Additionally, to deepen their understanding of Japanese culture, the curriculum will include current events, tanka and haiku poetry, proverbs, and idioms.",
               "link": null
             },
             "annotations": {
@@ -881,7 +881,7 @@
               "code": false,
               "color": "default"
             },
-            "plain_text": "In Class 2, students will solidify their skills in reading and writing hiragana and katakana while also beginning to learn kanji. They will practice writing simple sentences using kanji, focusing on organizing their thoughts and feelings in conversations. The goal is to develop the ability to express themselves clearly and use polite language appropriate to the situation. Students will learn essential words and concepts related to days of the week, dates, and time, while also exploring myths and folklore to expand their learning into a broader range of topics. This approach aims to foster curiosity and a spirit of inquiry, making the process of gaining knowledge enjoyable.",
+            "plain_text": "In Class 4, designed for students at a higher elementary school level, more advanced language skills are required. Alongside reading and writing kanji, students will be introduced to kanji dictionaries to understand radicals and structures, enabling them to use dictionaries independently. Incorporating materials such as newspaper articles will help students learn to organize information, accurately identify key points, and express their thoughts creatively while considering the relationships between various topics. Through activities like writing newspaper articles and creating picture books for younger children, students will enjoy developing their self-expression and originality. Additionally, to deepen their understanding of Japanese culture, the curriculum will include current events, tanka and haiku poetry, proverbs, and idioms.",
             "href": null
           }
         ]
@@ -891,11 +891,11 @@
         "type": "files",
         "files": [
           {
-            "name": "20240210_110201.jpg",
+            "name": "IMG_7892.jpg",
             "type": "file",
             "file": {
-              "url": "/image/download/classes/11a3d234-161c-4116-bb01-34eeed87f99a-20240210_110201.jpg",
-              "expiry_time": "2025-09-22T06:01:07.430Z"
+              "url": "/image/download/classes/11ca8c0e-cf8c-80d8-8fda-ee7d75a0e718-IMG_7892.jpg",
+              "expiry_time": "2026-02-05T16:53:55.742Z"
             }
           }
         ]
@@ -903,7 +903,7 @@
       "ordering": {
         "id": "%60%3BQ%60",
         "type": "number",
-        "number": 3
+        "number": 5
       },
       "category": {
         "id": "e%3DA%5E",
@@ -921,7 +921,7 @@
           {
             "type": "text",
             "text": {
-              "content": "Class 2",
+              "content": "Class 4",
               "link": null
             },
             "annotations": {
@@ -932,7 +932,7 @@
               "code": false,
               "color": "default"
             },
-            "plain_text": "Class 2",
+            "plain_text": "Class 4",
             "href": null
           }
         ]
@@ -944,7 +944,7 @@
           {
             "type": "text",
             "text": {
-              "content": "クラス２",
+              "content": "クラス４",
               "link": null
             },
             "annotations": {
@@ -955,13 +955,13 @@
               "code": false,
               "color": "default"
             },
-            "plain_text": "クラス２",
+            "plain_text": "クラス４",
             "href": null
           }
         ]
       }
     },
-    "url": "https://www.notion.so/11a3d234161c4116bb0134eeed87f99a",
+    "url": "https://www.notion.so/11ca8c0ecf8c80d88fdaee7d75a0e718",
     "public_url": null
   },
   {
@@ -1088,7 +1088,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/classes/53b5c5ad-de13-4cf2-a4c1-407d8d117dce-IMG_3364.jpg",
-              "expiry_time": "2025-09-22T06:01:07.430Z"
+              "expiry_time": "2026-02-05T16:53:55.742Z"
             }
           }
         ]
@@ -1281,7 +1281,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/classes/63f53dc4-0f61-4505-abea-ff1ad51668e3-IMG_7919.jpg",
-              "expiry_time": "2025-09-22T06:01:07.430Z"
+              "expiry_time": "2026-02-05T16:53:55.742Z"
             }
           }
         ]

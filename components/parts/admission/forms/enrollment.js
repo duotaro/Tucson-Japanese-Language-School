@@ -33,7 +33,29 @@ export default function Enrollment({ enrollment, locale="ja" }) {
             })}
         </div>
         <div className="mt-10">
-        <Paragraphs text={json.enrollment.attention} />
+          <Paragraphs text={json.enrollment.attention} />
+        </div>
+
+        {/* CTA Buttons */}
+        <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdHr1g_InEfddjoToliB0YKxecvgZc9VbpcYRdh8q9e1x7RSw/viewform?usp=dialog"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-8 py-3 bg-indigo-600 text-white rounded-lg font-medium hover:bg-indigo-700 transition-colors shadow-md"
+          >
+            <span>📝</span>
+            {json.enrollment.register_form}
+          </a>
+          <a
+            href="https://tucsonhosyuko.square.site/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-8 py-3 bg-emerald-600 text-white rounded-lg font-medium hover:bg-emerald-700 transition-colors shadow-md"
+          >
+            <span>💳</span>
+            {json.enrollment.make_payment}
+          </a>
         </div>
       </div>
     </Section>

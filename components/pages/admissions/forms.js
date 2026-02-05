@@ -2,7 +2,6 @@ import Head from "next/head";
 import React from 'react';
 import { useLocale } from "../../../utils/locale";
 import Enrollment from "../../parts/admission/forms/enrollment.js";
-import Forms from "../../parts/admission/forms/forms.js";
 import Price from "../../parts/admission/forms/price.js";
 import Qualification from "../../parts/admission/forms/qualification.js";
 
@@ -15,7 +14,7 @@ export default function FormsPage({ qualification, price, discountFamily, discou
       <Head>
         <title>{lang.forms} - {titleSuffix} </title>
         <meta name="description" content={`${lang.forms} - ${json?.navigation?.description || lang.forms}`} />
-        
+
         {/* Language alternatives for SEO */}
         <link rel="alternate" hrefLang="ja" href="https://tjschool.org/admissions/forms/" />
         <link rel="alternate" hrefLang="en" href="https://tjschool.org/en/admissions/forms/" />
@@ -27,7 +26,6 @@ export default function FormsPage({ qualification, price, discountFamily, discou
           <Qualification qualification={qualification || []} locale={locale} />
           <Price price={price || []} discountFamily={discountFamily || []} discountStaff={discountStaff || []} locale={locale} />
           <Enrollment enrollment={enrollment || []} locale={locale} />
-          <Forms locale={locale} />
         </div>
       </div>
     </>
