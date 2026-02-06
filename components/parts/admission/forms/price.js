@@ -29,8 +29,8 @@ const PricingSection = ({price, discountFamily, discountStaff, locale="ja"}) => 
   })
 
   // Separate tuition items from supply fee items
-  const getSupplyFee = (items) => items.find(i => i.title === '教材費' || i.title === 'Supply Fee')
-  const getTuitionItems = (items) => items.filter(i => i.title !== '教材費' && i.title !== 'Supply Fee')
+  const getSupplyFee = (items) => items.find(i => i.title === '教材費' || i.title === 'Once a year')
+  const getTuitionItems = (items) => items.filter(i => i.title !== '教材費' && i.title !== 'Once a year')
 
   const currentItems = activeTab === 'oyako' ? oyakoItems : jhlItems
   const tuitionItems = getTuitionItems(currentItems)
@@ -146,7 +146,7 @@ const PricingSection = ({price, discountFamily, discountStaff, locale="ja"}) => 
             </DisclosurePanel>
           </Disclosure>
 
-          <Disclosure>
+          {/* <Disclosure>
             <DisclosureButton className="group flex w-full items-center justify-between rounded-lg bg-white px-4 py-3 text-left text-sm font-medium text-gray-900 shadow hover:bg-gray-50 transition-colors">
               <span className="text-base font-semibold">{json.price.staff_discount}</span>
               <ChevronDownIcon className="h-5 w-5 text-gray-500 group-data-[open]:rotate-180 transition-transform duration-200" />
@@ -156,7 +156,7 @@ const PricingSection = ({price, discountFamily, discountStaff, locale="ja"}) => 
                 <DiscountStaffComponent list={staffList} locale={locale}/>
               </div>
             </DisclosurePanel>
-          </Disclosure>
+          </Disclosure> */}
 
           <Disclosure>
             <DisclosureButton className="group flex w-full items-center justify-between rounded-lg bg-white px-4 py-3 text-left text-sm font-medium text-gray-900 shadow hover:bg-gray-50 transition-colors">

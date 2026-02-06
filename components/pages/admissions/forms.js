@@ -24,8 +24,8 @@ export default function FormsPage({ qualification, price, discountFamily, discou
       <div className="">
         <div className="row">
           <Qualification qualification={qualification || []} locale={locale} />
-          <Price price={price || []} discountFamily={discountFamily || []} discountStaff={discountStaff || []} locale={locale} />
           <Enrollment enrollment={enrollment || []} locale={locale} />
+          <Price price={price || []} discountFamily={discountFamily || []} discountStaff={discountStaff || []} locale={locale} />
         </div>
       </div>
     </>

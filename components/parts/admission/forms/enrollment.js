@@ -21,7 +21,7 @@ export default function Enrollment({ enrollment, locale="ja" }) {
     <Section >
       <div className="container px-6 mx-auto">
         <div className="mb-5"><Title title={json.navigation.enrollment} fontSize = "text-2xl sm:text-3xl lg:text-4xl"/></div>
-        <div className="grid gap-8 lg:grid-flow-col-dense lg:grid-cols-2 xl:grid-cols-3 lg:gap-12">
+        <div className="grid gap-8 lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-12">
             {list.map((item, index) => {
                 const bg = "bg-gradient-to-br from-orange-200 to-orange-300"
                 return (

@@ -32,12 +32,12 @@ export default function Qualification({ qualification = [], locale="ja" }) {
         </div>
         <div className="grid gap-8 lg:grid-cols-3 md:gap-12">
             {list.map((item, index) => {
-                const borderColors = ['border-orange-400', 'border-blue-400', 'border-emerald-400']
+                const borderColors = ['border-orange-400', 'border-indigo-400', 'border-lime-400']
                 const borderColor = borderColors[index] || 'border-gray-300'
                 return (
                     <div key={index} className={`bg-white border border-gray-200 border-t-4 ${borderColor} shadow-md rounded-lg p-6 card-hover`}>
-                      <div className="flex flex-col items-center text-center">
-                        <Title title={item.title} fontSize="text-xl font-semibold mb-4"/>
+                      <div className="flex flex-col items-center">
+                        <Title title={item.title} fontSize="text-xl font-semibold mb-4 text-center"/>
                         <Paragraphs text={item.text} maxWidth="full"/>
                       </div>
                     </div>
