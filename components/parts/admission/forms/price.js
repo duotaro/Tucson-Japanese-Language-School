@@ -6,9 +6,20 @@ import Title from '../../text/title';
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react';
 import { ChevronDownIcon } from '@heroicons/react/24/outline';
 
+// Arizona school year starts in August
+const getSchoolYear = () => {
+  const now = new Date()
+  return now.getMonth() >= 7 ? now.getFullYear() : now.getFullYear() - 1
+}
+
 const PricingSection = ({price, discountFamily, discountStaff, locale="ja"}) => {
   const { json } = useLocale(locale)
   const [activeTab, setActiveTab] = useState('oyako')
+
+  const schoolYear = getSchoolYear()
+  const tuitionTitle = locale === 'ja'
+    ? `${json.navigation.tuition} (${schoolYear}年度)`
+    : `${json.navigation.tuition} (${schoolYear}-${String(schoolYear + 1).slice(-2)})`
 
   // Parse all price entities
   const allItems = []
@@ -61,7 +72,7 @@ const PricingSection = ({price, discountFamily, discountStaff, locale="ja"}) => 
       <div className="mx-auto max-w-7xl">
         {/* Header */}
         <div className="mb-8 text-center">
-          <Title title={json.navigation.tuition} fontSize="text-2xl sm:text-3xl lg:text-4xl"/>
+          <Title title={tuitionTitle} fontSize="text-2xl sm:text-3xl lg:text-4xl"/>
           <p className="text-gray-800 text-xl leading-6 mt-3 mb-2">
             {json.price.fee} <span className="font-bold text-2xl text-gray-600">$60</span>
           </p>

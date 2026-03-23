@@ -3,14 +3,14 @@
     "object": "page",
     "id": "11ba8c0e-cf8c-814a-80f1-c3d5dc64f406",
     "created_time": "2024-10-10T06:57:00.000Z",
-    "last_edited_time": "2025-09-02T05:40:00.000Z",
+    "last_edited_time": "2026-02-06T14:39:00.000Z",
     "created_by": {
       "object": "user",
       "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
     },
     "last_edited_by": {
       "object": "user",
-      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
     },
     "cover": null,
     "icon": null,
@@ -63,7 +63,7 @@
           {
             "type": "text",
             "text": {
-              "content": "（締切: 7月19日土曜日）\n- 緊急連絡先\n- 免責とリリースに関する書類\n-メディアに関する同意書（写真やビデオの使用に関するもの）　　　　　　　　　　　以上変更あるのみ再記入　　　　　　　　　　　　-　授業料納入同意書",
+              "content": "（締切: 7月19日土曜日）\n- 緊急連絡先\n- 免責とリリースに関する書類\n- メディアに関する同意書（写真やビデオの使用に関するもの）　\n以上変更あるのみ再記入\n- 授業料納入同意書",
               "link": null
             },
             "annotations": {
@@ -74,7 +74,7 @@
               "code": false,
               "color": "default"
             },
-            "plain_text": "（締切: 7月19日土曜日）\n- 緊急連絡先\n- 免責とリリースに関する書類\n-メディアに関する同意書（写真やビデオの使用に関するもの）　　　　　　　　　　　以上変更あるのみ再記入　　　　　　　　　　　　-　授業料納入同意書",
+            "plain_text": "（締切: 7月19日土曜日）\n- 緊急連絡先\n- 免責とリリースに関する書類\n- メディアに関する同意書（写真やビデオの使用に関するもの）　\n以上変更あるのみ再記入\n- 授業料納入同意書",
             "href": null
           }
         ]
@@ -267,7 +267,7 @@
           {
             "type": "text",
             "text": {
-              "content": " (Consent for the use of photos and videos)                   - Tuition Payment Agreement     ",
+              "content": " (Consent for the use of photos and videos)\n- Tuition Payment Agreement     ",
               "link": null
             },
             "annotations": {
@@ -278,7 +278,7 @@
               "code": false,
               "color": "default"
             },
-            "plain_text": " (Consent for the use of photos and videos)                   - Tuition Payment Agreement     ",
+            "plain_text": " (Consent for the use of photos and videos)\n- Tuition Payment Agreement     ",
             "href": null
           }
         ]
@@ -314,14 +314,14 @@
     "object": "page",
     "id": "11ba8c0e-cf8c-81ef-919d-e6ce310e66f7",
     "created_time": "2024-10-10T06:57:00.000Z",
-    "last_edited_time": "2025-09-02T05:40:00.000Z",
+    "last_edited_time": "2026-02-06T14:35:00.000Z",
     "created_by": {
       "object": "user",
       "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
     },
     "last_edited_by": {
       "object": "user",
-      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
     },
     "cover": null,
     "icon": null,
@@ -357,7 +357,7 @@
           {
             "type": "text",
             "text": {
-              "content": " 新しく入学を希望する者のみ　　　　　　　　　　　　",
+              "content": " 新しく入学を希望する者のみ\n",
               "link": null
             },
             "annotations": {
@@ -368,13 +368,13 @@
               "code": false,
               "color": "default"
             },
-            "plain_text": " 新しく入学を希望する者のみ　　　　　　　　　　　　",
+            "plain_text": " 新しく入学を希望する者のみ\n",
             "href": null
           },
           {
             "type": "text",
             "text": {
-              "content": "• 入学金＄60",
+              "content": "• 入学金＄60\n• 新年度オンライン登録",
               "link": null
             },
             "annotations": {
@@ -385,13 +385,13 @@
               "code": false,
               "color": "default"
             },
-            "plain_text": "• 入学金＄60",
+            "plain_text": "• 入学金＄60\n• 新年度オンライン登録",
             "href": null
           },
           {
             "type": "text",
             "text": {
-              "content": "　　　　　　　　　",
+              "content": "（締切: 7月19日土曜日）\n- 緊急連絡先\n- 免責とリリースに関する書類\n- メディアに関する同意書（写真やビデオの使用に関するもの）\n- 授業料納入同意書",
               "link": null
             },
             "annotations": {
@@ -402,41 +402,7 @@
               "code": false,
               "color": "default"
             },
-            "plain_text": "　　　　　　　　　",
-            "href": null
-          },
-          {
-            "type": "text",
-            "text": {
-              "content": "• 新年度オンライン登録",
-              "link": null
-            },
-            "annotations": {
-              "bold": true,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "• 新年度オンライン登録",
-            "href": null
-          },
-          {
-            "type": "text",
-            "text": {
-              "content": "（締切: 7月19日土曜日）\n- 緊急連絡先\n- 免責とリリースに関する書類\n- メディアに関する同意書（写真やビデオの使用に関するもの）　　　 　　　　　　 - 授業料納入同意書",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "（締切: 7月19日土曜日）\n- 緊急連絡先\n- 免責とリリースに関する書類\n- メディアに関する同意書（写真やビデオの使用に関するもの）　　　 　　　　　　 - 授業料納入同意書",
+            "plain_text": "（締切: 7月19日土曜日）\n- 緊急連絡先\n- 免責とリリースに関する書類\n- メディアに関する同意書（写真やビデオの使用に関するもの）\n- 授業料納入同意書",
             "href": null
           }
         ]
@@ -629,7 +595,7 @@
           {
             "type": "text",
             "text": {
-              "content": " (Consent for the use of photos and videos)                    - Tuition Payment Agreement",
+              "content": " (Consent for the use of photos and videos)\n- Tuition Payment Agreement",
               "link": null
             },
             "annotations": {
@@ -640,7 +606,7 @@
               "code": false,
               "color": "default"
             },
-            "plain_text": " (Consent for the use of photos and videos)                    - Tuition Payment Agreement",
+            "plain_text": " (Consent for the use of photos and videos)\n- Tuition Payment Agreement",
             "href": null
           }
         ]

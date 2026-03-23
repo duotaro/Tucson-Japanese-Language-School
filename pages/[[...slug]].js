@@ -828,6 +828,16 @@ export async function getStaticProps({ params }) {
       const onlineOverview = await getDatabase('274a8c0ecf8c8064878de70e4f5c8826'); // オンラインにほんごかふぇ概要
       const onlinePrice = await getDatabase('274a8c0ecf8c808aa55cfb90733e2119'); // オンラインにほんごかふぇ価格情報
 
+      // PDFダウンロード処理（対面・オンラインそれぞれの概要から利用規約・カレンダーPDFを保存）
+      if (inPersonOverview && inPersonOverview.length > 0) {
+        const pdfProps = inPersonOverview.map(item => item.properties);
+        await savePdfIfNeeded(pdfProps, "nihongo_cafe");
+      }
+      if (onlineOverview && onlineOverview.length > 0) {
+        const pdfProps = onlineOverview.map(item => item.properties);
+        await savePdfIfNeeded(pdfProps, "nihongo_cafe");
+      }
+
       props.nihongoCafeData = {
         overview: nihongoCafeOverview || [],
         inPerson: {

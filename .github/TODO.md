@@ -1,116 +1,162 @@
-# デプロイ TODO
+# 非開発者によるワンボタンデプロイの実現
+
+## 目的
+
+非開発者のサイト運用者が、管理画面からボタンひとつで **検証環境・本番環境** にデプロイできるようにする。
+
+## 背景
+
+以前は Cloudflare Pages の **Deploy Hooks**（Webhook URL に POST するだけ）を Google スプレッドシートのボタンから叩いてデプロイしていた。以下の理由で動かなくなった：
+
+- Wrangler CLI 直接アップロード方式に切り替えたことで、Cloudflare Pages の Git 接続が切れた
+- Deploy Hooks は Git 接続型プロジェクトでのみ機能する
+- キャッシュシステム導入後、ビルドに `NOTION_TOKEN` 等の環境変数が必要
 
 ## 現状
 
-### デプロイ先
-- **Cloudflare Pages** （プロジェクト名: `tucson-japanese-language-school`）
-- ローカルでは `yarn deploy:cloudflare` / `yarn deploy:cloudflare:full` で Wrangler CLI 経由でデプロイ
-
-### 既存の GitHub Actions ワークフロー
-
-| ファイル | 状態 | 説明 |
-|---------|------|------|
-| `deploy-cloudflare.yml` | **使用可能（要設定）** | Cloudflare Pages へのデプロイ。`cloudflare/wrangler-action@v3` を使用 |
-| `deploy.yml` | **未使用（Firebase用）** | Firebase Hosting 用だが、デプロイステップは placeholder のまま |
-| `nextjs.yml` | **未使用（GitHub Pages用）** | GitHub Pages 用テンプレート。Node 16、古い Actions バージョン |
-| `cache-scheduler.yml` | **使用可能（要設定）** | 定期 Notion キャッシュ更新 + 自動コミット |
+- デプロイ先: **Cloudflare Pages**（プロジェクト名: `tucson-japanese-language-school`）
+- ローカルから `yarn deploy:cloudflare` / `yarn deploy:cloudflare:full` で Wrangler CLI 経由デプロイ
+- Google スプレッドシートのデプロイボタンは **動作していない**
 
 ---
 
-## やること
+## 案の比較
 
-### 1. GitHub Secrets の設定（必須）
+### 案1: Cloudflare Pages の Git 接続を復活 + Deploy Hooks（推奨）
 
-リポジトリの **Settings > Secrets and variables > Actions** で以下を設定:
+以前動いていた仕組みをそのまま復活させる。
 
-| シークレット名 | 説明 | 取得方法 |
-|---------------|------|---------|
-| `CLOUDFLARE_API_TOKEN` | Cloudflare API トークン | [Cloudflare Dashboard](https://dash.cloudflare.com/profile/api-tokens) > API Tokens > Create Token > "Edit Cloudflare Workers" テンプレート使用 |
-| `CLOUDFLARE_ACCOUNT_ID` | Cloudflare アカウント ID | Cloudflare Dashboard > 右サイドバーに表示 |
-| `NOTION_TOKEN` | Notion API キー | `.env` の `NOTION_API_KEY` と同じ値 |
-| `NEXT_PUBLIC_NOTION_NEWS_DATABASE_ID` | ニュース DB ID | `.env` の同名変数と同じ値 |
-| `NEXT_PUBLIC_NOTION_DATABASE_ID` | Notion DB ID | 該当するデータベース ID |
-
-> **注意**: `.env` ファイルの値をそのままコピーすること。Notion のトークンは `secret_` で始まる文字列。
-
-### 2. `deploy-cloudflare.yml` の調整
-
-現在 `develop` ブランチのみトリガー（`main` はコメントアウト）:
-```yaml
-on:
-  push:
-    branches: [develop] #[main, develop]  # ← main を有効化する
+```
+運用者: スプレッドシートのボタン
+           ↓
+  Google Apps Script
+  (Deploy Hook URL に POST)
+           ↓
+  Cloudflare Pages
+  ├── GitHub からソース取得
+  ├── yarn install && yarn build
+  └── デプロイ完了
 ```
 
-**対応案**:
-- `main` ブランチも有効化: `branches: [main, develop]`
-- `main` → 本番デプロイ、`develop` → preview デプロイ にする場合は、ブランチによって Wrangler の `--branch` オプションを切り替える
+**メリット**:
+- 最もシンプル。GAS のコードは `UrlFetchApp.fetch(hookUrl, {method:'post'})` の1行
+- GitHub PAT 不要（トークン管理の手間なし）
+- 以前動いていた仕組みの復活なので、運用者も慣れている
 
-```yaml
-# ブランチ別デプロイの例
-- name: 🚀 Deploy to Cloudflare Pages
-  uses: cloudflare/wrangler-action@v3
-  with:
-    apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-    accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-    command: >-
-      pages deploy out
-      --project-name=tucson-japanese-language-school
-      --branch=${{ github.ref_name == 'main' && 'main' || 'preview' }}
-      --commit-dirty=true
-```
+**デメリット**:
+- Cloudflare のビルド環境で `yarn build` が通るか検証が必要
+- Cloudflare Pages のビルド時間制限あり（無料プランで20分）
 
-### 3. 不要なワークフローの整理
+**所要時間**: 約30分〜1時間（ビルド検証含む）
 
-- [ ] `deploy.yml` — 削除 or Cloudflare 用に統合（Firebase は使わない）
-- [ ] `nextjs.yml` — 削除（GitHub Pages は使わない）
-- [ ] `README.md` — Firebase の記述を Cloudflare Pages に修正
+#### 手順
 
-### 4. `cache-scheduler.yml` の環境変数修正
-
-`cache-scheduler.yml` では `NOTION_API_KEY` を使っているが、`deploy-cloudflare.yml` では `NOTION_TOKEN` を使っている。**統一が必要**:
-
-```yaml
-# cache-scheduler.yml 109行目
-NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}  # ← 使い方がズレている
-
-# deploy-cloudflare.yml 62行目
-NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
-```
-
-さらに `cache-scheduler.yml` 116行目で `$NOTION_TOKEN` を参照しているが、env では `NOTION_API_KEY` で設定しているためバグ:
-```yaml
-if [ -z "$NOTION_TOKEN" ]; then  # ← NOTION_API_KEY にすべき、またはenvを統一
-```
-
-**対応**: すべて `NOTION_TOKEN` に統一し、GitHub Secrets も `NOTION_TOKEN` のみ設定する。
-
-### 5. 動作確認手順
-
-1. GitHub Secrets をすべて設定
-2. `deploy-cloudflare.yml` の `branches` を `[main, develop]` に修正
-3. develop ブランチに push して Actions タブで確認
-4. ビルド成功・Cloudflare Pages にデプロイされることを確認
-5. main ブランチへの PR/マージで本番デプロイを確認
+1. Cloudflare Dashboard → Pages → プロジェクト → Settings → Git 接続を設定
+2. ビルド設定:
+   - Build command: `yarn install && yarn build`
+   - Build output directory: `out`
+   - Node.js version: 18（環境変数 `NODE_VERSION=18` で指定）
+3. 環境変数を Cloudflare Dashboard に設定:
+   - `NOTION_TOKEN`（= `.env` の `NOTION_API_KEY` と同じ値）
+   - `NEXT_PUBLIC_NOTION_NEWS_DATABASE_ID`
+   - `NEXT_PUBLIC_NOTION_DATABASE_ID`
+   - その他 `.env` の `NEXT_PUBLIC_*` 変数
+4. テストビルドを実行して成功を確認
+5. Deploy Hooks を作成（Settings > Builds & deployments > Deploy hooks）
+   - 検証用: `preview-deploy`（ブランチ: `develop`）
+   - 本番用: `production-deploy`（ブランチ: `main`）
+6. Google Apps Script を更新（Hook URL に POST するだけ）
 
 ---
 
-## 参考: 現在のローカルデプロイコマンド
+### 案2: GitHub Actions `workflow_dispatch` + Google Apps Script
 
-```bash
-# 通常デプロイ（キャッシュ更新なし）
-yarn deploy:cloudflare
+GitHub Actions でビルド＆デプロイし、GAS から GitHub API で起動する。
 
-# フルデプロイ（全 Notion データ取得 → ビルド → デプロイ）
-yarn deploy:cloudflare:full
-
-# プレビューデプロイ（preview ブランチ）
-yarn preview:cloudflare:full
+```
+運用者: スプレッドシートのボタン
+           ↓
+  Google Apps Script
+  (GitHub REST API を POST)
+           ↓
+  GitHub Actions (workflow_dispatch)
+  ├── Notion キャッシュ取得
+  ├── yarn build
+  └── Wrangler で Cloudflare Pages にデプロイ
 ```
 
-## 参考: Cloudflare API トークンの権限
+**メリット**:
+- ビルド環境の自由度が高い（GitHub Actions の Ubuntu ランナー）
+- ログも GitHub Actions で確認可能
 
-「Edit Cloudflare Workers」テンプレートを使うか、カスタムトークンで以下の権限を付与:
-- **Account** > Cloudflare Pages > Edit
-- **Account** > Account Settings > Read
-- **Zone** は不要（Pages は Account レベル）
+**デメリット**:
+- GitHub PAT の管理が必要（有効期限あり、定期更新が必要）
+- 設定箇所が多い（GitHub Secrets、PAT、GAS、スクリプトプロパティ）
+
+**所要時間**: 約1.5〜2時間
+
+**案1が失敗した場合のフォールバックとして採用する。**
+
+---
+
+### 案3: Cloudflare Workers ミニダッシュボード + GitHub Actions
+
+GAS/スプレッドシートの代わりに、専用の簡易 Web ページを Cloudflare Workers に置く。
+
+```
+運用者: ブラウザでダッシュボードURL にアクセス
+           ↓
+  ┌──────────────────────────┐
+  │  [検証環境に反映]  [本番環境に反映]  │
+  └──────────────────────────┘
+           ↓
+  Cloudflare Worker → GitHub Actions API → ビルド＆デプロイ
+```
+
+**メリット**:
+- Google Sheets に依存しない
+- URL を共有するだけで誰でも使える、パスワード保護も可能
+
+**デメリット**:
+- Workers のコードを書く必要がある
+- PAT は同様に必要
+
+**所要時間**: 約2〜3時間
+
+---
+
+## 方針
+
+**案1（Cloudflare Git 接続復活 + Deploy Hooks）をまず試す。**
+
+理由:
+1. 最もシンプルで壊れにくい
+2. PAT の有効期限管理が不要
+3. GAS が最小限のコードで済む
+4. 以前動いていた仕組みの復活なので運用者も慣れている
+
+案1がダメになるケース = 「Cloudflare のビルド環境で `yarn build` が通らない」場合のみ。
+その場合は案2にフォールバックする。
+
+---
+
+## 進め方
+
+- [ ] **Step 1**: Cloudflare Dashboard で Git リポ再接続 + 環境変数設定
+- [ ] **Step 2**: テストビルド実行（ここで案1の成否が判明）
+- [ ] **Step 3**: 成功 → Deploy Hooks 作成（preview / production）
+- [ ] **Step 4**: Google Apps Script を更新（Hook URL に POST）
+- [ ] **Step 5**: スプレッドシートからボタンで動作確認
+
+失敗した場合:
+- [ ] **Step 2 で失敗** → 案2 に切り替え（GitHub Actions workflow_dispatch 方式）
+
+---
+
+## 補足: 不要なワークフローの整理
+
+現在 `.github/workflows/` に以下の未使用ファイルがある。案の実施と合わせて整理する:
+
+- [ ] `deploy.yml` — Firebase 用。削除する
+- [ ] `nextjs.yml` — GitHub Pages 用。削除する
+- [ ] `cache-scheduler.yml` の環境変数バグ修正（`NOTION_API_KEY` と `NOTION_TOKEN` の不一致）

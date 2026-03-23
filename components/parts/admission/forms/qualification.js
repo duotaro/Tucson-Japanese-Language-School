@@ -22,6 +22,7 @@ export default function Qualification({ qualification = [], locale="ja" }) {
       console.log('Error processing qualification item:', error);
     }
   }
+  list.sort((a, b) => a.ordering - b.ordering)
 
 
   return (
@@ -57,6 +58,8 @@ class QualificationEntity {
             ? (item.properties?.["title"]?.title?.[0]?.text?.content || "")
             : (item.properties?.["en"]?.rich_text?.[0]?.text?.content || "")
         
+        this.ordering = item.properties?.["ordering"]?.number ?? Infinity
+
         this.text = null
         if(isJpn){
             if(item.properties?.["text"]?.rich_text?.[0]){
