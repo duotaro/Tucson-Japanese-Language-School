@@ -44,5 +44,6 @@ export class PriceEntity {
         }
 
         this.payment = item.properties["payment"]?.select?.name || null
+        this.group = item.properties["group"]?.select?.name || null
     }
 }

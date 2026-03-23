@@ -29,7 +29,7 @@ export default function Navigation({ locale: propLocale }) {
             </div>
             
             {/* デスクトップメニュー */}
-            <div className="hidden lg:flex lg:items-center lg:space-x-8">
+            <div className="hidden xl:flex xl:items-center xl:space-x-8">
               {HEADER_MENU.map((item) => (
                 <div key={item.GROUP} className="relative">
                   <PopoverDetail item={item} isMainNav={true} />
@@ -56,7 +56,7 @@ export default function Navigation({ locale: propLocale }) {
               <button
                 type="button"
                 onClick={() => setMobileMenuOpen(true)}
-                className="lg:hidden p-2 text-white hover:text-gray-200 hover:bg-white/10 rounded-lg transition-colors"
+                className="xl:hidden p-2 text-white hover:text-gray-200 hover:bg-white/10 rounded-lg transition-colors"
               >
                 <Bars3Icon className="h-6 w-6" />
               </button>
@@ -66,7 +66,7 @@ export default function Navigation({ locale: propLocale }) {
       </nav>
 
       {/* モバイルメニュー */}
-      <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
+      <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="xl:hidden">
         <div className="fixed inset-0 z-50" />
         <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">

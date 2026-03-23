@@ -80,10 +80,22 @@
     },
     "price":{
       "fee":"Enrollment Fee for new students",
-      "caution":"Note:fee by Monday. July 31st. "
+      "caution":"Note:fee by Monday. July 31st. ",
+      "oyako":"Oyako Class",
+      "jhl":"JHL & Japanese Division",
+      "supply_fee":"Supply Fee",
+      "card_fee":"* A 3% processing fee is added for credit card payments",
+      "installment_note":"* 10-installment plan is available only via automatic card payment",
+      "no_refund":"* Tuition is non-refundable",
+      "family_discount":"Family Discount Tuition",
+      "staff_discount":"Staff Discount Tuition",
+      "esa_title":"ESA (Empowerment Scholarship Accounts)",
+      "esa_description":"You can use Arizona's ESA program to pay tuition. Please visit the official ESA website for details."
     },
     "enrollment":{
-      "attention": "Continuing Students: Students Currently Enrolled \r\nPlease resubmit the above documents only if there are changes to your address, emergency contact information, or medical conditions."
+      "attention": "Continuing Students: Students Currently Enrolled \r\nPlease resubmit the above documents only if there are changes to your address, emergency contact information, or medical conditions.",
+      "register_form":"Enrollment Form",
+      "make_payment":"Make Payment"
     },
     "class":{
       "caution":"The target age is set as a guideline only, and class placement will be determined in consultation based on the student's Japanese language level."

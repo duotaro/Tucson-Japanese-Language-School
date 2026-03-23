@@ -19,7 +19,8 @@ const savePdfIfNeeded = async (blocksWithChildren, path) => {
 
 const checkBlock = async (block, path) => {
   if (block.type == 'files') {
-    const pdf = block.files[0]
+    const pdf = block.files?.[0]
+    if (!pdf) return ''
     const tmpName = pdf.name
     const name = tmpName.replace(/ /g, '_')
     const extension = name.split('.').pop().toLowerCase();

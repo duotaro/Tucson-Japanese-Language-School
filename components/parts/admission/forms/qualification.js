@@ -22,6 +22,7 @@ export default function Qualification({ qualification = [], locale="ja" }) {
       console.log('Error processing qualification item:', error);
     }
   }
+  list.sort((a, b) => a.ordering - b.ordering)
 
 
   return (
@@ -30,12 +31,14 @@ export default function Qualification({ qualification = [], locale="ja" }) {
         <div className="flex flex-col items-center text-center mb-10">
           <Title title={json.navigation.qualification} fontSize="text-2xl sm:text-3xl lg:text-4xl"/>
         </div>
-        <div className="grid gap-8 lg:grid-cols-2 md:gap-12">
+        <div className="grid gap-8 lg:grid-cols-3 md:gap-12">
             {list.map((item, index) => {
+                const borderColors = ['border-orange-400', 'border-indigo-400', 'border-lime-400']
+                const borderColor = borderColors[index] || 'border-gray-300'
                 return (
-                    <div key={index} className="bg-white border border-gray-200 shadow-md rounded-lg p-6 card-hover">
-                      <div className="flex flex-col items-center text-center">
-                        <Title title={item.title} fontSize="text-xl font-semibold mb-4"/>
+                    <div key={index} className={`bg-white border border-gray-200 border-t-4 ${borderColor} shadow-md rounded-lg p-6 card-hover`}>
+                      <div className="flex flex-col items-center">
+                        <Title title={item.title} fontSize="text-xl font-semibold mb-4 text-center"/>
                         <Paragraphs text={item.text} maxWidth="full"/>
                       </div>
                     </div>
@@ -55,6 +58,8 @@ class QualificationEntity {
             ? (item.properties?.["title"]?.title?.[0]?.text?.content || "")
             : (item.properties?.["en"]?.rich_text?.[0]?.text?.content || "")
         
+        this.ordering = item.properties?.["ordering"]?.number ?? Infinity
+
         this.text = null
         if(isJpn){
             if(item.properties?.["text"]?.rich_text?.[0]){

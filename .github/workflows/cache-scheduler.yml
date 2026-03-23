@@ -106,14 +106,14 @@ jobs:
         env:
           NEXT_PUBLIC_NOTION_DATABASE_ID: ${{ secrets.NEXT_PUBLIC_NOTION_DATABASE_ID }}
           NEXT_PUBLIC_NOTION_NEWS_DATABASE_ID: ${{ secrets.NEXT_PUBLIC_NOTION_NEWS_DATABASE_ID }}
-          NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
+          NOTION_API_KEY: ${{ secrets.NOTION_TOKEN }}
         run: |
           FREQUENCY="${{ steps.determine-frequency.outputs.frequency }}"
-          
+
           echo "🔄 $FREQUENCY 頻度での自動更新を開始..."
-          
+
           # 環境変数チェック
-          if [ -z "$NOTION_TOKEN" ]; then
+          if [ -z "$NOTION_API_KEY" ]; then
             echo "⚠️ NOTION_TOKEN が設定されていません。"
             echo "📝 この実行はモックモードで継続します。"
             yarn cache:mock

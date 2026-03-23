@@ -1,1645 +1,6 @@
 [
   {
     "object": "page",
-    "id": "262a8c0e-cf8c-8087-9157-eccd746e636d",
-    "created_time": "2025-09-02T05:49:00.000Z",
-    "last_edited_time": "2025-09-04T07:58:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
-    },
-    "cover": null,
-    "icon": null,
-    "parent": {
-      "type": "database_id",
-      "database_id": "9b85f554-b3fc-42dc-b9d3-8f1ec87b168c"
-    },
-    "archived": false,
-    "in_trash": false,
-    "is_locked": false,
-    "properties": {
-      "text_en": {
-        "id": "FevY",
-        "type": "rich_text",
-        "rich_text": [
-          {
-            "type": "text",
-            "text": {
-              "content": "coming soon!",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "coming soon!",
-            "href": null
-          }
-        ]
-      },
-      "name_en": {
-        "id": "MMu%40",
-        "type": "rich_text",
-        "rich_text": [
-          {
-            "type": "text",
-            "text": {
-              "content": " Kayo Orosco",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": " Kayo Orosco",
-            "href": null
-          }
-        ]
-      },
-      "image": {
-        "id": "%5DGFx",
-        "type": "files",
-        "files": [
-          {
-            "name": "Kayo-TJS.jpg",
-            "type": "file",
-            "file": {
-              "url": "/image/download/staff/262a8c0e-cf8c-8087-9157-eccd746e636d-Kayo-TJS.jpg",
-              "expiry_time": "2025-09-22T06:01:05.966Z"
-            }
-          }
-        ]
-      },
-      "role": {
-        "id": "%60_YH",
-        "type": "multi_select",
-        "multi_select": [
-          {
-            "id": "8857dd7d-7ed4-482b-84d8-f59c7d3679db",
-            "name": "nihongo-cafe",
-            "color": "brown"
-          }
-        ]
-      },
-      "text": {
-        "id": "uJ%3Eq",
-        "type": "rich_text",
-        "rich_text": [
-          {
-            "type": "text",
-            "text": {
-              "content": "Coming soon!",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "Coming soon!",
-            "href": null
-          }
-        ]
-      },
-      "ordering": {
-        "id": "wvYp",
-        "type": "number",
-        "number": 15
-      },
-      "name": {
-        "id": "title",
-        "type": "title",
-        "title": [
-          {
-            "type": "text",
-            "text": {
-              "content": "オロスコ　佳代",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "オロスコ　佳代",
-            "href": null
-          }
-        ]
-      }
-    },
-    "url": "https://www.notion.so/262a8c0ecf8c80879157eccd746e636d",
-    "public_url": null
-  },
-  {
-    "object": "page",
-    "id": "219a8c0e-cf8c-8086-95b6-dbe56a73880d",
-    "created_time": "2025-06-21T20:02:00.000Z",
-    "last_edited_time": "2025-09-04T07:51:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
-    },
-    "cover": null,
-    "icon": null,
-    "parent": {
-      "type": "database_id",
-      "database_id": "9b85f554-b3fc-42dc-b9d3-8f1ec87b168c"
-    },
-    "archived": false,
-    "in_trash": false,
-    "is_locked": false,
-    "properties": {
-      "text_en": {
-        "id": "FevY",
-        "type": "rich_text",
-        "rich_text": [
-          {
-            "type": "text",
-            "text": {
-              "content": "Coming soon!",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "Coming soon!",
-            "href": null
-          }
-        ]
-      },
-      "name_en": {
-        "id": "MMu%40",
-        "type": "rich_text",
-        "rich_text": [
-          {
-            "type": "text",
-            "text": {
-              "content": "Katsuya Sato",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "Katsuya Sato",
-            "href": null
-          }
-        ]
-      },
-      "image": {
-        "id": "%5DGFx",
-        "type": "files",
-        "files": [
-          {
-            "name": "Katsu-TJS.jpg",
-            "type": "file",
-            "file": {
-              "url": "/image/download/staff/219a8c0e-cf8c-8086-95b6-dbe56a73880d-Katsu-TJS.jpg",
-              "expiry_time": "2025-09-22T06:01:05.966Z"
-            }
-          }
-        ]
-      },
-      "role": {
-        "id": "%60_YH",
-        "type": "multi_select",
-        "multi_select": [
-          {
-            "id": "49509591-f301-4af2-936d-0678579ac774",
-            "name": "teacher",
-            "color": "pink"
-          }
-        ]
-      },
-      "text": {
-        "id": "uJ%3Eq",
-        "type": "rich_text",
-        "rich_text": [
-          {
-            "type": "text",
-            "text": {
-              "content": "Coming soon!",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "Coming soon!",
-            "href": null
-          }
-        ]
-      },
-      "ordering": {
-        "id": "wvYp",
-        "type": "number",
-        "number": 5
-      },
-      "name": {
-        "id": "title",
-        "type": "title",
-        "title": [
-          {
-            "type": "text",
-            "text": {
-              "content": "佐藤かつや",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "佐藤かつや",
-            "href": null
-          }
-        ]
-      }
-    },
-    "url": "https://www.notion.so/219a8c0ecf8c808695b6dbe56a73880d",
-    "public_url": null
-  },
-  {
-    "object": "page",
-    "id": "4377c087-e782-46e3-9eaf-261863837f19",
-    "created_time": "2024-09-15T21:13:00.000Z",
-    "last_edited_time": "2025-06-21T20:04:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
-    },
-    "cover": null,
-    "icon": null,
-    "parent": {
-      "type": "database_id",
-      "database_id": "9b85f554-b3fc-42dc-b9d3-8f1ec87b168c"
-    },
-    "archived": false,
-    "in_trash": false,
-    "is_locked": false,
-    "properties": {
-      "text_en": {
-        "id": "FevY",
-        "type": "rich_text",
-        "rich_text": [
-          {
-            "type": "text",
-            "text": {
-              "content": "Coming Soon!",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "Coming Soon!",
-            "href": null
-          }
-        ]
-      },
-      "name_en": {
-        "id": "MMu%40",
-        "type": "rich_text",
-        "rich_text": [
-          {
-            "type": "text",
-            "text": {
-              "content": "Tasha Waldorf",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "Tasha Waldorf",
-            "href": null
-          }
-        ]
-      },
-      "image": {
-        "id": "%5DGFx",
-        "type": "files",
-        "files": [
-          {
-            "name": "profile.jpg",
-            "type": "file",
-            "file": {
-              "url": "/image/download/staff/4377c087-e782-46e3-9eaf-261863837f19-profile.jpg",
-              "expiry_time": "2025-09-22T06:01:05.966Z"
-            }
-          }
-        ]
-      },
-      "role": {
-        "id": "%60_YH",
-        "type": "multi_select",
-        "multi_select": [
-          {
-            "id": "ce1e3640-611f-4ad3-a062-a43657602c92",
-            "name": "volunteer",
-            "color": "default"
-          }
-        ]
-      },
-      "text": {
-        "id": "uJ%3Eq",
-        "type": "rich_text",
-        "rich_text": [
-          {
-            "type": "text",
-            "text": {
-              "content": "Coming Soon!",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "Coming Soon!",
-            "href": null
-          }
-        ]
-      },
-      "ordering": {
-        "id": "wvYp",
-        "type": "number",
-        "number": 10
-      },
-      "name": {
-        "id": "title",
-        "type": "title",
-        "title": [
-          {
-            "type": "text",
-            "text": {
-              "content": "ワルドルフ　ターシャ",
-              "link": null
-            },
-            "annotations": {
-              "bold": true,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "ワルドルフ　ターシャ",
-            "href": null
-          }
-        ]
-      }
-    },
-    "url": "https://www.notion.so/4377c087e78246e39eaf261863837f19",
-    "public_url": null
-  },
-  {
-    "object": "page",
-    "id": "102a8c0e-cf8c-803e-9b33-f2d6b41189c5",
-    "created_time": "2024-09-15T21:10:00.000Z",
-    "last_edited_time": "2025-09-04T07:57:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
-    },
-    "cover": null,
-    "icon": null,
-    "parent": {
-      "type": "database_id",
-      "database_id": "9b85f554-b3fc-42dc-b9d3-8f1ec87b168c"
-    },
-    "archived": false,
-    "in_trash": false,
-    "is_locked": false,
-    "properties": {
-      "text_en": {
-        "id": "FevY",
-        "type": "rich_text",
-        "rich_text": [
-          {
-            "type": "text",
-            "text": {
-              "content": "Jennifer is nisei (second-generation Japanese American), born and raised in California. After graduating from UCLA with a degree in Computer Science and starting her career in San Jose, she moved to Tucson for her job at IBM in 2004, where she met her husband. In 2018, she enrolled their daughter in the Tucson Japanese Language School, and around the same time, started pushing herself to improve her basic Japanese skills, as well. When covid-19 pandemic hit and Nihongo Cafe shifted to virtual meetings with a group of volunteers in Anjo, Japan, Jennifer started participating in various conversation groups. She has been thoroughly enjoying meeting and getting to know the people in the group, as well as practicing her Japanese conversational skills.",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "Jennifer is nisei (second-generation Japanese American), born and raised in California. After graduating from UCLA with a degree in Computer Science and starting her career in San Jose, she moved to Tucson for her job at IBM in 2004, where she met her husband. In 2018, she enrolled their daughter in the Tucson Japanese Language School, and around the same time, started pushing herself to improve her basic Japanese skills, as well. When covid-19 pandemic hit and Nihongo Cafe shifted to virtual meetings with a group of volunteers in Anjo, Japan, Jennifer started participating in various conversation groups. She has been thoroughly enjoying meeting and getting to know the people in the group, as well as practicing her Japanese conversational skills.",
-            "href": null
-          }
-        ]
-      },
-      "name_en": {
-        "id": "MMu%40",
-        "type": "rich_text",
-        "rich_text": [
-          {
-            "type": "text",
-            "text": {
-              "content": "Jennider Shioya",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "Jennider Shioya",
-            "href": null
-          }
-        ]
-      },
-      "image": {
-        "id": "%5DGFx",
-        "type": "files",
-        "files": [
-          {
-            "name": "profile.jpg",
-            "type": "file",
-            "file": {
-              "url": "/image/download/staff/102a8c0e-cf8c-803e-9b33-f2d6b41189c5-profile.jpg",
-              "expiry_time": "2025-09-22T06:01:05.966Z"
-            }
-          }
-        ]
-      },
-      "role": {
-        "id": "%60_YH",
-        "type": "multi_select",
-        "multi_select": [
-          {
-            "id": "8857dd7d-7ed4-482b-84d8-f59c7d3679db",
-            "name": "nihongo-cafe",
-            "color": "brown"
-          }
-        ]
-      },
-      "text": {
-        "id": "uJ%3Eq",
-        "type": "rich_text",
-        "rich_text": [
-          {
-            "type": "text",
-            "text": {
-              "content": "日系二世としてカルフォルニア州に生まれる。UCLAへ進学しコンピューターサイエンスを専攻し、卒業後はサンホゼへ。その後IBMに就職し、ツーソンへ移住、結婚する。2018年に娘がツーソン日本語補習校へ入学し、その頃から自身の日本語勉強にも力を入れ始める。コロナウイルスの影響で「にほんごかふぇ」がオンラインに移行した際に、安城市のボランティアとの定期的なグループミーティングに参加し、日本語力を磨くと同時に、他の日本語学習者や日本のボランティアと会うことを楽しんでいる。",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "日系二世としてカルフォルニア州に生まれる。UCLAへ進学しコンピューターサイエンスを専攻し、卒業後はサンホゼへ。その後IBMに就職し、ツーソンへ移住、結婚する。2018年に娘がツーソン日本語補習校へ入学し、その頃から自身の日本語勉強にも力を入れ始める。コロナウイルスの影響で「にほんごかふぇ」がオンラインに移行した際に、安城市のボランティアとの定期的なグループミーティングに参加し、日本語力を磨くと同時に、他の日本語学習者や日本のボランティアと会うことを楽しんでいる。",
-            "href": null
-          }
-        ]
-      },
-      "ordering": {
-        "id": "wvYp",
-        "type": "number",
-        "number": 16
-      },
-      "name": {
-        "id": "title",
-        "type": "title",
-        "title": [
-          {
-            "type": "text",
-            "text": {
-              "content": "塩屋　ジェニファー",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "塩屋　ジェニファー",
-            "href": null
-          }
-        ]
-      }
-    },
-    "url": "https://www.notion.so/102a8c0ecf8c803e9b33f2d6b41189c5",
-    "public_url": null
-  },
-  {
-    "object": "page",
-    "id": "102a8c0e-cf8c-80f9-bef0-dd401debb8af",
-    "created_time": "2024-09-15T21:10:00.000Z",
-    "last_edited_time": "2025-09-04T08:01:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
-    },
-    "cover": null,
-    "icon": null,
-    "parent": {
-      "type": "database_id",
-      "database_id": "9b85f554-b3fc-42dc-b9d3-8f1ec87b168c"
-    },
-    "archived": false,
-    "in_trash": false,
-    "is_locked": false,
-    "properties": {
-      "text_en": {
-        "id": "FevY",
-        "type": "rich_text",
-        "rich_text": [
-          {
-            "type": "text",
-            "text": {
-              "content": "Emi is a student at a local high school. She was born in Japan and moved to Tucson in 2013 when she was 2 years old. She has been attending Tucson Japanese Language School since 2015. She stopped being a student at the school after 9 years in the summer of 2024 and is very excited that she is now a volunteer and that she has the opportunity to help younger children understand the language. She is interested in leading a career in education in the future and thinks this volunteer work will help to prepare her for that.",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "Emi is a student at a local high school. She was born in Japan and moved to Tucson in 2013 when she was 2 years old. She has been attending Tucson Japanese Language School since 2015. She stopped being a student at the school after 9 years in the summer of 2024 and is very excited that she is now a volunteer and that she has the opportunity to help younger children understand the language. She is interested in leading a career in education in the future and thinks this volunteer work will help to prepare her for that.",
-            "href": null
-          }
-        ]
-      },
-      "name_en": {
-        "id": "MMu%40",
-        "type": "rich_text",
-        "rich_text": [
-          {
-            "type": "text",
-            "text": {
-              "content": "Emi McKnight",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "Emi McKnight",
-            "href": null
-          }
-        ]
-      },
-      "image": {
-        "id": "%5DGFx",
-        "type": "files",
-        "files": [
-          {
-            "name": "IMG_7799_edited.jpg",
-            "type": "file",
-            "file": {
-              "url": "/image/download/staff/102a8c0e-cf8c-80f9-bef0-dd401debb8af-IMG_7799_edited.jpg",
-              "expiry_time": "2025-09-22T06:01:05.967Z"
-            }
-          }
-        ]
-      },
-      "role": {
-        "id": "%60_YH",
-        "type": "multi_select",
-        "multi_select": [
-          {
-            "id": "ce1e3640-611f-4ad3-a062-a43657602c92",
-            "name": "volunteer",
-            "color": "default"
-          }
-        ]
-      },
-      "text": {
-        "id": "uJ%3Eq",
-        "type": "rich_text",
-        "rich_text": [
-          {
-            "type": "text",
-            "text": {
-              "content": "2歳の時、日本の群馬県からツーソンへ引っ越しました。2015年に、ツーソン日本語補習校で勉強を始めて、2024年の5月まで通っていました。ボランティアになるのがとても楽しみです。ボランティアをしながらもっと日本語の知識を深めたいと思っています。",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "2歳の時、日本の群馬県からツーソンへ引っ越しました。2015年に、ツーソン日本語補習校で勉強を始めて、2024年の5月まで通っていました。ボランティアになるのがとても楽しみです。ボランティアをしながらもっと日本語の知識を深めたいと思っています。",
-            "href": null
-          }
-        ]
-      },
-      "ordering": {
-        "id": "wvYp",
-        "type": "number",
-        "number": 13
-      },
-      "name": {
-        "id": "title",
-        "type": "title",
-        "title": [
-          {
-            "type": "text",
-            "text": {
-              "content": "マックナイト　えみ",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "マックナイト　えみ",
-            "href": null
-          }
-        ]
-      }
-    },
-    "url": "https://www.notion.so/102a8c0ecf8c80f9bef0dd401debb8af",
-    "public_url": null
-  },
-  {
-    "object": "page",
-    "id": "c452fe7f-4be8-4bdb-9afb-a32c10afbcab",
-    "created_time": "2024-09-15T21:10:00.000Z",
-    "last_edited_time": "2025-09-04T08:01:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
-    },
-    "cover": null,
-    "icon": null,
-    "parent": {
-      "type": "database_id",
-      "database_id": "9b85f554-b3fc-42dc-b9d3-8f1ec87b168c"
-    },
-    "archived": false,
-    "in_trash": false,
-    "is_locked": false,
-    "properties": {
-      "text_en": {
-        "id": "FevY",
-        "type": "rich_text",
-        "rich_text": [
-          {
-            "type": "text",
-            "text": {
-              "content": "I was born in Japan and lived there, learning to speak Japanese as my first language. I moved to Tucson when I was four years old and have lived here ever since. I have been attending this school since it opened and have many fond memories over the years, such as the annual sports festival and attending various Japanese events and participating in Japanese concerts. In 2023, I entered high school, so I ended my time as a student here at Tucson Japanese Language School and have since started volunteering here as a teacher's assistant. Tucson Japanese Language School also helped me keep my Japanese sharp, stay connected to my Japanese roots, and contribute to the community through various events and practicing speaking among fellow Japanese people. I am excited to continue my journey as a volunteer and an active participant in the Japanese community.",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "I was born in Japan and lived there, learning to speak Japanese as my first language. I moved to Tucson when I was four years old and have lived here ever since. I have been attending this school since it opened and have many fond memories over the years, such as the annual sports festival and attending various Japanese events and participating in Japanese concerts. In 2023, I entered high school, so I ended my time as a student here at Tucson Japanese Language School and have since started volunteering here as a teacher's assistant. Tucson Japanese Language School also helped me keep my Japanese sharp, stay connected to my Japanese roots, and contribute to the community through various events and practicing speaking among fellow Japanese people. I am excited to continue my journey as a volunteer and an active participant in the Japanese community.",
-            "href": null
-          }
-        ]
-      },
-      "name_en": {
-        "id": "MMu%40",
-        "type": "rich_text",
-        "rich_text": [
-          {
-            "type": "text",
-            "text": {
-              "content": "Hana McKnight",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "Hana McKnight",
-            "href": null
-          }
-        ]
-      },
-      "image": {
-        "id": "%5DGFx",
-        "type": "files",
-        "files": [
-          {
-            "name": "IMG_7796.jpeg",
-            "type": "file",
-            "file": {
-              "url": "/image/download/staff/c452fe7f-4be8-4bdb-9afb-a32c10afbcab-IMG_7796.jpeg",
-              "expiry_time": "2025-09-22T06:01:05.967Z"
-            }
-          }
-        ]
-      },
-      "role": {
-        "id": "%60_YH",
-        "type": "multi_select",
-        "multi_select": [
-          {
-            "id": "ce1e3640-611f-4ad3-a062-a43657602c92",
-            "name": "volunteer",
-            "color": "default"
-          }
-        ]
-      },
-      "text": {
-        "id": "uJ%3Eq",
-        "type": "rich_text",
-        "rich_text": [
-          {
-            "type": "text",
-            "text": {
-              "content": "私は日本で生まれ第一言語として日本語を学びました。 4歳のときにツーソンに引っ越して、それ以来ずっとここに住んでいます。私はこの学校に開校時から通い続けており、毎年恒例の運動会や日本のさまざまなイベントへの参加、学芸会への参加など、たくさんの楽しい思い出があります。 2023 年に高校に入学したため、生徒からボランティアへと変わりました。日本語学校のおかげで、私は日本語能力を保ち、自分のルーツである日本とのつながりを維持し、さまざまなイベントや日本人同士で話す練習を通じて地域社会に貢献することができました。私はボランティアとして、そして日本人コミュニティへの積極的な参加者として活躍し続けることに興奮しています。",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "私は日本で生まれ第一言語として日本語を学びました。 4歳のときにツーソンに引っ越して、それ以来ずっとここに住んでいます。私はこの学校に開校時から通い続けており、毎年恒例の運動会や日本のさまざまなイベントへの参加、学芸会への参加など、たくさんの楽しい思い出があります。 2023 年に高校に入学したため、生徒からボランティアへと変わりました。日本語学校のおかげで、私は日本語能力を保ち、自分のルーツである日本とのつながりを維持し、さまざまなイベントや日本人同士で話す練習を通じて地域社会に貢献することができました。私はボランティアとして、そして日本人コミュニティへの積極的な参加者として活躍し続けることに興奮しています。",
-            "href": null
-          }
-        ]
-      },
-      "ordering": {
-        "id": "wvYp",
-        "type": "number",
-        "number": 12
-      },
-      "name": {
-        "id": "title",
-        "type": "title",
-        "title": [
-          {
-            "type": "text",
-            "text": {
-              "content": "マックナイト　はな",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "マックナイト　はな",
-            "href": null
-          }
-        ]
-      }
-    },
-    "url": "https://www.notion.so/c452fe7f4be84bdb9afba32c10afbcab",
-    "public_url": null
-  },
-  {
-    "object": "page",
-    "id": "102a8c0e-cf8c-80e6-9519-d25acdcfd0ec",
-    "created_time": "2024-09-15T21:10:00.000Z",
-    "last_edited_time": "2025-09-04T08:02:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
-    },
-    "cover": null,
-    "icon": null,
-    "parent": {
-      "type": "database_id",
-      "database_id": "9b85f554-b3fc-42dc-b9d3-8f1ec87b168c"
-    },
-    "archived": false,
-    "in_trash": false,
-    "is_locked": false,
-    "properties": {
-      "text_en": {
-        "id": "FevY",
-        "type": "rich_text",
-        "rich_text": [
-          {
-            "type": "text",
-            "text": {
-              "content": "Coming Soon!",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "Coming Soon!",
-            "href": null
-          }
-        ]
-      },
-      "name_en": {
-        "id": "MMu%40",
-        "type": "rich_text",
-        "rich_text": [
-          {
-            "type": "text",
-            "text": {
-              "content": "Azumi Uchida",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "Azumi Uchida",
-            "href": null
-          }
-        ]
-      },
-      "image": {
-        "id": "%5DGFx",
-        "type": "files",
-        "files": [
-          {
-            "name": "profile.jpg",
-            "type": "file",
-            "file": {
-              "url": "/image/download/staff/102a8c0e-cf8c-80e6-9519-d25acdcfd0ec-profile.jpg",
-              "expiry_time": "2025-09-22T06:01:05.967Z"
-            }
-          }
-        ]
-      },
-      "role": {
-        "id": "%60_YH",
-        "type": "multi_select",
-        "multi_select": [
-          {
-            "id": "ce1e3640-611f-4ad3-a062-a43657602c92",
-            "name": "volunteer",
-            "color": "default"
-          }
-        ]
-      },
-      "text": {
-        "id": "uJ%3Eq",
-        "type": "rich_text",
-        "rich_text": [
-          {
-            "type": "text",
-            "text": {
-              "content": "Coming Soon!",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "Coming Soon!",
-            "href": null
-          }
-        ]
-      },
-      "ordering": {
-        "id": "wvYp",
-        "type": "number",
-        "number": 14
-      },
-      "name": {
-        "id": "title",
-        "type": "title",
-        "title": [
-          {
-            "type": "text",
-            "text": {
-              "content": "内田　比奈子",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "内田　比奈子",
-            "href": null
-          }
-        ]
-      }
-    },
-    "url": "https://www.notion.so/102a8c0ecf8c80e69519d25acdcfd0ec",
-    "public_url": null
-  },
-  {
-    "object": "page",
-    "id": "102a8c0e-cf8c-80cd-a577-c9351f661364",
-    "created_time": "2024-09-15T21:09:00.000Z",
-    "last_edited_time": "2025-09-02T05:48:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
-    },
-    "cover": null,
-    "icon": null,
-    "parent": {
-      "type": "database_id",
-      "database_id": "9b85f554-b3fc-42dc-b9d3-8f1ec87b168c"
-    },
-    "archived": false,
-    "in_trash": false,
-    "is_locked": false,
-    "properties": {
-      "text_en": {
-        "id": "FevY",
-        "type": "rich_text",
-        "rich_text": [
-          {
-            "type": "text",
-            "text": {
-              "content": "Coming Soon!",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "Coming Soon!",
-            "href": null
-          }
-        ]
-      },
-      "name_en": {
-        "id": "MMu%40",
-        "type": "rich_text",
-        "rich_text": [
-          {
-            "type": "text",
-            "text": {
-              "content": "Yasir Nemat",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "Yasir Nemat",
-            "href": null
-          }
-        ]
-      },
-      "image": {
-        "id": "%5DGFx",
-        "type": "files",
-        "files": [
-          {
-            "name": "IMG_7879_edited.jpg",
-            "type": "file",
-            "file": {
-              "url": "/image/download/staff/102a8c0e-cf8c-80cd-a577-c9351f661364-IMG_7879_edited.jpg",
-              "expiry_time": "2025-09-22T06:01:05.967Z"
-            }
-          }
-        ]
-      },
-      "role": {
-        "id": "%60_YH",
-        "type": "multi_select",
-        "multi_select": [
-          {
-            "id": "49509591-f301-4af2-936d-0678579ac774",
-            "name": "teacher",
-            "color": "pink"
-          }
-        ]
-      },
-      "text": {
-        "id": "uJ%3Eq",
-        "type": "rich_text",
-        "rich_text": [
-          {
-            "type": "text",
-            "text": {
-              "content": "Coming Soon!",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "Coming Soon!",
-            "href": null
-          }
-        ]
-      },
-      "ordering": {
-        "id": "wvYp",
-        "type": "number",
-        "number": 7
-      },
-      "name": {
-        "id": "title",
-        "type": "title",
-        "title": [
-          {
-            "type": "text",
-            "text": {
-              "content": "ネマット　ヤッサー",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "ネマット　ヤッサー",
-            "href": null
-          }
-        ]
-      }
-    },
-    "url": "https://www.notion.so/102a8c0ecf8c80cda577c9351f661364",
-    "public_url": null
-  },
-  {
-    "object": "page",
-    "id": "102a8c0e-cf8c-80c8-9391-cb8332a09711",
-    "created_time": "2024-09-15T21:09:00.000Z",
-    "last_edited_time": "2025-09-04T07:57:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
-    },
-    "cover": null,
-    "icon": null,
-    "parent": {
-      "type": "database_id",
-      "database_id": "9b85f554-b3fc-42dc-b9d3-8f1ec87b168c"
-    },
-    "archived": false,
-    "in_trash": false,
-    "is_locked": false,
-    "properties": {
-      "text_en": {
-        "id": "FevY",
-        "type": "rich_text",
-        "rich_text": [
-          {
-            "type": "text",
-            "text": {
-              "content": "Coming Soon!",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "Coming Soon!",
-            "href": null
-          }
-        ]
-      },
-      "name_en": {
-        "id": "MMu%40",
-        "type": "rich_text",
-        "rich_text": [
-          {
-            "type": "text",
-            "text": {
-              "content": "Lumi Hisataka",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "Lumi Hisataka",
-            "href": null
-          }
-        ]
-      },
-      "image": {
-        "id": "%5DGFx",
-        "type": "files",
-        "files": [
-          {
-            "name": "Lumi-TJS.jpg",
-            "type": "file",
-            "file": {
-              "url": "/image/download/staff/102a8c0e-cf8c-80c8-9391-cb8332a09711-Lumi-TJS.jpg",
-              "expiry_time": "2025-09-22T06:01:05.967Z"
-            }
-          }
-        ]
-      },
-      "role": {
-        "id": "%60_YH",
-        "type": "multi_select",
-        "multi_select": [
-          {
-            "id": "ce1e3640-611f-4ad3-a062-a43657602c92",
-            "name": "volunteer",
-            "color": "default"
-          }
-        ]
-      },
-      "text": {
-        "id": "uJ%3Eq",
-        "type": "rich_text",
-        "rich_text": [
-          {
-            "type": "text",
-            "text": {
-              "content": "Coming Soon!",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "Coming Soon!",
-            "href": null
-          }
-        ]
-      },
-      "ordering": {
-        "id": "wvYp",
-        "type": "number",
-        "number": 11
-      },
-      "name": {
-        "id": "title",
-        "type": "title",
-        "title": [
-          {
-            "type": "text",
-            "text": {
-              "content": "久高　ルミ",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "久高　ルミ",
-            "href": null
-          }
-        ]
-      }
-    },
-    "url": "https://www.notion.so/102a8c0ecf8c80c89391cb8332a09711",
-    "public_url": null
-  },
-  {
-    "object": "page",
-    "id": "102a8c0e-cf8c-80b6-a18a-f9a071308672",
-    "created_time": "2024-09-15T21:09:00.000Z",
-    "last_edited_time": "2025-09-04T07:56:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
-    },
-    "cover": null,
-    "icon": null,
-    "parent": {
-      "type": "database_id",
-      "database_id": "9b85f554-b3fc-42dc-b9d3-8f1ec87b168c"
-    },
-    "archived": false,
-    "in_trash": false,
-    "is_locked": false,
-    "properties": {
-      "text_en": {
-        "id": "FevY",
-        "type": "rich_text",
-        "rich_text": [
-          {
-            "type": "text",
-            "text": {
-              "content": "My name is Manami, and I’m a nisei. I attended Penn State University for my Bachelor of Science in Rehabilitation and Human Services. Afterwards I graduated from Salus University with a Master of Science in Low Vision Rehabilitation. I moved to Tucson for a job in 2020 during the start of COVID-19.  After a couple years of adjusting and enjoying Tucson, I decided to volunteer at Tucson Nihongo Hosyuko to meet other Japanese people and practice my conversational speaking.”",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "My name is Manami, and I’m a nisei. I attended Penn State University for my Bachelor of Science in Rehabilitation and Human Services. Afterwards I graduated from Salus University with a Master of Science in Low Vision Rehabilitation. I moved to Tucson for a job in 2020 during the start of COVID-19.  After a couple years of adjusting and enjoying Tucson, I decided to volunteer at Tucson Nihongo Hosyuko to meet other Japanese people and practice my conversational speaking.”",
-            "href": null
-          }
-        ]
-      },
-      "name_en": {
-        "id": "MMu%40",
-        "type": "rich_text",
-        "rich_text": [
-          {
-            "type": "text",
-            "text": {
-              "content": "Manami Okoshi",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "Manami Okoshi",
-            "href": null
-          }
-        ]
-      },
-      "image": {
-        "id": "%5DGFx",
-        "type": "files",
-        "files": [
-          {
-            "name": "Manami-TJS.jpg",
-            "type": "file",
-            "file": {
-              "url": "/image/download/staff/102a8c0e-cf8c-80b6-a18a-f9a071308672-Manami-TJS.jpg",
-              "expiry_time": "2025-09-22T06:01:05.967Z"
-            }
-          }
-        ]
-      },
-      "role": {
-        "id": "%60_YH",
-        "type": "multi_select",
-        "multi_select": [
-          {
-            "id": "ce1e3640-611f-4ad3-a062-a43657602c92",
-            "name": "volunteer",
-            "color": "default"
-          }
-        ]
-      },
-      "text": {
-        "id": "uJ%3Eq",
-        "type": "rich_text",
-        "rich_text": [
-          {
-            "type": "text",
-            "text": {
-              "content": "こんにちは、日系二世のマナミです。ペンシルベニア州立大学に通い、リハビリテーションと福祉学士号を取得した後、サルース大学でロービジョンリハビリテーションの理学修士号を取得しました。 2020年に、仕事の関係でツーソンに引っ越してきて、少し住み慣れたところで、他の日本人と出会い、会話の練習をするためにツーソン日本語補習校でボランティアをすることにしました。",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "こんにちは、日系二世のマナミです。ペンシルベニア州立大学に通い、リハビリテーションと福祉学士号を取得した後、サルース大学でロービジョンリハビリテーションの理学修士号を取得しました。 2020年に、仕事の関係でツーソンに引っ越してきて、少し住み慣れたところで、他の日本人と出会い、会話の練習をするためにツーソン日本語補習校でボランティアをすることにしました。",
-            "href": null
-          }
-        ]
-      },
-      "ordering": {
-        "id": "wvYp",
-        "type": "number",
-        "number": 9
-      },
-      "name": {
-        "id": "title",
-        "type": "title",
-        "title": [
-          {
-            "type": "text",
-            "text": {
-              "content": "大越　愛巳",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "大越　愛巳",
-            "href": null
-          }
-        ]
-      }
-    },
-    "url": "https://www.notion.so/102a8c0ecf8c80b6a18af9a071308672",
-    "public_url": null
-  },
-  {
-    "object": "page",
-    "id": "102a8c0e-cf8c-80a2-9cba-f21c57ac7a99",
-    "created_time": "2024-09-15T21:08:00.000Z",
-    "last_edited_time": "2025-09-04T07:52:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
-    },
-    "cover": null,
-    "icon": null,
-    "parent": {
-      "type": "database_id",
-      "database_id": "9b85f554-b3fc-42dc-b9d3-8f1ec87b168c"
-    },
-    "archived": false,
-    "in_trash": false,
-    "is_locked": false,
-    "properties": {
-      "text_en": {
-        "id": "FevY",
-        "type": "rich_text",
-        "rich_text": [
-          {
-            "type": "text",
-            "text": {
-              "content": "Hello, I'm Meg Nakamura, who will be run for Kids with parents class starting this school year. This is my 4th years since I started helping/volunteering the Japanese school. I’m looking forward to get in touch Japanese with you at class!",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "Hello, I'm Meg Nakamura, who will be run for Kids with parents class starting this school year. This is my 4th years since I started helping/volunteering the Japanese school. I’m looking forward to get in touch Japanese with you at class!",
-            "href": null
-          }
-        ]
-      },
-      "name_en": {
-        "id": "MMu%40",
-        "type": "rich_text",
-        "rich_text": [
-          {
-            "type": "text",
-            "text": {
-              "content": "Meg Nakamura",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "Meg Nakamura",
-            "href": null
-          }
-        ]
-      },
-      "image": {
-        "id": "%5DGFx",
-        "type": "files",
-        "files": [
-          {
-            "name": "Meg-TJS.jpg",
-            "type": "file",
-            "file": {
-              "url": "/image/download/staff/102a8c0e-cf8c-80a2-9cba-f21c57ac7a99-Meg-TJS.jpg",
-              "expiry_time": "2025-09-22T06:01:05.967Z"
-            }
-          }
-        ]
-      },
-      "role": {
-        "id": "%60_YH",
-        "type": "multi_select",
-        "multi_select": [
-          {
-            "id": "49509591-f301-4af2-936d-0678579ac774",
-            "name": "teacher",
-            "color": "pink"
-          }
-        ]
-      },
-      "text": {
-        "id": "uJ%3Eq",
-        "type": "rich_text",
-        "rich_text": [
-          {
-            "type": "text",
-            "text": {
-              "content": "こんにちは、親子クラスを担当する中村めぐです。今年で補習校をお手伝いし始めて4年経ちます。大学では音楽を専攻にしてるのでそっち方面でお手伝いすることも多いいと思います。精一杯頑張ります、よろしくお願いします。",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "こんにちは、親子クラスを担当する中村めぐです。今年で補習校をお手伝いし始めて4年経ちます。大学では音楽を専攻にしてるのでそっち方面でお手伝いすることも多いいと思います。精一杯頑張ります、よろしくお願いします。",
-            "href": null
-          }
-        ]
-      },
-      "ordering": {
-        "id": "wvYp",
-        "type": "number",
-        "number": 6
-      },
-      "name": {
-        "id": "title",
-        "type": "title",
-        "title": [
-          {
-            "type": "text",
-            "text": {
-              "content": "中村　めぐ",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "中村　めぐ",
-            "href": null
-          }
-        ]
-      }
-    },
-    "url": "https://www.notion.so/102a8c0ecf8c80a29cbaf21c57ac7a99",
-    "public_url": null
-  },
-  {
-    "object": "page",
     "id": "102a8c0e-cf8c-8032-ba7b-c79866f660eb",
     "created_time": "2024-09-15T21:08:00.000Z",
     "last_edited_time": "2025-06-21T20:03:00.000Z",
@@ -1716,7 +77,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/staff/102a8c0e-cf8c-8032-ba7b-c79866f660eb-IMG_1280_edited.jpg",
-              "expiry_time": "2025-09-22T06:01:05.967Z"
+              "expiry_time": "2026-02-06T16:28:25.413Z"
             }
           }
         ]
@@ -1865,7 +226,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/staff/102a8c0e-cf8c-803e-8c91-cdc26abf8c7b-Kokori-TJS.jpg",
-              "expiry_time": "2025-09-22T06:01:05.967Z"
+              "expiry_time": "2026-02-06T16:28:25.412Z"
             }
           }
         ]
@@ -1934,6 +295,1496 @@
       }
     },
     "url": "https://www.notion.so/102a8c0ecf8c803e8c91cdc26abf8c7b",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "102a8c0e-cf8c-803e-9b33-f2d6b41189c5",
+    "created_time": "2024-09-15T21:10:00.000Z",
+    "last_edited_time": "2025-09-04T07:57:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "9b85f554-b3fc-42dc-b9d3-8f1ec87b168c"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "text_en": {
+        "id": "FevY",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Jennifer is nisei (second-generation Japanese American), born and raised in California. After graduating from UCLA with a degree in Computer Science and starting her career in San Jose, she moved to Tucson for her job at IBM in 2004, where she met her husband. In 2018, she enrolled their daughter in the Tucson Japanese Language School, and around the same time, started pushing herself to improve her basic Japanese skills, as well. When covid-19 pandemic hit and Nihongo Cafe shifted to virtual meetings with a group of volunteers in Anjo, Japan, Jennifer started participating in various conversation groups. She has been thoroughly enjoying meeting and getting to know the people in the group, as well as practicing her Japanese conversational skills.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Jennifer is nisei (second-generation Japanese American), born and raised in California. After graduating from UCLA with a degree in Computer Science and starting her career in San Jose, she moved to Tucson for her job at IBM in 2004, where she met her husband. In 2018, she enrolled their daughter in the Tucson Japanese Language School, and around the same time, started pushing herself to improve her basic Japanese skills, as well. When covid-19 pandemic hit and Nihongo Cafe shifted to virtual meetings with a group of volunteers in Anjo, Japan, Jennifer started participating in various conversation groups. She has been thoroughly enjoying meeting and getting to know the people in the group, as well as practicing her Japanese conversational skills.",
+            "href": null
+          }
+        ]
+      },
+      "name_en": {
+        "id": "MMu%40",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Jennider Shioya",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Jennider Shioya",
+            "href": null
+          }
+        ]
+      },
+      "image": {
+        "id": "%5DGFx",
+        "type": "files",
+        "files": [
+          {
+            "name": "profile.jpg",
+            "type": "file",
+            "file": {
+              "url": "/image/download/staff/102a8c0e-cf8c-803e-9b33-f2d6b41189c5-profile.jpg",
+              "expiry_time": "2026-02-06T16:28:25.413Z"
+            }
+          }
+        ]
+      },
+      "role": {
+        "id": "%60_YH",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "8857dd7d-7ed4-482b-84d8-f59c7d3679db",
+            "name": "nihongo-cafe",
+            "color": "brown"
+          }
+        ]
+      },
+      "text": {
+        "id": "uJ%3Eq",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "日系二世としてカルフォルニア州に生まれる。UCLAへ進学しコンピューターサイエンスを専攻し、卒業後はサンホゼへ。その後IBMに就職し、ツーソンへ移住、結婚する。2018年に娘がツーソン日本語補習校へ入学し、その頃から自身の日本語勉強にも力を入れ始める。コロナウイルスの影響で「にほんごかふぇ」がオンラインに移行した際に、安城市のボランティアとの定期的なグループミーティングに参加し、日本語力を磨くと同時に、他の日本語学習者や日本のボランティアと会うことを楽しんでいる。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "日系二世としてカルフォルニア州に生まれる。UCLAへ進学しコンピューターサイエンスを専攻し、卒業後はサンホゼへ。その後IBMに就職し、ツーソンへ移住、結婚する。2018年に娘がツーソン日本語補習校へ入学し、その頃から自身の日本語勉強にも力を入れ始める。コロナウイルスの影響で「にほんごかふぇ」がオンラインに移行した際に、安城市のボランティアとの定期的なグループミーティングに参加し、日本語力を磨くと同時に、他の日本語学習者や日本のボランティアと会うことを楽しんでいる。",
+            "href": null
+          }
+        ]
+      },
+      "ordering": {
+        "id": "wvYp",
+        "type": "number",
+        "number": 16
+      },
+      "name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "塩屋　ジェニファー",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "塩屋　ジェニファー",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/102a8c0ecf8c803e9b33f2d6b41189c5",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "102a8c0e-cf8c-80a2-9cba-f21c57ac7a99",
+    "created_time": "2024-09-15T21:08:00.000Z",
+    "last_edited_time": "2025-09-04T07:52:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "9b85f554-b3fc-42dc-b9d3-8f1ec87b168c"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "text_en": {
+        "id": "FevY",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Hello, I'm Meg Nakamura, who will be run for Kids with parents class starting this school year. This is my 4th years since I started helping/volunteering the Japanese school. I’m looking forward to get in touch Japanese with you at class!",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Hello, I'm Meg Nakamura, who will be run for Kids with parents class starting this school year. This is my 4th years since I started helping/volunteering the Japanese school. I’m looking forward to get in touch Japanese with you at class!",
+            "href": null
+          }
+        ]
+      },
+      "name_en": {
+        "id": "MMu%40",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Meg Nakamura",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Meg Nakamura",
+            "href": null
+          }
+        ]
+      },
+      "image": {
+        "id": "%5DGFx",
+        "type": "files",
+        "files": [
+          {
+            "name": "Meg-TJS.jpg",
+            "type": "file",
+            "file": {
+              "url": "/image/download/staff/102a8c0e-cf8c-80a2-9cba-f21c57ac7a99-Meg-TJS.jpg",
+              "expiry_time": "2026-02-06T16:28:25.413Z"
+            }
+          }
+        ]
+      },
+      "role": {
+        "id": "%60_YH",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "49509591-f301-4af2-936d-0678579ac774",
+            "name": "teacher",
+            "color": "pink"
+          }
+        ]
+      },
+      "text": {
+        "id": "uJ%3Eq",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "こんにちは、親子クラスを担当する中村めぐです。今年で補習校をお手伝いし始めて4年経ちます。大学では音楽を専攻にしてるのでそっち方面でお手伝いすることも多いいと思います。精一杯頑張ります、よろしくお願いします。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "こんにちは、親子クラスを担当する中村めぐです。今年で補習校をお手伝いし始めて4年経ちます。大学では音楽を専攻にしてるのでそっち方面でお手伝いすることも多いいと思います。精一杯頑張ります、よろしくお願いします。",
+            "href": null
+          }
+        ]
+      },
+      "ordering": {
+        "id": "wvYp",
+        "type": "number",
+        "number": 6
+      },
+      "name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "中村　めぐ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "中村　めぐ",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/102a8c0ecf8c80a29cbaf21c57ac7a99",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "102a8c0e-cf8c-80b6-a18a-f9a071308672",
+    "created_time": "2024-09-15T21:09:00.000Z",
+    "last_edited_time": "2025-09-04T07:56:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "9b85f554-b3fc-42dc-b9d3-8f1ec87b168c"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "text_en": {
+        "id": "FevY",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "My name is Manami, and I’m a nisei. I attended Penn State University for my Bachelor of Science in Rehabilitation and Human Services. Afterwards I graduated from Salus University with a Master of Science in Low Vision Rehabilitation. I moved to Tucson for a job in 2020 during the start of COVID-19.  After a couple years of adjusting and enjoying Tucson, I decided to volunteer at Tucson Nihongo Hosyuko to meet other Japanese people and practice my conversational speaking.”",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "My name is Manami, and I’m a nisei. I attended Penn State University for my Bachelor of Science in Rehabilitation and Human Services. Afterwards I graduated from Salus University with a Master of Science in Low Vision Rehabilitation. I moved to Tucson for a job in 2020 during the start of COVID-19.  After a couple years of adjusting and enjoying Tucson, I decided to volunteer at Tucson Nihongo Hosyuko to meet other Japanese people and practice my conversational speaking.”",
+            "href": null
+          }
+        ]
+      },
+      "name_en": {
+        "id": "MMu%40",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Manami Okoshi",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Manami Okoshi",
+            "href": null
+          }
+        ]
+      },
+      "image": {
+        "id": "%5DGFx",
+        "type": "files",
+        "files": [
+          {
+            "name": "Manami-TJS.jpg",
+            "type": "file",
+            "file": {
+              "url": "/image/download/staff/102a8c0e-cf8c-80b6-a18a-f9a071308672-Manami-TJS.jpg",
+              "expiry_time": "2026-02-06T16:28:25.413Z"
+            }
+          }
+        ]
+      },
+      "role": {
+        "id": "%60_YH",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "ce1e3640-611f-4ad3-a062-a43657602c92",
+            "name": "volunteer",
+            "color": "default"
+          }
+        ]
+      },
+      "text": {
+        "id": "uJ%3Eq",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "こんにちは、日系二世のマナミです。ペンシルベニア州立大学に通い、リハビリテーションと福祉学士号を取得した後、サルース大学でロービジョンリハビリテーションの理学修士号を取得しました。 2020年に、仕事の関係でツーソンに引っ越してきて、少し住み慣れたところで、他の日本人と出会い、会話の練習をするためにツーソン日本語補習校でボランティアをすることにしました。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "こんにちは、日系二世のマナミです。ペンシルベニア州立大学に通い、リハビリテーションと福祉学士号を取得した後、サルース大学でロービジョンリハビリテーションの理学修士号を取得しました。 2020年に、仕事の関係でツーソンに引っ越してきて、少し住み慣れたところで、他の日本人と出会い、会話の練習をするためにツーソン日本語補習校でボランティアをすることにしました。",
+            "href": null
+          }
+        ]
+      },
+      "ordering": {
+        "id": "wvYp",
+        "type": "number",
+        "number": 9
+      },
+      "name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "大越　愛巳",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "大越　愛巳",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/102a8c0ecf8c80b6a18af9a071308672",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "102a8c0e-cf8c-80c8-9391-cb8332a09711",
+    "created_time": "2024-09-15T21:09:00.000Z",
+    "last_edited_time": "2025-09-04T07:57:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "9b85f554-b3fc-42dc-b9d3-8f1ec87b168c"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "text_en": {
+        "id": "FevY",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Coming Soon!",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Coming Soon!",
+            "href": null
+          }
+        ]
+      },
+      "name_en": {
+        "id": "MMu%40",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Lumi Hisataka",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Lumi Hisataka",
+            "href": null
+          }
+        ]
+      },
+      "image": {
+        "id": "%5DGFx",
+        "type": "files",
+        "files": [
+          {
+            "name": "Lumi-TJS.jpg",
+            "type": "file",
+            "file": {
+              "url": "/image/download/staff/102a8c0e-cf8c-80c8-9391-cb8332a09711-Lumi-TJS.jpg",
+              "expiry_time": "2026-02-06T16:28:25.413Z"
+            }
+          }
+        ]
+      },
+      "role": {
+        "id": "%60_YH",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "ce1e3640-611f-4ad3-a062-a43657602c92",
+            "name": "volunteer",
+            "color": "default"
+          }
+        ]
+      },
+      "text": {
+        "id": "uJ%3Eq",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Coming Soon!",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Coming Soon!",
+            "href": null
+          }
+        ]
+      },
+      "ordering": {
+        "id": "wvYp",
+        "type": "number",
+        "number": 11
+      },
+      "name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "久高　ルミ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "久高　ルミ",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/102a8c0ecf8c80c89391cb8332a09711",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "102a8c0e-cf8c-80cd-a577-c9351f661364",
+    "created_time": "2024-09-15T21:09:00.000Z",
+    "last_edited_time": "2025-09-02T05:48:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "9b85f554-b3fc-42dc-b9d3-8f1ec87b168c"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "text_en": {
+        "id": "FevY",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Coming Soon!",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Coming Soon!",
+            "href": null
+          }
+        ]
+      },
+      "name_en": {
+        "id": "MMu%40",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Yasir Nemat",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Yasir Nemat",
+            "href": null
+          }
+        ]
+      },
+      "image": {
+        "id": "%5DGFx",
+        "type": "files",
+        "files": [
+          {
+            "name": "IMG_7879_edited.jpg",
+            "type": "file",
+            "file": {
+              "url": "/image/download/staff/102a8c0e-cf8c-80cd-a577-c9351f661364-IMG_7879_edited.jpg",
+              "expiry_time": "2026-02-06T16:28:25.413Z"
+            }
+          }
+        ]
+      },
+      "role": {
+        "id": "%60_YH",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "49509591-f301-4af2-936d-0678579ac774",
+            "name": "teacher",
+            "color": "pink"
+          }
+        ]
+      },
+      "text": {
+        "id": "uJ%3Eq",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Coming Soon!",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Coming Soon!",
+            "href": null
+          }
+        ]
+      },
+      "ordering": {
+        "id": "wvYp",
+        "type": "number",
+        "number": 7
+      },
+      "name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ネマット　ヤッサー",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "ネマット　ヤッサー",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/102a8c0ecf8c80cda577c9351f661364",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "102a8c0e-cf8c-80e6-9519-d25acdcfd0ec",
+    "created_time": "2024-09-15T21:10:00.000Z",
+    "last_edited_time": "2025-09-04T08:02:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "9b85f554-b3fc-42dc-b9d3-8f1ec87b168c"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "text_en": {
+        "id": "FevY",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Coming Soon!",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Coming Soon!",
+            "href": null
+          }
+        ]
+      },
+      "name_en": {
+        "id": "MMu%40",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Azumi Uchida",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Azumi Uchida",
+            "href": null
+          }
+        ]
+      },
+      "image": {
+        "id": "%5DGFx",
+        "type": "files",
+        "files": [
+          {
+            "name": "profile.jpg",
+            "type": "file",
+            "file": {
+              "url": "/image/download/staff/102a8c0e-cf8c-80e6-9519-d25acdcfd0ec-profile.jpg",
+              "expiry_time": "2026-02-06T16:28:25.413Z"
+            }
+          }
+        ]
+      },
+      "role": {
+        "id": "%60_YH",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "ce1e3640-611f-4ad3-a062-a43657602c92",
+            "name": "volunteer",
+            "color": "default"
+          }
+        ]
+      },
+      "text": {
+        "id": "uJ%3Eq",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Coming Soon!",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Coming Soon!",
+            "href": null
+          }
+        ]
+      },
+      "ordering": {
+        "id": "wvYp",
+        "type": "number",
+        "number": 14
+      },
+      "name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "内田　比奈子",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "内田　比奈子",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/102a8c0ecf8c80e69519d25acdcfd0ec",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "102a8c0e-cf8c-80f9-bef0-dd401debb8af",
+    "created_time": "2024-09-15T21:10:00.000Z",
+    "last_edited_time": "2025-09-04T08:01:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "9b85f554-b3fc-42dc-b9d3-8f1ec87b168c"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "text_en": {
+        "id": "FevY",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Emi is a student at a local high school. She was born in Japan and moved to Tucson in 2013 when she was 2 years old. She has been attending Tucson Japanese Language School since 2015. She stopped being a student at the school after 9 years in the summer of 2024 and is very excited that she is now a volunteer and that she has the opportunity to help younger children understand the language. She is interested in leading a career in education in the future and thinks this volunteer work will help to prepare her for that.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Emi is a student at a local high school. She was born in Japan and moved to Tucson in 2013 when she was 2 years old. She has been attending Tucson Japanese Language School since 2015. She stopped being a student at the school after 9 years in the summer of 2024 and is very excited that she is now a volunteer and that she has the opportunity to help younger children understand the language. She is interested in leading a career in education in the future and thinks this volunteer work will help to prepare her for that.",
+            "href": null
+          }
+        ]
+      },
+      "name_en": {
+        "id": "MMu%40",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Emi McKnight",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Emi McKnight",
+            "href": null
+          }
+        ]
+      },
+      "image": {
+        "id": "%5DGFx",
+        "type": "files",
+        "files": [
+          {
+            "name": "IMG_7799_edited.jpg",
+            "type": "file",
+            "file": {
+              "url": "/image/download/staff/102a8c0e-cf8c-80f9-bef0-dd401debb8af-IMG_7799_edited.jpg",
+              "expiry_time": "2026-02-06T16:28:25.413Z"
+            }
+          }
+        ]
+      },
+      "role": {
+        "id": "%60_YH",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "ce1e3640-611f-4ad3-a062-a43657602c92",
+            "name": "volunteer",
+            "color": "default"
+          }
+        ]
+      },
+      "text": {
+        "id": "uJ%3Eq",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "2歳の時、日本の群馬県からツーソンへ引っ越しました。2015年に、ツーソン日本語補習校で勉強を始めて、2024年の5月まで通っていました。ボランティアになるのがとても楽しみです。ボランティアをしながらもっと日本語の知識を深めたいと思っています。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "2歳の時、日本の群馬県からツーソンへ引っ越しました。2015年に、ツーソン日本語補習校で勉強を始めて、2024年の5月まで通っていました。ボランティアになるのがとても楽しみです。ボランティアをしながらもっと日本語の知識を深めたいと思っています。",
+            "href": null
+          }
+        ]
+      },
+      "ordering": {
+        "id": "wvYp",
+        "type": "number",
+        "number": 13
+      },
+      "name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "マックナイト　えみ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "マックナイト　えみ",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/102a8c0ecf8c80f9bef0dd401debb8af",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "219a8c0e-cf8c-8086-95b6-dbe56a73880d",
+    "created_time": "2025-06-21T20:02:00.000Z",
+    "last_edited_time": "2025-09-04T07:51:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "9b85f554-b3fc-42dc-b9d3-8f1ec87b168c"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "text_en": {
+        "id": "FevY",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Coming soon!",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Coming soon!",
+            "href": null
+          }
+        ]
+      },
+      "name_en": {
+        "id": "MMu%40",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Katsuya Sato",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Katsuya Sato",
+            "href": null
+          }
+        ]
+      },
+      "image": {
+        "id": "%5DGFx",
+        "type": "files",
+        "files": [
+          {
+            "name": "Katsu-TJS.jpg",
+            "type": "file",
+            "file": {
+              "url": "/image/download/staff/219a8c0e-cf8c-8086-95b6-dbe56a73880d-Katsu-TJS.jpg",
+              "expiry_time": "2026-02-06T16:28:25.413Z"
+            }
+          }
+        ]
+      },
+      "role": {
+        "id": "%60_YH",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "49509591-f301-4af2-936d-0678579ac774",
+            "name": "teacher",
+            "color": "pink"
+          }
+        ]
+      },
+      "text": {
+        "id": "uJ%3Eq",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Coming soon!",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Coming soon!",
+            "href": null
+          }
+        ]
+      },
+      "ordering": {
+        "id": "wvYp",
+        "type": "number",
+        "number": 5
+      },
+      "name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "佐藤かつや",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "佐藤かつや",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/219a8c0ecf8c808695b6dbe56a73880d",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "262a8c0e-cf8c-8087-9157-eccd746e636d",
+    "created_time": "2025-09-02T05:49:00.000Z",
+    "last_edited_time": "2025-09-04T07:58:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "9b85f554-b3fc-42dc-b9d3-8f1ec87b168c"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "text_en": {
+        "id": "FevY",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "coming soon!",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "coming soon!",
+            "href": null
+          }
+        ]
+      },
+      "name_en": {
+        "id": "MMu%40",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": " Kayo Orosco",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " Kayo Orosco",
+            "href": null
+          }
+        ]
+      },
+      "image": {
+        "id": "%5DGFx",
+        "type": "files",
+        "files": [
+          {
+            "name": "Kayo-TJS.jpg",
+            "type": "file",
+            "file": {
+              "url": "/image/download/staff/262a8c0e-cf8c-8087-9157-eccd746e636d-Kayo-TJS.jpg",
+              "expiry_time": "2026-02-06T16:28:25.413Z"
+            }
+          }
+        ]
+      },
+      "role": {
+        "id": "%60_YH",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "8857dd7d-7ed4-482b-84d8-f59c7d3679db",
+            "name": "nihongo-cafe",
+            "color": "brown"
+          }
+        ]
+      },
+      "text": {
+        "id": "uJ%3Eq",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Coming soon!",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Coming soon!",
+            "href": null
+          }
+        ]
+      },
+      "ordering": {
+        "id": "wvYp",
+        "type": "number",
+        "number": 15
+      },
+      "name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "オロスコ　佳代",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "オロスコ　佳代",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/262a8c0ecf8c80879157eccd746e636d",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "4377c087-e782-46e3-9eaf-261863837f19",
+    "created_time": "2024-09-15T21:13:00.000Z",
+    "last_edited_time": "2025-06-21T20:04:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "9b85f554-b3fc-42dc-b9d3-8f1ec87b168c"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "text_en": {
+        "id": "FevY",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Coming Soon!",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Coming Soon!",
+            "href": null
+          }
+        ]
+      },
+      "name_en": {
+        "id": "MMu%40",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Tasha Waldorf",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Tasha Waldorf",
+            "href": null
+          }
+        ]
+      },
+      "image": {
+        "id": "%5DGFx",
+        "type": "files",
+        "files": [
+          {
+            "name": "profile.jpg",
+            "type": "file",
+            "file": {
+              "url": "/image/download/staff/4377c087-e782-46e3-9eaf-261863837f19-profile.jpg",
+              "expiry_time": "2026-02-06T16:28:25.413Z"
+            }
+          }
+        ]
+      },
+      "role": {
+        "id": "%60_YH",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "ce1e3640-611f-4ad3-a062-a43657602c92",
+            "name": "volunteer",
+            "color": "default"
+          }
+        ]
+      },
+      "text": {
+        "id": "uJ%3Eq",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Coming Soon!",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Coming Soon!",
+            "href": null
+          }
+        ]
+      },
+      "ordering": {
+        "id": "wvYp",
+        "type": "number",
+        "number": 10
+      },
+      "name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ワルドルフ　ターシャ",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "ワルドルフ　ターシャ",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/4377c087e78246e39eaf261863837f19",
     "public_url": null
   },
   {
@@ -2014,7 +1865,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/staff/9a170ec8-c017-4cce-a0dd-d62f2edb82b6-minami.png",
-              "expiry_time": "2025-09-22T06:01:05.967Z"
+              "expiry_time": "2026-02-06T16:28:25.413Z"
             }
           }
         ]
@@ -2088,6 +1939,155 @@
       }
     },
     "url": "https://www.notion.so/9a170ec8c0174ccea0ddd62f2edb82b6",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "c452fe7f-4be8-4bdb-9afb-a32c10afbcab",
+    "created_time": "2024-09-15T21:10:00.000Z",
+    "last_edited_time": "2025-09-04T08:01:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "9b85f554-b3fc-42dc-b9d3-8f1ec87b168c"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "text_en": {
+        "id": "FevY",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "I was born in Japan and lived there, learning to speak Japanese as my first language. I moved to Tucson when I was four years old and have lived here ever since. I have been attending this school since it opened and have many fond memories over the years, such as the annual sports festival and attending various Japanese events and participating in Japanese concerts. In 2023, I entered high school, so I ended my time as a student here at Tucson Japanese Language School and have since started volunteering here as a teacher's assistant. Tucson Japanese Language School also helped me keep my Japanese sharp, stay connected to my Japanese roots, and contribute to the community through various events and practicing speaking among fellow Japanese people. I am excited to continue my journey as a volunteer and an active participant in the Japanese community.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "I was born in Japan and lived there, learning to speak Japanese as my first language. I moved to Tucson when I was four years old and have lived here ever since. I have been attending this school since it opened and have many fond memories over the years, such as the annual sports festival and attending various Japanese events and participating in Japanese concerts. In 2023, I entered high school, so I ended my time as a student here at Tucson Japanese Language School and have since started volunteering here as a teacher's assistant. Tucson Japanese Language School also helped me keep my Japanese sharp, stay connected to my Japanese roots, and contribute to the community through various events and practicing speaking among fellow Japanese people. I am excited to continue my journey as a volunteer and an active participant in the Japanese community.",
+            "href": null
+          }
+        ]
+      },
+      "name_en": {
+        "id": "MMu%40",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Hana McKnight",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Hana McKnight",
+            "href": null
+          }
+        ]
+      },
+      "image": {
+        "id": "%5DGFx",
+        "type": "files",
+        "files": [
+          {
+            "name": "IMG_7796.jpeg",
+            "type": "file",
+            "file": {
+              "url": "/image/download/staff/c452fe7f-4be8-4bdb-9afb-a32c10afbcab-IMG_7796.jpeg",
+              "expiry_time": "2026-02-06T16:28:25.413Z"
+            }
+          }
+        ]
+      },
+      "role": {
+        "id": "%60_YH",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "ce1e3640-611f-4ad3-a062-a43657602c92",
+            "name": "volunteer",
+            "color": "default"
+          }
+        ]
+      },
+      "text": {
+        "id": "uJ%3Eq",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私は日本で生まれ第一言語として日本語を学びました。 4歳のときにツーソンに引っ越して、それ以来ずっとここに住んでいます。私はこの学校に開校時から通い続けており、毎年恒例の運動会や日本のさまざまなイベントへの参加、学芸会への参加など、たくさんの楽しい思い出があります。 2023 年に高校に入学したため、生徒からボランティアへと変わりました。日本語学校のおかげで、私は日本語能力を保ち、自分のルーツである日本とのつながりを維持し、さまざまなイベントや日本人同士で話す練習を通じて地域社会に貢献することができました。私はボランティアとして、そして日本人コミュニティへの積極的な参加者として活躍し続けることに興奮しています。",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "私は日本で生まれ第一言語として日本語を学びました。 4歳のときにツーソンに引っ越して、それ以来ずっとここに住んでいます。私はこの学校に開校時から通い続けており、毎年恒例の運動会や日本のさまざまなイベントへの参加、学芸会への参加など、たくさんの楽しい思い出があります。 2023 年に高校に入学したため、生徒からボランティアへと変わりました。日本語学校のおかげで、私は日本語能力を保ち、自分のルーツである日本とのつながりを維持し、さまざまなイベントや日本人同士で話す練習を通じて地域社会に貢献することができました。私はボランティアとして、そして日本人コミュニティへの積極的な参加者として活躍し続けることに興奮しています。",
+            "href": null
+          }
+        ]
+      },
+      "ordering": {
+        "id": "wvYp",
+        "type": "number",
+        "number": 12
+      },
+      "name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "マックナイト　はな",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "マックナイト　はな",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/c452fe7f4be84bdb9afba32c10afbcab",
     "public_url": null
   },
   {
@@ -2168,7 +2168,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/staff/d65a07cd-7eec-4319-8dbb-f05addf412a9-IMG_1299_edited.jpg",
-              "expiry_time": "2025-09-22T06:01:05.967Z"
+              "expiry_time": "2026-02-06T16:28:25.413Z"
             }
           }
         ]
@@ -2317,7 +2317,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/staff/f9633a2c-0dff-4b02-9161-9139ab8919d0-mcknight.png",
-              "expiry_time": "2025-09-22T06:01:05.967Z"
+              "expiry_time": "2026-02-06T16:28:25.413Z"
             }
           }
         ]

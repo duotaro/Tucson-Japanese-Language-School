@@ -1,148 +1,6 @@
 [
   {
     "object": "page",
-    "id": "caedb020-e7de-46db-ad8f-6221961d3dab",
-    "created_time": "2024-09-10T00:51:00.000Z",
-    "last_edited_time": "2025-09-02T07:26:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
-    },
-    "cover": null,
-    "icon": null,
-    "parent": {
-      "type": "database_id",
-      "database_id": "d4eb3828-e74c-469b-9179-ca7be9edb5cf"
-    },
-    "archived": false,
-    "in_trash": false,
-    "is_locked": false,
-    "properties": {
-      "text": {
-        "id": "LBgW",
-        "type": "rich_text",
-        "rich_text": [
-          {
-            "type": "text",
-            "text": {
-              "content": "「ツーソン日本語補習校は質の高い言語と文化プログラムを通して、日本とツーソン、アリゾナ州との友好関係を促進し、地域の大きな役割を担います。」",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "「ツーソン日本語補習校は質の高い言語と文化プログラムを通して、日本とツーソン、アリゾナ州との友好関係を促進し、地域の大きな役割を担います。」",
-            "href": null
-          }
-        ]
-      },
-      "image": {
-        "id": "L_%3Dy",
-        "type": "files",
-        "files": [
-          {
-            "name": "vision.png",
-            "type": "file",
-            "file": {
-              "url": "/image/download/about/caedb020-e7de-46db-ad8f-6221961d3dab-vision.png",
-              "expiry_time": "2025-09-22T06:00:56.769Z"
-            }
-          }
-        ]
-      },
-      "text_en": {
-        "id": "Yipi",
-        "type": "rich_text",
-        "rich_text": [
-          {
-            "type": "text",
-            "text": {
-              "content": "“Tucson Japanese School aims to provide high quality language and cultural education to support a stronger relationship between Tucson, Arizona and Japan through a regional leadership position.“",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "“Tucson Japanese School aims to provide high quality language and cultural education to support a stronger relationship between Tucson, Arizona and Japan through a regional leadership position.“",
-            "href": null
-          }
-        ]
-      },
-      "tag": {
-        "id": "boX%5B",
-        "type": "select",
-        "select": {
-          "id": "787d23c6-fcbb-4eb0-b281-83a3e591afa1",
-          "name": "vision",
-          "color": "blue"
-        }
-      },
-      "en": {
-        "id": "p%40VO",
-        "type": "rich_text",
-        "rich_text": [
-          {
-            "type": "text",
-            "text": {
-              "content": "Our Vision",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "Our Vision",
-            "href": null
-          }
-        ]
-      },
-      "title": {
-        "id": "title",
-        "type": "title",
-        "title": [
-          {
-            "type": "text",
-            "text": {
-              "content": "Vision",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "Vision",
-            "href": null
-          }
-        ]
-      }
-    },
-    "url": "https://www.notion.so/Vision-caedb020e7de46dbad8f6221961d3dab",
-    "public_url": null
-  },
-  {
-    "object": "page",
     "id": "3b6fb768-3ff3-425b-8758-1c31f6fa231e",
     "created_time": "2024-09-10T00:51:00.000Z",
     "last_edited_time": "2025-09-02T07:24:00.000Z",
@@ -196,7 +54,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/about/3b6fb768-3ff3-425b-8758-1c31f6fa231e-about.png",
-              "expiry_time": "2025-09-22T06:00:56.769Z"
+              "expiry_time": "2026-02-06T16:28:01.767Z"
             }
           }
         ]
@@ -338,7 +196,7 @@
             "type": "file",
             "file": {
               "url": "/image/download/about/b3091c78-9b7c-4e8b-80de-dc5f98fd9d5b-mission.png",
-              "expiry_time": "2025-09-22T06:00:56.769Z"
+              "expiry_time": "2026-02-06T16:28:01.768Z"
             }
           }
         ]
@@ -423,6 +281,148 @@
       }
     },
     "url": "https://www.notion.so/Mission-b3091c789b7c4e8b80dedc5f98fd9d5b",
+    "public_url": null
+  },
+  {
+    "object": "page",
+    "id": "caedb020-e7de-46db-ad8f-6221961d3dab",
+    "created_time": "2024-09-10T00:51:00.000Z",
+    "last_edited_time": "2025-09-02T07:26:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "350cb0bb-d654-4220-b7b9-ce2ab7f9b3a4"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3fda8b5e-8168-4161-bc56-173b84095a41"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "d4eb3828-e74c-469b-9179-ca7be9edb5cf"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "text": {
+        "id": "LBgW",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "「ツーソン日本語補習校は質の高い言語と文化プログラムを通して、日本とツーソン、アリゾナ州との友好関係を促進し、地域の大きな役割を担います。」",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "「ツーソン日本語補習校は質の高い言語と文化プログラムを通して、日本とツーソン、アリゾナ州との友好関係を促進し、地域の大きな役割を担います。」",
+            "href": null
+          }
+        ]
+      },
+      "image": {
+        "id": "L_%3Dy",
+        "type": "files",
+        "files": [
+          {
+            "name": "vision.png",
+            "type": "file",
+            "file": {
+              "url": "/image/download/about/caedb020-e7de-46db-ad8f-6221961d3dab-vision.png",
+              "expiry_time": "2026-02-06T16:28:01.767Z"
+            }
+          }
+        ]
+      },
+      "text_en": {
+        "id": "Yipi",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "“Tucson Japanese School aims to provide high quality language and cultural education to support a stronger relationship between Tucson, Arizona and Japan through a regional leadership position.“",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "“Tucson Japanese School aims to provide high quality language and cultural education to support a stronger relationship between Tucson, Arizona and Japan through a regional leadership position.“",
+            "href": null
+          }
+        ]
+      },
+      "tag": {
+        "id": "boX%5B",
+        "type": "select",
+        "select": {
+          "id": "787d23c6-fcbb-4eb0-b281-83a3e591afa1",
+          "name": "vision",
+          "color": "blue"
+        }
+      },
+      "en": {
+        "id": "p%40VO",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Our Vision",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Our Vision",
+            "href": null
+          }
+        ]
+      },
+      "title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Vision",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Vision",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Vision-caedb020e7de46dbad8f6221961d3dab",
     "public_url": null
   }
 ]
